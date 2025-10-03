@@ -1,0 +1,85 @@
+"use client"
+import React from 'react'
+import ServiceBanner from '../../../components/ServiceBanner';
+import Image from 'next/image';
+import OnboardingProcess from '../../../components/OnboardingProcess';
+import BenefitsSection2 from '../../../components/BenefitsSection2';
+import VerticalTimeline from '../../../components/VerticalTimeline';
+
+
+function page() {
+    const data = {
+        id: 1,
+        subheading: 'PANCARD',
+        heading: 'Apki Pehchaan, Apki Power',
+        description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable Domestic Money Transfer service.',
+        bgImage: '/pan/panbg.png',
+        centerImage: '/pan/pan1.png',
+    }
+    const LetterCircle = ({ letter, index }) => (
+        <div className="flex  items-center justify-center rounded-full  lg:p-1 lg:h-12 lg:w-12" key={index}>
+            <div className="flex h-full w-full items-center justify-center">
+                <span className="font-aboreto  md:text-4xl font-medium lg:text-6xl">
+                    {letter}
+                </span>
+            </div>
+        </div>
+    );
+    const info = [
+        { title: "Book Today, Fly Tomorrow", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus " },
+        { title: "Book Today, Fly Tomorrow", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus " },
+    ]
+    const text = "PANCARD";
+    return (
+        <>
+            <ServiceBanner data={data} />
+            <section>
+                <div className={`relative py-5 lg:pb-0 lg:pt-20 overflow-y-visible`} style={{ backgroundColor: "#F9EBDF" }}>
+                    <div className="max-w-7xl mx-auto px-4 lg:px-0 relative">
+                        <div className="grid grid-cols-1 md:grid-cols-2 ">
+                            <div className="relative ">
+                                <div className="flex flex-wrap gap-6">
+                                    {text.split(" ").map((word, wordIndex) => (
+                                        <div key={wordIndex} className="flex space-x-1">
+                                            {word.split("").map((char, index) => (
+                                                <LetterCircle key={index} letter={char} />
+                                            ))}
+                                        </div>
+                                    ))}
+                                </div>
+
+                            </div>
+
+                            <div className="hidden md:block relative h-[200px] mt-10 md:mt-0 ">
+                                <div className=" lg:absolute bottom-0 right-0 lg:w-[700px] lg:h-[400px] z-20  " style={{ "overflow": "hidden" }}>
+                                    <Image
+                                        src={"/pan/pan2.png"}
+                                        alt="loan-section"
+                                        fill
+                                        className=" lg:right-0"
+                                        style={{ objectPosition: 'right' }}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <OnboardingProcess />
+            <BenefitsSection2 />
+            <VerticalTimeline />
+
+            <div>
+                {info.map((item, index) => (
+                    <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-16 max-w-6xl my-10 ${index % 2 === 0 ? "" : "ms-auto"}`}>
+                        <h2 className="text-2xl md:text-3xl font-bold text-[#043C5C] mb-4">{item.title}</h2>
+                        <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                    </div>
+                ))}
+            </div>
+        </>
+    )
+}
+
+export default page
