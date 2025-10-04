@@ -91,15 +91,15 @@ const VerticalSlider = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug max-w-sm z-20">
               {slide.heading}
             </h2>
-            <div className="relative flex justify-center md:block mt-6 md:mt-0">
-              <Image
-                src={slide.image}
-                width={400}
-                height={400}
-                alt="Happy customer with loan"
-                className="w-48 h-64 sm:w-64 sm:h-72 md:w-[510px] md:h-[450px] object-cover md:absolute md:-bottom-8 md:left-40 z-10"
-              />
-            </div>
+           <div className="relative hidden md:flex justify-center md:block mt-6 md:mt-0">
+  <Image
+    src={slide.image}
+    width={400}
+    height={400}
+    alt="Happy customer with loan"
+    className="w-48 h-64 sm:w-64 sm:h-72 md:w-[510px] md:h-[450px] object-cover md:absolute md:-bottom-8 md:left-40 z-10"
+  />
+</div>
           </div>
         </div>
 
