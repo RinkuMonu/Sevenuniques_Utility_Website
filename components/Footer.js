@@ -63,37 +63,35 @@ const Footer = () => {
        <div className=" col-span-1 md:col-span-5">
            <div className="grid  sm:grid-cols-4 w-full">
             <div>
-              <h3 className="font-semibold mb-4">Company</h3>
+              <h3 className="font-semibold mb-4">Qiuck Links</h3>
               <ul className="space-y-2 text-sm">
                 <li><a href="#" className="hover:text-blue-400">About Us</a></li>
                 <li><a href="#" className="hover:text-blue-400">Blog</a></li>
                 <li><a href="#" className="hover:text-blue-400">Contact</a></li>
-                <li><a href="#" className="hover:text-blue-400">Bug bounty</a></li>
+                {/* <li><a href="#" className="hover:text-blue-400">Bug bounty</a></li> */}
               </ul>
             </div>
 
             {/* Legal Links */}
             <div>
-              <h3 className="font-semibold mb-4">Legal</h3>
+              <h3 className="font-semibold mb-4">Services</h3>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-blue-400">Privacy policy</a></li>
-                <li><a href="#" className="hover:text-blue-400">Refund policy</a></li>
-                <li><a href="#" className="hover:text-blue-400">Disclaimer</a></li>
-                <li><a href="#" className="hover:text-blue-400">Terms and Conditions</a></li>
-                <li><a href="#" className="hover:text-blue-400">Forums</a></li>
+                <li><a href="/aeps" className="hover:text-blue-400">AEPS</a></li>
+                <li><a href="/bbps" className="hover:text-blue-400">BBPS</a></li>
+                <li><a href="/dmt" className="hover:text-blue-400">DMT</a></li>
+
               </ul>
             </div>
 
             {/* Platforms */}
             <div>
-              <h3 className="font-semibold mb-4">Platforms</h3>
+              <h3 className="font-semibold mb-4">Loans</h3>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-blue-400">AWS</a></li>
-                <li><a href="#" className="hover:text-blue-400">Google Cloud</a></li>
-                <li><a href="#" className="hover:text-blue-400">Azure</a></li>
-                <li><a href="#" className="hover:text-blue-400">Kubernetes</a></li>
-                <li><a href="#" className="hover:text-blue-400">Odoo</a></li>
-                <li><a href="#" className="hover:text-blue-400">Vtiger Solutions</a></li>
+                <li><a href="/loan/business-loan" className="hover:text-blue-400">Business Loan</a></li>
+                <li><a href="/loan/home-loan" className="hover:text-blue-400">Home Loan</a></li>
+                <li><a href="/loan/personal-loan" className="hover:text-blue-400">Personal Loan</a></li>
+                <li><a href="/loan/construction-equipment-loan" className="hover:text-blue-400">Construction Loan</a></li>
+                <li><a href="/loan/car-loan" className="hover:text-blue-400">Car Loan</a></li>
               </ul>
             </div>
 

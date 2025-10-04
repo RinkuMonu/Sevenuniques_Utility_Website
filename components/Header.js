@@ -13,24 +13,27 @@ export default function Header() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services", dropdown: true },
+    { name: "AEPS", href: "/aeps" },
+    { name: "Bill Payments", href: "/bbps" },
+    { name: "Loan", href: "/loan", dropdown: true },
     { name: "Contact us", href: "/contact" },
   ];
 
-const servicesDropdown = [
-  { name: "AEPS", href: "/aeps" },
-  { name: "BBPS", href: "/bbps" },
-  { name: "DMT", href: "/dmt" },
-    { name: "Loan", href: "/loan" },
-  { name: "Business Loan", href: "/loan/business-loan" },
-  { name: "Home Loan", href: "/loan/home-loan" },
-  { name: "Personal Loan", href: "/loan/personal-loan" },
-  { name: "Construction Loan", href: "/loan/construction-equipment-loan" },
-  { name: "Car Loan", href: "/loan/car-loan" },
+  const servicesDropdown = [
     { name: "Recharge", href: "/recharge" },
-      { name: "Insurance", href: "/insurance" },
+    { name: "Insurance", href: "/insurance" },
+    { name: "Booking", href: "/booking" },
+    { name: "Credit Card", href: "/credit-card" },
+    { name: "PanCard", href: "/pancard" },
+  ];
 
-];
-
+  const loanDropdown = [
+    { name: "Business Loan", href: "/loan/business-loan" },
+    { name: "Home Loan", href: "/loan/home-loan" },
+    { name: "Personal Loan", href: "/loan/personal-loan" },
+    { name: "Construction Loan", href: "/loan/construction-equipment-loan" },
+    { name: "Car Loan", href: "/loan/car-loan" },
+  ];
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -47,21 +50,21 @@ const servicesDropdown = [
               {link.dropdown ? (
                 <button
                   className={`flex items-center gap-1 font-medium transition ${
-                    pathname.startsWith("/services")
+          ["/services", "/loan"].some(path => pathname.startsWith(path))
+
                       ? "text-teal-700 font-semibold"
                       : "text-gray-700 group-hover:text-teal-600"
-                  }`}
+                    }`}
                 >
                   {link.name} <ChevronDown size={16} />
                 </button>
               ) : (
                 <Link
                   href={link.href}
-                  className={`font-medium transition ${
-                    pathname === link.href
+                  className={`font-medium transition ${pathname === link.href
                       ? "text-teal-700 font-semibold"
                       : "text-gray-700 hover:text-teal-600"
-                  }`}
+                    }`}
                 >
                   {link.name}
                 </Link>
@@ -70,7 +73,20 @@ const servicesDropdown = [
               {/* Dropdown (desktop hover) */}
               {link.dropdown && (
                 <div className="absolute top-6 left-0 bg-white shadow-xl rounded-xl py-3 w-56 border border-gray-100 transform scale-95 opacity-0 invisible group-hover:scale-100 group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out origin-top">
-                  {servicesDropdown.map((item, i) => (
+                  {/* Render services dropdown for services link */}
+                  {link.name.toLowerCase() === "services" && servicesDropdown.map((item, i) => (
+                    <Link
+                      key={i}
+                      href={item.href}
+                      className="flex items-center gap-3 px-4 py-2.5 text-gray-700 hover:bg-gradient-to-r hover:from-teal-50 hover:to-teal-100 hover:text-teal-700 transition rounded-lg"
+                    >
+                      <span className="w-2 h-2 bg-teal-600 rounded-full"></span>
+                      {item.name}
+                    </Link>
+                  ))}
+
+                  {/* Render loan dropdown for loan link */}
+                  {link.name.toLowerCase() === "loan" && loanDropdown.map((item, i) => (
                     <Link
                       key={i}
                       href={item.href}
@@ -90,13 +106,13 @@ const servicesDropdown = [
         <div className="hidden md:flex items-center space-x-4">
           <Link
             href="/login"
-            className="px-6 py-2 bg-teal-900 text-white rounded-full font-medium hover:bg-teal-700 transition"
+            className="px-6 py-2 bg-[#0C3D4C] text-white rounded-full font-medium hover:bg-[#0C3D4C]/80 transition"
           >
             Login
           </Link>
           <Link
             href="/register"
-            className="px-6 py-2 border border-teal-900 text-teal-900 rounded-full font-medium hover:bg-teal-900 hover:text-white transition"
+            className="px-6 py-2 border border-[#0C3D4C] text-[#0C3D4C] rounded-full font-medium hover:bg-[#0C3D4C]/80 hover:text-white transition"
           >
             Register
           </Link>
@@ -138,15 +154,15 @@ const servicesDropdown = [
                         ))}
                       </div>
                     )}
+
                   </>
                 ) : (
                   <Link
                     href={link.href}
-                    className={`block font-medium ${
-                      pathname === link.href
+                    className={`block font-medium ${pathname === link.href
                         ? "text-teal-700 font-semibold"
                         : "text-gray-700 hover:text-teal-600"
-                    }`}
+                      }`}
                   >
                     {link.name}
                   </Link>
