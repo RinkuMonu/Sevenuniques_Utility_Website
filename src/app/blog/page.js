@@ -1,52 +1,21 @@
 "use client"
 import React from 'react'
-import ServiceBanner from '../../../components/ServiceBanner';
+import ServiceBanner from '../../../components/ServiceBanner'
 import Image from 'next/image';
-import AboutService from '../../../components/AboutService';
-import AboutSlider from '../../../components/AboutSlider';
-import AboutArticle from '../../../components/AboutArticle';
-import FaqAccordion from '../../../components/FaqAccordion';
-import BenefitsSection2 from '../../../components/BenefitsSection2';
 import PartnersSection from '../../../components/PartnersSection';
 import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
+import BlogC from '../../../components/BlogC';
 import ServicesSection3 from '../../../components/ServicesSection3';
-
+import FaqAccordion from '../../../components/FaqAccordion';
 
 function page() {
-    const faqData = [
-  {
-    question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-    answer: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos DucimusAt Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Od At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus DucimusAt Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Od"
-  },
-  {
-    question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-    answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
-  },
-  {
-    question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-    answer: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-  },
-  {
-    question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-    answer: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
-  },
-  {
-    question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-    answer: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
-  },
-  {
-    question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-    answer: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
-  }
-];
     const data = {
         id: 1,
-        subheading: 'ABOUT US',
-        heading: 'Hamari Pehchaan, Aapka Vishwas',
+        subheading: 'PANCARD',
+        heading: 'Apki Pehchaan, Apki Power',
         description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable Domestic Money Transfer service.',
-        bgImage: '/about/aboutbg.png',
-        centerImage: '/about/about1.png',
+        bgImage: '/blog/blogbg.png',
     }
     const LetterCircle = ({ letter, index }) => (
         <div className="flex  items-center justify-center rounded-full  lg:p-1 lg:h-12 lg:w-12" key={index}>
@@ -57,18 +26,44 @@ function page() {
             </div>
         </div>
     );
-
-       const aepsData = {
-        subheading: 'ABOUT',
-        heading: 'COMPANY',
+    const aepsData = {
+        subheading: 'BLOG',
+        heading: 'Ideas Ki Duniya, Blog Pe Sabka Saath',
         description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et  ducimus odio dignissimos At vero eos et accusamus et ',
         features: [
             'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
             'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
         ]
     };
-    
-    const text = "About us";
+
+    const faqData = [
+        {
+            question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
+            answer: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos DucimusAt Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Od At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus DucimusAt Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Od"
+        },
+        {
+            question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
+            answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+        },
+        {
+            question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
+            answer: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
+            answer: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+        },
+        {
+            question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
+            answer: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
+        },
+        {
+            question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
+            answer: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
+        }
+    ];
+
+    const text = "Blog";
     return (
         <>
             <ServiceBanner data={data} />
@@ -92,7 +87,7 @@ function page() {
                             <div className="hidden md:block  h-[200px] mt-10 md:mt-0 ">
                                 <div className=" lg:absolute bottom-0 right-0 lg:w-[700px] lg:h-[500px] z-20  " style={{ "overflow": "hidden" }}>
                                     <Image
-                                        src={"/about/about2.png"}
+                                        src={"/blog/blog1.png"}
                                         alt="loan-section"
                                         fill
                                         className=" lg:right-0"
@@ -104,15 +99,12 @@ function page() {
                     </div>
                 </div>
             </section>
-                 <ServicesSection3 data={aepsData} />
-            <AboutService />
-            <AboutSlider />
-            <AboutArticle/>
-            <FaqAccordion faqData={faqData}/>
-             <BenefitsSection2 />
-             <div  className='pt-16'>
-               <PartnersSection />
-               </div>
+            <ServicesSection3 data={aepsData} />
+
+            <BlogC />
+            <FaqAccordion faqData={faqData} />
+
+            <PartnersSection />
             <TestimonialSlider />
             <ContactBanner />
         </>

@@ -25,9 +25,9 @@ const UtilitiesHome = () => {
           
           {/* Left: Text Content */}
           <div className="w-full md:w-1/2 lg:w-2/5 space-y-6 text-center md:text-left ">
-            <h1 className="text-4xl lg:text-5xl font-bold text-[#0d3d57]">
+            <h3 className="text-4xl lg:text-5xl font-bold text-[#0d3d57]">
               Fast Utilities, Zero Hassle
-            </h1>
+            </h3>
             <p className="text-gray-600 text-lg leading-relaxed">
               At Vero Eos Et Accusamus Et Iusto Odio Dignissimos ducimus quasi. Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio.
             </p>

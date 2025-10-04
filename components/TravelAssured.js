@@ -18,7 +18,7 @@ export default function TravelAssured({ data }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 grid grid-cols-1 lg:grid-cols-2 gap-20">
         {/* Left Section: Text and Cards */}
         <div className="flex-1 text-white text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-8 leading-tight">{title}</h1>
+          <h3 className="text-4xl md:text-5xl font-extrabold mb-8 leading-tight">{title}</h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-10 mb-10 max-w-lg md:max-w-none mx-auto md:mx-0">
             {cards.map((card, index) => (

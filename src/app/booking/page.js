@@ -68,7 +68,7 @@ function Page() {
             icon: "/booking/hotel.png",
             data: {
                 sliderImages: [
-                    { id: 1, url: "/booking/h1.png", alt: "Black Friday travel sale with an airplane on a red and blue background." },
+                    { id: 1, url: "/booking/h3.png", alt: "Black Friday travel sale with an airplane on a red and blue background." },
                     { id: 2, url: "/booking/h2.png", alt: 'A woman on vacation with text "Holiday Season!" and "50% Off".' },
                     { id: 3, url: "/booking/h3.png", alt: "A year-end travel promotion banner showing a hand holding a ticket through an airplane window." },
                     { id: 4, url: "/booking/h4.png", alt: "A year-end travel promotion banner showing a hand holding a ticket through an airplane window." },

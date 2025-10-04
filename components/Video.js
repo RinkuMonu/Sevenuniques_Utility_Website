@@ -59,9 +59,9 @@ const Video = () => {
         <header className="mb-8 md:mb-12 px-4 lg:px-0">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
             <div className="md:w-2/3">
-              <h1 className="text-2xl md:text-4xl font-bold leading-tight text-[#0C3D4C]">
+              <h3 className="text-2xl md:text-4xl font-bold leading-tight text-[#0C3D4C]">
                 Your data and money are protected with high-level authentication
-              </h1>
+              </h3>
             </div>
             <div className="md:w-1/3 mt-4 flex flex-col items-start">
               <p className="text-base max-w-sm mb-4">

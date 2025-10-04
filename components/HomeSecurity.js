@@ -11,13 +11,13 @@ function HomeSecurity() {
     background: "linear-gradient(90deg, #01202A 0%, #01202A 25%, #0B4051 50%, #095C8C 75%, #095C8C 100%)"
   }}
         >
-            <div className='grid md:grid-cols-2 max-w-7xl mx-auto px-4 md:px-0'>
+            <div className='grid md:grid-cols-2 max-w-7xl mx-auto px-4 lg:px-0'>
                 <div className=" text-white flex items-center justify-center " >
                     <div className="container mx-auto py-12 max-w-4xl">
                         <div className="text-left mb-12">
-                            <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+                            <h3 className="text-3xl md:text-5xl font-bold leading-tight">
                                 Guarding Your Data,<br />Securing Your Future
-                            </h1>
+                            </h3>
                             <p className="mt-6 max-w-2xl text-gray-400">
                                 At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio DignissimosAt Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio
                             </p>
@@ -31,7 +31,7 @@ function HomeSecurity() {
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                             {features.map((featureName) => (
-                                <div key={featureName} className="border border-[#3080A6] rounded-lg py-10 px-6 w-full text-center hover:bg-cyan-900/40 hover:border-cyan-400 transition-colors duration-300 cursor-pointer">
+                                <div key={featureName} className="border border-[#3080A6] rounded-lg py-10 px-1 lg:px-6 w-full text-center hover:bg-cyan-900/40 hover:border-cyan-400 transition-colors duration-300 cursor-pointer">
                                     <h3 className="text-white text-2xl font-semibold">{featureName}</h3>
                                 </div>
                             ))}

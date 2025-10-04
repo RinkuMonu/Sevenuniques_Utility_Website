@@ -5,6 +5,9 @@ import Image from 'next/image';
 import OnboardingProcess from '../../../components/OnboardingProcess';
 import BenefitsSection2 from '../../../components/BenefitsSection2';
 import VerticalTimeline from '../../../components/VerticalTimeline';
+import PartnersSection from '../../../components/PartnersSection';
+import TestimonialSlider from '../../../components/TestimonialSlider';
+import ContactBanner from '../../../components/ContactBanner';
 
 
 function page() {
@@ -78,6 +81,9 @@ function page() {
                     </div>
                 ))}
             </div>
+           <PartnersSection />
+            <TestimonialSlider />
+            <ContactBanner />
         </>
     )
 }

@@ -288,9 +288,9 @@ export default function Privacy() {
                                                 <div className="inline-block bg-gradient-to-r from-[#358EBA] to-[#24576C] text-white font-medium px-8 py-2 rounded-full mb-4 shadow-md">
                                                     Privacy Policy
                                                 </div>
-                                                <h1 className="text-3xl md:text-4xl font-bold text-[#0C3D4C] mb-6 mt-4">
+                                                <h3 className="text-3xl md:text-4xl font-bold text-[#0C3D4C] mb-6 mt-4">
                                                     We value your privacy and are committed to protecting your personal information
-                                                </h1>
+                                                </h3>
                                                 <div className="h-1 w-20 bg-gradient-to-r from-[#358EBA] to-[#24576C] mx-auto mb-6 rounded-full"></div>
                                                 <p className="text-[#0C3D4C] text-lg leading-relaxed">
                                                     Our privacy policy prioritizes the protection of your personal data, ensuring that any information we collect is securely stored and used exclusively for the purpose of delivering and enhancing our services.
