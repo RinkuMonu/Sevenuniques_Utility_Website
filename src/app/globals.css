@@ -1,26 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
 @import "tailwindcss";
+/* In your global CSS file (e.g., index.css) */
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+
+.font-aboreto {
+  font-family: 'Aboreto', cursive;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+
+.slick-slide,
+.slick-slide * {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Position dots at the top */
+.slick-dots {
+  top: 15px;
+  bottom: auto !important;
+  display: flex !important;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Each dot becomes a bar */
+.slick-dots li {
+  width: 50px !important;
+  /* bar width */
+  height: 4px !important;
+  /* bar thickness */
+  background: #24576C1A;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+/* Active bar */
+.slick-dots li.slick-active {
+  background: #24576C;
+}
+
+/* Hide default circle completely */
+.slick-dots li button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.slick-dots li button:before {
+  content: none !important;
+  /* fully remove pseudo circle */
+}
+
+.body {
+  overflow-x: hidden !important;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 25px 8px rgba(0, 169, 231, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 30px 8px rgba(0, 169, 231, 0.6);
+  }
+}
+
+.animate-glow {
+  animation: glow 2.5s infinite ease-in-out;
+  border-radius: 9999px;
+  /* keep circle glow */
+}
+
+.shape {
+  --r: 20px;
+  /* radius */
+  --s: 40px;
+  /* inner curve size */
+  border-radius: var(--r);
+  display: inline-block;
+  margin: 10px;
+  background: white;
+  z-index: 1;
+  overflow: visible;
+  clip-path: shape(from 0 0,
+      hline to calc(100% - var(--s) - 2*var(--r)),
+      arc by var(--r) var(--r) of var(--r) cw,
+      arc by var(--s) var(--s) of var(--s),
+      arc by var(--r) var(--r) of var(--r) cw,
+      vline to 100%,
+      hline to 0)
+}
+
+.shape-bottom-right {
+  --r: 20px;
+  /* radius */
+  --s: 40px;
+  border-radius: var(--r);
+  display: inline-block;
+  margin: 10px;
+  background: white;
+  z-index: 1;
+  overflow: visible;
+  clip-path: shape(from 0 0,
+      hline to calc(100% - var(--s) - 2*var(--r)),
+      arc by var(--r) var(--r) of var(--r) cw,
+      arc by var(--s) var(--s) of var(--s),
+      arc by var(--r) var(--r) of var(--r) cw,
+      vline to 100%,
+      hline to 0)
+}
+
+.shape1 {
+  --r: 20px;
+  --s: 40px;
+  clip-path: shape(from 0 0,
+      vline to calc(100% - var(--s) - 2*var(--r)),
+      arc by var(--r) var(--r) of var(--r),
+      arc by var(--s) var(--s) of var(--s) cw,
+      arc by var(--r) var(--r) of var(--r),
+      /* arc by var(--r) var(--r) of var(--r) cw, */
+      hline to 100%,
+      vline to 0)
+}
+
+:nth-child(4 of .svg1) {
+  height: 303px
+}
+
+
+.plane {
+  position: absolute;
+  top: 10%;
+  width: 80px;
+  height: 80px;
+  offset-path: path("M 0 100 C 300 -150, 300 250, 450 200 S 600 -150, 750 100");
+  offset-rotate: auto;
+  animation: fly 8s linear infinite;
+}
+
+.planeimg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+
+@keyframes fly {
+  from {
+    offset-distance: 0%;
+  }
+
+  to {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes light {
+  0% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

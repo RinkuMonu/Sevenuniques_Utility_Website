@@ -1,0 +1,146 @@
+"use client"
+import Link from 'next/link';
+import React, { useState } from 'react';
+import Slider from 'react-slick';
+
+// const sliderImages = [
+//     '/banner/bcenter1.png', '/banner/bcenter2.png', '/banner/bcenter3.png', '/banner/bcenter4.png',
+// ];
+
+
+const onboardingData = {
+    Distributor: {
+        image: [
+    '/banner/bcenter1.png', '/banner/bcenter2.png', '/banner/bcenter3.png', '/banner/bcenter4.png',
+],
+        steps: [
+            { id: 1, title: 'Register Online', description: 'Quickly sign up through our secure distributor portal.' },
+            { id: 2, title: 'Complete KYC', description: 'Verify your identity with our streamlined KYC process.' },
+            { id: 3, title: 'Add Funds', description: 'Easily load your wallet using multiple payment options.' },
+            { id: 4, title: 'Start Transacting', description: 'Begin offering services and earning commissions.' },
+        ],
+    },
+    Retailer: {
+        image:[
+    '/banner/bcenter1.png', '/banner/bcenter2.png', '/banner/bcenter3.png', '/banner/bcenter4.png',
+],
+        steps: [
+            { id: 1, title: 'Easy Sign-up', description: 'Join our network with a simple mobile application.' },
+            { id: 2, title: 'Verification', description: 'Get your account verified by a local distributor.' },
+            { id: 3, title: 'Stock Your Wallet', description: 'Add balance to start serving your customers.' },
+            { id: 4, title: 'Serve & Earn', description: 'Provide services and see your income grow.' },
+        ],
+    },
+    User: {
+        image:[
+    '/banner/bcenter1.png', '/banner/bcenter2.png', '/banner/bcenter3.png', '/banner/bcenter4.png',
+],
+        steps: [
+            { id: 1, title: 'Download App', description: 'Get the app from the Play Store or App Store.' },
+            { id: 2, title: 'Create Account', description: 'Sign up in minutes with just your mobile number.' },
+            { id: 3, title: 'Link Bank', description: 'Securely connect your bank account for payments.' },
+            { id: 4, title: 'Pay Anyone', description: 'Send money, pay bills, and recharge effortlessly.' },
+        ],
+    },
+};
+
+const tabs = Object.keys(onboardingData);
+
+const StepCard = ({ number, title, description }) => (
+    <div className="bg-white p-6 rounded-xl shadow-[0px_4px_24px_0px_#0000001A] relative w-full max-w-sm">
+        <div className="absolute -top-4 -right-4 bg-[#0C3D4C] shadow-[-8px_7px_4px_2px_#00000026] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg">
+            {number}
+        </div>
+        <h3 className="font-bold text-xl mb-2 text-[#0C3D4C]">{title}</h3>
+        <p className="text-gray-500 mb-4">{description}</p>
+        <Link href="/" className="bg-[#24576C] hover:bg-[#24576C]/90 text-white font-semibold py-2 px-5 rounded-2xl transition-colors duration-300">
+            Read More
+        </Link>
+    </div>
+);
+
+const HomeOnboarding = () => {
+    const [activeTab, setActiveTab] = useState('Distributor');
+    const activeData = onboardingData[activeTab];
+
+    return (
+        <div className="py-10">
+            <div className="max-w-7xl mx-auto px-4 md:px-0">
+
+                {/* Header Text Section */}
+                <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase text-center">PRODUCT</p>
+                <h1 className="mt-2 text-4xl md:text-4xl font-bold text-[#0C3D4C] text-center">
+                    Seamless Onboarding, Hassle-Free Journey
+                </h1>
+
+                {/* Tabs Section */}
+                <div className="my-10 flex justify-center items-center gap-2 md:gap-4">
+                    {tabs.map((tab) => (
+                        <button
+                            key={tab}
+                            onClick={() => setActiveTab(tab)}
+                            className={`py-2 px-3 md:px-6 rounded-full font-semibold text-lg transition-all duration-300 ${activeTab === tab
+                                ? 'bg-[#3080A6] text-white shadow-md'
+                                : 'bg-white text-[#0C3D4C] border border-[#3080A6] hover:bg-gray-100'
+                                }`}
+                        >
+                            {tab}
+                        </button>
+                    ))}
+                </div>
+
+                {/* Main Content Grid */}
+                <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-8 lg:gap-4">
+                    {/* Left Column Steps */}
+                    <div className="flex flex-col gap-8 items-center lg:items-end">
+                        <StepCard number={activeData.steps[0].id} title={activeData.steps[0].title} description={activeData.steps[0].description} />
+                        <StepCard number={activeData.steps[1].id} title={activeData.steps[1].title} description={activeData.steps[1].description} />
+                    </div>
+
+                    {/* Center Column Image */}
+                    <div>
+                        <div
+                            className="relative w-full h-[450px]  bg-center bg-no-repeat bg-cover hidden lg:flex items-center justify-center  md:block"
+                            style={{ backgroundImage: `url('/home/mobilebg.png')` }}
+                        >
+                            <div className="w-full max-w-4xl mt-40 ">
+                                <Slider
+                                    dots={true}
+                                    infinite={true}
+                                    speed={800}
+                                    autoplay={true}
+                                    slidesToShow={1}
+                                    slidesToScroll={1}
+                                    arrows={true}
+                                    slide={false}
+                                    fade={true}
+                                >
+                                    {activeData.image.map((img, index) => (
+                                        <div key={index} className="mt-10 ">
+                                            <img
+                                                src={img}
+                                                alt={`slide-${index}`}
+                                                className="max-w-[250px] h-full  mx-auto flex items-baseline align-bottom justify-baseline "
+                                            />
+                                        </div>
+                                    ))}
+                                </Slider>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    {/* Right Column Steps */}
+                    <div className="flex flex-col gap-8 items-center lg:items-start">
+                        <StepCard number={activeData.steps[2].id} title={activeData.steps[2].title} description={activeData.steps[2].description} />
+                        <StepCard number={activeData.steps[3].id} title={activeData.steps[3].title} description={activeData.steps[3].description} />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    );
+};
+
+export default HomeOnboarding;
+
