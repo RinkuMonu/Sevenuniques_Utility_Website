@@ -41,7 +41,9 @@ function page() {
       <StatsBanner/>
       <CreditScoreReport/>
       <BenefitsSection/>
-      <PartnersSection/>
+<section className='pt-28'>
+  <PartnersSection/>
+</section>
       <TestimonialSlider/>
       <ContactBanner/>
     </>

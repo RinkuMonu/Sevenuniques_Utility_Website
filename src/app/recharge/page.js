@@ -71,33 +71,29 @@ function page() {
                             </div>
                         </div>
 
-                        <div className="h-full pt-16 relative">
-
-                            <Image
-                                src={data.centerImage}
-                                height={300}
-                                width={300}
-                                alt="center image"
-                                className="flex items-center justify-center absolute right-30 z-10"
-
-                            />
-                            <Image
-                                src="/recharge/br.png"
-                                height={300}
-                                width={300}
-                                alt="center image"
-                                className="flex items-center justify-center absolute top-5  right-15 animate-pulse"
-
-                            />
-                            <Image
-                                src="/recharge/br.png"
-                                height={300}
-                                width={300}
-                                alt="center image"
-                                className="flex items-center justify-center absolute right-45 bottom-5 animate-pulse"
-
-                            />
-                        </div>
+                      <div className="h-full pt-16 relative hidden md:block">
+  <Image
+    src={data.centerImage}
+    height={300}
+    width={300}
+    alt="center image"
+    className="flex items-center justify-center absolute right-30 z-10"
+  />
+  <Image
+    src="/recharge/br.png"
+    height={300}
+    width={300}
+    alt="center image"
+    className="flex items-center justify-center absolute top-5 right-15 animate-pulse"
+  />
+  <Image
+    src="/recharge/br.png"
+    height={300}
+    width={300}
+    alt="center image"
+    className="flex items-center justify-center absolute right-45 bottom-5 animate-pulse"
+  />
+</div>
                     </div>
                 </div>
             </div>
