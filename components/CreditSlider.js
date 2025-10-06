@@ -63,7 +63,7 @@ export default function App() {
           </h3>
         </header>
 
-        <main className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-12 min-h-[75vh]">
+        <main className="grid grid-cols-1 md:grid-cols-3 gap-y-6 md:gap-12 min-h-[75vh]">
           {/* Left column (buttons) */}
           <div className="col-span-1">
             <div className="flex flex-col gap-4 sm:gap-6 h-full">

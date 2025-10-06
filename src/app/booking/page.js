@@ -296,7 +296,7 @@ function Page() {
                                 onClick={() => setActiveTab(tab.id)}
                                 className={`relative flex flex-col items-center transition-transform hover:scale-105 ${activeTab === tab.id ? "text-[#018EDE]" : "text-[#0C3D4C]"}`}
                             >
-                                <div className={`w-20 h-20 flex items-center justify-center rounded-full ${activeTab === tab.id ? "border-2 border-[#018EDE] shadow-md" : "border border-gray-300"}`}>
+                                <div className={`w-12 h-12 md:w-20 md:h-20 flex items-center justify-center rounded-full ${activeTab === tab.id ? "border-2 border-[#018EDE] shadow-md" : "border border-gray-300"}`}>
                                     <Image src={tab.icon} width={40} height={40} alt={tab.label} className="object-cover" />
                                 </div>
                                 {activeTab === tab.id && <span className="absolute -bottom-3 w-12 h-[3px] bg-[#018EDE] rounded-full"></span>}
@@ -315,7 +315,7 @@ function Page() {
                     <section className="mt-10 mb-16">
                         <div>
                             {activeData?.data.info.slice(0, 2).map((item, index) => (
-                                <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-16 max-w-6xl my-10 ${index % 2 === 0 ? "" : "ms-auto"}`}>
+                                <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-5 lg:p-16 max-w-6xl my-10 ${index % 2 === 0 ? "" : "ms-auto"}`}>
                                     <h2 className="text-2xl md:text-3xl font-bold text-[#043C5C] mb-4">{item.title}</h2>
                                     <p className="text-gray-600 leading-relaxed">{item.description}</p>
                                 </div>
@@ -326,7 +326,7 @@ function Page() {
 
                         <div className="mt-24">
                             {activeData?.data.info.slice(2, 3).map((item, index) => (
-                                <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-16 max-w-5xl my-10 ${index % 2 !== 0 ? "" : "ms-auto"}`}>
+                                <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-5 lg:p-16 max-w-5xl my-10 ${index % 2 !== 0 ? "" : "ms-auto"}`}>
                                     <h2 className="text-2xl md:text-3xl font-bold text-[#043C5C] mb-4">{item.title}</h2>
                                     <p className="text-gray-600 leading-relaxed">{item.description}</p>
                                 </div>

@@ -81,7 +81,7 @@ function page() {
 
               <div>
                             {info.map((item, index) => (
-                                <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-16 max-w-6xl my-10 ${index % 2 === 0 ? "" : "ms-auto"}`}>
+                                <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-5 lg:p-16 max-w-6xl my-10 ${index % 2 === 0 ? "" : "ms-auto"}`}>
                                     <h2 className="text-2xl md:text-3xl font-bold text-[#043C5C] mb-4">{item.title}</h2>
                                     <p className="text-gray-600 leading-relaxed">{item.description}</p>
                                 </div>
