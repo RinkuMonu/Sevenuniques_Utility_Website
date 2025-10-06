@@ -37,8 +37,8 @@ function page() {
     };
 
     const LetterCircle = ({ letter }) => (
-        <div className="flex h-20 w-20 items-center justify-center rounded-full  p-1 shadow-inner md:h-24 md:w-24">
-            <div className="flex h-full w-full items-center justify-center rounded-full border-4 border-[#9F0201]">
+        <div className="flex h-20 w-20 items-center justify-center rounded-full  p-1 md:shadow-inner md:h-24 md:w-24">
+            <div className="flex h-full w-full items-center justify-center rounded-full md:border-4 border-[#9F0201]">
                 <span className="font-sans text-6xl font-medium text-[#9F0201] md:text-6xl">
                     {letter}
                 </span>

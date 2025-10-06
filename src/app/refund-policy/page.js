@@ -161,9 +161,9 @@ export default function RefundPolicy() {
                         <div className="inline-block bg-gradient-to-r from-[#358EBA] to-[#24576C] text-white font-medium px-8 py-2 rounded-full mb-4 shadow-md">
                           Cancellation & Refund Policy
                         </div>
-                        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 mt-4">
+                        <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 mt-4">
                           You can cancel your service within 7 days of purchase for a refund as per our policy
-                        </h1>
+                        </h3>
                         <div className="h-1 w-20 bg-gradient-to-r from-[#358EBA] to-[#24576C] mb-6 rounded-full"></div>
                         <p className="text-gray-600 text-lg leading-relaxed">
                           Our refund policy is designed to be fair and transparent. We understand that circumstances may change, and we strive to make the cancellation and refund process as straightforward as possible. Below you'll find detailed information about our policies, eligibility criteria, and processes.

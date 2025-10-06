@@ -104,9 +104,9 @@ const CreditScoreReport = () => {
         <div className=''>
             {/* Left Column */}
           <div className="flex flex-col items-center lg:items-start">
-            <h1 className="text-2xl md:text-5xl font-bold text-[#0C3D4C] text-center lg:text-left">
+            <h3 className="text-2xl md:text-5xl font-bold text-[#0C3D4C] text-center lg:text-left">
               Credit Score Check, <br/> Bilkul Free
-            </h1>
+            </h3>
         
               
           

@@ -69,9 +69,9 @@ const HomeOnboarding = () => {
 
                 {/* Header Text Section */}
                 <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase text-center">PRODUCT</p>
-                <h1 className="mt-2 text-4xl md:text-4xl font-bold text-[#0C3D4C] text-center">
+                <h3 className="mt-2 text-4xl md:text-4xl font-bold text-[#0C3D4C] text-center">
                     Seamless Onboarding, Hassle-Free Journey
-                </h1>
+                </h3>
 
                 {/* Tabs Section */}
                 <div className="my-10 flex justify-center items-center gap-2 md:gap-4">
@@ -100,7 +100,7 @@ const HomeOnboarding = () => {
                     {/* Center Column Image */}
                     <div>
                         <div
-                            className="relative w-full h-[450px]  bg-center bg-no-repeat bg-cover hidden lg:flex items-center justify-center  md:block"
+                            className="relative w-full h-[450px]  bg-center bg-no-repeat bg-cover hidden lg:flex items-center justify-center  "
                             style={{ backgroundImage: `url('/home/mobilebg.png')` }}
                         >
                             <div className="w-full max-w-4xl mt-40 ">

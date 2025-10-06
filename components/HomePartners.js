@@ -48,9 +48,9 @@ const HomePartners = () => {
       <div className=" mx-auto px-4 py-12">
         <div className="text-center mb-12">
           <p className="text-sm font-semibold text-[#24576C] tracking-widest">PARTNERS WITH US</p>
-          <h1 className="mt-2 text-3xl md:text-5xl font-bold text-[#0C3D4C]">
+          <h3 className="mt-2 text-3xl md:text-5xl font-bold text-[#0C3D4C]">
             Join Hands, Unlock Opportunities
-          </h1>
+          </h3>
           <p className="mt-4 max-w-2xl mx-auto text-gray-500">
             At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio DignissimosAt Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio
           </p>

@@ -19,6 +19,7 @@ export default function PromotionSlider({sliderImages}) {
         responsive: [
             { breakpoint: 1024, settings: { slidesToShow: 2 } },
             { breakpoint: 768, settings: { slidesToShow: 1 } },
+             { breakpoint: 480, settings: { slidesToShow: 1, dots: true } }
         ],
     };
 
@@ -27,7 +28,7 @@ export default function PromotionSlider({sliderImages}) {
             <div className="  px-4 lg:px-8">
                 <Slider {...settings}>
                     {sliderImages.map((image) => (
-                        <div key={image.id} className="p-2 flex items-center h-full">
+                        <div key={image.id} className="p-2 flex items-center h-full justify-center">
                             <Image
                                 src={image.url}
                                 alt={image.alt}

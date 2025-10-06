@@ -85,7 +85,7 @@ function page() {
 
               <div className="relative z-10 h-full">
                 <div className='max-w-xl'>
-                  <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">Earn More, Grow More With Religare</h1>
+                  <h3 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">Earn More, Grow More With Religare</h3>
                   <p className="text-gray-500 mb-8 leading-relaxed">
                     At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio
                     Odio Dignissimos Ducimus Odio Dignissimos At Vero Eos Et Accusamus Et At
@@ -137,9 +137,9 @@ function page() {
           <div className=" text-white flex items-center justify-center " >
             <div className="container mx-auto py-12 max-w-4xl">
               <div className="text-left mb-12">
-                <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+                <h3 className="text-3xl md:text-5xl font-bold leading-tight">
                   Paise bhejo instantly, <br />kahin bhi kabhi bhi
-                </h1>
+                </h3>
                 <p className="mt-6 max-w-2xl text-gray-400">
                   At Vero Eos Et Accusamus vero eos et accusamus et iusto odio dignissimos ducimus  Et Iusto Odio Dignissimos Ducimus Odio DignissimosAt Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio
                 </p>

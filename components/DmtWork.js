@@ -31,7 +31,7 @@ export default function DmtWork() {
                 {/* Header Section */}
                 <div className="mb-12">
                     <p className="text-[#0C3D4C] uppercase font-semibold text-sm">How it work</p>
-                    <h1 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] mt-2">Transparent Steps, Seamless Service</h1>
+                    <h3 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] mt-2">Transparent Steps, Seamless Service</h3>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-8 md:gap-4">
                     {steps.map((step, index) => (

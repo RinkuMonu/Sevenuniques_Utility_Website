@@ -215,7 +215,7 @@ export default function App() {
                 {/* Left Side: Inputs */}
                 <div className="flex flex-col space-y-8">
                     <div>
-                        <h1 className="text-3xl font-bold text-gray-800">EMI Samjho,</h1>
+                        <h3 className="text-3xl font-bold text-gray-800">EMI Samjho,</h3>
                         <h2 className="text-3xl font-bold text-[#0C3D4C]">Budget Control Karo</h2>
                     </div>
 

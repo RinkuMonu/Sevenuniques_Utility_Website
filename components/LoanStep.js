@@ -41,9 +41,9 @@ const LoanStep = () => {
             <div className="w-full max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div className="">
-                        <h1 className="text-2xl sm:text-4xl font-bold leading-tight mb-6 text-[#0C3D4C]">
+                        <h3 className="text-2xl sm:text-4xl font-bold leading-tight mb-6 text-[#0C3D4C]">
                             Paise Ka Solution, Turant <br className="hidden sm:block" /> SevenUnique Se
-                        </h1>
+                        </h3>
                         <p className="text-gray-500 leading-relaxed mb-8 ">
                             At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos At Vero Eos Et Accusamus Et At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos
                         </p>

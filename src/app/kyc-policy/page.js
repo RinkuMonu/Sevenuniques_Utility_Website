@@ -132,9 +132,9 @@ export default function KycPolicy() {
                         <div className="inline-block bg-gradient-to-r from-[#358EBA] to-[#24576C] text-white font-medium px-8 py-2 rounded-full mb-4 shadow-md">
                           KYC Policy & Onboarding Process
                         </div>
-                        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 mt-4">
+                        <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 mt-4">
                           We follow a strict KYC policy to verify identity and ensure compliance
-                        </h1>
+                        </h3>
                         <div className="h-1 w-20 bg-gradient-to-r from-[#358EBA] to-[#24576C] mx-auto mb-6 rounded-full"></div>
                         <p className="text-gray-600 text-lg leading-relaxed">
                           Our KYC process ensures compliance with legal standards and helps us

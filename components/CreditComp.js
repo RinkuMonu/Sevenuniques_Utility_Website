@@ -27,10 +27,10 @@ export default function CreditComp() {
         
         {/* Left Content Section */}
         <div className="text-white text-center lg:text-left animate-fade-in-up">
-          <h1 className="text-2xl lg:text-4xl  font-bold leading-tight mb-4">
+          <h3 className="text-2xl lg:text-4xl  font-bold leading-tight mb-4">
             Ek Card, <br />
             Multiple Fayde
-          </h1>
+          </h3>
           <p className="text-gray-300 text-base md:text-lg mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
             At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos At Vero Eos Et Accusamus Et At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos At Vero Eos
           </p>

@@ -20,9 +20,9 @@ const Eligibility = ({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Side Content */}
           <div className="space-y-6">
-            <h1 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] max-w-lg">
+            <h3 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] max-w-lg">
               {title}
-            </h1>
+            </h3>
             <div className="grid grid-cols-2 gap-4 pt-4">
               {infoData.map((item, index) => (
                 <InfoCard key={index} label={item.label} value={item.value} />
