@@ -30,11 +30,40 @@ function page() {
             </div>
         </div>
     );
- const info = [
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                ]
+    const info = [
+        { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
+        { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
+    ]
     const text = "CREDIT CARD";
+
+    const creditdata ={
+  heading :" Simple Steps, Instant Approval" , 
+   stepsData : [
+  {
+    step: 1,
+    title: 'Fill Application Form',
+    description: 'Start by filling out the credit card application online through the bank\'s website/app or offline at the branch. Provide your basic details such as name, mobile number, email ID, and occupation.',
+    image: '/credit/credits1.png',
+  },
+  {
+    step: 2,
+    title: 'Submit Documents',
+    intro: 'Attach/upload the necessary documents for verification:',
+    details: [
+      '<strong>Identity Proof</strong> &ndash; Aadhaar, PAN, Passport, or Voter ID',
+      '<strong>Address Proof</strong> &ndash; Utility Bill, Driving License, Rent Agreement',
+      '<strong>Income Proof</strong> &ndash; Salary Slip, ITR, or Bank Statement',
+    ],
+    image: '/credit/credits2.png',
+  },
+  {
+    step: 3,
+    title: 'Get Approval',
+    description: 'Once your documents are verified, the bank will review your application. If everything is in order, you will receive an approval notification, and your new credit card will be dispatched.',
+    image: '/credit/credits3.png',
+  },
+]
+}
     return (
         <>
             <ServiceBanner data={data} />
@@ -71,26 +100,26 @@ function page() {
                 </div>
             </section>
             <BankLogoGrid />
-            <CreditSlider />
+            <CreditSlider  />
             <div className='mt-20 pb-10 lg:pb-40'>
                 <BenefitsSection2 />
             </div>
             <CardGrid />
-            <CreditComp/>
-<CreditChoice/>
+            <CreditComp />
+            <CreditChoice />
 
-              <div>
-                            {info.map((item, index) => (
-                                <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-5 lg:p-16 max-w-6xl my-10 ${index % 2 === 0 ? "" : "ms-auto"}`}>
-                                    <h2 className="text-2xl md:text-3xl font-bold text-[#043C5C] mb-4">{item.title}</h2>
-                                    <p className="text-gray-600 leading-relaxed">{item.description}</p>
-                                </div>
-                            ))}
-                        </div>
+            <div>
+                {info.map((item, index) => (
+                    <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-5 lg:p-16 max-w-6xl my-10 ${index % 2 === 0 ? "" : "ms-auto"}`}>
+                        <h2 className="text-2xl md:text-3xl font-bold text-[#043C5C] mb-4">{item.title}</h2>
+                        <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                    </div>
+                ))}
+            </div>
 
-                           <PartnersSection/>
-            <TestimonialSlider/>
-            <ContactBanner/>
+            <PartnersSection />
+            <TestimonialSlider />
+            <ContactBanner />
         </>
     )
 }

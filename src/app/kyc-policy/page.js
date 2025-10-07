@@ -121,7 +121,7 @@ export default function KycPolicy() {
                         <div className="mb-6">
                           <div className="w-20 h-20 mx-auto bg-gradient-to-r from-[#358EBA] to-[#24576C] rounded-full flex items-center justify-center">
                             <Image
-                              src="/Image/kyc-img.png"
+                              src="/privacy/kyc-img.png"
                               alt="KYC Policy Icon"
                               width={40}
                               height={40}

@@ -250,7 +250,7 @@ function Page() {
                                 <p className="text-sm font-bold uppercase tracking-widest text-[#0C3D4C]">{data.subheading}</p>
                                 <h2 className="mt-2 text-4xl md:text-5xl font-bold text-[#0C3D4C] leading-tight">{data.heading}</h2>
                                 <p className="mt-4 my-8 text-base text-[#5D5D5D] max-w-md">{data.description}</p>
-                                <Link href="/" className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]">
+                                <Link href="https://utility.sevenuniques.in/register" className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]">
                                     <span className="block px-8 py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#0d2f4d]">
                                         Register now
                                     </span>

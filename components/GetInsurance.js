@@ -11,29 +11,33 @@ const cardData = [
     title: "Bike Insurance",
     subheading:"Ride Safe, Stay Protected",
     buttonText: "Get covered now",
+    link:"/coming-soon"
   },
   {
     id: 2,
     title: "Car Insurance",
-    subheading:"Your Car, Our Care",
-    buttonText: "Insure my car.",
+    buttonText: "Protect my taxi",
+     subheading:"Your car , our car.",
+     link:"/coming-soon"
   },
   {
     id: 3,
     title: "Taxi Car",
     subheading:"Protect Your Business Rides",
     buttonText: "Insure my car",
+     link:"/coming-soon"
   },
   {
     id: 4,
     title: "Commercial Vehicle",
     subheading:"Keep Your Business Moving",
     buttonText: "Insure my bike",
+     link:"/coming-soon"
   },
 ];
 
 // --- The Card Component ---
-const InsuranceCard = ({ title, buttonText, bgImage, subheading }) => {
+const InsuranceCard = ({ title, buttonText, bgImage ,subheading , link }) => {
   return (
     <div
       className="relative w-full h-56 rounded-2xl overflow-hidden bg-cover bg-center transition-transform duration-300 ease-in-out hover:scale-105"
@@ -48,7 +52,7 @@ const InsuranceCard = ({ title, buttonText, bgImage, subheading }) => {
         </h3>
         <p>{subheading}</p>
       <div className='bg-white w-48 ms-auto p-2 rounded-t-3xl rounded-bl-3xl'>
-          <Link href="" className="mt-auto self-end flex items-center justify-center gap-2  py-2.5 bg-[#0077CC] text-white font-semibold rounded-full text-sm shadow-md hover:bg-[#005fa3] transition-colors duration-300">
+          <Link href={link} className="mt-auto self-end flex items-center justify-center gap-2  py-2.5 bg-[#0077CC] text-white font-semibold rounded-full text-sm shadow-md hover:bg-[#005fa3] transition-colors duration-300">
           {buttonText}
           <MoveRight className="w-4 h-4" />
         </Link>
@@ -73,6 +77,8 @@ export default function GetInsurance() {
               key={card.id}
               title={card.title}
               buttonText={card.buttonText}
+              subheading={card.subheading}
+              link={card.link}
               bgImage={backgroundImageUrl}
             />
           ))}

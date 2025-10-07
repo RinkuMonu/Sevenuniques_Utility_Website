@@ -6,57 +6,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-const slide = {
-  image: "/loan/loan3.png",
-  heading: (
-    <>
-      At Sevenunique, <br />
-      how to secure  <br />
-      a <span className="text-blue-300">business</span> loan.
-    </>
-  ),
-  sliderData: [
-    {
-      step: 1,
-      title: "Apply Online",
-      image: "/loan/loan4.png",
-      cta: "Request Calculations",
-      details: [
-        "Construction Equipment Loan by Visit Sevenunique.",
-        "Fill in personal information: Name, Mobile Number, Aadhaar, PAN",
-        "Select the type of equipment and the amount of the loan",
-        "Check the eligible loan amount on the fly.",
-      ],
-    },
-    {
-      step: 2,
-      title: "Upload Documents",
-      image: "/loan/loan12.png",
-      cta: "Submit Docs",
-      details: [
-        "Add PAN Card and Aadhaar Card.",
-        "Provide business documents—GST and business registration",
-        "Give equipment quote and supplier information.",
-        "Our system authenticates documents in a short time",
-      ],
-    },
-    {
-      step: 3,
-      title: "Receive Your Loan",
-      image: "/loan/loan13.png",
-      cta: "Get Construction Equipment Loan Now",
-      details: [
-        "Get rapid approval with few documents.",
-        "Direct deposit of the loan to your account.",
-        "Money sent out in less than 48 hours",
-        "Buy your building materials now.",
-      ],
-    },
-  ],
-};
 
 // --- Main Component ---
-const VerticalSlider = () => {
+const VerticalSlider = ({slide}) => {
   const [activeStep, setActiveStep] = useState(0);
   const scrollContainerRef = useRef(null);
 
@@ -95,7 +47,7 @@ const VerticalSlider = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug max-w-sm z-20">
               {slide.heading}
             </h2>
-            <div className="relative hidden md:flex justify-center md:block mt-6 md:mt-0">
+            <div className="relative hidden  justify-center md:block mt-6 md:mt-0">
               <Image
                 src={slide.image}
                 width={400}

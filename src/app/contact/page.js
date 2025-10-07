@@ -6,6 +6,8 @@ import BenefitsSection2 from "../../../components/BenefitsSection2";
 import PartnersSection from "../../../components/PartnersSection";
 import TestimonialSlider from "../../../components/TestimonialSlider";
 import ContactBanner from "../../../components/ContactBanner";
+import { MdOutlineLocationOn, MdOutlineMail, MdOutlinePhone } from "react-icons/md";
+import { FaRegClock } from "react-icons/fa6";
 
 function Contact() {
   const data = {
@@ -121,7 +123,7 @@ function Contact() {
                   {data.description}
                 </p>
                 <Link
-                  href="/"
+             href="https://utility.sevenuniques.in/register"
                   className="inline-block mt-6 rounded-full border border-[#0C3D4C] p-[2px]"
                 >
                   <span className="block px-6 py-2 md:px-8 md:py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 hover:bg-transparent hover:text-[#0d2f4d]">
@@ -198,7 +200,7 @@ function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full border border-[#39464F] rounded-md px-4 py-2 text-sm md:text-base focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-[1px_1px_10px_0px_#d6d6d6]"
-                  placeholder="Kanak Sharma"
+                  placeholder="Enter your name"
                 />
                 {errors.name && (
                   <p className="text-red-500 text-sm">{errors.name}</p>
@@ -216,7 +218,7 @@ function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full border border-[#39464F] rounded-md px-4 py-2 text-sm md:text-base focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-[1px_1px_10px_0px_#d6d6d6]"
-                  placeholder="email@company.com"
+                  placeholder="Enter your email"
                 />
                 {errors.email && (
                   <p className="text-red-500 text-sm">{errors.email}</p>
@@ -235,7 +237,7 @@ function Contact() {
                   onChange={handleChange}
                   maxLength="10"
                   className="w-full border border-[#39464F] rounded-md px-4 py-2 text-sm md:text-base focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-[1px_1px_10px_0px_#d6d6d6]"
-                  placeholder="4856545155"
+                  placeholder="Enter your phone number"
                 />
                 {errors.phone && (
                   <p className="text-red-500 text-sm">{errors.phone}</p>
@@ -298,7 +300,7 @@ function Contact() {
 
             <ul className="space-y-5 text-[#39464F] text-sm md:text-base">
               <li className="flex items-start gap-3">
-                <span>📧</span>
+                <span><MdOutlineMail  className="text-[#24576C] text-lg mt-2"/></span>
                 <div>
                   <p className="font-bold text-lg">Email</p>
                   <p className="text-gray-500 text-sm">email@company.com</p>
@@ -306,15 +308,15 @@ function Contact() {
               </li>
 
               <li className="flex items-start gap-3">
-                <span>📞</span>
+                <span><MdOutlinePhone  className="text-[#24576C] text-lg mt-2 "/></span>
                 <div>
                   <p className="font-bold text-lg">Call us</p>
                   <p className="text-gray-500 text-sm">25456825599</p>
                 </div>
               </li>
 
-              <li className="flex items-start gap-3">
-                <span>📍</span>
+              <li className="flex align-middle items-center gap-3">
+                <span><MdOutlineLocationOn className="text-[#24576C] text-xl "/></span>
                 <div>
                   <p className="font-bold text-lg">Visit us</p>
                   <p className="text-gray-500 text-sm">
@@ -324,7 +326,7 @@ function Contact() {
               </li>
 
               <li className="flex items-start gap-3">
-                <span>⏰</span>
+                <span><FaRegClock  className="text-[#24576C]   mt-1"/></span>
                 <div>
                   <p className="font-bold text-lg">Office Hours</p>
                   <p className="text-gray-500 text-sm">

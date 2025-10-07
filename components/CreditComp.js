@@ -34,7 +34,7 @@ export default function CreditComp() {
           <p className="text-gray-300 text-base md:text-lg mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
             At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos At Vero Eos Et Accusamus Et At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos At Vero Eos
           </p>
-          <Link href="/" className=" text-white font-semibold py-3 px-8 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-cyan-500/50 transform hover:scale-105"  style={{
+          <Link href="/coming-soon" className=" text-white font-semibold py-3 px-8 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-cyan-500/50 transform hover:scale-105"  style={{
                             background: "linear-gradient(90deg,#358EBA  0%, #24576C 100%)"
                         }}>
             Apply Now

@@ -105,7 +105,7 @@ const CreditCard = ({ bank, name, points, title ,tag , image }) => {
                         <div className="text-[#24576C]  text-sm font-semibold bg-[#E1FFBF]  px-2 py-1 inline-block">
                             BEST FOR
                         </div>
-                        <Link href="" className="text-[#24576C] " ><Heart /></Link>
+                        {/* <Link href="" className="text-[#24576C] " ><Heart /></Link> */}
                     </div>
                     <h3 className="text-xl font-semibold text-[#24576C] mt-2">
                        {title}
@@ -113,9 +113,9 @@ const CreditCard = ({ bank, name, points, title ,tag , image }) => {
                     <p className="text-[#24576C] mt-1">
                        {points}
                     </p>
-                    <a href="#" className="text-[#018BDA] font-bold ">
+                    <Link href="/coming-soon" className="text-[#018BDA] font-bold ">
                         Offers more
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Action Buttons */}
