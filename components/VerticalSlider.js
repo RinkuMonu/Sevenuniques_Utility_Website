@@ -22,10 +22,10 @@ const slide = {
       image: "/loan/loan4.png",
       cta: "Request Calculations",
       details: [
-        "The business loan platform of Visit Sevenunique.",
-        "You will need to fill in your basic details: name, mobile number, Aadhaar, and PAN.",
-        "Select the type of loan (business loan, working capital, expansion loan, etc.).",
-        "Ask to calculate a loan in order to verify your eligibility.",
+        "Construction Equipment Loan by Visit Sevenunique.",
+        "Fill in personal information: Name, Mobile Number, Aadhaar, PAN",
+        "Select the type of equipment and the amount of the loan",
+        "Check the eligible loan amount on the fly.",
       ],
     },
     {
@@ -34,18 +34,22 @@ const slide = {
       image: "/loan/loan12.png",
       cta: "Submit Docs",
       details: [
-        "Add the required documents: PAN Card, Aadhaar Card, business financials, and income proof (bank statements or tax returns).",
-        "Your documents will be instantly checked by our system, which will then be processed much faster.",
+        "Add PAN Card and Aadhaar Card.",
+        "Provide business documents—GST and business registration",
+        "Give equipment quote and supplier information.",
+        "Our system authenticates documents in a short time",
       ],
     },
     {
       step: 3,
       title: "Receive Your Loan",
       image: "/loan/loan13.png",
-      cta: "Get Money Now",
+      cta: "Get Construction Equipment Loan Now",
       details: [
-        "Upon the loan approval, the funds of the business loan will be transferred to your business account.",
-        "You can get money within a few hours and use it immediately for the business.",
+        "Get rapid approval with few documents.",
+        "Direct deposit of the loan to your account.",
+        "Money sent out in less than 48 hours",
+        "Buy your building materials now.",
       ],
     },
   ],
@@ -91,15 +95,15 @@ const VerticalSlider = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug max-w-sm z-20">
               {slide.heading}
             </h2>
-           <div className="relative hidden md:flex justify-center md:block mt-6 md:mt-0">
-  <Image
-    src={slide.image}
-    width={400}
-    height={400}
-    alt="Happy customer with loan"
-    className="w-48 h-64 sm:w-64 sm:h-72 md:w-[510px] md:h-[450px] object-cover md:absolute md:-bottom-8 md:left-40 z-10"
-  />
-</div>
+            <div className="relative hidden md:flex justify-center md:block mt-6 md:mt-0">
+              <Image
+                src={slide.image}
+                width={400}
+                height={400}
+                alt="Happy customer with loan"
+                className="w-48 h-64 sm:w-64 sm:h-72 md:w-[510px] md:h-[450px] object-cover md:absolute md:-bottom-8 md:left-40 z-10"
+              />
+            </div>
           </div>
         </div>
 

@@ -12,8 +12,8 @@ function page() {
     {
         id: 1,
         subheading: 'DMT',
-        heading: 'Aapka Paisa, Aapke Apno Tak, Seedha!',
-        description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable Domestic Money Transfer service.',
+        heading: 'Ek System, Sabhi Bill',
+        description: 'Make all your payments hassle-free using the integrated bill payment system in India. Safe, quick, and hassle-free.',
         bgImage: '/bbps/bbpsbg.png',
         centerImage: '/bbps/bbps1.png',
     }
