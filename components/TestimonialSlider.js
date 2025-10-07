@@ -52,7 +52,7 @@ const TestimonialSlider = () => {
 
         {/* Right Slider Panel */}
         <div className="w-full md:w-5/12 lg:w-9/12 flex items-center justify-center py-10 lg:p-16 relative">
-          <div className="relative w-full max-w-4xl h-[28rem] sm:h-80 flex items-center justify-center">
+          <div className="relative w-full max-w-4xl h-[28rem] sm:h-80 flex items-center justify-center overflow-x-hidden md:overflow-x-visible">
             {testimonials.map((testimonial, index) => {
               let position = "hidden";
               const distance = (index - currentIndex + testimonials.length) % testimonials.length;

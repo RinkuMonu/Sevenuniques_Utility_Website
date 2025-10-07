@@ -12,10 +12,10 @@ import { FaRegClock } from "react-icons/fa6";
 function Contact() {
   const data = {
     id: 1,
-    subheading: "BLOG",
-    heading: "Ideas Jo Kare Connect Humara Blog",
+    subheading: "Contact",
+    heading: "Get in Touch with Our Support Team",
     description:
-      "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et ",
+      "We’re here to help you with any questions or concerns. Reach out via phone, email, or WhatsApp, and we’ll respond promptly. ",
     bgImage: "/image/contact-bg-img.png",
     centerImage: "/image/contact-main-img.png",
   };
@@ -186,7 +186,7 @@ function Contact() {
           {/* Left Form */}
           <div className="border rounded-lg p-6 sm:p-8 shadow-[2px_2px_15px_0px_rgba(188,188,188,0.4)]">
             <h2 className="text-2xl md:text-3xl font-bold text-[#39464F] mb-6">
-              Contact Us
+     Contact Info Section:
             </h2>
             <form onSubmit={handleSubmit} noValidate>
               {/* Full Name */}
@@ -303,7 +303,8 @@ function Contact() {
                 <span><MdOutlineMail  className="text-[#24576C] text-lg mt-2"/></span>
                 <div>
                   <p className="font-bold text-lg">Email</p>
-                  <p className="text-gray-500 text-sm">email@company.com</p>
+                   <p className="text-gray-500 text-sm">support@7unique.in</p>
+                  <p className="text-gray-500 text-sm"> info@7unique.in</p>
                 </div>
               </li>
 
@@ -311,28 +312,32 @@ function Contact() {
                 <span><MdOutlinePhone  className="text-[#24576C] text-lg mt-2 "/></span>
                 <div>
                   <p className="font-bold text-lg">Call us</p>
-                  <p className="text-gray-500 text-sm">25456825599</p>
+                  <p className="text-gray-500 text-sm"> 0141-4511098</p>
                 </div>
               </li>
 
               <li className="flex align-middle items-center gap-3">
-                <span><MdOutlineLocationOn className="text-[#24576C] text-xl "/></span>
+                <span><FaRegClock  className="text-[#24576C]   mt-1"/></span>
                 <div>
-                  <p className="font-bold text-lg">Visit us</p>
+                  <p className="font-bold text-lg">Office Hours: </p>
                   <p className="text-gray-500 text-sm">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
+                   Mon–Fri: 9:30 AM to 6:30 PM <br></br>
+ Sat–Sun: Closed
                   </p>
                 </div>
               </li>
 
-              <li className="flex items-start gap-3">
-                <span><FaRegClock  className="text-[#24576C]   mt-1"/></span>
+               <li className="flex align-middle items-center gap-3">
+                <span><MdOutlineLocationOn className="text-[#24576C] text-xl "/></span>
                 <div>
-                  <p className="font-bold text-lg">Office Hours</p>
+                  <p className="font-bold text-lg">Visit us</p>
                   <p className="text-gray-500 text-sm">
-                    Mon–Fri : 9.30AM to 6.30PM
+                   <span className="font-bold">Head Office:</span> Plot No 97, Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura, Jaipur, Rajasthan, India, 302017
                   </p>
-                  <p className="text-gray-500 text-sm">Sat–Sun : Closed</p>
+                   <p className="text-gray-500 text-sm">
+                   <span className="font-bold">Corporate Office:</span>Office No. 101/2, Vakratunda Corporate Park Premises Co-operative Society Limited, Off Aarey Road, Goregaon (East), Mumbai – 400 063
+
+                  </p>
                 </div>
               </li>
             </ul>
@@ -352,10 +357,10 @@ function Contact() {
       {/* ----------- MAP SECTION ----------- */}
       <section className="relative bg-white py-8 text-center px-4 sm:px-6 lg:px-16 xl:px-24 lg:mt-12">
         <p className="text-sm md:text-lg text-[#115D8E] mb-2 font-bold">
-          Here&apos;s where you can find us!
+         Map Section:
         </p>
         <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-8 md:mb-16">
-          We&apos;re easy to find and always ready to connect
+       Here's where you can find us! We’re easy to find and always ready to connect.
         </h3>
 
         <div className="overflow-hidden rounded-lg shadow-md mb-6">

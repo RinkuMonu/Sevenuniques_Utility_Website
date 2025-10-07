@@ -6,76 +6,65 @@ import React from "react";
 const cards = [
     {
         id: 1,
-         image:"/credit/cc1.png" ,
+        image: "/credit/cc1.png",
         tag: "Hot Selling",
         bank: "Axis Bank",
-        name: "ACE",
-        holder: "VINIT KUMAR",
-        type: "VISA Signature",
-             points:" Lounge Access | Golf Rounds | BookMyShow" ,
-          title:" Premium Lifestyle Offers",
+        points: "Lounge Access | Golf Rounds | BookMyShow",
+        title: "Top Lifestyle Services.",
+        benefit: "Earn unlimited rewards with complimentary lounge access",
     },
     {
         id: 2,
-         image:"/credit/cc2.png" ,
+        image: "/credit/cc2.png",
         tag: "Hot Selling",
         bank: "HDFC Bank",
-        name: "Millennia",
-        holder: "RAVI SINGH",
-        type: "VISA Platinum",
-             points:" Lounge Access | Golf Rounds | BookMyShow" ,
-          title:" Premium Lifestyle Offers",
+        points: "Lounge Access | Golf Rounds | BookMyShow",
+        title: "Premium Lifestyle Offers",
+        benefit: "Free airport lounge visits and movie offers",
     },
     {
         id: 3,
-         image:"/credit/cc3.png" ,
+        image: "/credit/cc3.png",
         tag: "Hot Selling",
         bank: "ICICI Bank",
-        name: "Coral",
-        holder: "ANKIT SHARMA",
-        type: "MasterCard",
-             points:" Lounge Access | Golf Rounds | BookMyShow" ,
-          title:" Premium Lifestyle Offers",
+        points: "Lounge Access | Golf Rounds | BookMyShow",
+        title: "Premium Lifestyle Offers",
+        benefit: "1 complimentary airport lounge visit per quarter",
     },
     {
         id: 4,
-         image:"/credit/cc4.png" ,
+        image: "/credit/cc4.png",
         tag: "Hot Selling",
         bank: "SBI Card",
-        name: "Elite",
-        points:" Lounge Access | Golf Rounds | BookMyShow" ,
-        holder: "NEHA VERMA",
-          title:" Premium Lifestyle Offers",
-        type: "VISA Infinite",
+        points: "Lounge Access | Golf Rounds | BookMyShow",
+        title: "High-end Lifestyle Offers",
+        benefit: "Complimentary Club Vistara membership and lounge access",
     },
     {
         id: 5,
-         image:"/credit/cc5.png" ,
+        image: "/credit/cc5.png",
         tag: "Hot Selling",
         bank: "Kotak Bank",
-        name: "League",
-        holder: "SANJAY KUMAR",
-        points:" Lounge Access | Golf Rounds | BookMyShow" ,
-          title:" Premium Lifestyle Offers",
-        type: "Rupay",
+        points: "Lounge Access | Golf Rounds | BookMyShow",
+        title: "Premium Lifestyle Offers",
+        benefit: "Fuel surcharge waiver and travel insurance benefits",
     },
     {
         id: 6,
-        image:"/credit/cc6.png" ,
+        image: "/credit/cc6.png",
         tag: "Hot Selling",
         bank: "IndusInd Bank",
-        name: "Platinum Aura",
-        holder: "PRIYA MEHTA",
-        points:" Lounge Access | Golf Rounds | BookMyShow" ,
-        title:" Premium Lifestyle Offers",
-        type: "VISA Gold",
+        points: "Lounge Access | Golf Rounds | BookMyShow",
+        title: " Luxurious Lifestyle Deals",
+        benefit: "Zero fuel surcharge and complimentary concierge service",
     },
 ];
 
-const CreditCard = ({ bank, name, points, title ,tag , image }) => {
+
+const CreditCard = ({ bank, points, title, tag, image, benefit }) => {
     return (
         <div className="  rounded-2xl shadow-xl overflow-visible max-w-lg">
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 overflow-visible">
 
                 <div className="col-span-1 flex flex-col justify-between md:order-2">
@@ -96,30 +85,39 @@ const CreditCard = ({ bank, name, points, title ,tag , image }) => {
                     />
                 </div>
             </div>
-            <div className="py-6 px-4 lg:mt-10 ">
+            <div className="py-6 px-4 lg:mt-10 flex flex-col">
 
 
 
                 <div className="mt-6">
                     <div className="flex justify-between">
-                        <div className="text-[#24576C]  text-sm font-semibold bg-[#E1FFBF]  px-2 py-1 inline-block">
+                        <div className="text-[#24576C] text-sm font-semibold bg-[#E1FFBF] px-2 py-1 inline-block">
                             BEST FOR
                         </div>
-                        {/* <Link href="" className="text-[#24576C] " ><Heart /></Link> */}
+                        {/* <Link href="" className="text-[#24576C]"><Heart /></Link> */}
                     </div>
+
                     <h3 className="text-xl font-semibold text-[#24576C] mt-2">
-                       {title}
+                        {title}
                     </h3>
+
                     <p className="text-[#24576C] mt-1">
-                       {points}
+                        <span className="font-bold">Discount : </span> {points}
                     </p>
-                    <Link href="/coming-soon" className="text-[#018BDA] font-bold ">
+                    {benefit && (
+                        <p className="text-[#5D5D5D] font-medium mt-1">
+                            <span className="font-bold text-black">Benefits : </span> {benefit}
+                        </p>
+                    )}
+
+                    <Link href="/coming-soon" className="text-[#018BDA] font-bold">
                         Offers more
                     </Link>
                 </div>
 
+
                 {/* Action Buttons */}
-                <div className=" flex space-x-4 justify-end">
+                <div className=" flex space-x-4 justify-end align-bottom">
                     <Link href="" className=" w-fit bg-[#018EDE] text-white font-bold py-2 px-10 rounded-full hover:bg-[#018EDE]/70 transition-colors">
                         Apply
                     </Link>
@@ -135,9 +133,9 @@ const CreditCard = ({ bank, name, points, title ,tag , image }) => {
 export default function CardGrid() {
     return (
         <div className="px-4 lg:px-0   max-w-7xl mx-auto ">
-              <h3 className="text-2xl sm:text-3xl lg:mb-24 font-bold text-[#0C3D4C]">
-            Simple Steps, Instant Approval
-          </h3>
+            <h3 className="text-2xl sm:text-3xl lg:mb-24 font-bold text-[#0C3D4C]">
+                Hot-Selling Credit Cards
+            </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 justify-center lg:gap-y-40 gap-x-10 w-full">
                 {cards.map((card) => (
                     <CreditCard key={card.id} {...card} />

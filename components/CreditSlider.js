@@ -4,25 +4,25 @@ import React, { useState } from 'react';
 const stepsData = [
   {
     step: 1,
-    title: 'Fill Application Form',
+    title: 'Fill out the application form.',
     description: 'Start by filling out the credit card application online through the bank\'s website/app or offline at the branch. Provide your basic details such as name, mobile number, email ID, and occupation.',
     image: '/credit/credits1.png',
   },
   {
     step: 2,
-    title: 'Submit Documents',
+    title: 'Upload Documents ',
     intro: 'Attach/upload the necessary documents for verification:',
     details: [
-      '<strong>Identity Proof</strong> &ndash; Aadhaar, PAN, Passport, or Voter ID',
-      '<strong>Address Proof</strong> &ndash; Utility Bill, Driving License, Rent Agreement',
-      '<strong>Income Proof</strong> &ndash; Salary Slip, ITR, or Bank Statement',
+      '<strong>Proof of identity</strong> &ndash; (Aadhaar, PAN, passport, or voter ID)',
+      '<strong>Proof of address</strong> &ndash; (utility bill, driving license, rental agreement)',
+      '<strong>Proof of income </strong> &ndash; (pay slip, ITR, or bank statement).',
     ],
     image: '/credit/credits2.png',
   },
   {
     step: 3,
-    title: 'Get Approval',
-    description: 'Once your documents are verified, the bank will review your application. If everything is in order, you will receive an approval notification, and your new credit card will be dispatched.',
+    title: 'Approval',
+    description: 'After checking your documents, the bank will process your application. If that is all good, you should receive your approval message, and a new credit card should be sent to you.',
     image: '/credit/credits3.png',
   },
 ];

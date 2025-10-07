@@ -31,18 +31,18 @@ const InfoCard = ({ title, description }) => {
 export default function CreditChoice() {
     const cardData = [
         {
-            title: 'Credit Card Offers',
-            description: 'At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos At',
+            title: 'Credit Card ',
+            description: 'Comparison of various credit cards of leading banks, each with a unique reward, cash back, and lifestyle benefit.',
             isHighlighted: false,
         },
         {
             title: 'Pre-Approved Credit Card',
-            description: 'At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos At',
+            description: 'Check whether you qualify to get pre-approved credit cards and instant approval with a minimum of documentation.',
             isHighlighted: true,
         },
         {
             title: 'ICICI Bank Culinary Treats',
-            description: 'At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos At',
+            description: 'Enjoy the best moments of the finest dining by using ICICI Bank credit cards. Raisin restaurant offers cashback and special privileges.',
             isHighlighted: false,
         },
     ];
@@ -50,7 +50,7 @@ export default function CreditChoice() {
     return (
         <div className="max-w-7xl mx-auto px-4 sm:p-6 lg:px-0">
                  <h3 className="text-2xl lg:text-4xl pb-10 font-bold text-[#0C3D4C]">
-            Simple Steps, Instant Approval
+        Easy 10-Door, Instant Approval
           </h3>
             <div className="bg-white rounded-3xl w-full overflow-hidden">
                 <div className="grid grid-cols-1 lg:grid-cols-12 items-center">

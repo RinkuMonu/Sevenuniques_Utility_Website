@@ -17,7 +17,7 @@ function page() {
         id: 1,
         subheading: 'Credit Card',
         heading: 'Har Swipe Pe Extra Benefits',
-        description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable Domestic Money Transfer service.',
+        description: 'Get points, cashback, and premium treatment with each swipe. Spend on your own, get points, and enjoy points-based perks in the lifestyle customized to you.',
         bgImage: '/credit/creditbg.png',
         centerImage: '/credit/credit1.png',
     }
@@ -31,39 +31,14 @@ function page() {
         </div>
     );
     const info = [
-        { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-        { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
+        { title: "Quick Application and Instant Approval.", description: "Make your credit card applications in a few minutes either online or at your branch.Share your basic details, provide documents, and get approved quickly to start redeeming card benefits. " },
+        { title: "Reward, Cashback, and Lifestyle Benefits.", description: "With each swipe, you’ll earn rewards, cashback, and exclusive offers on dining, shopping, traveling, and much more. You’ll also be able to enjoy exclusive lifestyle benefits, including lounge access, complimentary rounds of golf, partner discounts, and designer lifestyle benefits. " },
+        { title: "Payment Flexibility and 24/7 Support ", description: "Allow easy, secured online and offline transactions. Convert purchases to EMIs, manage your credit limit, and you'll always have an emergency back-up when needed. Go buy-once, twice, thrice, with no fear or worry. " },
+
     ]
     const text = "CREDIT CARD";
 
-    const creditdata ={
-  heading :" Simple Steps, Instant Approval" , 
-   stepsData : [
-  {
-    step: 1,
-    title: 'Fill Application Form',
-    description: 'Start by filling out the credit card application online through the bank\'s website/app or offline at the branch. Provide your basic details such as name, mobile number, email ID, and occupation.',
-    image: '/credit/credits1.png',
-  },
-  {
-    step: 2,
-    title: 'Submit Documents',
-    intro: 'Attach/upload the necessary documents for verification:',
-    details: [
-      '<strong>Identity Proof</strong> &ndash; Aadhaar, PAN, Passport, or Voter ID',
-      '<strong>Address Proof</strong> &ndash; Utility Bill, Driving License, Rent Agreement',
-      '<strong>Income Proof</strong> &ndash; Salary Slip, ITR, or Bank Statement',
-    ],
-    image: '/credit/credits2.png',
-  },
-  {
-    step: 3,
-    title: 'Get Approval',
-    description: 'Once your documents are verified, the bank will review your application. If everything is in order, you will receive an approval notification, and your new credit card will be dispatched.',
-    image: '/credit/credits3.png',
-  },
-]
-}
+
     return (
         <>
             <ServiceBanner data={data} />

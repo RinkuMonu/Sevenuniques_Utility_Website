@@ -3,8 +3,8 @@ import React from 'react';
 
 const PartnersSection = () => {
   const partnerLogos = [
-    "/loan/loan9.png","/loan/loan9.png","/loan/loan9.png","/loan/loan9.png",
-    "/loan/loan9.png","/loan/loan9.png","/loan/loan9.png","/loan/loan9.png",
+    "/bank/idfc-first.png","/bank/bandhan.png","/bank/rbl.png","/bank/au-sfb.png",
+    "/bank/kotak.png", "/bank/axisbank.png","/bank/bajaj-finserv.png","/bank/yes-bank.png","/bank/tata-capital.png" , "/bank/jana-sfb.png"
   ];
 
   // Define the explicit row pattern for inverted triangle
@@ -43,7 +43,7 @@ const PartnersSection = () => {
                   key={index}
                   className="flex w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px] 
                              h-auto items-center justify-center rounded-lg 
-                             border border-gray-200 p-4 shadow-sm 
+                             border border-gray-200 px-2 shadow-sm 
                              transition-shadow duration-300 hover:shadow-md bg-white"
                 >
                   <Image
@@ -51,7 +51,7 @@ const PartnersSection = () => {
                     width={200}
                     height={200}
                     alt={`Partner Logo ${rowIndex}-${index}`}
-                    className="w-full h-auto object-contain"
+                    className="w-full h-24 object-contain"
                   />
                 </div>
               ))}
