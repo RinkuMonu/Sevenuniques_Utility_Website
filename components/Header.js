@@ -43,15 +43,17 @@ export default function Header() {
       <header className="bg-white shadow-lg sticky top-0 z-50">
         <div className="bg-[#0C3D4C] text-white text-sm py-4 px-6 flex justify-between items-center mb-1  hidden md:flex">
           <div className="flex space-x-6">
-            <span className="flex items-center">
-              <Mail className="mr-2 w-5 h-5" /> support@7unique.in
-            </span>
-            <span className="flex items-center">
-              <Phone className="mr-3 w-5 h-5" /> 0141-4511098
-            </span>
+            <a href="mailto:sevenunique4@gmail.com" className="flex items-center">
+              <Mail className="mr-2 w-5 h-5" /> sevenunique4@gmail.com
+            </a>
+
+            <a href="tel:+919251582691" className="flex items-center">
+              <Phone className="mr-3 w-5 h-5" /> +91 92515 82691
+            </a>
+
           </div>
 
-           {/* Buttons (desktop) */}
+          {/* Buttons (desktop) */}
           <div className="hidden md:flex items-center space-x-4">
             <Link
               href="https://utility.finuniques.in/"
@@ -90,11 +92,10 @@ export default function Header() {
                 {link.dropdown ? (
                   <button
                     className={`relative flex items-center gap-1 text-lg font-medium transition group/btn
-            ${
-              ["/services", "/loan"].some((path) => pathname.startsWith(path))
-                ? "text-[#0C3D4C] font-semibold before:w-full"
-                : "text-gray-700 group-hover:text-[#0C3D4C]"
-            }
+            ${["/services", "/loan"].some((path) => pathname.startsWith(path))
+                        ? "text-[#0C3D4C] font-semibold before:w-full"
+                        : "text-gray-700 group-hover:text-[#0C3D4C]"
+                      }
             before:content-[''] before:absolute before:left-0 before:-bottom-1
             before:h-[2px] before:w-0 before:bg-[#0C3D4C] before:transition-all before:duration-300
             group-hover/btn:before:w-full
@@ -106,11 +107,10 @@ export default function Header() {
                   <Link
                     href={link.href}
                     className={`relative font-medium text-lg transition group/link
-            ${
-              pathname === link.href
-                ? "text-[#0C3D4C] font-semibold before:w-full"
-                : "text-gray-700 hover:text-[#0C3D4C]"
-            }
+            ${pathname === link.href
+                        ? "text-[#0C3D4C] font-semibold before:w-full"
+                        : "text-gray-700 hover:text-[#0C3D4C]"
+                      }
             before:content-[''] before:absolute before:left-0 before:-bottom-1
             before:h-[2px] before:w-0 before:bg-[#0C3D4C] before:transition-all before:duration-300
             hover:before:w-full
@@ -192,11 +192,10 @@ export default function Header() {
                   ) : (
                     <Link
                       href={link.href}
-                      className={`block font-medium ${
-                        pathname === link.href
+                      className={`block font-medium ${pathname === link.href
                           ? "text-teal-700 font-semibold"
                           : "text-gray-700 hover:text-teal-600"
-                      }`}
+                        }`}
                     >
                       {link.name}
                     </Link>
