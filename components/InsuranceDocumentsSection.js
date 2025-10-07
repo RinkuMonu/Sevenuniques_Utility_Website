@@ -8,19 +8,19 @@ import Link from 'next/link';
 const documentCards = [
   {
     title: "ID & Address Proof",
-    description: "Aadhaar, PAN, Passport, License, Bill, etc.",
+    description: "Aadhaar, PAN, passport, driving license, utility bill, etc.",
+  },
+  {
+    title: "Income Proof",
+    description: "Salary Slip, ITR, and Bank Statement (where necessary for specific plans).",
   },
   {
     title: "Photographs",
     description: "Recent passport-size photos.",
   },
   {
-    title: "Income Proof",
-    description: "Salary Slip, ITR, Bank Statement.",
-  },
-  {
     title: "Vehicle Documents",
-    description: "RC, DL, Previous Policy.",
+    description: "RC, DL, Previous Policy (vehicle insurance).",
   },
 ];
 
@@ -49,10 +49,9 @@ export default function InsuranceDocumentsSection() {
               Easy Documents,<br /> Easy Insurance
             </h2>
             <p className="mt-6 text-gray-600 max-w-md mx-auto lg:mx-0">
-              At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio
-              Dignissimos At Vero Eos Et Accusamus Et Iusto Odio Eos Et A.
+              Insurance should not be a complex process. Provide minimal documents and obtain comprehensive coverage in no time.
             </p>
-            <Link href='' className="mt-8 inline-flex items-center gap-2 px-6 py-2 font-semibold text-[#018EDE] border-2 border-[#018EDE] rounded-full hover:bg-cyan-50 hover:border-cyan-400 transition-all duration-300">
+            <Link href='/conatct' className="mt-8 inline-flex items-center gap-2 px-6 py-2 font-semibold text-[#018EDE] border-2 border-[#018EDE] rounded-full hover:bg-cyan-50 hover:border-cyan-400 transition-all duration-300">
               Apply Now
               <MoveRight className="w-5 h-5" />
             </Link>

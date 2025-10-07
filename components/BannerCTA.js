@@ -16,7 +16,7 @@ const BannerCTA = ({ title, description }) => {
         {description}
       </p>
       <div className="pt-4">
-        <Link href="/" className="bg-[#0C3D4C] text-white font-semibold py-2 px-10 rounded-full shadow-lg hover:bg-teal-900 focus:outline-none focus:ring-4 focus:ring-teal-500/50 transition-all duration-300 ease-in-out transform hover:-translate-y-1">
+        <Link href="/contact" className="bg-[#0C3D4C] text-white font-semibold py-2 px-10 rounded-full shadow-lg hover:bg-teal-900 focus:outline-none focus:ring-4 focus:ring-teal-500/50 transition-all duration-300 ease-in-out transform hover:-translate-y-1">
           Register now
         </Link>
       </div>

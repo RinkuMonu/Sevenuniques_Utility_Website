@@ -14,18 +14,18 @@ function page() {
         id: 1,
         subheading: 'RECHARGE',
         heading: 'Mobile Recharge Bina Tension',
-        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et ',
+        description: 'Fill up your mobile immediately with Sevenunique! Get the most popular plans and offers of all the major operators. Quick, safe, and dependable mobile recharge services.',
         bgImage: '/recharge/rbg.png',
         centerImage: '/recharge/r1.png',
     }
 
     const aepsData = {
-        subheading: 'Mortgage Loan',
-        heading: 'Ghar Ka Value, Aapke Kaam',
-        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et  ducimus odio dignissimos At vero eos et accusamus et ',
+        subheading: 'Mobile Recharge',
+        heading: 'Service Bina Interruption, Recharge Bina Tension.',
+        description: 'Be in touch with convenient mobile top-ups on Sevenunique. Top up your prepaid account or postpaid bills within seconds using our secure system. Activate instantly and the top plans of all major operators.',
         features: [
-            'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
-            'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
+            'Receive unique cashback and discounts on all recharges. We have a 24/7 service, so you will never experience a shortage of time or even data. Fuss-free, quick, and convenient recharge services for all your mobile requirements.',
+            'Install the Sevenunique app to have a smooth recharge and bill payment. Feel the ease of recharging at any time and location with a few taps on your phone.',
         ]
     };
 
@@ -71,29 +71,29 @@ function page() {
                             </div>
                         </div>
 
-                      <div className="h-full pt-16 relative hidden md:block">
-  <Image
-    src={data.centerImage}
-    height={300}
-    width={300}
-    alt="center image"
-    className="flex items-center justify-center absolute right-30 z-10"
-  />
-  <Image
-    src="/recharge/br.png"
-    height={300}
-    width={300}
-    alt="center image"
-    className="flex items-center justify-center absolute top-5 right-15 animate-pulse"
-  />
-  <Image
-    src="/recharge/br.png"
-    height={300}
-    width={300}
-    alt="center image"
-    className="flex items-center justify-center absolute right-45 bottom-5 animate-pulse"
-  />
-</div>
+                        <div className="h-full pt-16 relative hidden md:block">
+                            <Image
+                                src={data.centerImage}
+                                height={300}
+                                width={300}
+                                alt="center image"
+                                className="flex items-center justify-center absolute right-30 z-10"
+                            />
+                            <Image
+                                src="/recharge/br.png"
+                                height={300}
+                                width={300}
+                                alt="center image"
+                                className="flex items-center justify-center absolute top-5 right-15 animate-pulse"
+                            />
+                            <Image
+                                src="/recharge/br.png"
+                                height={300}
+                                width={300}
+                                alt="center image"
+                                className="flex items-center justify-center absolute right-45 bottom-5 animate-pulse"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

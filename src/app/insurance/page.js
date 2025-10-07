@@ -19,8 +19,8 @@ function page() {
     const data = {
         id: 1,
         subheading: 'BUSINESS LOAN',
-        heading: 'Apka Business, Hamari Support',
-        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et ',
+        heading: ' Apki Suraksha, Hamari Jimmedari.',
+        description: 'Obtain trustworthy insurance coverage for your family. Simple signup, prompt support of claims, and complete financial protection.',
         bgImage: '/insurance/ibg.png',
         centerImage: '/insurance/i3.png',
 
@@ -28,10 +28,10 @@ function page() {
     const aepsData = {
         subheading: 'Insurance',
         heading: 'Har Risk Ka Perfect Cover',
-        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et  ducimus odio dignissimos At vero eos et accusamus et ',
+        description: 'Insurance is an assurance that covers you from all financial dangers. The correct insurance cover ensures that you are safe in any circumstance, whether in your personal life or in your business.',
         features: [
-            'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
-            'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
+            'We know that each person and each company is different. This is the reason why we provide tailored insurance that provides coverage to your vehicles, health, and assets. Easy procedures, fast orders, and convenient services that is what we promise.',
+            'Do something witty and make a difference today. We think, because we know, that the perfect cover for every risk is the answer to real peace of mind.',
         ]
     };
 
@@ -60,7 +60,7 @@ function page() {
                                     {data.description}
                                 </p>
                                 <Link
-                                    href="/"
+                                    href="https://utility.finuniques.in/register"
                                     className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]"
                                 >
                                     <span className="block px-8 py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#0d2f4d]">

@@ -9,17 +9,17 @@ const stepsData = [
     {
         id: 1,
         title: 'Apply online',
-        description: 'At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odioducimus Odio'
+        description: 'Complete a form and select the insurance plan that suits you.'
     },
     {
         id: 2,
         title: 'Document upload',
-        description: 'At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odioducimus Odio'
+        description: 'Get your documents verified fast and safely.'
     },
     {
         id: 3,
-        title: 'Get Cash',
-        description: 'At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odioducimus Odio'
+        title: 'Get Coverage',
+        description: 'Get complete protection on the spot—drive, ride, or live without worry.'
     }
 ];
 
@@ -49,15 +49,15 @@ export default function InsuranceProcessSteps() {
                         <h2 className="text-2xl md:text-4xl font-bold text-[#24576C] leading-tight">
                             Abhi Apply Karo,
                             <br />
-                            Apno Ki Suraksha Hogi
+                            Khadi Kadam Uthaiye
                             <br />
-                            Turant Shuru
+                             Apni Suraksha.
                         </h2>
                         <p className="mt-6 text-gray-600 max-w-lg mx-auto lg:mx-0">
-                            At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odiodissimos At Vero Eos Et Accusamus Et At Vero Eos Et
+                           Get protected it's a smart step to have entire protection of yourself, your family, and your assets be a worry-free person today.
                         </p>
                         <Link
-                            href="/"
+                            href="/contact"
                             className="mt-8 inline-flex items-center gap-2 px-6 py-3 border-2 border-[#1297E2] text-[#1297E2] font-semibold rounded-full hover:bg-[#33B5E5] hover:text-white transition-colors duration-300"
                         >
                             Apply Now

@@ -29,7 +29,7 @@ const UtilitiesHome = () => {
               Fast Utilities, Zero Hassle
             </h3>
             <p className="text-gray-600 text-lg leading-relaxed">
-              At Vero Eos Et Accusamus Et Iusto Odio Dignissimos ducimus quasi. Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio.
+              Sevenunique provides smooth and easy payment systems with the help of digital payment systems that are the most smooth and secure. Whether you are at home, on the move, or on the go, our platform offers you quick, dependable, and secure transactions.
             </p>
             
             {/* Feature buttons */}
@@ -41,7 +41,7 @@ const UtilitiesHome = () => {
                 Fast
               </p>
               <p className="py-8 text-center text-lg  border border-[#0063A2] text-[#0C3D4C] rounded-lg  font-bold">
-                Accessible
+                Connectivity
               </p>
             </div>
 

@@ -1,4 +1,4 @@
-// components/AirTravelAssured.jsx
+
 "use client";
 
 import React from 'react';
@@ -50,7 +50,7 @@ export default function TravelAssured({ data }) {
          <div className=" flex justify-center md:justify-end">
           <div className=" ">
             <Image
-              src={imageUrl} L
+              src={imageUrl} 
               alt="Airplane flying over a globe with a location pin and paper plane"
         width={600}
         height={600}

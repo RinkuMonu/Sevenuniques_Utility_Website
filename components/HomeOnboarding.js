@@ -14,10 +14,10 @@ const onboardingData = {
     '/banner/bcenter1.png', '/banner/bcenter2.png', '/banner/bcenter3.png', '/banner/bcenter4.png',
 ],
         steps: [
-            { id: 1, title: 'Register Online', description: 'Quickly sign up through our secure distributor portal.' },
-            { id: 2, title: 'Complete KYC', description: 'Verify your identity with our streamlined KYC process.' },
-            { id: 3, title: 'Add Funds', description: 'Easily load your wallet using multiple payment options.' },
-            { id: 4, title: 'Start Transacting', description: 'Begin offering services and earning commissions.' },
+            { id: 1, title: 'Register Online', description: 'Sign up in a few minutes through our easy-to-use and safe distributor portal.' },
+            { id: 2, title: 'Complete KYC', description: ' It is easy to access your identity by simply confirming who you are through our fast system.' },
+            { id: 3, title: 'Add Funds', description: 'Pay conveniently using a wide range of secure payment options.' },
+            { id: 4, title: 'Start Transacting', description: 'Offer an extensive range of services to your clients and start to make commissions right away.' },
         ],
     },
     Retailer: {
@@ -25,10 +25,10 @@ const onboardingData = {
     '/banner/bcenter1.png', '/banner/bcenter2.png', '/banner/bcenter3.png', '/banner/bcenter4.png',
 ],
         steps: [
-            { id: 1, title: 'Easy Sign-up', description: 'Join our network with a simple mobile application.' },
-            { id: 2, title: 'Verification', description: 'Get your account verified by a local distributor.' },
-            { id: 3, title: 'Stock Your Wallet', description: 'Add balance to start serving your customers.' },
-            { id: 4, title: 'Serve & Earn', description: 'Provide services and see your income grow.' },
+            { id: 1, title: 'Easy Sign-up', description: 'Join our network in a very simple and smooth mobile-friendly system.' },
+            { id: 2, title: 'Instant Verification', description: 'Check yourself with your distributor and have it all on demand.' },
+            { id: 3, title: 'Load Wallet', description: ' Always keep the stuff in your wallet and be ready to serve your customers.' },
+            { id: 4, title: 'Serve & Earn', description: 'Offer services like bill payment, AEPS, DMT, etc. growing your revenues each day.' },
         ],
     },
     User: {
@@ -36,10 +36,10 @@ const onboardingData = {
     '/banner/bcenter1.png', '/banner/bcenter2.png', '/banner/bcenter3.png', '/banner/bcenter4.png',
 ],
         steps: [
-            { id: 1, title: 'Download App', description: 'Get the app from the Play Store or App Store.' },
-            { id: 2, title: 'Create Account', description: 'Sign up in minutes with just your mobile number.' },
-            { id: 3, title: 'Link Bank', description: 'Securely connect your bank account for payments.' },
-            { id: 4, title: 'Pay Anyone', description: 'Send money, pay bills, and recharge effortlessly.' },
+            { id: 1, title: 'Download App', description: 'Install the Sevenunique app in a few seconds in either the Play Store or the App Store.' },
+            { id: 2, title: 'Create Account', description: ' The only thing that you need to do is to create your account using just your mobile number, and that is it.' },
+            { id: 3, title: 'Link Bank Account', description: 'Link your bank account without any risk and start experiencing hassle-free transactions.' },
+            { id: 4, title: 'Start Transacting', description: ' Pay bills, transfer money, and recharge easily, simply by using one application.' },
         ],
     },
 };
@@ -68,9 +68,9 @@ const HomeOnboarding = () => {
             <div className="max-w-7xl mx-auto px-4 md:px-0">
 
                 {/* Header Text Section */}
-                <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase text-center">PRODUCT</p>
+                <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase text-center">PRODUCT & ONBOARDING</p>
                 <h3 className="mt-2 text-4xl md:text-4xl font-bold text-[#0C3D4C] text-center">
-                    Seamless Onboarding, Hassle-Free Journey
+                     Integration, infinite possibilities, and onboarding.
                 </h3>
 
                 {/* Tabs Section */}
