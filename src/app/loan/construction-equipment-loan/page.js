@@ -20,20 +20,20 @@ import DocumentsRequired from '../../../../components/DocumentsRequired';
 function page() {
     const data = {
         id: 1,
-        subheading: 'Construction EQUIPMENT Loan',
-        heading: 'Machine Loan Easy, Kaam Hoga Breezy',
-        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et ',
+        subheading: 'Construction Loan',
+        heading: 'Machine Lo, Kaam Badhao. Construction Loan Se!',
+        description: 'Excavator ho ya crane, apni machine khareedne ka sapna ab ho sakta hai poora. Kam paperwork, fast processing. Register Now!',
         bgImage: '/loan/constructbg.png',
         centerImage: '/loan/construct1.png',
     }
 
     const aepsData = {
         subheading: 'Construction EQUIPMENT Loan',
-        heading: 'Apke Project Ka Strong Partner',
-        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et  ducimus odio dignissimos At vero eos et accusamus et ',
+        heading: 'Strong Partner Apke Project Ka',
+        description: 'Our Construction Equipment Loans can help you get the heavy machinery you require. We lend out excavators, cranes, concrete mixers, and any other equipment needed to energize your projects and expand your business.',
         features: [
-            'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
-            'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
+            'Our customized repayment plans include both new and used machinery, which is financed flexibly. Get the benefit of competitive interest rates, fast approvals, and very few documents to fill in to have a hassle-free experience.',
+            'We know construction deadlines and provide expedited processing to have equipment when you need it. Our professionals will guide you to select the most suitable financing option that will fulfill your business requirements.',
         ]
     };
 
@@ -132,24 +132,26 @@ function page() {
                     </div>
                 </div>
             </section>
+
             <VerticalSlider />
+
             <ServicesSection3 data={aepsData} />
             <EMICal2 />
             <StatsBanner />
             <LoanBenefits
-                title="Drive Your Dream Car with Easy Loans"
-                description="At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimoscusamus et iusto odio dignissimos ducimus odio dignissimos vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos "
+                title="Get a machine, and get to work! This construction loan is the new way forward."
+                description="Finance the heavy machinery your business needs to succeed. We can finance all the equipment you need – be it excavators, backhoes, or cranes—enabling you to efficiently carry out projects and grow your business faster. "
                 image="/loan/construct4.png"
                 benefits={[
-                    "Quick approval with minimal paperwork.",
-                    "Flexible EMI options as per budget.",
-                    "Loan available for new and used cars.",
-                    "Attractive and affordable interest rates.",
-                    "No hidden charges, fully transparent.",
-                    "Quick approval with minimal paperwork.",
-                    "Flexible EMI options as per budget.",
-                    "Loan available for new and used cars.",
-                    "Attractive and affordable interest rates.",
+                    "Rapid approvals with less paperwork.",
+                    "Flexible repayment terms according to the project cash flow.",
+                    "There are loans for new and used equipment",
+                    "Appealing and competitive interest rates",
+                    "No additional fees, all open.",
+                    "Why should we use our equipment loans?",
+                    "Quick processing of urgent needs.",
+                    "Individualized financing options",
+                    "Pan-India service coverage",
                     "No hidden charges, fully transparent.",
                 ]}
             />

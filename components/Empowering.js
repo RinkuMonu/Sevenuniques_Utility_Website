@@ -37,26 +37,28 @@ const InfoCard = ({ title, benefits, imageUrl, imageAlt, reverse = false }) => {
 
  const Empowering = () => {
   const retailerBenefits = [
-    'Earn Extra Income – Commission On Each AEPS Transaction.',
-    'Increase Footfall – More Customers Visit Your Shop For Banking Services.',
-    'Offer Multiple Services – Cash Withdrawal, Deposits, Fund Transfers, Balance Checks.',
-    'Build Customer Loyalty – Become A Trusted Financial Service Point.',
-    'Low Investment, High Returns – Minimal Setup Cost With Recurring Earnings.',
+    'Earn More Money—Earn a commission on each individual AePS transaction that is made in your shop.',
+    'Increase Footfall -Get more customers to come into your shop every day to get basic banking services.',
+    'Provide a variety of services—cash withdrawal, deposits, fund transfer, and balance inquiries.',
+    'Create Customer Loyalty—Become the dependable and reliable financial service hub within your locality.',
+    'Low Investment, High Returns: Earn repeating income at a very small startup cost.',
+    'Achieve Targets, Get Bonus—Receive extra bonus payments on meeting your targets of transactions monthly.',
   ];
 
   const distributorBenefits = [
-    'Earn Extra Income – Commission On Each AEPS Transaction.',
-    'Increase Footfall – More Customers Visit Your Shop For Banking Services.',
-    'Offer Multiple Services – Cash Withdrawal, Deposits, Fund Transfers, Balance Checks.',
-    'Build Customer Loyalty – Become A Trusted Financial Service Point.',
-    'Low Investment, High Returns – Minimal Setup Cost With Recurring Earnings.',
+    'Prepare a Network—Manage and build a network of retailers within your area of location.',
+    'Get a commission on all transactions within your network—earn higher commissions.',
+    'Exclusive Territory Rights – Operate and grow your business in a protected area.',
+    'Business Development Support – We provide quality training, marketing and technical support exclusively for you.',
+    'Scalable Model - The distributor model allows you to start out small and grow your distributor business in size.',
+    'Base salary + Incentives - You have a monthly base salary + bonuses based on performance when you meet your targets.',
   ];
 
   return (
     <div className=" font-sans px-4 lg:px-0">
       <main className="max-w-7xl mx-auto">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-10 text-center">
-          Empowering Retailers and Distributors
+          Powering Retailers and Distributors
         </h1>
 
         <div className="space-y-12">

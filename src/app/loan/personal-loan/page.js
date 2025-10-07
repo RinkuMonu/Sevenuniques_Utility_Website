@@ -20,8 +20,8 @@ function page() {
     const data = {
         id: 1,
         subheading: 'PERSONAL LOAN',
-        heading: 'Apka Loan Partner, Hamesha Sath',
-        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et ',
+        heading: 'Apna Personal Loan, Bilkul Simple aur Sirf Aapke Liye!',
+        description: 'Enjoy fast approval with very few forms. Choose a repayment plan that works for you. Your financial independence is just a click away.',
         bgImage: '/loan/perbg.png',
         images: ['/loan/fl1.png', '/loan/fl2.png', '/loan/fl3.png', '/loan/fl4.png']
     }
@@ -42,9 +42,9 @@ function page() {
 
     const infoData = [
         { label: "Nationality", value: "Indian" },
-        { label: "Loan Tenure", value: "60 Months" },
-        { label: "Work Experience", value: "More than 1 year" },
-        { label: "Employment", value: "Self Employed" },
+        { label: "Loan Tenure", value: "Up to 60 Months" },
+        { label: "Experience", value: "Over 1 year" },
+        { label: "Occupation", value: "Paid or Freelance" },
     ]
 
     return (
@@ -166,20 +166,20 @@ function page() {
             <VerticalSlider />
 
             <LoanBenefits
-                title="Drive Your Dream Car with Easy Loans"
-                description="We provide quick approvals, minimal paperwork, and customer-friendly options for every car buyer."
+                title="You can borrow money to finance any of your projects."
+                description="We provide quick approvals, reduced paperwork, and customer-friendly service to every borrower"
                 image="/loan/per3.png"
                 benefits={[
-                    "Quick approval with minimal paperwork.",
-                    "Flexible EMI options as per budget.",
-                    "Loan available for new and used cars.",
-                    "Attractive and affordable interest rates.",
-                    "No hidden charges, fully transparent.",
-                    "Quick approval with minimal paperwork.",
-                    "Flexible EMI options as per budget.",
-                    "Loan available for new and used cars.",
-                    "Attractive and affordable interest rates.",
-                    "No hidden charges, fully transparent.",
+                    "Light processing with minimal documentation.",
+                    "Budget-flexible EMI options",
+                    "General purpose loans",
+                    "Sweet and low interest rates",
+                    "None of that sleazy skin stuff, on record.",
+                    "Internet action—any place, anytime.",
+                    "No security was necessary—no collateral necessary—no guarantor necessary",
+                    "Personalized offers—personalized loans to your profile",
+                    "Automatic money transfer—Get money within less than a day.",
+                    "Easy top-up—Top up your limit with ease.",
                 ]}
             />
 
@@ -191,7 +191,7 @@ function page() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                         <div className="space-y-6">
                             <h1 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] max-w-lg">
-                                Eligibility Check, Loan Approve Quick
+                                Check your eligibility to borrow a loan instantly
                             </h1>
                             <div className="grid grid-cols-2 gap-4 pt-4">
                                 {infoData.map((item, index) => (

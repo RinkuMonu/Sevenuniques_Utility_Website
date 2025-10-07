@@ -2,12 +2,12 @@ import React from 'react';
 import { ShieldCheck, SmartphoneNfc, CheckSquare, ArrowDownUp, Network, History } from 'lucide-react';
 
 const benefitItems = [
-  { icon: <SmartphoneNfc size={40} strokeWidth={1.25} />, title: 'Instant Transfer' },
-  { icon: <ShieldCheck size={40} strokeWidth={1.25} />, title: 'High Security' },
-  { icon: <CheckSquare size={40} strokeWidth={1.25} />, title: 'Easy Access' },
-  { icon: <ArrowDownUp size={40} strokeWidth={1.25} />, title: 'Low Cost' },
-  { icon: <Network size={40} strokeWidth={1.25} />, title: 'Wide Reach' },
-  { icon: <History size={40} strokeWidth={1.25} />, title: '24/7 Service' },
+  { icon: <SmartphoneNfc size={40} strokeWidth={1.25} />, title: 'Quick Settlements' },
+  { icon: <ShieldCheck size={40} strokeWidth={1.25} />, title: 'Safe & Reliable Transactions' },
+  { icon: <CheckSquare size={40} strokeWidth={1.25} />, title: 'User-Friendly Service' },
+  { icon: <ArrowDownUp size={40} strokeWidth={1.25} />, title: 'Low Transaction Fees' },
+  { icon: <Network size={40} strokeWidth={1.25} />, title: 'Strong Network Reach' },
+  { icon: <History size={40} strokeWidth={1.25} />, title: '24x7 Availability' },
 ];
 
 const BenefitCard = ({ icon, title }) => (

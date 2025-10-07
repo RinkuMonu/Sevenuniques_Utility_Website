@@ -33,10 +33,10 @@ const StepCard = ({ number, title, text, icon }) => (
 
 // Data for the steps
 const steps = [
-  { number: 1, title: 'Basic Detail Verification', text: 'At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odioducimus Odio', icon: "/dmt/e1.png" },
-  { number: 2, title: 'Documents upload & Verification', text: 'At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odioducimus Odio', icon: "/dmt/e2.png" },
-  { number: 3, title: 'Video KYC', text: 'At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odioducimus Odio', icon: "/dmt/e3.png" },
-  { number: 4, title: 'Select Plan', text: 'At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odioducimus Odio', icon: "/dmt/e4.png" },
+  { number: 1, title: 'Basic Detail Verification', text: 'Beginning with your basic details verification. This action will guarantee a trouble-free account establishment.', icon: "/dmt/e1.png" },
+  { number: 2, title: 'Document Upload and Checking', text: 'Post the identity and address verification documents. We will test them within a short period of time so as to make sure they are safe and legal.', icon: "/dmt/e2.png" },
+  { number: 3, title: 'Video KYC', text: 'Authentication is simple and secure as you complete your Video KYC and verify your identity. This is to help secure your account and make certain it is authentic', icon: "/dmt/e3.png" },
+  { number: 4, title: 'Select Plan', text: 'Select the plan that fits you well. We provide flexible packages that would allow you to commence providing services easily', icon: "/dmt/e4.png" },
 ];
 
 function page() {
@@ -44,7 +44,7 @@ function page() {
     id: 1,
     subheading: 'DMT',
     heading: 'Paisa pohchaaye, rishton ko jode',
-    description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable Domestic Money Transfer service.',
+    description: 'Send money to your loved ones in any part of India. Our domestic money transfer service is safe and secure and will always keep the transactions quick and safe',
     bgImage: '/dmt/dmtbg.png',
     centerImage: '/dmt/dmt1.png',
   }
@@ -57,10 +57,10 @@ function page() {
   const dmtData = {
     subheading: 'DMT',
     heading: 'Domestic money transfer',
-    description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et  ducimus odio dignissimos At vero eos et accusamus et ',
+    description: 'The Domestic Money Transfer (DMT) is a way of taking banking nearer to all. Customers do not have to come to the bank branch anymore; they can come to the closest assigned retailer or e-Mitra shop and transfer money to their loved ones in a safe, quick, and reliable way. This simplifies finances for both rural and urban users.',
     features: [
-      'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et  ducimus odio dignissimos At vero eos et accusamus et ',
-      'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et  ducimus odio dignissimos At vero eos et accusamus et ',
+      'Customers using our Normal DMT service are allowed to transfer up to ₹ 25,000 per month, but in ₹5,000 slabs per transaction. It implies that a customer can send  ₹5,000 at a time, with a maximum of five times, giving a total monthly limit of ₹25,000. This is an ideal choice when it comes to regular family maintenance, utility bills, or minor financial requirements.',
+      'To serve the higher value needs, we provide transfers up to ₹ 500,000 within one month through our X-Press DMT service with immediate settlement. This renders it the appropriate option when making business payments, emergency costs, or transfers in bulk. Big or small, all transactions are executed in a fast, secure, and trustworthy manner over our retailer network.',
     ]
   };
 
@@ -85,12 +85,9 @@ function page() {
 
               <div className="relative z-10 h-full">
                 <div className='max-w-xl'>
-                  <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">Earn More, Grow More With Religare</h1>
+                  <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">Make More, Grow More at Religare</h1>
                   <p className="text-gray-500 mb-8 leading-relaxed">
-                    At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio
-                    Odio Dignissimos Ducimus Odio Dignissimos At Vero Eos Et Accusamus Et At
-                    Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos
-                    At Vero Eos Et Accusamus Et At Vero Eos Et Accusamus Odio Dignissimos.
+                    Collaborate with Religare and open new sources of income with our Domestic Money Transfer (DMT) services. You can also make commissions as a DMT retailer by assisting your customers in sending money in a safe and reliable manner.
                   </p>
                 </div>
                 <div className=" max-w-md mx-auto lg:mx-0" >
@@ -141,7 +138,7 @@ function page() {
                   Paise bhejo instantly, <br />kahin bhi kabhi bhi
                 </h1>
                 <p className="mt-6 max-w-2xl text-gray-400">
-                  At Vero Eos Et Accusamus vero eos et accusamus et iusto odio dignissimos ducimus  Et Iusto Odio Dignissimos Ducimus Odio DignissimosAt Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio
+                  Remit funds safely and in real time to your family members anywhere, anytime. Our Domestic Money Transfer (DMT) service makes it easy, secure, and quick to transfer funds.
                 </p>
               </div>
               <div className="mb-12">
@@ -164,17 +161,7 @@ function page() {
 
 
 
-<DmtWork/>
-
-
-
-
-
-
-
-
-
-
+      <DmtWork />
       <AdvantageDMT />
       <ContactBanner />
     </>
