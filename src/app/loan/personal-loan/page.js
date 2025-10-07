@@ -53,7 +53,7 @@ function page() {
     <>
       At Sevenunique, <br />
       how to secure  <br />
-      a <span className="text-blue-300">business</span> loan.
+      a <span className="text-blue-300">Personal</span> loan.
     </>
   ),
   sliderData: [
@@ -63,10 +63,9 @@ function page() {
       image: "/loan/loan4.png",
       cta: "Request Calculations",
       details: [
-        "Construction Equipment Loan by Visit Sevenunique.",
-        "Fill in personal information: Name, Mobile Number, Aadhaar, PAN",
-        "Select the type of equipment and the amount of the loan",
-        "Check the eligible loan amount on the fly.",
+        "Enter the simple details: name, mobile number, Aadhaar, and PAN.",
+        "Choose the size and term of the loan.",
+        "Immediately check the amount of loan that is allowed.",
       ],
     },
     {
@@ -75,10 +74,10 @@ function page() {
       image: "/loan/loan12.png",
       cta: "Submit Docs",
       details: [
-        "Add PAN Card and Aadhaar Card.",
-        "Provide business documents—GST and business registration",
-        "Give equipment quote and supplier information.",
-        "Our system authenticates documents in a short time",
+        "Post Aadhaar Card and PAN Card.",
+        "Produce income evidence, bank statements, or salary slips.",
+        "Present address evidence.",
+        "We have a system that validates documents at high speed.",
       ],
     },
     {
@@ -87,10 +86,10 @@ function page() {
       image: "/loan/loan13.png",
       cta: "Get Construction Equipment Loan Now",
       details: [
-        "Get rapid approval with few documents.",
-        "Direct deposit of the loan to your account.",
-        "Money sent out in less than 48 hours",
-        "Buy your building materials now.",
+        "Get quick approval with the least amount of paperwork.",
+        "The funds get deposited in your account as a loan.",
+        "The payment of money will be done within a space of 24 hours.",
+        "Use money on your personal expenses.",
       ],
     },
   ],

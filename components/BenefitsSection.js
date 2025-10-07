@@ -18,7 +18,7 @@ const BenefitsSection = () => {
             One App, Endless <br /> Benefits
           </h3>
 
-          <div className="flex flex-row lg:flex-col space-y-4 mb-8">
+          <div className="flex sm:flex-row flex-col space-y-4 mb-8">
             <Link href="/" aria-label="Download on the App Store">
               <Image
                 src="/loan/image7.png"

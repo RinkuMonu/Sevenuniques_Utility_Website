@@ -17,11 +17,11 @@ const DocumentItem = ({ title, description }) => (
 // This is the main section component.
 const DocumentsRequired = () => {
   const documents = [
-    { title: 'Identity verification', description: 'Aadhaar Card, PAN Card, Passport, or Driving License' },
-    { title: 'Address verification ', description: 'Utility bill, Aadhaar, Passport, or Ration Card' },
-    { title: 'Income verification ', description: 'Salary slips, ITR, or bank statements' },
-    { title: 'Financial verification', description: 'Balance Sheet & Profit and Loss Statement' },
-    { title: 'Photos', description: 'Passport size photo (Proprietor/Partners/Directors)' },
+    { title: 'ID Evidence', description: 'Aadhaar Card, PAN Card, Passport, or Voter ID.' },
+    { title: 'Address Proof', description: 'Aadhaar, passport, ration card, or utility bill.' },
+    { title: 'Income Proof', description: 'Salary slips, ITR, or bank statements.' },
+    { title: 'Employment Evidence', description: 'Company ID card or employment certificate' },
+    { title: 'Photographs', description: 'Passport-size photographs.' },
   ];
 
   return (

@@ -12,7 +12,7 @@ import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
 
 function Page() {
- 
+
     const tabs = [
         {
             id: "airlines",
@@ -37,34 +37,55 @@ function Page() {
                 },
                 aeps: {
                     subheading: "FLIGHT BOOKING",
-                    heading: "Udaan bane easy, Sevenunique ke saath",
-                    description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ",
+                    heading: "Flying Becomes Easy, with SevenUnique.",
+                    description: "With SevenUnique, you can easily book your flights. We guarantee that your every journey is hassle-free and quick, whether your trips are domestic or international. ",
                     features: [
-                        "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et  ducimus odio dignissimos At vero eos et accusamus et ",
-                        "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et  ducimus odio dignissimos At vero eos et accusamus et ",
+                        "Flights are just a few clicks away - search, select, and book the flights when you want. Get booked immediately, and fly without worries in a simple and hassle-free trip.",
+                        "Travel smarter, with flexible options, real-time support, and reliable services with SevenUnique. Plan your escape, whether it is a business trip or a holiday, and trust that you will have an easy and confident journey ",
                     ],
                 },
                 travel: {
                     title: "Air Travel Assured",
                     cards: [
-                        { title: "Upto 150%\nRefund", description: "On Flight Cancellation" },
-                        { title: "Upto 100%\nRefund", description: "For Bad Service Experience" },
-                        { title: "Upto 100%\nRefund", description: "For Flight Delays" },
-                        { title: "Upto 100%\nRefund", description: "If You Change Travel Plans" },
+                        { title: "Booking Confirmation", description: "Book your tickets over the Internet with superior protection, no lines, no hassles." },
+                        { title: "Flexible Rescheduling", description: "Changing your plans is simple, with no additional hassle, no nonrefundable fees. Best Price Guarantee" },
+                        { title: "24/7 Customer Support", description: " Worry-free travel we provide you 24/7 Customer Support" },
+                        { title: "Safe & Secure Payments", description: "Make bookings at the convenience of online secure payment." },
                     ],
                     imageUrl: "/booking/air1.png",
                 },
                 info: [
-                    { title: "Book Today, Fly Tomorrow", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus " },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus " },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus ." },
-                   
+                    {
+                        title: "Book Today, Fly Tomorrow",
+                        description: [
+                            "You have never had it easier planning your next trip. With SevenUnique, book flights instantly and receive confirmed tickets within minutes. Travel stress-free and enjoy your ride, whether it’s a business trip or a vacation.",
+                            "We provide secure and fast booking, whether you’re on mobile or desktop. Search flights, compare fares, and choose the most convenient timings in just a few steps.",
+                            "As a company that provides quality services and immediate response, SevenUnique ensures that your traveling process is stress-free throughout. Your journey with us is easy and comfortable, whenever you fly."
+                        ]
+                    },
+                    {
+                        title: "Fast and easy booking of flights.", description: [
+
+                            "SevenUnique saves you a few clicks to book your flights. Local or overseas, experience immediate assurance and commute without any tension.",
+                            "We identify, assess, and choose the best options as per your availability and budget. We offer a platform that promises easy booking, secure payment, and excellent support anytime, anywhere.",
+                            "Experience quick, secure, and effortless travel with SevenUnique. Travel in style, and every trip is a trip worth a lifetime memory.",
+                        ]
+                    },
+                    {
+                        title: "Book your Flights Instantly", description: [
+
+                            "SevenUnique allows you to book your flights within a few clicks. Local or global, find out immediately and relax.",
+                            "Compare the airlines, select the most appropriate timings and fares, and pay online safely. The process of booking is easy, fast, and convenient with us at any time and any place.",
+                            "While traveling with SevenUnique, there is no hassle at the beginning and end of the trip. Fly away with comfort, ease, and tranquility.",
+                        ]
+                    },
+
                 ],
             },
         },
         {
             id: "hotels",
-            label: "Hotles",
+            label: "Hotals",
             icon: "/booking/hotel.png",
             data: {
                 sliderImages: [
@@ -84,36 +105,55 @@ function Page() {
                     ],
                 },
                 aeps: {
-                    subheading: "AEPS",
-                    heading: "Aadhaar Enabled Payment System",
-                    description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et...",
+                    subheading: "HOTAL BOOKING",
+                    heading: "Turant Confirmation, Aasaan Booking.",
+                    description: "It has never been so easy to book your hotel stay. While booking with SevenUnique, one can search, compare, and book a room just by clicking a few times. From budget rooms to luxurious suites, we make booking a smooth and easy process for travelers.",
                     features: [
-                        "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos...",
-                        "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos...",
+                        "All our reservations are instantly confirmed. You do not have to wait until email arrives or fear about the hotel being overbooked. You can arrange your travel at your own time because of flexible check-in and check-out, which will provide you with the maximum freedom.",
+                        "We also provide the best deals and 24/7 customer service. Compare various hotels, get competitive prices, and be sure that our team is always at your service. Travel without the worry that you have a place to stay and be with you throughout the journey   .",
                     ],
                 },
                 travel: {
-                    title: "Air Travel Assured",
+                    title: "Hotel Stay Assured",
                     cards: [
-                        { title: "Upto 150%\nRefund", description: "On Flight Cancellation" },
-                        { title: "Upto 100%\nRefund", description: "For Bad Service Experience" },
-                        { title: "Upto 100%\nRefund", description: "For Flight Delays" },
-                        { title: "Upto 100%\nRefund", description: "If You Change Travel Plans" },
+                        { title: "Instant Confirmation", description: " Book a hotel immediately and avoid waiting, no doubt." },
+                        { title: "Flexible Cancellation", description: "Book or cancel or make changes to your stay in minutes, and have refunds within hours according to the policy." },
+                        { title: "Best Price Guarantee", description: "Book and be sure that you are getting the best rates at your selected hotel." },
+                        { title: "24/7 Customer Support", description: " You can always contact our group to help with booking problems or amendments." },
                     ],
                     imageUrl: "/booking/hotel1.png",
                 },
                 info: [
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
+                    {
+                        title: "Fast and easy hotel reservation", description: [
+                            "Reserve a hotel in real time with SevenUnique. Whether it is a budget accommodation or luxury suites, search and book the ideal accommodation in a few clicks.",
+                            "Book at several hotels, compare prices, and make the final decision in the shortest time possible. Make a booking in a secure, comfortable, and convenient way at any time and place.",
+                            "Travel worry free and make your stay worry free with 24/7 support and flexibility in the check-in/check-out."
+                        ]
+                    },
+
+                    {
+                        title: "Your Perfect Stay, Just a Click Away",
+                        description:
+                            ["Booking a hotel has never been easier. With SevenUnique, you can find the ideal room in seconds whether it’s a cozy budget option or a luxurious suite.",
+                                "Compare deals, choose your favorite, and get instant confirmation. Enjoy hassle-free payments, flexible check-in and check-out, and worry-free reservations.",
+                                "Our friendly 24/7 support team ensures your trip is smooth, relaxing, and memorable from start to finish.",
+                            ]
+
+                    },
+                    {
+                        title: "Fast and stress-free hotel reservation.", description: [
+                            " Reserve your hotel within a few clicks with SevenUnique. Whether it is budget accommodations or luxury suites, book the best accommodation to enjoy your trip immediately.",
+                            "Check and compare hotels, select the most attractive deals, and receive confirmation. Have a comfortable, safe, and convenient booking process anywhere, anytime.",
+                            "Travel without stress and make it a comfortable and stress-free stay with flexible check-in /check-out schedules and 24/7 customer care."
+
+                        ]
+                    },
                 ],
             },
         },
-       
- {
+
+        {
             id: "trains",
             label: "Trains",
             icon: "/booking/train.png",
@@ -135,35 +175,51 @@ function Page() {
                     ],
                 },
                 aeps: {
-                    subheading: "AEPS",
-                    heading: "Aadhaar Enabled Payment System",
-                    description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et...",
+                    subheading: "TRAINS BOOKING",
+                    heading: "Turant Confirmation, Aasaan Booking.",
+                    description: "With SevenUnique, booking your train tickets has become a simple affair. Local trains or long-distance trains: discover the best routes and seats in the shortest time possible with a few clicks.",
                     features: [
-                        "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos...",
-                        "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos...",
+                        "Travel when you want and choose your coach to suit your schedule. Real-time confirmations make you travel without worries and on time.",
+                        "Compare trains, best fares, and 24/7 customer support. You can travel without worrying that you will never see a face because help will always be there when you need it.",
                     ],
                 },
                 travel: {
-                    title: "Air Travel Assured",
+                    title: "Train Travel Assured",
                     cards: [
-                        { title: "Upto 150%\nRefund", description: "On Flight Cancellation" },
-                        { title: "Upto 100%\nRefund", description: "For Bad Service Experience" },
-                        { title: "Upto 100%\nRefund", description: "For Flight Delays" },
-                        { title: "Upto 100%\nRefund", description: "If You Change Travel Plans" },
+                        { title: "Instant Confirmation", description: "Confirm your train tickets instantly no waiting, no uncertainty." },
+                        { title: "Flexible Cancellation", description: " Easy cancellation or modification of booking and prompt refunds according to policy." },
+                        { title: "On-Time Travel Guarantee", description: "We make certain to provide the schedule and train delays in time to have a smooth ride." },
+                        { title: "24/7 Customer Support", description: "Our team will never fail to help you in case of any booking changes or travelling issues." },
                     ],
                     imageUrl: "/booking/train1.png",
                 },
                 info: [
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
+                    { title: "Fast and Convenient Train ticket booking.", description:
+                        [
+                            "Book tickets instantly with SevenUnique. Whether it is a regional trip or long-distance travel, book your seat within a few clicks.",
+                            "Compare trains, select the most suitable coach, and receive instant confirmation. Book smoothly, safely, and conveniently anywhere around the clock.",
+                            "Flexible travel dates, 24/7 customer support, plan your trip without any stress, and travel with confidence."
+                        ]
+                        },
+                    { title: "Fast & Reliable Train Tickets", 
+                        description: [
+                            "Make your train reservations fast with SevenUnique. Select among all the existing trains, classes, and times that will best fit your plans.",
+                            "Get real-time seat availability, and bookings are confirmed. The waiting time is now over, and there is no doubt that your travel is booked in a few clicks.",
+                            "Flexible cancellations, best fare offers, and 24/7 customer service. Always travel with confidence, stress-free, and smart enough whenever you get to the tracks."
+                        ]
+
+                     },
+                    { title: "Fast & Easy Train Booking", 
+                        description:[
+                             "SevenUnique allows you to book your train tickets in a few clicks. Whether it is a local train or a long-distance ride, reserve your seat immediately.",
+                             "Compare trains, choose a coach of your choice and timing, and get immediate confirmation to have a hassle-free ride",
+                             "Bring your own dates, cancel without any difficulties, and with 24/7 customer service, you can plan your trip and travel without any worries.",
+                            
+                        ]},
                 ],
             },
         },
-         {
+        {
             id: "buses",
             label: "Buses",
             icon: "/booking/bus.png",
@@ -185,35 +241,43 @@ function Page() {
                     ],
                 },
                 aeps: {
-                    subheading: "AEPS",
-                    heading: "Aadhaar Enabled Payment System",
-                    description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et...",
+                    subheading: "BUS BOOKING",
+                    heading: "Turant Confirmation, Aasaan Booking.",
+                    description: "Get your bus tickets with SevenUnique. From local routes to intercity travels, book your seat within a few clicks and travel without any hassles. Travel When You Want To",
                     features: [
-                        "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos...",
-                        "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos...",
+                        "Enjoy the opportunity to travel at your time and in the seat or coach of your choice. Schedule your trip with quick bookings that will give you confidence in your travels.",
+                        "Get real-time seat availability, and bookings are confirmed. The waiting time is now over, and there is no doubt that your travel is booked in a few clicks.",
                     ],
                 },
                 travel: {
-                    title: "Air Travel Assured",
+                    title: "Bus Travel Guaranteed",
                     cards: [
-                        { title: "Upto 150%\nRefund", description: "On Flight Cancellation" },
-                        { title: "Upto 100%\nRefund", description: "For Bad Service Experience" },
-                        { title: "Upto 100%\nRefund", description: "For Flight Delays" },
-                        { title: "Upto 100%\nRefund", description: "If You Change Travel Plans" },
+                        { title: "Instant Confirmation", description: "Instantly confirm your bus tickets with no waiting or second-guessing." },
+                        { title: "Adaptable Cancellation", description: "Instead of rescheduling, bookings can be canceled with simple refunds issued back through the app within the week." },
+                        { title: "On-time Transit Alerts", description: "Real-time routing of bus schedules will be easily available to help you maximize your time." },
+                        { title: "Prioritize Customer Support", description: "Staff is available at any hour of the day to assist you with booking changes or travel issues." },
                     ],
                     imageUrl: "/booking/bus1.png",
                 },
                 info: [
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
+                    { title: "The Right Price, Always Here For You", description: "Compare buses, get offered the greatest price, and count on us 24/7 for customer care. Enjoy the freedom of travel knowing we are there to support you anytime." },
+                    { title: "Fast & Hassle-Free Bus Booking", 
+                        description: [
+                            "SevenUnique provides the quickest experience with your bus booking. Reserve your bus tickets quickly and easily. If you are booking a local route or intercity travel, your tickets can be bought in 3-clicks or less, and travel without the stress of long wait times.",
+                            "Compare buses, select your ideal premium seat and time, and receive immediate confirmation for your bus ticket. Enjoy personalized, convenient bus booking no matter where you go.",
+                            "Plan your trip with confidence, and travel easily with flexible cancellations, easy refunds, and 24/7 customer care."
+                        
+                        ]},
+                    { title: "Your Journey, Our Priority",
+                         description: [
+                            "At any time you travel, SevenUnique is there to get you there. Book your bus ticket now ,so that you can sit back and enjoy the ride, whether it is local or an intercity trip you'll stay relaxed on your journey.",
+                            "Choose from several bus companies, select your seat and time of departure, and receive an instant confirmation to help provide you a pleasurable journey.",
+                            "Flexible cancellations, secure payment processing, and customer support 24/7, all add to the comfort, peace of mind and stress-free travel that a SevenUnique traveler is accustomed to!"
+                ]},
                 ],
             },
         },
-          ];
+    ];
 
     const [activeTab, setActiveTab] = useState(tabs[0].id);
     const activeData = tabs.find((tab) => tab.id === activeTab);
@@ -221,8 +285,8 @@ function Page() {
     // Static top-section data
     const data = {
         subheading: 'BUSINESS LOAN',
-        heading: 'Apka Business, Hamari Support',
-        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et ',
+        heading: 'Apka Safar, Hamara Support',
+        description: 'Book your flights, hotels, trains, or buses easily and travel without worries, plan smart, and have fun throughout  your journey.',
         bgImage: '/booking/bookingbg.png',
         centerImage: '/booking/book1.png',
     };
@@ -269,7 +333,7 @@ function Page() {
                 </div>
             </div>
 
-          
+
             <section>
                 <div className="py-5 md:py-0 overflow-visible" style={{ backgroundColor: "#FFE4FE" }}>
                     <div className="max-w-7xl mx-auto px-4 lg:px-0">
@@ -308,38 +372,70 @@ function Page() {
                     {/* Active Tab Content */}
                     <PromotionSlider sliderImages={activeData?.data.sliderImages} />
                     <BookingFeatures title={activeData?.data.booking.title} features={activeData?.data.booking.features} />
-                    <BenefitsSection2/>
+                    <BenefitsSection2 />
                     <ServicesSection3 data={activeData?.data.aeps} />
 
                     {/* Info Sections + Travel Assured */}
                     <section className="mt-10 mb-16">
                         <div>
                             {activeData?.data.info.slice(0, 2).map((item, index) => (
-                                <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-5 lg:p-16 max-w-6xl my-10 ${index % 2 === 0 ? "" : "ms-auto"}`}>
-                                    <h2 className="text-2xl md:text-3xl font-bold text-[#043C5C] mb-4">{item.title}</h2>
-                                    <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                                <div
+                                    key={index}
+                                    className={`bg-[#E6F6FE] rounded-2xl p-5 lg:p-16 max-w-6xl my-10 ${index % 2 === 0 ? "" : "ms-auto"
+                                        }`}
+                                >
+                                    <h2 className="text-2xl md:text-3xl font-bold text-[#043C5C] mb-4">
+                                        {item.title}
+                                    </h2>
+
+                                    {Array.isArray(item.description) ? (
+                                        item.description.map((para, i) => (
+                                            <p key={i} className="text-gray-600 leading-relaxed mb-4">
+                                                {para}
+                                            </p>
+                                        ))
+                                    ) : (
+                                        <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                                    )}
                                 </div>
                             ))}
+
                         </div>
 
                         <TravelAssured data={activeData?.data.travel} />
 
                         <div className="mt-24">
-                            {activeData?.data.info.slice(2, 3).map((item, index) => (
-                                <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-5 lg:p-16 max-w-5xl my-10 ${index % 2 !== 0 ? "" : "ms-auto"}`}>
-                                    <h2 className="text-2xl md:text-3xl font-bold text-[#043C5C] mb-4">{item.title}</h2>
-                                    <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                            {activeData?.data.info.slice(2, 6).map((item, index) => (
+                                <div
+                                    key={index}
+                                    className={`bg-[#E6F6FE] rounded-2xl p-5 lg:p-16 max-w-5xl my-10 ${index % 2 !== 0 ? "" : "ms-auto"
+                                        }`}
+                                >
+                                    <h2 className="text-2xl md:text-3xl font-bold text-[#043C5C] mb-4">
+                                        {item.title}
+                                    </h2>
+
+                                    {Array.isArray(item.description) ? (
+                                        item.description.map((para, i) => (
+                                            <p key={i} className="text-gray-600 leading-relaxed mb-4">
+                                                {para}
+                                            </p>
+                                        ))
+                                    ) : (
+                                        <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                                    )}
                                 </div>
                             ))}
                         </div>
+
                     </section>
                 </div>
             </section>
 
 
-            <PartnersSection/>
-            <TestimonialSlider/>
-            <ContactBanner/>
+            <PartnersSection />
+            <TestimonialSlider />
+            <ContactBanner />
         </>
     )
 }

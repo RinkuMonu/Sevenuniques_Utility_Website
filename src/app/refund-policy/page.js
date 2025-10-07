@@ -9,70 +9,194 @@ import {
   Scale,
   Mail,
   ClipboardList,
+  FileText,
+  Globe,
+  Ban,
+  RotateCcwIcon,
+  XOctagon,
+  Clock,
+  Divide,
+  Slash,
+  CreditCard,
+  Phone,
+  AlertTriangleIcon,
 } from "lucide-react";
 
 
 const refundSections = [
   {
     id: "cancellation-process",
-    title: "Cancellation of Services",
-    icon: <XCircle className="w-5 h-5 " />,
-    content:
-      `Clients of Deenita India Private Limited may request the cancellation of any service at any time. To initiate a cancellation, the client must submit a formal request in writing via email to support@7unique.in. Upon receiving the cancellation request, the Company will review the status of the service, assess the work completed, and evaluate any costs already incurred for third-party vendors, licensing fees, or operational expenses.  
-      
-      The Company reserves the right to deny cancellation requests if the service has been fully completed, delivered, or if cancellation violates contractual obligations agreed upon in the service agreement. Clients should understand that cancellation does not exempt them from fulfilling payment obligations for work that has already been completed or any expenses already incurred by the Company. This policy ensures fairness to both parties and protects the Company from financial loss due to cancellations made after significant work has been performed. Timely submission of a cancellation request is essential to determine eligibility for any potential refund.`,
+    title: "Cancellation and Refund Policy",
+    icon: <XCircle className="w-5 h-5" />,
+    content: [
+      "1. Overview\nThis Cancellation and Refund Policy of SevenUnique Tech Solutions Private Limited explains the terms under which customers can cancel a service or request a refund for payments made through our digital platform www.sevenuniques.com. Our objective is to ensure complete transparency, fairness, and customer satisfaction while maintaining compliance with applicable laws, industry standards, and the policies of our third-party service providers.",
+
+      "We provide multiple digital services, including bill payments, AEPS, DMT, recharges, loan applications, insurance, PAN card processing, and other utility-based financial services. Once a service or transaction is successfully completed, it cannot be cancelled as our systems operate in real time with partner institutions. However, in certain cases such as failed, duplicate, or incomplete transactions, customers may be eligible for a refund.",
+
+      "Refund requests must be submitted within 7 days of the transaction by emailing info@7unique.in with complete transaction details. Approved refunds will be processed within 5–10 business days to the original payment method used.",
+
+      "At SevenUnique Tech Solutions Private Limited, we strive to maintain honesty, efficiency, and customer trust by ensuring a transparent process for handling cancellations and refunds."
+    ]
   },
   {
-    id: "refund-eligibility",
-    title: "Refund Policy",
-    icon: <RotateCcw className="w-5 h-5 " />,
-    content:
-      `All service fees charged by Deenita India Private Limited are generally non-refundable, unless explicitly stated in writing or required by applicable law. In cases where a service is only partially delivered and the cancellation request is approved, the Company may provide a pro-rata refund, calculated based on the proportion of work not yet completed relative to the total agreed scope of services.
+    id: "scope-of-services",
+    title: "Scope of Services",
+    icon: <Globe className="w-5 h-5" />,
+    content: [
+      "2. Scope of Services\nThis Cancellation and Refund Policy applies to all services provided by SevenUnique Tech Solutions Private Limited through its official website www.sevenuniques.com and mobile application. The policy covers every transaction and digital service offered to customers, ensuring clarity in all engagements and payments.",
 
-Refunds, when applicable, will be processed through the same payment method originally used for the transaction. The processing timeline may vary depending on the payment channel and banking procedures but will be completed within a reasonable period after cancellation approval. This policy ensures transparency in financial dealings, clearly outlines the circumstances under which refunds may be issued, and sets clear expectations for clients regarding refund eligibility.
+      "Our platform provides a wide range of digital and financial services designed to make daily transactions seamless, secure, and convenient. These include Loan Application and Processing, BBPS (Bharat Bill Payment System) for utility payments such as electricity, gas, water, and broadband bills, as well as AEPS (Aadhaar Enabled Payment System) for secure biometric transactions.",
 
-The refund structure protects both the client and the Company, ensuring clients are only charged for work performed while safeguarding the Company from losses due to partial cancellations.
-`
+      "We also offer DMT (Domestic Money Transfer) services for quick fund transfers, along with Insurance solutions for various categories. Additionally, users can access Mobile, DTH, and Data Card Recharges, Credit Card Bill Payments, and PAN Card Application services through our platform.",
+
+      "Beyond these, SevenUnique Tech Solutions Private Limited may provide other related utility, government, or financial services as per customer requirements. This policy governs all such services to maintain transparency, protect customer interests, and ensure fair handling of cancellations and refunds across every transaction."
+    ]
   },
   {
-    id: "non-refundable",
-    title: "Third-Party Costs",
-    icon: <AlertTriangle className="w-5 h-5 " />,
-    content:
-      `Some services provided by Deenita India Private Limited involve third-party vendors, partners, or service providers, including banks, licensing authorities, utility providers, or other operational partners. Fees or costs paid to these entities are non-refundable regardless of whether the client cancels services.
+  id: "cancellation-policy",
+  title: "Cancellation Policy",
+  icon: <Ban className="w-5 h-5" />,
+  content: [
+    "3. Cancellation Policy\nAt SevenUnique Tech Solutions Private Limited, transactions are processed in real time through secure integrations with banks, government APIs, and third-party service providers. Therefore, once a transaction or service request has been successfully completed by a user, distributor, retailer, or white-label partner, it cannot be cancelled or reversed under normal circumstances.",
 
-Clients are responsible for all third-party charges, even if the Company has already incurred or remitted these payments before receiving the cancellation request. This ensures that the Company is not financially liable for expenses beyond its control. The policy also protects relationships with third-party vendors by guaranteeing timely payment and honoring contractual obligations with these providers.
+    "However, if a service remains pending due to technical errors, server downtime, or verification delays, the concerned party may submit a cancellation request within 7 days from the date of transaction. The request must be sent to info@7unique.in with the Transaction ID, Registered Mobile Number, and Service Type clearly mentioned.",
 
-Clients are advised to review all associated costs and obligations before requesting service initiation. Understanding these third-party obligations ensures transparency and prevents disputes regarding refund eligibility or service cancellations.
-`
-  },
+    "All cancellation requests are thoroughly reviewed by our support team and, when necessary, coordinated with relevant banks, billers, or API partners to verify eligibility. Approval or rejection of such requests depends on the service status and confirmation from associated partners.",
+
+    "Please note that SevenUnique Tech Solutions Private Limited reserves the right to deny cancellation if the transaction has already been processed or acknowledged as successful by the service provider. This ensures operational integrity, transparency, and fairness across all levels—user, distributor, retailer, and white-label partner."
+  ]
+}
+,
   {
-    id: "exceptions",
-    title: "Disputes and Legal Recourse",
-    icon: <Scale className="w-5 h-5 " />,
-    content:
-      `Any disputes or disagreements related to cancellations or refunds will be addressed in accordance with applicable Indian law and the Company’s Terms & Conditions. The Company encourages clients to first attempt to resolve disputes amicably by contacting support@7unique.in.
+  id: "refund-eligibility",
+  title: "Refund Eligibility",
+  icon: <RotateCcwIcon className="w-5 h-5" />,
+  content: [
+    "4. Refund Eligibility\nAt SevenUnique Tech Solutions Private Limited, refunds are considered only under specific circumstances to ensure transparency and fairness for all customers, distributors, retailers, and white-label partners.",
 
-If an amicable resolution is not possible, the Company reserves the right to pursue legal action to recover unpaid fees, outstanding balances, or costs incurred as a result of service cancellations. This clause ensures that the Company maintains legal protection while providing a structured framework for dispute resolution.
+    "1. Failed or Unsuccessful Transactions:\nIf a service such as a recharge, bill payment, fund transfer, or AEPS transaction fails, but the amount is deducted from the customer’s account and not credited to the intended beneficiary, a refund request will be eligible for review and processing.",
 
-It also emphasizes that clients are responsible for meeting payment obligations and understanding the cancellation and refund terms before engaging the Company’s services.
-`
-  },
+    "2. Duplicate Payments:\nRefunds may be issued if a user, distributor, retailer, or partner accidentally makes multiple payments for the same service. In such cases, only the extra payment(s) will be refunded after verification.",
+
+    "3. Technical or System Errors:\nRefunds are applicable if a transaction fails due to technical errors, server downtime, or integration issues on our platform or with our third-party service providers. Each case will be carefully validated before approval.",
+
+    "4. Unfulfilled PAN/Insurance Applications:\nIf a PAN card or insurance application cannot be processed due to administrative, system, or partner-related issues beyond the customer’s control, the amount paid for the service may be refunded after verification.",
+
+    "All refund requests must be submitted within 7 days of the transaction, and approval is subject to verification by SevenUnique Tech Solutions Private Limited and associated partners."
+  ]
+},
   {
-    id: "exceptions",
-    title: "Contact for Cancellation & Refund Requests",
-    icon: <Mail className="w-5 h-5 " />,
-    content:
-      `Clients seeking to cancel a service or request a refund may contact the Company through the following channels:
+  id: "non-refundable-services",
+  title: "Non-Refundable Services",
+  icon: <XOctagon className="w-5 h-5" />, 
+  content: [
+    "5. Non-Refundable Services\nAt SevenUnique Tech Solutions Private Limited, certain services and fees are strictly non-refundable to maintain operational efficiency, comply with third-party agreements, and ensure transparency for all users, distributors, retailers, and white-label partners.",
 
-Email: support@7unique.in
- Phone: 0141-4511098
+    "1. Successfully Completed Transactions:\nOnce a service such as recharge, bill payment, AEPS, or DMT transfer is successfully processed, the transaction is considered final and cannot be refunded, as the amount has already been credited to the respective beneficiary or service provider.",
 
-All requests should include sufficient details about the service, payment reference, and reason for cancellation to enable the Company to respond efficiently. Timely communication ensures proper assessment of the cancellation request and determination of any potential refunds.
-Deenita India Private Limited aims to respond promptly to all requests, providing clear guidance regarding next steps and any applicable financial obligations. Unauthorized attempts to dispute payments or bypass the official process may result in legal action.
+    "2. Loan Processing and Verification Fees:\nFees associated with loan application, verification, processing, or approval are non-refundable, even if the loan is not sanctioned, because these charges cover administrative and operational costs incurred by our platform and its partners.",
 
-`
-  },
+    "3. PAN Card and Government Applications:\nPAN card application fees or similar government service charges are non-refundable once submitted, as these payments are processed directly by the relevant government agency or API partner.",
+
+    "4. Third-Party Confirmed Services:\nAny transaction where a third-party provider or government API has already confirmed success is non-refundable.",
+
+    "Additionally, all service charges, convenience fees, and applicable GST are non-refundable under any circumstances. This ensures clarity and prevents disputes regarding payments for completed or confirmed services."
+  ]
+},
+{
+  id: "refund-processing-time",
+  title: "Refund Processing Time",
+  icon: <Clock className="w-5 h-5" />,
+  content: [
+    "6. Refund Processing Time\nAt SevenUnique Tech Solutions Private Limited, we aim to process all approved refunds efficiently and transparently to maintain customer trust and satisfaction across all users, distributors, retailers, and white-label partners.",
+
+    "Once a refund request has been reviewed and approved, the processing time typically ranges from 5 to 10 business days from the date of approval. The exact timing may vary depending on factors such as internal verification procedures, bank processing schedules, and payment gateway requirements.",
+
+    "Refunds are generally credited to the original payment method used for the transaction, which may include bank accounts, credit or debit cards, UPI, or other online payment systems. Customers are requested to ensure that the payment details provided during the transaction remain valid and active to avoid any delays.",
+
+    "In cases where the original payment method is no longer active or available, the customer may be required to provide an alternative verified method to receive the refund.",
+
+    "While we strive to process refunds promptly, delays may occasionally occur due to bank holidays, system maintenance, or third-party processing delays. By providing clear timelines and regular updates, SevenUnique Tech Solutions Private Limited ensures transparency and a smooth refund experience for all parties involved."
+  ]
+},
+{
+  id: "partial-refunds",
+  title: "Partial Refunds or Adjustments",
+  icon: <Divide className="w-5 h-5" />, 
+  content: [
+    "7. Partial Refunds or Adjustments\nAt SevenUnique Tech Solutions Private Limited, we understand that in some cases, a service may have been partially delivered before a cancellation request is made. To ensure fairness to both the customer and our platform, partial refunds or adjustments may be provided based on the extent of service usage.",
+
+    "For example, if a user, distributor, retailer, or white-label partner has already utilized part of a service—such as a recharge, bill payment, AEPS/DMT transaction, or loan processing—any refund will be calculated proportionately. This calculation considers the services already rendered, resources consumed, and any applicable administrative or processing fees.",
+
+    "Customers requesting partial refunds must submit the cancellation or refund request within 7 days of the transaction, providing all relevant details including Transaction ID, registered mobile number, and service type. Each request is carefully verified by our support team and, where necessary, coordinated with third-party partners or service providers to determine the refundable amount.",
+
+    "By implementing proportionate refunds and adjustments, SevenUnique Tech Solutions Private Limited ensures transparency, minimizes disputes, and maintains trust with all stakeholders, including users, distributors, retailers, and white-label partners."
+  ]
+},
+{
+  id: "late-cancellations",
+  title: "Late Cancellations or Post-Usage",
+  icon: <Slash className="w-5 h-5" />, 
+  content: [
+    "8. Late Cancellations or Post-Usage\nAt SevenUnique Tech Solutions Private Limited, it is important to clarify the terms regarding late cancellations or services already utilized. Once a customer, distributor, retailer, or white-label partner has availed or benefited from a service, the transaction is considered complete, and no refund will be processed.",
+
+    "This policy applies to all services provided through our platform, including AEPS withdrawals, bill payments, mobile/DTH recharges, fund transfers (DMT), loan processing, insurance, PAN card applications, and other utility or financial services. Once these services are successfully executed, the amount paid is non-recoverable, as the service has been delivered and the associated resources have been consumed.",
+
+    "Customers are encouraged to review transaction details carefully before initiating any request. Any cancellation request after service completion will be declined, even if submitted within the typical refund window, because the service has already been rendered and cannot be reversed.",
+
+    "By maintaining this policy, SevenUnique Tech Solutions Private Limited ensures operational integrity, fairness, and transparency while protecting both the company and its partners from disputes related to post-usage refund claims."
+  ]
+},
+{
+  id: "refund-method",
+  title: "Refund Method",
+  icon: <CreditCard className="w-5 h-5" />, 
+  content: [
+    "9. Refund Method\nAt SevenUnique Tech Solutions Private Limited, all refunds are processed using the same payment method that was used for the original transaction to ensure transparency and security for all customers, distributors, retailers, and white-label partners. This includes payments made through bank accounts, credit or debit cards, UPI, or other online payment systems.",
+
+    "The refund process begins once a request has been verified and approved by our support team. Refunds are then initiated promptly and are subject to processing times of 5–10 business days, depending on the payment method and the associated bank or payment gateway’s timelines.",
+
+    "In cases where the original payment method is unavailable or inactive—for example, a closed bank account or expired card—the customer may be required to provide an alternative verified payment method to receive the refund. Our team will guide the customer through this process to ensure funds are transferred safely and accurately.",
+
+    "SevenUnique Tech Solutions Private Limited ensures that refunds are secure, traceable, and credited only to the rightful account, minimizing any risk of fraud or error. Clear communication is maintained throughout the refund process so that all parties are informed about the status and expected timeline of the refund."
+  ]
+},
+{
+  id: "contact-us",
+  title: "Contact Us",
+  icon: <Phone className="w-5 h-5" />, 
+  content: [
+    "10. Contact Us\nFor any cancellation or refund-related concerns, customers, distributors, retailers, and white-label partners are encouraged to contact SevenUnique Tech Solutions Private Limited. Our support team is available to assist with queries, verification of transactions, and guidance on the refund process.",
+
+    "Head Office:\nPlot No. 97, Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura, Jaipur, Rajasthan, India, 302017",
+
+    "Corporate Office:\nOffice No. 101/2, Vakratunda Corporate Park Premises Co-operative Society Limited, Off. Aarey Road, Goregaon (East), Mumbai – 400 063",
+
+    "Email Addresses:\nsupport@7unique.in\ninfo@7unique.in",
+
+    "Phone:\n0141-4511098",
+
+    "Customers are requested to provide complete details when contacting support, including Transaction ID, registered mobile number, service type, and date of transaction, to ensure timely processing of queries or refund requests.",
+
+    "Our team strives to respond promptly and provide clear instructions for cancellation or refund procedures. By maintaining multiple contact channels, we aim to ensure transparency, trust, and a seamless experience for all stakeholders.",
+
+    "SevenUnique Tech Solutions Private Limited is committed to efficient and secure handling of all customer concerns and ensures that each case is reviewed thoroughly in coordination with third-party service providers or partners when required."
+  ]
+},
+{
+  id: "disclaimer",
+  title: "Disclaimer",
+  icon: <AlertTriangleIcon className="w-5 h-5" />,
+  content: [
+    "11. Disclaimer\nSevenUnique Tech Solutions Private Limited operates as a technology facilitator for a wide range of financial and utility transactions, including bill payments, recharges, AEPS/DMT services, loans, insurance, PAN applications, and other digital financial services. The company provides a secure platform to enable transactions between customers and third-party service providers, including banks, utility companies, insurance providers, and government agencies.",
+
+    "While we strive to ensure accurate, timely, and efficient processing of all services, final settlement, transaction confirmation, and refund eligibility may depend on the policies, systems, and procedures of third-party service providers, banks, or government APIs. Delays, errors, or discrepancies arising from these entities may impact the timing or approval of cancellations and refunds.",
+
+    "SevenUnique Tech Solutions Private Limited does not assume liability for delays, failures, or losses resulting from third-party actions beyond our control. All refunds, cancellations, and adjustments are subject to verification and confirmation in coordination with the relevant service providers.",
+
+    "The company reserves the right to amend, update, or modify this Cancellation and Refund Policy at any time without prior notice, in order to comply with changes in legal, regulatory, operational, or technological requirements. Customers, distributors, retailers, and white-label partners are encouraged to regularly review the policy to remain informed of any updates."
+  ]
+},
 ];
 
 export default function RefundPolicy() {
@@ -116,7 +240,7 @@ export default function RefundPolicy() {
         <section className="bg-white min-h-screen">
           <div className="bg-[#F4FCFF] rounded-2xl shadow-lg">
             <section>
-              <div className="max-w-6xl mx-auto px-4 py-12">
+              <div className="max-w-8xl mx-auto px-4 py-12">
                 <div className="flex flex-col lg:flex-row gap-8">
                   {/* Table of Contents */}
                   <div className="lg:w-1/4">
@@ -149,13 +273,7 @@ export default function RefundPolicy() {
                       <div className=" mb-10">
                         <div className="mb-6">
                           <div className="w-20 h-20  bg-gradient-to-r from-[#358EBA] to-[#24576C] rounded-full flex items-center justify-center">
-                            <Image
-                              src="/Image/refund-img.png"
-                              alt="Refund Policy Icon"
-                              width={40}
-                              height={40}
-                              className="filter invert"
-                            />
+                            <FileText className="w-10 h-10 text-white" />
                           </div>
                         </div>
                         <div className="inline-block bg-gradient-to-r from-[#358EBA] to-[#24576C] text-white font-medium px-8 py-2 rounded-full mb-4 shadow-md">
@@ -168,6 +286,10 @@ export default function RefundPolicy() {
                         <p className="text-gray-600 text-lg leading-relaxed">
                           Our refund policy is designed to be fair and transparent. We understand that circumstances may change, and we strive to make the cancellation and refund process as straightforward as possible. Below you'll find detailed information about our policies, eligibility criteria, and processes.
                         </p>
+                        <p className="space-y-4 text-black text-lg leading-relaxed">SevenUnique Tech Solutions Private Limited<br />
+                          Email: info@7unique.in<br />
+                          Website: www.sevenuniques.com<br />
+                          Effective Date: 07 October 2025</p>
                       </div>
                     </div>
 
