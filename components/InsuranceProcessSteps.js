@@ -57,7 +57,7 @@ export default function InsuranceProcessSteps() {
                             At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odiodissimos At Vero Eos Et Accusamus Et At Vero Eos Et
                         </p>
                         <Link
-                            href="/"
+                            href="/coming-soon"
                             className="mt-8 inline-flex items-center gap-2 px-6 py-3 border-2 border-[#1297E2] text-[#1297E2] font-semibold rounded-full hover:bg-[#33B5E5] hover:text-white transition-colors duration-300"
                         >
                             Apply Now

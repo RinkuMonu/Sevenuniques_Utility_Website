@@ -3,74 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const cards = [
-    {
-        id: 1,
-         image:"/credit/cc1.png" ,
-        tag: "Hot Selling",
-        bank: "Axis Bank",
-        name: "ACE",
-        holder: "VINIT KUMAR",
-        type: "VISA Signature",
-             points:" Lounge Access | Golf Rounds | BookMyShow" ,
-          title:" Premium Lifestyle Offers",
-    },
-    {
-        id: 2,
-         image:"/credit/cc2.png" ,
-        tag: "Hot Selling",
-        bank: "HDFC Bank",
-        name: "Millennia",
-        holder: "RAVI SINGH",
-        type: "VISA Platinum",
-             points:" Lounge Access | Golf Rounds | BookMyShow" ,
-          title:" Premium Lifestyle Offers",
-    },
-    {
-        id: 3,
-         image:"/credit/cc3.png" ,
-        tag: "Hot Selling",
-        bank: "ICICI Bank",
-        name: "Coral",
-        holder: "ANKIT SHARMA",
-        type: "MasterCard",
-             points:" Lounge Access | Golf Rounds | BookMyShow" ,
-          title:" Premium Lifestyle Offers",
-    },
-    {
-        id: 4,
-         image:"/credit/cc4.png" ,
-        tag: "Hot Selling",
-        bank: "SBI Card",
-        name: "Elite",
-        points:" Lounge Access | Golf Rounds | BookMyShow" ,
-        holder: "NEHA VERMA",
-          title:" Premium Lifestyle Offers",
-        type: "VISA Infinite",
-    },
-    {
-        id: 5,
-         image:"/credit/cc5.png" ,
-        tag: "Hot Selling",
-        bank: "Kotak Bank",
-        name: "League",
-        holder: "SANJAY KUMAR",
-        points:" Lounge Access | Golf Rounds | BookMyShow" ,
-          title:" Premium Lifestyle Offers",
-        type: "Rupay",
-    },
-    {
-        id: 6,
-        image:"/credit/cc6.png" ,
-        tag: "Hot Selling",
-        bank: "IndusInd Bank",
-        name: "Platinum Aura",
-        holder: "PRIYA MEHTA",
-        points:" Lounge Access | Golf Rounds | BookMyShow" ,
-        title:" Premium Lifestyle Offers",
-        type: "VISA Gold",
-    },
-];
+
 
 const CreditCard = ({ bank, name, points, title ,tag , image }) => {
     return (
@@ -132,14 +65,14 @@ const CreditCard = ({ bank, name, points, title ,tag , image }) => {
     );
 };
 
-export default function CardGrid() {
+export default function CardGrid({cardgrid}) {
     return (
         <div className="px-4 lg:px-0   max-w-7xl mx-auto ">
               <h3 className="text-2xl sm:text-3xl lg:mb-24 font-bold text-[#0C3D4C]">
-            Simple Steps, Instant Approval
+       {cardgrid.heading}
           </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 justify-center lg:gap-y-40 gap-x-10 w-full">
-                {cards.map((card) => (
+                {cardgrid.cards.map((card) => (
                     <CreditCard key={card.id} {...card} />
                 ))}
             </div>

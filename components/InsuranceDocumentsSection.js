@@ -52,7 +52,7 @@ export default function InsuranceDocumentsSection() {
               At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio
               Dignissimos At Vero Eos Et Accusamus Et Iusto Odio Eos Et A.
             </p>
-            <Link href='' className="mt-8 inline-flex items-center gap-2 px-6 py-2 font-semibold text-[#018EDE] border-2 border-[#018EDE] rounded-full hover:bg-cyan-50 hover:border-cyan-400 transition-all duration-300">
+            <Link href="/coming-soon" className="mt-8 inline-flex items-center gap-2 px-6 py-2 font-semibold text-[#018EDE] border-2 border-[#018EDE] rounded-full hover:bg-cyan-50 hover:border-cyan-400 transition-all duration-300">
               Apply Now
               <MoveRight className="w-5 h-5" />
             </Link>

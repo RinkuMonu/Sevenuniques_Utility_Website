@@ -23,7 +23,7 @@ function HomeSecurity() {
                             </p>
                         </div>
                         <div className="mb-12">
-                            <Link href="/contact" className=" text-white font-bold py-3 px-8 rounded-full transition-colors duration-300"   style={{
+                            <Link href="https://utility.sevenuniques.in/register" className=" text-white font-bold py-3 px-8 rounded-full transition-colors duration-300"   style={{
     background: "linear-gradient(90deg,#358EBA  0%, #24576C 100%)"
   }}>
                                 Register now

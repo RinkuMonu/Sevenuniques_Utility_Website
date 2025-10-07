@@ -60,7 +60,7 @@ function page() {
                                     {data.description}
                                 </p>
                                 <Link
-                                    href="/"
+                                    href="https://utility.sevenuniques.in/register"
                                     className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]"
                                 >
                                     <span className="block px-8 py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#0d2f4d]">

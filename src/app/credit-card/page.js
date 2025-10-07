@@ -13,6 +13,76 @@ import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
 
 function page() {
+    const cardgrid= {
+    heading:"     Simple Steps, Instant Approval",
+ cards : [
+    {
+        id: 1,
+         image:"/credit/cc1.png" ,
+        tag: "Hot Selling",
+        bank: "Axis Bank",
+        name: "ACE",
+        holder: "VINIT KUMAR",
+        type: "VISA Signature",
+             points:" Lounge Access | Golf Rounds | BookMyShow" ,
+          title:" Premium Lifestyle Offers",
+    },
+    {
+        id: 2,
+         image:"/credit/cc2.png" ,
+        tag: "Hot Selling",
+        bank: "HDFC Bank",
+        name: "Millennia",
+        holder: "RAVI SINGH",
+        type: "VISA Platinum",
+             points:" Lounge Access | Golf Rounds | BookMyShow" ,
+          title:" Premium Lifestyle Offers",
+    },
+    {
+        id: 3,
+         image:"/credit/cc3.png" ,
+        tag: "Hot Selling",
+        bank: "ICICI Bank",
+        name: "Coral",
+        holder: "ANKIT SHARMA",
+        type: "MasterCard",
+             points:" Lounge Access | Golf Rounds | BookMyShow" ,
+          title:" Premium Lifestyle Offers",
+    },
+    {
+        id: 4,
+         image:"/credit/cc4.png" ,
+        tag: "Hot Selling",
+        bank: "SBI Card",
+        name: "Elite",
+        points:" Lounge Access | Golf Rounds | BookMyShow" ,
+        holder: "NEHA VERMA",
+          title:" Premium Lifestyle Offers",
+        type: "VISA Infinite",
+    },
+    {
+        id: 5,
+         image:"/credit/cc5.png" ,
+        tag: "Hot Selling",
+        bank: "Kotak Bank",
+        name: "League",
+        holder: "SANJAY KUMAR",
+        points:" Lounge Access | Golf Rounds | BookMyShow" ,
+          title:" Premium Lifestyle Offers",
+        type: "Rupay",
+    },
+    {
+        id: 6,
+        image:"/credit/cc6.png" ,
+        tag: "Hot Selling",
+        bank: "IndusInd Bank",
+        name: "Platinum Aura",
+        holder: "PRIYA MEHTA",
+        points:" Lounge Access | Golf Rounds | BookMyShow" ,
+        title:" Premium Lifestyle Offers",
+        type: "VISA Gold",
+    },
+] }
     const data = {
         id: 1,
         subheading: 'Credit Card',
@@ -30,11 +100,40 @@ function page() {
             </div>
         </div>
     );
- const info = [
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                    { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
-                ]
+    const info = [
+        { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
+        { title: "Safe Aur Quick Mobile Recharge", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos..." },
+    ]
     const text = "CREDIT CARD";
+
+    const creditdata ={
+  heading :" Simple Steps, Instant Approval" , 
+   stepsData : [
+  {
+    step: 1,
+    title: 'Fill Application Form',
+    description: 'Start by filling out the credit card application online through the bank\'s website/app or offline at the branch. Provide your basic details such as name, mobile number, email ID, and occupation.',
+    image: '/credit/credits1.png',
+  },
+  {
+    step: 2,
+    title: 'Submit Documents',
+    intro: 'Attach/upload the necessary documents for verification:',
+    details: [
+      '<strong>Identity Proof</strong> &ndash; Aadhaar, PAN, Passport, or Voter ID',
+      '<strong>Address Proof</strong> &ndash; Utility Bill, Driving License, Rent Agreement',
+      '<strong>Income Proof</strong> &ndash; Salary Slip, ITR, or Bank Statement',
+    ],
+    image: '/credit/credits2.png',
+  },
+  {
+    step: 3,
+    title: 'Get Approval',
+    description: 'Once your documents are verified, the bank will review your application. If everything is in order, you will receive an approval notification, and your new credit card will be dispatched.',
+    image: '/credit/credits3.png',
+  },
+]
+}
     return (
         <>
             <ServiceBanner data={data} />
@@ -71,26 +170,26 @@ function page() {
                 </div>
             </section>
             <BankLogoGrid />
-            <CreditSlider />
+            <CreditSlider creditdata={creditdata} />
             <div className='mt-20 pb-10 lg:pb-40'>
                 <BenefitsSection2 />
             </div>
-            <CardGrid />
-            <CreditComp/>
-<CreditChoice/>
+            <CardGrid  cardgrid ={cardgrid}/>
+            <CreditComp />
+            <CreditChoice />
 
-              <div>
-                            {info.map((item, index) => (
-                                <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-5 lg:p-16 max-w-6xl my-10 ${index % 2 === 0 ? "" : "ms-auto"}`}>
-                                    <h2 className="text-2xl md:text-3xl font-bold text-[#043C5C] mb-4">{item.title}</h2>
-                                    <p className="text-gray-600 leading-relaxed">{item.description}</p>
-                                </div>
-                            ))}
-                        </div>
+            <div>
+                {info.map((item, index) => (
+                    <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-5 lg:p-16 max-w-6xl my-10 ${index % 2 === 0 ? "" : "ms-auto"}`}>
+                        <h2 className="text-2xl md:text-3xl font-bold text-[#043C5C] mb-4">{item.title}</h2>
+                        <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                    </div>
+                ))}
+            </div>
 
-                           <PartnersSection/>
-            <TestimonialSlider/>
-            <ContactBanner/>
+            <PartnersSection />
+            <TestimonialSlider />
+            <ContactBanner />
         </>
     )
 }

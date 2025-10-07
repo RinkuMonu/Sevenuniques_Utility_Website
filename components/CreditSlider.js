@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-const stepsData = [
+const creditdata ={
+  heading :" Simple Steps, Instant Approval" , 
+   stepsData : [
   {
     step: 1,
     title: 'Fill Application Form',
@@ -25,7 +27,8 @@ const stepsData = [
     description: 'Once your documents are verified, the bank will review your application. If everything is in order, you will receive an approval notification, and your new credit card will be dispatched.',
     image: '/credit/credits3.png',
   },
-];
+]
+}
 
 const StepSelector = ({ step, title, isActive, onClick }) => {
   return (
@@ -51,7 +54,7 @@ const StepSelector = ({ step, title, isActive, onClick }) => {
   );
 };
 
-export default function App() {
+export default function App({creditdata}) {
   const [activeStep, setActiveStep] = useState(1);
 
   return (
@@ -59,7 +62,7 @@ export default function App() {
       <div className="max-w-7xl mx-auto w-full">
         <header className="mb-6 sm:mb-8">
           <h3 className="text-2xl sm:text-3xl font-bold text-gray-800">
-            Simple Steps, Instant Approval
+       {creditdata.heading}
           </h3>
         </header>
 
@@ -67,7 +70,7 @@ export default function App() {
           {/* Left column (buttons) */}
           <div className="col-span-1">
             <div className="flex flex-col gap-4 sm:gap-6 h-full">
-              {stepsData.map((stepInfo) => (
+              {creditdata.stepsData.map((stepInfo) => (
                 <div className="flex-1" key={stepInfo.step}>
                   <StepSelector
                     step={stepInfo.step}
@@ -85,7 +88,7 @@ export default function App() {
             <div className="relative overflow-hidden rounded-2xl h-full min-h-[300px] sm:min-h-[300px]">
               <div className='bg-gradient-to-t from-[#014D78] to-[#018EDE] px-4  text-white shadow-2xl transition-transform duration-500 ease-in-out h-[600px]'>
 
-              {stepsData.map((item) => (
+              {creditdata.stepsData.map((item) => (
                 <div
                   key={item.step}
                   className="absolute top-0 left-0 w-full h-full "
