@@ -21,12 +21,9 @@ const StatCard = ({ value, label }) => (
 
  const HomeMap = () => {
   const stats = [
-    { value: '100K +', label: 'Customer Base' },
-    { value: '206K +', label: 'Adhikari Network' },
-    { value: '218K +', label: 'Villages Covered' },
-    { value: '100K +', label: 'Customer Base' },
-    { value: '206K +', label: 'Adhikari Network' },
-    { value: '218K +', label: 'Villages Covered' },
+    { value: '2 Lakh+', label: 'Achievement Metrics' },
+    { value: '50,000+', label: 'Happy clients with an easy online financial service.' },
+    { value: '15,000+', label: 'Good Partner Network' },
   ];
 
   return (

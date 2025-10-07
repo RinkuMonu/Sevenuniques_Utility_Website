@@ -42,7 +42,7 @@ const StatsBanner = () => {
                     </div>
                 </div>
                 <div className="flex items-center gap-4">
-                    <Link href="/" aria-label="Download on the App Store">
+                    <Link href="/coming-soon" aria-label="Download on the App Store">
                         <Image
                             src="/loan/image7.png"
                             alt="logo-bbps"
@@ -51,7 +51,7 @@ const StatsBanner = () => {
 
                         />
                     </Link>
-                    <Link href="/" aria-label="Get it on Google Play">
+                    <Link href="/coming-soon" aria-label="Get it on Google Play">
                         <Image
                             src="/loan/image8.png"
                             alt="logo-bbps"

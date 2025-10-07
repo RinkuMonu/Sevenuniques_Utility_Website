@@ -75,11 +75,11 @@ const BenefitsSection2 = () => {
                             <IoCallOutline className='absolute text-black top-1 left-2.5' />
                         </div>
                         
-                        <button className="px-6 py-3 text-white font-semibold rounded-4xl transition-colors" style={{
+                      <Link href="/coming-soon"  className="px-6 py-3 text-white font-semibold rounded-4xl transition-colors" style={{
                             background: "linear-gradient(90deg,#358EBA  0%, #24576C 100%)"
                         }}>
                             Get app
-                        </button>
+                        </Link>
 
                     </div>
                 </div>
@@ -96,7 +96,7 @@ const BenefitsSection2 = () => {
                         />
 
                         <Link
-                            href="/"
+                             href="/coming-soon"
                             className="absolute top-4/5 left-1/2 -translate-x-1/2 -translate-y-1/2   inline-block rounded-full border border-white p-[2px] z-10"
                         >
                             <span className=" px-8 py-3 bg-gradient-to-t from-[#A10000] to-[#F40000] text-xl text-white font-semibold rounded-full inline-flex gap-2">

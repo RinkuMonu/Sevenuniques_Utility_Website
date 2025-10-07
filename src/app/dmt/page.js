@@ -75,10 +75,10 @@ function page() {
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12 ">
             <Image
               src="/dmt/earnbg.png"
-              width={400}
+              width={600}
               height={500}
               alt="Happy professional with a tablet"
-              className="rounded-lg absolute top-53 -left-10 object-contain w-2/3 h-3/4"
+              className="rounded-lg absolute top-53 -left-10 object-contain  h-3/4"
             />
 
             <div className="relative md:col-span-3">

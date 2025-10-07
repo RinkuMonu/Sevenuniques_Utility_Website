@@ -49,10 +49,10 @@ const HomePartners = () => {
         <div className="text-center mb-12">
           <p className="text-sm font-semibold text-[#24576C] tracking-widest">PARTNERS WITH US</p>
           <h3 className="mt-2 text-3xl md:text-5xl font-bold text-[#0C3D4C]">
-            Join Hands, Unlock Opportunities
+            Open up Unlimited Growth
           </h3>
           <p className="mt-4 max-w-2xl mx-auto text-gray-500">
-            At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio DignissimosAt Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio
+            We, at Sevenunique, realize that successful business development depends on effective partnerships. By partnering with us, you can tap into numerous opportunities that can fuel the development of the digital financial sector exponentially. 
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto ">

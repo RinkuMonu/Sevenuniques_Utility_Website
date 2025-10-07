@@ -13,76 +13,6 @@ import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
 
 function page() {
-    const cardgrid= {
-    heading:"     Simple Steps, Instant Approval",
- cards : [
-    {
-        id: 1,
-         image:"/credit/cc1.png" ,
-        tag: "Hot Selling",
-        bank: "Axis Bank",
-        name: "ACE",
-        holder: "VINIT KUMAR",
-        type: "VISA Signature",
-             points:" Lounge Access | Golf Rounds | BookMyShow" ,
-          title:" Premium Lifestyle Offers",
-    },
-    {
-        id: 2,
-         image:"/credit/cc2.png" ,
-        tag: "Hot Selling",
-        bank: "HDFC Bank",
-        name: "Millennia",
-        holder: "RAVI SINGH",
-        type: "VISA Platinum",
-             points:" Lounge Access | Golf Rounds | BookMyShow" ,
-          title:" Premium Lifestyle Offers",
-    },
-    {
-        id: 3,
-         image:"/credit/cc3.png" ,
-        tag: "Hot Selling",
-        bank: "ICICI Bank",
-        name: "Coral",
-        holder: "ANKIT SHARMA",
-        type: "MasterCard",
-             points:" Lounge Access | Golf Rounds | BookMyShow" ,
-          title:" Premium Lifestyle Offers",
-    },
-    {
-        id: 4,
-         image:"/credit/cc4.png" ,
-        tag: "Hot Selling",
-        bank: "SBI Card",
-        name: "Elite",
-        points:" Lounge Access | Golf Rounds | BookMyShow" ,
-        holder: "NEHA VERMA",
-          title:" Premium Lifestyle Offers",
-        type: "VISA Infinite",
-    },
-    {
-        id: 5,
-         image:"/credit/cc5.png" ,
-        tag: "Hot Selling",
-        bank: "Kotak Bank",
-        name: "League",
-        holder: "SANJAY KUMAR",
-        points:" Lounge Access | Golf Rounds | BookMyShow" ,
-          title:" Premium Lifestyle Offers",
-        type: "Rupay",
-    },
-    {
-        id: 6,
-        image:"/credit/cc6.png" ,
-        tag: "Hot Selling",
-        bank: "IndusInd Bank",
-        name: "Platinum Aura",
-        holder: "PRIYA MEHTA",
-        points:" Lounge Access | Golf Rounds | BookMyShow" ,
-        title:" Premium Lifestyle Offers",
-        type: "VISA Gold",
-    },
-] }
     const data = {
         id: 1,
         subheading: 'Credit Card',
@@ -170,11 +100,11 @@ function page() {
                 </div>
             </section>
             <BankLogoGrid />
-            <CreditSlider creditdata={creditdata} />
+            <CreditSlider  />
             <div className='mt-20 pb-10 lg:pb-40'>
                 <BenefitsSection2 />
             </div>
-            <CardGrid  cardgrid ={cardgrid}/>
+            <CardGrid />
             <CreditComp />
             <CreditChoice />
 

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 const InfoCard = ({ title, description }) => {
     return (
@@ -14,15 +15,16 @@ const InfoCard = ({ title, description }) => {
     </p>
   </div>
 
-  <button
-    className={`border font-bold py-3 px-8 rounded-full text-[#018EDE] border-[#018EDE] 
+  <Link
+  href="/coming-soon"
+    className={`border font-bold py-3 flex justify-center rounded-full text-[#018EDE] border-[#018EDE] cursor-pointer 
     group-hover:text-white group-hover:border-white transition-colors duration-300`}
   >
     Details
-  </button>
+  </Link>
 </div>
 
-    );
+    );  
 };
 
 // Main App component
