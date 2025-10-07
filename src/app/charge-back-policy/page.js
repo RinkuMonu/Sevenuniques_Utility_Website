@@ -3,6 +3,21 @@
 
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
+import {
+  Shield,
+  FileText,
+  UserCheck,
+  Building2,
+  RefreshCw,
+  Ban,
+  Clock,
+  AlertTriangle,
+  Lock,
+  Gavel,
+  PhoneCall,
+  Users,
+  CheckCircle,
+} from "lucide-react";
 
 // SVG Icons as React Components
 const CreditCardIcon = ({ className = "w-5 h-5" }) => (
@@ -70,34 +85,242 @@ const FAQIcon = ({ className = "w-5 h-5" }) => (
 
 const chargeSections = [
   {
-    id: "chargeback-process",
-    title: "Chargeback Process",
-    icon: CreditCardIcon,
-    content:
-      "Chargebacks can only be initiated through your bank or payment provider. However, we recommend contacting our support team first, as many issues can be resolved quickly. Unauthorized or fraudulent transactions are investigated thoroughly, and we aim to resolve disputes fairly.",
+    id: "purpose",
+    title: "Purpose",
+    icon: <Shield />,
+    content: (
+      <>
+        The Chargeback Policy of SevenUnique Tech Solutions Private Limited outlines the procedures for handling chargebacks initiated by customers, distributors, retailers, or white-label partners. It ensures fair, transparent, and respectful dispute resolution for unauthorized or disputed transactions. This policy applies to all digital and utility services offered on <strong>www.sevenuniques.com</strong>, including:
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>BBPS bill payments (electricity, gas, water, etc.)</li>
+          <li>AEPS/DMT transactions (Aadhaar Enabled Payment System & Domestic Money Transfer)</li>
+          <li>Mobile, DTH, and data card recharges</li>
+          <li>Loan applications and processing</li>
+          <li>Insurance services</li>
+          <li>Credit card bill payments</li>
+          <li>PAN card applications</li>
+          <li>Subscription-based services</li>
+          <li>Any other digital financial or utility service offered on the platform</li>
+        </ul>
+      </>
+    ),
   },
   {
-    id: "cancellation-policy",
-    title: "Cancellation Policy",
-    icon: CancelIcon,
-    content:
-      "Cancellations must be requested within the allowed period mentioned in the service agreement or policy. Requests after the specified time frame may not be eligible. Our team processes cancellation requests within 24–48 hours and provides a confirmation email.",
+    id: "scope",
+    title: "Scope of Chargeback Policy",
+    icon: <FileText />,
+    content: (
+      <>
+        This policy covers all types of chargebacks, including:
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Unauthorized transactions: initiated without user consent or approval.</li>
+          <li>Duplicate transactions: payments mistakenly processed multiple times.</li>
+          <li>Disputed transactions: services not delivered or not as promised.</li>
+          <li>Technical or system errors: failed transactions due to server downtime, API errors, or third-party integration issues.</li>
+        </ul>
+        It applies to all users, distributors, retailers, and white-label partners, outlining their rights and responsibilities when disputing a transaction.
+      </>
+    ),
   },
   {
-    id: "refund-guidelines",
-    title: "Refund Guidelines",
-    icon: RefundIcon,
-    content:
-      "Refund eligibility depends on the type of service purchased. Full refunds are available if cancellation requests are made within the permitted window. Refunds are processed to the original payment method within 5–10 business days after approval.",
+    id: "client-responsibilities",
+    title: "Client Responsibilities",
+    icon: <UserCheck />,
+    content: (
+      <>
+        Before initiating a chargeback, users must:
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Contact SevenUnique Support at <strong>info@7unique.in</strong> or <strong>0141-4511098</strong> to resolve the issue directly.</li>
+          <li>Provide complete information including Transaction ID, registered mobile number, service type, date, and description of the issue.</li>
+          <li>Allow adequate time for the company to investigate and resolve the issue.</li>
+          <li>Act in good faith; malicious or false claims may lead to account suspension, flagging, or legal action.</li>
+        </ul>
+        Failure to comply may result in delays or denial of chargeback claims.
+      </>
+    ),
   },
   {
-    id: "exceptions",
-    title: "Exceptions",
-    icon: ExceptionIcon,
-    content:
-      "Certain digital products, customized services, or partially used services are non-refundable. If technical issues on our side prevent access or usage, exceptions may be considered. Each case is reviewed individually by our support team.",
+    id: "company-responsibilities",
+    title: "Company Responsibilities",
+    icon: <Building2 />,
+    content: (
+      <>
+        SevenUnique is committed to:
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Transparent Investigation: All chargeback requests reviewed fairly and thoroughly.</li>
+          <li>Prompt Response: Users receive acknowledgment within 24–48 hours.</li>
+          <li>Documentation: Maintains detailed records of transactions, communications, and service delivery.</li>
+          <li>Cooperation with Payment Providers: Provides necessary evidence and documentation for chargebacks through banks or payment gateways.</li>
+          <li>Resolution Updates: Users are informed at every stage of the investigation.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "chargeback-procedures",
+    title: "Chargeback Procedures",
+    icon: <RefreshCw />,
+    content: (
+      <>
+<span className="font-bold">5.1 Initiating a Chargeback</span>
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Users must first submit a written request to info@7unique.in, providing all relevant details of the disputed transaction.
+</li>
+          <li>The support team will review the request and verify the transaction against internal records and third-party service confirmations.</li>
+          <li>If required, additional documentation or clarification may be requested from the user.</li>
+
+        </ul>
+<span className="font-bold mt-2">5.2 Verification Process</span>
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Transaction Confirmation: The transaction will be verified against the payment gateway, bank, or third-party provider records.
+
+</li>
+          <li>Service Delivery Check: Verification of whether the requested service was delivered, partially delivered, or failed.</li>
+          <li>Communication Logs: Review of prior communication between the user and the company to understand the context of the dispute.</li>
+          <li>Third-Party Consultation: If the service is dependent on a third-party API, bank, or utility provider, verification may involve coordination with them.
+</li>
+
+        </ul>
+        <span className="font-bold mt-2">5.3 Resolution</span>
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Approved Chargebacks: If the chargeback is valid, a refund will be processed to the original payment method within 5–10 business days, subject to banking and payment gateway timelines.
+
+</li>
+          <li>Denied Chargebacks: If the chargeback is found invalid or unsupported, the user will be notified in writing with the reasons for denial.</li>
+          <li>Partial Chargebacks: In cases where partial services were delivered, a pro-rated resolution may be provided.</li>
+
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "unnotified-chargebacks",
+    title: "Consequences of Unnotified Chargebacks",
+    icon: <Ban />,
+    content: (
+      <>
+
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Initiating a chargeback without contacting SevenUnique constitutes a policy violation</li>
+          <li>Accounts may be suspended, restricted, or permanently banned.</li>
+          <li>Repeated offenses may result in legal action to recover losses or damages.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "timeline",
+    title: "Timeline for Chargeback Resolution",
+    icon: <Clock />,
+    content: (
+      <>
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Initial Acknowledgment: 24–48 hours from receipt of dispute.</li>
+          <li>Investigation Period: Typically 5–10 business days depending on complexity.</li>
+          <li>Final Resolution: Users receive written confirmation of outcome and refund timeline.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "special-considerations",
+    title: "Special Considerations for Utility and Digital Services",
+    icon: <AlertTriangle />,
+    content: (
+      <>
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Real-time BBPS, AEPS/DMT, mobile/DTH recharges, and PAN applications are non-reversible once executed.</li>
+          <li>Refunds or chargebacks only for technical failures or system errors.</li>
+          <li>Subscription services: future cycles may be canceled, prepaid amounts for completed periods are non-refundable unless explicitly stated.</li>
+          <li>Third-party dependencies like banks, APIs, and utility providers may affect timing and resolution.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "data-security",
+    title: "Data Security and Privacy",
+    icon: <Lock />,
+    content: (
+      <>
+        All chargeback and transaction data is:
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Encrypted and securely stored in compliance with IT Act 2000 and privacy laws.</li>
+          <li>Access-controlled, limited to authorized personnel.</li>
+          <li>Used solely for dispute resolution, verification, and regulatory compliance.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "legal-standing",
+    title: "Legal Standing",
+    icon: <Gavel />,
+    content: (
+      <>
+        This policy is governed by Indian law under the jurisdiction of Jaipur, Rajasthan. SevenUnique may amend the policy to comply with legal, regulatory, or operational changes without prior notice.
+      </>
+    ),
+  },
+  {
+    id: "communication-support",
+    title: "Communication & Support",
+    icon: <PhoneCall />,
+    content: (
+      <>
+        Users can contact support:
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Email: info@7unique.in</li>
+          <li>Phone: 0141-4511098 (Mon–Sat, 10:00 AM–6:30 PM IST)</li>
+          <li>Include Transaction ID, registered mobile number, service type, and issue description for faster resolution.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "user-partner-responsibilities",
+    title: "Responsibilities of Users and Partners",
+    icon: <Users />,
+    content: (
+      <>
+        Users must:
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Provide accurate and complete information during dispute submission.</li>
+          <li>Follow official channels for chargeback requests.</li>
+          <li>Avoid unnotified or malicious chargebacks.</li>
+          <li>Cooperate during the investigation process.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "company-duties",
+    title: "Responsibilities of SevenUnique Tech Solutions",
+    icon: <CheckCircle />,
+    content: (
+      <>
+        SevenUnique must:
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Review chargeback requests fairly and transparently.</li>
+          <li>Maintain documentation and evidence for all transactions.</li>
+          <li>Provide guidance and support throughout the dispute process.</li>
+          <li>Process approved chargebacks securely and promptly.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "conclusion",
+    title: "Conclusion",
+    icon: <Shield />,
+    content: (
+      <>
+        This Chargeback Policy ensures fairness, transparency, and accountability in dispute handling across SevenUnique’s services. Following these procedures helps maintain trust, operational integrity, and compliance.
+      </>
+    ),
   },
 ];
+
 
 export default function ChargebackPolicy() {
   const [activeSection, setActiveSection] = useState("chargeback-process");
@@ -136,11 +359,11 @@ export default function ChargebackPolicy() {
 
   return (
     <>
-      <div className="container ">
+      <div className=" ">
         <section className="bg-white min-h-screen">
           <div className="bg-[#F4FCFF] rounded-2xl shadow-lg">
             <section>
-              <div className="max-w-6xl mx-auto px-4 py-12">
+              <div className="max-w-8xl mx-auto px-8 py-12">
                 <div className="flex flex-col lg:flex-row gap-8">
                   {/* Sidebar Navigation */}
                   <div className="lg:w-1/4">
@@ -160,7 +383,17 @@ export default function ChargebackPolicy() {
                                   : "text-gray-600 hover:bg-gray-100"
                               }`}
                             >
-                              <section.icon className={`w-4 h-4 mr-2 ${activeSection === section.id ? "text-[#115D8E]" : "text-gray-500"}`} />
+                               <section
+                              className={`w-4 h-4 mr-4
+                                                                 ${
+                                                                   activeSection ===
+                                                                   section.id
+                                                                     ? "bg-opacity-10 text-white font-medium"
+                                                                     : "text-gray-600 hover:bg-gray-100"
+                                                                 }`}
+                            >
+                              {section.icon}
+                            </section>
                               {section.title}
                             </button>
                           </li>
@@ -175,27 +408,24 @@ export default function ChargebackPolicy() {
                     <div className="bg-white p-8 rounded-2xl shadow-sm mb-8">
                       <div className="text-center mb-10">
                         <div className="mb-6">
-                          <div className="w-20 h-20 mx-auto bg-gradient-to-r from-[#358EBA] to-[#24576C] rounded-full flex items-center justify-center">
-                            <Image
-                              src="/privacy/chargeback-img.png"
-                              alt="Chargeback Policy Icon"
-                              width={40}
-                              height={40}
-                              className="filter invert"
-                            />
-                          </div>
+                         <div className="w-20 h-20 mx-auto bg-gradient-to-r from-[#358EBA] to-[#0C3D4C] rounded-full flex items-center justify-center">
+                          <FileText className="w-10 h-10 text-white" />
+                        </div>
                         </div>
                         <div className="inline-block bg-gradient-to-r from-[#358EBA] to-[#24576C] text-white font-medium px-8 py-2 rounded-full mb-4 shadow-md">
-                          Chargeback & Cancellation Policy
+                          Chargeback Policy
                         </div>
-                        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 mt-4">
+                        {/* <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 mt-4">
                           Cancellations must be requested within the allowed period for eligibility
-                        </h1>
+                        </h1> */}
                         <div className="h-1 w-20 bg-gradient-to-r from-[#358EBA] to-[#24576C] mx-auto mb-6 rounded-full"></div>
-                        <p className="text-gray-600 text-lg leading-relaxed">
-                          Our chargeback and cancellation policy ensures clarity and fairness.
-                          We aim to resolve disputes quickly while protecting customers and our platform.
-                          Below you'll find details on chargebacks, cancellations, refunds, and exceptions.
+                        <p className="text-gray-600 text-start text-lg leading-relaxed">
+                          <span className="font-bold">SevenUnique Tech Solutions Private Limited </span><br />
+<span className="font-bold"> Website:</span> www.sevenuniques.com<br />
+ <span className="font-bold">Email:</span> info@7unique.in<br />
+  <span className="font-bold">Phone:</span> 0141-4511098<br />
+   <span className="font-bold">Effective Date:</span> 03 June 2025
+
                         </p>
                       </div>
                     </div>
@@ -210,7 +440,9 @@ export default function ChargebackPolicy() {
                       >
                         <div className="flex items-start mb-4">
                           <div className="text-2xl mr-4 bg-gradient-to-r from-[#358EBA] to-[#24576C] text-white p-3 rounded-lg flex items-center justify-center">
-                            <section.icon className="w-6 h-6" />
+                    <section className="w-4 h-5 mr-2 text-white">
+                            {section.icon}
+                          </section>
                           </div>
                           <h3 className="text-xl font-bold text-gray-800">
                             {section.title}
@@ -283,7 +515,7 @@ export default function ChargebackPolicy() {
                             How do I request a chargeback?
                           </h4>
                           <p className="text-gray-600">
-                            Chargebacks must be requested through your payment provider. 
+                            Chargebacks must be requested through your payment provider.
                             However, reaching out to us first may resolve the issue faster.
                           </p>
                         </div>
@@ -297,7 +529,7 @@ export default function ChargebackPolicy() {
                             What if I cancel after the allowed window?
                           </h4>
                           <p className="text-gray-600">
-                            Cancellations after the eligibility window are not refundable, 
+                            Cancellations after the eligibility window are not refundable,
                             except in rare technical or service failure cases.
                           </p>
                         </div>
@@ -311,7 +543,7 @@ export default function ChargebackPolicy() {
                             How long until I receive my refund?
                           </h4>
                           <p className="text-gray-600">
-                            Approved refunds take 5–10 business days to reflect in your account, 
+                            Approved refunds take 5–10 business days to reflect in your account,
                             depending on your bank or payment provider.
                           </p>
                         </div>

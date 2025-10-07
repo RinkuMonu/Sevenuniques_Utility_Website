@@ -16,35 +16,32 @@ import ServicesSection3 from '../../../components/ServicesSection3';
 function page() {
     const faqData = [
   {
-    question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-    answer: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos DucimusAt Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Od At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus DucimusAt Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Od"
+    question: "What services does Sevenunique provide?",
+    answer: "We offer BBPS, AePS, bill payments, recharges, insurances, bookings, credit and PAN card services, and various loan solutions, including business, home, personal, construction, and car loans."
   },
   {
-    question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-    answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    question: "How can I register for a service?",
+    answer: "You can register via our website or contact our support team directly for guidance on signing up for any service."
   },
   {
-    question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-    answer: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    question: "Is Sevenunique’s payment system secure?",
+    answer: "Yes, all transactions are encrypted and processed through secure channels to ensure safety and reliability."
   },
   {
-    question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-    answer: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+    question: "Can I track my loan application?",
+    answer: "Absolutely! Once you apply for a loan, you will receive updates via email or SMS and can also contact our support team for real-time tracking."
   },
   {
-    question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-    answer: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
+    question: "What are the office hours for support?",
+    answer: "Our offices are open Monday–Friday, 9:30 AM to 6:30 PM. Saturday and Sunday are closed."
   },
-  {
-    question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-    answer: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
-  }
+
 ];
     const data = {
         id: 1,
         subheading: 'ABOUT US',
         heading: 'Hamari Pehchaan, Aapka Vishwas',
-        description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable Domestic Money Transfer service.',
+        description: 'Send money quickly and securely to your loved ones anytime, anywhere. Experience fast, reliable, and hassle-free transfers.',
         bgImage: '/about/aboutbg.png',
         centerImage: '/about/about1.png',
     }
@@ -60,11 +57,11 @@ function page() {
 
        const aepsData = {
         subheading: 'ABOUT',
-        heading: 'COMPANY',
-        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et  ducimus odio dignissimos At vero eos et accusamus et ',
+        heading: 'Sevenunique – Trusted & Reliable',
+        description: 'Sevenunique Tech Solution Pvt. Ltd. is dedicated to providing innovative and reliable solutions across India. With a focus on technology-driven growth, we aim to simplify operations and enhance business efficiency for our partners and clients.',
         features: [
-            'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
-            'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
+            'Founded by Mr. Dinesh Kumar and Mr. Amit Balotiya, Sevenunique has established a strong network of over 120,000 retailers, 2,300 distributors, and 700+ field executives working across various districts. This widespread presence ensures seamless operations and consistent customer satisfaction.',
+            'Our mission is to strengthen partnerships, expand reach, and deliver smart solutions that help our clients achieve growth and success. We continually strive to provide services that are efficient, reliable, and tailored to meet evolving business needs.',
         ]
     };
     

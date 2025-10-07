@@ -41,39 +41,30 @@ const AboutSlider = () => {
     const stories = [
         {
             imgSrc: "https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?q=80&w=2070&auto=format&fit=crop",
-            title: "Our Story",
-            text: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Odio Ducimus Odio"
+            title: "Empowering Small Businesses",
+            text: "Discover how Sevenunique helped a local retailer streamline operations and grow revenue through our innovative solutions."
         },
         {
             imgSrc: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop",
-            title: "Our Story",
-            text: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Odio Ducimus Odio"
+            title: "Seamless Loan Approval",
+            text: "Read about a young entrepreneur who secured a business loan effortlessly and expanded their startup across multiple districts."
         },
         {
             imgSrc: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop",
-            title: "Our Story",
-            text: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Odio Ducimus Odio"
+            title: "Transforming Digital Payments",
+            text: "Learn how our BBPS and AePS services simplified bill payments and recharges for thousands of customers nationwide."
         },
         {
             imgSrc: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop",
-            title: "Our Story",
-            text: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Odio Ducimus Odio"
+            title: "Reliable Insurance Solutions",
+            text: "See how Sevenunique guided a family in choosing the right insurance plan, ensuring security and peace of mind."
         },
         {
             imgSrc: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
-            title: "Our Story",
-            text: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Odio Ducimus Odio"
+            title: "Connecting Communities",
+            text: "Explore the story of a distributor who leveraged our network to reach more retailers and create a stronger business ecosystem."
         },
-        {
-            imgSrc: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
-            title: "Our Story",
-            text: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Odio Ducimus Odio"
-        },
-        {
-            imgSrc: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
-            title: "Our Story",
-            text: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Odio Ducimus Odio"
-        },
+
     ];
 
     const sliderSettings = {
@@ -112,7 +103,7 @@ const AboutSlider = () => {
                     </div>
                     <div className="flex md:justify-end items-center gap-x-4">
                         <p className="text-[#5D5D5D]  max-w-md hidden lg:block">
-                            At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos Duci
+                            Discover inspiring stories, expert insights, and the latest industry trends. Each article brings fresh perspectives to help you learn, grow, and stay informed.
                         </p>
 
                     </div>
