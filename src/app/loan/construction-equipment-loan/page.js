@@ -60,9 +60,8 @@ function page() {
   image: "/loan/loan3.png",
   heading: (
     <>
-      At Sevenunique, <br />
-      how to secure  <br />
-      a <span className="text-blue-300">business</span> loan.
+      Apply Karo Abhi,   <br />
+    <span className="text-blue-300">Paisa Milega Turant</span> Account Mein.
     </>
   ),
   sliderData: [

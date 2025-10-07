@@ -31,7 +31,7 @@ const BenefitsSection2 = () => {
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="text-white flex flex-col items-center lg:items-start text-center lg:text-left">
                     <h3 className="text-2xl md:text-4xl font-bold leading-tight mb-8">
-                        One App, Endless <br /> Benefits
+                     One-Click Signups,  <br /> One Second Later.
                     </h3>
 
                     <div className="flex flex-row lg:flex-col space-y-4 mb-8">

@@ -58,10 +58,10 @@ function page() {
       image: "/loan/loan4.png",
       cta: "Request Calculations",
       details: [
-        "Construction Equipment Loan by Visit Sevenunique.",
-        "Fill in personal information: Name, Mobile Number, Aadhaar, PAN",
-        "Select the type of equipment and the amount of the loan",
-        "Check the eligible loan amount on the fly.",
+        "The business loan platform of Visit Sevenunique.",
+        "You will need to fill in your basic details: name, mobile number, Aadhaar, and PAN.",
+        "Select the type of loan (business loan, working capital, expansion loan, etc.).",
+        "Ask to calculate a loan in order to verify your eligibility.",
       ],
     },
     {
@@ -70,10 +70,8 @@ function page() {
       image: "/loan/loan12.png",
       cta: "Submit Docs",
       details: [
-        "Add PAN Card and Aadhaar Card.",
-        "Provide business documents—GST and business registration",
-        "Give equipment quote and supplier information.",
-        "Our system authenticates documents in a short time",
+        "Add the required documents: PAN Card, Aadhaar Card, business financials, and income proof (bank statements or tax returns).",
+        "Your documents will be instantly checked by our system, which will then be processed much faster.",
       ],
     },
     {
@@ -82,10 +80,8 @@ function page() {
       image: "/loan/loan13.png",
       cta: "Get Construction Equipment Loan Now",
       details: [
-        "Get rapid approval with few documents.",
-        "Direct deposit of the loan to your account.",
-        "Money sent out in less than 48 hours",
-        "Buy your building materials now.",
+        "Upon the loan approval, the funds of the business loan will be transferred to your business account.",
+        "You can get money within a few hours and use it immediately for the business.",
       ],
     },
   ],

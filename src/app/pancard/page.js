@@ -13,9 +13,9 @@ import ContactBanner from '../../../components/ContactBanner';
 function page() {
     const data = {
         id: 1,
-        subheading: 'PANCARD',
+        subheading: 'PAN Card',
         heading: 'Apki Pehchaan, Apki Power',
-        description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable Domestic Money Transfer service.',
+        description: 'Get your PAN card fast and easily with SevenUnique. Apply your PAN to do your financial transactions, tax filing, and identity verification in just a few steps.',
         bgImage: '/pan/panbg.png',
         centerImage: '/pan/pan1.png',
     }
@@ -29,8 +29,8 @@ function page() {
         </div>
     );
     const info = [
-        { title: "Book Today, Fly Tomorrow", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus " },
-        { title: "Book Today, Fly Tomorrow", description: "At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus " },
+        { title: "Apply now, and get PAN immediately.", description: "Swipe your PAN card with SevenUnique. Apply online, send your documents, and receive your acknowledgment within seconds, having a hassle-free experience. Whether you are filling in your personal information or attaching identity and address documents, our hassle-free system makes your application process without a hustle. Monitor your PAN application in real time, update it, and have your PAN delivered to your registered address easily and conveniently." },
+        { title: "Your Identity, Your Power.", description: "This is done easily as you apply your PAN card with SevenUnique. The entire application process is unfortunately very easy, as you do it online, attach the needed documents, and receive instant recognition. Have a safe and stable verification process. Be sure to enter both your personal and address information; this will help you to be on time with your PAN card in hand. Keep in touch with real-time application tracking. Get your PAN at your registered address within the shortest time and begin using it to carry out financial transactions and taxes with confidence." },
     ]
     const text = "PANCARD";
     return (
