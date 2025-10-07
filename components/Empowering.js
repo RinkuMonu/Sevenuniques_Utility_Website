@@ -57,15 +57,9 @@ const InfoCard = ({ title, benefits, imageUrl, imageAlt, reverse = false }) => {
   return (
     <div className=" font-sans px-4 lg:px-0">
       <main className="max-w-7xl mx-auto">
-<<<<<<< HEAD
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-10 text-center">
-          Powering Retailers and Distributors
-        </h1>
-=======
         <h3 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-10 text-center">
           Empowering Retailers and Distributors
         </h3>
->>>>>>> 131c00b89c182bdadc0c3cbe871a4b1c98d75cac
 
         <div className="space-y-12">
           <InfoCard
