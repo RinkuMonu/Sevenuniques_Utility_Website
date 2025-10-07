@@ -99,7 +99,7 @@ const AboutArticle = () => {
     };
 
     return (
-        <div className="lg:py-16 px-4 sm:p-8">
+        <div className="lg:pt-16 pb-5 px-4 sm:p-8">
             <div className="w-full max-w-7xl mx-auto space-y-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
                     <div>

@@ -41,7 +41,7 @@ const FaqAccordion = ({ faqData, title = "Your Queries, Our Answers!" }) => {
     };
 
     return (
-        <div className="px-4 lg:px-0 pt-16 pb-24">
+        <div className="px-4 lg:px-0 pt-10 pb-24">
             <div className="mx-auto max-w-7xl">
                 <h3 className="text-2xl lg:text-4xl font-bold text-center text-[#0C3D4C] mb-8">
                     {title}

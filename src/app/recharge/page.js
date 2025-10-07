@@ -60,7 +60,7 @@ function page() {
                                     {data.description}
                                 </p>
                                 <Link
-                                    href="/"
+                                   href="/coming-soon"
                                     className="relative inline-block rounded-full border border-white p-[2px]"
                                 >
                                     <span className=" px-8 py-3 bg-gradient-to-t from-[#A10000] to-[#F40000] text-xl text-white font-semibold rounded-full inline-flex gap-2">

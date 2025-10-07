@@ -57,7 +57,7 @@ export default function InsuranceProcessSteps() {
                            Get protected it's a smart step to have entire protection of yourself, your family, and your assets be a worry-free person today.
                         </p>
                         <Link
-                            href="/contact"
+                            href="/coming-soon"
                             className="mt-8 inline-flex items-center gap-2 px-6 py-3 border-2 border-[#1297E2] text-[#1297E2] font-semibold rounded-full hover:bg-[#33B5E5] hover:text-white transition-colors duration-300"
                         >
                             Apply Now

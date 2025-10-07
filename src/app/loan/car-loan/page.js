@@ -47,6 +47,55 @@ function page() {
     );
 
     const letters = ['L', 'O', 'A', 'N'];
+    const slide = {
+  image: "/loan/loan3.png",
+  heading: (
+    <>
+      At Sevenunique, <br />
+      how to secure  <br />
+      a <span className="text-blue-300">business</span> loan.
+    </>
+  ),
+  sliderData: [
+    {
+      step: 1,
+      title: "Apply Online",
+      image: "/loan/loan4.png",
+      cta: "Request Calculations",
+      details: [
+        "Construction Equipment Loan by Visit Sevenunique.",
+        "Fill in personal information: Name, Mobile Number, Aadhaar, PAN",
+        "Select the type of equipment and the amount of the loan",
+        "Check the eligible loan amount on the fly.",
+      ],
+    },
+    {
+      step: 2,
+      title: "Upload Documents",
+      image: "/loan/loan12.png",
+      cta: "Submit Docs",
+      details: [
+        "Add PAN Card and Aadhaar Card.",
+        "Provide business documents—GST and business registration",
+        "Give equipment quote and supplier information.",
+        "Our system authenticates documents in a short time",
+      ],
+    },
+    {
+      step: 3,
+      title: "Receive Your Loan",
+      image: "/loan/loan13.png",
+      cta: "Get Construction Equipment Loan Now",
+      details: [
+        "Get rapid approval with few documents.",
+        "Direct deposit of the loan to your account.",
+        "Money sent out in less than 48 hours",
+        "Buy your building materials now.",
+      ],
+    },
+  ],
+};
+
 
     return (
         <>
@@ -71,7 +120,7 @@ function page() {
                                     {data.description}
                                 </p>
                                 <Link
-                                    href="/"
+                                    href="https://utility.sevenuniques.in/register"
                                     className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]"
                                 >
                                     <span className="block px-8 py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#0d2f4d]">
@@ -123,7 +172,8 @@ function page() {
                     </div>
                 </div>
             </section>
-            <VerticalSlider />
+            <VerticalSlider slide={slide}/>
+
             <ServicesSection3 data={aepsData} />
             <StatsBanner />
            <LoanBenefits

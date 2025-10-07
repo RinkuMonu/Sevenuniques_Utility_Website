@@ -1,35 +1,31 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
+import Link from "next/link";
 
 // --- Data for the Bank Logos ---
 const banks = [
-  { id: 1, name: "Axis", logoUrl: "/credit/axis.png" },
-  { id: 2, name: "IDFC First Bank", logoUrl: "/credit/idfc.png" },
-  { id: 3, name: "AU Bank", logoUrl: "/credit/au.png" },
-  { id: 4, name: "HSBC Bank", logoUrl: "/credit/hsbc.png" },
+  { id: 1, name: "Axis", logoUrl: "/credit/axis.png", link: "https://www.axisbank.com/" },
+  { id: 2, name: "IDFC First Bank", logoUrl: "/credit/idfc.png", link: "https://www.idfcfirstbank.com/" },
+  { id: 3, name: "AU Bank", logoUrl: "/credit/au.png", link: "https://www.aubank.in/" },
+  { id: 4, name: "HSBC Bank", logoUrl: "/credit/hsbc.png", link: "https://www.hsbc.co.in/" },
 ];
 
 const BankLogoGrid = () => {
-  const [activeBank, setActiveBank] = useState(banks[0].id);
-
   return (
     <section className="w-full py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-4 lg:px-0">
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-x-4 gap-y-8">
           {banks.map((bank) => (
-            <button
+            <Link
               key={bank.id}
-              onClick={() => setActiveBank(bank.id)}
+              href={bank.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex flex-col items-center justify-start text-center focus:outline-none"
             >
               <div
                 className={`w-20 h-20 md:w-24 md:h-24 p-1.5 rounded-full border-2 flex items-center justify-center 
-                  transition-all duration-300 transform hover:scale-110
-                  ${
-                    activeBank === bank.id
-                      ? "border-blue-500 shadow-lg"
-                      : "border-gray-200"
-                  }
+                  transition-all duration-300 transform hover:scale-110 border-gray-200 hover:border-blue-500 hover:shadow-lg
                 `}
               >
                 <img
@@ -38,37 +34,11 @@ const BankLogoGrid = () => {
                   className="h-10 w-10 md:h-12 md:w-12 object-contain"
                 />
               </div>
-              <p
-                className={`mt-3 text-sm font-medium ${
-                  activeBank === bank.id ? "text-blue-600" : "text-gray-700"
-                }`}
-              >
+              <p className="mt-3 text-sm font-medium text-gray-700 hover:text-blue-600">
                 {bank.name}
               </p>
-            </button>
+            </Link>
           ))}
-        </div>
-        <div className="mt-10 text-center">
-          {activeBank === 1 && (
-            <p className="text-lg font-semibold text-gray-700">
-              Axis Bank offers exciting credit card options.
-            </p>
-          )}
-          {activeBank === 2 && (
-            <p className="text-lg font-semibold text-gray-700">
-              IDFC First Bank provides smart financial solutions.
-            </p>
-          )}
-          {activeBank === 3 && (
-            <p className="text-lg font-semibold text-gray-700">
-              AU Bank has great cashback rewards on cards.
-            </p>
-          )}
-          {activeBank === 4 && (
-            <p className="text-lg font-semibold text-gray-700">
-              HSBC Bank gives you international credit card benefits.
-            </p>
-          )}
         </div>
       </div>
     </section>
