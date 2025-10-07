@@ -6,7 +6,7 @@ const cardData = [
     id: 1,
     title: 'Personal',
     mainTitle: 'Personal Banking',
-    description: 'At vero eos et accusamus et iusto odio digni ss imos ducimus odio dignissimos At vero eos et accusamus et iusto odio digni ss imos ducimus odio dignissimos At vero eos et accusamus et iusto odio digni ss imos ducimus odio dignissimos At vero eos et accusamus et iusto odio digni ss imos ducimus odio dignissimos ',
+    description: 'Get personalized banking solutions for your own individual needs. Our specialists will assist you in account management, transactions, and any other personal banking needs you may have.',
     img: '/aeps/s1.jpg',
 
   },
@@ -14,7 +14,7 @@ const cardData = [
     id: 2,
     title: 'Business',
     mainTitle: 'Business Solutions',
-    description: 'At vero eos et accusamus et iusto odio digni ss imos ducimus odio dignissimos At vero eos et accusamus et iusto odio digni ss imos ducimus odio dignissimos At vero eos et accusamus et iusto odio digni ss imos ducimus odio dignissimos At vero eos et accusamus et iusto odio digni ss imos ducimus odio dignissimos ',
+    description: 'Expand your business through our full line of business banking products. We provide tailor-made solutions to businesses of any size, small and big stores.',
     img: '/aeps/s2.png',
 
   },
@@ -22,7 +22,7 @@ const cardData = [
     id: 3,
     title: 'Freelance',
     mainTitle: 'Freelancer Hub',
-    description: 'At vero eos et accusamus et iusto odio digni ss imos ducimus odio dignissimos At vero eos et accusamus et iusto odio digni ss imos ducimus odio dignissimos At vero eos et accusamus et iusto odio digni ss imos ducimus odio dignissimos At vero eos et accusamus et iusto odio digni ss imos ducimus odio dignissimos ',
+    description: 'Dedicated freelancer and professional financial services. Our freelancer support system will make sure you manage your income, taxes, and business transactions.',
     img: '/aeps/s3.png',
 
   },
@@ -59,13 +59,19 @@ const Video = () => {
         <header className="mb-8 md:mb-12 px-4 lg:px-0">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
             <div className="md:w-2/3">
+<<<<<<< HEAD
+              <h1 className="text-2xl md:text-4xl font-bold leading-tight text-[#0C3D4C]">
+                 Keep Your Security in Our Mind.
+              </h1>
+=======
               <h3 className="text-2xl md:text-4xl font-bold leading-tight text-[#0C3D4C]">
                 Your data and money are protected with high-level authentication
               </h3>
+>>>>>>> 131c00b89c182bdadc0c3cbe871a4b1c98d75cac
             </div>
             <div className="md:w-1/3 mt-4 flex flex-col items-start">
               <p className="text-base max-w-sm mb-4">
-                At vero eos et accusamus et iusto odio digni ss imos ducimus odio dignissimos
+                Just in case your data or money is at risk, we secure it with high-end security controls and Aadhaar authentication that guarantee that all your transactions are fully secured and safeguarded
               </p>
               <button className="bg-[#018EDE] w-full text-center hover:bg-[#018EDE]/90 cursor-pointer text-white font-semibold py-3 px-6 rounded-full  transition-colors duration-300">
                 Contact Us

@@ -4,32 +4,32 @@ import React from 'react';
 const timelineData = [
     {
         stepNumber: 1,
-        title: 'Visit an AEPS Agent',
-        description: 'The customer visits a local banking correspondent and provides their bank name and Aadhaar number to initiate a transaction.',
+        title: 'Visit an AePS Agent',
+        description: 'The customer goes to a local banking Agent that provides the AePS services. To initiate the transaction process, they give their bank name and Aadhaar number.',
         imageUrl: '/aeps/p1.png',
     },
     {
         stepNumber: 2,
         title: 'Enter Transaction Details',
-        description: 'The agent enters the transaction type (e.g., withdrawal) and the amount into their micro-ATM device.',
+        description: 'The user inserts the type of transaction (withdrawal) and the amount in his micro-ATM machine to initiate the transaction.',
         imageUrl: '/aeps/p2.png',
     },
     {
         stepNumber: 3,
         title: 'Biometric Authentication',
-        description: 'To authorize the transaction, the customer securely verifies their identity using their fingerprint on a biometric scanner.',
+        description: 'The customer will check who he is by scanning his finger on a biometric scanner, and this will assure a secure and authorized transaction.',
         imageUrl: '/aeps/p3.png',
     },
     {
         stepNumber: 4,
-        title: 'Verification & Authorization',
-        description: 'The banking system verifies the details and biometric data in real-time, then authorizes the transaction.',
+        title: 'Checking/Approving',
+        description: 'The real-time verification of the details and biometric data by the banking system authenticates the transaction and authorizes the transaction.',
         imageUrl: '/aeps/p4.png',
     },
     {
         stepNumber: 5,
         title: 'Withdraw Transaction',
-        description: 'Once authorized, the agent receives a confirmation and provides the requested cash amount to the customer.',
+        description: 'After approving the transaction, the agent is informed, and the desired sum is given to the customer, and this is where the process is completed.',
         imageUrl: '/aeps/p5.png',
     },
 ];
@@ -82,19 +82,19 @@ const HowItWorks1 = () => {
         <section className="bg-slate-50 py-20 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-20 mb-20">
-                   <div className=''>
-                     <h2 className=" text-[#0C3D4C] text-lg font-semibold">
-                        How we Works
-                    </h2>
-                    <p className="text-4xl text-[#0C3D4C] font-bold">
-                        Our process is fast, secure, and completely Aadhaar-based
-                    </p>
-                   </div>
-                   <div>
-                    <p>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et 
-                    </p>
-                   </div>
+                    <div className=''>
+                        <h2 className=" text-[#0C3D4C] text-lg font-semibold">
+                            How AePS Works
+                        </h2>
+                        <p className="text-4xl text-[#0C3D4C] font-bold">
+                            Banking Made Simple using Aadhaar—Safe, Fast, and Easy.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            AePS brings the much-needed banking services to your community with a well-thought-out 5-step process that encompasses your Aadhaar identity and biometric fingerprint recognition, which provides not only full security but also unmatched convenience to all users.
+                        </p>
+                    </div>
                 </div>
 
                 <div className="flex flex-col gap-y-10 lg:gap-0">

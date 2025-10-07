@@ -25,8 +25,8 @@ export default function AdvantageDMT() {
                 <div className="text-left mb-8 md:mb-12">
                     <h3 className="text-2xl sm:text-4xl font-bold text-[#0C3D4C]">Your Edge, Our Advantage</h3>
                     <p className="mt-4  text-gray-500">
-                        At Vero Eos Et Accusamus Et Iusto Odio Digni Ss<br />
-                        Imos Ducimus Odio Dignissimos
+                       Open, Trustworthy, and Fast Services. Transfer Funds in Seconds. <br/>
+Transfer money quickly and easily, anywhere in India.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4  sm:gap-6">
