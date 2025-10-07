@@ -42,16 +42,16 @@ const AboutArticle = () => {
         {
             imgSrc: "/home/RA.avif",
             category: "Debitis Aut",
-            date: "20 April 2025",
-            title: "At vero eos et accusamus et iustood io dignissimos ducimus vero",
-            description: "Stay updated with our latest insights and industry trends. Explore expert articles, tips, and thought leadership."
+            date: "October 1, 2025",
+            title: "How Digital Payments Are Changing India",
+            description: " Explore the rise of BBPS and AePS services and how they are simplifying payments for millions."
         },
         {
             imgSrc: "/home/RA.avif",
             category: "Debitis Aut",
-            date: "20 April 2025",
-            title: "At vero eos et accusamus et iustood io dignissimos ducimus vero",
-            description: "Stay updated with our latest insights and industry trends. Explore expert articles, tips, and thought leadership."
+            date: "September 25, 2025",
+            title: "Tips to Secure Personal and Business Loans",
+            description: "Learn practical strategies for faster loan approvals and managing repayments efficiently."
         },
         {
             imgSrc: "/home/RA.avif",
@@ -63,9 +63,23 @@ const AboutArticle = () => {
         {
             imgSrc: "/home/RA.avif",
             category: "Debitis Aut",
-            date: "20 April 2025",
-            title: "At vero eos et accusamus et iustood io dignissimos ducimus vero",
-            description: "Stay updated with our latest insights and industry trends. Explore expert articles, tips, and thought leadership."
+            date: "September 18, 2025",
+            title: "Streamlining Retail Operations with Technology",
+            description: "Discover how tech solutions help retailers optimize inventory, billing, and customer management."
+        },
+         {
+            imgSrc: "/home/RA.avif",
+            category: "Debitis Aut",
+            date: "September 10, 2025",
+            title: "Understanding Insurance for Your Family and Business",
+            description: "A guide to choosing the right insurance plans to ensure security and financial stability."
+        },
+         {
+            imgSrc: "/home/RA.avif",
+            category: "Debitis Aut",
+            date: "September 5, 2025",
+            title: "Expanding Your Business with Distributor Networks",
+            description: "How leveraging a strong distribution network can boost sales and operational efficiency."
         },
     ];
 
@@ -109,7 +123,8 @@ const AboutArticle = () => {
                     </div>
                     <div>
                         <p className="text-[#5D5D5D] mb-5 md:text-base leading-relaxed">
-                            Stay updated with our latest insights and industry trends. Explore expert articles, tips, and thought leadership.
+                            Stay updated with our latest insights and industry trends. Explore expert articles, tips, and thought leadership to gain knowledge and make informed decisions.
+
                         </p>
                     </div>
                 </div>

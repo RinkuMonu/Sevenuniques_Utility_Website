@@ -3,44 +3,106 @@
 
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
-import {
-  Shield,
-  IdCard,
-  Scale,
-  Star,
-  ClipboardList,
-  FileText,
-  HelpCircle,
-} from "lucide-react";
+import { Shield, FileText, UserCheck, Repeat, AlertTriangle, Clock, Lock, Gavel, PhoneCall, Users, CheckCircle , ClipboardList , HelpCircle } from "lucide-react";
 
 const kycSections = [
   {
+    id: "purpose",
+    title: "Purpose",
+    icon: <Shield />,
+    content:
+      "The Chargeback Policy of SevenUnique Tech Solutions Private Limited outlines the standards and procedures for handling chargebacks initiated by customers, distributors, retailers, or white-label partners. It aims to provide fair, transparent, and mutually respectful resolution of disputes related to unauthorized or disputed transactions. This policy applies to all digital and utility services provided through www.sevenuniques.com, including BBPS bill payments, AEPS/DMT transactions, mobile/DTH/data card recharges, loan applications, insurance, credit card bill payments, PAN applications, subscriptions, and any other digital financial or utility service offered on the platform.",
+  },
+  {
+    id: "scope",
+    title: "Scope of Chargeback Policy",
+    icon: <FileText />,
+    content:
+      "This policy covers all types of chargebacks, including unauthorized transactions, duplicate payments, disputed services, and technical or system errors. It applies to all users, distributors, retailers, and white-label partners, defining their rights and responsibilities when disputing a transaction.",
+  },
+  {
+    id: "client-responsibilities",
+    title: "Client Responsibilities",
+    icon: <UserCheck />,
+    content:
+      "Before initiating a chargeback, users must contact SevenUnique Support at info@7unique.in or 0141-4511098, provide complete transaction details, allow adequate resolution time, and act in good faith. Failure to follow these steps may delay or invalidate the claim.",
+  },
+  {
+    id: "company-responsibilities",
+    title: "Company Responsibilities",
+    icon: <Repeat />,
+    content:
+      "SevenUnique ensures transparent investigation, prompt response (within 24–48 hours), detailed documentation, cooperation with payment providers, and regular resolution updates throughout the chargeback process.",
+  },
+  {
+    id: "chargeback-procedures",
+    title: "Chargeback Procedures",
+    icon: <AlertTriangle />,
+    content:
+      "Users must submit written requests to info@7unique.in with transaction details. The company verifies transactions, checks service delivery, reviews communication logs, and consults third parties if needed. Approved chargebacks are refunded within 5–10 business days, while invalid claims are denied with written reasons.",
+  },
+  {
+    id: "unnotified-chargebacks",
+    title: "Consequences of Unnotified Chargebacks",
+    icon: <Gavel />,
+    content:
+      "Initiating a chargeback without prior contact violates service terms. Such accounts may face suspension, restrictions, or permanent bans. Repeated violations may result in legal action to recover damages.",
+  },
+  {
+    id: "timeline",
+    title: "Timeline for Chargeback Resolution",
+    icon: <Clock />,
+    content:
+      "Acknowledgement: within 24–48 hours. Investigation: typically 5–10 business days. Final Resolution: written confirmation and refund details provided post-verification.",
+  },
+  {
+    id: "special-considerations",
+    title: "Special Considerations for Utility and Digital Services",
+    icon: <AlertTriangle />,
+    content:
+      "Real-time services like BBPS, AEPS/DMT, mobile/DTH recharges, and PAN applications are non-reversible once executed. Refunds may only occur in case of technical failures. Subscription cancellations apply to future cycles; completed periods are non-refundable unless otherwise stated.",
+  },
+  {
     id: "data-security",
-    title: "Data Security",
-    icon: Shield,
+    title: "Data Security and Privacy",
+    icon: <Lock />,
     content:
-      "We prioritize the protection of your personal data. All information collected during KYC verification is securely stored and used only for compliance and service enhancement. We strictly adhere to data protection laws, including GDPR, and never share your details with third parties without consent.",
+      "SevenUnique ensures all chargeback and transaction data is encrypted, securely stored, access-controlled, and used solely for verification and compliance purposes, following IT Act 2000 and relevant privacy laws.",
   },
   {
-    id: "identity-verification",
-    title: "Identity Verification",
-    icon: IdCard,
+    id: "legal-standing",
+    title: "Legal Standing",
+    icon: <Gavel />,
     content:
-      "As part of our onboarding process, users must provide valid identification documents such as government-issued ID, proof of address, and other supporting materials. These documents are used exclusively for compliance and security purposes.",
+      "This policy is governed by Indian law. All disputes fall under the jurisdiction of Jaipur, Rajasthan. SevenUnique may amend or update the policy as required by regulatory or operational needs.",
   },
   {
-    id: "compliance-standards",
-    title: "Compliance Standards",
-    icon: Scale,
+    id: "communication-support",
+    title: "Communication & Support",
+    icon: <PhoneCall />,
     content:
-      "We follow strict compliance procedures to meet local and international regulatory standards. Our KYC process ensures transparency and protects against fraudulent activities, money laundering, and unauthorized access.",
+      "For assistance, contact info@7unique.in or call 0141-4511098 (Mon–Sat, 10:00 AM – 6:30 PM IST). Include transaction ID, registered mobile number, service type, and issue description for faster resolution.",
   },
   {
-    id: "exceptions",
-    title: "Special Cases & Exceptions",
-    icon: Star,
+    id: "user-partner-responsibilities",
+    title: "Responsibilities of Users and Partners",
+    icon: <Users />,
     content:
-      "In some cases, additional documents or verification steps may be required based on regional regulations or user risk profiles. Our compliance team reviews each case individually to ensure fair and transparent processing.",
+      "Provide accurate information during dispute submission, use official channels, avoid malicious chargebacks, and cooperate during the investigation process.",
+  },
+  {
+    id: "company-responsibilities-2",
+    title: "Responsibilities of SevenUnique Tech Solutions",
+    icon: <CheckCircle />,
+    content:
+      "Review requests fairly, maintain proper documentation, guide users throughout the process, and process approved refunds promptly and securely.",
+  },
+  {
+    id: "conclusion",
+    title: "Conclusion",
+    icon: <Shield />,
+    content:
+      "This Chargeback Policy ensures fair, transparent, and accountable dispute handling for all users and partners of SevenUnique. It fosters trust, compliance, and operational integrity through clear procedures and continuous review.",
   },
 ];
 
@@ -81,11 +143,11 @@ export default function KycPolicy() {
 
   return (
     <>
-      <div className="container">
-        <section className=" min-h-screen ">
+      <div className="">
+        <section className="">
           <div className="bg-[#F4FCFF] rounded-2xl shadow-lg">
             <section>
-              <div className="max-w-6xl mx-auto px-4 py-12">
+              <div className="max-w-8xl mx-auto px-8 py-12">
                 <div className="flex flex-col lg:flex-row gap-8">
                   {/* Table of Contents */}
                   <div className="lg:w-1/4">
@@ -105,7 +167,15 @@ export default function KycPolicy() {
                                   : "text-gray-600 hover:bg-gray-100"
                               }`}
                             >
-                              <section.icon className="w-5 h-5 mr-2" />
+                              <section
+                                                            className={`w-4 h-4 mr-4
+                                                                 ${activeSection === section.id
+                                                            ? "bg-opacity-10 text-white font-medium"
+                                                            : "text-gray-600 hover:bg-gray-100"
+                                                            }`}
+                                                        >
+                                                            {section.icon}
+                                                        </section>
                               {section.title}
                             </button>
                           </li>
@@ -132,14 +202,17 @@ export default function KycPolicy() {
                         <div className="inline-block bg-gradient-to-r from-[#358EBA] to-[#24576C] text-white font-medium px-8 py-2 rounded-full mb-4 shadow-md">
                           KYC Policy & Onboarding Process
                         </div>
-                        <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 mt-4">
+                        {/* <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 mt-4">
                           We follow a strict KYC policy to verify identity and ensure compliance
-                        </h3>
+                        </h3> */}
                         <div className="h-1 w-20 bg-gradient-to-r from-[#358EBA] to-[#24576C] mx-auto mb-6 rounded-full"></div>
-                        <p className="text-gray-600 text-lg leading-relaxed">
-                          Our KYC process ensures compliance with legal standards and helps us
-                          protect against fraudulent activities. The process is designed to be
-                          secure, transparent, and user-friendly.
+                        <p className="text-gray-600 text-start text-lg leading-relaxed">
+                          <span className="font-bold">SevenUnique Tech Solutions Private Limited </span><br />
+<span className="font-bold"> Website:</span> www.sevenuniques.com<br />
+ <span className="font-bold">Email:</span> info@7unique.in<br />
+  <span className="font-bold">Phone:</span> 0141-4511098<br />
+   <span className="font-bold">Effective Date:</span> 03 June 2025
+
                         </p>
                       </div>
                     </div>
@@ -153,7 +226,9 @@ export default function KycPolicy() {
                       >
                         <div className="flex items-start mb-4">
                           <div className="text-2xl mr-4 bg-gradient-to-r from-[#358EBA] to-[#24576C] text-white p-2 rounded-lg">
-                            <section.icon className="w-6 h-6" />
+                           <section className="w-4 h-5 mr-2 text-white">
+                            {section.icon}
+                          </section>
                           </div>
                           <h3 className="text-xl font-bold text-gray-800">
                             {section.title}

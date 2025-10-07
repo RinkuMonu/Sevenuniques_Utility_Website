@@ -20,9 +20,9 @@ function page() {
   image: "/loan/loan3.png",
   heading: (
     <>
-      At Sevenunique, <br />
-      how to secure  <br />
-      a <span className="text-blue-300">business</span> loan.
+     How to take <br />
+      a loan with  <br />
+      <span className="text-blue-300">Sevenunique</span>
     </>
   ),
   sliderData: [
@@ -32,10 +32,9 @@ function page() {
       image: "/loan/loan4.png",
       cta: "Request Calculations",
       details: [
-        "Construction Equipment Loan by Visit Sevenunique.",
-        "Fill in personal information: Name, Mobile Number, Aadhaar, PAN",
-        "Select the type of equipment and the amount of the loan",
-        "Check the eligible loan amount on the fly.",
+        "Fill in your simple information: name, mobile number, Aadhaar, and PAN.",
+        "Select the type of loan: personal loan, instant loan, or others.",
+        "Apply to get a loan calculation to confirm your eligibility.",
       ],
     },
     {
@@ -44,10 +43,8 @@ function page() {
       image: "/loan/loan12.png",
       cta: "Submit Docs",
       details: [
-        "Add PAN Card and Aadhaar Card.",
-        "Provide business documents—GST and business registration",
-        "Give equipment quote and supplier information.",
-        "Our system authenticates documents in a short time",
+        "Enter the following documents: PAN Card, Aadhaar Card, Income Proof (bank statements or salary slips)",
+        "Your documents will be immediately checked by our system to process your documents faster.",
       ],
     },
     {
@@ -56,10 +53,8 @@ function page() {
       image: "/loan/loan13.png",
       cta: "Get Construction Equipment Loan Now",
       details: [
-        "Get rapid approval with few documents.",
-        "Direct deposit of the loan to your account.",
-        "Money sent out in less than 48 hours",
-        "Buy your building materials now.",
+        "The loan will be deposited directly into your bank account once the loan is approved.",
+        "Get money within a few hours and begin to use it right away.",
       ],
     },
   ],
@@ -80,27 +75,27 @@ function page() {
       Paise Ka Solution, Turant <br className="hidden sm:block" /> SevenUnique Se
     </>
   ),
-  desc: " SevenUnique provides instant loans for all your requirements. It is easy and easygoing to borrow money through our fast, safe, and paperless system. Between application and approval, have experience banking your way",
+  desc: " SevenUnique offers fast, convenient, and safe services for all your loaning requirements. Be it emergency, education, or personal requirements, our process would be easy, paper-free, and fast.",
   loanFeatures: [
     {
       number: 1,
-      text: "Get immediate approval and fast disbursement with minimum paperwork.",
+      text: "100% Paperless and Quick Process",
     },
     {
       number: 2,
-      text: "Hassle-Free and Paperless Process.",
+      text: "Secure, trusted, and safe loan platform.",
     },
     {
       number: 3,
-      text: "Apply online with no paperwork.",
+      text: "Easy Documentation & Flexible Eligibility.",
     },
     {
       number: 4,
-      text: "Safe and Trusted Platform",
+      text: "Customer service 24/7 on all your loans.",
     },
     {
       number: 5,
-      text: "Your information and finances are secured at a bank level.",
+      text: "Instantly Take Out Loans No hassle whatsoever.",
     },
   ],
 };

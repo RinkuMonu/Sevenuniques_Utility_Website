@@ -8,6 +8,7 @@ import {
   FaXTwitter,
   FaLinkedinIn,
   FaWhatsapp,
+  FaPinterest,
 } from "react-icons/fa6";
 import Link from "next/link";
 
@@ -57,14 +58,14 @@ const Footer = () => {
               </p>
             </div>
             <div className="space-y-2 mt-3">
-              <p className="flex items-center gap-2 text-sm mb-2">
+              <Link href="mailto:sevenunique4@gmail.com"  className="flex items-center gap-2 text-sm mb-2">
                 <Mail size={18} className="text-white" />
-                7unique@gmail.com
-              </p>
-              <p className="flex items-center gap-2 text-sm">
+                sevenunique4@gmail.com
+              </Link>
+              <Link href="tel:+91 92515 82691"  className="flex items-center gap-2 text-sm">
                 <Phone size={18} className="text-white" />
-                +91 987654321
-              </p>
+                +91 92515 82691
+              </Link>
             </div>
           </div>
 
@@ -119,6 +120,13 @@ const Footer = () => {
                 <h3 className="font-semibold mb-4">Loans</h3>
                 <ul className="space-y-2 text-sm">
                   <li>
+                    <Link href="/loan"
+                      className="hover:text-blue-400"
+                    >
+                      Instant Loan
+                    </Link>
+                  </li>
+                  <li>
                     <Link href="/loan/business-loan"
                       className="hover:text-blue-400"
                     >
@@ -163,22 +171,22 @@ const Footer = () => {
                     <FaFacebookF /> Facebook
                   </Link>
                   <Link
-                    href="#"
+                    href="https://www.youtube.com/@seven_spirit2"
                     className="flex items-center gap-2 hover:text-red-500"
                   >
                     <FaYoutube /> Youtube
                   </Link>
                   <Link
-                    href="#"
+                    href="https://www.instagram.com/seven_spirit2/"
                     className="flex items-center gap-2 hover:text-pink-500"
                   >
                     <FaInstagram /> Instagram
                   </Link>
                   <Link
-                    href="#"
+                    href="https://x.com/seven_spir42085"
                     className="flex items-center gap-2 hover:text-gray-400"
                   >
-                    <FaXTwitter /> Xender
+                    <FaXTwitter /> Twitter
                   </Link>
                   <Link
                     href="#"
@@ -187,10 +195,19 @@ const Footer = () => {
                     <FaLinkedinIn /> Linkedin
                   </Link>
                   <Link
-                    href="#"
+                    href="https://wa.me/9251582691"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 hover:text-green-500"
                   >
-                    <FaWhatsapp /> Whatsapp
+                    <FaWhatsapp /> WhatsApp
+                  </Link>
+
+                  <Link
+                    href="https://www.pinterest.com/sevenspirit12/"
+                    className="flex items-center gap-2 hover:text-green-500"
+                  >
+                    <FaPinterest /> Pinterest
                   </Link>
                 </div>
               </div>
@@ -216,6 +233,27 @@ const Footer = () => {
               className="text-white hover:text-[#e8ab8f] hover:underline transition-colors duration-300"
             >
               Terms of Use
+            </Link>
+            <span className="hidden sm:inline text-white">|</span>
+            <Link
+              href="/refund-policy"
+              className="text-white hover:text-[#e8ab8f] hover:underline transition-colors duration-300"
+            >
+              Cancellation & Refund Policy
+            </Link>
+            <span className="hidden sm:inline text-white">|</span>
+            <Link
+              href="/charge-back-policy"
+              className="text-white hover:text-[#e8ab8f] hover:underline transition-colors duration-300"
+            >
+              Chargeback Policy
+            </Link>
+            <span className="hidden sm:inline text-white">|</span>
+            <Link
+              href="/kyc-policy"
+              className="text-white hover:text-[#e8ab8f] hover:underline transition-colors duration-300"
+            >
+              KYC Policy & onboarding
             </Link>
 
           </div>
