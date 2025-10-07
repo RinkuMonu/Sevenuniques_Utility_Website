@@ -85,7 +85,11 @@ function page() {
 
               <div className="relative z-10 h-full">
                 <div className='max-w-xl'>
+<<<<<<< HEAD
                   <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">Make More, Grow More at Religare</h1>
+=======
+                  <h3 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">Earn More, Grow More With Religare</h3>
+>>>>>>> 131c00b89c182bdadc0c3cbe871a4b1c98d75cac
                   <p className="text-gray-500 mb-8 leading-relaxed">
                     Collaborate with Religare and open new sources of income with our Domestic Money Transfer (DMT) services. You can also make commissions as a DMT retailer by assisting your customers in sending money in a safe and reliable manner.
                   </p>
@@ -134,9 +138,9 @@ function page() {
           <div className=" text-white flex items-center justify-center " >
             <div className="container mx-auto py-12 max-w-4xl">
               <div className="text-left mb-12">
-                <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+                <h3 className="text-3xl md:text-5xl font-bold leading-tight">
                   Paise bhejo instantly, <br />kahin bhi kabhi bhi
-                </h1>
+                </h3>
                 <p className="mt-6 max-w-2xl text-gray-400">
                   Remit funds safely and in real time to your family members anywhere, anytime. Our Domestic Money Transfer (DMT) service makes it easy, secure, and quick to transfer funds.
                 </p>

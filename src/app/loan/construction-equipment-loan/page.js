@@ -38,8 +38,8 @@ function page() {
     };
 
     const LetterCircle = ({ letter }) => (
-        <div className="flex h-20 w-20 items-center justify-center rounded-full  p-1 shadow-inner md:h-24 md:w-24">
-            <div className="flex h-full w-full items-center justify-center rounded-full border-4 border-[#5F12D2]">
+        <div className="flex h-20 w-20 items-center justify-center rounded-full  p-1 md:shadow-inner md:h-24 md:w-24">
+            <div className="flex h-full w-full items-center justify-center rounded-full md:border-4 border-[#5F12D2]">
                 <span className="font-sans text-6xl font-medium text-[#5F12D2] md:text-6xl">
                     {letter}
                 </span>
@@ -98,7 +98,7 @@ function page() {
                                 height={500}
                                 width={500}
                                 alt="center image"
-                                className="md:pt-4 pt-16 lg:absolute bottom-10 right-32 scale-150 z-20"
+                                className="md:pt-4 hidden md:block pt-16 lg:absolute bottom-10 right-32 lgscale-150 z-20"
 
                             />
                         </div>
@@ -164,11 +164,11 @@ function page() {
 
   <div className="bg-[#EFF9FF] mb-10">
         <div className=" px-4 lg:px-0 max-w-7xl mx-auto py-20 relative">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
-              <h1 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] max-w-lg">
+              <h3 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] max-w-lg">
                Eligibility Check, Loan Approve Quick
-              </h1>
+              </h3>
               <div className="grid grid-cols-2 gap-4 pt-4">
                 {infoData.map((item, index) => (
                   <div key={index} className="rounded-lg border border-[#0063A2] px-4 py-6 w-full text-center hover:shadow-lg transition-shadow duration-300">
@@ -179,13 +179,13 @@ function page() {
               </div>
             </div>
 
-            <div className="hidden md:flex justify-center">
+            <div className="hidden lg:flex justify-center">
               <Image
                 src="/loan/construct3.png"
                 width={400}
                 height={400}
                 alt="Eligibility section illustration"
-                className=" absolute bottom-11 -right-20 scale-120"
+                className=" absolute bottom-11 -right-20 lg:scale-120"
               />
             </div>
           </div>

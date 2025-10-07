@@ -23,7 +23,7 @@ export default function AdvantageDMT() {
         <div className=" my-16 px-4 lg:p-0">
             <div className="w-full max-w-7xl mx-auto">
                 <div className="text-left mb-8 md:mb-12">
-                    <h1 className="text-2xl sm:text-4xl font-bold text-[#0C3D4C]">Your Edge, Our Advantage</h1>
+                    <h3 className="text-2xl sm:text-4xl font-bold text-[#0C3D4C]">Your Edge, Our Advantage</h3>
                     <p className="mt-4  text-gray-500">
                        Open, Trustworthy, and Fast Services. Transfer Funds in Seconds. <br/>
 Transfer money quickly and easily, anywhere in India.

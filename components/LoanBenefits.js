@@ -18,9 +18,9 @@ export default function LoanBenefits({
   return (
    <div className='py-16'>
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#0C3D4C] tracking-tight">
+          <h3 className="text-3xl md:text-4xl font-bold text-[#0C3D4C] tracking-tight">
             {title}
-          </h1>
+          </h3>
           <p className="mt-4 max-w-6xl mx-auto text-gray-600">
             {description}
           </p>

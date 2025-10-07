@@ -9,9 +9,9 @@ const BannerCTA = ({ title, description }) => {
 
 
     <div className="w-full max-w-2xl pb-12 space-y-2 text-left">
-      <h1 className="text-xl  text-[#24576C] font-semibold">
+      <h3 className="text-xl  text-[#24576C] font-semibold">
         {title}
-      </h1>
+      </h3>
       <p className=" text-gray-600 max-w-md pt-2 text-base">
         {description}
       </p>

@@ -36,13 +36,13 @@ function AepsFeatures() {
               <Image src="/aeps/f3.png" alt="Real-Time Verification" width={400} height={400} className="rounded-lg" />
             </div>
             <div className="bg-[#FFE9DE] relative rounded-xl">
-              <div className='max-w-[150px] pt-6 ms-auto pr-4'>
+              <div className='md:max-w-[150px] px-2 md:px-0 pt-6 ms-auto pr-4'>
                 <p className="text-[#0C3D4C] text-lg font-semibold mb-2 ">Easy Access</p>
                 <p className="text-[#5D5D5D] text-base mb-4">
                  Easy, convenient banking services at the local stores and retail shops in your community.
                 </p>
               </div>
-              <Image src="/aeps/f4.png" alt="Cash Withdrawal" width={180} height={180} className=" absolute top-2 left-0" />
+              <Image src="/aeps/f4.png" alt="Cash Withdrawal" width={180} height={180} className="hidden md:block absolute top-2 left-0" />
             </div>
           </div>
         </div>
