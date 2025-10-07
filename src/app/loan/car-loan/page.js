@@ -21,18 +21,18 @@ function page() {
         id: 1,
         subheading: 'CAR LOAN',
         heading: 'Apni Car Ka Sapna, Ab Aasaan',
-        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et ',
+        description: 'Our car loans are easy and affordable, and get you the car of your dreams. It could be a new car or an old car; we have a quick approval with low interest and repayment terms that are flexible to make your dream car come true. ',
         bgImage: '/loan/carbg.png',
         centerImage: '/loan/car1.png',
     }
 
     const aepsData = {
         subheading: 'CAR LOAN',
-        heading: 'Pre-Owned Car Loan',
-        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et  ducimus odio dignissimos At vero eos et accusamus et ',
+        heading: 'Owned Car Loan',
+        description: 'Our owned car loans will get you the best deal on your next used car. We provide low-cost financing solutions on certified and non-certified used vehicles, with fast approvals and a flexible repayment schedule. ',
         features: [
-            'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
-            'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
+            'We have loans that will allow you to purchase quality used cars without overworking your budget. Low interest rates, minimal paperwork, and quick processing will get you to drive home with the perfect car.',
+            'We fund cars of every model and make and loan tenures that fit your budget. We have a clear and transparent process and no surprises ',
         ]
     };
 
@@ -51,9 +51,11 @@ function page() {
   image: "/loan/loan3.png",
   heading: (
     <>
-      At Sevenunique, <br />
-      how to secure  <br />
-      a <span className="text-blue-300">business</span> loan.
+      Apply Karo Abhi,
+
+<br />Paisa Milega
+        <br />
+       <span className="text-blue-300">Turant Account Mein</span>
     </>
   ),
   sliderData: [
@@ -63,10 +65,10 @@ function page() {
       image: "/loan/loan4.png",
       cta: "Request Calculations",
       details: [
-        "Construction Equipment Loan by Visit Sevenunique.",
-        "Fill in personal information: Name, Mobile Number, Aadhaar, PAN",
-        "Select the type of equipment and the amount of the loan",
-        "Check the eligible loan amount on the fly.",
+        "Sevenunique car loan sites.",
+        "Fill in some basic information: Name, mobile number, Aadhaar, and PAN.",
+        "Enter car model and loan.",
+        "Determine the amount of a check-eligible loan immediately.",
       ],
     },
     {
@@ -75,10 +77,10 @@ function page() {
       image: "/loan/loan12.png",
       cta: "Submit Docs",
       details: [
-        "Add PAN Card and Aadhaar Card.",
-        "Provide business documents—GST and business registration",
-        "Give equipment quote and supplier information.",
-        "Our system authenticates documents in a short time",
+        "Upload the PAN Card and Aadhaar Card.",
+        "Provide evidence of income—bank statements or salary slips.",
+        "Present address proving papers.",
+        "Our system checks documents in a matter of seconds.",
       ],
     },
     {
@@ -87,10 +89,10 @@ function page() {
       image: "/loan/loan13.png",
       cta: "Get Construction Equipment Loan Now",
       details: [
-        "Get rapid approval with few documents.",
-        "Direct deposit of the loan to your account.",
-        "Money sent out in less than 48 hours",
-        "Buy your building materials now.",
+        "Get immediate approval with the least paperwork",
+        "Credit the loan into your account.",
+        "Money is transferred in less than 24 hours.",
+        "Get home to your dream car.",
       ],
     },
   ],
@@ -177,20 +179,21 @@ function page() {
             <ServicesSection3 data={aepsData} />
             <StatsBanner />
            <LoanBenefits
-  title="Drive Your Dream Car with Easy Loans"
-  description="At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos "
+  title="Easy Loans to Drive Your Dream Car."
+  description="Drive your dream car with our low-cost and easy car loans. We provide prompt approvals, low interest rates, and easy repayment plans on new and used cars.
+"
   image="/loan/car3.png"
   benefits={[
-    "Quick approval with minimal paperwork.",
-    "Flexible EMI options as per budget.",
-    "Loan available for new and used cars.",
-    "Attractive and affordable interest rates.",
-    "No hidden charges, fully transparent.",
-    "Quick approval with minimal paperwork.",
-    "Flexible EMI options as per budget.",
-    "Loan available for new and used cars.",
-    "Attractive and affordable interest rates.",
-    "No hidden charges, fully transparent.",
+    "Fast application with limited documentation.",
+    "Customize EMI according to your budget.",
+    "New and used car loans",
+    "Attractive and competitive interest rates.",
+    "No sneaky fees, no strings attached.",
+    " No prepayment penalties—even if a variable loan is more worth it than a fixed loan, you can pay it off without incurring any fees.",
+    " Insurance assistance—you can ask us about potential car insurance options for you.",
+    "Manage your loan online—access your loan anytime and from anywhere",
+    "A vast dealer network—choose from our approved dealers.",
+    "Get Your Loan Immediately—funds available near instantly.",
   ]}
 />
 

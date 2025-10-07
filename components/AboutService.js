@@ -16,8 +16,8 @@ const ServiceCard = ({ service, isFeatured }) => {
 const AboutService = () => {
     // An array of service names to be displayed in the grid.
     const services = [
-        "BBPS", "AEPS", "AEPS", "AEPS", "AEPS", "AEPS",
-        "AEPS", "AEPS", "AEPS", "AEPS", "AEPS", "AEPS"
+        "BBPS", "AEPS", "Bill Payments", "Recharges ", "Insurances ", "Booking ",
+        "Credit Card", "PanCard ", "Business Loan", "Home Loan", "Personal Loan","Car loan"
     ];
 
     return (
@@ -35,7 +35,7 @@ const AboutService = () => {
                     {/* Right Section: Description and Services Grid */}
                     <section className="lg:col-span-3">
                         <p className="text-[#5D5D5D] mb-10 md:text-base  leading-relaxed">
-                            At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos At Vero Eos Et Accusamus Et At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos At Vero Eos Et At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Duci
+                           We deliver reliable and tailored solutions to meet your business needs, streamline operations, and help you achieve growth and success.
                         </p>
                         
                      

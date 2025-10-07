@@ -4,6 +4,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { FaUser } from "react-icons/fa";
 import { Mail, MapPin, MoveUpRight, Phone } from "lucide-react";
 
 export default function Header() {
@@ -39,46 +40,35 @@ export default function Header() {
 
   return (
     <>
-
-      <header className="bg-white shadow-md sticky top-0 z-50">
+      <header className="bg-white shadow-lg sticky top-0 z-50">
         <div className="bg-[#0C3D4C] text-white text-sm py-4 px-6 flex justify-between items-center mb-1  hidden md:flex">
-        <div className="flex space-x-6">
-          <span className="flex items-center">
-            <Mail className="mr-1 w-4 h-4" /> support@7unique.in
-          </span>
-          <span className="flex items-center">
-            <Phone className="mr-1 w-4 h-4" /> 0141-4511098
-          </span>
-          <span className="flex items-center">
-            <MapPin className="mr-1 w-4 h-4" /> 97, Dakshinpuri - I, Shrikishan,
-            Jagatpura, Jaipur
-          </span>
-        </div>
+          <div className="flex space-x-6">
+            <span className="flex items-center">
+              <Mail className="mr-2 w-5 h-5" /> support@7unique.in
+            </span>
+            <span className="flex items-center">
+              <Phone className="mr-3 w-5 h-5" /> 0141-4511098
+            </span>
+          </div>
 
-        <div className="flex space-x-4">
-          <Link
-            href="#"
-            className="hover:text-[#72CAF7] transition-colors flex gap-2 items-center"
-          >
-            Instagram <MoveUpRight className="w-4 h-4" />
-          </Link>
-          {/* <div className="w-px h-6 bg-gray-300"></div>
+           {/* Buttons (desktop) */}
+          <div className="hidden md:flex items-center space-x-4">
             <Link
-              href="#"
-              className="hover:text-[#72CAF7] transition-colors flex gap-2 items-center"
+              href="https://utility.finuniques.in/"
+              className="px-6 py-2 bg-[#0C3D4C] text-white rounded-full flex justify-center gap-2 items-center font-medium hover:bg-[#0C3D4C]/80 transition"
             >
-              Twitter <MoveUpRight className="w-4 h-4" />
-            </Link> */}
-          <div className="w-px h-6 bg-gray-300"></div>
-          <Link
-            href="#"
-            className="hover:text-[#72CAF7] transition-colors flex gap-2 items-center"
-          >
-            Facebook <MoveUpRight className="w-4 h-4" />
-          </Link>
+              <FaUser />
+              Login
+            </Link>
+            <Link
+              href="https://utility.finuniques.in/register"
+              className="px-6 py-2 border bg-gray-200 border-[#0C3D4C] text-[#0C3D4C] rounded-full font-medium hover:bg-[#0C3D4C]/40 hover:text-white transition"
+            >
+              Register
+            </Link>
+          </div>
         </div>
-      </div>
-        <div className="max-w-9xl mx-auto px-6 py-3 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           {/* Logo */}
           <div className="px-2 py-1 font-semibold">
             <Image
@@ -99,7 +89,7 @@ export default function Header() {
               >
                 {link.dropdown ? (
                   <button
-                    className={`relative flex items-center gap-1 font-medium transition group/btn
+                    className={`relative flex items-center gap-1 text-lg font-medium transition group/btn
             ${
               ["/services", "/loan"].some((path) => pathname.startsWith(path))
                 ? "text-[#0C3D4C] font-semibold before:w-full"
@@ -161,22 +151,6 @@ export default function Header() {
               </div>
             ))}
           </nav>
-
-          {/* Buttons (desktop) */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Link
-              href="https://utility.finuniques.in/"
-              className="px-6 py-2 bg-[#0C3D4C] text-white rounded-full font-medium hover:bg-[#0C3D4C]/80 transition"
-            >
-              Login
-            </Link>
-            <Link
-              href="https://utility.finuniques.in/register"
-              className="px-6 py-2 border border-[#0C3D4C] text-[#0C3D4C] rounded-full font-medium hover:bg-[#0C3D4C]/80 hover:text-white transition"
-            >
-              Register
-            </Link>
-          </div>
 
           {/* Mobile Menu Button */}
           <button
