@@ -74,19 +74,19 @@ const Footer = () => {
                 <h3 className="font-semibold mb-4">Qiuck Links</h3>
                 <ul className="space-y-2 text-sm">
                   <li>
-                    <a href="#" className="hover:text-blue-400">
+                    <Link href="#" className="hover:text-blue-400">
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-blue-400">
+                    <Link href="#" className="hover:text-blue-400">
                       Blog
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-blue-400">
+                    <Link href="#" className="hover:text-blue-400">
                       Contact
-                    </a>
+                    </Link>
                   </li>
                   {/* <li><a href="#" className="hover:text-blue-400">Bug bounty</a></li> */}
                 </ul>
@@ -97,19 +97,19 @@ const Footer = () => {
                 <h3 className="font-semibold mb-4">Services</h3>
                 <ul className="space-y-2 text-sm">
                   <li>
-                    <a href="/aeps" className="hover:text-blue-400">
+                    <Link href="/aeps" className="hover:text-blue-400">
                       AEPS
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/bbps" className="hover:text-blue-400">
+                    <Link href="/bbps" className="hover:text-blue-400">
                       BBPS
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/dmt" className="hover:text-blue-400">
+                    <Link href="/dmt" className="hover:text-blue-400">
                       DMT
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -119,38 +119,35 @@ const Footer = () => {
                 <h3 className="font-semibold mb-4">Loans</h3>
                 <ul className="space-y-2 text-sm">
                   <li>
-                    <a
-                      href="/loan/business-loan"
+                    <Link href="/loan/business-loan"
                       className="hover:text-blue-400"
                     >
                       Business Loan
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/loan/home-loan" className="hover:text-blue-400">
+                    <Link href="/loan/home-loan" className="hover:text-blue-400">
                       Home Loan
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="/loan/personal-loan"
+                    <Link href="/loan/personal-loan"
                       className="hover:text-blue-400"
                     >
                       Personal Loan
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="/loan/construction-equipment-loan"
+                    <Link href="/loan/construction-equipment-loan"
                       className="hover:text-blue-400"
                     >
                       Construction Loan
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/loan/car-loan" className="hover:text-blue-400">
+                    <Link href="/loan/car-loan" className="hover:text-blue-400">
                       Car Loan
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -159,49 +156,49 @@ const Footer = () => {
               <div>
                 <h3 className="font-semibold mb-4">Follow us on</h3>
                 <div className="flex flex-col space-y-3">
-                  <a
+                  <Link
                     href="#"
                     className="flex items-center gap-2 hover:text-blue-400"
                   >
                     <FaFacebookF /> Facebook
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#"
                     className="flex items-center gap-2 hover:text-red-500"
                   >
                     <FaYoutube /> Youtube
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#"
                     className="flex items-center gap-2 hover:text-pink-500"
                   >
                     <FaInstagram /> Instagram
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#"
                     className="flex items-center gap-2 hover:text-gray-400"
                   >
                     <FaXTwitter /> Xender
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#"
                     className="flex items-center gap-2 hover:text-blue-500"
                   >
                     <FaLinkedinIn /> Linkedin
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#"
                     className="flex items-center gap-2 hover:text-green-500"
                   >
                     <FaWhatsapp /> Whatsapp
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-       <div className="mt-12 py-8 border-t border-gray-800 text-center">
+        <div className="mt-12 py-8 border-t border-gray-800 text-center">
           <p className="text-white text-sm">
             &copy; {new Date().getFullYear()} Sevenunique Tech Solutions Private Limited. All
             rights reserved.

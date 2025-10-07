@@ -177,7 +177,7 @@ export default function ChargebackPolicy() {
                         <div className="mb-6">
                           <div className="w-20 h-20 mx-auto bg-gradient-to-r from-[#358EBA] to-[#24576C] rounded-full flex items-center justify-center">
                             <Image
-                              src="/Image/chargeback-img.png"
+                              src="/privacy/chargeback-img.png"
                               alt="Chargeback Policy Icon"
                               width={40}
                               height={40}

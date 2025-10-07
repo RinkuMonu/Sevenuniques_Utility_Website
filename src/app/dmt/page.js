@@ -75,21 +75,17 @@ function page() {
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12 ">
             <Image
               src="/dmt/earnbg.png"
-              width={400}
+              width={600}
               height={500}
               alt="Happy professional with a tablet"
-              className="rounded-lg absolute top-53 -left-10 object-contain w-2/3 h-3/4"
+              className="rounded-lg absolute top-53 -left-10 object-contain  h-3/4"
             />
 
             <div className="relative md:col-span-3">
 
               <div className="relative z-10 h-full">
                 <div className='max-w-xl'>
-<<<<<<< HEAD
-                  <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">Make More, Grow More at Religare</h1>
-=======
                   <h3 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">Earn More, Grow More With Religare</h3>
->>>>>>> 131c00b89c182bdadc0c3cbe871a4b1c98d75cac
                   <p className="text-gray-500 mb-8 leading-relaxed">
                     Collaborate with Religare and open new sources of income with our Domestic Money Transfer (DMT) services. You can also make commissions as a DMT retailer by assisting your customers in sending money in a safe and reliable manner.
                   </p>
@@ -146,7 +142,7 @@ function page() {
                 </p>
               </div>
               <div className="mb-12">
-                <Link href="/contact" className=" text-white font-bold py-3 px-8 rounded-full transition-colors duration-300" style={{
+                <Link href="https://utility.sevenuniques.in/register" className=" text-white font-bold py-3 px-8 rounded-full transition-colors duration-300" style={{
                   background: "linear-gradient(90deg,#358EBA  0%, #24576C 100%)"
                 }}>
                   Register now

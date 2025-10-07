@@ -3,10 +3,10 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 const testimonials = [
-  { id: 1, name: "Pellentesque nec", text: "Pellentesque nec the condimentum nec lorem nulla augue est ultricies ac iaculis ut euismod quis sapien.", date: "25 July 2025", avatar: "https://i.pravatar.cc/100?img=1", rating: 5 },
-  { id: 2, name: "Aliquam erat", text: "Pellentesque nec the condimentum nec lorem nulla augue est ultricies ac iaculis ut euismod quis sapien. Pellentesque nec the condimentum nec lorem nulla.", date: "26 July 2025", avatar: "https://i.pravatar.cc/100?img=2", rating: 5 },
-  { id: 3, name: "Vestibulum ante", text: "Pellentesque nec the condimentum nec lorem nulla augue est ultricies ac iaculis ut euismod quis sapien.", date: "27 July 2025", avatar: "https://i.pravatar.cc/100?img=3", rating: 4 },
-  { id: 4, name: "Nulla facilisi", text: "A fantastic experience from start to finish. Highly recommended for everyone looking for quality and professionalism.", date: "28 July 2025", avatar: "https://i.pravatar.cc/100?img=4", rating: 5 },
+  { id: 1, name: " Ravi Kumar - Retailer", text: "Sevenunique helped me to make my small store a service center online. The commissions have been quite supportive in boosting my monthly income, and the support team is outstanding!", date: "25 July 2024", avatar: "/loan/5.png", rating: 5 },
+  { id: 2, name: "Priya Sharma - Distributor", text: " The Adhikari network of Sevenunique helped me to grow my business easily. The site was easy to navigate, and the staff was available and accommodating in terms of helping me climb at a better pace than I had imagined.", date: "26 July 2025", avatar: "https://i.pravatar.cc/100?img=2", rating: 5 },
+  { id: 3, name: "Amit Verma - User", text: "Paying off bills and transferringmoney has never been easy. The app is fast and secure, and it has not let us down. It's a real game-changer", date: "27 July 2025", avatar: "https://i.pravatar.cc/100?img=3", rating: 4 },
+  { id: 4, name: "Sunita Patel - Retailer", text: "Sevenunique assisted me in receiving online payments in my village. It has become the standard option among all the people here, and it has revolutionized the way we conduct transactions considerably.", date: "28 July 2025", avatar: "https://i.pravatar.cc/100?img=4", rating: 5 },
 ];
 
 // --- Star Rating Component ---

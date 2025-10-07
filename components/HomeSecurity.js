@@ -19,11 +19,11 @@ function HomeSecurity() {
                                 Guarding Your Data,<br />Securing Your Future
                             </h3>
                             <p className="mt-6 max-w-2xl text-gray-400">
-                                At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio DignissimosAt Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio
+                                Your business integrity is what we care about. The presence of the most sophisticated security measures and the promise to keep your data safe will allow you to be confident that you will be collaborating with the most progressive industry in terms of encryption and compliance.
                             </p>
                         </div>
                         <div className="mb-12">
-                            <Link href="/contact" className=" text-white font-bold py-3 px-8 rounded-full transition-colors duration-300"   style={{
+                            <Link href="https://utility.sevenuniques.in/register" className=" text-white font-bold py-3 px-8 rounded-full transition-colors duration-300"   style={{
     background: "linear-gradient(90deg,#358EBA  0%, #24576C 100%)"
   }}>
                                 Register now

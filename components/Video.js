@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 // --- Data for the cards ---
@@ -67,9 +68,9 @@ const Video = () => {
               <p className="text-base max-w-sm mb-4">
                 Just in case your data or money is at risk, we secure it with high-end security controls and Aadhaar authentication that guarantee that all your transactions are fully secured and safeguarded
               </p>
-              <button className="bg-[#018EDE] w-full text-center hover:bg-[#018EDE]/90 cursor-pointer text-white font-semibold py-3 px-6 rounded-full  transition-colors duration-300">
+              <Link href="/contact" className="bg-[#018EDE] w-full text-center hover:bg-[#018EDE]/90 cursor-pointer text-white font-semibold py-3 px-6 rounded-full  transition-colors duration-300">
                 Contact Us
-              </button>
+              </Link>
             </div>
           </div>
         </header>

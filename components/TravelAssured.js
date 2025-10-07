@@ -1,4 +1,4 @@
-// components/AirTravelAssured.jsx
+
 "use client";
 
 import React from 'react';
@@ -36,7 +36,7 @@ export default function TravelAssured({ data }) {
 
           {/* Book Now Button */}
           <Link
-            href="#"
+            href="/coming-soon"
             className="bg-[#0C3D4C] hover:bg-[#082A34] text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-colors"
             style={{
               background: "linear-gradient(90deg,#358EBA 0%, #24576C 100%)",
@@ -50,7 +50,7 @@ export default function TravelAssured({ data }) {
          <div className=" flex justify-center md:justify-end">
           <div className=" ">
             <Image
-              src={imageUrl} L
+              src={imageUrl} 
               alt="Airplane flying over a globe with a location pin and paper plane"
         width={600}
         height={600}
