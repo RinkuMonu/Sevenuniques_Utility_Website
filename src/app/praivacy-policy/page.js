@@ -2,7 +2,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 
 
@@ -278,7 +277,7 @@ export default function Privacy() {
                                                 <div className="mb-6">
                                                     <div className="w-20 h-20 mx-auto bg-gradient-to-r from-[#358EBA] to-[#24576C] rounded-full flex items-center justify-center">
                                                         <Image
-                                                            src="/privacy/privacy-img.png"
+                                                            src="/Image/privacy-img.png"
                                                             alt="Privacy Icon"
                                                             width={40}
                                                             height={40}
@@ -331,9 +330,9 @@ export default function Privacy() {
                                                 <p className="text-gray-600 mb-4">
                                                     If you have any questions about our privacy practices or how we handle your data, please don't hesitate to contact our privacy team.
                                                 </p>
-                                                <Link href="/contact" className="bg-gradient-to-r from-[#358EBA] to-[#24576C] text-white font-medium px-6 py-2 rounded-lg transition-all duration-300 hover:shadow-md">
+                                                <button className="bg-gradient-to-r from-[#358EBA] to-[#24576C] text-white font-medium px-6 py-2 rounded-lg transition-all duration-300 hover:shadow-md">
                                                     Contact Privacy Team
-                                                </Link>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>

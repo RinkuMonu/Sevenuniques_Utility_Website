@@ -146,11 +146,11 @@ export default function RefundPolicy() {
                   {/* Main Content */}
                   <div className="lg:w-3/4">
                     <div className="bg-white p-8 rounded-2xl shadow-sm mb-8">
-                      <div className=" text-center mb-10 ">
-                        <div className="mb-6 ">
-                          <div className="w-20 h-20 mx-auto bg-gradient-to-r from-[#358EBA] to-[#24576C] rounded-full flex items-center justify-center">
+                      <div className=" mb-10">
+                        <div className="mb-6">
+                          <div className="w-20 h-20  bg-gradient-to-r from-[#358EBA] to-[#24576C] rounded-full flex items-center justify-center">
                             <Image
-                              src="/privacy/refund-img.png"
+                              src="/Image/refund-img.png"
                               alt="Refund Policy Icon"
                               width={40}
                               height={40}
@@ -158,13 +158,13 @@ export default function RefundPolicy() {
                             />
                           </div>
                         </div>
-                        <div className="inline-block bg-gradient-to-r mx-auto from-[#358EBA] to-[#24576C] text-white font-medium px-8 py-2 rounded-full mb-4 shadow-md ">
+                        <div className="inline-block bg-gradient-to-r from-[#358EBA] to-[#24576C] text-white font-medium px-8 py-2 rounded-full mb-4 shadow-md">
                           Cancellation & Refund Policy
                         </div>
                         <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 mt-4">
                           You can cancel your service within 7 days of purchase for a refund as per our policy
                         </h3>
-                        <div className="h-1 w-20 bg-gradient-to-r from-[#358EBA] to-[#24576C] mb-6 rounded-full mx-auto"></div>
+                        <div className="h-1 w-20 bg-gradient-to-r from-[#358EBA] to-[#24576C] mb-6 rounded-full"></div>
                         <p className="text-gray-600 text-lg leading-relaxed">
                           Our refund policy is designed to be fair and transparent. We understand that circumstances may change, and we strive to make the cancellation and refund process as straightforward as possible. Below you'll find detailed information about our policies, eligibility criteria, and processes.
                         </p>
