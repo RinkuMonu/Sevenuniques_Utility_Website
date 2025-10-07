@@ -47,7 +47,7 @@ const UtilitiesHome = () => {
 
             {/* View more button */}
             <div className="pt-6 pb-10">
-              <Link href="/" className="bg-[#0C3D4C] text-white font-semibold py-3 px-8 rounded-2xl shadow-md hover:bg-[#124068] transition-all duration-300">
+              <Link href="/bbps" className="bg-[#0C3D4C] text-white font-semibold py-3 px-8 rounded-2xl shadow-md hover:bg-[#124068] transition-all duration-300">
                 View more
               </Link>
             </div>

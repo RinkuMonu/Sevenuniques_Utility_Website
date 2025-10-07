@@ -43,11 +43,11 @@ const TestimonialSlider = () => {
   }, [currentIndex]);
 
   return (
-    <section className="relative w-full overflow-hidden" style={{ background: "linear-gradient(90deg, #01202A 0%, #01202A 25%, #0B4051 50%, #095C8C 75%, #095C8C 100%)" }}>
+    <section className="relative w-full" style={{ background: "linear-gradient(90deg, #01202A 0%, #01202A 25%, #0B4051 50%, #095C8C 75%, #095C8C 100%)" }}>
       <div className="flex flex-col md:flex-row max-w-7xl mx-auto">
         {/* Left Image Panel */}
         <div className="hidden md:block w-full md:w-1/2 lg:w-1/2 mt-8 md:mt-0 relative">
-          <Image src="/home/homefarmer.png" width={500} height={400} alt="Happy person using their phone" className="rounded-lg md:absolute bottom-0 -left-20" />
+          <Image src="/home/homefarmer.png" width={850} height={535} alt="Happy" className="rounded-lg md:absolute bottom-0 -left-20" style={{width:"850px", height:"527px"}} />
         </div>
 
         {/* Right Slider Panel */}

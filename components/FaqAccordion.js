@@ -46,7 +46,7 @@ const FaqAccordion = ({ faqData, title = "Your Queries, Our Answers!" }) => {
                 <h3 className="text-2xl lg:text-4xl font-bold text-center text-[#0C3D4C] mb-8">
                     {title}
                 </h3>
-                <div className="rounded-lg  overflow-hidden border border-gray-200">
+                <div className="rounded-lg space-y-3.5  overflow-hidden border border-gray-200">
                     {faqData.map((faq, index) => (
                         <AccordionItem
                             key={index}
@@ -54,6 +54,7 @@ const FaqAccordion = ({ faqData, title = "Your Queries, Our Answers!" }) => {
                             answer={faq.answer}
                             isOpen={openIndex === index}
                             onClick={() => handleItemClick(index)}
+                            className="space-y-3"
                         />
                     ))}
                 </div>

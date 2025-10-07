@@ -4,23 +4,23 @@ import React from 'react';
 const loanFeatures = [
   {
     number: 1,
-    text: "Loan Milega Turant, Bilkul Hassle-Free",
+    text: "Get immediate approval and fast disbursement with minimum paperwork.",
   },
   {
     number: 2,
-    text: "Paperless and hassle-free process",
+    text: "Hassle-Free and Paperless Process.",
   },
   {
     number: 3,
-    text: "Safe and trusted platform for your loans",
+    text: "Apply online with no paperwork.",
   },
   {
     number: 4,
-    text: "Flexible eligibility and easy documentation",
+    text: "Safe and Trusted Platform",
   },
   {
     number: 5,
-    text: "24/7 support for loan assistance",
+    text: "Your information and finances are secured at a bank level.",
   },
 ];
 
@@ -45,7 +45,7 @@ const LoanStep = () => {
                             Paise Ka Solution, Turant <br className="hidden sm:block" /> SevenUnique Se
                         </h3>
                         <p className="text-gray-500 leading-relaxed mb-8 ">
-                            At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos At Vero Eos Et Accusamus Et At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos
+                            SevenUnique provides instant loans for all your requirements. It is easy and easygoing to borrow money through our fast, safe, and paperless system. Between application and approval, have experience banking your way.
                         </p>
                       <Image src="/loan/loan5.png" className="object-cover w-full lg:pe-4" width={400} height={400} alt='' />
                     </div>

@@ -26,9 +26,9 @@ const StoryCard = ({ imgSrc, title, text }) => {
                 <h3 className="text-2xl font-semibold mb-2">{title}</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">{text}</p>
             </div>
-            <div className="absolute top-4 right-4 bg-black/20 backdrop-blur-sm border border-white text-white py-1 px-2 rounded-xl transform transition-all duration-300 group-hover:bg-white group-hover:text-black scale-90  group-hover:scale-100 ">
+            {/* <div className="absolute top-4 right-4 bg-black/20 backdrop-blur-sm border border-white text-white py-1 px-2 rounded-xl transform transition-all duration-300 group-hover:bg-white group-hover:text-black scale-90  group-hover:scale-100 ">
                 <ArrowIcon />
-            </div>
+            </div> */}
         </div>
     );
 };

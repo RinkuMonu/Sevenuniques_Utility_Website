@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useRef } from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import Slider from "react-slick";
@@ -15,10 +16,10 @@ const ArticleCard = ({ imgSrc, category, date, title, description }) => {
                 <div className="relative group">
                     <img src={imgSrc} alt={title} className="w-full h-64 rounded-2xl" />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl">
-                        <button className="flex shadow-[2px_2px_20px_0px_#8AADB] items-center gap-2 bg-[#018EDE] text-white py-2 px-3 rounded-lg font-semibold duration-200">
+                        <Link href="/blog" className="flex shadow-[2px_2px_20px_0px_#8AADB] items-center gap-2 bg-[#018EDE] text-white py-2 px-3 rounded-lg font-semibold duration-200">
                             <span>Read more</span>
                             <ReadMoreIcon />
-                        </button>
+                        </Link>
                     </div>
                 </div>
                 <div className="py-3 px-1">
@@ -39,28 +40,28 @@ const AboutArticle = () => {
 
     const articles = [
         {
-            imgSrc: "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?q=80&w=2069&auto=format&fit=crop",
+            imgSrc: "/home/RA.avif",
             category: "Debitis Aut",
             date: "20 April 2025",
             title: "At vero eos et accusamus et iustood io dignissimos ducimus vero",
             description: "Stay updated with our latest insights and industry trends. Explore expert articles, tips, and thought leadership."
         },
         {
-            imgSrc: "https://images.unsplash.com/photo-1611095562057-2e70191e6b5c?q=80&w=2070&auto=format&fit=crop",
+            imgSrc: "/home/RA.avif",
             category: "Debitis Aut",
             date: "20 April 2025",
             title: "At vero eos et accusamus et iustood io dignissimos ducimus vero",
             description: "Stay updated with our latest insights and industry trends. Explore expert articles, tips, and thought leadership."
         },
         {
-            imgSrc: "https://images.unsplash.com/photo-1550745165-9bc0b252726a?q=80&w=2070&auto=format&fit=crop",
+            imgSrc: "/home/RA.avif",
             category: "Technology",
             date: "18 April 2025",
             title: "Exploring the Future of Retro Gaming and Development",
             description: "A deep dive into the resurgence of pixel art and classic game mechanics in the modern era."
         },
         {
-            imgSrc: "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?q=80&w=2069&auto=format&fit=crop",
+            imgSrc: "/home/RA.avif",
             category: "Debitis Aut",
             date: "20 April 2025",
             title: "At vero eos et accusamus et iustood io dignissimos ducimus vero",

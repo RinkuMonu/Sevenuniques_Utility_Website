@@ -219,7 +219,7 @@ const Banner = () => {
                     {slides.map((slide) => (
                         <div
                             key={slide.id}
-                            className="relative flex flex-col md:flex-row items-center justify-between h-screen md:h-auto  text-center pt-10 md:py-5"
+                            className="relative flex flex-col md:flex-row items-center justify-between md:h-auto  text-center pt-10 md:pt-5"
                         >
 
                             <div
@@ -253,8 +253,8 @@ const Banner = () => {
                                                 width={500}
                                                 alt="center image"
                                                 className={`md:pt-4 pt-16 object-cover 
-    ${slide.id === 3 ? "scale-105" : ""} 
-    ${slide.id === 4 ? "md:pe-5" : ""}`}
+                                                ${slide.id === 3 ? "scale-105" : ""} 
+                                                ${slide.id === 4 ? "md:pe-5" : ""}`}
                                             />
 
                                         )}

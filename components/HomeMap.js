@@ -30,10 +30,7 @@ const StatCard = ({ value, label }) => (
   ];
 
   return (
- <div className='pt-16 pb-32'>
-    <h3 className="text-3xl  font-bold text-[#21484F] text-center mb-8">
-        Empowering everyone with easy financial access
-      </h3>
+ <div className='pt-10 pb-20'>
     <div 
       className="bg-cover bg-center py-40 w-full flex flex-col items-center justify-center p-4"
       style={{ backgroundImage: "url('/home/map.png')" }}

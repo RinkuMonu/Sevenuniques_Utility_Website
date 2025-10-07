@@ -31,7 +31,7 @@ function HomeSecurity() {
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                             {features.map((featureName) => (
-                                <div key={featureName} className="border border-[#3080A6] rounded-lg py-10 px-1 lg:px-6 w-full text-center hover:bg-cyan-900/40 hover:border-cyan-400 transition-colors duration-300 cursor-pointer">
+                                <div key={featureName} className="border border-[#3080A6] rounded-lg py-10 px-1 lg:px-6 w-full text-center hover:bg-cyan-900/40 hover:border-cyan-400 transition-colors duration-300">
                                     <h3 className="text-white text-2xl font-semibold">{featureName}</h3>
                                 </div>
                             ))}

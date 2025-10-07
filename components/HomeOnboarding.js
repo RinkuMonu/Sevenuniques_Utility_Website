@@ -53,9 +53,9 @@ const StepCard = ({ number, title, description }) => (
         </div>
         <h3 className="font-bold text-xl mb-2 text-[#0C3D4C]">{title}</h3>
         <p className="text-gray-500 mb-4">{description}</p>
-        <Link href="/" className="bg-[#24576C] hover:bg-[#24576C]/90 text-white font-semibold py-2 px-5 rounded-2xl transition-colors duration-300">
+        {/* <Link href="/" className="bg-[#24576C] hover:bg-[#24576C]/90 text-white font-semibold py-2 px-5 rounded-2xl transition-colors duration-300">
             Read More
-        </Link>
+        </Link> */}
     </div>
 );
 

@@ -19,8 +19,8 @@ function page() {
   const data = {
     id: 1,
     subheading: 'INSTANT LOAN',
-    heading: 'Har zarurat ke liye, Loan taiyaar.',
-    description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et ',
+    heading: 'For Every Need, Ready Loan.',
+    description: 'You can get fast, convenient, and urgent loans for any of your needs. This could be for education, health care, or any alternative emergency financial need; we can extend instant loans with easy processing and cost conditions. ',
     bgImage: '/loan/loanbg.png',
     centerImage: '/loan/loan1.png',
   }

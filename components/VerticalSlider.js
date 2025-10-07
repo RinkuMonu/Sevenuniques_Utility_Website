@@ -4,14 +4,15 @@ import React, { useState, useEffect, useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const slide = {
   image: "/loan/loan3.png",
   heading: (
     <>
-      Apply Karo Abhi, <br />
-      Paisa Milega <br />
-      Turant <span className="text-blue-300">Account</span> Mein
+      At Sevenunique, <br />
+      how to secure  <br />
+      a <span className="text-blue-300">business</span> loan.
     </>
   ),
   sliderData: [
@@ -21,9 +22,10 @@ const slide = {
       image: "/loan/loan4.png",
       cta: "Request Calculations",
       details: [
-        "Visit The Bank, NBFC, Or Loan App.",
-        "Enter Basic Personal Details Like Name, Mobile, Aadhaar, PAN, etc.",
-        "Select The Loan Type (Personal Loan, Instant Loan, Etc.).",
+        "The business loan platform of Visit Sevenunique.",
+        "You will need to fill in your basic details: name, mobile number, Aadhaar, and PAN.",
+        "Select the type of loan (business loan, working capital, expansion loan, etc.).",
+        "Ask to calculate a loan in order to verify your eligibility.",
       ],
     },
     {
@@ -32,20 +34,18 @@ const slide = {
       image: "/loan/loan12.png",
       cta: "Submit Docs",
       details: [
-        "Digitally upload your required documents like PAN and Aadhaar.",
-        "Provide income proof such as bank statements or salary slips.",
-        "Our system will quickly verify your documents in real-time.",
+        "Add the required documents: PAN Card, Aadhaar Card, business financials, and income proof (bank statements or tax returns).",
+        "Your documents will be instantly checked by our system, which will then be processed much faster.",
       ],
     },
     {
       step: 3,
-      title: "Get Cash",
+      title: "Receive Your Loan",
       image: "/loan/loan13.png",
       cta: "Get Money Now",
       details: [
-        "Once approved, the loan amount is disbursed directly to your account.",
-        "Receive the funds in as little as a few hours.",
-        "Start using your funds for whatever you need immediately.",
+        "Upon the loan approval, the funds of the business loan will be transferred to your business account.",
+        "You can get money within a few hours and use it immediately for the business.",
       ],
     },
   ],
@@ -127,16 +127,16 @@ const VerticalSlider = () => {
                     <h3 className="mb-3 mt-4 text-2xl sm:text-3xl md:text-4xl font-bold text-[#24576C]">
                       {currentContent.title}
                     </h3>
-                    <ul className="list-inside list-disc space-y-2 text-sm sm:text-base md:text-lg text-[#5D5D5D]">
+                    <ul className="list-disc space-y-2 text-sm sm:text-base md:text-lg text-[#5D5D5D] ps-5 pt-4">
                       {currentContent.details.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
                   </div>
-                  <button className="mt-6 inline-flex w-fit items-center justify-center gap-2 self-end whitespace-nowrap rounded-lg bg-[#007bff] px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-semibold text-white shadow-md transition-all hover:bg-[#0056b3]">
+                  {/* <Link href="/" className="mt-6 inline-flex w-fit items-center justify-center gap-2 self-end whitespace-nowrap rounded-lg bg-[#007bff] px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-semibold text-white shadow-md transition-all hover:bg-[#0056b3]">
                     <span>{currentContent.cta}</span>
                     <ArrowRight size={18} className="sm:size-5" />
-                  </button>
+                  </Link> */}
                 </div>
                 <div className="absolute right-2 sm:right-4 bottom-10 sm:bottom-20 opacity-30">
                   <Image

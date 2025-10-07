@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import { IoMdDownload } from 'react-icons/io';
 
+import { IoCallOutline } from "react-icons/io5";
 
 const BenefitsSection2 = () => {
     return (
@@ -50,6 +51,7 @@ const BenefitsSection2 = () => {
                                 placeholder="Enter Mobile Number"
                                 className="w-full pl-3 md:pl-12 pr-4  rounded-4xl bg-white text-gray-900 placeholder-gray-500 focus:outline-none"
                             />
+                            <IoCallOutline className='absolute text-black top-1 left-2.5' />
                         </div>
                         <button className="px-6 py-3 text-white font-semibold rounded-4xl transition-colors" style={{
                             background: "linear-gradient(90deg,#358EBA  0%, #24576C 100%)"
@@ -58,7 +60,7 @@ const BenefitsSection2 = () => {
                         </button>
 
                     </div>
-                </div >
+                </div>
 
 
                 <div className='relative lg:h-[50vh] flex justify-center items-center align-middle '>

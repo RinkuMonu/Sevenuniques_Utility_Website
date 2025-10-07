@@ -90,7 +90,7 @@ function page() {
                             </div>
 
                             <div className="hidden md:block  h-[200px] mt-10 md:mt-0 ">
-                                <div className=" lg:absolute bottom-0 right-0 lg:w-[700px] lg:h-[500px] z-20  " style={{ "overflow": "hidden" }}>
+                                <div className=" lg:absolute bottom-0 right-0 lg:w-[769px] lg:h-[500px] z-20  " style={{ "overflow": "hidden" }}>
                                     <Image
                                         src={"/about/about2.png"}
                                         alt="loan-section"
