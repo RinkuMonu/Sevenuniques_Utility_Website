@@ -320,7 +320,7 @@ const Footer = () => {
           
           {/* Verified By Section */}
           <div>
-            <div className="bg-gray-100 text-black font-bold p-3 rounded-md inline-block mb-4">
+            {/* <div className="bg-gray-100 text-black font-bold p-3 rounded-md inline-block mb-4">
               <Image
                 src="/image/sevenunique-logo.png"
                 width={66}
@@ -328,7 +328,7 @@ const Footer = () => {
                 alt="logo"
                 className="pb-1"
               />
-            </div>
+            </div> */}
             <h3 className="font-semibold mb-4">Verified By</h3>
             <div className="flex flex-col gap-4">
               <Image className="bg-white p-2 rounded-md" src="/home/pci-logo.png" width={80} height={50} alt="Verified 1" />
