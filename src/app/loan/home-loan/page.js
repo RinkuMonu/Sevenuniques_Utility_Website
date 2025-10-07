@@ -21,19 +21,19 @@ function page() {
     const data = {
         id: 1,
         subheading: 'Mortgage LOAN',
-        heading: 'Ghar Bane Aasaan, Loan Se',
-        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et ',
+        heading: 'Home Loan Apna Sapna Ghar Ka',
+        description: 'We have a dream in ghar khareedne, banane ya badalne ka sapna hum sach karte hain. Kum interest rates, lamba repayment period, and flexible EMI ke saath.',
         bgImage: '/loan/homebg.png',
         centerImage: '/loan/home.png',
     }
 
     const aepsData = {
         subheading: 'Mortgage Loan',
-        heading: 'Ghar Ka Value, Aapke Kaam',
-        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et  ducimus odio dignissimos At vero eos et accusamus et ',
+        heading: 'Your Dream Home, Now a Reality Home Loans by SevenUnique',
+        description: 'At SevenUnique Tech Solutions Private Limited, we bring the reality of homeownership to life. Our home loan solutions are based on simplicity, transparency, and ease of use. We offer rapid approvals, a low documentation burden, and competitive interest rates to make your home purchase process simple and stress-free.',
         features: [
-            'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
-            'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
+            'If you want to purchase your first home, buy a newly constructed home, or renovate your existing home, SevenUnique has an array of personalized loan plans that align with your financial objectives. We offer flexible repayment and transparent processing for you to easily plan your finances.',
+            'Our experienced team will guide you through the entire process from eligibility to documentation to final approval. We are heavily focused on helping you digitally to apply online, track your application through experienced real-time updates, and complete the process fast and with limited environmental impact. With SevenUnique, your dream of home ownership is closer than you think! ',
         ]
     };
 
@@ -54,7 +54,7 @@ function page() {
     <>
       At Sevenunique, <br />
       how to secure  <br />
-      a <span className="text-blue-300">business</span> loan.
+      a <span className="text-blue-300">Home</span> loan.
     </>
   ),
   sliderData: [
@@ -64,10 +64,10 @@ function page() {
       image: "/loan/loan4.png",
       cta: "Request Calculations",
       details: [
-        "Construction Equipment Loan by Visit Sevenunique.",
-        "Fill in personal information: Name, Mobile Number, Aadhaar, PAN",
-        "Select the type of equipment and the amount of the loan",
-        "Check the eligible loan amount on the fly.",
+        "Home Loan platform of Visit Sevenunique.",
+        "Add the basic information: name, mobile number, Aadhaar, and PAN.",
+        "Select location and type of property.",
+        "Check the eligible amount of the loan instantly.",
       ],
     },
     {
@@ -76,10 +76,10 @@ function page() {
       image: "/loan/loan12.png",
       cta: "Submit Docs",
       details: [
-        "Add PAN Card and Aadhaar Card.",
-        "Provide business documents—GST and business registration",
-        "Give equipment quote and supplier information.",
-        "Our system authenticates documents in a short time",
+        "PAN card and Aadhaar card upload.",
+        "Provide income documents—salary slips or bank statements.",
+        "Present property records and valuation papers.",
+        "Our system authenticates documents in a short time to process them fast.",
       ],
     },
     {
@@ -88,10 +88,10 @@ function page() {
       image: "/loan/loan13.png",
       cta: "Get Construction Equipment Loan Now",
       details: [
-        "Get rapid approval with few documents.",
-        "Direct deposit of the loan to your account.",
-        "Money sent out in less than 48 hours",
-        "Buy your building materials now.",
+        "Secure approval within a short time.",
+        "Deposit of loan directly to your account.",
+        "Money changed in less than 24 hours of authorization.",
+        "Set off on the home journey now.",
       ],
     },
   ],
@@ -178,20 +178,20 @@ function page() {
             <ServicesSection3 data={aepsData} />
             <StatsBanner />
            <LoanBenefits
-  title="Drive Your Dream Car with Easy Loans"
-  description="At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimoscusamus et iusto odio dignissimos ducimus odio dignissimos vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos "
+  title="Home Loan Apna Sapna Ghar Ka"
+  description="Our easy home loans will get you the dream house. We provide fast application and low interest rates and payment options to all."
   image="/loan/home2.png"
   benefits={[
-    "Quick approval with minimal paperwork.",
-    "Flexible EMI options as per budget.",
-    "Loan available for new and used cars.",
-    "Attractive and affordable interest rates.",
-    "No hidden charges, fully transparent.",
-    "Quick approval with minimal paperwork.",
-    "Flexible EMI options as per budget.",
-    "Loan available for new and used cars.",
-    "Attractive and affordable interest rates.",
-    "No hidden charges, fully transparent.",
+    "Fast processing and little paperwork.",
+    "Payment of EMI as per your budget.",
+    "There are loans offered on new and old properties.",
+    "Competitive and low rates of interest.",
+    "No surcharges, just an absolutely transparent procedure.",
+    "Online application—a 10-minute online application.",
+    "Balance transfer—transfer your current loan easily.",
+    "Top-up loan Take additional finances as required.",
+    "Long tenure pay comfortably up to 30 years.",
+    "Professional assistance special manager.",
   ]}
 />
 
@@ -201,9 +201,9 @@ function page() {
                 title="Check Your Loan Eligibility Instantly"
                 infoData={[
                     { label: "Nationality", value: "Indian" },
-                    { label: "Loan Tenure", value: "60 Months" },
-                    { label: "Work Experience", value: "More than 1 year" },
-                    { label: "Employment", value: "Self Employed" },
+                    { label: "Loan Tenure", value: "Up to 60 Months" },
+                    { label: "Work Experience", value: "Over 1 year." },
+                    { label: "Employment", value: "Salaried or Self-Employed." },
                 ]}
                 image="/loan/home4.png"
                 scale= "125"
