@@ -9,6 +9,28 @@ import Slider from 'react-slick';
 
 
 const onboardingData = {
+        User: {
+        image:[
+    '/banner/bcenter1.png', '/banner/bcenter2.png', '/banner/bcenter3.png', '/banner/bcenter4.png',
+],
+        steps: [
+            { id: 1, title: 'Download App', description: 'Install the Sevenunique app in a few seconds in either the Play Store or the App Store.' },
+            { id: 2, title: 'Create Account', description: ' The only thing that you need to do is to create your account using just your mobile number, and that is it.' },
+            { id: 3, title: 'Link Bank Account', description: 'Link your bank account without any risk and start experiencing hassle-free transactions.' },
+            { id: 4, title: 'Start Transacting', description: ' Pay bills, transfer money, and recharge easily, simply by using one application.' },
+        ],
+    },
+        Retailer: {
+        image:[
+    '/banner/bcenter1.png', '/banner/bcenter2.png', '/banner/bcenter3.png', '/banner/bcenter4.png',
+],
+        steps: [
+            { id: 1, title: 'Easy Sign-up', description: 'Join our network in a very simple and smooth mobile-friendly system.' },
+            { id: 2, title: 'Instant Verification', description: 'Check yourself with your distributor and have it all on demand.' },
+            { id: 3, title: 'Load Wallet', description: ' Always keep the stuff in your wallet and be ready to serve your customers.' },
+            { id: 4, title: 'Serve & Earn', description: 'Offer services like bill payment, AEPS, DMT, etc. growing your revenues each day.' },
+        ],
+    },
     Distributor: {
         image: [
     '/banner/bcenter1.png', '/banner/bcenter2.png', '/banner/bcenter3.png', '/banner/bcenter4.png',
@@ -20,28 +42,8 @@ const onboardingData = {
             { id: 4, title: 'Start Transacting', description: 'Offer an extensive range of services to your clients and start to make commissions right away.' },
         ],
     },
-    Retailer: {
-        image:[
-    '/banner/bcenter1.png', '/banner/bcenter2.png', '/banner/bcenter3.png', '/banner/bcenter4.png',
-],
-        steps: [
-            { id: 1, title: 'Easy Sign-up', description: 'Join our network in a very simple and smooth mobile-friendly system.' },
-            { id: 2, title: 'Instant Verification', description: 'Check yourself with your distributor and have it all on demand.' },
-            { id: 3, title: 'Load Wallet', description: ' Always keep the stuff in your wallet and be ready to serve your customers.' },
-            { id: 4, title: 'Serve & Earn', description: 'Offer services like bill payment, AEPS, DMT, etc. growing your revenues each day.' },
-        ],
-    },
-    User: {
-        image:[
-    '/banner/bcenter1.png', '/banner/bcenter2.png', '/banner/bcenter3.png', '/banner/bcenter4.png',
-],
-        steps: [
-            { id: 1, title: 'Download App', description: 'Install the Sevenunique app in a few seconds in either the Play Store or the App Store.' },
-            { id: 2, title: 'Create Account', description: ' The only thing that you need to do is to create your account using just your mobile number, and that is it.' },
-            { id: 3, title: 'Link Bank Account', description: 'Link your bank account without any risk and start experiencing hassle-free transactions.' },
-            { id: 4, title: 'Start Transacting', description: ' Pay bills, transfer money, and recharge easily, simply by using one application.' },
-        ],
-    },
+
+
 };
 
 const tabs = Object.keys(onboardingData);
