@@ -106,7 +106,7 @@ function page() {
             <AboutService />
             <AboutSlider />
             <AboutArticle/>
-            <BenefitsDiagram />
+            {/* <BenefitsDiagram /> */}
             <FaqAccordion faqData={faqData}/>
              <BenefitsSection2 />
              <div  className='pt-16'>

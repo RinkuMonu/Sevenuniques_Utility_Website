@@ -2,8 +2,8 @@ import Image from "next/image";
 import React from "react";
 
 const InfoCard = ({ label, value }) => (
-  <div className="rounded-lg border border-[#0063A2] px-4 py-6 w-full text-center hover:shadow-lg transition-shadow duration-300">
-    <p className=" font-semibold text-[#0C3D4C] py-3">{label}</p>
+  <div className="rounded-lg border border-[#0063A2] px-4 py-3 w-full text-center hover:shadow-lg transition-shadow duration-300">
+    <p className=" font-semibold text-[#0C3D4C] py-2">{label}</p>
     <p className="font-bold text-lg text-[#0C3D4C]">{value}</p>
   </div>
 );
@@ -15,7 +15,7 @@ const Eligibility = ({
   scale
 }) => {
   return (
-    <div className="bg-[#EFF9FF] mb-30 relative">
+    <div className="bg-[#EFF9FF] mb-20 relative">
       <div className=" px-4 lg:px-0 max-w-7xl mx-auto py-10 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Side Content */}

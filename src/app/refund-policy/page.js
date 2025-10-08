@@ -284,7 +284,7 @@ export default function RefundPolicy() {
                         </h3>
                         <div className="h-1 w-20 bg-gradient-to-r from-[#358EBA] to-[#24576C] mb-6 rounded-full"></div>
                         <p className="text-gray-600 text-lg leading-relaxed">
-                          Our refund policy is designed to be fair and transparent. We understand that circumstances may change, and we strive to make the cancellation and refund process as straightforward as possible. Below you'll find detailed information about our policies, eligibility criteria, and processes.
+                          Our refund policy is designed to be fair and transparent. We understand that circumstances may change, and we strive to make the cancellation and refund process as straightforward as possible. Below you will find detailed information about our policies, eligibility criteria, and processes.
                         </p>
                         <p className="space-y-4 text-black text-lg leading-relaxed">SevenUnique Tech Solutions Private Limited<br />
                           Email: info@7unique.in<br />

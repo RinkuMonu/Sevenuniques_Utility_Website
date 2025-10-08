@@ -52,7 +52,7 @@ const services = [
     services: [
       {
         title: "Electricity",
-        icon: "/icons/elsecricity.png",
+        icon: "/icons/lightbulb.png",
         hoverIcon: "/white/elsecricity.png",
         description: "Pay electricity bills immediately to all electricity providers."
       },
@@ -71,7 +71,7 @@ const services = [
       {
         title: "Prepaid Meter",
         icon: "/icons/meter.png",
-        hoverIcon: "/white/x.png",
+        hoverIcon: "/white/meter.png",
         description: "Prepaid meters are instantly recharged."
       },
     ],

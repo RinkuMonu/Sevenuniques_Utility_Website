@@ -7,7 +7,7 @@ const ServiceCard = ({ service, isFeatured }) => {
     const defaultClasses = "bg-white text-[#018EDE] border-2 border-[#018EDE] hover:bg-sky-50 hover:border-sky-400";
 
     return (
-        <div className={`${baseClasses} ${isFeatured ? featuredClasses : defaultClasses}`}>
+        <div style={{cursor: "default"}} className={`${baseClasses} ${isFeatured ? featuredClasses : defaultClasses}`}>
             {service}
         </div>
     );

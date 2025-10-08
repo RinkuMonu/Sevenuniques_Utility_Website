@@ -83,9 +83,9 @@ export default function Header() {
             <Image
               src="/image/sevenunique-logo.png"
               width={66}
-              height={66}
+              height={60}
               alt="logo"
-              className="pb-1"
+              className="pb-1 h-[60px]"
             />
           </div>
 

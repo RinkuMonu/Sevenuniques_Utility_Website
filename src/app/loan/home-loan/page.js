@@ -22,7 +22,7 @@ function page() {
         id: 1,
         subheading: 'Mortgage LOAN',
         heading: 'Ab Banaye Apne Sapno Ka Ghar , Bina Kisi Fikar',
-        description: 'We have a dream in ghar khareedne, banane ya badalne ka sapna hum sach karte hain. Kum interest rates, lamba repayment period, and flexible EMI ke saath.',
+        description: 'You dream of buying, building, or renovating a home and we make that dream come true. With low interest rates, long repayment periods, and flexible EMIs.',
         bgImage: '/loan/homebg.png',
         centerImage: '/loan/home.png',
     }
