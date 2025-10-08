@@ -18,7 +18,7 @@ function page() {
   const data = {
     id: 1,
     subheading: 'BUSINESS LOAN',
-    heading: 'Hamara Support, Apka Business.',
+    heading: 'Apka Business , Hamara Support',
     description: 'Get the finance you need to expand your business in a safe and fast manner. Get a business loan today and have the flexibility and easy access to capital. ',
     bgImage: '/loan/loanbbg.png',
   

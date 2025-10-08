@@ -4,7 +4,7 @@ import BenefitsSection2 from "./BenefitsSection2";
 const RechargeInfo = () => {
     const infoData = [
         {
-            title: "Safe and Fast Mobile Recharge with Sevenunique—Your Reliable Digital Ally.",
+            title: "Safe and Fast Mobile Recharge with Sevenunique Your Reliable Digital Ally.",
 description: "The best convenience of instantaneous mobile recharge is experienced in the highly secure and technologically advanced platform of Sevenunique. Quickly and dependably recharge 24/7 with the most competitive plans and special deals from all major telecom operators such as Jio, Airtel, Vi, and BSNL. On our platform, transactions are flawless with instant activation and full transparency of transactions.",
         },
         {
@@ -30,7 +30,7 @@ description: "The best convenience of instantaneous mobile recharge is experienc
         <section className=" mt-10 mb-16 ">
             <div className=" ">
                 {infoData.slice(0, 3).map((item, index) => (
-                    <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-5 lg:p-16 max-w-6xl  my-10 ${index%2 == 0 ? "": "ms-auto"}`}>
+                    <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-8 lg:p-16 max-w-6xl  my-10 ${index%2 == 0 ? "": "ms-auto"}`}>
                         <h2 className="text-2xl md:text-3xl font-bold text-[#043C5C] mb-4">
                             {item.title}
                         </h2>

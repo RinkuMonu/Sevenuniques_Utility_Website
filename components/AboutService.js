@@ -22,8 +22,8 @@ const AboutService = () => {
 
     return (
         <div className="pb-16 px-4 lg:px-0">
-            <main className="max-w-7xl  mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-start">
+            <main className="max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-start mb-8">
                     <div className="lg:col-span-2">
                         <h3 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] leading-tight">
                             Your Need,

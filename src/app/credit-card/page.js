@@ -16,7 +16,7 @@ function page() {
     const data = {
         id: 1,
         subheading: 'Credit Card',
-        heading: 'Har Swipe Pe Extra Benefits',
+        heading: 'Extra Benefits , Ab Har Swipe Par',
         description: 'Get points, cashback, and premium treatment with each swipe. Spend on your own, get points, and enjoy points-based perks in the lifestyle customized to you.',
         bgImage: '/credit/creditbg.png',
         centerImage: '/credit/credit1.png',
