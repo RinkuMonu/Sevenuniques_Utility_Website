@@ -54,7 +54,7 @@ export default function InsuranceProcessSteps() {
                              Apni Suraksha.
                         </h2>
                         <p className="mt-6 text-gray-600 max-w-lg mx-auto lg:mx-0">
-                           Get protected it's a smart step to have entire protection of yourself, your family, and your assets be a worry-free person today.
+                           Get protected it a smart step to have entire protection of yourself, your family, and your assets be a worry free person today.
                         </p>
                         <Link
                             href="/coming-soon"

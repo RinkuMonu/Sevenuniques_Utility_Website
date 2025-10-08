@@ -1,7 +1,6 @@
 import React from 'react'
 import ServiceBanner from '../../../components/ServiceBanner'
 import Image from 'next/image'
-import LoanApplicationCard from '../../../components/LoanApplicationCard'
 import LoanStep from '../../../components/LoanStep';
 import StatsBanner from '../../../components/StatsBanner';
 import CreditScoreReport from '../../../components/CreditScoreReport';
@@ -110,7 +109,6 @@ function page() {
 />
 <VerticalSlider slide={slide}/>
 
-      {/* <LoanApplicationCard /> */}
 
 
       <LoanStep data={datasteps}/>

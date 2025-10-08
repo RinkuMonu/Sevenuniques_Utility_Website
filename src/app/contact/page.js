@@ -360,7 +360,7 @@ function Contact() {
          Map Section:
         </p>
         <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-8 md:mb-16">
-       Here's where you can find us! We’re easy to find and always ready to connect.
+       Here where you can find us! We are easy to find and always ready to connect.
         </h3>
 
         <div className="overflow-hidden rounded-lg shadow-md mb-6">

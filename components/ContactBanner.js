@@ -10,7 +10,7 @@ const ContactBanner = () => {
         {/* Left Side: Text Content */}
         <div className="text-center md:text-left">
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-            We're Here to Help – Contact Us
+            We are Here to Help Contact Us
           </h2>
           <p className="max-w-lg text-white/90">
             Our Team Is Ready To Assist You With Any Queries Or Support You Need. Reach Out Today And Get A Quick Response.
