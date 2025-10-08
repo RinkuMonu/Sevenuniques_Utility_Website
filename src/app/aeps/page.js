@@ -17,7 +17,7 @@ function page() {
         id: 1,
         subheading: 'AEPS',
         // heading: 'Angootha Lagao, Transaction Pao',
-        heading: 'Paise Turant Pao, Bas Angootha Lagao.',
+        heading: 'Bas Angootha Lagao , Paise Turant Pao',
         // description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable Domestic Money Transfer service.',
         description: 'Aadhaar Enabled Payment System to withdraw cash, transfer and balance any amount any time and anywhere.',
         bgImage: '/aeps/aepsbg.png',

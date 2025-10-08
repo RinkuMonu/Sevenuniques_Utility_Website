@@ -21,7 +21,7 @@ function page() {
     const data = {
         id: 1,
         subheading: 'Mortgage LOAN',
-        heading: 'Home Loan Apna Sapna Ghar Ka',
+        heading: 'Ab Banaye Apne Sapno Ka Ghar , Bina Kisi Fikar',
         description: 'We have a dream in ghar khareedne, banane ya badalne ka sapna hum sach karte hain. Kum interest rates, lamba repayment period, and flexible EMI ke saath.',
         bgImage: '/loan/homebg.png',
         centerImage: '/loan/home.png',

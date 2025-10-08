@@ -3,10 +3,10 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 const testimonials = [
-  { id: 1, name: " Ravi Kumar - Retailer", text: "Sevenunique helped me to make my small store a service center online. The commissions have been quite supportive in boosting my monthly income, and the support team is outstanding!", date: "25 July 2024", avatar: "/loan/5.png", rating: 5 },
-  { id: 2, name: "Priya Sharma - Distributor", text: " The Adhikari network of Sevenunique helped me to grow my business easily. The site was easy to navigate, and the staff was available and accommodating in terms of helping me climb at a better pace than I had imagined.", date: "26 July 2025", avatar: "https://i.pravatar.cc/100?img=2", rating: 5 },
-  { id: 3, name: "Amit Verma - User", text: "Paying off bills and transferringmoney has never been easy. The app is fast and secure, and it has not let us down. It's a real game-changer", date: "27 July 2025", avatar: "https://i.pravatar.cc/100?img=3", rating: 4 },
-  { id: 4, name: "Sunita Patel - Retailer", text: "Sevenunique assisted me in receiving online payments in my village. It has become the standard option among all the people here, and it has revolutionized the way we conduct transactions considerably.", date: "28 July 2025", avatar: "https://i.pravatar.cc/100?img=4", rating: 5 },
+  { id: 1, name: " Ravi Kumar - Retailer", text: "Sevenunique helped me to make my small store a service center online. The commissions have been quite supportive in boosting my monthly income, and the support team is outstanding!", date: "25 July 2024", avatar: "/image/p5.jpg", rating: 5 },
+  { id: 2, name: "Raghu Sharma - Distributor", text: " The Adhikari network of Sevenunique helped me to grow my business easily. The site was easy to navigate, and the staff was available and accommodating in terms of helping me climb at a better pace than I had imagined.", date: "26 July 2025", avatar: "/image/p2.jpg", rating: 5 },
+  { id: 3, name: "Amit Verma - User", text: "Paying off bills and transferringmoney has never been easy. The app is fast and secure, and it has not let us down. It's a real game-changer", date: "27 July 2025", avatar: "/image/p7.jpg", rating: 4 },
+  { id: 4, name: "RadheyShyam - Retailer", text: "Sevenunique assisted me in receiving online payments in my village. It has become the standard option among all the people here, and it has revolutionized the way we conduct transactions considerably.", date: "28 July 2025", avatar: "/image/p1.jpg", rating: 5 },
 ];
 
 // --- Star Rating Component ---
@@ -81,7 +81,7 @@ const TestimonialSlider = () => {
               return (
                 <div key={testimonial.id} className="absolute top-0 w-full max-w-md transition-all duration-500 ease-in-out pt-10 px-4 sm:px-2" style={getStyle()}>
                   <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 pt-16 relative">
-                    <img src={testimonial.avatar} alt={testimonial.name} className="w-16 h-16 sm:w-20 sm:h-20 rounded-full absolute -top-10 left-1/2 -translate-x-1/2" />
+                    <img src={testimonial.avatar} alt={testimonial.name} className="w-20 h-24 sm:w-20 sm:h-20 rounded-full absolute -top-10 left-1/2 -translate-x-1/2" />
                     <div className="text-center">
                       <h3 className="font-bold text-lg sm:text-xl text-[#0B4A73]">{testimonial.name}</h3>
                       <div className="flex justify-center my-2">

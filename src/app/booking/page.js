@@ -284,7 +284,7 @@ function Page() {
 
     // Static top-section data
     const data = {
-        subheading: 'BUSINESS LOAN',
+        subheading: 'TICKET BOOKING',
         heading: 'Apka Safar, Hamara Support',
         description: 'Book your flights, hotels, trains, or buses easily and travel without worries, plan smart, and have fun throughout  your journey.',
         bgImage: '/booking/bookingbg.png',
@@ -298,7 +298,7 @@ function Page() {
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${data.bgImage})` }}></div>
                 <div className="z-10 mx-auto">
                     {/* Plane Path */}
-                    <div className="path-container absolute -left-32 -top-40 -rotate-45 z-40">
+                    <div className="path-container absolute -left-32 -top-36 -rotate-45 z-40">
                         <svg width="100%" height="300" viewBox="0 0 1000 300">
                             <path id="flightPath" d="M 0 100 C 300 -150, 300 250, 450 200 S 600 -150, 750 100" stroke="black" strokeWidth="3" fill="none" strokeDasharray="10,10" />
                         </svg>
@@ -376,7 +376,7 @@ function Page() {
                     <ServicesSection3 data={activeData?.data.aeps} />
 
                     {/* Info Sections + Travel Assured */}
-                    <section className="mt-10 mb-16">
+                    <section className="container mx-auto mt-10 mb-16">
                         <div>
                             {activeData?.data.info.slice(0, 2).map((item, index) => (
                                 <div

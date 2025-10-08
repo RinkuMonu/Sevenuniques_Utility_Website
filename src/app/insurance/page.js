@@ -18,7 +18,7 @@ import InsuranceBenefitsSection from '../../../components/InsuranceBenefitsSecti
 function page() {
     const data = {
         id: 1,
-        subheading: 'BUSINESS LOAN',
+        subheading: 'INSURANCE',
         heading: ' Apki Suraksha, Hamari Jimmedari.',
         description: 'Obtain trustworthy insurance coverage for your family. Simple signup, prompt support of claims, and complete financial protection.',
         bgImage: '/insurance/ibg.png',

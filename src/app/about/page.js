@@ -40,7 +40,7 @@ function page() {
     const data = {
         id: 1,
         subheading: 'ABOUT US',
-        heading: 'Hamari Pehchaan, Aapka Vishwas',
+        heading: 'Aapka Vishwas ,Hamari Pehchaan',
         description: 'Send money quickly and securely to your loved ones anytime, anywhere. Experience fast, reliable, and hassle-free transfers.',
         bgImage: '/about/aboutbg.png',
         centerImage: '/about/about1.png',
