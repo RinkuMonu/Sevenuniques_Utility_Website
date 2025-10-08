@@ -58,7 +58,7 @@ function page() {
                     {data.centerImage ? (    <Image
                             src={data.centerImage }
                             height={500}
-                            width={500}
+                            width={400}
                             alt="center image"
                             className="md:pt-4 lg:pt-16  lg:h-[70vh] z-20"
 
@@ -88,7 +88,7 @@ function page() {
                                     src="/bbps/bbps3.png"
                                     alt="logo-bbps"
                                     fill
-                                    className="object-cover scale-125 pb-4 right-0"
+                                    className="object-cover right-0"
                                     style={{ objectPosition: 'right' }}
                                 />
                             </div>

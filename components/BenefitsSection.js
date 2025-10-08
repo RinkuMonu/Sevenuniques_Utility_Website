@@ -67,7 +67,7 @@ const BenefitsSection = () => {
           width={300}
           height={400}
           alt="Mobile App Interface"
-          className=" z-10 mx-auto  lg:absolute -top-10 right-50 h-[80vh]"
+          className=" z-10 mx-auto  lg:absolute -top-10 right-50 h-[64vh] w-auto"
         />
 
       </div>
