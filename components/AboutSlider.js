@@ -97,7 +97,7 @@ const AboutSlider = () => {
                 <header className="grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
                     <div>
                         <h3 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] leading-tight">
-                            Every Story,
+                            Har Kahani,
                             <br />      Ek Nayi Shuruaat.
                         </h3>
                     </div>
