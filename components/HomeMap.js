@@ -21,19 +21,20 @@ const StatCard = ({ value, label }) => (
 
  const HomeMap = () => {
   const stats = [
-    { value: '2 Lakh+', label: 'Achievement Metrics' },
-    { value: '50,000+', label: 'Happy clients with an easy online financial service.' },
-    { value: '15,000+', label: 'Good Partner Network' },
+    { value: '5000+', label: 'Distributors' },
+    { value: '10Lakhs', label: 'Happy clients with an easy online financial service.' },
+    { value: '1.2Lakhs+', label: 'Ratailers' },
+    // { value: '15,000+', label: 'Good Partner Network' },
   ];
 
   return (
- <div className='pt-10 pb-20'>
+ <div className=''>
     <div 
       className="bg-cover bg-center py-40 w-full flex flex-col items-center justify-center p-4"
       style={{ backgroundImage: "url('/home/map.png')" }}
     >
     
-      <div className="w-full max-w-4xl bg-white/50 backdrop-blur-sm rounded-2xl border py-5 border-white/30 shadow-2xl overflow-hidden">
+      <div className="w-full max-w-4xl bg-white/10 backdrop-blur-sm rounded-2xl border py-5 border-white/30 shadow-2xl overflow-hidden">
         
         {/* Grid for stats */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 divide-y sm:divide-y-0 md:divide-x divide-gray-300">

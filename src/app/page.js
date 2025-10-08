@@ -8,6 +8,7 @@ import UtilitiesHome from "../../components/UtilitiesHome";
 import TestimonialSlider from "../../components/TestimonialSlider";
 import ComplianceSection from "../../components/ComplianceSection";
 import HomeMap from "../../components/HomeMap";
+import APi from "../../components/APi";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
   <HomeSecurity/>
   <HomeOnboarding/>
   <UtilitiesHome/>
+  <APi />
   <HomeMap/>
   <TestimonialSlider/>
   <ComplianceSection/>

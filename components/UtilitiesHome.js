@@ -34,13 +34,13 @@ const UtilitiesHome = () => {
             
             {/* Feature buttons */}
             <div className="grid sm:grid-cols-3 gap-4 pt-4">
-              <p className="py-8 text-center text-lg border border-[#0063A2] text-[#0C3D4C] rounded-lg font-bold">
+              <p className="py-3 text-center text-lg border border-[#0063A2] text-[#0C3D4C] rounded-lg font-bold">
                 Easy
               </p>
-              <p className="py-8 text-center text-lg border border-[#0063A2] text-[#0C3D4C] rounded-lg font-bold">
+              <p className="py-3 text-center text-lg border border-[#0063A2] text-[#0C3D4C] rounded-lg font-bold">
                 Fast
               </p>
-              <p className="py-8 text-center text-lg  border border-[#0063A2] text-[#0C3D4C] rounded-lg  font-bold">
+              <p className="py-3 text-center text-lg  border border-[#0063A2] text-[#0C3D4C] rounded-lg  font-bold">
                 Connectivity
               </p>
             </div>

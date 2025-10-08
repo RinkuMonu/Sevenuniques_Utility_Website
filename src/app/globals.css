@@ -6,12 +6,16 @@
 @import "slick-carousel/slick/slick-theme.css";
 
 
-
+/* body{
+  user-select: none;
+} */
 
 .font-aboreto {
   font-family: 'Aboreto', cursive;
 }
-
+button{
+  cursor: pointer !important;
+}
 
 
 .slick-slide,

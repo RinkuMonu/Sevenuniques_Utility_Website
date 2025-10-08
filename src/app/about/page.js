@@ -11,6 +11,7 @@ import PartnersSection from '../../../components/PartnersSection';
 import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
 import ServicesSection3 from '../../../components/ServicesSection3';
+import BenefitsDiagram from '../../../components/BenefitsDiagram';
 
 
 function page() {
@@ -105,6 +106,7 @@ function page() {
             <AboutService />
             <AboutSlider />
             <AboutArticle/>
+            <BenefitsDiagram />
             <FaqAccordion faqData={faqData}/>
              <BenefitsSection2 />
              <div  className='pt-16'>

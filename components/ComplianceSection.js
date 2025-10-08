@@ -3,12 +3,20 @@ import Image from "next/image";
 import React from "react";
 
 const logos = [
-  { src: "/home/hlogo1.png", width: 120, height: 60 },
-  { src: "/home/hlogo2.png", width: 150, height: 70 },
-  { src: "/home/hlogo3.png", width: 100, height: 50 },
-  { src: "/home/hlogo1.png", width: 120, height: 60 },
-  { src: "/home/hlogo2.png", width: 150, height: 70 },
-  { src: "/home/hlogo3.png", width: 100, height: 50 },
+  // { src: "/home/hlogo1.png", width: 120, height: 60 },
+  // { src: "/home/hlogo2.png", width: 150, height: 70 },
+  // { src: "/home/hlogo3.png", width: 100, height: 50 },
+  // { src: "/home/hlogo1.png", width: 120, height: 60 },
+  // { src: "/home/hlogo2.png", width: 150, height: 70 },
+  // { src: "/home/hlogo3.png", width: 100, height: 50 },
+  { src: "/home/iaf-logo.png", width: 120, height: 60 },
+  { src: "/home/iso-logo.png", width: 150, height: 70 },
+  { src: "/home/kab-logo.png", width: 100, height: 50 },
+  { src: "/home/EGAC-logo.png", width: 120, height: 60 },
+  { src: "/home/CERTIFIED-logo.png", width: 150, height: 70 },
+  { src: "/home/eu-logo.png", width: 100, height: 50 },
+  { src: "/home/msme-logo.png", width: 100, height: 50 },
+  { src: "/home/startupindia-logo.png", width: 100, height: 50 },
 ];
 
 const ComplianceSection = () => {
@@ -18,7 +26,7 @@ const ComplianceSection = () => {
         KEY LICENSES
       </p>
       <h3 className="mt-2 text-4xl font-bold text-[#0C3D4C] pb-10">
-        Compliance that Builds Confidence
+       Certified and Recognized by Govt. of India and leading digital platforms
       </h3>
 
       {/* Scrolling Container */}

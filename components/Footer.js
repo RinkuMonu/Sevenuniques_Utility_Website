@@ -316,19 +316,10 @@ const Footer = () => {
       }}
     >
       <div className="">
-        <div className="max-w-7xl mx-auto px-4 lg:px-0 py-12 grid grid-cols-1 lg:grid-cols-5 gap-10">
-          
+        <div className="max-w-7xl mx-auto px-4 lg:px-0 py-12 grid grid-cols-1 lg:grid-cols-12 gap-10">
+
           {/* Verified By Section */}
-          <div>
-            {/* <div className="bg-gray-100 text-black font-bold p-3 rounded-md inline-block mb-4">
-              <Image
-                src="/image/sevenunique-logo.png"
-                width={66}
-                height={72}
-                alt="logo"
-                className="pb-1"
-              />
-            </div> */}
+          <div className="col-span-2">
             <h3 className="font-semibold mb-4">Verified By</h3>
             <div className="flex flex-col gap-4">
               <Image className="bg-white p-2 rounded-md" src="/home/pci-logo.png" width={80} height={50} alt="Verified 1" />
@@ -337,7 +328,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links (Loans) */}
-          <div>
+          <div className="col-span-2">
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/" className="hover:text-blue-400">Home</Link></li>
@@ -353,7 +344,7 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div>
+          <div className="col-span-2">
             <h3 className="font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/aeps" className="hover:text-blue-400">AEPS</Link></li>
@@ -368,7 +359,7 @@ const Footer = () => {
           </div>
 
           {/* Policies */}
-          <div>
+          <div className="col-span-2">
             <h3 className="font-semibold mb-4">Policies</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/privacy-policy" className="hover:text-blue-400">Privacy Policy</Link></li>
@@ -380,30 +371,30 @@ const Footer = () => {
           </div>
 
           {/* Contact & Social */}
-          <div>
+          <div className="col-span-4">
             <h3 className="font-semibold mb-4">Contact Us</h3>
-            <div className="relative group space-y-4 transition duration-300 mb-3 w-72">
-  <h3 className="text-lg font-bold text-white mb-1 flex items-center">
-    <span className="w-3 h-3 rounded-full bg-blue-500 mr-2 animate-bounce"></span>
-    HEAD OFFICE
-  </h3>
-  <p className="text-gray-300 leading-relaxed text-sm">
-    Plot No 97, Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura,
-    Jaipur, Rajasthan, India - 302017
-  </p>
+            <div className="relative group space-y-4 transition duration-300 mb-3">
+              <h3 className="text-lg font-bold text-white mb-1 flex items-center">
+                <span className="w-3 h-3 rounded-full bg-blue-500 mr-2 animate-bounce"></span>
+                HEAD OFFICE
+              </h3>
+              <p className="text-gray-300 leading-relaxed text-sm">
+                Plot No 97, Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura,
+                Jaipur, Rajasthan, India - 302017
+              </p>
 
-  <hr className="border-white" />
+              <hr className="border-white" />
 
-  <h3 className="text-lg font-bold text-white mb-1 flex items-center">
-    <span className="w-3 h-3 rounded-full bg-green-500 mr-2 animate-bounce"></span>
-    CORPORATE OFFICE
-  </h3>
-  <p className="text-gray-300 leading-relaxed text-sm">
-    Office No. 101/2, Vakratunda Corporate Park Premise
-    Co-operative Society Limited, Off. Aarey Road, Goregaon (East),
-    Mumbai - 400 063
-  </p>
-</div>
+              <h3 className="text-lg font-bold text-white mb-1 flex items-center">
+                <span className="w-3 h-3 rounded-full bg-green-500 mr-2 animate-bounce"></span>
+                CORPORATE OFFICE
+              </h3>
+              <p className="text-gray-300 leading-relaxed text-sm">
+                Office No. 101/2, Vakratunda Corporate Park Premise
+                Co-operative Society Limited, Off. Aarey Road, Goregaon (East),
+                Mumbai - 400 063
+              </p>
+            </div>
 
             <div className="space-y-2">
               <a href="mailto:sevenunique4@gmail.com" className="flex items-center gap-2 text-sm">
@@ -422,29 +413,12 @@ const Footer = () => {
                 <Link href="https://www.youtube.com/@seven_spirit2" className="hover:text-red-500"><FaYoutube /></Link>
                 <Link href="https://www.instagram.com/seven_spirit2/" className="hover:text-pink-500"><FaInstagram /></Link>
                 <Link href="https://x.com/seven_spir42085" className="hover:text-gray-400"><FaXTwitter /></Link>
-                <Link href="#" className="hover:text-blue-500"><FaLinkedinIn /></Link>
+                <Link href="https://www.linkedin.com/company/109072328/" className="hover:text-blue-500"><FaLinkedinIn /></Link>
                 <Link href="https://wa.me/919251582691" target="_blank" rel="noopener noreferrer" className="hover:text-green-500"><FaWhatsapp /></Link>
                 <Link href="https://www.pinterest.com/sevenspirit12/" className="hover:text-red-500"><FaPinterest /></Link>
               </div>
             </div>
           </div>
-
-          {/* Address Section (Commented Out) */}
-          {/*
-          <div>
-            <h3 className="font-semibold mb-4">Head Office</h3>
-            <p className="text-gray-300 text-sm">
-              Plot No 97, Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura,
-              Jaipur, Rajasthan, India - 302017
-            </p>
-            <h3 className="font-semibold mb-4 mt-4">Corporate Office</h3>
-            <p className="text-gray-300 text-sm">
-              Office No. 101/2, Vakratunda Corporate Park Premise Co-operative Society,
-              Goregaon (East), Mumbai - 400063
-            </p>
-          </div>
-          */}
-
         </div>
 
         {/* Footer Bottom */}
