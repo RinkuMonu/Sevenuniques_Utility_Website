@@ -99,11 +99,10 @@ export default function Header() {
                 {link.dropdown ? (
                   <button
                     className={`relative flex items-center gap-1 text-lg font-medium transition group/btn
-            ${
-              ["/services", "/loan"].some((path) => pathname.startsWith(path))
-                ? "text-[#0C3D4C] font-semibold before:w-full"
-                : "text-gray-700 group-hover:text-[#0C3D4C]"
-            }
+            ${["/services", "/loan"].some((path) => pathname.startsWith(path))
+                        ? "text-[#0C3D4C] font-semibold before:w-full"
+                        : "text-gray-700 group-hover:text-[#0C3D4C]"
+                      }
             before:content-[''] before:absolute before:left-0 before:-bottom-1
             before:h-[2px] before:w-0 before:bg-[#0C3D4C] before:transition-all before:duration-300
             group-hover/btn:before:w-full
@@ -115,11 +114,10 @@ export default function Header() {
                   <Link
                     href={link.href}
                     className={`relative font-medium text-lg transition group/link
-            ${
-              pathname === link.href
-                ? "text-[#0C3D4C] font-semibold before:w-full"
-                : "text-gray-700 hover:text-[#0C3D4C]"
-            }
+            ${pathname === link.href
+                        ? "text-[#0C3D4C] font-semibold before:w-full"
+                        : "text-gray-700 hover:text-[#0C3D4C]"
+                      }
             before:content-[''] before:absolute before:left-0 before:-bottom-1
             before:h-[2px] before:w-0 before:bg-[#0C3D4C] before:transition-all before:duration-300
             hover:before:w-full
@@ -201,11 +199,10 @@ export default function Header() {
                   ) : (
                     <Link
                       href={link.href}
-                      className={`block font-medium ${
-                        pathname === link.href
+                      className={`block font-medium ${pathname === link.href
                           ? "text-teal-700 font-semibold"
                           : "text-gray-700 hover:text-teal-600"
-                      }`}
+                        }`}
                     >
                       {link.name}
                     </Link>
