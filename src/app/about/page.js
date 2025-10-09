@@ -12,6 +12,9 @@ import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
 import ServicesSection3 from '../../../components/ServicesSection3';
 import BenefitsDiagram from '../../../components/BenefitsDiagram';
+import Expertise from '../../../components/Expertise';
+import WhyChooseUs from '../../../components/WhyChooseUs';
+import GrowthOpportunity from '../../../components/GrowthOpportunity';
 
 
 function page() {
@@ -103,9 +106,14 @@ function page() {
                 </div>
             </section>
                  <ServicesSection3 data={aepsData} />
-            <AboutService />
-            <AboutSlider />
-            <AboutArticle/>
+            {/* <AboutService /> */}
+            <Expertise/>
+    
+            <WhyChooseUs/>
+                    {/* <AboutSlider /> */}
+        
+            <GrowthOpportunity/>
+                <AboutArticle/>
             {/* <BenefitsDiagram /> */}
             <FaqAccordion faqData={faqData}/>
              <BenefitsSection2 />
