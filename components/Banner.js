@@ -11,55 +11,9 @@ import BannerActivities from './BannerActivities';
 
 // Slide data with all related info
 const slides = [
-    {
-        id: 1,
-        subheading: 'DMT',
-        heading: "Aapka Paisa, Aapke Apno Tak, Seedha!",
-        centerImage: '/banner/bcenter1.png',
-        bgImage: '/banner/bbg1.png',
-        cta: {
-            title: 'Send Money Easily',
-            description: 'Quickly transfer funds to your loved ones anytime, anywhere.',
-        },
-        reviewers: [
-            { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
-            { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
-            { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
-            { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
-        ],
-        reviewData: {
-            rating: 4.5,
-            maxRating: 5,
-            text: 'Excellent service and fast transactions!',
-        },
-        activities: [
-            {
-                id: 1,
-                name: 'Kailash Choudhary',
-                date: '21 Jun 2025 - 12.00 PM',
-                amount: '1,500',
-                currency: '₹',
-                imageUrl: '/image/p1.jpg',
-            }, {
-                id: 4,
-                name: 'Raju Gurjar',
-                date: '23 Jul 2025 - 4.00 PM',
-                amount: '1,200',
-                currency: '₹',
-                imageUrl: '/image/p2.jpg',
-            }, {
-                id: 5,
-                name: 'Ramesh Jat',
-                date: '2 Jun 2025 - 4.00 PM',
-                amount: '1,760',
-                currency: '₹',
-                imageUrl: '/image/p3.jpg',
-            },
-        ],
-    },
-    {
+        {
         id: 2,
-        subheading: 'AEPS',
+        subheading: ' Aadhaar Enabled Payment System',
         heading:" Aadhaar se Banking, Har Jagah Possible!",
         centerImage: '/banner/bcenter2.png',
         bgImage: '/banner/bbg2.png',
@@ -105,55 +59,9 @@ const slides = [
             },
         ],
     },
-    {
-        id: 3,
-        subheading: 'M-ATM',
-        heading:"Chhoti Machine, Badi Banking Suvidha!",
-        centerImage: '/banner/bcenter3.png',
-        bgImage: '/banner/bbg3.png',
-        cta: {
-            title: 'Safe & Secure',
-            description: 'Your money is protected with industry-standard security measures.',
-        },
-        reviewers: [
-         { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
-            { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
-            { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
-            { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
-        ],
-        reviewData: {
-            rating: 4.8,
-            maxRating: 5,
-            text: 'I feel confident sending money here!',
-        },
-        activities: [
-            {
-                id: 3,
-                name: 'Bhupendra',
-                date: '23 Jun 2025 - 4.43 PM',
-                amount: '700',
-                currency: '₹',
-                imageUrl: '/image/p7.jpg',
-            }, {
-                id: 4,
-                name: 'Suresh',
-                date: '3 Jul 2025 - 6.17 PM',
-                amount: '5500',
-                currency: '₹',
-                imageUrl: '/image/p8.jpg',
-            }, {
-                id: 5,
-                name: 'Shankar',
-                date: '19 Sept 2025 - 12.56 PM',
-                amount: '1,800',
-                currency: '₹',
-                imageUrl: '/image/p9.jpg',
-            },
-        ],
-    },
-    {
+       {
         id: 4,
-        subheading: 'BBPS',
+        subheading: ' Bharat Bill Payment System',
         heading: "Har Bill, Har Payment, BBPS ke Saath!",
         centerImage: '/banner/bcenter4.png',
         bgImage: '/banner/bbg4.png',
@@ -198,6 +106,100 @@ const slides = [
             },
         ],
     },
+    {
+        id: 1,
+        subheading: 'Domestic Money Transfer',
+        heading: "Aapka Paisa, Aapke Apno Tak, Seedha!",
+        centerImage: '/banner/bcenter1.png',
+        bgImage: '/banner/bbg1.png',
+        cta: {
+            title: 'Send Money Easily',
+            description: 'Quickly transfer funds to your loved ones anytime, anywhere.',
+        },
+        reviewers: [
+            { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
+            { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
+            { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
+            { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
+        ],
+        reviewData: {
+            rating: 4.5,
+            maxRating: 5,
+            text: 'Excellent service and fast transactions!',
+        },
+        activities: [
+            {
+                id: 1,
+                name: 'Kailash Choudhary',
+                date: '21 Jun 2025 - 12.00 PM',
+                amount: '1,500',
+                currency: '₹',
+                imageUrl: '/image/p1.jpg',
+            }, {
+                id: 4,
+                name: 'Raju Gurjar',
+                date: '23 Jul 2025 - 4.00 PM',
+                amount: '1,200',
+                currency: '₹',
+                imageUrl: '/image/p2.jpg',
+            }, {
+                id: 5,
+                name: 'Ramesh Jat',
+                date: '2 Jun 2025 - 4.00 PM',
+                amount: '1,760',
+                currency: '₹',
+                imageUrl: '/image/p3.jpg',
+            },
+        ],
+    },
+
+    {
+        id: 3,
+        subheading: 'Micro Automated Teller Machine',
+        heading:"Chhoti Machine, Badi Banking Suvidha!",
+        centerImage: '/banner/bcenter3.png',
+        bgImage: '/banner/bbg3.png',
+        cta: {
+            title: 'Safe & Secure',
+            description: 'Your money is protected with industry-standard security measures.',
+        },
+        reviewers: [
+         { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
+            { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
+            { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
+            { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
+        ],
+        reviewData: {
+            rating: 4.8,
+            maxRating: 5,
+            text: 'I feel confident sending money here!',
+        },
+        activities: [
+            {
+                id: 3,
+                name: 'Bhupendra',
+                date: '23 Jun 2025 - 4.43 PM',
+                amount: '700',
+                currency: '₹',
+                imageUrl: '/image/p7.jpg',
+            }, {
+                id: 4,
+                name: 'Suresh',
+                date: '3 Jul 2025 - 6.17 PM',
+                amount: '5500',
+                currency: '₹',
+                imageUrl: '/image/p8.jpg',
+            }, {
+                id: 5,
+                name: 'Shankar',
+                date: '19 Sept 2025 - 12.56 PM',
+                amount: '1,800',
+                currency: '₹',
+                imageUrl: '/image/p9.jpg',
+            },
+        ],
+    },
+ 
 ];
 
 const Banner = () => {
