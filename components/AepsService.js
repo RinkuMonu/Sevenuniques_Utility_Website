@@ -8,6 +8,12 @@ const services = [
       "Get instant cash in your Aadhaar-linked bank account with simple verification of your fingerprint. You do not need debit cards or PINs, and you have secure and convenient banking at your fingertips.",
     icon: "/icons/a1.png",
   },
+   {
+    title: "Cash Deposit",
+    description:
+      "Pay your merchants directly out of your bank account linked to your Aadhaar through fingerprint identification. Safe and easy online payments do not require cash or cards.",
+    icon: "/icons/a5.png",
+  },
   {
     title: "Balance Enquiry",
     description:
@@ -26,14 +32,9 @@ const services = [
       "Send money safely to any bank account that is linked to Aadhaar through biometric authentication. The service is instant, safe, and reliable, and it allows transferring money between the accounts of various banks.",
     icon: "/icons/a4.png",
   },
-  {
-    title: "Aadhaar Pay",
-    description:
-      "Pay your merchants directly out of your bank account linked to your Aadhaar through fingerprint identification. Safe and easy online payments do not require cash or cards.",
-    icon: "/icons/a5.png",
-  },
+
     {
-    title: "Bill Payments",
+    title: "Micro-ATM",
     description:
       "Pay your utility bills, cell phone charges, DTH, and other services with AEPS. One and the same payment system that handles all your payment requirements and is absolutely secure and real-time.",
     icon: "/icons/a2.png",
@@ -58,7 +59,7 @@ const AepsService = () => {
 
             <div key={index} className="relative">
 
-              <div className="shape p-8 text-left">
+              <div className="shape p-8 text-left h-full">
                 <h3 className="text-2xl font-semibold text-[#0C3D4C]">
                   {service.title}
                 </h3>

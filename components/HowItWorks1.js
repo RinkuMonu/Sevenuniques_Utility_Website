@@ -80,6 +80,15 @@ const TimelineStep = ({ stepNumber, title, description, imageUrl, isReversed, is
 const HowItWorks1 = () => {
     return (
         <section className="bg-slate-50 py-20 px-4 sm:px-6 lg:px-8">
+
+<div className="text-center pb-10 pt-6">
+      <p className="text-2xl font-semibold text-[#24576C] tracking-widest uppercase">
+        HOW DOES AEPS WORKS ?
+      </p>
+      {/* <h3 className="mt-2 text-4xl font-bold text-[#175369] pb-10">
+       Aadhaar Enabled Payment System works ?
+      </h3> */}
+      </div>
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-20 mb-20">
                     <div className=''>
