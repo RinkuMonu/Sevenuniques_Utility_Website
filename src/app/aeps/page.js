@@ -11,6 +11,9 @@ import EligibilityAeps from '../../../components/EligibilityAeps'
 import Video from '../../../components/Video'
 import Empowering from '../../../components/Empowering'
 import ContactBanner from '../../../components/ContactBanner'
+import AepsAdvantages from '../../../components/AepsAdvantages'
+import Aepskeyfeatures from '../../../components/Aepskeyfeatures'
+import Aepstransaction from '../../../components/Aepstransaction'
 
 function page() {
       const data= {
@@ -76,12 +79,16 @@ const aepsData2 = {
          <AepsService/>
          <HowItWorks1/>
          <ComplianceSection/>
+         <AepsAdvantages />
          <AepsFeatures/>
+         <Aepskeyfeatures />
          {/* <EligibilityAeps data={aepsData}/> */}
          <EligibilityAeps data={aepsData2}/>
+
          <Video/>
          
          <Empowering/>
+         <Aepstransaction />
          <ContactBanner/>
     </>
   )

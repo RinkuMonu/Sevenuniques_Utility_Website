@@ -348,8 +348,8 @@ export default function Privacy() {
                           <button
                             onClick={() => scrollToSection(section.id)}
                             className={`w-full text-left py-2 px-3 rounded-lg transition-all duration-200 flex items-center cursor-pointer ${activeSection === section.id
-                              ? "bg-gradient-to-r from-[#358EBA] to-[#0C3D4C] text-white font-medium"
-                              : "text-gray-600 hover:bg-gray-600"
+                              ? "bg-gradient-to-r from-[#0C3D4C] to-[#358EBA] text-white font-medium"
+                              : "text-gray-600 hover:bg-[#24567c] hover:text-gray-200"
                               }`}
                           >
                             <section
@@ -385,6 +385,9 @@ export default function Privacy() {
                       {/* <h3 className="text-3xl md:text-4xl font-bold text-[#0C3D4C] mb-6 mt-4">
                                                     We value your privacy and are committed to protecting your personal information
                                                 </h3> */}
+
+
+
                       <div className="h-1 w-20 bg-gradient-to-r from-[#358EBA] to-[#0C3D4C] mx-auto mb-6 rounded-full"></div>
                       <p className="text-[#0C3D4C] text-start text-lg leading-relaxed">
                         <span className="font-bold">Effective Date:</span>{" "}
