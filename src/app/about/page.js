@@ -19,6 +19,7 @@ import GrowthOpportunity from '../../../components/GrowthOpportunity';
 
 function page() {
     const faqData = [
+        
   {
     question: "What services does Sevenunique provide?",
     answer: "We offer BBPS, AePS, bill payments, recharges, insurances, bookings, credit and PAN card services, and various loan solutions, including business, home, personal, construction, and car loans."

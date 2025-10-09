@@ -6,19 +6,19 @@ import React from 'react';
 const insuranceCategories = [
   {
     title: 'Bike Insurance',
-    imageUrl: '/insurance/v1.png',
+    imageUrl: '/insurance/v1.jpg',
   },
   {
     title: 'Private Car',
-    imageUrl: '/insurance/v2.png',
+    imageUrl: '/insurance/v2.jpg',
   },
   {
     title: 'Taxi Car',
-    imageUrl: '/insurance/v3.png',
+    imageUrl: '/insurance/v3.jpg',
   },
   {
     title: 'Commercial Vehicle',
-    imageUrl: '/insurance/v4.png',
+    imageUrl: '/insurance/v4.jpg',
   },
 ];
 
@@ -26,22 +26,27 @@ const insuranceCategories = [
 const InsuranceCard = ({ title, imageUrl }) => {
   return (
     <div className="bg-white rounded-xl shadow-lg shadow-[#018EDE]/15 overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
-      {/* Header Section */}
-      <div className="bg-[#018EDE] p-4 text-center">
+    {/* Header Section */}
+    {/* <div className="bg-[#018EDE] p-4 text-center">
+      <h3 className="text-white font-semibold text-lg">{title}</h3>
+    </div> */}
+  
+    {/* Image Section */}
+    <div className="flex justify-center items-center lg:h-48 relative overflow-hidden">
+      {/* Image */}
+      <Image 
+        src={imageUrl} 
+        alt={title}
+        fill
+        className="max-h-full object-cover"
+      />
+      {/* Backdrop with Title */}
+      <div className="absolute inset-0 bg-black/50 bg-opacity-10 flex justify-center items-center">
         <h3 className="text-white font-semibold text-lg">{title}</h3>
       </div>
-      
-      {/* Image Section */}
-      <div className="p-8 flex justify-center items-center lg:h-48">
-        <Image 
-          src={imageUrl} 
-          alt={title} 
-          width={100}
-          height={100}
-          className="max-h-full object-contain"
-        />
-      </div>
     </div>
+  </div>
+  
   );
 };
 
