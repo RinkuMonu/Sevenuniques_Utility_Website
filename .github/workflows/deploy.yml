@@ -37,9 +37,9 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd /home/sevenu/public_html/Sevenuniques_Utility_Website
-            pm2 delete sevenuniques.com || true
             npm install --legacy-peer-deps
             npm run build
-            ⁠pm2 start npm --name "sevenuniques.com" -- run dev
+            pm2 delete sevenuniques.com || true
+            pm2 start ecosystem.config.js
 
            
