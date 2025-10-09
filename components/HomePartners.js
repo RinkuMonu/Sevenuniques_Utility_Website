@@ -2,17 +2,19 @@ import React from 'react';
 
 // --- Data for the partner cards ---
 const partners = [
+
+  
   {
-    name: 'Distributor',
-    imageUrl: '/home/homeP1.png',
+    name: 'User',
+    imageUrl: '/home/homeP3.png',
   },
   {
     name: 'Retailer',
     imageUrl: '/home/homeP2.png',
   },
-  {
-    name: 'User',
-    imageUrl: '/home/homeP3.png',
+    {
+    name: 'Distributor',
+    imageUrl: '/home/homeP1.png',
   },
   {
     name: 'WhiteLabel',
