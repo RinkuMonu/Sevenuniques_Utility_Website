@@ -8,6 +8,7 @@ import VerticalTimeline from '../../../components/VerticalTimeline';
 import PartnersSection from '../../../components/PartnersSection';
 import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
+import PancardFeatures from '../../../components/PancardFeatures';
 
 
 function page() {
@@ -71,7 +72,10 @@ function page() {
 
             <OnboardingProcess />
             <BenefitsSection2 />
-            <VerticalTimeline />
+            {/* <VerticalTimeline /> */}
+            <section className='pb-6 pt-24'>
+<PancardFeatures />
+            </section>
 
             <div>
                 {info.map((item, index) => (

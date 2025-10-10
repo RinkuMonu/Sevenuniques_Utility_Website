@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 // Bullet + text
 const FeatureListItem = ({ children }) => (
@@ -14,11 +15,20 @@ const ServicesSection3 = ({ data }) => {
   if (!data) return null;
 
   return (
-    <section className="bg-white py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 lg:px-0 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+    <section className="bg-white py-4 md:pt-6 md:pb-16">
+<div className="text-center py-6">
+      <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase">
+        WHAT IS
+      </p>
+      <h3 className="mt-2 text-4xl font-bold text-[#175369] pb-10">
+       Aadhaar Enabled Payment System
+      </h3>
+      </div>
+
+      <div className="bg-orange-50 shadow-lg rounded-lg max-w-7xl mx-auto px-4 lg:px-0 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
         
         {/* Left Column */}
-        <div className="">
+        <div className="md:pl-16 py-10">
           <p className="text-base font-semibold text-[#0C3D4C] tracking-wider">
             {data.subheading}
           </p>
@@ -30,11 +40,7 @@ const ServicesSection3 = ({ data }) => {
           <p className="mt-6 text-[#5D5D5D] leading-relaxed">
             {data.description}
           </p>
-        </div>
 
-        {/* Right Column */}
-        <div className=" mt-6 md:mt-0 relative">
-          {/* Full vertical line */}
           <span className="absolute left-[4.5px] top-0 bottom-0 w-0.5 bg-sky-100" />
 
           <ul className="space-y-5 relative">
@@ -43,6 +49,17 @@ const ServicesSection3 = ({ data }) => {
             ))}
           </ul>
         </div>
+
+        {/* Right Column */}
+          <div className="mt-6 md:mt-0 relative">
+      <Image
+        src="/image/aeps-vec.png"
+        alt="Example image"
+        width={400}
+        height={400}
+        className="mx-auto object-cover"
+      />
+    </div>
       </div>
     </section>
   );

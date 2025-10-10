@@ -15,7 +15,7 @@ const slides = [
         id: 2,
         subheading: ' Aadhaar Enabled Payment System',
         heading:" Aadhaar se Banking, Har Jagah Possible!",
-        centerImage: '/banner/bcenter2.png',
+        centerImage: '/image/AEPS-sm-banner.png',
         bgImage: '/banner/bbg2.png',
         cta: {
             title: 'One App for Everything',
