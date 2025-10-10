@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react"
 
 
 
-export function FAQ({faqs}) {
+export default function FAQ({faqs}) {
   const [openIndex, setOpenIndex] = useState(null)
 
   const toggleFAQ = (index) => {

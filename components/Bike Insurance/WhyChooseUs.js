@@ -1,7 +1,7 @@
 
 
 
-export function WhyChooseUs({whydata}) {
+export default function WhyChooseUs({whydata}) {
   return (
     <section id="why-choose" className="py-16 md:py-24 px-24" style={{ background: "rgb(230, 246, 255)" }}>
       <div className="container mx-auto px-4">
