@@ -3,50 +3,9 @@
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
 
-const faqs = [
-  {
-    question: "What does bike insurance cover?",
-    answer:
-      "Bike insurance covers damages to your vehicle due to accidents, theft, fire, natural calamities, and third-party liabilities. Comprehensive plans also include personal accident cover for the rider and passengers.",
-  },
-  {
-    question: "Is bike insurance mandatory in India?",
-    answer:
-      "Yes, third-party bike insurance is mandatory as per the Motor Vehicles Act, 1988. However, comprehensive insurance is recommended for complete protection of your bike and yourself.",
-  },
-  {
-    question: "How is the premium calculated?",
-    answer:
-      "Premium is calculated based on factors like bike model, age, cubic capacity, location (IDV), add-on covers selected, and your claim history. Our smart calculator provides instant quotes.",
-  },
-  {
-    question: "What is IDV in bike insurance?",
-    answer:
-      "IDV (Insured Declared Value) is the current market value of your bike. It is the maximum amount you can claim in case of total loss or theft. IDV decreases with the age of the vehicle.",
-  },
-  {
-    question: "How do I file a claim?",
-    answer:
-      "You can file a claim by calling our 24/7 helpline, through our mobile app, or website. For cashless claims, visit any of our 5000+ network garages. Our team will guide you through the entire process.",
-  },
-  {
-    question: "Can I transfer my insurance to a new bike?",
-    answer:
-      "No, bike insurance is vehicle-specific and cannot be transferred to a new bike. However, if you sell your bike, the insurance can be transferred to the new owner with proper documentation.",
-  },
-  {
-    question: "What are add-on covers?",
-    answer:
-      "Add-on covers are optional coverages like zero depreciation, engine protection, roadside assistance, consumables cover, and return to invoice. These enhance your basic policy coverage.",
-  },
-  {
-    question: "How long does claim settlement take?",
-    answer:
-      "For cashless claims at network garages, approval is instant. For reimbursement claims, we settle 95% of claims within 7 days after receiving all required documents.",
-  },
-]
 
-export function FAQ() {
+
+export function FAQ({faqs}) {
   const [openIndex, setOpenIndex] = useState(null)
 
   const toggleFAQ = (index) => {

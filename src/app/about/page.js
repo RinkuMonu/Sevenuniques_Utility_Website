@@ -53,7 +53,7 @@ function page() {
     const LetterCircle = ({ letter, index }) => (
         <div className="flex  items-center justify-center rounded-full  lg:p-1 lg:h-12 lg:w-12" key={index}>
             <div className="flex h-full w-full items-center justify-center">
-                <span className=" md:text-4xl font-medium lg:text-6xl text-white">
+                <span className="agbalumo-regular  md:text-4xl font-medium lg:text-8xl text-white">
                     {letter}
                 </span>
             </div>
