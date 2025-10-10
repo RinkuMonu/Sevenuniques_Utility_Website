@@ -40,7 +40,7 @@ export function WhyChooseUs() {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <p className="text-[#00b4d8] font-semibold mb-2 uppercase tracking-wide text-sm">Why Choose BikeSecure</p>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0d3b4f] mb-4 text-balance">
-            India's Most Trusted Bike Insurance Partner
+            India&apos;s Most Trusted Bike Insurance Partner
           </h2>
           <p className="text-gray-600 leading-relaxed">
             We provide comprehensive bike insurance solutions with unmatched benefits and customer service. Join over 1

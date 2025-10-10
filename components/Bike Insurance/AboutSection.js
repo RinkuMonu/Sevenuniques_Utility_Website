@@ -19,13 +19,13 @@ export default function AboutSection() {
                             </h2>
 
                             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                                We understand that your bike is more than just a vehicle - it's your freedom, your passion, and your daily
-                                companion. That's why we've dedicated ourselves to providing comprehensive insurance coverage that
+                                We understand that your bike is more than just a vehicle - it&apos;s your freedom, your passion, and your daily
+                                companion. That&apos;s why we&apos;ve dedicated ourselves to providing comprehensive insurance coverage that
                                 protects what matters most to you.
                             </p>
 
                             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                                With over a decade of experience in the insurance industry, we've helped thousands of riders find the
+                                With over a decade of experience in the insurance industry, we&apos;ve helped thousands of riders find the
                                 perfect coverage for their needs. Our commitment to transparency, quick claim settlements, and customer
                                 satisfaction has made us a leading choice for bike insurance.
                             </p>
