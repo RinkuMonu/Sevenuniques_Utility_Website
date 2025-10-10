@@ -2,14 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 
-export default function Herobanner() {
-    const data = {
-        subheading: 'TICKET BOOKING',
-        heading: 'Apka Safar, Hamara Support',
-        description: 'Book your flights, hotels, trains, or buses easily and travel without worries, plan smart, and have fun throughout  your journey.',
-        bgImage: '/booking/bookingbg.png',
-        centerImage: '/booking/book1.png',
-    };
+export default function Herobanner({data}) {
     return (
         <>
    <div className="relative flex flex-col md:flex-row items-center justify-between overflow-hidden lg:h-[70vh]">
