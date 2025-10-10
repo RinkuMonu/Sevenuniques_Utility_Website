@@ -21,7 +21,7 @@ export function FAQ({faqs}) {
             Frequently Asked Questions
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Find answers to common questions about bike insurance. Can't find what you're looking for? Contact our
+            Find answers to common questions about bike insurance. Can&apos;t find what you&apos;re looking for? Contact our
             support team.
           </p>
         </div>
