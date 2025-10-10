@@ -106,7 +106,7 @@ function Contact() {
         <div className="relative flex flex-col md:flex-row items-center justify-between">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${data.bgImage})` }}
+            style={{ backgroundImage: `url(${data?.bgImage})` }}
           ></div>
 
           <div className="container z-10 w-full">

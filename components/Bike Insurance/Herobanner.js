@@ -6,7 +6,7 @@ export default function Herobanner({data}) {
     return (
         <>
    <div className="relative flex flex-col md:flex-row items-center justify-between overflow-hidden lg:h-[70vh]">
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${data.bgImage})` }}></div>
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${data?.bgImage})` }}></div>
                 <div className="z-10 mx-auto">
                     {/* Plane Path */}
                     <div className="path-container absolute -left-32 -top-36 -rotate-45 z-40">

@@ -102,7 +102,7 @@ function page() {
             >
                 <div
                     className="absolute inset-0 bg-cover "
-                    style={{ backgroundImage: `url(${data.bgImage})` }}
+                    style={{ backgroundImage: `url(${data?.bgImage})` }}
                 ></div>
                 <div className=" z-10 mx-auto">
                     <div className='grid grid-cols-1 md:grid-cols-2 w-full space-y-6 md:space-y-0 items-center'>
