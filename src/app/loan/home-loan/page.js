@@ -112,7 +112,7 @@ function page() {
                         <div className=" px-10 py-10 lg:py-16 rounded-2xl overflow-hidden max-w-2xl w-full">
                             <div className=" z-10">
                                 <p className="text-sm font-bold uppercase tracking-widest text-[#0C3D4C]">
-                                    {data.subheading}
+                                    {data?.subheading}
                                 </p>
                                 <h2 className="mt-2 text-4xl md:text-5xl font-bold text-[#0C3D4C] leading-tight">
                                     {data.heading}

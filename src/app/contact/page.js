@@ -114,7 +114,7 @@ function Contact() {
               {/* Left Text Section */}
               <div className="px-6 md:px-20 py-12 lg:py-20">
                 <p className="text-xs md:text-sm font-bold uppercase tracking-widest text-[#0C3D4C]">
-                  {data.subheading}
+                  {data?.subheading}
                 </p>
                 <h2 className="mt-2 text-3xl sm:text-4xl md:text-5xl font-bold text-[#0C3D4C] leading-tight">
                   {data.heading}
