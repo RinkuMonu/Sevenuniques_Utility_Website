@@ -9,6 +9,7 @@ import PartnersSection from '../../../components/PartnersSection';
 import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
 import PancardFeatures from '../../../components/PancardFeatures';
+import PancardApplyOnline from '../../../components/PancardApplyOnline';
 
 
 function page() {
@@ -87,6 +88,7 @@ function page() {
             </div>
            <PartnersSection />
             <TestimonialSlider />
+            <PancardApplyOnline />
             <ContactBanner />
         </>
     )
