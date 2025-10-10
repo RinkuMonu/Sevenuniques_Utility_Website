@@ -62,11 +62,11 @@ const UtilitiesHome = () => {
           <div className="hidden md:block w-full md:w-1/2 lg:w-1/2 mt-8 md:mt-0">
              <div className="relative h-full">
                 <Image 
-                  src="/home/smilehome.png"
+                  src="/image/men-home.png"
                   width={600}
                   height={400} 
                   alt="Happy person using their phone for utility services" 
-                  className="rounded-lg lg:absolute bottom-0 right-0"
+                  className="rounded-lg lg:absolute bottom-0 right-18"
                 />
              </div>
           </div>

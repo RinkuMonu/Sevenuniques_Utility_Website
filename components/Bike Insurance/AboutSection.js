@@ -5,7 +5,7 @@ import React from 'react'
 export default function AboutSection() {
     return (
         <>
-            <section className="py-20 bg-white">
+            <section className="py-20 bg-white border-t border-gray-300">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         {/* Left Content */}
@@ -49,7 +49,7 @@ export default function AboutSection() {
 
                         {/* Right Content - Image and Features */}
                         <div className="relative">
-                            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[500px]">
                                 <Image
                                     src="/insurance/about.jpg"
                                     alt="Bike Insurance"
