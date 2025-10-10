@@ -15,7 +15,7 @@ const ServicesSection3 = ({ data }) => {
   if (!data) return null;
 
   return (
-    <section className="bg-white py-4 md:py-6">
+    <section className="bg-white py-4 md:pt-6 md:pb-16">
 <div className="text-center py-6">
       <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase">
         WHAT IS

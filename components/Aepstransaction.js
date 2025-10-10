@@ -50,49 +50,47 @@ const transactions = [
 
 const Aepstransaction = () => {
   return (
-    <section className="py-16">
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-[#0C3D4C] mb-8 text-center">
-          AEPS Transactional Limits
-        </h2>
+  <section className="py-16">
+  <div className="max-w-7xl mx-auto px-6">
+    <h2 className="text-3xl font-bold text-[#0C3D4C] mb-8 text-center">
+      AEPS Transactional Limits
+    </h2>
 
-        <div className="overflow-x-auto bg-white rounded-lg shadow-lg">
-          <table className="min-w-full border-collapse">
-            <thead>
-              <tr className="bg-[#eef2f8] text-left text-gray-700 text-sm md:text-base">
-                <th className="px-6 py-3 font-semibold border-b">Sr.no</th>
-                <th className="px-6 py-3 font-semibold border-b">Level</th>
-                <th className="px-6 py-3 font-semibold border-b">
-                  Transaction Type
-                </th>
-                <th className="px-6 py-3 font-semibold border-b">
-                  USFBL Transactional Limit
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {transactions.map((row) => (
-                <tr
-                  key={row.id}
-                  className="odd:bg-white even:bg-[#f7f8fc] hover:bg-[#eef4ff] transition"
-                >
-                  <td className="px-6 py-4 border-b text-gray-700">{row.id}</td>
-                  <td className="px-6 py-4 border-b text-gray-700">
-                    {row.level}
-                  </td>
-                  <td className="px-6 py-4 border-b text-gray-700">
-                    {row.type}
-                  </td>
-                  <td className="px-6 py-4 border-b text-gray-700">
-                    {row.limit}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
+    <div className="overflow-x-auto rounded-xl p-6 shadow-md">
+      <table className="min-w-full border-separate border-spacing-y-3">
+        <thead>
+          <tr className="bg-[#0d475c]  text-left  rounded-3xl text-gray-200 text-sm md:text-base">
+            <th className="px-6 py-3 font-semibold rounded-l-3xl">Sr.no</th>
+            <th className="px-6 py-3 font-semibold">Level</th>
+            <th className="px-6 py-3 font-semibold">Transaction Type</th>
+            <th className="px-6 py-3 font-semibold rounded-r-3xl">
+              USFBL Transactional Limit
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {transactions.map((row) => (
+            <tr
+              key={row.id}
+              className="bg-[#f1f4f5] shadow-sm hover:shadow-lg transition transform hover:-translate-y-1 rounded-3xl"
+            >
+              <td className="px-6 py-4 text-gray-700 rounded-l-3xl">
+                {row.id}
+              </td>
+              <td className="px-6 py-4 text-gray-700">{row.level}</td>
+              <td className="px-6 py-4 text-gray-700">{row.type}</td>
+              <td className="px-6 py-4 text-gray-700 rounded-r-3xl">
+                {row.limit}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
   );
 };
 
