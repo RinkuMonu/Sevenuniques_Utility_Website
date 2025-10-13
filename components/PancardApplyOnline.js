@@ -24,37 +24,28 @@ const PancardApplyOnline = () => {
         </div>
 
         <p className="text-gray-700 leading-relaxed">
-          With effect from April 08, 2012, PAN applications are required to be
-          furnished in the new forms prescribed by ITD. Indian citizens will
-          have to submit their ‘Application for allotment of new PAN’ in revised
-          Form 49A only. Foreign citizens will have to submit their ‘Application
-          for allotment of new PAN’ in newly notified Form 49AA only.
+          As of April 08, 2012, the PAN applications should be provided according to the revised forms published by the Income Tax Department (ITD).
+Indian citizens are to apply with the help of Form 49A, and foreign citizens will fill out Form 49AA.
+
         </p>
 
         <p className="text-gray-700 leading-relaxed">
-          For New PAN applications, in case of Individual and HUF applicants if
-          Address for Communication is selected as Office, then Proof of Office
-          Address along with Proof of residential address is to be submitted to
-          Protean w.e.f. applications made on and after 1st November 2009.
+          In the case of an individual and HUF applicant, where the office address is chosen as a communication address, the office address proof and residential address proof should be given to SevenUniques.
         </p>
 
         <p className="text-gray-700 leading-relaxed">
-          As per RBI guidelines, the entities making e-commerce transactions are
-          required to provide PIN (Personal Identification Number) while
-          executing an online transaction. Accordingly, before making payment
-          for online PAN/TAN applications using credit/debit card, please ensure
-          that the PIN is obtained from your respective Banks.
+          According to the RBI guidelines, any online payment requires that the applicants enter their Personal Identification Number (PIN). Always ensure that you verify that your card has the PIN activated before taking out the money using a debit or credit card with your bank.
         </p>
       </div>
 
       {/* Right Graphic */}
-      <div className="relative md:w-1/3 flex  ">
+      <div className="relative md:w-1/3 flex md:pl-10 ">
 <Image
 src="/image/applyonline.jpg"
 alt="apply online"
 width={300}
 height={300}
-className="rounded-lg shadow-md"
+className="rounded-lg shadow-lg"
 />
       </div>
     </section>

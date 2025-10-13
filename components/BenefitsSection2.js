@@ -88,16 +88,16 @@ const BenefitsSection2 = () => {
                 <div className='relative lg:h-[50vh] flex justify-center items-center align-middle '>
                     <div>
                         <Image
-                            src="/recharge/r5.png"
-                            width={300}
-                            height={400}
+                            src="/image/mobile-qr.png"
+                            width={600}
+                            height={260}
                             alt="Mobile App Interface"
                             className="h-[80vh] "
                         />
 
                         <Link
                              href="/coming-soon"
-                            className="absolute top-4/5 left-1/2 -translate-x-1/2 -translate-y-1/2   inline-block rounded-full border border-white p-[2px] z-10"
+                            className="absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2   inline-block rounded-full border border-white p-[2px] z-10"
                         >
                             <span className=" px-8 py-3 bg-gradient-to-t from-[#A10000] to-[#F40000] text-xl text-white font-semibold rounded-full inline-flex gap-2">
                                 Download App <IoMdDownload className='text-2xl animate-bounce' />
