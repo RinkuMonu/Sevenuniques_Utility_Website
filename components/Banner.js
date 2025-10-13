@@ -11,13 +11,13 @@ import BannerActivities from './BannerActivities';
 
 // Slide data with all related info
 const slides = [
-        {
+    {
         id: 2,
         subheading: ' Aadhaar Enabled Payment System',
-        heading:" Aadhaar se Banking, Har Jagah Possible!",
+        heading: " Aadhaar se Banking, Har Jagah Possible!",
         centerImage: '/image/AEPS-sm-banner.png',
         bgImage: '/banner/bbg2.png',
-          
+
         cta: {
             title: 'One App for Everything',
             description: 'Pay bills, recharge phones, and manage payments seamlessly.',
@@ -60,19 +60,19 @@ const slides = [
             },
         ],
     },
-       {
+    {
         id: 4,
         subheading: ' Bharat Bill Payment System',
         heading: "Har Bill, Har Payment, BBPS ke Saath!",
         centerImage: '/banner/bcenter4.png',
         bgImage: '/banner/bbg4.png',
-          
+
         cta: {
             title: 'Safe & Secure',
             description: 'Your money is protected with industry-standard security measures.',
         },
         reviewers: [
-         { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
+            { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
             { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
             { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
             { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
@@ -114,7 +114,7 @@ const slides = [
         heading: "Aapka Paisa, Aapke Apno Tak, Seedha!",
         centerImage: '/banner/bcenter1.png',
         bgImage: '/banner/bbg1.png',
-          position:"-top-10",
+        position: "-top-10",
         cta: {
             title: 'Send Money Easily',
             description: 'Quickly transfer funds to your loved ones anytime, anywhere.',
@@ -159,16 +159,16 @@ const slides = [
     {
         id: 3,
         subheading: 'Micro Automated Teller Machine',
-        heading:"Chhoti Machine, Badi Banking Suvidha!",
+        heading: "Chhoti Machine, Badi Banking Suvidha!",
         centerImage: '/banner/bcenter3.png',
         bgImage: '/banner/bbg3.png',
-       
+
         cta: {
             title: 'Safe & Secure',
             description: 'Your money is protected with industry-standard security measures.',
         },
         reviewers: [
-         { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
+            { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
             { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
             { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
             { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
@@ -203,19 +203,19 @@ const slides = [
             },
         ],
     },
-     {
+    {
         id: 5,
-        subheading: 'Micro Automated Teller Machine',
-        heading:"Chhoti Machine, Badi Banking Suvidha!",
+        subheading: 'PANCARD',
+        heading: "Apni Pehchaan, Apna PAN!",
         centerImage: '/banner/c4.png',
         bgImage: '/banner/b4.png',
-       
+
         cta: {
-            title: 'Safe & Secure',
+            title: 'Har Transaction Mein Vishwas, PAN Hai Saath!',
             description: 'Your money is protected with industry-standard security measures.',
         },
         reviewers: [
-         { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
+            { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
             { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
             { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
             { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
@@ -227,42 +227,44 @@ const slides = [
         },
         activities: [
             {
-                id: 3,
-                name: 'Bhupendra',
-                date: '23 Jun 2025 - 4.43 PM',
-                amount: '700',
+                id: 2,
+                name: 'RadheyShyam Kumar',
+                date: '22 Aug 2025 - 2.00 PM',
+                amount: '2,000',
                 currency: '₹',
-                imageUrl: '/image/p7.jpg',
-            }, {
+                imageUrl: '/image/p5.jpg',
+            },
+            {
                 id: 4,
-                name: 'Suresh',
-                date: '3 Jul 2025 - 6.17 PM',
-                amount: '5500',
+                name: 'Raghu Sharma',
+                date: '7 Sept 2025 - 7.50 PM',
+                amount: '1,475',
                 currency: '₹',
-                imageUrl: '/image/p8.jpg',
-            }, {
+                imageUrl: '/image/p6.jpg',
+            },
+            {
                 id: 5,
-                name: 'Shankar',
-                date: '19 Sept 2025 - 12.56 PM',
-                amount: '1,800',
+                name: 'Mahendra',
+                date: '17 Aug 2025 - 3.00 PM',
+                amount: '1,200',
                 currency: '₹',
-                imageUrl: '/image/p9.jpg',
+                imageUrl: '/image/p11.jpg',
             },
         ],
-    },  
-      {
+    },
+    {
         id: 6,
-        subheading: 'Micro Automated Teller Machine',
-        heading:"Chhoti Machine, Badi Banking Suvidha!",
+        subheading: 'Insurance',
+        heading: "Kal ki chinta nahi, aaj ka insurance hai sahi.",
         centerImage: '/banner/c5.png',
         bgImage: '/banner/b5.png',
-       
+
         cta: {
-            title: 'Safe & Secure',
+            title: 'Zindagi ke har mod par suraksha ka vaada',
             description: 'Your money is protected with industry-standard security measures.',
         },
         reviewers: [
-         { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
+            { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
             { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
             { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
             { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
@@ -272,44 +274,45 @@ const slides = [
             maxRating: 5,
             text: 'I feel confident sending money here!',
         },
-        activities: [
+         activities: [
             {
                 id: 3,
-                name: 'Bhupendra',
-                date: '23 Jun 2025 - 4.43 PM',
-                amount: '700',
+                name: 'Hariom',
+                date: '15 Jul 2025 - 1.34 PM',
+                amount: '2600',
                 currency: '₹',
-                imageUrl: '/image/p7.jpg',
-            }, {
+                imageUrl: '/image/p10.jpg',
+            },
+            {
                 id: 4,
-                name: 'Suresh',
-                date: '3 Jul 2025 - 6.17 PM',
-                amount: '5500',
+                name: 'Devendra',
+                date: '13 Aug 2025 - 2.30 PM',
+                amount: '200',
                 currency: '₹',
-                imageUrl: '/image/p8.jpg',
+                imageUrl: '/image/p1.jpg',
             }, {
                 id: 5,
-                name: 'Shankar',
-                date: '19 Sept 2025 - 12.56 PM',
-                amount: '1,800',
+                name: 'Keshav',
+                date: '23 Jun 2022 - 4.00 PM',
+                amount: '1,200',
                 currency: '₹',
-                imageUrl: '/image/p9.jpg',
+                imageUrl: '/image/p2.jpg',
             },
         ],
-    },   
-     {
+    },
+    {
         id: 7,
-        subheading: 'Micro Automated Teller Machine',
-        heading:"Chhoti Machine, Badi Banking Suvidha!",
+        subheading: 'CREDIT CARD',
+        heading: "Life ke upgrades, credit card ke saath!",
         centerImage: '/banner/c6.png',
         bgImage: '/banner/b6.png',
-       
+
         cta: {
-            title: 'Safe & Secure',
+            title: 'Cash ka tension gaya, swipe ka fashion aaya',
             description: 'Your money is protected with industry-standard security measures.',
         },
         reviewers: [
-         { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
+            { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
             { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
             { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
             { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
@@ -319,44 +322,44 @@ const slides = [
             maxRating: 5,
             text: 'I feel confident sending money here!',
         },
-        activities: [
+          activities: [
             {
-                id: 3,
-                name: 'Bhupendra',
-                date: '23 Jun 2025 - 4.43 PM',
-                amount: '700',
+                id: 1,
+                name: 'Kailash Choudhary',
+                date: '21 Jun 2025 - 12.00 PM',
+                amount: '1,500',
                 currency: '₹',
-                imageUrl: '/image/p7.jpg',
+                imageUrl: '/image/p1.jpg',
             }, {
                 id: 4,
-                name: 'Suresh',
-                date: '3 Jul 2025 - 6.17 PM',
-                amount: '5500',
+                name: 'Raju Gurjar',
+                date: '23 Jul 2025 - 4.00 PM',
+                amount: '1,200',
                 currency: '₹',
-                imageUrl: '/image/p8.jpg',
+                imageUrl: '/image/p2.jpg',
             }, {
                 id: 5,
-                name: 'Shankar',
-                date: '19 Sept 2025 - 12.56 PM',
-                amount: '1,800',
+                name: 'Ramesh Jat',
+                date: '2 Jun 2025 - 4.00 PM',
+                amount: '1,760',
                 currency: '₹',
-                imageUrl: '/image/p9.jpg',
+                imageUrl: '/image/p3.jpg',
             },
         ],
-    },  
-      {
+    },
+    {
         id: 8,
-        subheading: 'Micro Automated Teller Machine',
-        heading:"Chhoti Machine, Badi Banking Suvidha!",
+        subheading: 'BOOKING',
+        heading: "Booking itni easy, bas ek click mein!",
         centerImage: '/banner/c7.png',
         bgImage: '/banner/b7.png',
-       position:"top-10 md:top-0" ,
+        position: "top-10 md:top-0",
         cta: {
-            title: 'Safe & Secure',
+            title: 'Book karo bina wait, enjoy karo har date',
             description: 'Your money is protected with industry-standard security measures.',
         },
         reviewers: [
-         { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
+            { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
             { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
             { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
             { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
@@ -368,26 +371,28 @@ const slides = [
         },
         activities: [
             {
-                id: 3,
-                name: 'Bhupendra',
-                date: '23 Jun 2025 - 4.43 PM',
-                amount: '700',
+                id: 2,
+                name: 'RadheyShyam Kumar',
+                date: '22 Aug 2025 - 2.00 PM',
+                amount: '2,000',
                 currency: '₹',
-                imageUrl: '/image/p7.jpg',
-            }, {
+                imageUrl: '/image/p5.jpg',
+            },
+            {
                 id: 4,
-                name: 'Suresh',
-                date: '3 Jul 2025 - 6.17 PM',
-                amount: '5500',
+                name: 'Raghu Sharma',
+                date: '7 Sept 2025 - 7.50 PM',
+                amount: '1,475',
                 currency: '₹',
-                imageUrl: '/image/p8.jpg',
-            }, {
+                imageUrl: '/image/p6.jpg',
+            },
+            {
                 id: 5,
-                name: 'Shankar',
-                date: '19 Sept 2025 - 12.56 PM',
-                amount: '1,800',
+                name: 'Mahendra',
+                date: '17 Aug 2025 - 3.00 PM',
+                amount: '1,200',
                 currency: '₹',
-                imageUrl: '/image/p9.jpg',
+                imageUrl: '/image/p11.jpg',
             },
         ],
     },
@@ -442,12 +447,12 @@ const Banner = () => {
 
                                     <div className="w-full md:w-1/2 lg:w-1/3 relative h-100 mt-5 ">
                                         {slide.centerImage && (
-                                          <Image
-  src={slide.centerImage}
-  height={400}
-  width={400}
-  alt="center image"
-  className={`
+                                            <Image
+                                                src={slide.centerImage}
+                                                height={400}
+                                                width={400}
+                                                alt="center image"
+                                                className={`
     absolute 
     left-1/2 transform -translate-x-1/2 
     md:left-0 md:translate-x-0
@@ -456,7 +461,7 @@ const Banner = () => {
     ${slide.id === 1 ? "scale-90 md:scale-75 pb-10" : ""} 
     ${slide.id === 6 ? "md:scale-90" : ""} 
   `}
-/>
+                                            />
 
 
                                         )}
