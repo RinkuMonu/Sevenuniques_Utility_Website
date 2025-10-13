@@ -1,5 +1,5 @@
 
-export function Process({processdata}) {
+export default function Process({processdata}) {
   return (
     <section id="process" className="py-16 md:py-24 bg-[#0d3b4f] text-white relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#00b4d8]/10 rounded-full blur-3xl" />

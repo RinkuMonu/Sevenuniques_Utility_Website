@@ -30,7 +30,7 @@ const ServicesSection3 = ({ data }) => {
         {/* Left Column */}
         <div className="md:pl-16 py-10">
           <p className="text-base font-semibold text-[#0C3D4C] tracking-wider">
-            {data.subheading}
+            {data?.subheading}
           </p>
           <h2
             className="mt-2 text-3xl md:text-4xl font-bold text-[#0C3D4C]"
