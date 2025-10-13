@@ -6,12 +6,13 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FaUser } from "react-icons/fa";
 import { FaUserPlus } from "react-icons/fa6";
-import { Mail, MapPin, MoveUpRight, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [serviceOpen, setServiceOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [loanOpen, setLoanOpen] = useState(false);
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -41,21 +42,20 @@ export default function Header() {
 
   return (
     <>
-      <div className="bg-[#0C3D4C] text-white text-sm py-2 px-6 flex justify-between items-center mb-1  md:flex">
-        <div className="md:flex items-center space-y-3 md:space-x-6 text-sm text-gray-200">
+      <div className="bg-[#0C3D4C] text-white text-sm py-2 px-6 flex justify-between items-center mb-1">
+        <div className="flex items-center space-x-6 text-sm text-gray-200">
           <span className="flex items-center">
-            <FaUser className="mr-2 w-5 h-5" /> 24x7 Technical Support
+            <FaUser className="mr-2 w-4 h-4" /> 24x7 Technical Support
           </span>
-          <span className="text-gray-400 hidden md:block">|</span>
+          <span className="text-gray-400">|</span>
           <span className="flex items-center">
             <Mail className="mr-2 w-5 h-5" /> support@7unique.in
           </span>
-          <span className="text-gray-400 hidden md:block">|</span>
+          <span className="text-gray-400">|</span>
           <span className="flex items-center">
             <Phone className="mr-3 w-5 h-5" /> 0141-4511098
           </span>
         </div>
-
 
         {/* Buttons (desktop) */}
         <div className="hidden md:flex items-center">
@@ -75,9 +75,8 @@ export default function Header() {
           </Link>
         </div>
       </div>
-   <header className="bg-white shadow-lg sticky top-0 z-50 overflow-hidden">
 
-
+      <header className="bg-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           {/* Logo */}
           <div className="px-2 py-1 font-semibold">
@@ -100,10 +99,13 @@ export default function Header() {
                 {link.dropdown ? (
                   <button
                     className={`relative flex items-center gap-1 text-lg font-medium transition group/btn
-            ${["/services", "/loan"].some((path) => pathname.startsWith(path))
-                        ? "text-[#0C3D4C] font-semibold before:w-full"
-                        : "text-gray-700 group-hover:text-[#0C3D4C]"
-                      }
+            ${
+              ["/services", "/loan"].some((path) =>
+                pathname.startsWith(path)
+              )
+                ? "text-[#0C3D4C] font-semibold before:w-full"
+                : "text-gray-700 group-hover:text-[#0C3D4C]"
+            }
             before:content-[''] before:absolute before:left-0 before:-bottom-1
             before:h-[2px] before:w-0 before:bg-[#0C3D4C] before:transition-all before:duration-300
             group-hover/btn:before:w-full
@@ -115,10 +117,11 @@ export default function Header() {
                   <Link
                     href={link.href}
                     className={`relative font-medium text-lg transition group/link
-            ${pathname === link.href
-                        ? "text-[#0C3D4C] font-semibold before:w-full"
-                        : "text-gray-700 hover:text-[#0C3D4C]"
-                      }
+            ${
+              pathname === link.href
+                ? "text-[#0C3D4C] font-semibold before:w-full"
+                : "text-gray-700 hover:text-[#0C3D4C]"
+            }
             before:content-[''] before:absolute before:left-0 before:-bottom-1
             before:h-[2px] before:w-0 before:bg-[#0C3D4C] before:transition-all before:duration-300
             hover:before:w-full
@@ -169,7 +172,7 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Menu (Slide down) */}
+        {/* Mobile Menu */}
         {mobileOpen && (
           <div className="md:hidden bg-white border-t shadow-md">
             <div className="px-6 py-4 space-y-3">
@@ -178,14 +181,31 @@ export default function Header() {
                   {link.dropdown ? (
                     <>
                       <button
-                        onClick={() => setServiceOpen(!serviceOpen)}
+                        onClick={() =>
+                          link.name.toLowerCase() === "services"
+                            ? setServicesOpen(!servicesOpen)
+                            : setLoanOpen(!loanOpen)
+                        }
                         className="flex items-center justify-between w-full font-medium text-gray-700 hover:text-teal-600"
                       >
                         {link.name} <ChevronDown size={16} />
                       </button>
-                      {serviceOpen && (
+                      {link.name.toLowerCase() === "services" && servicesOpen && (
                         <div className="pl-4 mt-2 space-y-2">
                           {servicesDropdown.map((item, i) => (
+                            <Link
+                              key={i}
+                              href={item.href}
+                              className="block text-gray-600 hover:text-teal-700 transition"
+                            >
+                              {item.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                      {link.name.toLowerCase() === "loan" && loanOpen && (
+                        <div className="pl-4 mt-2 space-y-2">
+                          {loanDropdown.map((item, i) => (
                             <Link
                               key={i}
                               href={item.href}
@@ -200,10 +220,11 @@ export default function Header() {
                   ) : (
                     <Link
                       href={link.href}
-                      className={`block font-medium ${pathname === link.href
-                        ? "text-teal-700 font-semibold"
-                        : "text-gray-700 hover:text-teal-600"
-                        }`}
+                      className={`block font-medium ${
+                        pathname === link.href
+                          ? "text-teal-700 font-semibold"
+                          : "text-gray-700 hover:text-teal-600"
+                      }`}
                     >
                       {link.name}
                     </Link>
