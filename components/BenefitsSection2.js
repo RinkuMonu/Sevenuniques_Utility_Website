@@ -35,7 +35,7 @@ const BenefitsSection2 = () => {
                     </h3>
 
                     <div className="flex sm:flex-row flex-col space-y-4 mb-8">
-                        <Link href="/" aria-label="Download on the App Store">
+                        <Link href="/coming-soon" aria-label="Download on the App Store">
                             <Image
                                 src="/loan/image7.png"
                                 alt="logo-bbps"
@@ -44,7 +44,7 @@ const BenefitsSection2 = () => {
 
                             />
                         </Link>
-                        <Link href="/" aria-label="Get it on Google Play">
+                        <Link href="/coming-soon" aria-label="Get it on Google Play">
                             <Image
                                 src="/loan/image8.png"
                                 alt="logo-bbps"
@@ -92,12 +92,12 @@ const BenefitsSection2 = () => {
                             width={600}
                             height={260}
                             alt="Mobile App Interface"
-                            className="h-[80vh] "
+                            className=""
                         />
 
                         <Link
                              href="/coming-soon"
-                            className="absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2   inline-block rounded-full border border-white p-[2px] z-10"
+                            className="absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2   inline-block rounded-full  p-[2px] z-10"
                         >
                             <span className=" px-8 py-3 bg-gradient-to-t from-[#A10000] to-[#F40000] text-xl text-white font-semibold rounded-full inline-flex gap-2">
                                 Download App <IoMdDownload className='text-2xl animate-bounce' />
