@@ -6,36 +6,36 @@ import Link from "next/link";
 const page = () => {
   const cards = [
     {
-      title: "Apply for a New PAN Card",
-      desc: "Submit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Correction of PAN card easily",
+      desc: "It has made it very easy and safe to correct or update your PAN card. You may require the name correction in the PAN card, address correction, or any other detail; our service of PAN card correction online will be a hassle-free experience. You may amend your PAN details via the correct form (Form 49A or 49AA) and correct your e-PAN card (which is delivered electronically) online.",
     },
     {
-      title: "Fill Application Form",
-      desc: "Provide your full name, date of birth, and contact information in the PAN form accurately to avoid delays. Ensure all information matches your supporting documentsSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Correction of PAN Card Online",
+      desc: "Begin PAN card correction on the Internet by completing the correction form correctly. Make sure that all your personal information, i.e., full name, date of birth, and contact details, is consistent with supporting documents. We have PAN card correction services provision to enable you to make the application within a short time and follow up without any hassles.",
+    },
+    {
+      title: "Fill the PAN Correction Form",
+      desc: "Enter all the information accurate in the PAN correction form. Fill in Form 49A when the citizen is an Indian and Form 49AA when the citizen is a foreigner. Make sure that you provide your details twice because this will save you time. This involves changing your name or address, date of birth, or any other personal information in your PAN record.",
     },
     {
       title: "Upload Required Documents",
-      desc: "Attach valid proof of identity, address, and a passport-size photo as per government guidelines. Make sure the uploaded files are clear and legibleSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      desc: "Enclose valid documents as evidence of identity and evidence of address, and a recent passport-size photograph. The documents that are acceptable are Aadhaar Card, Passport, Driving License, and so on, according to the governmental regulations. Ensure that files are clear and legible. This is a requirement of e-KYC PAN card correction.",
     },
     {
       title: "Make Payment Securely",
-      desc: "Pay your PAN processing fee online through a secure payment gateway using UPI, debit/credit card, or net bankingSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      desc: "Make payments online through a secure gateway by paying the PAN processing fee. One can pay through UPI, debit/credit card, or net banking. The cost of a standard PAN card correction is approximately (in addition to taxes and convenience fees, which vary depending on the mode of payment).",
     },
     {
-      title: "Application Processing",
-      desc: "Once submitted, your PAN application will be reviewed and processed within 10–15 working days. You’ll receive status updates by email or SMSSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
-    },
-    {
-      title: "Required Documents",
-      desc: "Documents like Aadhaar Card, Passport, or Driving License are accepted as identity and address proof. Keep digital copies ready before applyingSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
-    },
-    {
-      title: "Processing Fee",
-      desc: "The application fee for a new PAN card is ₹107 (approx.). Additional convenience charges may apply depending on your chosen payment methodSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Documents needed to correct PAN.",
+      desc: "Make sure that you have supportive documents to make the process go smoothly. The documents that are usually needed are an Aadhaar card, a passport, a driving license, or any other government-issued identity card. These are documents that are required for the correction of names in PAN cards, address correction, or any other corrections.",
     },
     {
       title: "Need Assistance?",
-      desc: "If you face any issues during your application, feel free to reach out to our support team anytime. We’re here to help you complete the process easilySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      desc: "In case you have any problems when filing your PAN correction application, our support staff is at your side to help. We have PAN card correction services, and your application gets done within a short time and in the right way, and in a safe manner.",
+    },
+    {
+      title: "Ready to Apply?",
+      desc: "Once you start a PAN card correction online, you will be ready. You can easily update your details through PAN card form 49A correction or form 49AA correction, and your corrected PAN card is delivered to your doorstep.",
     },
   ];
 
@@ -45,11 +45,11 @@ const page = () => {
         {/* Page Header */}
         <div className="text-center mb-14">
           <h1 className="text-4xl font-bold text-gray-900 mb-3">
-            PAN Card Correction
+            PAN Card Correction Made Simple
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Apply for your PAN card effortlessly with our simplified online
-            process. Each step below helps you understand the procedure better.
+            Correct or modify PAN card details on the internet, like name,
+            address, date of birth, and other personal details.
           </p>
         </div>
 
@@ -84,8 +84,7 @@ const page = () => {
             Ready to Apply?
           </h2>
           <p className="text-gray-600 mb-6">
-            Start your PAN card application today and get it delivered to your
-            doorstep quickly and securely.
+          Try hassle-free PAN correction services like e-PAN card correction online.
           </p>
           <Link
             href="/contact"
