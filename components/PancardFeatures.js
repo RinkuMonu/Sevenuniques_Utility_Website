@@ -13,7 +13,7 @@ const features = [
     title: "PANCARD Correction",
     description:
       "Get your PAN card instantly with online verification and hassle-free documentation.",
-    link: "/pancard/correction",
+    link: "/pancard/pancardcorrection",
   },
   {
     id: 2,
@@ -23,21 +23,21 @@ const features = [
       "All PAN card applications are processed through secure and authorized government channels.",
     link: "/pancard/pancardApplyNew",
   },
-  {
-    id: 3,
-    icon: <MdOutlineTrackChanges className="w-10 h-10 text-orange-800" />,
-    title: "Track PAN",
-    description:
-      "No need for physical paperwork — everything is managed digitally for faster approvals.",
-    link: "/pancard/track",
-  },
+  // {
+  //   id: 3,
+  //   icon: <MdOutlineTrackChanges className="w-10 h-10 text-orange-800" />,
+  //   title: "Track PAN",
+  //   description:
+  //     "No need for physical paperwork — everything is managed digitally for faster approvals.",
+  //   link: "/pancard/track",
+  // },
   {
     id: 4,
     icon: <MdOutlineBrowserUpdated className="w-10 h-10 text-orange-800" />,
     title: "Address Update",
     description:
       "Experience smooth and fast PAN processing with real-time status tracking.",
-    link: "/pancard/address-update",
+    link: "/pancard/pancardaddressupdate",
   },
   {
     id: 5,
@@ -45,14 +45,14 @@ const features = [
     title: "Reprint Pan",
     description:
       "Easily apply for a PAN card from rural and urban areas with simple Aadhaar-based verification.",
-    link: "/pancard/reprint",
+    link: "/pancard/reprintpan",
   },
 ];
 
 const PancardFeatures = () => {
   return (
     <section className="py-16 bg-[#F9EBDF]">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      <div className="max-w-9xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4">
           PAN Card Service Features
         </h2>

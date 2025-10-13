@@ -118,12 +118,12 @@ const Footer = () => {
               <h3 className="font-semibold mb-2">Follow us</h3>
               <div className="flex flex-row space-x-3">
                 <Link href="#" className="hover:text-blue-400"><FaFacebookF /></Link>
-                <Link href="https://www.youtube.com/@seven_spirit2" className="hover:text-red-500"><FaYoutube /></Link>
-                <Link href="https://www.instagram.com/seven_spirit2/" className="hover:text-pink-500"><FaInstagram /></Link>
-                <Link href="https://x.com/seven_spir42085" className="hover:text-gray-400"><FaXTwitter /></Link>
-                <Link href="https://www.linkedin.com/company/109072328/" className="hover:text-blue-500"><FaLinkedinIn /></Link>
-                <Link href="https://wa.me/919251582691" target="_blank" rel="noopener noreferrer" className="hover:text-green-500"><FaWhatsapp /></Link>
-                <Link href="https://www.pinterest.com/sevenspirit12/" className="hover:text-red-500"><FaPinterest /></Link>
+                <Link href="#" className="hover:text-red-500"><FaYoutube /></Link>
+                <Link href="#" className="hover:text-pink-500"><FaInstagram /></Link>
+                <Link href="#" className="hover:text-gray-400"><FaXTwitter /></Link>
+                <Link href="#" className="hover:text-blue-500"><FaLinkedinIn /></Link>
+                <Link href="#" target="_blank" rel="noopener noreferrer" className="hover:text-green-500"><FaWhatsapp /></Link>
+                <Link href="#" className="hover:text-red-500"><FaPinterest /></Link>
               </div>
             </div>
           </div>
