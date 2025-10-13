@@ -10,9 +10,8 @@ import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
 import PancardFeatures from '../../../components/PancardFeatures';
 import PancardApplyOnline from '../../../components/PancardApplyOnline';
-import ReprintOfPANCard from '../../../components/ReprintOfPANCard';
-import PanCorrectionCard from '../../../components/PanCorrectionCard';
-import DocumentsRequired2 from '../../../components/DocumentsRequired2';
+
+
 
 
 function page() {
@@ -78,11 +77,9 @@ function page() {
             <BenefitsSection2 />
             {/* <VerticalTimeline /> */}
             <section className='pb-6 pt-24'>
-                <PancardFeatures />
+<PancardFeatures />
             </section>
-            <ReprintOfPANCard />
-            <PanCorrectionCard />
-            <DocumentsRequired2 />
+            
             <div>
                 {info.map((item, index) => (
                     <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-5 lg:p-16 max-w-6xl my-10 ${index % 2 === 0 ? "" : "ms-auto"}`}>
@@ -91,7 +88,7 @@ function page() {
                     </div>
                 ))}
             </div>
-            <PartnersSection />
+           <PartnersSection />
             <TestimonialSlider />
             <PancardApplyOnline />
             <ContactBanner />
