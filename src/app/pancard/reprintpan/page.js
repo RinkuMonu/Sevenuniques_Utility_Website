@@ -6,36 +6,48 @@ import Link from "next/link";
 const page = () => {
   const cards = [
     {
-      title: "Apply for a New PAN Card",
-      desc: "Submit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "PAN Reprint Now — Easy and Secure",
+      desc: "Applications are done online. Get your PAN card reprinted in a matter of minutes. Provide information, file documents, and receive e-PAN at the comfort of your place.",
     },
     {
-      title: "Fill Application Form",
-      desc: "Provide your full name, date of birth, and contact information in the PAN form accurately to avoid delays. Ensure all information matches your supporting documentsSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Reprint PAN Card Online",
+      desc: "Reprint your PAN card easily through our secure online platform. Our step-by-step procedure guarantees you that you can replace or update your PAN card all by yourself without any form of hassle at all. Abide by the guidelines in order to get your reprint request accomplished.",
     },
     {
-      title: "Upload Required Documents",
-      desc: "Attach valid proof of identity, address, and a passport-size photo as per government guidelines. Make sure the uploaded files are clear and legibleSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Fill a PAN Reprint Application",
+      desc: "Fill in your reprint request forms by providing accurate details on your PAN number, full name, date of birth, and contact details. To prevent delays, be sure that you have all the information that is equivalent to your original PAN card records. Our web-based system offers a safe and easy method of presenting your application and being updated in due time.",
     },
     {
-      title: "Make Payment Securely",
-      desc: "Pay your PAN processing fee online through a secure payment gateway using UPI, debit/credit card, or net bankingSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Fill out the PAN Reprint Form Accurately",
+      desc: "Submit correct personal information and make sure that your full name, date of birth, and other necessary fields are the same as in your official documents. Submission mistakes can lead to delays in processing, and therefore, close attention should be paid to detail to facilitate a smooth PAN reprinting process.",
     },
     {
-      title: "Application Processing",
-      desc: "Once submitted, your PAN application will be reviewed and processed within 10–15 working days. You’ll receive status updates by email or SMSSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Upload Valid Documents",
+      desc: "Attach your original identity and address documents, like Aadhaar Card, Passport, or Driving License. Make sure that the documents are readable, understandable, and in line with the information provided in your application. Correct submission ensures your PAN reprint is processed quickly.",
     },
     {
-      title: "Required Documents",
-      desc: "Documents like Aadhaar Card, Passport, or Driving License are accepted as identity and address proof. Keep digital copies ready before applyingSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Make Secure Payment",
+      desc: "Pay the processing fee online via UPI, debit/credit card, or net banking. Online payment is safe and registers your application immediately, preventing delays caused by offline methods. Charges may vary slightly based on payment method.",
     },
     {
-      title: "Processing Fee",
-      desc: "The application fee for a new PAN card is ₹107 (approx.). Additional convenience charges may apply depending on your chosen payment methodSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Processing PAN Reprint Application",
+      desc: "After submission, your PAN reprint order will be checked and executed within 10-15 working days. Status updates will be sent via email or SMS so you can track your application. Your reprinted PAN card will be delivered on time without interfering with banking or tax services.",
     },
     {
-      title: "Need Assistance?",
-      desc: "If you face any issues during your application, feel free to reach out to our support team anytime. We’re here to help you complete the process easilySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Required Documents for Reprint",
+      desc: "Keep digital copies of identity and address proof ready before applying. Acceptable documents include Aadhaar Card, Passport, Driving License, or other government-approved proofs. Submitting valid documents ensures a smooth and fast reprint process.",
+    },
+    {
+      title: "Fees for PAN Card Reprint",
+      desc: "The reprint processing fee is approximate, with additional convenience charges depending on your online payment method. Your request will be recognized and processed promptly and safely with assurance of timely payment.",
+    },
+    {
+      title: "PAN Card Reprint Assistance",
+      desc: "If you encounter problems while applying for a reprint, our support team can help. We guide you step-by-step to fill the form, upload documents, and make payment to have your PAN card reprinted properly.",
+    },
+    {
+      title: "Apply for PAN Reprint Now",
+      desc: "Start your PAN card reprint application today and receive your revised PAN card at your communication address within minutes, safely and securely. Our web-based service ensures all processes are efficient, easy, and trustworthy.",
     },
   ];
 

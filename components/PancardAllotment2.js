@@ -3,15 +3,23 @@ import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
 export default function PancardAllotment2() {
+  const menuItems = [
+    { label: "Apply Now", link: "/apply" },
+    { label: "Read Guidelines", link: "/pancard/guidelines" },
+    { label: "Read Instructions", link: "/instructions" },
+    { label: "Documents Required", link: "/documents" },
+    { label: "Do’s & Don’ts", link: "/dos-donts" },
+    { label: "Designated Centers", link: "/centers" },
+  ];
   return (
     <section className="bg-[#e8f0f7] rounded-xl flex flex-col md:flex-row justify-evenly items-start shadow-sm">
 
-  <div className="">
+      <div className="">
         <Image src="/image/pancard-foreign3.png" width={430} height={430} alt="image" />
       </div>
 
 
-         {/* Left Side */}
+      {/* Left Side */}
       <div className="max-w-xl p-12">
         <h2 className="text-4xl font-bold text-gray-900 leading-snug">
           Application for Allotment of New PAN (Form 49AA) <br />
@@ -34,26 +42,19 @@ export default function PancardAllotment2() {
         </p>
 
         <div className="md:mt-18 w-full">
-  <div className="flex flex-wrap justify-center gap-4">
-    {[
-      "Apply Now",
-      "Read Guidelines",
-      "Read Instructions",
-      "Documents Required",
-      "Do’s & Don’ts",
-      "Designated Centers",
-    ].map((item, i) => (
-      <a
-        key={i}
-        href="#"
-        className="flex justify-between items-center text-gray-900 font-medium border border-gray-300 rounded-lg shadow-md py-3 px-5 text-sm w-full sm:w-[45%] md:w-[30%] hover:text-[#3a6f82] transform transition-transform duration-500 hover:scale-105"
-      >
-        {item}
-        <ArrowUpRight className="w-4 h-4" />
-      </a>
-    ))}
-  </div>
-</div>
+          <div className="flex flex-wrap gap-4 justify-center mt-6">
+            {menuItems.map((item, i) => (
+              <a
+                key={i}
+                href={item.link}
+                className="flex justify-between items-center text-gray-900 font-medium border border-gray-300 rounded-lg shadow-md py-3 px-5 text-sm w-full sm:w-[45%] md:w-[30%] hover:text-[#3a6f82] transform transition-transform duration-500 hover:scale-105"
+              >
+                {item.label}
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
+            ))}
+          </div>
+        </div>
 
       </div>
     </section>
