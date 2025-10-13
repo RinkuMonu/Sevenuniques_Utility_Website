@@ -45,7 +45,7 @@ const ServiceBanner = ({ data }) => {
                     {data.centerImage ? (    <Image
                             src={data.centerImage }
                             height={500}
-                            width={500}
+                            width={620}
                             alt="center image"
                             className="md:pt-4 lg:pt-16  lg:h-[70vh] z-20"
 

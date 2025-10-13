@@ -44,8 +44,8 @@ const page = () => {
       <div className="max-w-7xl mx-auto">
         {/* Page Header */}
         <div className="text-center mb-14">
-          <h1 className="text-4xl font-bold text-gray-900 mb-3">
-            Apply for New PAN Card
+          <h1 className="text-4xl font-bold text-[#0C3D4C] mb-3">
+            Reprint PAN Card
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Apply for your PAN card effortlessly with our simplified online

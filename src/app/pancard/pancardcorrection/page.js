@@ -45,7 +45,7 @@ const page = () => {
         {/* Page Header */}
         <div className="text-center mb-14">
           <h1 className="text-4xl font-bold text-gray-900 mb-3">
-            Apply for New PAN Card
+            PAN Card Correction
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Apply for your PAN card effortlessly with our simplified online
