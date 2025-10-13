@@ -15,9 +15,11 @@ const services = [
 
 const UtilitiesHome = () => {
   return (
-    <div className='bg-[#eaf5ff] pt-14 mt-20'>
-      <div className="rounded-2xl relative px-4 lg:px-0 max-w-7xl mx-auto">
-        {services.map((service) => (
+    <div className='bg-[#eaf5ff] pt-14 mt-20 '>
+      <div className="rounded-2xl relative px-4 lg:px-0 max-w-7xl mx-auto ">
+        
+<div className='relative'>
+          {services.map((service) => (
           <div key={service.name} className={`hidden lg:block absolute ${service.position} group z-20`}>
             <span 
               className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 whitespace-nowrap 
@@ -32,6 +34,7 @@ const UtilitiesHome = () => {
             </div>
           </div>
         ))}
+</div>
         <div className="flex flex-col md:flex-row justify-between gap-8 relative z-10">
           
           <div className="w-full md:w-1/2 lg:w-2/5 space-y-6 text-center md:text-left">

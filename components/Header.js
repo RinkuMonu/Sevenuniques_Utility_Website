@@ -42,40 +42,41 @@ export default function Header() {
   return (
     <>
       <div className="bg-[#0C3D4C] text-white text-sm py-2 px-6 flex justify-between items-center mb-1  md:flex">
-         <div className="flex items-center space-x-6 text-sm text-gray-200">
-  <span className="flex items-center">
-    <FaUser className="mr-2 w-4 h-4" /> 24x7 Technical Support
-  </span>
-  <span className="text-gray-400">|</span>
-  <span className="flex items-center">
-    <Mail className="mr-2 w-5 h-5" /> support@7unique.in
-  </span>
-  <span className="text-gray-400">|</span>
-  <span className="flex items-center">
-    <Phone className="mr-3 w-5 h-5" /> 0141-4511098
-  </span>
-</div>
-
-
-           {/* Buttons (desktop) */}
-          <div className="hidden md:flex items-center">
-            <Link
-              href="https://utility.finuniques.in/"
-              className="px-6 py-2 bg-[#0C3D4C] text-white rounded-md flex justify-center gap-2 items-center font-medium hover:bg-gray-200 hover:text-[#0C3D4C] transition"
-            >
-              <FaUser className="w-4 h-4" />
-              Login
-            </Link>
-            <Link
-              href="https://utility.finuniques.in/register"
-              className="px-4 py-2 bg-[#0C3D4C] text-white rounded-md flex justify-center gap-2 items-center font-medium hover:bg-gray-200 hover:text-[#0C3D4C] transition"
-            >
-          <FaUserPlus className="w-5 h-5" />
-              Register
-            </Link>
-          </div>
+        <div className="md:flex items-center space-y-3 md:space-x-6 text-sm text-gray-200">
+          <span className="flex items-center">
+            <FaUser className="mr-2 w-5 h-5" /> 24x7 Technical Support
+          </span>
+          <span className="text-gray-400 hidden md:block">|</span>
+          <span className="flex items-center">
+            <Mail className="mr-2 w-5 h-5" /> support@7unique.in
+          </span>
+          <span className="text-gray-400 hidden md:block">|</span>
+          <span className="flex items-center">
+            <Phone className="mr-3 w-5 h-5" /> 0141-4511098
+          </span>
         </div>
-      <header className="bg-white shadow-lg sticky top-0 z-50">
+
+
+        {/* Buttons (desktop) */}
+        <div className="hidden md:flex items-center">
+          <Link
+            href="https://utility.finuniques.in/"
+            className="px-6 py-2 bg-[#0C3D4C] text-white rounded-md flex justify-center gap-2 items-center font-medium hover:bg-gray-200 hover:text-[#0C3D4C] transition"
+          >
+            <FaUser className="w-4 h-4" />
+            Login
+          </Link>
+          <Link
+            href="https://utility.finuniques.in/register"
+            className="px-4 py-2 bg-[#0C3D4C] text-white rounded-md flex justify-center gap-2 items-center font-medium hover:bg-gray-200 hover:text-[#0C3D4C] transition"
+          >
+            <FaUserPlus className="w-5 h-5" />
+            Register
+          </Link>
+        </div>
+      </div>
+   <header className="bg-white shadow-lg sticky top-0 z-50 overflow-hidden">
+
 
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           {/* Logo */}
@@ -200,8 +201,8 @@ export default function Header() {
                     <Link
                       href={link.href}
                       className={`block font-medium ${pathname === link.href
-                          ? "text-teal-700 font-semibold"
-                          : "text-gray-700 hover:text-teal-600"
+                        ? "text-teal-700 font-semibold"
+                        : "text-gray-700 hover:text-teal-600"
                         }`}
                     >
                       {link.name}
