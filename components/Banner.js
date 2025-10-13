@@ -17,6 +17,7 @@ const slides = [
         heading:" Aadhaar se Banking, Har Jagah Possible!",
         centerImage: '/image/AEPS-sm-banner.png',
         bgImage: '/banner/bbg2.png',
+          
         cta: {
             title: 'One App for Everything',
             description: 'Pay bills, recharge phones, and manage payments seamlessly.',
@@ -65,6 +66,7 @@ const slides = [
         heading: "Har Bill, Har Payment, BBPS ke Saath!",
         centerImage: '/banner/bcenter4.png',
         bgImage: '/banner/bbg4.png',
+          
         cta: {
             title: 'Safe & Secure',
             description: 'Your money is protected with industry-standard security measures.',
@@ -112,6 +114,7 @@ const slides = [
         heading: "Aapka Paisa, Aapke Apno Tak, Seedha!",
         centerImage: '/banner/bcenter1.png',
         bgImage: '/banner/bbg1.png',
+          position:"-top-10",
         cta: {
             title: 'Send Money Easily',
             description: 'Quickly transfer funds to your loved ones anytime, anywhere.',
@@ -159,6 +162,7 @@ const slides = [
         heading:"Chhoti Machine, Badi Banking Suvidha!",
         centerImage: '/banner/bcenter3.png',
         bgImage: '/banner/bbg3.png',
+       
         cta: {
             title: 'Safe & Secure',
             description: 'Your money is protected with industry-standard security measures.',
@@ -199,7 +203,194 @@ const slides = [
             },
         ],
     },
- 
+     {
+        id: 5,
+        subheading: 'Micro Automated Teller Machine',
+        heading:"Chhoti Machine, Badi Banking Suvidha!",
+        centerImage: '/banner/c4.png',
+        bgImage: '/banner/b4.png',
+       
+        cta: {
+            title: 'Safe & Secure',
+            description: 'Your money is protected with industry-standard security measures.',
+        },
+        reviewers: [
+         { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
+            { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
+            { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
+            { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
+        ],
+        reviewData: {
+            rating: 4.8,
+            maxRating: 5,
+            text: 'I feel confident sending money here!',
+        },
+        activities: [
+            {
+                id: 3,
+                name: 'Bhupendra',
+                date: '23 Jun 2025 - 4.43 PM',
+                amount: '700',
+                currency: '₹',
+                imageUrl: '/image/p7.jpg',
+            }, {
+                id: 4,
+                name: 'Suresh',
+                date: '3 Jul 2025 - 6.17 PM',
+                amount: '5500',
+                currency: '₹',
+                imageUrl: '/image/p8.jpg',
+            }, {
+                id: 5,
+                name: 'Shankar',
+                date: '19 Sept 2025 - 12.56 PM',
+                amount: '1,800',
+                currency: '₹',
+                imageUrl: '/image/p9.jpg',
+            },
+        ],
+    },  
+      {
+        id: 6,
+        subheading: 'Micro Automated Teller Machine',
+        heading:"Chhoti Machine, Badi Banking Suvidha!",
+        centerImage: '/banner/c5.png',
+        bgImage: '/banner/b5.png',
+       
+        cta: {
+            title: 'Safe & Secure',
+            description: 'Your money is protected with industry-standard security measures.',
+        },
+        reviewers: [
+         { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
+            { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
+            { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
+            { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
+        ],
+        reviewData: {
+            rating: 4.8,
+            maxRating: 5,
+            text: 'I feel confident sending money here!',
+        },
+        activities: [
+            {
+                id: 3,
+                name: 'Bhupendra',
+                date: '23 Jun 2025 - 4.43 PM',
+                amount: '700',
+                currency: '₹',
+                imageUrl: '/image/p7.jpg',
+            }, {
+                id: 4,
+                name: 'Suresh',
+                date: '3 Jul 2025 - 6.17 PM',
+                amount: '5500',
+                currency: '₹',
+                imageUrl: '/image/p8.jpg',
+            }, {
+                id: 5,
+                name: 'Shankar',
+                date: '19 Sept 2025 - 12.56 PM',
+                amount: '1,800',
+                currency: '₹',
+                imageUrl: '/image/p9.jpg',
+            },
+        ],
+    },   
+     {
+        id: 7,
+        subheading: 'Micro Automated Teller Machine',
+        heading:"Chhoti Machine, Badi Banking Suvidha!",
+        centerImage: '/banner/c6.png',
+        bgImage: '/banner/b6.png',
+       
+        cta: {
+            title: 'Safe & Secure',
+            description: 'Your money is protected with industry-standard security measures.',
+        },
+        reviewers: [
+         { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
+            { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
+            { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
+            { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
+        ],
+        reviewData: {
+            rating: 4.8,
+            maxRating: 5,
+            text: 'I feel confident sending money here!',
+        },
+        activities: [
+            {
+                id: 3,
+                name: 'Bhupendra',
+                date: '23 Jun 2025 - 4.43 PM',
+                amount: '700',
+                currency: '₹',
+                imageUrl: '/image/p7.jpg',
+            }, {
+                id: 4,
+                name: 'Suresh',
+                date: '3 Jul 2025 - 6.17 PM',
+                amount: '5500',
+                currency: '₹',
+                imageUrl: '/image/p8.jpg',
+            }, {
+                id: 5,
+                name: 'Shankar',
+                date: '19 Sept 2025 - 12.56 PM',
+                amount: '1,800',
+                currency: '₹',
+                imageUrl: '/image/p9.jpg',
+            },
+        ],
+    },  
+      {
+        id: 8,
+        subheading: 'Micro Automated Teller Machine',
+        heading:"Chhoti Machine, Badi Banking Suvidha!",
+        centerImage: '/banner/c7.png',
+        bgImage: '/banner/b7.png',
+       position:"top-10 md:top-0" ,
+        cta: {
+            title: 'Safe & Secure',
+            description: 'Your money is protected with industry-standard security measures.',
+        },
+        reviewers: [
+         { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
+            { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
+            { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
+            { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
+        ],
+        reviewData: {
+            rating: 4.8,
+            maxRating: 5,
+            text: 'I feel confident sending money here!',
+        },
+        activities: [
+            {
+                id: 3,
+                name: 'Bhupendra',
+                date: '23 Jun 2025 - 4.43 PM',
+                amount: '700',
+                currency: '₹',
+                imageUrl: '/image/p7.jpg',
+            }, {
+                id: 4,
+                name: 'Suresh',
+                date: '3 Jul 2025 - 6.17 PM',
+                amount: '5500',
+                currency: '₹',
+                imageUrl: '/image/p8.jpg',
+            }, {
+                id: 5,
+                name: 'Shankar',
+                date: '19 Sept 2025 - 12.56 PM',
+                amount: '1,800',
+                currency: '₹',
+                imageUrl: '/image/p9.jpg',
+            },
+        ],
+    },
 ];
 
 const Banner = () => {
@@ -249,17 +440,24 @@ const Banner = () => {
                                     </div>
 
 
-                                    <div className="w-full md:w-1/2 lg:w-1/3  flex justify-center items-end">
+                                    <div className="w-full md:w-1/2 lg:w-1/3 relative h-100 mt-5 ">
                                         {slide.centerImage && (
-                                            <Image
-                                                src={slide.centerImage}
-                                                height={500}
-                                                width={500}
-                                                alt="center image"
-                                                className={`md:pt-4 pt-16 object-cover 
-                                                ${slide.id === 3 ? "scale-105" : ""} 
-                                                ${slide.id === 4 ? "md:pe-5" : ""}`}
-                                            />
+                                          <Image
+  src={slide.centerImage}
+  height={400}
+  width={400}
+  alt="center image"
+  className={`
+    absolute 
+    left-1/2 transform -translate-x-1/2 
+    md:left-0 md:translate-x-0
+    ${slide.position} 
+    ${slide.id === 8 ? "scale-115 md:scale-120" : ""} 
+    ${slide.id === 1 ? "scale-90 md:scale-75 pb-10" : ""} 
+    ${slide.id === 6 ? "md:scale-90" : ""} 
+  `}
+/>
+
 
                                         )}
                                     </div>

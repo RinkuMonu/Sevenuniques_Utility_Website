@@ -47,7 +47,7 @@ const TestimonialSlider = () => {
       <div className="flex flex-col md:flex-row max-w-7xl mx-auto">
         {/* Left Image Panel */}
         <div className="hidden md:block w-full md:w-1/2 lg:w-1/2 mt-8 md:mt-0 relative">
-          <Image src="/home/homefarmer.png" width={850} height={535} alt="Happy" className="rounded-lg md:absolute bottom-0 -left-20" style={{width:"850px", height:"527px"}} />
+          <Image src="/home/homefarmer.png" width={850} height={535} alt="Happy" className="rounded-lg md:absolute bottom-0 -left-20" style={{ width: "850px", height: "527px" }} />
         </div>
 
         {/* Right Slider Panel */}
@@ -79,7 +79,7 @@ const TestimonialSlider = () => {
               };
 
               return (
-                <div key={testimonial.id} className="absolute top-0 w-full max-w-md transition-all duration-500 ease-in-out pt-10 px-4 sm:px-2" style={getStyle()}>
+                <div key={testimonial.id} className="absolute top-0 w-full max-w-md transition-all duration-500 ease-in-out lg:pt-10 px-4 sm:px-2" style={getStyle()}>
                   <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 pt-16 relative">
                     {/* <img src={testimonial.avatar} alt={testimonial.name} className="w-16 h-16 sm:w-20 sm:h-20 rounded-full absolute -top-10 left-1/2 -translate-x-1/2" /> */}
                     <div className="text-center">

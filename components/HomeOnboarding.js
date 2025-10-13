@@ -67,7 +67,7 @@ const HomeOnboarding = () => {
 
     return (
         <div className="py-10">
-            <div className="max-w-7xl mx-auto px-4 md:px-0">
+            <div className="max-w-7xl mx-auto px-4 ">
 
                 {/* Header Text Section */}
                 <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase text-center">PRODUCT & ONBOARDING</p>
