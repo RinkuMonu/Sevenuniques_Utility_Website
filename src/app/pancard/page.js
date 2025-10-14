@@ -72,12 +72,11 @@ function page() {
                   ))}
                 </div>
               </div>
-
               <div className="hidden md:block relative h-[200px] mt-10 md:mt-0 ">
                 <div
                   className=" lg:absolute bottom-0 right-0 lg:w-[700px] lg:h-[400px] z-20  "
-                  style={{ overflow: "hidden" }}
-                >
+                  style={{ overflow: "hidden" }} >
+
                   <Image
                     src={"/pan/pan2.png"}
                     alt="loan-section"
@@ -91,19 +90,17 @@ function page() {
           </div>
         </div>
       </section>
-
       <OnboardingProcess />
       <BenefitsSection2 />
       {/* <VerticalTimeline /> */}
       <section className="pt-24">
         <PancardFeatures />
       </section>
-
       <div>
         {info.map((item, index) => (
           <div
             key={index}
-            className={`bg-[#E6F6FE] rounded-2xl p-5 lg:p-16 md:pl-16 max-w-6xl my-10  ${
+            className={`bg-[#E6F6FE] rounded-2xl py-5 px-14 lg:p-16 md:pl-16 max-w-6xl my-10  ${
               index % 2 === 0 ? "" : "ms-auto"
             }`}
           >
@@ -114,19 +111,17 @@ function page() {
           </div>
         ))}
       </div>
+        <PancardApplyOnline />
       <section className="px-10">
         <PancardAllotment />
       </section>
       <section className="p-10">
         <PancardAllotment2 />
       </section>
+       <PanMoreinfo />
       <PartnersSection />
-
       <TestimonialSlider />
-      <PancardApplyOnline />
-
-      <ContactBanner />
-      <PanMoreinfo />
+<ContactBanner />
     </>
   );
 }
