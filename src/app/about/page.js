@@ -48,7 +48,7 @@ function page() {
         heading: 'Aapka Vishwas ,Hamari Pehchaan',
         description: 'Send money quickly and securely to your loved ones anytime, anywhere. Experience fast, reliable, and hassle-free transfers.',
         bgImage: '/about/aboutbg.png',
-        centerImage: '/about/about1.png',
+        // centerImage: '/about/about1.png',
     }
     const LetterCircle = ({ letter, index }) => (
         <div className="flex  items-center justify-center rounded-full  lg:p-1 lg:h-12 lg:w-12" key={index}>
@@ -74,7 +74,7 @@ function page() {
     return (
         <>
             <ServiceBanner data={data} />
-            <section>
+            {/* <section>
                 <div className={`relative py-5 lg:pb-0 lg:pt-20 overflow-y-visible`} style={{ backgroundColor: "#0188D5" }}>
                     <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
                         <div className="grid grid-cols-1 md:grid-cols-2 ">
@@ -105,7 +105,7 @@ function page() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
                  <ServicesSection3 data={aepsData} />
             {/* <AboutService /> */}
             <Expertise/>

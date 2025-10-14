@@ -102,7 +102,7 @@ function page() {
             <section className="bg-white pt-16">
                 <div className="max-w-7xl mx-auto px-4 ">
                     <h2 className="text-2xl md:text-4xl font-bold text-[#0C3D4C] mb-10">
-                        Hamare Trusted Prepaid Partners
+                        Our Trusted Prepaid Partners
                     </h2>
                     <div className="flex flex-wrap gap-6 md:gap-12">
                         {logos.map((partner) => (

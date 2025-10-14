@@ -48,7 +48,7 @@ export default function AboutSection({ aboutData }) {
 
             {/* Right Content - Image and Features */}
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl lg:h-[40rem]">
                 <Image
                   src={aboutData.image.src}
                   alt={aboutData.image.alt}

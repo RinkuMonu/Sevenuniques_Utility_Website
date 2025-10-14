@@ -112,7 +112,7 @@ const EligibilityAeps = ({ data }) => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-16 items-center mt-10">
           {/* LEFT CONTENT */}
           <div className="relative">
-            <span className="absolute left-[4.5px] top-0 bottom-0 w-0.5 bg-sky-100" />
+            {/* <span className="absolute left-[4.5px] top-0 bottom-0 w-0.5 bg-sky-100" /> */}
             <ul className="space-y-10 relative">
               {data.retailer.features.slice(0, 2).map((feature, i) => (
                 <FeatureListItem key={i}>{feature}</FeatureListItem>
@@ -133,7 +133,7 @@ const EligibilityAeps = ({ data }) => {
 
           {/* RIGHT CONTENT */}
           <div className="relative">
-            <span className="absolute left-[4.5px] top-0 bottom-0 w-0.5 bg-sky-100" />
+            {/* <span className="absolute left-[4.5px] top-0 bottom-0 w-0.5 bg-sky-100" /> */}
             <ul className="space-y-10 relative">
               {data.retailer.features.slice(2).map((feature, i) => (
                 <FeatureListItem key={i}>{feature}</FeatureListItem>
@@ -153,7 +153,7 @@ const EligibilityAeps = ({ data }) => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-16 items-center mt-10">
           {/* LEFT CONTENT */}
           <div className="relative">
-            <span className="absolute left-[4.5px] top-0 bottom-0 w-0.5 bg-sky-100" />
+            {/* <span className="absolute left-[4.5px] top-0 bottom-0 w-0.5 bg-sky-100" /> */}
             <ul className="space-y-10 relative">
               {data.distributor.features.slice(0, 2).map((feature, i) => (
                 <FeatureListItem key={i}>{feature}</FeatureListItem>
@@ -165,7 +165,7 @@ const EligibilityAeps = ({ data }) => {
 
           {/* center CONTENT */}
           <div className="relative">
-            <span className="absolute left-[4.5px] top-0 bottom-0 w-0.5 bg-sky-100" />
+            {/* <span className="absolute left-[4.5px] top-0 bottom-0 w-0.5 bg-sky-100" /> */}
             <ul className="space-y-10 relative">
               {data.distributor.features.slice(2).map((feature, i) => (
                 <FeatureListItem key={i}>{feature}</FeatureListItem>

@@ -11,28 +11,28 @@ const cardData = [
     title: "Bike Insurance",
     subheading:"Ride Safe, Stay Protected",
     buttonText: "Get covered now",
-    link:"/coming-soon"
+    link:"/insurance/bike-insurance"
   },
   {
     id: 2,
     title: "Car Insurance",
     buttonText: "Protect my taxi",
      subheading:"Your car , our car.",
-     link:"/coming-soon"
+     link:"/insurance/car-insurance"
   },
   {
     id: 3,
     title: "Taxi Car",
     subheading:"Protect Your Business Rides",
     buttonText: "Insure my car",
-     link:"/coming-soon"
+     link:"/insurance/commercial-insurance"
   },
   {
     id: 4,
     title: "Commercial Vehicle",
     subheading:"Keep Your Business Moving",
     buttonText: "Insure my bike",
-     link:"/coming-soon"
+     link:"/insurance/texi-insurance"
   },
 ];
 

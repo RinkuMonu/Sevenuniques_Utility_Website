@@ -14,7 +14,7 @@ export default function PanMoreinfo() {
     ];
     return (
         <>
-            <section className="relative bg-white py-12 px-6 md:px-16 overflow-hidden">
+            <section className="relative bg-white py-12 md:mb-15 px-6 md:px-16 overflow-hidden">
                 {/* Decorative arcs */}
                 <div className="absolute right-0 bottom-0 hidden md:block opacity-40">
                     <svg width="220" height="220" viewBox="0 0 220 220">

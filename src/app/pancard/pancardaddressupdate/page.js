@@ -6,37 +6,46 @@ import Link from "next/link";
 const page = () => {
   const cards = [
     {
-      title: "Apply for a New PAN Card",
-      desc: "Submit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Online Address Update PAN Card - Easy and Safe",
+      desc: "Make changes to your PAN card address in the most convenient way. Send documents, authenticate information, and get your fixed PAN without any trouble.",
     },
     {
-      title: "Fill Application Form",
-      desc: "Provide your full name, date of birth, and contact information in the PAN form accurately to avoid delays. Ensure all information matches your supporting documentsSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "PAN Card Address Update Online",
+      desc: "The update of the PAN card address is done online. Change your PAN card address conveniently through our safe web-based system. This is a procedure that enables individuals and HUFs to rectify or alter their address of communication in a short time without having to visit offices. Make sure that everything is in line with official documents so that your PAN card update request can be approved and processed on time.",
     },
     {
-      title: "Upload Required Documents",
-      desc: "Attach valid proof of identity, address, and a passport-size photo as per government guidelines. Make sure the uploaded files are clear and legibleSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Ensure the Form is Filled Accurately",
+      desc: "Complete name, PAN number, date of birth, and the new address in the PAN update form are to be entered correctly. Ensure that the information is a match with your identity proof and address documents. Correct submission will make it easier to receive approval sooner, avoid delays, and make sure that your updated PAN card will show the correct address according to the government registry.",
     },
     {
-      title: "Make Payment Securely",
-      desc: "Pay your PAN processing fee online through a secure payment gateway using UPI, debit/credit card, or net bankingSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Post Proof Documents",
+      desc: "Include scanned copies of valid address documents as proof of Aadhaar cards, passports, driving licenses, OCI/PIO cards, or other legitimately accepted proofs. Make sure that uploaded files are clear and legible and that they correspond with a new address given. By means of proper documentation, your PAN card address update application can be handled effectively and without being rejected.",
     },
     {
-      title: "Application Processing",
-      desc: "Once submitted, your PAN application will be reviewed and processed within 10–15 working days. You’ll receive status updates by email or SMSSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Secure Payment",
+      desc: "The processing fee can be paid online either through UPI, debit/credit card, or net banking to update your PAN card address. The online payment is secure, which means that your application is captured instantly and delays by manual payments are eliminated. Clear fees can be used to enjoy a hassle-free moment in updating your PAN card address.",
     },
     {
-      title: "Required Documents",
-      desc: "Documents like Aadhaar Card, Passport, or Driving License are accepted as identity and address proof. Keep digital copies ready before applyingSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Processing PAN Address Update",
+      desc: "After this, your update on the PAN address will be checked and done within 10-15 working days. Status updates will be sent to you via email or SMS so that you can monitor your application without any trouble. Immediate processing can be done to make sure that your PAN card is updated with the new address without interrupting the current banking or taxation processes.",
     },
     {
-      title: "Processing Fee",
-      desc: "The application fee for a new PAN card is ₹107 (approx.). Additional convenience charges may apply depending on your chosen payment methodSubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Documents Required",
+      desc: "Prepare electronic copies of documents. The acceptable proofs are Aadhaar Card, Passport, Driving License, OCI/PIO card, or any other governmentally approved documents indicating your new address. By transferring valid and matching documents, you will minimize the errors during the verification process and make sure that your PAN card address is changed without any needless delays.",
     },
     {
-      title: "Need Assistance?",
-      desc: "If you face any issues during your application, feel free to reach out to our support team anytime. We’re here to help you complete the process easilySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securelySubmit your application easily through our online system. Ensure all personal details are accurate before submission. Our process ensures you get your PAN quickly and securely.",
+      title: "Fees and Charges",
+      desc: "The convenience transaction fee to update your PAN card address is approx and any other convenience fee based on your payment mode. There is an immediately recognized application when you use online payment and easy verification of your application, and therefore, updating your address on your PAN card is a fast and secure process.",
     },
+    {
+      title: "PAN Address Update Assistance",
+      desc: "In case you have any problems with updating your PAN card address, we have a support team that can assist you. Whether it is about filling out the form and uploading documents and safe payment, we will guide you so that your application to update the address on the PAN card is done properly and effectively.",
+    },
+    {
+      title: "Update PAN Now",
+      desc: "You can now update your PAN card address online and be in receipt of the updated card in a very short time and at your communication address with utmost security. Our web-based solution is convenient in all the ways of collecting the form up to checking the documents; it is hassle-free and reliable.",
+    },
+    // Original step-wise cards can be appended here if needed
   ];
 
   return (
@@ -45,15 +54,13 @@ const page = () => {
         {/* Page Header */}
         <div className="text-center mb-14">
           <h1 className="text-4xl font-bold text-gray-900 mb-3">
-            PAN Card Address Update
+          PAN Card Address Update
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Apply for your PAN card effortlessly with our simplified online
-            process. Each step below helps you understand the procedure better.
+          Apply for your PAN card effortlessly with our simplified online process. Each step below helps you understand the procedure better.
           </p>
         </div>
-
-        {/* Cards */}
+        {/* Cards rendered via map */}
         <div className="space-y-8">
           {cards.map((card, i) => (
             <div
@@ -91,7 +98,7 @@ const page = () => {
             href="/contact"
             className="inline-block bg-[#206077] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#4788a0] transition"
           >
-            Apply Now
+            Update Pan Now
           </Link>
         </div>
       </div>
