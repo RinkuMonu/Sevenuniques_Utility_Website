@@ -75,7 +75,19 @@ const aepsData2 = {
     <>
        <ServiceBanner data={data} />
          <ServicesSection2 section2data={section2data} />
+
+
+        <section className='pt-10'>
+           <div className="text-center pt-6">
+      <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase">
+        WHAT IS
+      </p>
+      <h3 className="mt-2 text-4xl font-bold text-[#175369] pb-10">
+       Aadhaar Enabled Payment System
+      </h3>
+      </div>
          <ServicesSection3 data={aepsData}/>
+        </section>
          <AepsService/>
          <HowItWorks1/>
          <ComplianceSection/>
