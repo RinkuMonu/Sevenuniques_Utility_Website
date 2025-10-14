@@ -85,7 +85,7 @@ function Page() {
         },
         {
             id: "hotels",
-            label: "Hotals",
+            label: "Hotels",
             icon: "/booking/hotel.png",
             data: {
                 sliderImages: [
@@ -194,28 +194,32 @@ function Page() {
                     imageUrl: "/booking/train1.png",
                 },
                 info: [
-                    { title: "Fast and Convenient Train ticket booking.", description:
-                        [
-                            "Book tickets instantly with SevenUnique. Whether it is a regional trip or long-distance travel, book your seat within a few clicks.",
-                            "Compare trains, select the most suitable coach, and receive instant confirmation. Book smoothly, safely, and conveniently anywhere around the clock.",
-                            "Flexible travel dates, 24/7 customer support, plan your trip without any stress, and travel with confidence."
-                        ]
-                        },
-                    { title: "Fast & Reliable Train Tickets", 
+                    {
+                        title: "Fast and Convenient Train ticket booking.", description:
+                            [
+                                "Book tickets instantly with SevenUnique. Whether it is a regional trip or long-distance travel, book your seat within a few clicks.",
+                                "Compare trains, select the most suitable coach, and receive instant confirmation. Book smoothly, safely, and conveniently anywhere around the clock.",
+                                "Flexible travel dates, 24/7 customer support, plan your trip without any stress, and travel with confidence."
+                            ]
+                    },
+                    {
+                        title: "Fast & Reliable Train Tickets",
                         description: [
                             "Make your train reservations fast with SevenUnique. Select among all the existing trains, classes, and times that will best fit your plans.",
                             "Get real-time seat availability, and bookings are confirmed. The waiting time is now over, and there is no doubt that your travel is booked in a few clicks.",
                             "Flexible cancellations, best fare offers, and 24/7 customer service. Always travel with confidence, stress-free, and smart enough whenever you get to the tracks."
                         ]
 
-                     },
-                    { title: "Fast & Easy Train Booking", 
-                        description:[
-                             "SevenUnique allows you to book your train tickets in a few clicks. Whether it is a local train or a long-distance ride, reserve your seat immediately.",
-                             "Compare trains, choose a coach of your choice and timing, and get immediate confirmation to have a hassle-free ride",
-                             "Bring your own dates, cancel without any difficulties, and with 24/7 customer service, you can plan your trip and travel without any worries.",
-                            
-                        ]},
+                    },
+                    {
+                        title: "Fast & Easy Train Booking",
+                        description: [
+                            "SevenUnique allows you to book your train tickets in a few clicks. Whether it is a local train or a long-distance ride, reserve your seat immediately.",
+                            "Compare trains, choose a coach of your choice and timing, and get immediate confirmation to have a hassle-free ride",
+                            "Bring your own dates, cancel without any difficulties, and with 24/7 customer service, you can plan your trip and travel without any worries.",
+
+                        ]
+                    },
                 ],
             },
         },
@@ -261,19 +265,23 @@ function Page() {
                 },
                 info: [
                     { title: "The Right Price, Always Here For You", description: "Compare buses, get offered the greatest price, and count on us 24/7 for customer care. Enjoy the freedom of travel knowing we are there to support you anytime." },
-                    { title: "Fast & Hassle-Free Bus Booking", 
+                    {
+                        title: "Fast & Hassle-Free Bus Booking",
                         description: [
                             "SevenUnique provides the quickest experience with your bus booking. Reserve your bus tickets quickly and easily. If you are booking a local route or intercity travel, your tickets can be bought in 3-clicks or less, and travel without the stress of long wait times.",
                             "Compare buses, select your ideal premium seat and time, and receive immediate confirmation for your bus ticket. Enjoy personalized, convenient bus booking no matter where you go.",
                             "Plan your trip with confidence, and travel easily with flexible cancellations, easy refunds, and 24/7 customer care."
-                        
-                        ]},
-                    { title: "Your Journey, Our Priority",
-                         description: [
+
+                        ]
+                    },
+                    {
+                        title: "Your Journey, Our Priority",
+                        description: [
                             "At any time you travel, SevenUnique is there to get you there. Book your bus ticket now ,so that you can sit back and enjoy the ride, whether it is local or an intercity trip you'll stay relaxed on your journey.",
                             "Choose from several bus companies, select your seat and time of departure, and receive an instant confirmation to help provide you a pleasurable journey.",
                             "Flexible cancellations, secure payment processing, and customer support 24/7, all add to the comfort, peace of mind and stress-free travel that a SevenUnique traveler is accustomed to!"
-                ]},
+                        ]
+                    },
                 ],
             },
         },
@@ -361,7 +369,14 @@ function Page() {
                                 className={`relative flex flex-col items-center transition-transform hover:scale-105 ${activeTab === tab.id ? "text-[#018EDE]" : "text-[#0C3D4C]"}`}
                             >
                                 <div className={`w-12 h-12 md:w-20 md:h-20 flex items-center justify-center rounded-full ${activeTab === tab.id ? "border-2 border-[#018EDE] shadow-md" : "border border-gray-300"}`}>
-                                    <Image src={tab.icon} width={40} height={40} alt={tab.label} className="object-cover" />
+                              <Image
+  src={tab.icon}
+  width={tab.id === "airlines" || tab.id === "buses" ? 64 : 48}
+  height={tab.id === "airlines" || tab.id === "buses" ? 64 : 20}
+  alt={tab.label}
+  className="object-cover"
+/>
+
                                 </div>
                                 {activeTab === tab.id && <span className="absolute -bottom-3 w-12 h-[3px] bg-[#018EDE] rounded-full"></span>}
                                 <p className="mt-3 text-sm font-medium">{tab.label}</p>

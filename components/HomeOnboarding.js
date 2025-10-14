@@ -11,7 +11,7 @@ import Slider from 'react-slick';
 const onboardingData = {
         User: {
         image:[
-    '/banner/bcenter1.png', '/banner/bcenter2.png', '/banner/bcenter3.png', '/banner/bcenter4.png',
+    '/home/user1.png', '/home/user2.png', '/home/user3.png', '/home/user4.png',
 ],
         steps: [
             { id: 1, title: 'Download App', description: 'Install the Sevenunique app in a few seconds in either the Play Store or the App Store.' },
@@ -22,7 +22,7 @@ const onboardingData = {
     },
         Retailer: {
         image:[
-    '/banner/bcenter1.png', '/banner/bcenter2.png', '/banner/bcenter3.png', '/banner/bcenter4.png',
+    '/home/ret1.png', '/home/ret2.png', '/home/ret3.png', '/home/ret4.png',
 ],
         steps: [
             { id: 1, title: 'Easy Sign-up', description: 'Join our network in a very simple and smooth mobile-friendly system.' },
@@ -33,7 +33,7 @@ const onboardingData = {
     },
     Distributor: {
         image: [
-    '/banner/bcenter1.png', '/banner/bcenter2.png', '/banner/bcenter3.png', '/banner/bcenter4.png',
+    '/home/dis1.png', '/home/dis2.png', '/home/dis3.png', '/home/dis4.png',
 ],
         steps: [
             { id: 1, title: 'Register Online', description: 'Sign up in a few minutes through our easy-to-use and safe distributor portal.' },
@@ -62,12 +62,12 @@ const StepCard = ({ number, title, description }) => (
 );
 
 const HomeOnboarding = () => {
-    const [activeTab, setActiveTab] = useState('Distributor');
+    const [activeTab, setActiveTab] = useState('User');
     const activeData = onboardingData[activeTab];
 
     return (
         <div className="py-10">
-            <div className="max-w-7xl mx-auto px-4 md:px-0">
+            <div className="max-w-7xl mx-auto px-4 ">
 
                 {/* Header Text Section */}
                 <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase text-center">PRODUCT & ONBOARDING</p>

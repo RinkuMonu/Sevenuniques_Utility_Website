@@ -14,6 +14,8 @@ import PancardAllotment from "../../../components/PancardAllotment";
 import PancardAllotment2 from "../../../components/PancardAllotment2";
 import PanMoreinfo from "../../../components/PanMoreinfo";
 
+
+
 function page() {
   const data = {
     id: 1,

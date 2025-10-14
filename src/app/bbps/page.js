@@ -12,7 +12,7 @@ function page() {
     const data =
     {
         id: 1,
-        subheading: 'DMT',
+        subheading: 'BBPS',
         heading: 'Ek System, Har Bill Ka Solution',
         description: 'Make all your payments hassle-free using the integrated bill payment system in India. Safe, quick, and hassle-free.',
         bgImage: '/bbps/bbpsbg.png',
