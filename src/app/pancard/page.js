@@ -13,6 +13,9 @@ import PancardApplyOnline from "../../../components/PancardApplyOnline";
 import PancardAllotment from "../../../components/PancardAllotment";
 import PancardAllotment2 from "../../../components/PancardAllotment2";
 import PanMoreinfo from "../../../components/PanMoreinfo";
+import ReprintOfPANCard from "../../../components/ReprintOfPANCard";
+import PanCorrectionCard from "../../../components/PanCorrectionCard";
+import DocumentsRequired2 from "../../../components/DocumentsRequired2";
 
 
 
@@ -120,10 +123,15 @@ function page() {
       <section className="p-10">
         <PancardAllotment2 />
       </section>
-      <PartnersSection />
+   
+            <PancardApplyOnline />
+            <DocumentsRequired2/>
+      <ReprintOfPANCard/>
+      <PanCorrectionCard/>
+
+   <PartnersSection />
 
       <TestimonialSlider />
-      <PancardApplyOnline />
 
       <ContactBanner />
       <PanMoreinfo />

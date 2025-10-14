@@ -16,7 +16,7 @@ import {
 import { MdIntegrationInstructions } from "react-icons/md";
 import Link from "next/link";
 
-export default function ReprintOfPANCard() {
+export default function PanCorrectionCard() {
   const features = [
     {
       icon: <Clock className="h-6 w-6 text-[#0C3D4C]" />,
@@ -50,7 +50,7 @@ export default function ReprintOfPANCard() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto py-20 px-6">
+    <section className="max-w-7xl mx-auto py-20 px-4 lg:px-0">
       {/* Heading */}
       <div className="text-center mb-10">
         <h3 className="text-3xl md:text-4xl font-bold text-[#0C3D4C] leading-snug">
