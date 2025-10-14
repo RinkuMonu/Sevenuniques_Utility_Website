@@ -2,40 +2,46 @@
 
 import Guide from "../../../../components/Pancard/Guide";
 
-
 export default function Guidelines() {
 
-const guidelinesData = [
-  {
-    title: "Follow Community Rules",
-    desc: "Always adhere to the community rules and maintain a positive, respectful attitude.",
-  },
-  {
-    title: "Respect Others",
-    desc: "Treat all users kindly and respect their opinions, even when you disagree.",
-  },
-  {
-    title: "Be Clear & Concise",
-    desc: "Use simple and direct language to make your messages easy to understand.",
-  },
-  {
-    title: "Protect Privacy",
-    desc: "Never share personal or sensitive information in public discussions.",
-  },
-  {
-    title: "Report Responsibly",
-    desc: "If you encounter inappropriate content, report it calmly and responsibly.",
-  },
-  {
-    title: "Stay On Topic",
-    desc: "Keep your posts and replies relevant to the topic being discussed.",
-  },
-];
+  const guidelinesData = [
+    {
+      title: "Online PAN Application Steps",
+      desc: `At Sevenunique Tech Solutions Pvt. Ltd., we provide a digital PAN card service for Indian citizens. 
+      Foreign nationals of Indian origin can also use this service. The first step is to pick Form 49A, 
+      select the appropriate category, and fill in general information. A token number is created and shown 
+      on screen once the form is submitted. This token is emailed as well, allowing applicants to save and 
+      edit the form before final submission. After completing all information, the system authenticates it. 
+      Any errors can be rectified before submission. Once successfully validated, a confirmation screen shows 
+      all entered information for review.`
+    },
+    {
+      title: "Acknowledgment and Verification",
+      desc: `After submission, an acknowledgement receipt is generated and emailed. Download, print, and sign 
+      the acknowledgment as instructed. The signature or left-hand thumb impression must partially cover the 
+      photograph. For non-individual applicants (companies, firms, trusts), the authorized signatory (director, 
+      partner, trustee, or karta) should sign. Thumb impressions must be verified by a notary, magistrate, or 
+      gazetted officer with an official seal and stamp.`
+    },
+    {
+      title: "Submission of Documents",
+      desc: `For physical submission, attach the signed acknowledgment and documents such as proof of identity, 
+      proof of address, and date of birth to our office. For paperless PAN online services (e-KYC, e-Sign, 
+      DSC-based applications), no physical copies are needed. Quoting an Aadhaar number in Form 49A is mandatory, 
+      and a copy of the Aadhaar allotment letter must be attached. Documents should reach us within 15 days. 
+      Customers can monitor status and download their e-PAN after approval.`
+    },
+    {
+      title: "Contact Us",
+      desc: `For assistance, contact Sevenunique Tech Solutions Pvt. Ltd. Head office: Plot No 97, Dakshinpuri-I, 
+      Shrikishan, Sanganer, Jagatpura, Jaipur, Rajasthan, India-302017. Email: support@7unique.in, info@7unique.in. 
+      Call: 0141-4511098. We provide reliable and professional online PAN card services.`
+    },
+  ];
+
   return (
     <>
-  <Guide guidelines={guidelinesData}/>
-
-
+      <Guide guidelines={guidelinesData} />
     </>
   );
 }
