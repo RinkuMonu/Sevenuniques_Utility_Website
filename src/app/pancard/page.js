@@ -93,9 +93,7 @@ function page() {
       <OnboardingProcess />
       <BenefitsSection2 />
       {/* <VerticalTimeline /> */}
-      <section className="pt-24">
         <PancardFeatures />
-      </section>
       <div>
         {info.map((item, index) => (
           <div

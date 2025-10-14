@@ -43,7 +43,7 @@ const App = ({headers , rows}) => {
 
 
     return (
-        <div className="">
+        <div className="mt-12 border-b-2 border-gray-200 pb-10">
             <div className="w-full max-w-7xl  mx-auto">
                 <header className="text-center mb-8">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#0d3b4f] mb-4 text-balance">
@@ -58,7 +58,7 @@ const App = ({headers , rows}) => {
                         <div className="overflow-x-auto w-full">
                             <div className="min-w-[900px]">
                                 <table className="w-full text-sm text-left">
-                                    <thead className="bg-[#0099ff] border-b border-[#0099ff] text-md text-white font-semibold">
+                                    <thead className="bg-[#0c3d4c] border-b border-[#0c3d4c] text-md text-white font-semibold">
                                         <tr>
                                             {headers.map((header) => (
                                                 <th key={header.key} scope="col" className="px-6 py-4">

@@ -15,7 +15,7 @@ const ServicesSection3 = ({ data }) => {
   if (!data) return null;
 
   return (
-    <section className="bg-white py-4 md:pt-6 md:pb-16">
+    <section className="bg-white py-4 md:pt-6 md:pb-16 mt-10">
 <div className="text-center py-6">
       <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase">
         WHAT IS
@@ -41,7 +41,7 @@ const ServicesSection3 = ({ data }) => {
             {data.description}
           </p>
 
-          <span className="absolute left-[4.5px] top-0 bottom-0 w-0.5 bg-sky-100" />
+          {/* <span className="absolute left-[4.5px] top-0 bottom-0 w-0.5 bg-sky-100" /> */}
 
           <ul className="space-y-5 relative">
             {data.features.map((feature, index) => (

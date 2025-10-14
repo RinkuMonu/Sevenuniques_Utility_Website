@@ -18,13 +18,13 @@ export default function Header() {
     { name: "About", href: "/about" },
     { name: "Services", href: "/services", dropdown: true },
     { name: "AEPS", href: "/aeps" },
-    { name: "Bill Payments", href: "/bbps" },
+    { name: "BBPS", href: "/bbps" },
     { name: "Loan", href: "/loan", dropdown: true },
     { name: "Contact us", href: "/contact" },
   ];
 
   const servicesDropdown = [
-    { name: "Recharge", href: "/recharge" },
+    { name: "Recharge & Bill Payments", href: "/bbps" },
     { name: "Insurance", href: "/insurance" },
     { name: "Booking", href: "/booking" },
     { name: "Credit Card", href: "/credit-card" },
@@ -119,20 +119,30 @@ export default function Header() {
 
                 {/* Dropdown (desktop) */}
                 {link.dropdown && (
-                  <div className="absolute top-6 left-0 bg-white shadow-lg rounded-lg py-3 w-56 border border-gray-100 scale-95 opacity-0 invisible group-hover:scale-100 group-hover:opacity-100 group-hover:visible transition-all duration-300 origin-top">
-                    {(link.name === "Services" ? servicesDropdown : loanDropdown).map(
-                      (item, i) => (
+                  <div className="absolute top-6 left-0 bg-white shadow-xl rounded-xl py-3 w-56 border border-gray-100 transform scale-95 opacity-0 invisible group-hover:scale-100 group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out origin-top">
+                    {link.name.toLowerCase() === "services" &&
+                      servicesDropdown.map((item, i) => (
                         <Link
                           key={i}
                           href={item.href}
-                          className="flex items-center gap-3 px-4 py-2 text-gray-700 hover:bg-[#0C3D4C]/10 hover:text-[#0C3D4C] transition rounded-md"
+                          className="flex items-center gap-3 px-4 py-2.5 text-gray-700 hover:bg-gradient-to-r hover:from-teal-50 hover:to-teal-100 hover:text-teal-700 transition rounded-lg"
                         >
-                          {/* Dot */}
-                          <span className="w-2 h-2 bg-[#0C3D4C] rounded-full"></span>
+                          <span className="w-2 h-2 bg-teal-600 rounded-full"></span>
                           {item.name}
                         </Link>
-                      )
-                    )}
+                      ))}
+
+                    {link.name.toLowerCase() === "loan" &&
+                      loanDropdown.map((item, i) => (
+                        <Link
+                          key={i}
+                          href={item.href}
+                          className="flex items-center gap-3 px-4 py-2.5 text-gray-700 hover:bg-gradient-to-r hover:from-teal-50 hover:to-teal-100 hover:text-teal-700 transition rounded-lg"
+                        >
+                          <span className="w-2 h-2 bg-teal-600 rounded-full"></span>
+                          {item.name}
+                        </Link>
+                      ))}
                   </div>
                 )}
               </div>

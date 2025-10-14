@@ -1,9 +1,8 @@
-"use client"
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { useState } from 'react';
-import { IoMdDownload } from 'react-icons/io';
-
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
+import { IoMdDownload } from "react-icons/io";
 import { IoCallOutline } from "react-icons/io5";
 
 const BenefitsSection2 = () => {
@@ -22,90 +21,93 @@ const BenefitsSection2 = () => {
     };
 
     const isValidIndianNumber = /^[6-9]\d{9}$/.test(mobile);
+
     return (
-        <section className=" px-4 lg:px-0 py-10 relative"
+        <section
+            className="px-4 lg:px-0 py-10 relative"
             style={{
-                background: "linear-gradient(90deg, #01202A 0%, #01202A 25%, #0B4051 50%, #095C8C 75%, #095C8C 100%)"
+                background:
+                    "linear-gradient(90deg, #01202A 0%, #01202A 25%, #0B4051 50%, #095C8C 75%, #095C8C 100%)",
             }}
         >
-            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div className="text-white flex flex-col items-center lg:items-start text-center lg:text-left">
-                    <h3 className="text-2xl md:text-4xl font-bold leading-tight mb-8">
-                     One-Click Signups,  <br /> One Second Later.
+            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                {/* Left Content */}
+                <div className="text-white flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
+                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
+                        One-Click Signups, <br /> One Second Later.
                     </h3>
 
-                    <div className="flex sm:flex-row flex-col space-y-4 mb-8">
+                    <div className="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0">
                         <Link href="/" aria-label="Download on the App Store">
                             <Image
                                 src="/loan/image7.png"
                                 alt="logo-bbps"
-                                width={200}
-                                height={200}
-
+                                width={160}
+                                height={160}
                             />
                         </Link>
                         <Link href="/" aria-label="Get it on Google Play">
                             <Image
                                 src="/loan/image8.png"
                                 alt="logo-bbps"
-                                width={200}
-                                height={200}
-
+                                width={160}
+                                height={160}
                             />
                         </Link>
                     </div>
 
-                    <p className="text-lg text-gray-200 mb-4">
-                        Or Get The Link On Your Phone
-                    </p>
+                    <p className="text-lg text-gray-200">Or Get The Link On Your Phone</p>
 
-                    <div className="flex w-full max-w-sm bg-white p-1 rounded-4xl   items-center">
+                    <div className="flex w-full max-w-sm bg-white p-1 rounded-full items-center">
                         <div className="relative flex-grow">
                             <input
                                 type="tel"
                                 value={mobile}
                                 onChange={handleChange}
                                 placeholder="Enter Mobile Number"
-                                className={`w-full pl-3 md:pl-12 pr-4  rounded-4xl bg-white text-gray-900 placeholder-gray-500 focus:outline-none  ${mobile && !isValidIndianNumber
+                                className={`w-full pl-10 pr-4 py-2 rounded-full bg-white text-gray-900 placeholder-gray-500 focus:outline-none border ${mobile && !isValidIndianNumber
                                         ? "border-red-500"
-                                        : " focus:border-blue-500"
+                                        : "border-gray-300 focus:border-blue-500"
                                     }`}
                             />
-                           
-                            <IoCallOutline className='absolute text-black top-1 left-2.5' />
+                            <IoCallOutline className="absolute text-black top-1/2 left-3 -translate-y-1/2" />
                         </div>
-                        
-                      <Link href="/coming-soon"  className="px-6 py-3 text-white font-semibold rounded-4xl transition-colors" style={{
-                            background: "linear-gradient(90deg,#358EBA  0%, #24576C 100%)"
-                        }}>
-                            Get app
-                        </Link>
 
+                        <Link
+                            href="/coming-soon"
+                            className="px-6 py-2 text-white font-semibold rounded-full transition-colors whitespace-nowrap"
+                            style={{
+                                background: "linear-gradient(90deg,#358EBA 0%, #24576C 100%)",
+                            }}
+                        >
+                            Get App
+                        </Link>
                     </div>
                 </div>
 
+                {/* Right Content */}
+                <div className="relative w-full max-w-md mx-auto">
+                    <Image
+                        src="/image/mobile-qr.png"
+                        width={600}
+                        height={260}
+                        alt="Mobile App Interface"
+                        className="w-full h-auto"
+                    />
 
-                <div className='relative lg:h-[50vh] flex justify-center items-center align-middle '>
-                    <div>
-                        <Image
-                            src="/image/mobile-qr.png"
-                            width={600}
-                            height={260}
-                            alt="Mobile App Interface"
-                            className="h-[80vh] "
-                        />
-
+                    {/* Download button below the image for mobile */}
+                    <div className="mt-4 flex justify-center">
                         <Link
-                             href="/coming-soon"
-                            className="absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2   inline-block rounded-full border border-white p-[2px] z-10"
+                            href="/coming-soon"
+                            className="absolute left-1/2 -translate-x-1/2 inline-block
+                            top-[60%] sm:top-[62%] md:top-[65%] lg:top-[51%]"
                         >
-                            <span className=" px-8 py-3 bg-gradient-to-t from-[#A10000] to-[#F40000] text-xl text-white font-semibold rounded-full inline-flex gap-2">
-                                Download App <IoMdDownload className='text-2xl animate-bounce' />
+                            <span className="px-6 sm:px-4 py-2  bg-gradient-to-t from-[#A10000] to-[#F40000] text-sm sm:text-md md:text-md text-white font-semibold rounded-full inline-flex gap-2">
+                                Download App <IoMdDownload className="text-2xl animate-bounce" />
                             </span>
                         </Link>
 
                     </div>
-
                 </div>
 
             </div>

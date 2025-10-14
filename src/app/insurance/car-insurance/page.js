@@ -209,12 +209,12 @@ const whydata = {
         { key: 'status', label: 'Status' }
     ]
     const rows  = [
-        { id: 1, rep: 'Alex Ray', dealId: 'D-9A3BEE', amount: '$52,500', payout: '$2,625', status: 'Paid' },
-        { id: 2, rep: 'Jordan Smith', dealId: 'D-8C1FDD', amount: '$85,000', payout: '$4,250', status: 'Paid' },
-        { id: 3, rep: 'Casey Lee', dealId: 'D-7G2HFF', amount: '$31,200', payout: '$1,560', status: 'Pending' },
-        { id: 4, rep: 'Morgan Taylor', dealId: 'D-6K5LMM', amount: '$120,750', payout: '$6,037', status: 'Unpaid' },
-        { id: 5, rep: 'Jamie Brown', dealId: 'D-5N4PQR', amount: '$12,300', payout: '$615', status: 'Paid' },
-    ]
+      { id: 1, rep: 'Raghu Sharma', dealId: 'D-9A3BEE', amount: '₹1000', payout: '₹2000', status: 'Paid' },
+      { id: 2, rep: 'Ramkesh Meena', dealId: 'D-8C1FDD', amount: '₹720', payout: '₹1400', status: 'Paid' },
+      { id: 3, rep: 'Kelash Singh', dealId: 'D-7G2HFF', amount: '₹680', payout: '₹2200', status: 'Pending' },
+      { id: 4, rep: 'Ramesh Jaat', dealId: 'D-6K5LMM', amount: '₹900', payout: '₹1300', status: 'Unpaid' },
+      { id: 5, rep: 'Rajesh Yadav', dealId: 'D-5N4PQR', amount: '₹1370', payout: '₹615', status: 'Paid' },
+  ]
 
     return (
         <>

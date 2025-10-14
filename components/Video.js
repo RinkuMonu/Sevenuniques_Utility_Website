@@ -81,10 +81,10 @@ const Video = () => {
               <div
                 key={card.id}
                 className={`
-    relative rounded-3xl overflow-hidden
-    transition-all duration-1000 ease-[cubic-bezier(0.25,0.8,0.25,1)] 
-    ${isActive ? 'md:flex-[4] shape1' : 'flex-[1] cursor-pointer '}
-  `}
+                  relative rounded-3xl overflow-hidden
+                  transition-all duration-1000 ease-[cubic-bezier(0.25,0.8,0.25,1)] 
+                  ${isActive ? 'md:flex-[4] shape1' : 'flex-[1] cursor-pointer '}
+                `}
                 style={{
                   backgroundImage: `url(${card.img})`,
                   backgroundSize: 'cover',

@@ -184,7 +184,7 @@ button{
       arc by var(--r) var(--r) of var(--r),
       arc by var(--s) var(--s) of var(--s) cw,
       arc by var(--r) var(--r) of var(--r),
-      /* arc by var(--r) var(--r) of var(--r) cw, */
+      arc by var(--r) var(--r) of var(--r) cw,
       hline to 100%,
       vline to 0)
 }
