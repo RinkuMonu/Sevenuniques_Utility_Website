@@ -47,11 +47,11 @@ export default function InsuranceProcessSteps() {
                     {/* Left Side */}
                     <div className="text-center lg:text-left">
                         <h2 className="text-2xl md:text-4xl font-bold text-[#24576C] leading-tight">
-                            Abhi Apply Karo,
+                            Apply Now,
                             <br />
-                            Khadi Kadam Uthaiye
+                             Take the First Step
                             <br />
-                             Apni Suraksha.
+                             Toward Your Financial Freedom!
                         </h2>
                         <p className="mt-6 text-gray-600 max-w-lg mx-auto lg:mx-0">
                            Get protected it a smart step to have entire protection of yourself, your family, and your assets be a worry free person today.

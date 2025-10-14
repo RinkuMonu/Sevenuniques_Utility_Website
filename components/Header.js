@@ -17,8 +17,8 @@ export default function Header() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services", dropdown: true },
-    { name: "AEPS", href: "/aeps" },
-    { name: "BBPS", href: "/bbps" },
+    { name: "AePS", href: "/aeps" },
+    { name: "Bill Payments", href: "/bbps" },
     { name: "Loan", href: "/loan", dropdown: true },
     { name: "Contact us", href: "/contact" },
   ];

@@ -28,8 +28,8 @@ export default function CreditComp() {
         {/* Left Content Section */}
         <div className="text-white text-center lg:text-left animate-fade-in-up">
           <h3 className="text-2xl lg:text-4xl  font-bold leading-tight mb-4">
-            Ek Card, <br />
-            Multiple Fayde
+            One Card, <br />
+            Multiple Benefits
           </h3>
           <p className="text-gray-300 text-base md:text-lg mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
            It has got a unique credit card, the SevenUnique, which opens a world of opportunities and conveniences. Get unique advantages and swipe with it.
