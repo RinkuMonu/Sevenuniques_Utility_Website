@@ -1,5 +1,5 @@
 import React from "react";
-import { FileText, ArrowUpRight, Download, Shield, CheckCircle } from "lucide-react";
+import { FileText, ArrowUpRight, Shield } from "lucide-react";
 
 export default function DocumentsRequired2() {
   const documents = [
@@ -54,7 +54,7 @@ export default function DocumentsRequired2() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
+    <section className="max-w-7xl mx-auto py-20 px-4  lg:px-0">
       {/* Enhanced Header */}
       <div className="text-center mb-16">
         <div className="inline-flex items-center gap-2 bg-blue-50 text-[#0C3D4C] px-4 py-2 rounded-full text-sm font-medium mb-4">

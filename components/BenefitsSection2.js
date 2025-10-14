@@ -46,7 +46,7 @@ const BenefitsSection2 = () => {
                                 height={160}
                             />
                         </Link>
-                        <Link href="/" aria-label="Get it on Google Play">
+                        <Link href="/coming-soon" aria-label="Get it on Google Play">
                             <Image
                                 src="/loan/image8.png"
                                 alt="logo-bbps"
