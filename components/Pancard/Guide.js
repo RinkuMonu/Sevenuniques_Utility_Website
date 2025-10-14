@@ -8,14 +8,7 @@ export default function Guide({ guidelines }) {
   const router = useRouter();
   return (
     <main className="min-h-screen bg-gradient-to-br from-[#ebf7fa] to-[#fffaf0] flex flex-col items-center py-10 px-4 md:px-8 relative">
-      {/* Back Button */}
-      <button
-        onClick={() => router.back()}
-        className="fixed top-6 left-6 flex items-center gap-2 px-4 py-2 bg-[#0C3D4C] text-white rounded-full shadow-2xl hover:bg-[#176B87] active:scale-95 transition"
-      >
-        <ArrowLeft className="w-4 h-4" />
-        Back
-      </button>
+ 
 
       <div className="max-w-7xl w-full mx-auto">
         <h1 className="text-3xl md:text-5xl font-bold text-[#176B87] mb-8 text-center tracking-tight">
