@@ -7,15 +7,7 @@ export default function Documents({ items }) {
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-[#eaf5fb] to-[#fcfbf5] flex flex-col items-center py-10 px-4 md:px-8 relative">
-      {/* Sticky Back Button */}
-      <button
-        onClick={() => router.back()}
-        className="fixed top-6 left-6 flex items-center gap-2 px-4 py-2 bg-[#176B87] text-white rounded-full shadow-2xl hover:bg-[#0C3D4C] active:scale-95 transition"
-        aria-label="Back"
-      >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 19l-7-7 7-7" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-        Back
-      </button>
+    
 
       <div className="max-w-7xl w-full mx-auto">
         <h1 className="text-3xl md:text-5xl font-bold text-[#176B87] mb-3 text-center tracking-tight">
