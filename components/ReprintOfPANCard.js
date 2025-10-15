@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import {
   FileText,
   CreditCard,
@@ -62,12 +63,11 @@ export default function ReprintOfPANCard() {
   }));
 
   const links = [
-    "Apply Now",
+
     "Read Guidelines",
     "Read Instructions",
-    "Documents Required",
+    "Documents to be Submitted",
     "Do’s & Don’ts",
-    "Designated Centers",
   ];
 
   const containerVariants = {
@@ -132,41 +132,45 @@ export default function ReprintOfPANCard() {
           </motion.div>
 
           {/* Right Sidebar */}
-          <motion.div
-            className="bg-white/90 backdrop-blur-sm border border-gray-100 shadow-md rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.5, ease: "easeOut" }}
-          >
-            <h3 className="text-xl font-semibold text-gray-800 mb-6 flex items-center gap-3">
-              <Info size={22} className="text-[#0096c7]" /> Quick Links
-            </h3>
-            <motion.ul
-              className="space-y-3"
-              variants={containerVariants}
-              initial="hidden"
-              animate="visible"
-            >
-              {links.map((item, idx) => (
-                <motion.li
-                  key={idx}
-                  className="flex items-center justify-between text-gray-700 font-medium hover:text-[#0077b6] cursor-pointer px-2 py-2 rounded-lg transition-all duration-200 group hover:bg-[#f0f8fa]"
-                  variants={itemVariants}
-                >
-                  <span>{item}</span>
-                  <motion.div
-                    transition={{ ease: "easeOut" }}
-                    whileHover={{ x: 5 }}
-                  >
-                    <ArrowRight
-                      size={20}
-                      className="text-gray-400 group-hover:text-[#0077b6] transition-colors duration-200"
-                    />
-                  </motion.div>
-                </motion.li>
-              ))}
-            </motion.ul>
+        <motion.div
+  className="bg-white/90 backdrop-blur-sm border border-gray-100 shadow-md rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
+  initial={{ opacity: 0, x: 50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.7, delay: 0.5, ease: "easeOut" }}
+>
+  <h3 className="text-xl font-semibold text-gray-800 mb-6 flex items-center gap-3">
+    <Info size={22} className="text-[#0096c7]" /> Quick Links
+  </h3>
+
+  <motion.ul
+    className="space-y-3"
+    variants={containerVariants}
+    initial="hidden"
+    animate="visible"
+  >
+    {[
+      { name: "Read Guidelines", href: "/reprint/reprintguidelines" },
+      { name: "Read Instructions", href: "/reprint/reprint/instructions" },
+      { name: "Documents to be Submitted", href: "/reprint/reprint/documents" },
+      { name: "Do’s & Don’ts", href: "/reprint/reprint/dos-and-donts" },
+    ].map((item, idx) => (
+      <motion.li key={idx} variants={itemVariants}>
+        <Link
+          href={item.href}
+          className="flex items-center justify-between text-gray-700 font-medium hover:text-[#0077b6] cursor-pointer px-2 py-2 rounded-lg transition-all duration-200 group hover:bg-[#f0f8fa]"
+        >
+          <span>{item.name}</span>
+          <motion.div transition={{ ease: "easeOut" }} whileHover={{ x: 5 }}>
+            <ArrowRight
+              size={20}
+              className="text-gray-400 group-hover:text-[#0077b6] transition-colors duration-200"
+            />
           </motion.div>
+        </Link>
+      </motion.li>
+    ))}
+  </motion.ul>
+</motion.div>
         </div>
       </div>
     </section>
