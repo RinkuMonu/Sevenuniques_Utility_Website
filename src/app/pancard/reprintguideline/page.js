@@ -22,19 +22,19 @@ export default function Reprintguideline() {
                     If there are no format-level errors, a confirmation screen with all data filled by the applicant will be displayed. The applicant may either edit or confirm the same.
                     <br />
                     For Changes or Correction in PAN Data
-                    <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+                    <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
                         <li>Fill all mandatory fields (marked with *) of the form and select the corresponding box on the left margin of the appropriate field where correction is required.</li>
                     </ul>
                     For Re-issuance of PAN Card Without Any Changes
 
-                    <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+                    <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
                         <li>Fill all fields in the form but do not select any box on the left margin.
                         </li>
                     </ul>
                     <br />
                     In both cases, the address for communication will be updated in the Income Tax Department database using the address provided in the application.
                     For Cancellation of PAN
-                    <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+                    <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
                         <li>Fill all mandatory fields in the form, enter the PAN to be cancelled in Item No.10 of the form and select the checkbox on the left margin.</li>
                         <li>The PAN to be cancelled should not be the same as the PAN currently used and mentioned at the top of the form.
                         </li>
@@ -53,7 +53,7 @@ export default function Reprintguideline() {
                     Applicants must save and print this acknowledgment
                     <br />
                     For Individual Applicants
-                    <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+                    <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
                         <li>Affix two recent colour photographs (3.5 cm x 2.5 cm) in the space provided in the acknowledgment.
                         </li>
                         <li>The photographs should not be stapled or clipped.</li>
@@ -65,9 +65,9 @@ export default function Reprintguideline() {
                         </li>
                     </ul>
                     For Non-Individual Applicants
-                    <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+                    <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
                         <li>The acknowledgment receipt shall be signed by the authorized signatory
-                            <ul className="list-decimal list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+                            <ul className="list-decimal list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
                                 <li>Karta (in case of HUF)</li>
                                 <li>Director (in case of Company)</li>
                                 <li>Partner (in case of Partnership Firm / LLP)</li>
@@ -90,7 +90,7 @@ export default function Reprintguideline() {
                     The acknowledgement, duly signed and affixed with photographs (in case of individuals), along with proof of existing PAN, proof of identity, proof of address, proof of date of birth (for individuals and Karta of HUF), and proof for requested changes (if any), must be sent to:
                     <br />
                     Income Tax PAN Services Unit
-                    <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+                    <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
                         <li>Sevenunique Tech Solutions Private Limited</li>
                         <li>Plot No. 97, Dakshinpuri – I, Shrikishan, Sanganer, Jagatpura, Jaipur, Shri Kishanpura, Rajasthan – 302017</li>
                         <li>Phone: 0141 451 1098</li>
@@ -120,7 +120,7 @@ export default function Reprintguideline() {
             question: "Contact Information",
             answer:
               <>
-  <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+  <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
     <li>Sevenunique Tech Solutions Private Limited</li>
     <li>
       Plot No. 97, Dakshinpuri – I, Shrikishan, Sanganer, Jagatpura, Jaipur, Shri Kishanpura, Rajasthan – 302017
