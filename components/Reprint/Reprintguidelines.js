@@ -7,7 +7,7 @@ console.log(points);
 
 
   return (
-    <section className="pb-10 bg-white">
+    <section className="pb-10">
       <div className="max-w-7xl mx-auto px-6 relative">
         {/* Vertical line */}
         <div className="absolute -left-4 top-0 w-[2px] h-full bg-[#0c3d4c]"></div>
@@ -17,10 +17,10 @@ console.log(points);
 
             <div
               key={index}
-              className="relative flex items-start gap-5 pl-10 border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300"
+              className="relative flex bg-white items-start gap-5 pl-10 border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300"
             >
               {/* Connector dot */}
-              <div className="absolute left-[7px] top-7 w-3 h-3 bg-[#0077b6] rounded-full shadow-md"></div>
+              <div className="absolute -left-[47px] top-7 w-4 h-4 bg-[#0077b6] rounded-full shadow-md"></div>
 
               {/* Icon */}
               <div className="p-3 rounded-xl bg-[#f1f9fa] flex items-center justify-center shrink-0">
