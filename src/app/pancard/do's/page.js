@@ -1,62 +1,99 @@
+
+// import React from 'react';
+// import Dos from '../../../../components/Pancard/Dos';
+
+
+// export default function dosforeign() {
+
+//     const dosList = [
+//         {
+//             title: "PAN C",
+//             desc: "A valid PAN card is required for identity verification.",
+//         },
+//         {
+//             title: "Aadhaar Card",
+//             desc: "Aadhaar card is needed for address verification.",
+//         },
+//         {
+//             title: "Bank Statement",
+//             desc: "Recent bank statements to verify financial details.",
+//         },
+//         {
+//             title: "Passport Photo",
+//             desc: "A recent passport-sized photograph.",
+//         },
+//         {
+//             title: "Utility Bill",
+//             desc: "Proof of address such as electricity or water bill.",
+//         },
+//         {
+//             title: "Signature Proof",
+//             desc: "A scanned copy of your signature for documentation purposes.",
+//         },
+//     ];
+
+//     return (
+
+
+//         <Dos items={dosList} />
+//     );
+// }
+
+
+
 import React from 'react';
+import Dos from '../../../../components/Pancard/Dos';
 
+export default function dosforeign() {
 
-export default function Dos () {
-
-    const guidelinesData = [
-  {
-    title: "Follow Community Rules",
-    desc: "Always adhere to the community rules and maintain a positive, respectful attitude.",
-  },
-  {
-    title: "Respect Others",
-    desc: "Treat all users kindly and respect their opinions, even when you disagree.",
-  },
-  {
-    title: "Be Clear & Concise",
-    desc: "Use simple and direct language to make your messages easy to understand.",
-  },
-  {
-    title: "Protect Privacy",
-    desc: "Never share personal or sensitive information in public discussions.",
-  },
-  {
-    title: "Report Responsibly",
-    desc: "If you encounter inappropriate content, report it calmly and responsibly.",
-  },
-  {
-    title: "Stay On Topic",
-    desc: "Keep your posts and replies relevant to the topic being discussed.",
-  },
-];
+    const dosList = [
+        {
+            title: "Important Information for PAN Application (Form 49AA)",
+            desc: "Please read all the instructions carefully before filling out the PAN application form.",
+        },
+        {
+            title: "Do's",
+            desc: [
+                "Use Form 49AA to apply for PAN allotment.",
+                "Fill the application in block letters in English.",
+                "Paste two recent colour photographs (size 3.5 cm × 2.5 cm).",
+                "Provide signature within the box.",
+                "If using a left thumb impression, get it attested by a Magistrate, Notary Public, or Gazetted Officer under official seal and stamp.",
+                "Provide the correct AO code in the application.",
+                "Attach Proof of Identity (POI) and Proof of Address (POA) as per Rule 114 (4) of Income Tax Rules, 1962. POA must contain the address mentioned in the application.",
+                "Ensure POI and POA names match exactly as written in the application.",
+                "Provide details of Representative Assessee in column 14 (if applicable under Section 160 of Income Tax Act, 1961).",
+                "Provide POI and POA for the Representative Assessee if appointed.",
+                "Write the complete postal address, including landmarks.",
+                "Mention the correct ZIP code in the address field.",
+                "Provide telephone number and email ID."
+            ],
+        },
+        {
+            title: "Don'ts",
+            desc: [
+                "Do not overwrite or make corrections in the application.",
+                "Do not pin or staple the photograph.",
+                "Do not sign outside the box.",
+                "Do not provide POI or POA not in the applicant's name.",
+                "Do not write additional details (date, designation, rank, etc.) along with signature.",
+                "Do not mention the husband's name in the father's name field (for female applicants).",
+                "Do not abbreviate your name or use initials.",
+                "Do not apply for a new PAN if you already have one (use the correction/reprint form instead)."
+            ],
+        },
+        {
+            title: "For Assistance",
+            desc: [
+                "Sevenunique Tech Solutions Private Limited",
+                "Plot No. 97, Dakshinpuri – I, Shrikishan, Sanganer, Jagatpura, Jaipur, Shri Kishanpura, Rajasthan – 302017",
+                "Phone: 0141 451 1098",
+                "Website: www.sevenuniques.com"
+            ],
+        },
+    ];
 
     return (
-        <main className="min-h-screen bg-gradient-to-br from-[#f8fbff] to-[#fdfaf6] flex flex-col items-center py-12 px-6 relative">
-            <div className="max-w-7xl w-full">
-                <h1 className="text-4xl font-bold text-[#0C3D4C] mb-4 text-center">
-                   Do's & Dont's
-                </h1>
-                <p className="text-gray-600 mb-12 text-center text-lg">
-                    To maintain a friendly and respectful environment, please follow
-                    these simple guidelines.
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {guidelinesData.map((item, index) => (
-                        <div
-                            key={index}
-                            className="bg-gradient-to-br from-[#8fb6c2] to-[#0C3D4C] rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
-                        >
-                            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-inner mb-4 text-[#0C3D4C] font-bold">
-                                {index + 1}
-                            </div>
-                            <h3 className="text-xl font-semibold text-gray-100 mb-2">
-                                {item.title}
-                            </h3>
-                            <p className="text-gray-300 leading-relaxed">{item.desc}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </main>
+        <Dos items={dosList} />
     );
 }

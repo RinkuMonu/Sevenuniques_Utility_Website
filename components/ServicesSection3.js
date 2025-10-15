@@ -15,18 +15,8 @@ const ServicesSection3 = ({ data }) => {
   if (!data) return null;
 
   return (
-    <section className="bg-white py-4 md:pt-6 md:pb-16 mt-10">
-<div className="text-center py-6">
-      <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase">
-        WHAT IS
-      </p>
-      <h3 className="mt-2 text-4xl font-bold text-[#175369] pb-10">
-       Aadhaar Enabled Payment System
-      </h3>
-      </div>
-
+    <section className="bg-white py-4 md:pt-6 md:pb-16">
       <div className="bg-orange-50 shadow-lg rounded-lg max-w-7xl mx-auto px-4 lg:px-0 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-        
         {/* Left Column */}
         <div className="md:pl-16 py-10">
           <p className="text-base font-semibold text-[#0C3D4C] tracking-wider">

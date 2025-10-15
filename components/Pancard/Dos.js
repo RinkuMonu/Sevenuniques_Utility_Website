@@ -2,14 +2,14 @@
 // import React from "react";
 // import { useRouter } from "next/navigation";
 
-// export default function Instructions({ items }) {
+// export default function Dos({ items }) {
 //   const router = useRouter();
 
 //   return (
 //     <main className="min-h-screen bg-gradient-to-br from-[#ebf7fa] to-[#fcfbf5] flex flex-col items-center py-10 px-4 md:px-8 relative">
 //       <div className="max-w-7xl w-full mx-auto">
 //         <h1 className="text-3xl md:text-5xl font-bold text-[#176B87] mb-3 text-center tracking-tight">
-//           Instructions
+//         doooss
 //         </h1>
 //         <p className="text-gray-600 text-lg text-center mb-10">
 //           To maintain a friendly and respectful environment, please follow these simple guidelines and PAN form instructions.
@@ -60,22 +60,21 @@
 
 
 
-
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
 
-export default function Instructions({ items }) {
+export default function Dos({ items }) {
   const router = useRouter();
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-[#ebf7fa] to-[#fcfbf5] flex flex-col items-center py-10 px-4 md:px-8 relative">
       <div className="max-w-7xl w-full mx-auto">
         <h1 className="text-3xl md:text-5xl font-bold text-[#176B87] mb-3 text-center tracking-tight">
-          Instructions
+          Do's & Don'ts
         </h1>
         <p className="text-gray-600 text-lg text-center mb-10">
-          To maintain a friendly and respectful environment, please follow these simple guidelines and PAN form instructions.
+          Important guidelines to follow for your PAN application process.
         </p>
 
         {/* Vertical Timeline/Stepper */}
@@ -104,7 +103,7 @@ export default function Instructions({ items }) {
                   {Array.isArray(item.desc) ? (
                     <ul className="list-disc pl-5 text-gray-600 text-base leading-relaxed">
                       {item.desc.map((point, idx) => (
-                        <li key={idx}>{point}</li>
+                        <li key={idx}>{point}</li> 
                       ))}
                     </ul>
                   ) : (
