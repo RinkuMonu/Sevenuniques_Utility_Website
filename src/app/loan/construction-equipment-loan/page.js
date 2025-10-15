@@ -57,7 +57,7 @@ function page() {
 
     const letters = ['L', 'O', 'A', 'N'];
     const slide = {
-  image: "/loan/loan3.png",
+  image: "/loan/covs.png",
   heading: (
     <>
       Apply Karo Abhi,   <br />

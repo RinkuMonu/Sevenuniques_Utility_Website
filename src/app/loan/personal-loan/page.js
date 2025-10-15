@@ -48,7 +48,7 @@ function page() {
     ]
 
     const slide = {
-  image: "/loan/loan3.png",
+  image: "/loan/pvs.png",
   heading: (
     <>
       At Sevenunique, <br />
