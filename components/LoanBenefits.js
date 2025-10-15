@@ -2,8 +2,8 @@ import React from 'react';
 
 // Reusable Benefit Card
 const BenefitCard = ({ text }) => (
- <div  className='flex justify-center'>
-     <div className="bg-white/30 backdrop-blur-md p-4 w-md rounded-xl border border-white/20 ">
+ <div  className='flex justify-center h-18'>
+     <div className="bg-white/30 -md p-4 w-md rounded-xl border border-white/20 ">
     <p className="text-white font-semibold text-center md:text-left ">{text}</p>
   </div>
  </div>

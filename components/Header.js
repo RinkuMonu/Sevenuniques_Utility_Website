@@ -37,6 +37,7 @@ export default function Header() {
     { name: "Personal Loan", href: "/loan/personal-loan" },
     { name: "Construction Loan", href: "/loan/construction-equipment-loan" },
     { name: "Car Loan", href: "/loan/car-loan" },
+    { name: "Instant Loan", href: "/loan" },
   ];
 
   return (

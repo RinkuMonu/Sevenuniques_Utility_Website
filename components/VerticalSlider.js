@@ -53,7 +53,7 @@ const VerticalSlider = ({slide}) => {
                 width={400}
                 height={400}
                 alt="Happy customer with loan"
-                className="w-48 h-64 sm:w-64 sm:h-72 md:w-[510px] md:h-[450px] object-cover md:absolute md:-bottom-8 md:left-40 z-10"
+                className="w-48 h-64 sm:w-64 sm:h-84 md:w-[510px] md:h-[500px]  md:absolute md:-bottom-11 md:left-40 z-10 scale-95"
               />
             </div>
           </div>
