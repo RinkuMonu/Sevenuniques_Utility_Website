@@ -123,7 +123,9 @@ function page() {
             <PancardApplyOnline />
             <DocumentsRequired2/>
       <ReprintOfPANCard/>
-      <PanCorrectionCard/>
+      <section className="py-16">
+        <PanCorrectionCard/>
+      </section>
 
    <PartnersSection />
 
