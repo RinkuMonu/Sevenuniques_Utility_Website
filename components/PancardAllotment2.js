@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export default function PancardAllotment2() {
   const menuItems = [
-    { label: "Apply Now", link: "/pancard/apply" },
+    // { label: "Apply Now", link: "/pancard/apply" },
     { label: "Read Guidelines", link: "/pancard/guidelineforeign" },
     { label: "Read Instructions", link: "/pancard/instructionforeign" },
     { label: "Documents Required", link: "/pancard/documentsforeign" },
     { label: "Do’s & Don’ts", link: "/pancard/do's" },
-    { label: "Designated Centers", link: "/pancard/designated" },
+    // { label: "Designated Centers", link: "/pancard/designated" },
   ];
   return (
     <section className="bg-[#e8f0f7] rounded-xl flex flex-col md:flex-row justify-evenly items-start shadow-sm">
