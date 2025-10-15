@@ -12,7 +12,7 @@ export default function Reprintguideline() {
       question: "Instructions",
       answer:
        <>
-<ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+<ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
     <li>
 The form must be completed in English only.
     </li>
@@ -27,7 +27,7 @@ The form must be completed in English only.
   question: "1. Full Name",
   answer: (
     <>
-      <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+      <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
         <li>Choose the correct title</li>
         <li>Individuals should write full names in expanded form, avoiding abbreviations or initials.</li>
       </ul>
@@ -49,7 +49,7 @@ The form must be completed in English only.
           </tr>
         </tbody>
       </table>
-<ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+<ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
     <li>Non-individuals must write the full entity name starting from the Last Name/Surname field. If the name is too long, continue in First Name and Middle Name fields.</li>
 </ul>
 <br />
@@ -72,7 +72,7 @@ Example: XYZ DATA CORPORATION (INDIA) PRIVATE LIMITED
         </tbody>
       </table>
       <br />
-      <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+      <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
 <li>Avoid abbreviations in company names. Use “Private Limited” instead of Pvt Ltd, P. Ltd., etc</li>
 <li>Sole proprietors must apply in their own full name.</li>
 <li>Do not use prefixes such as Shri, Smt, Kumari, Dr., Major, M/s, etc</li>
@@ -86,10 +86,10 @@ Example: XYZ DATA CORPORATION (INDIA) PRIVATE LIMITED
       question: "2. Name to be Printed on PAN Card",
       answer:
         <>
-<ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]"><li>Individuals may provide full or abbreviated name, but the last name must appear.</li></ul>
+<ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]"><li>Individuals may provide full or abbreviated name, but the last name must appear.</li></ul>
 <br />
 Example: Vivek Kumar Singh
-<ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+<ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
   <li><strong>Full:</strong> VIVEK KUMAR SINGH</li>
   <li><strong>Abbreviated:</strong> V. K. SINGH</li>
   <li>Non-individuals should use the same name as in Item 1.</li>
@@ -103,7 +103,7 @@ Example: Vivek Kumar Singh
       question: "3. Details of Parents (Individuals Only)",
       answer:
        <>
-       <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+       <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
   <li>Father’s name is mandatory; mother’s name is optional.</li>
   <li>Married women must provide their father's name, not husband’s.</li>
   <li>Choose which parent’s name appears on PAN; if not selected, father’s name is the default.</li>
@@ -116,16 +116,16 @@ Example: Vivek Kumar Singh
       question: "4. Date",
       answer:
         <>
-<ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+<ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
     <li>Cannot be a future date</li>
     <li>Format: DD MM YYYY</li>
 
 </ul>
   <br />
 Example: 15th March 1990 → 1 5 0 3 1 9 9 0
-<ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+<ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
     <li>Date varies by applicant type:</li>
-    <ul className="list-decimal list-inside ml-6 space-y-1 marker:text-[#0077b6]">
+    <ul className="list-decimal list-outside ml-6 space-y-1 marker:text-[#0077b6]">
       <li>Individual – Date of Birth</li>
       <li>Company – Date of Incorporation</li>
       <li>Partnership Firm/LLP – Date of Partnership Deed or Registration</li>
@@ -140,7 +140,7 @@ Example: 15th March 1990 → 1 5 0 3 1 9 9 0
       question: "Gender",
       answer:
        <>
-<ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+<ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
 <li>Required for Individuals.</li>
 <li>Leave blank for other categories.</li>
 </ul>
@@ -152,7 +152,7 @@ Example: 15th March 1990 → 1 5 0 3 1 9 9 0
       question: "6 & 7. Photo / Signature Mismatch",
       answer:
        <>
-<ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+<ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
 <li>Tick if the existing PAN card has the wrong photo/signature.</li>
 <li>Enclose original PAN card with acknowledgment.</li>
 </ul>
@@ -164,15 +164,157 @@ Example: 15th March 1990 → 1 5 0 3 1 9 9 0
       question: "8. Address for Communication",
       answer:
        <>
-<ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+<ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
 <li>Select Residential or Office.</li>
 <li>Individuals/HUF/AOP may choose either.</li>
 <li>Companies, LLPs, Trusts, Local Authorities: Office address mandatory.</li>
 <li>Fill at least two of the first four address fields.</li>
-<li></li>
+<li>Town/City, State/UT, and PIN are mandatory.</li>
+<li>For foreign addresses, select “Outside India”, provide country, and ZIP code.
+</li>
 </ul>
        </>,
     },
+
+
+    {
+      icon: <PenTool size={22} className="text-[#9b5de5]" />,
+      question: "9. Update Other Address",
+      answer:
+       <>
+<ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+<li>Tick box if updating additional addresses and provide details.</li>
+
+</ul>
+       </>,
+    },
+
+
+      {
+      icon: <PenTool size={22} className="text-[#9b5de5]" />,
+      question: "10. Telephone Number and Email",
+      answer:
+       <>
+<ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+<li>Include country code for mobile/STD numbers.</li>
+</ul>
+<br />
+Example (Delhi landline): 91-11-23555705
+ <br />
+ Example (Mobile): 91-9102511111
+
+<ul className="list-disc list-outside mt-3 text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+<li>NRIs/foreign nationals must include appropriate ISD and city codes.</li>
+<li>At least one telephone or email is required for communication.</li>
+<li>SMS updates are sent to Indian mobile numbers.</li>
+
+</ul>
+       </>,
+    },
+
+
+     {
+      icon: <PenTool size={22} className="text-[#9b5de5]" />,
+      question: "11. Aadhaar Number (Individuals Only)",
+      answer:
+       <>
+<ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+<li>Provide Aadhaar number if allotted.</li>
+<li>The name must match exactly with Aadhaar.</li>
+<li>Attach Aadhaar copy.</li>
+<li>Minors should provide a minor's Aadhaar.</li>
+
+</ul>
+       </>,
+    },
+
+
+    {
+      icon: <PenTool size={22} className="text-[#9b5de5]" />,
+      question: "12. Other PANs (if any)",
+      answer:
+       <>
+<ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+<li>Mention any PANs allotted inadvertently.</li>
+<li>Attach PAN card(s) for cancellation.</li>
+
+
+</ul>
+       </>,
+    },
+
+      {
+      icon: <PenTool size={22} className="text-[#9b5de5]" />,
+      question: "13. Signature / Thumb Impression",
+      answer:
+       <>
+<ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+<li>Sign by: applicant, Karta (HUF), Director (Company), Authorized Signatory (AOP/BOI/Local Authority/Artificial Juridical Person), Partner (Firm/LLP), Trustee (Trust), Representative Assessee (Minor/Deceased/Mentally Challenged).</li>
+<li>Verifier’s name, capacity, and place are mandatory.</li>
+
+
+</ul>
+       </>,
+    },
+
+
+
+   {
+  icon: <PenTool size={22} className="text-[#9b5de5]" />,
+  question: "Documents to Submit",
+  answer: (
+    <>
+      <p className="font-semibold text-gray-800 mb-2">Proof of Identity and Address:</p>
+      <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+        <li>Must match name in PAN form.</li>
+        <li>Minors may submit parents/guardian documents.</li>
+        <li>Address must match communication address; additional updated addresses require proof.</li>
+      </ul>
+
+      <br />
+      <p className="font-semibold text-gray-800 mb-2">Proof of PAN:</p>
+      <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+        <li>Required for current PAN and PAN(s) to be cancelled.</li>
+        <li>
+          Acceptable:
+          <ul className="list-decimal list-inside ml-6 space-y-1 marker:text-[#0077b6]">
+            <li>PAN card copy</li>
+            <li>Intimation letter from ITD</li>
+            <li>FIR if lost</li>
+          </ul>
+        </li>
+      </ul>
+
+      <br />
+      <p className="font-semibold text-gray-800 mb-2">Proof for Changes:</p>
+      <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+        <li>
+          Minor corrections: identity proof with updated data.
+        </li>
+        <li>
+          Name changes:
+          <ul className="list-decimal list-inside ml-6 space-y-1 marker:text-[#0077b6]">
+            <li>Marriage certificate</li>
+            <li>Gazette notification</li>
+            <li>Passport</li>
+            <li>ROC certificate (company)</li>
+            <li>Revised partnership deed (firm)</li>
+            <li>Revised registration/deed (AOP/Trust/BOI/AJP)</li>
+          </ul>
+        </li>
+        <li>DOB/date of incorporation corrections: valid government-issued document.</li>
+      </ul>
+
+      <br />
+      <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
+        <li>The ITD database will update addresses for communication even if no change is requested.</li>
+        <li>Any discrepancies between PAN application and ITD data may require additional documents.</li>
+      </ul>
+    </>
+  ),
+},
+
+
 
   ];
 
