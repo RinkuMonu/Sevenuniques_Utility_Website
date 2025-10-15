@@ -11,9 +11,9 @@ export default function Guide({ guidelines }) {
  
 
       <div className="max-w-7xl w-full mx-auto">
-        <h1 className="text-3xl md:text-5xl font-bold text-[#176B87] mb-8 text-center tracking-tight">
+        {/* <h1 className="text-3xl md:text-5xl font-bold text-[#176B87] mb-8 text-center tracking-tight">
           PAN Application Steps
-        </h1>
+        </h1> */}
 
         {/* Vertical Stepper */}
         <div className="relative py-6">
@@ -38,7 +38,15 @@ export default function Guide({ guidelines }) {
                 {/* Step Card */}
                 <div className="ml-8 flex-1 p-5 rounded-xl shadow-lg border border-[#F4F4F5] bg-white">
                   <h3 className="text-lg md:text-2xl font-semibold text-[#24576C] mb-1">{item.title}</h3>
-                  <p className="text-gray-700 text-base leading-relaxed">{item.desc}</p>
+             {Array.isArray(item.desc) ? (
+    <ul className="list-disc list-inside text-gray-700 text-base leading-relaxed space-y-1">
+      {item.desc.map((point, index) => (
+        <li key={index}>{point}</li>
+      ))}
+    </ul>
+  ) : (
+    <p className="text-gray-700 text-base leading-relaxed">{item.desc}</p>
+  )}
                 </div>
               </li>
             ))}
