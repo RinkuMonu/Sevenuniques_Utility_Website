@@ -41,7 +41,15 @@ export default function Guidelines() {
 
   return (
     <>
-      <Guide guidelines={guidelinesData} />
+    <section className=''>
+            <h1 className="text-3xl md:text-5xl font-bold text-[#176B87] mb-4 text-center tracking-tight mx-auto pt-10" >
+              Application Form PAN (Form 49A) - Document Guidelines.</h1>
+          {/* <p className='text-center text-gray-800 pb-6'>
+            Individuals and Hindu Undivided Families (HUF).
+    
+          </p> */}
+    <Guide guidelines={guidelinesData} />
+      </section>
     </>
   );
 }
