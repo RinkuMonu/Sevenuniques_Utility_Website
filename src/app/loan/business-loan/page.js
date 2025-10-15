@@ -43,7 +43,7 @@ function page() {
     { label: "Employment", value: "Self Employed" },
   ]
   const slide = {
-  image: "/loan/loan3.png",
+  image: "/loan/bvs.png",
   heading: (
     <>
       At Sevenunique, <br />
