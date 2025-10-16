@@ -120,7 +120,6 @@ function page() {
         <PancardAllotment2 />
       </section>
    
-            <PancardApplyOnline />
             <DocumentsRequired2/>
       <ReprintOfPANCard/>
       <section className="py-16">

@@ -57,7 +57,7 @@ function page() {
    <div className="relative flex flex-col md:flex-row items-center justify-between "
         >
             <div
-                className="absolute inset-0 bg-cover bg-center "
+                className="absolute inset-0 bg-cover bg-center hidden md:block"
                 style={{ backgroundImage: `url(${data?.bgImage})` }}
             ></div>
             <div className=" z-10 mx-auto">
@@ -91,7 +91,7 @@ function page() {
                     {data.centerImage ? (    <Image
                             src={data.centerImage }
                             height={500}
-                            width={400}
+                            width={360}
                             alt="center image"
                             className="md:pt-4 lg:pt-16  lg:h-[70vh] z-20"
 

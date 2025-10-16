@@ -110,7 +110,7 @@ function page() {
             <div className="relative flex flex-col md:flex-row items-center justify-between pt-10"
             >
                 <div
-                    className="absolute inset-0 bg-cover bg-center "
+                    className="absolute inset-0 bg-cover bg-center hidden md:block"
                     style={{ backgroundImage: `url(${data?.bgImage})` }}
                 ></div>
                 <div className=" z-10 mx-auto">
@@ -154,10 +154,10 @@ function page() {
                 </div>
             </div>
             <section>
-                <div className={`relative pt-20 overflow-visible`} style={{ backgroundColor: "#F2E6FF" }}>
-                    <div className="max-w-7xl mx-auto px-4 lg:px-0 relative">
+                <div className={`relative lg:pt-20 overflow-visible`} style={{ backgroundColor: "#F2E6FF" }}>
+                    <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
                         <div className="grid grid-cols-1 md:grid-cols-2 ">
-                            <div className="relative ">
+                            <div className=" ">
                                 <div className="flex space-x-4 md:space-x-6">
                                     {letters.map((char) => (
                                         <LetterCircle key={char} letter={char} />
@@ -165,13 +165,12 @@ function page() {
                                 </div>
                             </div>
 
-                            <div className="hidden md:block relative h-[200px] mt-10 md:mt-0 ">
-                                <div className=" lg:absolute bottom-0 right-10  lg:w-[500px] lg:h-[680px] z-20  overflow-visible">
+                            <div className="hidden md:block  h-[200px] mt-10 md:mt-0 ">
+                                <div className=" lg:absolute bottom-0 right-10  lg:w-[500px] lg:h-[680px] z-20  ">
                                     <Image
                                         src={"/loan/construct2.png"}
                                         alt="loan-section"
                                         fill
-                                        className="object-cover right-0"
                                         style={{ objectPosition: 'right' }}
                                     />
                                 </div>
@@ -209,10 +208,10 @@ function page() {
            <div className='pt-10 pb-30'>
              <BenefitsSection />
            </div>
-          
 
-  <div className="bg-[#EFF9FF] mb-10">
-        <div className=" px-4 lg:px-0 max-w-7xl mx-auto py-20 relative">
+
+  <div className="bg-[#EFF9FF] mb-10 relative">
+        <div className=" px-4 lg:px-0 max-w-7xl mx-auto py-10 ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
               <h3 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] max-w-lg">
@@ -234,7 +233,7 @@ function page() {
                 width={400}
                 height={400}
                 alt="Eligibility section illustration"
-                className=" absolute bottom-11 -right-20 lg:scale-120"
+                className=" absolute bottom-0 right-0 "
               />
             </div>
           </div>

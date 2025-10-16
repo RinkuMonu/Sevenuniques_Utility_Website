@@ -24,7 +24,7 @@ function page() {
         <div className="relative flex flex-col md:flex-row items-center justify-between "
         >
             <div
-                className="absolute inset-0 bg-cover bg-center "
+                className="absolute inset-0 bg-cover bg-center hidden md:block"
                 style={{ backgroundImage: `url(${data?.bgImage})` }}
             ></div>
             <div className=" z-10 mx-auto">
@@ -96,7 +96,7 @@ function page() {
                     </div>
                 </div>
             </div>
-         
+
 
           <ServiceGrid/>
           <BillManagement/>

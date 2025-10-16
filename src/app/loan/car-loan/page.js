@@ -104,7 +104,7 @@ function page() {
             <div className="relative flex flex-col md:flex-row items-center justify-between pt-10"
             >
                 <div
-                    className="absolute inset-0 bg-cover bg-center "
+                    className="absolute inset-0 bg-cover bg-center hidden md:block"
                     style={{ backgroundImage: `url(${data?.bgImage})` }}
                 ></div>
                 <div className=" z-10 mx-auto">
@@ -148,10 +148,10 @@ function page() {
                 </div>
             </div>
             <section>
-                <div className={`relative pt-20 overflow-visible`} style={{ backgroundColor: "#FFD7D6" }}>
-                    <div className="max-w-7xl mx-auto px-4 lg:px-0 relative">
+                <div className={`relative lg:pt-20 overflow-visible`} style={{ backgroundColor: "#FFD7D6" }}>
+                    <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
                         <div className="grid grid-cols-1 md:grid-cols-2 ">
-                            <div className="relative ">
+                            <div className=" ">
                                 <div className="flex space-x-4 md:space-x-6">
                                     {letters.map((char) => (
                                         <LetterCircle key={char} letter={char} />
@@ -159,13 +159,13 @@ function page() {
                                 </div>
                             </div>
 
-                            <div className="hidden md:block relative h-[200px] mt-10 md:mt-0 ">
-                                <div className=" lg:absolute bottom-0  w-full lg:h-[550px] z-20  overflow-visible">
+                            <div className="hidden md:block  h-[200px] mt-10 md:mt-0 ">
+                                <div className=" lg:absolute bottom-0  w-[42%] lg:h-[550px] z-20 ">
                                     <Image
                                         src={"/loan/car2.png"}
                                         alt="loan-section"
                                         fill
-                                        className="object-cover right-0"
+                                        className=""
                                         style={{ objectPosition: 'right' }}
                                     />
                                 </div>
@@ -207,7 +207,6 @@ function page() {
                     { label: "Employment", value: "Self Employed" },
                 ]}
                 image="/loan/car4.png"
-                scale= "128"
             />
             <BenefitsSection />
                 <LoanOptions />

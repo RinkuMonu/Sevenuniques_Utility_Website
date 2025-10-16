@@ -11,14 +11,14 @@ const ServiceBanner = ({ data }) => {
         <div className="relative flex flex-col md:flex-row items-center justify-between "
         >
             <div
-                className="absolute inset-0 bg-cover bg-center "
+                className="absolute inset-0 bg-cover bg-center hidden md:blockhidden md:block"
                 style={{ backgroundImage: `url(${data?.bgImage})` }}
             ></div>
-            <div className=" z-10 mx-auto">
+            <div className=" z-1 mx-auto">
                 <div className='grid grid-cols-1 sm:grid-cols-2 w-full space-y-6 md:space-y-0 items-center'>
 
                     <div className=" px-10 py-10 lg:py-16 rounded-2xl overflow-hidden max-w-2xl w-full">
-                        <div className=" z-10">
+                        <div className=" z-1">
                             <p className="text-sm font-bold uppercase tracking-widest text-[#0C3D4C]">
                                 {data?.subheading}
                             </p>
@@ -47,7 +47,7 @@ const ServiceBanner = ({ data }) => {
                             height={500}
                             width={500}
                             alt="center image"
-                            className="md:pt-4 lg:pt-16  lg:h-[70vh] z-20"
+                            className="md:pt-4 lg:pt-16  lg:h-[70vh]"
 
                         />) : ""}
                     </div>

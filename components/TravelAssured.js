@@ -55,7 +55,7 @@ export default function TravelAssured({ data }) {
         width={600}
         height={600}
               quality={100}
-              className='lg:absolute bottom-0 right-0 '
+              className='lg:absolute bottom-0 right-0 hidden md:block'
             />
           </div>
         </div>

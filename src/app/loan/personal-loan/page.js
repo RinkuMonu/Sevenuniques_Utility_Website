@@ -162,7 +162,7 @@ function page() {
                             </div>
 
                             {/* Icon 2 - floating DOWN */}
-                            <div className="lg:absolute bottom-20 -right-20 float-down ">
+                            <div className="lg:absolute bottom-20 right-0 float-down ">
                                 <div className="p-4  rounded-xl ">
                                     <Image src="/loan/fl2.png" width={120} height={120} alt="" />
                                 </div>
@@ -176,7 +176,7 @@ function page() {
                             </div>
 
                             {/* Icon 4 - floating RIGHT */}
-                            <div className="lg:absolute top-1/3 right-20 float-right">
+                            <div className="lg:absolute top-0 left-40 float-right">
                                 <div className="p-4  rounded-xl ">
                                     <Image src="/loan/fl4.png" width={120} height={120} alt="" />
                                 </div>
@@ -186,10 +186,10 @@ function page() {
                 </div>
             </div>
             <section>
-                <div className={`relative pt-20 overflow-visible`} style={{ backgroundColor: "#E1F8DC" }}>
-                    <div className="max-w-7xl mx-auto px-4 lg:px-0 relative">
+                <div className={`relative lg:pt-20 `} style={{ backgroundColor: "#E1F8DC" }}>
+                    <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
                         <div className="grid grid-cols-1 md:grid-cols-2 ">
-                            <div className="relative ">
+                            <div className=" ">
                                 <div className="flex space-x-4 md:space-x-6">
                                     {letters.map((char) => (
                                         <LetterCircle key={char} letter={char} />
@@ -197,14 +197,12 @@ function page() {
                                 </div>
                             </div>
 
-                            <div className="hidden md:block relative h-[200px] mt-10 md:mt-0 ">
-                                <div className=" lg:absolute bottom-0  w-full lg:h-[550px]  overflow-visible">
+                            <div className="hidden md:block  h-[200px] mt-10 md:mt-0 ">
+                                <div className=" lg:absolute bottom-0  w-[50%] lg:h-[550px] z-11">
                                     <Image
                                         src={"/loan/per2.png"}
                                         alt="loan-section"
                                         fill
-                                        className="object-cover right-0"
-                                        style={{ objectPosition: 'right' }}
                                     />
                                 </div>
                             </div>
@@ -236,8 +234,8 @@ function page() {
             <EMICal2 />
             <StatsBanner />
             <DocumentsRequired />
-            <div className="bg-[#EFF9FF] mb-30">
-                <div className=" px-4 lg:px-0 max-w-7xl mx-auto py-20 relative">
+            <div className="bg-[#EFF9FF] mb-30 relative">
+                <div className=" px-4 lg:px-0 max-w-7xl mx-auto py-10 ">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                         <div className="space-y-6">
                             <h3 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] max-w-lg">
@@ -260,7 +258,7 @@ function page() {
                                 width={400}
                                 height={400}
                                 alt="Eligibility section illustration"
-                                className=" lg:absolute -right-12 bottom-18 scale-135"
+                                className=" lg:absolute right-0 bottom-0"
                             />
                         </div>
                     </div>
