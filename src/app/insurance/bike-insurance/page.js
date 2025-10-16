@@ -23,7 +23,7 @@ export default function page() {
     const aboutData = {
         badge: "About Us",
         heading: "Your reliable bike insurance Partner",
-        paragraphs: [
+        paragraphs:[
             "You have made your bike more than just a vehicle; it is your freedom, your passion, and your day-to-day companion. That is why we work on offering the perfect bike insurance that protects what is of utmost importance to you.",
             "As the most experienced insurance industry player, with more than 10 years of experience, we made sure to assist thousands of riders and get them the cover they needed. We are passionate about transparency, expedited settlement of claims, and satisfied customers, and that has made us their favorite bike insurance online",
         ],
