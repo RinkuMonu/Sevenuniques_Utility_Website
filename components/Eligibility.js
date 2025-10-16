@@ -37,7 +37,7 @@ const Eligibility = ({
               width={400}
               height={400}
               alt="Eligibility section illustration"
-              className={`absolute bottom-13 right-15  md:scale-${scale}`} 
+              className={`absolute bottom-0 right-0 `}
             />
           </div>
         </div>

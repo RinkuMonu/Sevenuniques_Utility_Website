@@ -149,10 +149,10 @@ export default function ReprintOfPANCard() {
     animate="visible"
   >
     {[
-      { name: "Read Guidelines", href: "/reprint/reprintguidelines" },
-      { name: "Read Instructions", href: "/reprint/reprint/instructions" },
-      { name: "Documents to be Submitted", href: "/reprint/reprint/documents" },
-      { name: "Do’s & Don’ts", href: "/reprint/reprint/dos-and-donts" },
+      { name: "Read Guidelines", href: "/pancard/reprintguideline" },
+      { name: "Read Instructions", href: "/pancard/reprintinstructions" },
+      { name: "Documents to be Submitted", href: "/pancard/reprintdocuments" },
+      { name: "Do’s & Don’ts", href: "/pancard/reprintdonts" },
     ].map((item, idx) => (
       <motion.li key={idx} variants={itemVariants}>
         <Link

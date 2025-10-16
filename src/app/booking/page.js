@@ -391,7 +391,7 @@ function Page() {
                     <ServicesSection3 data={activeData?.data.aeps} />
 
                     {/* Info Sections + Travel Assured */}
-                    <section className="container mx-auto mt-10 mb-16">
+                    <section className=" mt-10 mb-16">
                         <div>
                             {activeData?.data.info.slice(0, 2).map((item, index) => (
                                 <div

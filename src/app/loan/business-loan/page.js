@@ -43,7 +43,7 @@ function page() {
     { label: "Employment", value: "Self Employed" },
   ]
   const slide = {
-  image: "/loan/loan3.png",
+  image: "/loan/bvs.png",
   heading: (
     <>
       At Sevenunique, <br />
@@ -125,8 +125,8 @@ function page() {
       <ServiceBanner data={data} />
 
       <section>
-        <div className={`relative pt-20 overflow-visible`} style={{ backgroundColor: "#FFE9D3" }}>
-          <div className="max-w-7xl mx-auto px-4 lg:px-0 relative">
+        <div className={`relative lg:pt-20`} style={{ backgroundColor: "#FFE9D3" }}>
+          <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
             <div className="grid grid-cols-1 md:grid-cols-2 ">
               <div className="relative ">
                 <div className="flex space-x-4 md:space-x-6">
@@ -136,13 +136,13 @@ function page() {
                 </div>
               </div>
 
-              <div className="block relative md:h-[200px] mt-10 md:mt-0 overflow-visible">
-                <div className=" lg:absolute bottom-0 -right-30 w-full lg:h-[80vh] z-20  overflow-visible">
+              <div className="block  md:h-[200px] mt-10 md:mt-0 ">
+                <div className=" lg:absolute bottom-0 right-0 w-[42%] lg:h-[80vh] z-20  ">
                   <Image
                     src="/loan/loanb1.png"
                     alt="loan-section"
                     fill
-                    className=""
+                    className="w-64"
                   // style={{ objectPosition: 'right' }}
                   />
                 </div>

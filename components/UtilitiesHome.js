@@ -4,26 +4,29 @@ import Link from "next/link";
 import React from "react";
 
 const services = [
-  { name: "Gas Bill", src: "/home/gashome.png", position: "top-8 right-12" },
+  { name: "Gas Bill", src: "/home/gashome.png", position: "top-20 right-12" },
   {
     name: "Electricity Bill",
     src: "/home/bulbhome.png",
-    position: "top-1/2 -right-14 -translate-y-1/2",
+    position: "bottom-1/4 -right-14 -translate-y-1/2",
   },
   {
     name: "Broadband Bill",
     src: "/home/screenhome.png",
-    position: "bottom-12 left-1/2 -translate-x-1/2",
+    position: "bottom-8 left-1/2 -translate-x-1/3",
   },
-  { name: "Water Bill", src: "/home/waterhome.png", position: "top-1/2 left-[42.8%]" },
+  { name: "Water Bill", src: "/home/waterhome.png", position: "bottom-40 left-[42.8%]" },
   {
     name: "Health Insurance",
     src: "/home/health.png",
-    position: "top-8 left-1/2 -translate-x-1/2",
+    position: "top-4 left-3/5 -translate-x-1/2",
   },
-  { name: "DTH", src: "/home/dth.png", position: "top-1 right-36 -translate-x-1/2" },
+  { name: "DTH", src: "/home/dth.png", position: "top-1 right-20 -translate-x-1/2" },
   { name: "Mobile Recharge", src: "/home/mobile.png", position: "bottom-12 -right-12" },
-  { name: "Education", src: "/home/education.png", position: "top-1/3 left-[57.1%]" },
+  { name: "Education", src: "/home/education.png", position: "top-[15%] left-[46.1%]" },
+    { name: "Credit", src: "/home/credit.png", position: "top-50 -right-10 -translate-x-1/3" },
+  { name: "Money", src: "/home/money.png", position: "top-0 -right-15" },
+  { name: "Telephone", src: "/home/tel.png", position: "top-1/3 left-[42.1%]" },
 ];
 
 const UtilitiesHome = () => {
@@ -46,7 +49,7 @@ const UtilitiesHome = () => {
               </span>
 
               {/* Icon */}
-              <div className="bg-white/90 p-4 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+              <div className="bg-white/90 p-4 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-pulse">
                 <Image
                   src={service.src}
                   width={42}
