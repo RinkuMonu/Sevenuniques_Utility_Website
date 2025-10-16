@@ -24,7 +24,7 @@ export default function Header() {
   ];
 
   const servicesDropdown = [
-    { name: "Recharge & Bill Payments", href: "/bbps" },
+    { name: "Recharge & Bill Payments", href: "/bill-payments" },
     { name: "Insurance", href: "/insurance" },
     { name: "Booking", href: "/booking" },
     { name: "Credit Card", href: "/credit-card" },
@@ -48,9 +48,9 @@ export default function Header() {
           <span className="flex items-center">
             <FaUser className="mr-2 w-4 h-4" /> 24x7 Technical Support
           </span>
-          <span className="hidden md:inline text-gray-400">|</span>
+          <span className="hidden md:inline text-gray-100 ">-</span>
           <span className="flex items-center">
-            <Mail className="mr-2 w-4 h-4" /> support@7unique.in
+            <Mail className="mr-2 w-4 h-4" />support@7unique.in
           </span>
           <span className="hidden md:inline text-gray-400">|</span>
           <span className="flex items-center">
