@@ -423,7 +423,7 @@ const Banner = () => {
                         >
 
                             <div
-                                className="absolute inset-0 bg-cover bg-center md:h-[110vh]"
+                                className="absolute inset-0 bg-cover bg-center hidden md:blockmd:h-[110vh]"
                                 style={{ backgroundImage: `url(${slide.bgImage})` }}
                             ></div>
 
@@ -453,13 +453,13 @@ const Banner = () => {
                                                 width={400}
                                                 alt="center image"
                                                 className={`
-    absolute 
-    left-1/2 transform -translate-x-1/2 
+    absolute
+    left-1/2 transform -translate-x-1/2
     md:left-0 md:translate-x-0
-    ${slide.position} 
-    ${slide.id === 8 ? "scale-115 md:scale-120" : ""} 
-    ${slide.id === 1 ? "scale-90 md:scale-75 pb-10" : ""} 
-    ${slide.id === 6 ? "md:scale-90" : ""} 
+    ${slide.position}
+    ${slide.id === 8 ? "scale-115 md:scale-120" : ""}
+    ${slide.id === 1 ? "scale-90 md:scale-75 pb-10" : ""}
+    ${slide.id === 6 ? "md:scale-90" : ""}
   `}
                                             />
 

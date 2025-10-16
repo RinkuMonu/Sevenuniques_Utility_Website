@@ -53,7 +53,7 @@ const Aepstransaction = () => {
   <section className="py-16">
   <div className="max-w-7xl mx-auto px-6">
     <h2 className="text-3xl font-bold text-[#0C3D4C] mb-8 text-center">
-      AEPS Transactional Limits
+      AePS Transactional Limits
     </h2>
 
     <div className="overflow-x-auto rounded-xl p-6 shadow-md">

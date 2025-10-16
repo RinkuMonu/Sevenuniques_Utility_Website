@@ -51,7 +51,7 @@ const features = [
 
 const PancardFeatures = () => {
   return (
-    <section className="py-16 bg-[#F9EBDF]">
+    <section className="py-16 bg-[#F9EBDF] md:px-0 px-6">
       <div className="max-w-9xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4">
           PAN Card Service Features
