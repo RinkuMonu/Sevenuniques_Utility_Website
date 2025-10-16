@@ -21,7 +21,7 @@ export default function PanCorrectionCard() {
     {
       icon: <Clock className="h-6 w-6 text-[#0C3D4C]" />,
       title: "Quick Process",
-      description: "Get your PAN card reprinted in minutes.",
+      description: "Get your PAN Card reprinted in minutes.",
     },
     {
       icon: <Shield className="h-6 w-6 text-[#0C3D4C]" />,
@@ -31,7 +31,7 @@ export default function PanCorrectionCard() {
     {
       icon: <Truck className="h-6 w-6 text-[#0C3D4C]" />,
       title: "Home Delivery",
-      description: "Receive your PAN card at your doorstep.",
+      description: "Receive your PAN Card at your doorstep.",
     },
     {
       icon: <CreditCard className="h-6 w-6 text-[#0C3D4C]" />,
@@ -72,10 +72,10 @@ export default function PanCorrectionCard() {
               Select this option in case you already have a PAN, yet you would
               like to change or amend your information (e.g., name, father name
               or date of birth). <br />
-              You will be issued with a new PAN card of the same number with
+              You will be issued with a new PAN Card of the same number with
               updated details. <br />
               In the case of the SevenUniques PAN service portal, it is 100%
-              online verification and a 100% online process. Our PAN card
+              online verification and a 100% online process. Our PAN Card
               service online is fast and provides accuracy on data.
             </p>
 

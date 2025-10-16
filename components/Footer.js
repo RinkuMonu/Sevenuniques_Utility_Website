@@ -62,7 +62,7 @@ const Footer = () => {
               <li><Link href="/insurance" className="hover:text-blue-400">Insurance</Link></li>
               <li><Link href="/booking" className="hover:text-blue-400">Booking</Link></li>
               <li><Link href="/credit-card" className="hover:text-blue-400">Credit Card</Link></li>
-              <li><Link href="/pan-card" className="hover:text-blue-400">Pan Card</Link></li>
+              <li><Link href="/pan-card" className="hover:text-blue-400">pancard</Link></li>
             </ul>
           </div>
 

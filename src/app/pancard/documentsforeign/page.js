@@ -1,13 +1,13 @@
 // import React from 'react';
-// import Documents from '../../../../components/Pancard/Documents';
+// import Documents from '../../../../components/pancard/Documents';
 
 
 // export default function documentsforeign() {
 
 //     const documentList = [
 //         {
-//             title: "PAN Card",
-//             desc: "A valid PAN card is required for identity verification.",
+//             title: "pancard",
+//             desc: "A valid pancard is required for identity verification.",
 //         },
 //         {
 //             title: "Aadhaar Card",
@@ -41,7 +41,7 @@
 
 
 import React from 'react';
-import Documents from '../../../../components/Pancard/Documents';
+import Documents from '../../../../components/pancard/Documents';
 
 export default function documentsforeign() {
 
@@ -93,7 +93,7 @@ export default function documentsforeign() {
                         <ul className="list-disc ml-5 mt-1">
                             <li>Copy of appointment letter/contract from Indian company</li>
                             <li>Certificate of Indian address issued by employer on company letterhead, mentioning employer's PAN</li>
-                            <li>Copy of PAN card mentioned in the employer's certificate</li>
+                            <li>Copy of pancard mentioned in the employer's certificate</li>
                         </ul>
                     </div>
                 </div>

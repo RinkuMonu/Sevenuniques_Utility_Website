@@ -185,7 +185,7 @@ const guidelinepoints = [
                 {[
                   "Appointment letter / contract from Indian company",
                   "Certificate (original) of Indian address issued by employer with employer PAN",
-                  "PAN card of employer mentioned in certificate",
+                  "pancard of employer mentioned in certificate",
                 ].map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}

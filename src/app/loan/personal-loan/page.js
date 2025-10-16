@@ -74,7 +74,7 @@ function page() {
       image: "/loan/loan12.png",
       cta: "Submit Docs",
       details: [
-        "Post Aadhaar Card and PAN Card.",
+        "Post Aadhaar Card and pancard.",
         "Produce income evidence, bank statements, or salary slips.",
         "Present address evidence.",
         "We have a system that validates documents at high speed.",

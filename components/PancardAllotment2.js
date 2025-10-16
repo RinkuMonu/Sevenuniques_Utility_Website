@@ -35,9 +35,9 @@ export default function PancardAllotment2() {
           This type is assigned to foreign individuals and entities that did not
           receive a PAN previously.
           <br />
-          SevenUniques <span className="font-bold">e PAN card service</span>:
+          SevenUniques <span className="font-bold">e PAN Card service</span>:
           You can apply online by using the SevenUniques{" "}
-          <span className="font-bold">e PAN card service</span> and upload your
+          <span className="font-bold">e PAN Card service</span> and upload your
           documents and be given the PAN number without setting foot in any
           office.
           <br />

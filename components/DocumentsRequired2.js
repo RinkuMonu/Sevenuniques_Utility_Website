@@ -12,7 +12,7 @@ export default function DocumentsRequired2() {
     {
       title: "POI/POA Documents Required – Foreign Citizen / NRI",
       description: "Required documents for foreign citizens and NRIs",
-      type: "pdf", 
+      type: "pdf",
       size: "1.8 MB"
     },
     {
@@ -42,7 +42,7 @@ export default function DocumentsRequired2() {
     {
       title: "Overseas Bank Certificate Format (Registered in India)",
       description: "Format for overseas bank certificates",
-      type: "doc", 
+      type: "doc",
       size: "2.9 MB"
     },
     {
@@ -65,7 +65,7 @@ export default function DocumentsRequired2() {
           Documents Required
         </h2>
         <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-          Prepare these essential documents before submitting your PAN card application. 
+          Prepare these essential documents before submitting your PAN Card application.
           Ensure all copies are self-attested and meet the specified requirements.
         </p>
       </div>
@@ -79,7 +79,7 @@ export default function DocumentsRequired2() {
           >
             {/* Background Pattern */}
             <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-white rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            
+
             {/* Content */}
             <div className="relative z-10">
 
@@ -89,9 +89,9 @@ export default function DocumentsRequired2() {
                 <FileText size={24} />
               </div>
                 <div className="flex gap-3">
-                  <ArrowUpRight 
-                    size={18} 
-                    className="text-gray-400 group-hover:text-[#0C3D4C] transition-all duration-300 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" 
+                  <ArrowUpRight
+                    size={18}
+                    className="text-gray-400 group-hover:text-[#0C3D4C] transition-all duration-300 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   />
                 </div>
               </div>
@@ -109,7 +109,7 @@ export default function DocumentsRequired2() {
               </div>
 
 
-        
+
             </div>
           </div>
         ))}

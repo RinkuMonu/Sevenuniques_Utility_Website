@@ -1,6 +1,6 @@
 
 // import React from 'react';
-// import Dos from '../../../../components/Pancard/Dos';
+// import Dos from '../../../../components/pancard/Dos';
 
 
 // export default function dosforeign() {
@@ -8,7 +8,7 @@
 //     const dosList = [
 //         {
 //             title: "PAN C",
-//             desc: "A valid PAN card is required for identity verification.",
+//             desc: "A valid pancard is required for identity verification.",
 //         },
 //         {
 //             title: "Aadhaar Card",
@@ -42,7 +42,7 @@
 
 
 import React from 'react';
-import Dos from '../../../../components/Pancard/Dos';
+import Dos from '../../../../components/pancard/Dos';
 
 export default function dosforeign() {
 

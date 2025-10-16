@@ -10,9 +10,9 @@ const features = [
   {
     id: 1,
     icon: <FaAddressCard className="w-10 h-10 text-orange-800" />,
-    title: "PANCARD Correction",
+    title: "PAN Card Correction",
     description:
-      "Get your PAN card instantly with online verification and hassle-free documentation.",
+      "Get your PAN Card instantly with online verification and hassle-free documentation.",
     link: "/pancard/pancardcorrection",
   },
   {
@@ -20,7 +20,7 @@ const features = [
     icon: <IoNewspaperSharp className="w-10 h-10 text-orange-800" />,
     title: "Apply for New",
     description:
-      "All PAN card applications are processed through secure and authorized government channels.",
+      "All PAN Card applications are processed through secure and authorized government channels.",
     link: "/pancard/pancardApplyNew",
   },
   // {
@@ -29,7 +29,7 @@ const features = [
   //   title: "Track PAN",
   //   description:
   //     "No need for physical paperwork — everything is managed digitally for faster approvals.",
-  //   link: "/pancard/track",
+  //   link: "/PAN Card/track",
   // },
   {
     id: 4,
@@ -44,20 +44,20 @@ const features = [
     icon: <IoIosPrint className="w-10 h-10 text-orange-800" />,
     title: "Reprint Pan",
     description:
-      "Easily apply for a PAN card from rural and urban areas with simple Aadhaar-based verification.",
+      "Easily apply for a PAN Card from rural and urban areas with simple Aadhaar-based verification.",
     link: "/pancard/reprintpan",
   },
 ];
 
-const PancardFeatures = () => {
+const pancardFeatures = () => {
   return (
     <section className="py-16 bg-[#F9EBDF] md:px-0 px-6">
       <div className="max-w-9xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4">
-          PAN Card Service Features
+          pan card Service Features
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-          Simplify your PAN card application with our secure, fast, and
+          Simplify your pan card application with our secure, fast, and
           paperless services designed for everyone.
         </p>
 
@@ -84,4 +84,4 @@ const PancardFeatures = () => {
   );
 };
 
-export default PancardFeatures;
+export default pancardFeatures;

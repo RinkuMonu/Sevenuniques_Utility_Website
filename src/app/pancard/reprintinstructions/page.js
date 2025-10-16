@@ -83,7 +83,7 @@ Example: XYZ DATA CORPORATION (INDIA) PRIVATE LIMITED
 
     {
       icon: <PenTool size={22} className="text-[#9b5de5]" />,
-      question: "2. Name to be Printed on PAN Card",
+      question: "2. Name to be Printed on pancard",
       answer:
         <>
 <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]"><li>Individuals may provide full or abbreviated name, but the last name must appear.</li></ul>
@@ -153,8 +153,8 @@ Example: 15th March 1990 → 1 5 0 3 1 9 9 0
       answer:
        <>
 <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
-<li>Tick if the existing PAN card has the wrong photo/signature.</li>
-<li>Enclose original PAN card with acknowledgment.</li>
+<li>Tick if the existing pancard has the wrong photo/signature.</li>
+<li>Enclose original pancard with acknowledgment.</li>
 </ul>
        </>,
     },
@@ -236,7 +236,7 @@ Example (Delhi landline): 91-11-23555705
        <>
 <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
 <li>Mention any PANs allotted inadvertently.</li>
-<li>Attach PAN card(s) for cancellation.</li>
+<li>Attach pancard(s) for cancellation.</li>
 
 
 </ul>
@@ -278,7 +278,7 @@ Example (Delhi landline): 91-11-23555705
         <li>
           Acceptable:
           <ul className="list-decimal list-inside ml-6 space-y-1 marker:text-[#0077b6]">
-            <li>PAN card copy</li>
+            <li>pancard copy</li>
             <li>Intimation letter from ITD</li>
             <li>FIR if lost</li>
           </ul>

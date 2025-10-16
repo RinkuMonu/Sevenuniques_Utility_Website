@@ -205,7 +205,7 @@ const slides = [
     },
     {
         id: 5,
-        subheading: 'PANCARD',
+        subheading: 'pancard',
         heading: "Apni Pehchaan, Apna PAN!",
         centerImage: '/banner/c4.png',
         bgImage: '/banner/b4.png',
