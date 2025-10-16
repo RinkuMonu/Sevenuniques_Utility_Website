@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 
-export default function ReprintOfPANCard() {
+export default function ReprintOfpancard() {
   const sections = [
     {
       id: "A",
@@ -41,7 +41,7 @@ export default function ReprintOfPANCard() {
   const contentData = [
     {
       content:
-        "Request a reprint of your PAN card quickly using online PAN services at SevenUniques. You can take this option in case you do not require any changes in your PAN data.",
+        "Request a reprint of your PAN Card quickly using online PAN services at SevenUniques. You can take this option in case you do not require any changes in your PAN data.",
     },
     {
       content:
@@ -49,7 +49,7 @@ export default function ReprintOfPANCard() {
     },
     {
       content:
-        "When you are employing our service of digital PAN card, there are no necessary physical forms or supporting documentation.",
+        "When you are employing our service of digital PAN Card, there are no necessary physical forms or supporting documentation.",
     },
     {
       content:
@@ -98,7 +98,7 @@ export default function ReprintOfPANCard() {
           </h3>
           <p className="text-lg mt-5 text-gray-600 max-w-3xl mx-auto leading-relaxed">
             In case you already have a PAN and require a duplicate or a
-            replacement card, then apply for a reprint of the PAN card.
+            replacement card, then apply for a reprint of the PAN Card.
             <br />
             You will be issued with a new card with PAN details—fast and safe.
           </p>

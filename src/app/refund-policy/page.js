@@ -31,7 +31,7 @@ const refundSections = [
     content: [
       "1. Overview\nThis Cancellation and Refund Policy of SevenUnique Tech Solutions Private Limited explains the terms under which customers can cancel a service or request a refund for payments made through our digital platform www.sevenuniques.com. Our objective is to ensure complete transparency, fairness, and customer satisfaction while maintaining compliance with applicable laws, industry standards, and the policies of our third-party service providers.",
 
-      "We provide multiple digital services, including bill payments, AEPS, DMT, recharges, loan applications, insurance, PAN card processing, and other utility-based financial services. Once a service or transaction is successfully completed, it cannot be cancelled as our systems operate in real time with partner institutions. However, in certain cases such as failed, duplicate, or incomplete transactions, customers may be eligible for a refund.",
+      "We provide multiple digital services, including bill payments, AEPS, DMT, recharges, loan applications, insurance, pancard processing, and other utility-based financial services. Once a service or transaction is successfully completed, it cannot be cancelled as our systems operate in real time with partner institutions. However, in certain cases such as failed, duplicate, or incomplete transactions, customers may be eligible for a refund.",
 
       "Refund requests must be submitted within 7 days of the transaction by emailing info@7unique.in with complete transaction details. Approved refunds will be processed within 5–10 business days to the original payment method used.",
 
@@ -47,7 +47,7 @@ const refundSections = [
 
       "Our platform provides a wide range of digital and financial services designed to make daily transactions seamless, secure, and convenient. These include Loan Application and Processing, BBPS (Bharat Bill Payment System) for utility payments such as electricity, gas, water, and broadband bills, as well as AEPS (Aadhaar Enabled Payment System) for secure biometric transactions.",
 
-      "We also offer DMT (Domestic Money Transfer) services for quick fund transfers, along with Insurance solutions for various categories. Additionally, users can access Mobile, DTH, and Data Card Recharges, Credit Card Bill Payments, and PAN Card Application services through our platform.",
+      "We also offer DMT (Domestic Money Transfer) services for quick fund transfers, along with Insurance solutions for various categories. Additionally, users can access Mobile, DTH, and Data Card Recharges, Credit Card Bill Payments, and pancard Application services through our platform.",
 
       "Beyond these, SevenUnique Tech Solutions Private Limited may provide other related utility, government, or financial services as per customer requirements. This policy governs all such services to maintain transparency, protect customer interests, and ensure fair handling of cancellations and refunds across every transaction."
     ]
@@ -80,7 +80,7 @@ const refundSections = [
 
     "3. Technical or System Errors:\nRefunds are applicable if a transaction fails due to technical errors, server downtime, or integration issues on our platform or with our third-party service providers. Each case will be carefully validated before approval.",
 
-    "4. Unfulfilled PAN/Insurance Applications:\nIf a PAN card or insurance application cannot be processed due to administrative, system, or partner-related issues beyond the customer’s control, the amount paid for the service may be refunded after verification.",
+    "4. Unfulfilled PAN/Insurance Applications:\nIf a pancard or insurance application cannot be processed due to administrative, system, or partner-related issues beyond the customer’s control, the amount paid for the service may be refunded after verification.",
 
     "All refund requests must be submitted within 7 days of the transaction, and approval is subject to verification by SevenUnique Tech Solutions Private Limited and associated partners."
   ]
@@ -88,7 +88,7 @@ const refundSections = [
   {
   id: "non-refundable-services",
   title: "Non-Refundable Services",
-  icon: <XOctagon className="w-5 h-5" />, 
+  icon: <XOctagon className="w-5 h-5" />,
   content: [
     "5. Non-Refundable Services\nAt SevenUnique Tech Solutions Private Limited, certain services and fees are strictly non-refundable to maintain operational efficiency, comply with third-party agreements, and ensure transparency for all users, distributors, retailers, and white-label partners.",
 
@@ -96,7 +96,7 @@ const refundSections = [
 
     "2. Loan Processing and Verification Fees:\nFees associated with loan application, verification, processing, or approval are non-refundable, even if the loan is not sanctioned, because these charges cover administrative and operational costs incurred by our platform and its partners.",
 
-    "3. PAN Card and Government Applications:\nPAN card application fees or similar government service charges are non-refundable once submitted, as these payments are processed directly by the relevant government agency or API partner.",
+    "3. pancard and Government Applications:\npancard application fees or similar government service charges are non-refundable once submitted, as these payments are processed directly by the relevant government agency or API partner.",
 
     "4. Third-Party Confirmed Services:\nAny transaction where a third-party provider or government API has already confirmed success is non-refundable.",
 
@@ -122,7 +122,7 @@ const refundSections = [
 {
   id: "partial-refunds",
   title: "Partial Refunds or Adjustments",
-  icon: <Divide className="w-5 h-5" />, 
+  icon: <Divide className="w-5 h-5" />,
   content: [
     "7. Partial Refunds or Adjustments\nAt SevenUnique Tech Solutions Private Limited, we understand that in some cases, a service may have been partially delivered before a cancellation request is made. To ensure fairness to both the customer and our platform, partial refunds or adjustments may be provided based on the extent of service usage.",
 
@@ -136,11 +136,11 @@ const refundSections = [
 {
   id: "late-cancellations",
   title: "Late Cancellations or Post-Usage",
-  icon: <Slash className="w-5 h-5" />, 
+  icon: <Slash className="w-5 h-5" />,
   content: [
     "8. Late Cancellations or Post-Usage\nAt SevenUnique Tech Solutions Private Limited, it is important to clarify the terms regarding late cancellations or services already utilized. Once a customer, distributor, retailer, or white-label partner has availed or benefited from a service, the transaction is considered complete, and no refund will be processed.",
 
-    "This policy applies to all services provided through our platform, including AEPS withdrawals, bill payments, mobile/DTH recharges, fund transfers (DMT), loan processing, insurance, PAN card applications, and other utility or financial services. Once these services are successfully executed, the amount paid is non-recoverable, as the service has been delivered and the associated resources have been consumed.",
+    "This policy applies to all services provided through our platform, including AEPS withdrawals, bill payments, mobile/DTH recharges, fund transfers (DMT), loan processing, insurance, pancard applications, and other utility or financial services. Once these services are successfully executed, the amount paid is non-recoverable, as the service has been delivered and the associated resources have been consumed.",
 
     "Customers are encouraged to review transaction details carefully before initiating any request. Any cancellation request after service completion will be declined, even if submitted within the typical refund window, because the service has already been rendered and cannot be reversed.",
 
@@ -150,7 +150,7 @@ const refundSections = [
 {
   id: "refund-method",
   title: "Refund Method",
-  icon: <CreditCard className="w-5 h-5" />, 
+  icon: <CreditCard className="w-5 h-5" />,
   content: [
     "9. Refund Method\nAt SevenUnique Tech Solutions Private Limited, all refunds are processed using the same payment method that was used for the original transaction to ensure transparency and security for all customers, distributors, retailers, and white-label partners. This includes payments made through bank accounts, credit or debit cards, UPI, or other online payment systems.",
 
@@ -164,7 +164,7 @@ const refundSections = [
 {
   id: "contact-us",
   title: "Contact Us",
-  icon: <Phone className="w-5 h-5" />, 
+  icon: <Phone className="w-5 h-5" />,
   content: [
     "10. Contact Us\nFor any cancellation or refund-related concerns, customers, distributors, retailers, and white-label partners are encouraged to contact SevenUnique Tech Solutions Private Limited. Our support team is available to assist with queries, verification of transactions, and guidance on the refund process.",
 

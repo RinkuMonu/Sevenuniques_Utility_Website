@@ -42,7 +42,7 @@ function page() {
       image: "/loan/loan12.png",
       cta: "Submit Docs",
       details: [
-        "Enter the following documents: PAN Card, Aadhaar Card, Income Proof (bank statements or salary slips)",
+        "Enter the following documents: pancard, Aadhaar Card, Income Proof (bank statements or salary slips)",
         "Your documents will be immediately checked by our system to process your documents faster.",
       ],
     },
@@ -104,8 +104,8 @@ function page() {
       <ServiceBanner data={data} />
 
 <LoanS2
-  imageSrc="/loan/loan2.png" 
-  bgColor="#FFF3C9" 
+  imageSrc="/loan/loan2.png"
+  bgColor="#FFF3C9"
 />
 <VerticalSlider slide={slide}/>
 

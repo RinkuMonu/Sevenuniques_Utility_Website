@@ -25,7 +25,7 @@ export default function Reprintguideline() {
                     <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
                         <li>Fill all mandatory fields (marked with *) of the form and select the corresponding box on the left margin of the appropriate field where correction is required.</li>
                     </ul>
-                    For Re-issuance of PAN Card Without Any Changes
+                    For Re-issuance of pancard Without Any Changes
 
                     <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
                         <li>Fill all fields in the form but do not select any box on the left margin.

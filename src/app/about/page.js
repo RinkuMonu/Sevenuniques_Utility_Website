@@ -19,10 +19,10 @@ import GrowthOpportunity from '../../../components/GrowthOpportunity';
 
 function page() {
     const faqData = [
-        
+
   {
     question: "What services does Sevenunique provide?",
-    answer: "We offer BBPS, AePS, bill payments, recharges, insurances, bookings, credit and PAN card services, and various loan solutions, including business, home, personal, construction, and car loans."
+    answer: "We offer BBPS, AePS, bill payments, recharges, insurances, bookings, credit and pancard services, and various loan solutions, including business, home, personal, construction, and car loans."
   },
   {
     question: "How can I register for a service?",
@@ -69,7 +69,7 @@ function page() {
             'Our mission is to strengthen partnerships, expand reach, and deliver smart solutions that help our clients achieve growth and success. We continually strive to provide services that are efficient, reliable, and tailored to meet evolving business needs.',
         ]
     };
-    
+
     const text = "About us";
     return (
         <>
@@ -109,10 +109,10 @@ function page() {
                  <ServicesSection3 data={aepsData} />
             {/* <AboutService /> */}
             <Expertise/>
-    
+
             <WhyChooseUs/>
                     {/* <AboutSlider /> */}
-        
+
             <GrowthOpportunity/>
                 <AboutArticle/>
             {/* <BenefitsDiagram /> */}

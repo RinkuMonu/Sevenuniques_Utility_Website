@@ -5,7 +5,7 @@ import { Circle, CircleDot } from "lucide-react"; // you can use lucide icons fo
 
 const PancardApplyOnline = () => {
   return (
-    <section className="flex flex-col md:flex-row justify-between items-center gap-10 lg-4 md:px-0 max-w-7xl mx-auto px-6 md:px-0">
+    <section className="flex flex-col md:flex-row justify-between items-center gap-10 lg-4 md:px-14 max-w-7xl mx-auto px-6 ">
       {/* Left Content */}
       <div className="md:w-2/3 space-y-4">
         <div className="flex items-center gap-3 mb-4">

@@ -11,7 +11,7 @@ function page() {
     { src: "/bank/instantpay.png", width: 120, height: 60 },
     { src: "/bank/nsdl.png", width: 150, height: 70 },
     { src: "/bank/paysprint.png", width: 100, height: 50 },
-    { src: "/bank/irctc.png", width: 70, height: 60 },
+    // { src: "/bank/irctc.png", width: 70, height: 60 },
     { src: "/bank/ISERVEU-MAIN-LOGO.png", width: 150, height: 70 },
   ];
 
@@ -151,7 +151,7 @@ function page() {
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4  gap-8 px-6">
           {logos.map((logo, index) => (
             <div
               key={index}
