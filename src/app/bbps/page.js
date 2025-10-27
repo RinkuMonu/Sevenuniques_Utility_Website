@@ -175,7 +175,7 @@ function page() {
       </section>
 
 
-      <FAQ faqs={faqs} />
+      <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
     </>
   )
 }
