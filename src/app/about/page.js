@@ -5,16 +5,15 @@ import Image from 'next/image';
 import AboutService from '../../../components/AboutService';
 import AboutSlider from '../../../components/AboutSlider';
 import AboutArticle from '../../../components/AboutArticle';
-import FaqAccordion from '../../../components/FaqAccordion';
 import BenefitsSection2 from '../../../components/BenefitsSection2';
 import PartnersSection from '../../../components/PartnersSection';
 import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
 import ServicesSection3 from '../../../components/ServicesSection3';
-import BenefitsDiagram from '../../../components/BenefitsDiagram';
 import Expertise from '../../../components/Expertise';
 import WhyChooseUs from '../../../components/WhyChooseUs';
 import GrowthOpportunity from '../../../components/GrowthOpportunity';
+import FAQ from '../../../components/Bike Insurance/FAQ';
 
 
 function page() {
@@ -116,7 +115,8 @@ function page() {
             <GrowthOpportunity/>
                 <AboutArticle/>
             {/* <BenefitsDiagram /> */}
-            <FaqAccordion faqData={faqData}/>
+            {/* <FaqAccordion faqData={faqData}/> */}
+             <FAQ faqs={faqData} subheading={" Find answers to common questions about bike insurance. Can't find what you're looking for? Contact our support team."} />
              <BenefitsSection2 />
              <div  className='pt-16'>
                <PartnersSection />

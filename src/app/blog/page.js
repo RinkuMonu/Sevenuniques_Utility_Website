@@ -7,7 +7,7 @@ import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
 import BlogC from '../../../components/BlogC';
 import ServicesSection3 from '../../../components/ServicesSection3';
-import FaqAccordion from '../../../components/FaqAccordion';
+import FAQ from '../../../components/Bike Insurance/FAQ';
 
 function page() {
     const data = {
@@ -16,6 +16,7 @@ function page() {
         heading: 'Apki Pehchaan, Apki Power',
         description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable Domestic Money Transfer service.',
         bgImage: '/blog/blogbg.png',
+          centerImage: '/blog/blog2.png',
     }
     const LetterCircle = ({ letter, index }) => (
         <div className="flex  items-center justify-center rounded-full  lg:p-1 lg:h-12 lg:w-12" key={index}>
@@ -102,7 +103,7 @@ function page() {
             <ServicesSection3 data={aepsData} />
 
             <BlogC />
-            <FaqAccordion faqData={faqData} />
+             <FAQ faqs={faqData} subheading={" Find answers to common questions about bike insurance. Can&'t find what you're looking for? Contact our support team."} />
 
             <PartnersSection />
             <TestimonialSlider />
