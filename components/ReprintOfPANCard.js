@@ -105,7 +105,7 @@ export default function ReprintOfpancard() {
         </motion.div>
 
         {/* Content Layout */}
-        <div className="grid lg:grid-cols-3 gap-12 items-start">
+        <div className="grid lg:grid-cols-3 gap-12 items-start lg:px-10">
           {/* Left Column */}
           <motion.div
             className="lg:col-span-2 space-y-5"
