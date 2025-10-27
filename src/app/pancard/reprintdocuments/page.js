@@ -198,30 +198,38 @@ const guidelinepoints = [
         <h4 className="font-semibold mt-6 text-[#0C3D4C] border-l-4 border-[#00b4d8] pl-3">
           2a. Applicants with Office in India
         </h4>
-        <table className="w-full border border-gray-200 mt-3 text-sm rounded-lg overflow-hidden shadow-sm">
-          <thead className="bg-[#f0f9ff] text-left">
-            <tr>
-              <th className="p-2">Applicant Type</th>
-              <th className="p-2">Required Document</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="odd:bg-[#f9fafb]">
-              <td className="p-2">Company</td>
-              <td className="p-2">Certificate of registration from ROC</td>
-            </tr>
-            <tr className="odd:bg-[#f9fafb]">
-              <td className="p-2">Partnership / LLP</td>
-              <td className="p-2">Certificate of registration or revised partnership deed</td>
-            </tr>
-            <tr>
-              <td className="p-2">Trust / AOP / BOI / Local Authority / AJP</td>
-              <td className="p-2">
-                Trust deed or registration certificate or government-issued document confirming identity and address
-              </td>
-            </tr>
-          </tbody>
-        </table>
+  <table className="w-full text-left border-collapse rounded-xl overflow-hidden shadow-lg">
+  <thead className="bg-gradient-to-r from-[#00b4d8] to-[#90e0ef] text-white">
+    <tr>
+      <th className="p-4 text-base font-semibold border-b border-white/50">Example Name</th>
+      <th className="p-4 text-base font-semibold border-b border-white/50">How to Fill in the Form</th>
+    </tr>
+  </thead>
+  <tbody className="bg-white divide-y divide-gray-200">
+    <tr className="hover:bg-[#e0f7fa] transition-colors duration-300">
+      <td className="p-4 font-medium text-gray-800">Ravikant</td>
+      <td className="p-4 text-gray-700">Last Name: RAVIKANT</td>
+    </tr>
+    <tr className="bg-gray-50 hover:bg-[#e0f7fa] transition-colors duration-300">
+      <td className="p-4 font-medium text-gray-800">Suresh Sarda</td>
+      <td className="p-4 text-gray-700">Last Name: SARDA, First Name: SURESH</td>
+    </tr>
+    <tr className="hover:bg-[#e0f7fa] transition-colors duration-300">
+      <td className="p-4 font-medium text-gray-800">Poonam Ravi Narayan</td>
+      <td className="p-4 text-gray-700">Last Name: NARAYAN, First Name: POONAM, Middle Name: RAVI</td>
+    </tr>
+    <tr className="bg-gray-50 hover:bg-[#e0f7fa] transition-colors duration-300">
+      <td className="p-4 font-medium text-gray-800">Satyam Venkat M.K. Rao</td>
+      <td className="p-4 text-gray-700">Last Name: RAO, First Name: SATYAM, Middle Name: VENKAT M K</td>
+    </tr>
+    <tr className="hover:bg-[#e0f7fa] transition-colors duration-300">
+      <td className="p-4 font-medium text-gray-800">M.S. Kandaswamy (Madurai Somasundram Kandaswamy)</td>
+      <td className="p-4 text-gray-700">Last Name: KANDASWAMY, First Name: MADURAI, Middle Name: SOMASUNDRAM</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
         <h4 className="font-semibold mt-6 text-[#0C3D4C] border-l-4 border-[#00b4d8] pl-3">
           2b. Applicants without Office in India
@@ -268,17 +276,22 @@ const guidelinepoints = [
 export default function Reprintdocuments({ guidelinepoints: propsPoints }) {
   const points = propsPoints || guidelinepoints;
   return (
-    <section className="p-16 bg-gradient-to-b from-white to-[#f9fbfc]">
-      <div className="max-w-7xl mx-auto px-6 relative">
-        <div className="absolute -left-6 top-0 w-[2px] h-full bg-[#0c3d4c]"></div>
+    <section className="pb-16 bg-gradient-to-b from-white to-[#f9fbfc]">
+      <div className="max-w-7xl mx-auto px-6 pt-10 relative">
+                <h1 className="text-4xl font-bold text-center text-[#0C3D4C] mb-12">
 
+          Proof of Identity, Address, and Date of Birth for PAN Application
+          </h1>
+      
         <div className="space-y-10 relative">
+            <div className=" hidden md:block absolute -left-4 top-0 w-[2px] h-full bg-[#0c3d4c]"></div>
+
           {points.map((item, index) => (
             <div
               key={index}
               className="relative flex items-start gap-5 pl-10 border border-gray-100 rounded-2xl p-6 bg-white shadow-sm hover:shadow-md transition-all duration-300"
             >
-              <div className="absolute -left-13 top-7 w-3 h-3 bg-[#0077b6] rounded-full shadow-md"></div>
+              <div className="hidden md:block absolute -left-[22px] top-7 w-3 h-3 bg-[#0077b6] rounded-full shadow-md"></div>
 
               <div className="p-3 rounded-xl bg-[#f1f9fa] flex items-center justify-center shrink-0">
                 {item.icon}
