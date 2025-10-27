@@ -39,7 +39,7 @@
 
 
 import React from 'react';
-import Instructions from '../../../../components/pancard/Instructions';
+import Instructions from '../../../../components/Pancard/Instructions';
 
 export default function Instructionforeign() {
     const instructionsData = [
