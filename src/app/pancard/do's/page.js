@@ -42,7 +42,8 @@
 
 
 import React from 'react';
-import Dos from '../../../../components/pancard/Dos';
+// import Dos from '../../../../components/pancard/Dos';
+import Dos from "../../../../components/Pancard/Dos"
 
 export default function dosforeign() {
 

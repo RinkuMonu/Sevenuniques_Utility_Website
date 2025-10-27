@@ -1,5 +1,5 @@
 import React from 'react';
-import Guide from '../../../../components/pancard/Guide';
+import Guide from '../../../../components/Pancard/Guide';
 
 
 export default function Guidelineforeign () {
