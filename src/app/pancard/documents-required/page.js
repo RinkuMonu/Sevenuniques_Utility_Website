@@ -1,6 +1,6 @@
 "use client";
 
-import Documents from "../../../../components/pancard/Documents";
+import Documents from "../../../../components/Pancard/Documents";
 
 // import Documents from "../../../../components/Pancard/Documents";
 

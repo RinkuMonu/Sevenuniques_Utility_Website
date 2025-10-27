@@ -41,7 +41,7 @@
 
 
 import React from 'react';
-import Documents from '../../../../components/pancard/Documents';
+import Documents from '../../../../components/Pancard/Documents';
 
 export default function documentsforeign() {
 
