@@ -13,7 +13,7 @@ export default function Expertise() {
 
   return (
     <section className="pb-8">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 lg:px-14">
         <h2 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] leading-tight mb-4">
        Our Expertise
         </h2>
