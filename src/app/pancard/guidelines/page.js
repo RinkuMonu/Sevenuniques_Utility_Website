@@ -1,6 +1,6 @@
 "use client";
 
-import Guide from "../../../../components/pancard/Guide";
+import Guide from "../../../../components/Pancard/Guide";
 
 export default function Guidelines() {
 
