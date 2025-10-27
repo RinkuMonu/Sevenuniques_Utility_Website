@@ -12,7 +12,7 @@ const posts = [
     date: '2025-04-20',
     title: 'The Future of AI in Web Development',
     description: 'Stay updated with our latest insights and industry trends. Explore expert articles, tips, and thought leadership.',
-    imageUrl: 'https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: '/RA.webp',
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const posts = [
     date: '2025-04-18',
     title: 'Mastering Component Design in React',
     description: 'Stay updated with our latest insights and industry trends. Explore expert articles, tips, and thought leadership.',
-    imageUrl: 'https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: '/RA.webp',
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const posts = [
     date: '2025-03-15',
     title: 'The Rise of E-Commerce in 2025',
     description: 'Explore expert articles, tips, and thought leadership on how to grow your online business effectively.',
-    imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: '/RA.webp',
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const posts = [
     date: '2025-02-28',
     title: 'Quantum Computing: A New Era',
     description: 'A deep dive into the world of quantum computing and its potential to revolutionize technology.',
-    imageUrl: 'https://images.unsplash.com/photo-1534723452862-4c874018d66d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: '/RA.webp',
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const posts = [
     date: '2025-01-10',
     title: 'Minimalism and Mindful Living',
     description: 'Discover how embracing minimalism can lead to a more fulfilling and intentional life.',
-    imageUrl: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: '/RA.webp',
   },
   {
     id: 6,
@@ -52,7 +52,7 @@ const posts = [
     date: '2024-12-22',
     title: 'The Psychology of Color in Branding',
     description: 'Learn how different colors evoke emotions and how to use them effectively in your brand identity.',
-    imageUrl: 'https://images.unsplash.com/photo-1522881193457-31ae824a80a2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: '/RA.webp',
   },
 ];
 

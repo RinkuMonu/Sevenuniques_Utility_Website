@@ -132,7 +132,7 @@ function page() {
                             </div>
                         </div>
 
-                        <div className="w-full  ">
+                        <div className="w-full h-100">
 
                             <Image
                                 src={data.centerImage}
@@ -147,7 +147,7 @@ function page() {
                 </div>
             </div>
             <section>
-                <div className={`relativelg:pt-20`} style={{ backgroundColor: "#CEF5F5" }}>
+                <div className={`relative lg:pt-20`} style={{ backgroundColor: "#CEF5F5" }}>
                     <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
                         <div className="grid grid-cols-1 md:grid-cols-2 ">
                             <div className="relative ">
@@ -159,7 +159,7 @@ function page() {
                             </div>
 
                             <div className="hidden md:block  h-[200px] mt-10 md:mt-0 ">
-                                <div className=" lg:absolute bottom-0 right-0  w-[42%] lg:h-[500px] z-20">
+                                <div className=" lg:absolute bottom-0 right-0  w-[42%] lg:h-100 z-20">
                                     <Image
                                         src={"/loan/home1.png"}
                                         alt="loan-section"
