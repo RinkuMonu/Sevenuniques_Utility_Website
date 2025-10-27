@@ -24,7 +24,7 @@ export default function PromotionSlider({sliderImages}) {
     };
 
     return (
-        <section className="bg-[#FFF2D5] w-full py-12 md:py-16">
+        <section className="bg-[#FFF2D5] w-full pt-8 pb-0">
             <div className="  px-4 lg:px-8">
                 <Slider {...settings}>
                     {sliderImages.map((image) => (

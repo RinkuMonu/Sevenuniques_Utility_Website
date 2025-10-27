@@ -11,7 +11,7 @@ function page() {
     { src: "/bank/instantpay.png", width: 120, height: 60 },
     { src: "/bank/nsdl.png", width: 150, height: 70 },
     { src: "/bank/paysprint.png", width: 100, height: 50 },
-    { src: "/bank/irctc.png", width: 70, height: 60 },
+    // { src: "/bank/irctc.png", width: 70, height: 60 },
     { src: "/bank/ISERVEU-MAIN-LOGO.png", width: 150, height: 70 },
   ];
 
@@ -57,7 +57,7 @@ function page() {
    <div className="relative flex flex-col md:flex-row items-center justify-between "
         >
             <div
-                className="absolute inset-0 bg-cover bg-center "
+                className="absolute inset-0 bg-cover bg-center hidden md:block"
                 style={{ backgroundImage: `url(${data?.bgImage})` }}
             ></div>
             <div className=" z-10 mx-auto">
@@ -91,7 +91,7 @@ function page() {
                     {data.centerImage ? (    <Image
                             src={data.centerImage }
                             height={500}
-                            width={400}
+                            width={360}
                             alt="center image"
                             className="md:pt-4 lg:pt-16  lg:h-[70vh] z-20"
 
@@ -151,7 +151,7 @@ function page() {
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4  gap-8 px-6">
           {logos.map((logo, index) => (
             <div
               key={index}

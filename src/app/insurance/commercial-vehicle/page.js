@@ -18,8 +18,8 @@ export default function page() {
         subheading: 'TICKET BOOKING',
         heading: 'Apka Safar, Hamara Support',
         description: 'Book your flights, hotels, trains, or buses easily and travel without worries, plan smart, and have fun throughout  your journey.',
-        bgImage: '/booking/bookingbg.png',
-        centerImage: '/booking/book1.png',
+        bgImage: '/image/insurance-bg.png',
+        centerImage: '/image/truck.png',
     };
     const aboutData = {
         badge: "About Us",

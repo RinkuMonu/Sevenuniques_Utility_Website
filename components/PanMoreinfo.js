@@ -94,17 +94,17 @@ export default function PanMoreinfo() {
 
                                 <li>
                                     <span className="font-bold mb-2">
-                                        New PAN Card Applications / PAN Data Corrections / Changes.
+                                        New pancard Applications / PAN Data Corrections / Changes.
                                     </span>
                                     <ul className="list-disc list-inside ml-8 space-y-1 mt-3">
                                         <li style={{ listStylePosition: "outside" }}>
-                                            In case you have a PAN and need a new PAN card or need to change certain details like your name, date of birth, or address, then use this form.
+                                            In case you have a PAN and need a new pancard or need to change certain details like your name, date of birth, or address, then use this form.
                                         </li>
                                         <li style={{ listStylePosition: "outside" }}>
                                             The new card is going to be issued with the same PAN with new information.
                                         </li>
                                         <li style={{ listStylePosition: "outside" }}>
-                                            Under the Indian <b> digital PAN card service, </b> Indian citizens as well as the foreign citizens will be able to do these processes online by using the <b> PAN card online quick service of SevenUniques.</b>
+                                            Under the Indian <b> digital pancard service, </b> Indian citizens as well as the foreign citizens will be able to do these processes online by using the <b> pancard online quick service of SevenUniques.</b>
                                         </li>
                                     </ul>
                                 </li>
@@ -180,15 +180,15 @@ export default function PanMoreinfo() {
                             <p className="mb-3 text-gray-700">
                                 In the case of <b>Form 49A (New PAN)</b>, the ITD generates a new PAN.
                                 <span className="text-[#E60012] font-semibold"> SevenUniques</span> then
-                                prints and dispatches your physical PAN card, while the{" "}
-                                <b>e-PAN card</b> is delivered directly to your registered email address.
+                                prints and dispatches your physical pancard, while the{" "}
+                                <b>e-pancard</b> is delivered directly to your registered email address.
                             </p>
 
                             <p className="mb-3 text-gray-700">
                                 In case of <b>change or correction</b> requests,{" "}
                                 <span className="text-[#E60012] font-semibold">SevenUniques</span> sends
                                 the requested updates to ITD. Once verification is completed, a{" "}
-                                <b>new PAN card</b> reflecting the updated information is printed and
+                                <b>new pancard</b> reflecting the updated information is printed and
                                 sent to your communication address.
                             </p>
 
@@ -200,7 +200,7 @@ export default function PanMoreinfo() {
 
                             <p className="mb-3 text-gray-700">
                                 Applicants providing a valid <b>email ID</b> will receive the{" "}
-                                <b>e-PAN card immediately</b>, in addition to the physical PAN card.
+                                <b>e-pancard immediately</b>, in addition to the physical pancard.
                             </p>
 
                             <p className="text-gray-700">
@@ -219,7 +219,7 @@ export default function PanMoreinfo() {
                             <p className="mb-3 text-gray-700">
                                 <span className="text-[#E60012] font-semibold">SevenUniques</span> offers
                                 affordable and transparent charges for all categories of PAN applications
-                                through its online PAN card service.
+                                through its online pancard service.
                             </p>
 
                             <p className="mb-3 text-gray-700">
@@ -238,7 +238,7 @@ export default function PanMoreinfo() {
 
                             {/* Section A */}
                             <h3 className="text-md font-semibold text-gray-900 mb-3">
-                                A) When a Physical PAN Card Is Necessary
+                                A) When a Physical pancard Is Necessary
                             </h3>
 
                             <div className="overflow-x-auto mb-6">
@@ -291,12 +291,12 @@ export default function PanMoreinfo() {
                                         </tr>
                                         <tr>
                                             <td className="border px-4 py-2">7</td>
-                                            <td className="border px-4 py-2">Order of Reprint PAN Card</td>
+                                            <td className="border px-4 py-2">Order of Reprint pancard</td>
                                             <td className="border px-4 py-2">Indian Address</td>
                                         </tr>
                                         <tr>
                                             <td className="border px-4 py-2">8</td>
-                                            <td className="border px-4 py-2">Application to Reprint PAN Card</td>
+                                            <td className="border px-4 py-2">Application to Reprint pancard</td>
                                             <td className="border px-4 py-2">Foreign Address</td>
                                         </tr>
                                     </tbody>
@@ -310,10 +310,10 @@ export default function PanMoreinfo() {
 
                             {/* Section B */}
                             <h3 className="text-md font-semibold text-gray-900 mb-3">
-                                B) Physical PAN Card Not Needed (e-PAN Only)
+                                B) Physical pancard Not Needed (e-PAN Only)
                             </h3>
                             <p className="mb-4 text-gray-700">
-                                With our digital PAN card service, applicants can choose to receive only
+                                With our digital pancard service, applicants can choose to receive only
                                 the <b>e-PAN</b>. The e-PAN will be sent directly to your registered email
                                 address.
                             </p>
@@ -360,14 +360,14 @@ export default function PanMoreinfo() {
                                 When a PAN application is properly completed and the provided information
                                 and documents are accurate, the usual processing period is around{" "}
                                 <b>two weeks</b> to review the application and dispatch the{" "}
-                                <b>physical PAN card</b>.
+                                <b>physical pancard</b>.
                             </p>
 
                             <p className="mb-3 text-gray-700">
                                 For <b>paperless e-PAN applications</b>, processing and digital delivery
                                 can be completed within <b>2–3 working days</b> using our{" "}
                                 <span className="text-[#E60012] font-semibold">
-                                    SevenUniques PAN Card Online Quick Service
+                                    SevenUniques pancard Online Quick Service
                                 </span>
                                 .
                             </p>

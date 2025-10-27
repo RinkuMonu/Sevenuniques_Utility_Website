@@ -1,6 +1,6 @@
 "use client";
 
-import Documents from "../../../../components/Pancard/Documents";
+import Documents from "../../../../components/pancard/Documents";
 
 
 export default function DocumentsRequired() {
@@ -8,7 +8,7 @@ export default function DocumentsRequired() {
 const documentList = [
     {
         title: "These are the following documents needed in the PAN application",
-        desc: "In the case of Indian citizens who request the digital PAN card service by Sevenunique, valid identity evidence, address, and date of birth evidence are obligatory. Single applicants will be required to provide documents that depict their residential address. Any parental or guardian document can be taken as valid proof of identity and address in the case of an underage (under 18 years of age).",
+        desc: "In the case of Indian citizens who request the digital pancard service by Sevenunique, valid identity evidence, address, and date of birth evidence are obligatory. Single applicants will be required to provide documents that depict their residential address. Any parental or guardian document can be taken as valid proof of identity and address in the case of an underage (under 18 years of age).",
     },
     {
         title: "For Individuals and HUF",

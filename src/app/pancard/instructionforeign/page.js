@@ -1,5 +1,5 @@
 // import React from 'react';
-// import Instructions from '../../../../components/Pancard/Instructions';
+// import Instructions from '../../../../components/pancard/Instructions';
 
 
 // export default function Instructionforeign () {
@@ -39,7 +39,7 @@
 
 
 import React from 'react';
-import Instructions from '../../../../components/Pancard/Instructions';
+import Instructions from '../../../../components/pancard/Instructions';
 
 export default function Instructionforeign() {
     const instructionsData = [
@@ -67,7 +67,7 @@ export default function Instructionforeign() {
             ],
         },
         {
-            title: "2. Name to be printed on PAN Card",
+            title: "2. Name to be printed on pancard",
             desc: [
                 "Individual: Can abbreviate, must include last name.",
                 "Example: SATYAM VENKAT M. K. RAO → S. V. M. K. RAO or SATYAM V. M. K. RAO",
@@ -106,7 +106,7 @@ export default function Instructionforeign() {
                 "Mother's name only if she is a single parent (Yes/No flag mandatory).",
                 "Father's name mandatory unless mother-only flag selected.",
                 "Married women must provide their father's name, not husband's name.",
-                "Select which parent's name to print on the PAN card."
+                "Select which parent's name to print on the pancard."
             ],
         },
         {

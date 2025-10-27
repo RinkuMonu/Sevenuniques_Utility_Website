@@ -12,7 +12,7 @@ import FaqAccordion from '../../../components/FaqAccordion';
 function page() {
     const data = {
         id: 1,
-        subheading: 'PANCARD',
+        subheading: 'pancard',
         heading: 'Apki Pehchaan, Apki Power',
         description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable Domestic Money Transfer service.',
         bgImage: '/blog/blogbg.png',

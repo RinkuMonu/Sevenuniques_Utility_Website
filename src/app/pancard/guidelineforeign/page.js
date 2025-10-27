@@ -1,10 +1,10 @@
 import React from 'react';
-import Guide from '../../../../components/Pancard/Guide';
+import Guide from '../../../../components/pancard/Guide';
 
 
 export default function Guidelineforeign () {
 
-   const guidelinesData = 
+   const guidelinesData =
  [
   {
     title: "Proof of Identity (POI)—Attestation not required",
@@ -45,7 +45,7 @@ export default function Guidelineforeign () {
       "In case there is an office address in India that was mentioned in the application, the following additional documents are required:",
       "Duplicate of appointment letter/contract with Indian company.",
       "Indian address certificate (original) signed by the authorized signatory of the employer on company letterhead with reference to the PAN of the employer.",
-      "Duplicate of PAN card of PAN in the certificate of employer.",
+      "Duplicate of pancard of PAN in the certificate of employer.",
       "Illustration: An Indian national, Vivek Kumar Singh, can give a passport as POI and an electricity bill as POA."
     ]
   },
@@ -66,7 +66,7 @@ export default function Guidelineforeign () {
 
     return (
    <>
-   
+
   <section className='bg-gradient-to-br from-[#ebf7fa] to-[#fffaf0] '>
         <h1 className="text-3xl md:text-5xl font-bold text-[#176B87] mb-4 text-center tracking-tight mx-auto pt-10" >
           Application Form PAN (Form 49AA) - Document Guidelines.</h1>

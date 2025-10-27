@@ -12,194 +12,177 @@ import { BadgeCheck, Wallet, FileCheck } from "lucide-react"
 import DynamicTable from '../../../../components/DynamicTable'
 
 export default function page() {
-    const data = {
-        subheading: 'TICKET BOOKING',
-        heading: 'Apka Safar, Hamara Support',
-        description: 'Book your flights, hotels, trains, or buses easily and travel without worries, plan smart, and have fun throughout  your journey.',
-        bgImage: '/booking/bookingbg.png',
-        centerImage: '/booking/book1.png',
-    };
-    const aboutData = {
-        badge: "About Us",
-        heading: "Your Trusted Partner in Bike Insurance",
-        paragraphs: [
-            "We understand that your bike is more than just a vehicle - it's your freedom, your passion, and your daily companion. That's why we've dedicated ourselves to providing comprehensive insurance coverage that protects what matters most to you.",
-            "With over a decade of experience in the insurance industry, we've helped thousands of riders find the perfect coverage for their needs. Our commitment to transparency, quick claim settlements, and customer satisfaction has made us a leading choice for bike insurance.",
-        ],
-        stats: [
-            { value: "50K+", label: "Happy Customers" },
-            { value: "98%", label: "Claim Success Rate" },
-            { value: "24/7", label: "Support Available" },
-        ],
-        image: {
-            src: "/insurance/about.jpg",
-            alt: "Bike Insurance",
-        },
-        floatingCard: {
-            iconPath: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
-            title: "Instant Policy Activation",
-            desc: "Get covered in minutes with our streamlined digital process",
-        },
-    };
+ const data = {
+    subheading: 'BUY CAR INSURANCE ONLINE',
+    heading: 'Ab Har Safar Banega Sure Safar',
+    description: 'Take affordable car insurance online. Compare plans, select coverage in accidents, theft, or natural calamities, and drive without any hassle with full peace of mind.',
+    bgImage: '/image/insurance-bg.png',
+    centerImage: '/image/car.png',
+};
 
-    const featuresData = {
-        sectionTitle: "Comprehensive Bike Insurance Features",
-        sectionDesc:
-            "Protect your bike with our extensive coverage options designed to give you complete peace of mind on every ride.",
-        features: [
-            {
-                icon: Shield,
-                title: "Comprehensive Coverage",
-                description:
-                    "Complete protection against theft, accidents, natural disasters, and third-party liabilities.",
-            },
-            {
-                icon: Clock,
-                title: "Instant Policy Issuance",
-                description:
-                    "Get your bike insured in minutes with our quick and hassle-free digital process.",
-            },
-            {
-                icon: DollarSign,
-                title: "Affordable Premiums",
-                description:
-                    "Competitive pricing with flexible payment options and attractive discounts for safe riders.",
-            },
-            {
-                icon: FileText,
-                title: "Easy Claims Process",
-                description:
-                    "Simple, transparent claims settlement with minimal documentation and quick approvals.",
-            },
-            {
-                icon: Headphones,
-                title: "24/7 Customer Support",
-                description:
-                    "Round-the-clock assistance for policy queries, claims, and roadside emergencies.",
-            },
-            {
-                icon: Award,
-                title: "Cashless Repairs",
-                description:
-                    "Access to 5000+ network garages across India for hassle-free cashless repairs.",
-            },
-        ],
-    };
+const aboutData = {
+    badge: "About Us",
+    heading: "Your Reliable Partner in Car Insurance.",
+    paragraphs: [
+        "We understand that your car is not just a car for you; it is your coziness, your liberty, and your constant companion. That's the reason why we offer detailed car insurance solutions to safeguard the most important things.",
+        "We hold the experience of decades in assisting thousands of drivers to purchase car insurance online and renew car insurance, as well as select the most suitable car insurance at their own cost. We have become a preferred car insurance provider of choice on the internet due to our commitment and transparency, fast payments claim, and customer satisfaction.",
+    ],
+    stats: [
+        { value: "50K+", label: "Happy Customers" },
+        { value: "98%", label: "Claim Success Rate" },
+        { value: "24/7", label: "Support Available" },
+    ],
+    image: {
+        src: "/insurance/about.jpg",
+        alt: "Car Insurance",
+    },
+    floatingCard: {
+        iconPath: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+        title: "Instant Policy Issuance",
+        desc: "The process of getting your car insurance policy online takes minutes to achieve the goal in a hassle-free manner.",
+    },
+};
 
-    
+const featuresData = {
+    sectionTitle: "Comprehensive Automobile Insurance Bundle",
+    sectionDesc: "Guard your vehicle against all damages and enjoy a wide variety of car covers, which aim at providing total relaxation whenever you are driving.",
+    features: [
+        {
+            icon: Shield,
+            title: "Comprehensive Coverage",
+            description: "Complete coverage of accidents, theft, fire, natural disasters, and liabilities by third parties.",
+        },
+        {
+            icon: Clock,
+            title: "Instant Policy Issuance",
+            description: "The process of getting your car insurance policy online takes minutes to achieve the goal in a hassle-free manner.",
+        },
+        {
+            icon: DollarSign,
+            title: "Affordable Premiums",
+            description: "Competitive rates and payments and discounts for safe drivers.",
+        },
+        {
+            icon: FileText,
+            title: "Easy Claims Process",
+            description: "Minimal documentation and simple and transparent claims settlement.",
+        },
+        {
+            icon: Headphones,
+            title: "24/7 Customer Support",
+            description: "Policy inquiries, claims, and emergency roadside assistance.",
+        },
+        {
+            icon: Award,
+            title: "Cashless Repairs",
+            description: "Use the local garage to get hassle-free cashless repairs throughout the nation.",
+        },
+    ],
+};
+
 const whydata = {
-  title1: "Why Choose BikeSecure",
-  title2: "  India's Most Trusted Bike Insurance Partner",
-  desc: "     We provide comprehensive bike insurance solutions with unmatched benefits and customer service. Join over 1 million satisfied riders.",
-  features: [
-    {
-      icon: Shield,
-      title: "Comprehensive Coverage",
-      description: "Complete protection against accidents, theft, natural calamities, and third-party liabilities.",
-    },
-    {
-      icon: Clock,
-      title: "Instant Policy Issuance",
-      description: "Get your bike insured in minutes with our quick and easy online process.",
-    },
-    {
-      icon: Headphones,
-      title: "24/7 Customer Support",
-      description: "Round-the-clock assistance for claims, queries, and emergency roadside support.",
-    },
-    {
-      icon: BadgeCheck,
-      title: "Cashless Claims",
-      description: "Network of 5000+ garages across India for hassle-free cashless repairs.",
-    },
-    {
-      icon: Wallet,
-      title: "Affordable Premiums",
-      description: "Best rates in the market with flexible payment options and no hidden charges.",
-    },
-    {
-      icon: FileCheck,
-      title: "Quick Claim Settlement",
-      description: "Fast and transparent claim process with 95% settlement rate within 7 days.",
-    },
-  ]
+    title1: "Why Choose Us",
+    title2: "The Best-Known Budget Car Insurance Company in India.",
+    desc: "We offer all-round coverage and insurance to our customers with the best benefits and services to the customers. On the road to 1 million content customers.",
+    features: [
+        {
+            icon: Shield,
+            title: "Comprehensive Coverage",
+            description: "Covers accidents, theft, fire, natural disasters, and third-party liability.",
+        },
+        {
+            icon: Clock,
+            title: "Instant Policy Issuance",
+            description: "Insure your car in just a few minutes using an online digital platform.",
+        },
+        {
+            icon: Headphones,
+            title: "24/7 Customer Support",
+            description: "24-hour claims, queries, or emergency support.",
+        },
+        {
+            icon: BadgeCheck,
+            title: "Cashless Claims",
+            description: "Nationwide network of garages to make repairing hassle-free and cashless.",
+        },
+        {
+            icon: Wallet,
+            title: "Affordable Premiums",
+            description: "Pay accordingly, by plan rates with no extra fees.",
+        },
+        {
+            icon: FileCheck,
+            title: "Quick Claim Settlement",
+            description: "Quick and open payables with 95% paid within 7 days.",
+        },
+    ]
 }
 
+const processdata = {
+    title1: "Simple & Fast Process",
+    title2: "Get Insured in 4 Easy Steps",
+    desc: "Our streamlined process ensures you get your car insurance in minutes, not hours. No paperwork, no hassle.",
+    steps: [
+        {
+            number: "1",
+            icon: FileText,
+            title: "Enter Vehicle Details",
+            description: "In our form, give your car registration number and simple details.",
+        },
+        {
+            number: "2",
+            icon: Search,
+            title: "Compare Plans",
+            description: "Compare and contrast the plans of new car insurance, 3rd party car insurance, and first party.",
+        },
+        {
+            number: "3",
+            icon: CreditCard,
+            title: "Make Payment",
+            description: "Full secure online payment on the policy of your choice.",
+        },
+        {
+            number: "4",
+            icon: CheckCircle,
+            title: "Get Instant Policy",
+            description: "E-mail and SMS your car insurance certificate immediately. Drive protected!",
+        },
+    ]
+}
 
-
-    const processdata = {
-        title1: "Simple & Fast Process",
-        title2: "Get Insured in 4 Easy Steps",
-        desc: "  Our streamlined process ensures you get your bike insurance in minutes, not hours. No paperwork, no hassle.",
-        steps: [
-            {
-                number: "1",
-                icon: FileText,
-                title: "Enter Bike Details",
-                description: "Provide your bike registration number and basic details in our simple form.",
-            },
-            {
-                number: "2",
-                icon: Search,
-                title: "Compare Plans",
-                description: "View and compare multiple insurance plans tailored to your needs and budget.",
-            },
-            {
-                number: "3",
-                icon: CreditCard,
-                title: "Make Payment",
-                description: "Choose your preferred plan and complete secure payment using multiple options.",
-            },
-            {
-                number: "4",
-                icon: CheckCircle,
-                title: "Get Instant Policy",
-                description: "Receive your policy document instantly via email and SMS. Start riding protected!",
-            },
-        ]
-    }
-
-    const faqs = [
-  {
-    question: "What does bike insurance cover?",
-    answer:
-      "Bike insurance covers damages to your vehicle due to accidents, theft, fire, natural calamities, and third-party liabilities. Comprehensive plans also include personal accident cover for the rider and passengers.",
-  },
-  {
-    question: "Is bike insurance mandatory in India?",
-    answer:
-      "Yes, third-party bike insurance is mandatory as per the Motor Vehicles Act, 1988. However, comprehensive insurance is recommended for complete protection of your bike and yourself.",
-  },
-  {
-    question: "How is the premium calculated?",
-    answer:
-      "Premium is calculated based on factors like bike model, age, cubic capacity, location (IDV), add-on covers selected, and your claim history. Our smart calculator provides instant quotes.",
-  },
-  {
-    question: "What is IDV in bike insurance?",
-    answer:
-      "IDV (Insured Declared Value) is the current market value of your bike. It is the maximum amount you can claim in case of total loss or theft. IDV decreases with the age of the vehicle.",
-  },
-  {
-    question: "How do I file a claim?",
-    answer:
-      "You can file a claim by calling our 24/7 helpline, through our mobile app, or website. For cashless claims, visit any of our 5000+ network garages. Our team will guide you through the entire process.",
-  },
-  {
-    question: "Can I transfer my insurance to a new bike?",
-    answer:
-      "No, bike insurance is vehicle-specific and cannot be transferred to a new bike. However, if you sell your bike, the insurance can be transferred to the new owner with proper documentation.",
-  },
-  {
-    question: "What are add-on covers?",
-    answer:
-      "Add-on covers are optional coverages like zero depreciation, engine protection, roadside assistance, consumables cover, and return to invoice. These enhance your basic policy coverage.",
-  },
-  {
-    question: "How long does claim settlement take?",
-    answer:
-      "For cashless claims at network garages, approval is instant. For reimbursement claims, we settle 95% of claims within 7 days after receiving all required documents.",
-  },
+const faqs = [
+    {
+        question: "What is included in car insurance?",
+        answer: "Protects against accidents, robbery, fire, natural disasters, and third-party losses. Add-on features such as engine protection and personal accident cover can be added as well.",
+    },
+    {
+        question: "Is it obligatory to insure cars in India?",
+        answer: "Yes, there is third-party liability insurance, which is compulsory. All-encompassing coverage is not compulsory but desirable.",
+    },
+    {
+        question: "What is the calculation of the premium?",
+        answer: "Premium relies on IDV, the age of the car, engine capacity, location, previous claims, and the add-ons that are chosen.",
+    },
+    {
+        question: "What is IDV in car insurance?",
+        answer: "IDV is the Insured Declared Value, which is the highest amount that your insurance company will pay in case your car is stolen or utterly damaged.",
+    },
+    {
+        question: "How do I file a claim?",
+        answer: "Claim cashless via the networked garage, report, and hand in the necessary documents.",
+    },
+    {
+        question: "Am I able to transfer my insurance to another car?",
+        answer: "Yes, policies can be transferred or renewed to a new vehicle where adjustment of premium based on IDV is made.",
+    },
+    {
+        question: "What are add-on covers?",
+        answer: "Additional protection such as optional covers includes zero depreciation, roadside assistance, engine protection, and personal accident cover.",
+    },
+    {
+        question: "What is the duration of the settlement of claims?",
+        answer: "The claims are usually closed in between 7 and 15 days depending on the adequate documentation and prompt reporting.",
+    },
 ]
     const headers = [
         { key: 'rep', label: 'Sales Rep' },

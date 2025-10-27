@@ -25,7 +25,7 @@ function page() {
     subheading: "PAN Card",
     heading: "Apki Pehchaan, Apki Power",
     description:
-      "Get your PAN card fast and easily with SevenUnique. Apply your PAN to do your financial transactions, tax filing, and identity verification in just a few steps.",
+      "Get your PAN Card fast and easily with SevenUnique. Apply your PAN to do your financial transactions, tax filing, and identity verification in just a few steps.",
     bgImage: "/pan/panbg.png",
     centerImage: "/pan/pan1.png",
   };
@@ -41,19 +41,21 @@ function page() {
       </div>
     </div>
   );
-  const info = [
-    {
-      title: "Apply now, and get PAN immediately.",
-      description:
-        "Swipe your PAN card with SevenUnique. Apply online, send your documents, and receive your acknowledgment within seconds, having a hassle-free experience. Whether you are filling in your personal information or attaching identity and address documents, our hassle-free system makes your application process without a hustle. Monitor your PAN application in real time, update it, and have your PAN delivered to your registered address easily and conveniently.",
-    },
-    {
-      title: "Your Identity, Your Power.",
-      description:
-        "This is done easily as you apply your PAN card with SevenUnique. The entire application process is unfortunately very easy, as you do it online, attach the needed documents, and receive instant recognition. Have a safe and stable verification process. Be sure to enter both your personal and address information; this will help you to be on time with your PAN card in hand. Keep in touch with real-time application tracking. Get your PAN at your registered address within the shortest time and begin using it to carry out financial transactions and taxes with confidence.",
-    },
-  ];
-  const text = "PANCARD";
+const info = [
+  {
+    title: "Apply now, and get PAN immediately.",
+    description:
+      "Swipe your PAN Card with SevenUnique. Apply online, send your documents, and receive your acknowledgment within seconds, having a hassle-free experience. Whether you are filling in your personal information or attaching identity and address documents, our hassle-free system makes your application process without a hustle. Monitor your PAN application in real time, update it, and have your PAN delivered to your registered address easily and conveniently.",
+    image: "/image/pan-sideimg1.png"
+  },
+  {
+    title: "Your Identity, Your Power.",
+    description:
+      "This is done easily as you apply your PAN Card with SevenUnique. The entire application process is unfortunately very easy, as you do it online, attach the needed documents, and receive instant recognition. Have a safe and stable verification process. Be sure to enter both your personal and address information; this will help you to be on time with your PAN Card in hand. Keep in touch with real-time application tracking. Get your PAN at your registered address within the shortest time and begin using it to carry out financial transactions and taxes with confidence.",
+    image: "/image/panimg-2.png"
+  },
+];
+  const text = "PAN Card";
   return (
     <>
       <ServiceBanner data={data} />
@@ -97,21 +99,34 @@ function page() {
       <BenefitsSection2 />
       {/* <VerticalTimeline /> */}
         <PancardFeatures />
-      <div>
-        {info.map((item, index) => (
-          <div
-            key={index}
-            className={`bg-[#E6F6FE] rounded-2xl py-5 px-14 lg:p-16 md:pl-16 max-w-6xl my-10  ${
-              index % 2 === 0 ? "" : "ms-auto"
-            }`}
-          >
-            <h2 className="text-2xl md:text-3xl font-bold text-[#043C5C] mb-4">
-              {item.title}
-            </h2>
-            <p className="text-gray-600 leading-relaxed">{item.description}</p>
-          </div>
-        ))}
+     <div className="strippps">
+  {info.map((item, index) => (
+    <div
+      key={index}
+      className={`flex flex-col lg:flex-row items-center gap-8 max-w-9xl my-10 ${
+        index % 2 === 0 ? "" : "lg:flex-row-reverse ms-auto"
+      }`}
+    >
+      {/* Text Content */}
+      <div className="bg-[#E6F6FE] rounded-2xl py-3 px-14 lg:p-10 md:pl-16 flex-1">
+        <h2 className="text-2xl  font-bold text-[#043C5C] mb-4">
+          {item.title}
+        </h2>
+        <p className="text-gray-600  text-sm leading-relaxed">{item.description}</p>
       </div>
+
+      {/* Image Section */}
+      <div className="">
+
+        <img
+          src={item.image}
+          alt={item.title}
+          className="w-1/2 h-auto max-w-md mx-auto object-cover bg-[#E6F6FE] shadow-lg rounded-lg p-4"
+        />
+      </div>
+    </div>
+  ))}
+</div>
         <PancardApplyOnline />
       <section className="px-10">
         <PancardAllotment />
@@ -119,8 +134,7 @@ function page() {
       <section className="p-10">
         <PancardAllotment2 />
       </section>
-   
-            <PancardApplyOnline />
+
             <DocumentsRequired2/>
       <ReprintOfPANCard/>
       <section className="py-16">

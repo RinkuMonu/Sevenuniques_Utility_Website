@@ -18,10 +18,10 @@ const LetterCircle = ({ letter }) => (
 function LoanS2({ imageSrc, bgColor  }) {
   return (
     <section>
-      <div className={`relative lg:pt-20 overflow-visible`} style={{ backgroundColor: bgColor }}>
-        <div className="max-w-7xl mx-auto px-4 lg:px-0 relative">
+      <div className={`relative lg:pt-20`} style={{ backgroundColor: bgColor }}>
+        <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
           <div className="lg:grid grid-cols-1 lg:grid-cols-2 ">
-            <div className="relative ">
+            <div className=" ">
               <div className="flex justify-center space-y-5 pt-3 lg:space-y-0 lg:pt-0 space-x-4 md:space-x-6 ">
                 {letters.map((char) => (
                   <LetterCircle key={char} letter={char} />
@@ -29,14 +29,13 @@ function LoanS2({ imageSrc, bgColor  }) {
               </div>
             </div>
 
-            <div className="hidden lg:block relative h-[200px] mt-10 md:mt-0 ">
-              <div className=" lg:absolute bottom-12 left-28 md:right-8 lg:w-[450px] lg:h-[550px] z-20  overflow-visible">
+            <div className="hidden lg:block  h-[200px] mt-10 md:mt-0 ">
+                <div className=" lg:absolute bottom-0  w-[50%] lg:h-[550px] ">
                 <Image
                   src={imageSrc}
                   alt="loan-section"
                   fill
-                  className="object-cover scale-125 pb-4 right-0"
-                  style={{ objectPosition: 'right' }}
+                  className='z-2'
                 />
               </div>
             </div>

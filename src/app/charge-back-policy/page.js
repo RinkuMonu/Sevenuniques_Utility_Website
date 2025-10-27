@@ -98,7 +98,7 @@ const chargeSections = [
           <li>Loan applications and processing</li>
           <li>Insurance services</li>
           <li>Credit card bill payments</li>
-          <li>PAN card applications</li>
+          <li>pancard applications</li>
           <li>Subscription-based services</li>
           <li>Any other digital financial or utility service offered on the platform</li>
         </ul>

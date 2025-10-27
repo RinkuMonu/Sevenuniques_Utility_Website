@@ -24,7 +24,7 @@ export default function GrowthOpportunities() {
       ];
 
   return (
-    <section className="mx-auto max-w-7xl py-16 ">
+    <section className="mx-auto max-w-7xl py-16 px-6 lg:px-0">
       <div className="grid gap-12 lg:gap-16 md:grid-cols-2">
         <div className="flex flex-col justify-center gap-8">
           <div className="space-y-6">

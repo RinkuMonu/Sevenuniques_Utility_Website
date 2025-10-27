@@ -93,17 +93,17 @@ const page = () => {
         {/* CTA */}
         <div className="text-center mt-16">
           <h2 className="text-2xl font-semibold text-gray-900 mb-3">
-            Ready to Apply?
+Partner with Us
           </h2>
           <p className="text-gray-600 mb-6">
             Start your PAN card application today and get it delivered to your
             doorstep quickly and securely.
           </p>
           <Link
-            href="/contact"
+            href="https://utility.finuniques.in/register"
             className="inline-block bg-[#206077] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#4788a0] transition"
           >
-            Apply Now
+            Register
           </Link>
         </div>
       </div>

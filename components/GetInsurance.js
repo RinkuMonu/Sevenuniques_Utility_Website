@@ -10,13 +10,13 @@ const cardData = [
     id: 1,
     title: "Bike Insurance",
     subheading:"Ride Safe, Stay Protected",
-    buttonText: "Get covered now",
+    buttonText: "Insure my bike",
     link:"/insurance/bike-insurance"
   },
   {
     id: 2,
     title: "Car Insurance",
-    buttonText: "Protect my taxi",
+    buttonText: "Insure my car",
      subheading:"Your car , our car.",
      link:"/insurance/car-insurance"
   },
@@ -24,15 +24,15 @@ const cardData = [
     id: 3,
     title: "Taxi Car",
     subheading:"Protect Your Business Rides",
-    buttonText: "Insure my car",
-     link:"/insurance/commercial-insurance"
+    buttonText: "Protect my taxi",
+     link:"/insurance/taxi-insurance"
   },
   {
     id: 4,
     title: "Commercial Vehicle",
     subheading:"Keep Your Business Moving",
-    buttonText: "Insure my bike",
-     link:"/insurance/texi-insurance"
+    buttonText: "Get covered now",
+     link:"/insurance/commercial-vehicle"
   },
 ];
 

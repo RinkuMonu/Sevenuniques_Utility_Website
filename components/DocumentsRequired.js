@@ -4,8 +4,8 @@ import React from 'react';
 const DocumentItem = ({ title, description }) => (
   <div className="flex flex-col items-center text-center max-w-[180px] md:max-w-[200px]">
     <div
-      className="w-40 h-40 md:w-44 md:h-44 bg-[#00A9E7] rounded-full flex items-center justify-center p-4 mb-4 
-      shadow-[0_0_25px_8px_rgba(0,169,231,0.6)] 
+      className="w-40 h-40 md:w-44 md:h-44 bg-[#00A9E7] rounded-full flex items-center justify-center p-4 mb-4
+      shadow-[0_0_25px_8px_rgba(0,169,231,0.6)]
       animate-glow"
     >
       <h3 className="text-white text-xl font-bold leading-tight">{title}</h3>
@@ -17,7 +17,7 @@ const DocumentItem = ({ title, description }) => (
 // This is the main section component.
 const DocumentsRequired = () => {
   const documents = [
-    { title: 'ID Evidence', description: 'Aadhaar Card, PAN Card, Passport, or Voter ID.' },
+    { title: 'ID Evidence', description: 'Aadhaar Card, pancard, Passport, or Voter ID.' },
     { title: 'Address Proof', description: 'Aadhaar, passport, ration card, or utility bill.' },
     { title: 'Income Proof', description: 'Salary slips, ITR, or bank statements.' },
     { title: 'Employment Evidence', description: 'Company ID card or employment certificate' },
