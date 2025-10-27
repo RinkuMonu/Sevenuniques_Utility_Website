@@ -36,6 +36,7 @@ const serviceIcons = {
 const serviceGroups = [
   {
     title: "Banking Services",
+    desc : '“Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data.',
     items: [
       { label: "Money Transfer", key: "moneyTransfer" },
       { label: "Aadhaar ATM - AePS", key: "aeps" },
@@ -45,6 +46,7 @@ const serviceGroups = [
   },
   {
     title: "Utility Services",
+    desc : '“Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data.',
     items: [
       { label: "Mobile Recharge", key: "mobileRecharge" },
       { label: "DTH Recharge", key: "dthRecharge" },
@@ -53,6 +55,7 @@ const serviceGroups = [
     ],
   },
   {
+    desc : '“Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data.',
     title: "Insurance",
     items: [
       { label: "LIC New Policy", key: "licNewPolicy" },
@@ -121,7 +124,7 @@ export default function IncomeCalculator() {
     <section className="py-10 min-h-screen bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 lg:px-0">
         <motion.h2
-          className="text-4xl md:text-5xl font-bold text-slate-900 text-center mb-16 tracking-tight"
+          className="text-4xl md:text-5xl font-bold text-slate-900  mb-10 tracking-tight"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -143,10 +146,13 @@ export default function IncomeCalculator() {
                 variants={itemVariants}
                 className="bg-white rounded-2xl border border-slate-200 shadow-lg shadow-slate-900/5 transition-shadow duration-300 overflow-hidden"
               >
-                <div className="px-6 py-4 border-b bg-gradient-to-t from-slate-50 to-white border-slate-100">
+                <div className="px-6 py-4 border-b border-slate-100">
                   <h3 className="text-xl font-semibold text-slate-800">
                     {group.title}
                   </h3>
+                  <p className="text-sm text-gray-700 py-1">
+                    {group.desc}
+                  </p>
                 </div>
 
                 {/* Table Version */}
@@ -253,7 +259,7 @@ export default function IncomeCalculator() {
                                 className="w-full bg-[#115D8E]  text-white font-semibold py-3 rounded-xl hover:bg-[#115D8E]/90  transition-all duration-200 flex items-center justify-center gap-2 group"
                                 whileTap={{ scale: 0.97 }}
                             >
-                                JOIN PAYTHROUGH
+                                Withdraw Money
                                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                             </motion.button>
                         </div>
