@@ -158,7 +158,7 @@ const Footer = () => {
             </div>
 
           </div>
-          <div className=" grid grid-cols-1 md:grid-cols-3 gap-10 text-sm text-gray-700 
+          <div className=" grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-sm text-gray-700 
                    my-3 rounded-lg">
             <div className="col-span-1">
               <div className="relative group space-y-8 transition duration-300 mb-3">
@@ -195,7 +195,7 @@ const Footer = () => {
        <div className="md:col-span-2">
    <div className="grid md:grid-cols-7">
   {/* Insights */}
-            <div className="pl-6  md:col-span-2">
+            <div className="pl-6 col-span-3 md:col-span-2">
               <h3 className="font-semibold text-base text-white mb-1">Quick Links</h3>
               <ul className="space-y-1 text-sm font-light">
                 <li><Link href="/" className="hover:text-blue-400 text-white">Home</Link></li>
@@ -211,7 +211,7 @@ const Footer = () => {
             </div>
 
             {/* Company */}
-            <div className="pl-6 md:col-span-2 ">
+            <div className="pl-6  col-span-3 md:col-span-2 ">
               <h3 className="font-semibold text-base mb-1 text-white">Services</h3>
               <ul className="space-y-1 text-sm font-light">
                 <li><Link href="/aeps" className="hover:text-blue-400 text-white">AEPS</Link></li>
@@ -227,13 +227,13 @@ const Footer = () => {
             </div>
 
             {/* Connect */}
-            <div className="md:col-span-3 space-y-2">
+            <div className=" col-span-7 md:col-span-3 space-y-2 mt-5 md:mt-0">
               
            
                 <div className="flex gap-4 bg-white/20 align-middle py-3 px-2 lg:px-5 rounded  items-center ">
                   <h3 className="font-semibold text-white mb-3">Verified By</h3>
-                  <Image className="bg-white px-3 py-1 rounded-md" src="/home/pci-logo.png" width={80} height={100} alt="Verified 1" />
-                  <Image className="bg-white px-3 py-1 rounded-md" src="/home/iso-logo.png" width={80} height={100} alt="Verified 2" />
+                  <Image className="bg-white px-3 py-1 rounded-md" src="/home/pci-logo.png" width={70} height={100} alt="Verified 1" />
+                  <Image className="bg-white px-3 py-1 rounded-md" src="/home/iso-logo.png" width={70} height={100} alt="Verified 2" />
                 </div>
           
               <div className="flex flex-col gap-1 bg-white/20 align-middle py-3  px-2 lg:px-5 rounded ">
