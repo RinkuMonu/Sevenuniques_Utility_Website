@@ -101,7 +101,7 @@ function page() {
             </div>
         </div>
       <div className="bg-[#FFE9DE] relative pt-20 overflow-visible">
-        <div className="max-w-7xl mx-auto px-4 lg:px-0 relative">
+        <div className="max-w-7xl mx-auto px-4 lg:px-4 relative">
           <div className="grid grid-cols-1 md:grid-cols-2 ">
             <div className="relative z-10 ">
               <Image src="/bbps/bbps.png" alt="logo-bbps" width={400} height={400} />

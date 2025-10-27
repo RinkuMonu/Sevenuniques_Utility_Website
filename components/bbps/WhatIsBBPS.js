@@ -23,7 +23,7 @@ export default function WhatIsBBPS() {
       <div className="max-w-7xl   mx-auto rounded-lg grid grid-cols-1 md:grid-cols-5">
         
         {/* Left Column */}
-        <div className="col-span-1 md:col-span-3 p-8 md:p-12">
+        <div className="col-span-1 md:col-span-3 py-8 px-6 md:py-12 ">
           {/* Header */}
           <div className="flex items-center">
             <div className="w-6 h-0.5 bg-[#0C3D4C]  mr-3"></div>
