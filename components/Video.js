@@ -55,7 +55,7 @@ const Video = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center px-4  lg:px-0 pb-10">
+    <div className="flex flex-col items-center justify-center px-4  lg:px-20 pb-10">
       <div className="w-full max-w-7xl mx-auto">
         <header className="mb-8 md:mb-12 px-4 lg:px-0">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">

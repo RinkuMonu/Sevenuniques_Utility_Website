@@ -160,7 +160,7 @@ function page() {
                             </div>
 
                             <div className="hidden md:block  h-[200px] mt-10 md:mt-0 ">
-                                <div className=" lg:absolute bottom-0  w-[42%] lg:h-[550px] z-20 ">
+                                <div className=" lg:absolute bottom-0  w-[42%] lg:h-[500px] z-20 ">
                                     <Image
                                         src={"/loan/car2.png"}
                                         alt="loan-section"

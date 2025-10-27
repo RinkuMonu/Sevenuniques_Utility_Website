@@ -101,7 +101,7 @@ const info = [
       <BenefitsSection2 />
       {/* <VerticalTimeline /> */}
         <PancardFeatures />
-     <div className="strippps">
+     <div className="strippps py-16">
   {info.map((item, index) => (
     <div
       key={index}
@@ -125,7 +125,7 @@ const info = [
         height={200}
           src={item.image}
           alt={item.title}
-          className="w-1/2 h-auto max-w-md mx-auto object-cover bg-[#E6F6FE] shadow-lg rounded-lg p-4"
+          className="w-3/4 h-auto max-w-md mx-auto object-cover  p-3"
         />
       </div>
     </div>

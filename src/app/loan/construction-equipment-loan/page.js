@@ -143,10 +143,10 @@ function page() {
 
                             <Image
                                 src={data.centerImage}
-                                height={500}
-                                width={500}
+                                height={800}
+                                width={1024}
                                 alt="center image"
-                                className="md:pt-4 hidden md:block pt-16 lg:absolute bottom-10 right-32 lgscale-150 z-20"
+                                className="md:pt-4"
 
                             />
                         </div>

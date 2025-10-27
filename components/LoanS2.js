@@ -30,7 +30,7 @@ function LoanS2({ imageSrc, bgColor  }) {
             </div>
 
             <div className="hidden lg:block  h-[200px] mt-10 md:mt-0 ">
-                <div className=" lg:absolute bottom-0  w-[50%] lg:h-[550px] ">
+                <div className=" lg:absolute bottom-0  w-[40%] lg:h-[500px] ">
                 <Image
                   src={imageSrc}
                   alt="loan-section"
