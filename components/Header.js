@@ -28,7 +28,7 @@ export default function Header() {
     { name: "Insurance", href: "/insurance" },
     { name: "Booking", href: "/booking" },
     { name: "Credit Card", href: "/credit-card" },
-    { name: "pancard", href: "/pancard" },
+    { name: "PAN Card", href: "/pancard" },
   ];
 
   const loanDropdown = [
