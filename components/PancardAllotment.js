@@ -21,9 +21,9 @@ export default function PancardAllotment() {
         <p className="text-gray-700 mt-6 leading-relaxed text-sm sm:text-base relative text-justify md:text-left">
           You should use this form in case you have not yet applied to obtain a PAN or you do not possess a PAN. There is a place on the Income Tax Department site where you can check whether a PAN has been allotted to you or not.
           <br />
-          SevenUniques provides the service of online PAN cards, in which the digital PAN card is provided within a limited time, and the entire online submission is done via our{" "}
+          SevenUniques provides the service of online pancards, in which the digital PAN Card is provided within a limited time, and the entire online submission is done via our{" "}
           <span className="font-bold">online PAN service portal</span>. The{" "}
-          <span className="font-bold">PAN card online quick service</span> method
+          <span className="font-bold">PAN Card online quick service</span> method
           is a paperless and smooth experience.
           <span className="absolute left-0 bottom-[-20px] w-full h-[2px] bg-[#FFD84C] rounded-full"></span>
         </p>

@@ -76,12 +76,12 @@ function page() {
               />
             </div>
             <div className="overflow-visible md:block relative h-[200px] mt-10 md:mt-0 ">
-                            <div className="absolute -top-96 left-3 md:right-1/2 rounded-xl w-[530px] h-[604px] z-20 ">
+                            <div className="absolute -top-96 left-3 md:right-1/2 rounded-xl w-[530px] h-[604px] z-20 hidden md:block">
                                 <Image
                                     src="/image/service-img.png"
-                                    alt="logo-bbps"
+                                    alt="center image"
                                     fill
-                                    className="object-cover scale-105 top-0 left-0"
+                                    className="object-cover scale-105 top-0 left-0 "
                                     style={{ objectPosition: 'center' }}
                                 />
                             </div>

@@ -13,7 +13,7 @@ export default function Reprintguideline() {
       answer:
         <>
 <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
-  <li>Use the form <strong>Request for New PAN Card or/and Changes or Correction in PAN Data</strong> for reprint of PAN card or for making changes/correction in PAN data.</li>
+  <li>Use the form <strong>Request for New pancard or/and Changes or Correction in PAN Data</strong> for reprint of pancard or for making changes/correction in PAN data.</li>
   <li>Fill the application in block letters in English, preferably with black ink.</li>
   <li>Paste two recent colour photographs (size 3.5 cm × 2.5 cm).</li>
   <li>Provide the signature within the box.</li>
@@ -26,7 +26,7 @@ export default function Reprintguideline() {
   <li>Write the complete postal address in the application including landmark.</li>
   <li>Mention the correct PIN code.</li>
   <li>Mention telephone number / e-mail ID.</li>
-  <li>Attach proof of PAN (copy of PAN card or PAN allotment letter issued by Income Tax Department, if any).</li>
+  <li>Attach proof of PAN (copy of pancard or PAN allotment letter issued by Income Tax Department, if any).</li>
 </ul>
 
         </>,
@@ -71,7 +71,7 @@ export default function Reprintguideline() {
   return (
     <>
       <main className="min-h-screen bg-[#f9fcfd]">
-        <div className="py-10">
+        <div className="p-15">
           <h1 className="text-3xl font-bold w-3/4 mx-auto text-center text-[#0C3D4C] mb-12">
            Important Information for Persons Making Application for Reprint or Correction in PAN Data
           </h1>

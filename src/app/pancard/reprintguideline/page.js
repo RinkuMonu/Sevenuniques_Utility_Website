@@ -25,7 +25,7 @@ export default function Reprintguideline() {
                     <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
                         <li>Fill all mandatory fields (marked with *) of the form and select the corresponding box on the left margin of the appropriate field where correction is required.</li>
                     </ul>
-                    For Re-issuance of PAN Card Without Any Changes
+                    For Re-issuance of pancard Without Any Changes
 
                     <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
                         <li>Fill all fields in the form but do not select any box on the left margin.
@@ -146,7 +146,7 @@ export default function Reprintguideline() {
     return (
         <>
             <main className="min-h-screen bg-[#f9fcfd]">
-                <div className="py-10">
+                <div className="p-15">
                     <h1 className="text-3xl font-bold text-center text-[#0C3D4C] mb-12">
                         PAN CHANGE REQUEST FORM — ONLINE APPLICATION GUIDELINES
 

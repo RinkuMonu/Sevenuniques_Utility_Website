@@ -21,7 +21,7 @@ function page() {
     heading: 'Apka Business , Hamara Support',
     description: 'Get the finance you need to expand your business in a safe and fast manner. Get a business loan today and have the flexibility and easy access to capital. ',
     bgImage: '/loan/loanbbg.png',
-  
+
   }
 
   const LetterCircle = ({ letter }) => (
@@ -70,7 +70,7 @@ function page() {
       image: "/loan/loan12.png",
       cta: "Submit Docs",
       details: [
-        "Add the required documents: PAN Card, Aadhaar Card, business financials, and income proof (bank statements or tax returns).",
+        "Add the required documents: pancard, Aadhaar Card, business financials, and income proof (bank statements or tax returns).",
         "Your documents will be instantly checked by our system, which will then be processed much faster.",
       ],
     },

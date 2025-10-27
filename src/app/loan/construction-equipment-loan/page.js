@@ -83,7 +83,7 @@ function page() {
       image: "/loan/loan12.png",
       cta: "Submit Docs",
       details: [
-        "Add PAN Card and Aadhaar Card.",
+        "Add pancard and Aadhaar Card.",
         "Provide business documents—GST and business registration",
         "Give equipment quote and supplier information.",
         "Our system authenticates documents in a short time",

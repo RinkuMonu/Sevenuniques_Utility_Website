@@ -45,7 +45,7 @@ function ValidationForm() {
     }
 
     if (formData.pancard.length !== 10) {
-      newErrors.pancard = "PAN card number must be 10 characters";
+      newErrors.pancard = "pancard number must be 10 characters";
     }
 
     setErrors(newErrors);
@@ -102,15 +102,15 @@ function ValidationForm() {
           )}
         </div>
 
-        {/* PAN Card Number */}
+        {/* pancard Number */}
         <div className="mb-4">
-          <label className="block text-sm text-gray-500 mb-1">PAN Card Number</label>
+          <label className="block text-sm text-gray-500 mb-1">pancard Number</label>
           <input
             type="text"
             name="pancard"
             value={formData.pancard}
             onChange={handleChange}
-            placeholder="Enter your PAN card number"
+            placeholder="Enter your pancard number"
             className="w-full border border-gray-300 text-gray-500 rounded-lg p-2 uppercase focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           {errors.pancard && (

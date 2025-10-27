@@ -28,7 +28,7 @@ export default function Header() {
     { name: "Insurance", href: "/insurance" },
     { name: "Booking", href: "/booking" },
     { name: "Credit Card", href: "/credit-card" },
-    { name: "PanCard", href: "/pancard" },
+    { name: "pancard", href: "/pancard" },
   ];
 
   const loanDropdown = [
@@ -43,8 +43,8 @@ export default function Header() {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-[#0C3D4C] text-white text-sm py-2 px-4 md:px-6 flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-0">
-        <div className="flex flex-wrap justify-center md:justify-start items-center gap-x-6 gap-y-1 text-gray-200">
+      <div className="bg-[#0C3D4C] text-white text-sm py-2 px-4 md:px-8 flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-0">
+        <div className="flex flex-wrap justify-center md:justify-start items-center gap-x-4 gap-y-1 text-gray-200">
           <span className="flex items-center">
             <FaUser className="mr-2 w-4 h-4" /> 24x7 Technical Support
           </span>
