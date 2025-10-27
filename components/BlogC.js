@@ -2,6 +2,7 @@
 import React, { useState, useMemo } from 'react';
 import { Search, Filter, Calendar as CalendarIcon } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 // --- MOCK DATA ---
 const posts = [
@@ -117,7 +118,7 @@ const PostCard = ({ post }) => {
   return (
     <div className=" rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
       <div className="relative rounded-2xl">
-        <img src={post.imageUrl} alt={post.title} className="w-full h-64 object-cover rounded-2xl" />
+        <Image width={200} height={200} src={post.imageUrl} alt={post.title} className="w-full h-64 object-cover rounded-2xl" />
         <div className="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300">
           <Link href="#" className="text-white text-lg font-semibold bg-[#018EDE] px-3 py-1 rounded-md flex items-center gap-2 ">
             Read more

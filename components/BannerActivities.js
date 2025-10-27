@@ -1,10 +1,13 @@
 "use client"
+import Image from 'next/image';
 import React from 'react';
 
 const ActivityItem = ({ activity }) => (
   <div className="flex items-center justify-between py-3">
     <div className="flex items-center">
-      <img
+      <Image
+      width={200}
+      height={200}
         className="w-12 h-12 rounded-full object-cover"
         src={activity.imageUrl}
         alt={`Transaction for ${activity.name}`}

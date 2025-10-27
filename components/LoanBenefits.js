@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 // Reusable Benefit Card
@@ -27,7 +28,9 @@ export default function LoanBenefits({
         </div>
 
         <div className="relative shadow-2xl min-h-[70vh]">
-          <img
+          <Image
+          width={200}
+            height={200}
             src={image}
             alt="Car loan benefits"
             className="w-full h-full object-cover absolute inset-0"

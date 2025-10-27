@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useRef } from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
@@ -14,7 +15,7 @@ const ArticleCard = ({ imgSrc, category, date, title, description }) => {
         <div className="md:px-2">
             <div className="duration-300 overflow-hidden">
                 <div className="relative group">
-                    <img src={imgSrc} alt={title} className="w-full h-64 rounded-2xl" />
+                    <Image width={200} height={200} src={imgSrc} alt={title} className="w-full h-64 rounded-2xl" />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl">
                         <Link href="/blog" className="flex shadow-[2px_2px_20px_0px_#8AADB] items-center gap-2 bg-[#018EDE] text-white py-2 px-3 rounded-lg font-semibold duration-200">
                             <span>Read more</span>

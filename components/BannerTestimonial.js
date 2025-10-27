@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image';
 import React from 'react';
 
 
@@ -50,7 +51,9 @@ const ReviewerAvatars = ({ reviewers }) => {
   return (
     <div className="flex space-x-2">
       {reviewers.map((reviewer) => (
-        <img
+        <Image  
+          width={200}
+          height={200}
           key={reviewer.id}
           className="w-10 h-10 rounded-full  shadow-md object-cover transition-transform transform hover:scale-110"
           src={reviewer.imageUrl}

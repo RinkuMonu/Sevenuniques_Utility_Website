@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Slider from 'react-slick';
@@ -119,7 +120,9 @@ const HomeOnboarding = () => {
                                 >
                                     {activeData.image.map((img, index) => (
                                         <div key={index} className="mt-10 ">
-                                            <img
+                                            <Image 
+                                                width={200}
+                                                height={200}
                                                 src={img}
                                                 alt={`slide-${index}`}
                                                 className="max-w-[250px] h-full  mx-auto flex items-baseline align-bottom justify-baseline "

@@ -2,6 +2,8 @@
 
 import Documents from "../../../../components/Pancard/Documents";
 
+// import Documents from "../../../../components/Pancard/Documents";
+
 
 export default function DocumentsRequired() {
 

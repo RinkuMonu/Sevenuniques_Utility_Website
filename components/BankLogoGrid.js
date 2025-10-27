@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 // --- Data for the Bank Logos ---
 const banks = [
@@ -28,7 +29,9 @@ const BankLogoGrid = () => {
                   transition-all duration-300 transform hover:scale-110 border-gray-200 hover:border-blue-500 hover:shadow-lg
                 `}
               >
-                <img
+                <Image
+                  width={200}
+                  height={200}
                   src={bank.logoUrl}
                   alt={`${bank.name} logo`}
                   className="h-10 w-10 md:h-12 md:w-12 object-contain"

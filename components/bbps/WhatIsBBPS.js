@@ -1,9 +1,5 @@
 "use client"
 import React from "react";
-import { Zap, ShieldCheck, Wallet, Globe } from "lucide-react";
-import { motion } from "framer-motion";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import { SiNotion } from 'react-icons/si';
 import Image from "next/image";
 
 
@@ -11,7 +7,7 @@ const Stat = ({ value, redWidth }) => (
   <div>
     <p className="text-xl font-medium text-gray-800">{value}</p>
     <div className="w-full h-1.5 mt-2 flex">
-      <div className={`${redWidth} bg-[#0C3D4C] `}></div>
+      <div className={`h-2 bg-[#0C3D4C] ${redWidth} rounded`}></div>
       <div className="flex-1 bg-gray-300"></div>
     </div>
   </div>
