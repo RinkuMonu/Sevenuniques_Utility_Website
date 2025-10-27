@@ -71,7 +71,7 @@ export default function Dos({ items }) {
     <main className="min-h-screen bg-gradient-to-br from-[#ebf7fa] to-[#fcfbf5] flex flex-col items-center py-10 px-4 md:px-8 relative">
       <div className="max-w-7xl w-full mx-auto">
         <h1 className="text-3xl md:text-5xl font-bold text-[#176B87] mb-3 text-center tracking-tight">
-          Do's & Don'ts
+          Do&#39;s & Don&#39;ts
         </h1>
         <p className="text-gray-600 text-lg text-center mb-10">
           Important guidelines to follow for your PAN application process.

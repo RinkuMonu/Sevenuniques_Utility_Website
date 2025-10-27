@@ -95,7 +95,9 @@ const info = [
           </div>
         </div>
       </section>
-      <OnboardingProcess />
+      <div className="container lg:px-12 mx-auto">
+<OnboardingProcess />
+      </div>
       <BenefitsSection2 />
       {/* <VerticalTimeline /> */}
         <PancardFeatures />
@@ -118,7 +120,9 @@ const info = [
       {/* Image Section */}
       <div className="">
 
-        <img
+        <Image
+        width={200}
+        height={200}
           src={item.image}
           alt={item.title}
           className="w-1/2 h-auto max-w-md mx-auto object-cover bg-[#E6F6FE] shadow-lg rounded-lg p-4"

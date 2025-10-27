@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useRef } from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import Slider from "react-slick";
@@ -14,7 +15,9 @@ const ArrowIcon = () => (
 const StoryCard = ({ imgSrc, title, text }) => {
     return (
         <div className="relative group rounded-2xl overflow-hidden cursor-pointer h-96 md:mx-2">
-            <img
+            <Image 
+                width={200}
+                height={200}
                 src={imgSrc}
                 alt={title}
                 className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"

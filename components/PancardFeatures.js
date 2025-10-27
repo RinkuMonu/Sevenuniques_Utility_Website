@@ -54,14 +54,14 @@ const pancardFeatures = () => {
     <section className="py-16 bg-[#F9EBDF] md:px-0 px-6">
       <div className="max-w-9xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4">
-          pan card Service Features
+          PAN Card Service Features
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
           Simplify your pan card application with our secure, fast, and
           paperless services designed for everyone.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 lg:px-10">
           {features.map((feature) => (
             <Link
               key={feature.id}

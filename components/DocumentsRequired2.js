@@ -54,7 +54,7 @@ export default function DocumentsRequired2() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto py-20 px-4  lg:px-0">
+    <section className="max-w-6xl mx-auto py-20 px-4  lg:px-0">
       {/* Enhanced Header */}
       <div className="text-center mb-16">
         <div className="inline-flex items-center gap-2 bg-blue-50 text-[#0C3D4C] px-4 py-2 rounded-full text-sm font-medium mb-4">

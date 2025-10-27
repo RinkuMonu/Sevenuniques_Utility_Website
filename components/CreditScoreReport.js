@@ -131,7 +131,15 @@ function ValidationForm() {
 
 // ✅ Main Component
 const CreditScoreReport = () => {
-  const [score, setScore] = useState(806);
+  const [score, setScore] = useState(0);
+  const [instant, setInstant] = useState(false);
+  
+  const onSubmit = (e) => {
+    e.preventDefault();
+    setInstant(true);     
+    setScore(calculateScore()); 
+    setTimeout(() => setInstant(false), 0);
+  };
 
   const creditFactors = [
     { label: "Credit Card Utilization", value: 25 },
@@ -153,7 +161,7 @@ const CreditScoreReport = () => {
 
               <div className="w-full">
                 <div className="rounded-full">
-                  <CircularScoreIndicator score={score} maxScore={1000} />
+                <CircularScoreIndicator score={score} maxScore={1000} instant={instant} />
                 </div>
               </div>
             </div>

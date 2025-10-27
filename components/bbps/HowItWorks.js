@@ -58,7 +58,7 @@ export default function HowItWorks() {
   };
 
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white p-16 lg:px-26">
       <div className="mx-auto max-w-7xl px-4 lg:px-0">
         {/* Section Header */}
         <motion.div

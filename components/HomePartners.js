@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 // --- Data for the partner cards ---
@@ -31,7 +32,9 @@ const PartnerCard = ({ name, imageUrl , index }) => (
 >
 
    <div>
-     <img
+     <Image
+     width={200}
+     height={200}
       src={imageUrl}
       alt={name}
       className="w-full h-full object-cover mt-3"
