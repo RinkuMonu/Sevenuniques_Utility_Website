@@ -118,7 +118,9 @@ const info = [
       {/* Image Section */}
       <div className="">
 
-        <img
+        <Image
+        width={200}
+        height={200}
           src={item.image}
           alt={item.title}
           className="w-1/2 h-auto max-w-md mx-auto object-cover bg-[#E6F6FE] shadow-lg rounded-lg p-4"

@@ -9,7 +9,7 @@ export default function Reprintguideline() {
      const dontspoints = [
     {
       icon: <Zap size={22} className="text-[#0077b6]" />,
-      question: "Do's",
+      question: "DO",
       answer:
         <>
 <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
@@ -33,7 +33,7 @@ export default function Reprintguideline() {
     },
     {
       icon: <Lightbulb size={22} className="text-[#00b4d8]" />,
-      question: "Don'ts",
+      question: "Do Not",
       answer:
         <>
         <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
@@ -42,7 +42,7 @@ export default function Reprintguideline() {
   <li>Do not sign across the box (signature should be within the box).</li>
   <li>Do not provide POI and POA which are not in the name of the applicant.</li>
   <li>Do not write any additional details (date, designation, rank, etc.) along with the signature in the box.</li>
-  <li>Do not mention husband's name in the Father's Name column.</li>
+  <li>Do not mention husband&#39;s name in the Father&#39;s Name column.</li>
   <li>Do not abbreviate your name or use initials.</li>
   <li>Do not apply for a new PAN if you already have one.</li>
 </ul>

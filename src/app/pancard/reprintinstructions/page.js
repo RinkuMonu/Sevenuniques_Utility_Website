@@ -104,9 +104,9 @@ Example: Vivek Kumar Singh
       answer:
        <>
        <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
-  <li>Father’s name is mandatory; mother’s name is optional.</li>
-  <li>Married women must provide their father's name, not husband’s.</li>
-  <li>Choose which parent’s name appears on PAN; if not selected, father’s name is the default.</li>
+  <li>Father&#39;s name is mandatory; mother&#39;s name is optional.</li>
+  <li>Married women must provide their father&#39;s name, not husband&#39;s.</li>
+  <li>Choose which parent&#39;s name appears on PAN; if not selected, father&#39;s name is the default.</li>
 </ul>
 
        </>,
@@ -222,7 +222,7 @@ Example (Delhi landline): 91-11-23555705
 <li>Provide Aadhaar number if allotted.</li>
 <li>The name must match exactly with Aadhaar.</li>
 <li>Attach Aadhaar copy.</li>
-<li>Minors should provide a minor's Aadhaar.</li>
+<li>Minors should provide a minor&#39;s Aadhaar.</li>
 
 </ul>
        </>,
@@ -250,7 +250,7 @@ Example (Delhi landline): 91-11-23555705
        <>
 <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
 <li>Sign by: applicant, Karta (HUF), Director (Company), Authorized Signatory (AOP/BOI/Local Authority/Artificial Juridical Person), Partner (Firm/LLP), Trustee (Trust), Representative Assessee (Minor/Deceased/Mentally Challenged).</li>
-<li>Verifier’s name, capacity, and place are mandatory.</li>
+<li>Verifier&#39;s name, capacity, and place are mandatory.</li>
 
 
 </ul>

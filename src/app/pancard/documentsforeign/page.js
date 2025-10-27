@@ -84,7 +84,7 @@ export default function documentsforeign() {
                         <li>Copy of Bank account statement in country of residence</li>
                         <li>Copy of Non-Resident External (NRE) bank account statement in India</li>
                         <li>Copy of Certificate of Residence in India or Residential Permit issued by State Police Authorities</li>
-                        <li>Copy of Registration Certificate issued by the Foreigner's Registration Office showing Indian address</li>
+                        <li>Copy of Registration Certificate issued by the Foreigner&#39;s Registration Office showing Indian address</li>
                         <li>Copy of Visa granted + appointment letter/contract from Indian company + certificate of Indian address issued by employer</li>
                         <li>Copy of other national/citizenship Identification Number or TIN, duly attested (as mentioned above)</li>
                     </ul>
@@ -92,8 +92,8 @@ export default function documentsforeign() {
                         <strong>Note:</strong> If an Indian office address is mentioned by foreign citizens, then additionally submit:
                         <ul className="list-disc ml-5 mt-1">
                             <li>Copy of appointment letter/contract from Indian company</li>
-                            <li>Certificate of Indian address issued by employer on company letterhead, mentioning employer's PAN</li>
-                            <li>Copy of pancard mentioned in the employer's certificate</li>
+                            <li>Certificate of Indian address issued by employer on company letterhead, mentioning employer&#39;s PAN</li>
+                            <li>Copy of pancard mentioned in the employer&#39;s certificate</li>
                         </ul>
                     </div>
                 </div>
