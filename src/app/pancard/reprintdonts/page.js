@@ -71,7 +71,7 @@ export default function Reprintguideline() {
   return (
     <>
       <main className="min-h-screen bg-[#f9fcfd]">
-        <div className="py-10">
+        <div className="p-15">
           <h1 className="text-3xl font-bold w-3/4 mx-auto text-center text-[#0C3D4C] mb-12">
            Important Information for Persons Making Application for Reprint or Correction in PAN Data
           </h1>
