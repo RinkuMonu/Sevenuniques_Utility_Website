@@ -116,7 +116,9 @@ function page() {
                 <AboutArticle/>
             {/* <BenefitsDiagram /> */}
             {/* <FaqAccordion faqData={faqData}/> */}
-             <FAQ faqs={faqData} subheading={" Find answers to common questions about bike insurance. Can't find what you're looking for? Contact our support team."} />
+<div className='lg:px-16'>
+     <FAQ faqs={faqData} subheading={" Find answers to common questions about bike insurance. Can't find what you're looking for? Contact our support team."} />
+</div>
              <BenefitsSection2 />
              <div  className='pt-16'>
                <PartnersSection />
