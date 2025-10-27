@@ -46,7 +46,7 @@ const services = [
 
 const AepsService = () => {
   return (
-    <section className="bg-[#E6F4FA] py-16">
+    <section className="bg-[#E6F4FA] py-16 lg:px-10">
 
       <div className="max-w-7xl mx-auto px-4 text-center">
         <p className="text-lg font-semibold text-[#0C3D4C] tracking-wide">Services</p>
