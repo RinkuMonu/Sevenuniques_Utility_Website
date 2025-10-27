@@ -1,16 +1,18 @@
 "use client"
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const Stat = ({ value, redWidth }) => (
-  <div>
-    <p className="text-xl font-medium text-gray-800">{value}</p>
-    <div className="w-full h-1.5 mt-2 flex">
-      <div className={`h-2 bg-[#0C3D4C] ${redWidth} rounded`}></div>
-      <div className="flex-1 bg-gray-300"></div>
-    </div>
+<div>
+  <p className="text-xl font-medium text-gray-800">{value}</p>
+  <div className="w-full h-1.5 mt-2 flex">
+    <div className={`h-2 bg-[#0C3D4C] ${redWidth} rounded`}></div>
+    <div className="flex-1 bg-gray-300"></div>
   </div>
+</div>
+
 );
 
 
@@ -72,12 +74,12 @@ export default function WhatIsBBPS() {
               <h2 className="text-3xl font-extrabold tracking-widest text-[#0C3D4C] ">Bhart Bill Payment System</h2>
             </div>
             {/* CTA */}
-            <div className="mt-4 text-center md:text-left">
-              <button className="mt-4 px-10 py-3 bg-gray-700 text-white font-bold tracking-wider relative transition-all duration-300 ease-in-out
+            <div className="mt-10 w-full text-center md:text-left">
+              <Link href={"/contact"} className="mt-5 px-10 py-3 bg-gray-700 text-white font-bold tracking-wider relative transition-all duration-300 ease-in-out
               hover:shadow-none hover:translate-x-1 hover:translate-y-1
               shadow-[8px_8px_0_0_#0C3D4C]">
-                LET'S COLLABORATE
-              </button>
+                LET&#39;S COLLABORATE
+              </Link>
             </div>
           </div>
         </div>
