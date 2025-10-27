@@ -3,7 +3,7 @@ import React from 'react';
 
 function AepsFeatures() {
   return (
-    <div className="max-w-7xl mx-auto px-4 lg:px-0 py-12">
+    <div className="max-w-7xl mx-auto px-4 lg:px-20 py-12">
       <h3 className="mt-2 text-4xl font-bold text-[#0C3D4C] pb-10">
        Banking in all streets, in all country districts
       </h3>
