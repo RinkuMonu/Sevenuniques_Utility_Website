@@ -65,7 +65,7 @@ const BenefitsSection2 = () => {
                                 value={mobile}
                                 onChange={handleChange}
                                 placeholder="Enter Mobile Number"
-                                className={`w-full pl-10 pr-4 py-2 rounded-full bg-white text-gray-900 placeholder-gray-500 focus:outline-none border ${mobile && !isValidIndianNumber
+                                className={`w-full pl-10 pr-4 py-2 rounded-full bg-white text-gray-900 placeholder-gray-500 focus:outline-none  ${mobile && !isValidIndianNumber
                                         ? "border-red-500"
                                         : "border-gray-300 focus:border-blue-500"
                                     }`}
