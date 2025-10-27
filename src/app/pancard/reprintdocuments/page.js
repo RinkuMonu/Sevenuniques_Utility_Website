@@ -268,9 +268,9 @@ const guidelinepoints = [
 export default function Reprintdocuments({ guidelinepoints: propsPoints }) {
   const points = propsPoints || guidelinepoints;
   return (
-    <section className="pb-16 bg-gradient-to-b from-white to-[#f9fbfc]">
+    <section className="p-16 bg-gradient-to-b from-white to-[#f9fbfc]">
       <div className="max-w-7xl mx-auto px-6 relative">
-        <div className="absolute -left-4 top-0 w-[2px] h-full bg-[#0c3d4c]"></div>
+        <div className="absolute -left-6 top-0 w-[2px] h-full bg-[#0c3d4c]"></div>
 
         <div className="space-y-10 relative">
           {points.map((item, index) => (
@@ -278,7 +278,7 @@ export default function Reprintdocuments({ guidelinepoints: propsPoints }) {
               key={index}
               className="relative flex items-start gap-5 pl-10 border border-gray-100 rounded-2xl p-6 bg-white shadow-sm hover:shadow-md transition-all duration-300"
             >
-              <div className="absolute left-[7px] top-7 w-3 h-3 bg-[#0077b6] rounded-full shadow-md"></div>
+              <div className="absolute -left-13 top-7 w-3 h-3 bg-[#0077b6] rounded-full shadow-md"></div>
 
               <div className="p-3 rounded-xl bg-[#f1f9fa] flex items-center justify-center shrink-0">
                 {item.icon}
