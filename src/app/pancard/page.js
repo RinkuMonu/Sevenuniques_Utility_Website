@@ -95,7 +95,9 @@ const info = [
           </div>
         </div>
       </section>
-      <OnboardingProcess />
+      <div className="container lg:px-12 mx-auto">
+<OnboardingProcess />
+      </div>
       <BenefitsSection2 />
       {/* <VerticalTimeline /> */}
         <PancardFeatures />
