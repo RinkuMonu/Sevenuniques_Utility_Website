@@ -21,7 +21,7 @@ const logos = [
 
 const ComplianceSection = () => {
   return (
-    <div className="text-center py-16">
+    <div className="text-center py-16 px-24">
       <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase">
         KEY LICENSES
       </p>

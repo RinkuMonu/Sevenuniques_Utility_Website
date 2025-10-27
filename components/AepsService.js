@@ -67,7 +67,7 @@ const AepsService = () => {
                 <p className="text-gray-500 leading-relaxed">{service.description}</p>
               </div>
 
-              <div className="absolute w-16 h-16 top-0 -right-1 bg-white rounded-full p-3 z-50 shadow-md">
+              <div className="absolute w-16 h-16 top-0 -right-1 bg-white rounded-full p-3 z-[10] shadow-md">
                 <Image
                   width={40}
                   height={40}

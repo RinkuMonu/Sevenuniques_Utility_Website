@@ -79,7 +79,7 @@ const TimelineStep = ({ stepNumber, title, description, imageUrl, isReversed, is
 
 const HowItWorks1 = () => {
     return (
-        <section className="bg-slate-50 py-20 px-4 sm:px-6 lg:px-16">
+        <section className="bg-slate-50 py-20 px-4 sm:px-6 lg:px-24">
 
 <div className="text-center pb-10 pt-6">
       <p className="text-2xl font-semibold text-[#24576C] tracking-widest uppercase">
