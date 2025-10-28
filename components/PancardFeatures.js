@@ -51,8 +51,8 @@ const features = [
 
 const pancardFeatures = () => {
   return (
-    <section className="py-16 bg-[#F9EBDF] md:px-0 px-6">
-      <div className="max-w-9xl mx-auto text-center">
+    <section className="py-16 bg-[#F9EBDF] lg:px-0 px-4">
+      <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4">
           PAN Card Service Features
         </h2>
@@ -61,7 +61,7 @@ const pancardFeatures = () => {
           paperless services designed for everyone.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-8 lg:px-10">
+        <div className="flex flex-wrap justify-center gap-8 lg:px-0">
           {features.map((feature) => (
             <Link
               key={feature.id}

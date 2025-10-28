@@ -17,117 +17,6 @@ import {
   FileText,
 } from "lucide-react";
 
-const SecurityIcon = ({ className = "w-5 h-5" }) => (
-  <svg
-    className={className}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M12 2L4 6V11C4 16.52 7.58 21.74 12 23C16.42 21.74 20 16.52 20 11V6L12 2Z"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M12 11V15"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-    />
-    <circle cx="12" cy="8" r="1" fill="currentColor" />
-  </svg>
-);
-
-const CollectionIcon = ({ className = "w-5 h-5" }) => (
-  <svg
-    className={className}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <rect
-      x="3"
-      y="4"
-      width="18"
-      height="16"
-      rx="2"
-      stroke="currentColor"
-      strokeWidth="2"
-    />
-    <path
-      d="M3 10H21"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-    />
-  </svg>
-);
-
-const UsageIcon = ({ className = "w-5 h-5" }) => (
-  <svg
-    className={className}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <rect
-      x="2"
-      y="3"
-      width="20"
-      height="14"
-      rx="2"
-      stroke="currentColor"
-      strokeWidth="2"
-    />
-    <path
-      d="M8 21H16"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-    />
-    <path
-      d="M12 17V21"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-    />
-  </svg>
-);
-
-const CookiesIcon = ({ className = "w-5 h-5" }) => (
-  <svg
-    className={className}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="2" />
-    <circle cx="10" cy="10" r="1" fill="currentColor" />
-    <circle cx="14" cy="14" r="1" fill="currentColor" />
-    <circle cx="15" cy="9" r="1" fill="currentColor" />
-  </svg>
-);
-
-const RightsIcon = ({ className = "w-5 h-5" }) => (
-  <svg
-    className={className}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <circle cx="12" cy="7" r="4" stroke="currentColor" strokeWidth="2" />
-    <path
-      d="M5.5 21C5.5 17.6863 8.18629 15 11.5 15H12.5C15.8137 15 18.5 17.6863 18.5 21"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-    />
-  </svg>
-);
-
 const InfoIcon = ({ className = "w-5 h-5" }) => (
   <svg
     className={className}
@@ -295,7 +184,7 @@ const privacySections = [
 ];
 
 export default function Privacy() {
-  const [activeSection, setActiveSection] = useState("data-security");
+  const [activeSection, setActiveSection] = useState("introduction");
   const sectionRefs = useRef([]);
 
   useEffect(() => {
@@ -331,10 +220,10 @@ export default function Privacy() {
 
   return (
     <>
-      <section className="bg-white min-h-screen ">
-        <div className="bg-[#F4FCFF] rounded-2xl shadow-lg">
+      <section className="bg-[#F4FCFF]  min-h-screen ">
+        <div className="rounded-2xl shadow-lg">
           <section>
-            <div className="max-w-8xl mx-auto px-4 py-12">
+            <div className=" mx-auto px-4 py-12">
               <div className="flex flex-col lg:flex-row gap-8">
                 <div className="lg:w-1/4">
                   <div className="sticky top-32 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">

@@ -236,7 +236,7 @@ export default function RefundPolicy() {
 
   return (
     <>
-      <div className="container ">
+      <div className="container-fluid ">
         <section className="bg-white min-h-screen">
           <div className="bg-[#F4FCFF] rounded-2xl shadow-lg">
             <section>

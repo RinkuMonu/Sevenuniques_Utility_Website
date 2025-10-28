@@ -14,6 +14,7 @@ import ContactBanner from '../../../components/ContactBanner'
 import AepsAdvantages from '../../../components/AepsAdvantages'
 import Aepskeyfeatures from '../../../components/Aepskeyfeatures'
 import Aepstransaction from '../../../components/Aepstransaction'
+import Image from 'next/image'
 
 function page() {
   const data = {
@@ -74,10 +75,21 @@ function page() {
   return (
     <>
       <ServiceBanner data={data} />
-      <ServicesSection2 section2data={section2data} />
+           <div style={{ backgroundColor: section2data.color }}>
+                      <div className='max-w-7xl mx-auto lg:pt-8 px-4 lg:px-0'>
+                          <div className='grid grid-cols-1 sm:grid-cols-2'>
+                              <div className='flex items-center'>
+                                  <Image src={section2data.img1} width={400} height={0} alt=' logo' />
+                              </div>
+                              <div>
+                                  <Image src={section2data.img2} width={600} height={400} alt=' image' className=' ' />
+                              </div>
+                          </div>
+                      </div>
+                  </div>
 
 
-      <section className='pt-10 px-24'>
+      <section className='pt-10 px-4'>
         <div className="text-center pt-6">
           <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase">
             WHAT IS

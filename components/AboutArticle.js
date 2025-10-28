@@ -17,7 +17,7 @@ const ArticleCard = ({ imgSrc, category, date, title, description }) => {
                 <div className="relative group">
                     <Image width={200} height={200} src={imgSrc} alt={title} className="w-full h-64 rounded-2xl" />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl">
-                        <Link href="/blog" className="flex shadow-[2px_2px_20px_0px_#8AADB] items-center gap-2 bg-[#018EDE] text-white py-2 px-3 rounded-lg font-semibold duration-200">
+                        <Link href="/blog/blog-details" className="flex shadow-[2px_2px_20px_0px_#8AADB] items-center gap-2 bg-[#018EDE] text-white py-2 px-3 rounded-lg font-semibold duration-200">
                             <span>Read more</span>
                             <ReadMoreIcon />
                         </Link>
@@ -114,7 +114,7 @@ const AboutArticle = () => {
     };
 
     return (
-        <div className="lg:pt-16 pb-5 px-4 sm:p-8">
+        <div className="lg:pt-16 pb-5 px-4 lg:px-16 sm:p-8">
             <div className="w-full max-w-7xl mx-auto space-y-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
                     <div>

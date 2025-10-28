@@ -74,7 +74,7 @@ const Video = () => {
             </div>
           </div>
         </header>
-        <main className="flex w-full gap-4 h-[400px]">
+        <main className="flex w-full md:gap-4 h-[400px]">
           {cardData.map((card, index) => {
             const isActive = index === activeIndex;
             return (

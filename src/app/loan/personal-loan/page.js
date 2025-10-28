@@ -28,7 +28,7 @@ function page() {
 
 
     const LetterCircle = ({ letter }) => (
-        <div className="flex h-20 w-20 items-center justify-center rounded-full  p-1 md:shadow-inner md:h-24 md:w-24">
+        <div className="flex h-20 w-20 items-center justify-center rounded-full  p-1 lg:shadow-inner md:h-24 md:w-24">
             <div className="flex h-full w-full items-center justify-center rounded-full lg:border-4 border-[#006F64]">
                 <span className="font-sans text-6xl font-medium text-[#006F64] md:text-6xl">
                     {letter}
@@ -187,7 +187,7 @@ function page() {
             </div>
             <section>
                 <div className={`relative lg:pt-20 `} style={{ backgroundColor: "#E1F8DC" }}>
-                    <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
+                    <div className="max-w-7xl mx-auto px-4 lg:pb-16 lg:px-0 ">
                         <div className="grid grid-cols-1 md:grid-cols-2 ">
                             <div className=" ">
                                 <div className="flex space-x-4 md:space-x-6">
@@ -197,14 +197,14 @@ function page() {
                                 </div>
                             </div>
 
-                            <div className="hidden md:block  h-[200px] mt-10 md:mt-0 ">
-                                <div className=" lg:absolute bottom-0  w-[50%] lg:h-[550px] z-11">
+                            <div className="hidden lg:block mt-10 md:mt-0 lg:absolute bottom-0 right-0">
                                     <Image
                                         src={"/loan/per2.png"}
                                         alt="loan-section"
-                                        fill
+                                    width={600}
+                                    height={600}
                                     />
-                                </div>
+                              
                             </div>
                         </div>
                     </div>

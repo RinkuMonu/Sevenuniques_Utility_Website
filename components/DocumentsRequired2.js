@@ -95,9 +95,6 @@ export default function DocumentsRequired2() {
                   />
                 </div>
               </div>
-
-
-
               {/* Document Info */}
               <div className="mb-4">
                 <h3 className="text-gray-900 font-semibold text-lg leading-tight mb-2 line-clamp-2">
@@ -107,9 +104,6 @@ export default function DocumentsRequired2() {
                   {doc.description}
                 </p>
               </div>
-
-
-
             </div>
           </div>
         ))}

@@ -45,12 +45,12 @@ const features = [
 const Aepskeyfeatures = () => {
   return (
     <section
-      className="relative bg-fixed bg-cover bg-center py-20 px-20"
+      className="relative bg-fixed bg-cover bg-center py-20"
       style={{ backgroundImage: "url('/image/aeps-bg.jpg')" }}
     >
       <div className="absolute inset-0 bg-black/50"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-0 text-center text-white">
         <h3 className="text-4xl md:text-5xl font-bold mb-4">
 Key Benefits
         </h3>
