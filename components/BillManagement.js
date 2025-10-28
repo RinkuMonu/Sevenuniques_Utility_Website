@@ -205,7 +205,7 @@ import Image from 'next/image';
 const billCategories = {
   left: [
     {
-      icon: "/icons/elsecricity.png",
+      icon: "/home/lightbulb.png",
       title: "Electricity",
       description:
         "Be sure to pay your electricity bills on time and not to be disconnected. Real-time confirmation and 24/7 service.",

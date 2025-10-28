@@ -118,10 +118,10 @@ const CreditCard = ({ bank, points, title, tag, image, benefit }) => {
 
                 {/* Action Buttons */}
                 <div className=" flex space-x-4 justify-end align-bottom">
-                    <Link href="" className=" w-fit bg-[#018EDE] text-white font-bold py-2 px-10 rounded-full hover:bg-[#018EDE]/70 transition-colors">
+                    <Link   href="https://utility.finuniques.in/register"  className=" w-fit bg-[#018EDE] text-white font-bold py-2 px-10 rounded-full hover:bg-[#018EDE]/70 transition-colors">
                         Apply
                     </Link>
-                    <Link href="" className="w-fit border border-[#018EDE] text-[#018EDE] font-bold py-2 px-10 rounded-full hover:bg-[#018EDE] hover:text-white transition-colors">
+                    <Link href="/contact"  className="w-fit border border-[#018EDE] text-[#018EDE] font-bold py-2 px-10 rounded-full hover:bg-[#018EDE] hover:text-white transition-colors">
                         Details
                     </Link>
                 </div>
@@ -133,7 +133,7 @@ const CreditCard = ({ bank, points, title, tag, image, benefit }) => {
 export default function CardGrid() {
     return (
         <div className="px-4 lg:px-0   max-w-7xl mx-auto ">
-            <h3 className="text-2xl sm:text-3xl lg:mb-24 font-bold text-[#0C3D4C]">
+            <h3 className="text-2xl sm:text-3xl mb-5 lg:mb-24 font-bold text-[#0C3D4C]">
                 Hot-Selling Credit Cards
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 justify-center lg:gap-y-40 gap-x-10 w-full">

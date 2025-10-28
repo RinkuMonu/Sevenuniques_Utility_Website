@@ -17,6 +17,7 @@ import {
   CalendarDays,
   ArrowRight,
 } from "lucide-react";
+import Link from "next/link";
 
 // Icon mapping
 const serviceIcons = {
@@ -256,13 +257,14 @@ export default function IncomeCalculator() {
                             </div>
 
                             {/* CTA Button */}
-                            <motion.button
+                            <Link
                                 className="w-full bg-[#115D8E]  text-white font-semibold py-3 rounded-xl hover:bg-[#115D8E]/90  transition-all duration-200 flex items-center justify-center gap-2 group"
                                 whileTap={{ scale: 0.97 }}
+                                 href="https://utility.finuniques.in/register"
                             >
-                                Withdraw Money
+                     Become a Partner
                                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                            </motion.button>
+                            </Link>
                         </div>
                     </motion.div>
         </div>

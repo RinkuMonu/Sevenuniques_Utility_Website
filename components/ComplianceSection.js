@@ -21,11 +21,11 @@ const logos = [
 
 const ComplianceSection = () => {
   return (
-    <div className="text-center py-16 px-24">
+    <div className="text-center py-16 px-4 lg:px-24">
       <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase">
         KEY LICENSES
       </p>
-      <h3 className="mt-2 text-4xl font-bold text-[#0C3D4C] pb-10">
+      <h3 className="mt-2 text-3xl md:text-4xl font-bold text-[#0C3D4C] pb-10">
        Certified and Recognized by Govt. of India and leading digital platforms
       </h3>
 

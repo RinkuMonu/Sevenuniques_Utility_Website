@@ -50,8 +50,9 @@ export default function PanCorrectionCard() {
   ];
 
   return (
-    <section className="max-w-9xl py-20  lg:px-24 bg-amber-50">
-      {/* Heading */}
+    <section className="py-20 px-4  lg:px-0  bg-amber-50">
+     <div className="max-w-7xl mx-auto ">
+       {/* Heading */}
       <div className="text-center mb-10">
         <h3 className="text-3xl md:text-4xl font-bold text-[#0C3D4C] leading-snug">
           Alteration or Amendment of
@@ -64,9 +65,9 @@ export default function PanCorrectionCard() {
 
       {/* Main Layout */}
       <div className="flex flex-col md:flex-row gap-10 items-stretch">
-        {/* Left Section */}
-        <div className="md:w-full bg-gradient-to-br from-white to-[#F8FAFB] border border-gray-100 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8 flex flex-row justify-between">
-          <div className="w-1/2 p-4">
+       
+        <div className="grid md:grid-cols-2 md:w-full bg-gradient-to-br from-white to-[#F8FAFB] border border-gray-100 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8 gap-4">
+          <div className="">
             <p className="text-gray-700  text-lg leading-relaxed mb-8">
               Select this option in case you already have a PAN, yet you would
               like to change or amend your information (e.g., name, father name
@@ -87,7 +88,7 @@ export default function PanCorrectionCard() {
             </Link>
           </div>
           {/* Right Section (Quick Links) */}
-          <div className="md:w-1/2  rounded-2xl  p-8">
+          <div className=" rounded-2xl ">
             <h3 className="font-semibold text-gray-900 mb-6 flex items-center gap-2 text-lg">
               <Info size={20} className="text-[#0C3D4C]" /> Quick Links
             </h3>
@@ -114,6 +115,7 @@ export default function PanCorrectionCard() {
 
 
       </div>
+     </div>
 
     </section>
   );

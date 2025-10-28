@@ -10,9 +10,10 @@ export default function PancardAllotment() {
   ];
 
   return (
-    <section className="relative bg-[#e8f0f7] rounded-xl flex flex-col md:flex-row justify-between items-center md:items-start gap-10 shadow-sm mt-10 md:mt-18 px-5 sm:px-8 py-10 overflow-hidden">
-      {/* Left Side */}
-      <div className="w-full md:w-1/2 max-w-xl p-4 sm:p-6 md:p-8 md:ml-6 relative z-10">
+    <section className="relative bg-[#e8f0f7] rounded-xl gap-10 shadow-sm mt-10 md:mt-18 pt-10 overflow-hidden">
+ <div className="max-w-7xl mx-auto grid md:grid-cols-2 px-8">
+       {/* Left Side */}
+      <div className="w-full z-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-snug text-center md:text-left">
           Allotment of new PAN (Form 49A) <br />
           <span className="text-blue-900">Indian Citizens</span>
@@ -43,15 +44,16 @@ export default function PancardAllotment() {
       </div>
 
       {/* Right Image */}
-      <div className="relative md:absolute md:top-34 md:right-10 lg:right-20 hidden md:block">
-        <Image
-          src="/image/pan-img1.png"
-          width={600}
-          height={600}
-          alt="PAN illustration"
-          className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px] h-auto object-contain"
-        />
-      </div>
+       <div className="flex justify-center md:justify-center w-full relative z-10 ">
+            <Image
+             src="/image/pan-img1.png"
+              width={360}
+              height={360}
+              alt="image"
+              className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px] h-auto object-contain"
+            />
+          </div>
+ </div>
     </section>
   );
 }

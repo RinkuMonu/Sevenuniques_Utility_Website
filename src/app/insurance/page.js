@@ -119,7 +119,7 @@ function page() {
                 </div>
             </section>
 
-            <InsuranceCards />
+            {/* <InsuranceCards /> */}
             <ServicesSection3 data={aepsData} />
 
             <GetInsurance />

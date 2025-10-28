@@ -31,7 +31,7 @@ export default function AboutSection({ aboutData }) {
               ))}
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {aboutData.stats.map((stat, index) => (
                   <div
                     key={index}
@@ -59,7 +59,7 @@ export default function AboutSection({ aboutData }) {
 
                 {/* Floating Card */}
                 <div className="absolute bottom-8 left-8 right-8 bg-white rounded-xl p-6 shadow-xl">
-                  <div className="flex items-start gap-4">
+                  <div className="items-start gap-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-[#00b4d8] to-[#0077b6] rounded-lg flex items-center justify-center flex-shrink-0">
                       <svg
                         className="w-6 h-6 text-white"

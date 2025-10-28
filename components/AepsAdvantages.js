@@ -49,8 +49,8 @@ const advantages = [
 
 const AepsAdvantages = () => {
   return (
-    <section className="py-16 px-18 bg-gradient-to-br from-[#e8f0f7] to-white">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+    <section className="py-16 bg-gradient-to-br from-[#e8f0f7] to-white">
+      <div className="max-w-7xl mx-auto px-4 lg:px-0 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-[#0C3D4C] mb-4">
           Advantages of AEPS Services
         </h2>
