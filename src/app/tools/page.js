@@ -36,7 +36,7 @@ const serviceIcons = {
 const serviceGroups = [
   {
     title: "Banking Services",
-    desc : '“Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data.',
+    // desc : '“Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data.',
     items: [
       { label: "Money Transfer", key: "moneyTransfer" },
       { label: "Aadhaar ATM - AePS", key: "aeps" },
@@ -46,7 +46,7 @@ const serviceGroups = [
   },
   {
     title: "Utility Services",
-    desc : '“Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data.',
+    // desc : '“Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data.',
     items: [
       { label: "Mobile Recharge", key: "mobileRecharge" },
       { label: "DTH Recharge", key: "dthRecharge" },
@@ -55,7 +55,7 @@ const serviceGroups = [
     ],
   },
   {
-    desc : '“Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data.',
+    // desc : '“Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data.',
     title: "Insurance",
     items: [
       { label: "LIC New Policy", key: "licNewPolicy" },
@@ -124,12 +124,13 @@ export default function IncomeCalculator() {
     <section className="py-10 min-h-screen bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 lg:px-0">
         <motion.h2
-          className="text-4xl md:text-5xl font-bold text-slate-900  mb-10 tracking-tight"
+          className="text-4xl md:text-5xl font-bold text-slate-900  mb-10"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           Estimate Your <span className="text-[#115D8E]">Earning Potential</span>
+          <p className="text-sm font-normal mt-3">Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data.</p>
         </motion.h2>
 
         <div className="grid lg:grid-cols-5 gap-10 md:gap-14">
@@ -150,9 +151,9 @@ export default function IncomeCalculator() {
                   <h3 className="text-xl font-semibold text-slate-800">
                     {group.title}
                   </h3>
-                  <p className="text-sm text-gray-700 py-1">
+                  {/* <p className="text-sm text-gray-700 py-1">
                     {group.desc}
-                  </p>
+                  </p> */}
                 </div>
 
                 {/* Table Version */}
