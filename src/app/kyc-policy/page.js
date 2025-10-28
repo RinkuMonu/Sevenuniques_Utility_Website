@@ -235,9 +235,9 @@ export default function KycPolicy() {
                           </h3>
                         </div>
                         <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent my-4"></div>
-                        <p className="text-gray-600 leading-relaxed">
+                        <div className="text-gray-600 leading-relaxed">
                           {section.content}
-                        </p>
+                        </div>
                       </div>
                     ))}
 

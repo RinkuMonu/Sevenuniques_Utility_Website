@@ -435,7 +435,7 @@ export default function Privacy() {
                           ))}
                         </ul>
                       ) : (
-                        <p className="text-gray-600 leading-relaxed">{section.content}</p>
+                        <div className="text-gray-600 leading-relaxed">{section.content}</div>
                       )}
                     </div>
                   ))}
