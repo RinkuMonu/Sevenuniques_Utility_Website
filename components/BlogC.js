@@ -120,7 +120,7 @@ const PostCard = ({ post }) => {
       <div className="relative rounded-2xl">
         <Image width={200} height={200} src={post.imageUrl} alt={post.title} className="w-full h-64 object-cover rounded-2xl" />
         <div className="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300">
-          <Link href="#" className="text-white text-lg font-semibold bg-[#018EDE] px-3 py-1 rounded-md flex items-center gap-2 ">
+          <Link href="/blog/blog-details" className="text-white text-lg font-semibold bg-[#018EDE] px-3 py-1 rounded-md flex items-center gap-2 ">
             Read more
           </Link>
         </div>

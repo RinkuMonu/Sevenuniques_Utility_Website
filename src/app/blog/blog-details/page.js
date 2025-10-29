@@ -79,13 +79,13 @@ const relatedPosts = [
 
 
 const trendingPosts = [
-    { title: "10 AI Tools Every Dev Should Know",       slug: "blog-details", created_at: "2025-08-20", image: "/home/RA.avif", categoryName: "AI" },
-    { title: "React Server Components Explained",       slug: "blog-details",created_at: "2025-07-18", image: "/home/RA.avif", categoryName: "Development" },
+    { title: "10 AI Tools Every Dev Should Know", id:1,       slug: "blog-details", created_at: "2025-08-20", image: "/home/RA.avif", categoryName: "AI" },
+    { title: "React Server Components Explained",  id:2,     slug: "blog-details",created_at: "2025-07-18", image: "/home/RA.avif", categoryName: "Development" },
 ]
 
 const recentPosts = [
-    { title: "Building Apps with Bun.js",       slug: "blog-details", created_at: "2025-09-01", image: "/home/RA.avif", categoryName: "JavaScript" },
-    { title: "CSS Tricks for Responsive Design",       slug: "blog-details",created_at: "2025-08-25", image: "/home/RA.avif", categoryName: "Design" },
+    { title: "Building Apps with Bun.js",    id:1,   slug: "blog-details", created_at: "2025-09-01", image: "/home/RA.avif", categoryName: "JavaScript" },
+    { title: "CSS Tricks for Responsive Design",   id:2,    slug: "blog-details",created_at: "2025-08-25", image: "/home/RA.avif", categoryName: "Design" },
 ]
 
 const categories = {
@@ -225,7 +225,8 @@ export default function BlogPostPage() {
                                 </h3>
                                 <div className="space-y-4">
                                     {trendingPosts.map((trend, index) => (
-                                        <div 
+                                        <Link 
+                                       href="/blog/blog-details"
                                         key={trend.id} 
                                         className="flex gap-3">
                                             <div className="w-16 h-16 relative rounded-lg overflow-hidden">
@@ -241,7 +242,7 @@ export default function BlogPostPage() {
                                                     {new Date(trend.created_at).toLocaleDateString()}
                                                 </p>
                                             </div>
-                                        </div>
+                                        </Link>
                                     ))}
                                 </div>
                             </div>
@@ -253,7 +254,7 @@ export default function BlogPostPage() {
                                 </h3>
                                 <div className="space-y-4">
                                     {recentPosts.map((recent) => (
-                                        <div key={recent.id} className="flex gap-3">
+                                        <Link href="/blog/blog-details" key={recent.id} className="flex gap-3">
                                             <div className="w-16 h-16 relative rounded-lg overflow-hidden">
                                                 <Image src={recent.image} alt={recent.title} fill className="object-cover" />
                                             </div>
@@ -267,31 +268,35 @@ export default function BlogPostPage() {
                                                     {new Date(recent.created_at).toLocaleDateString()}
                                                 </p>
                                             </div>
-                                        </div>
+                                        </Link>
                                     ))}
                                 </div>
                             </div>
 
                             {/* Categories */}
-                            <div className="bg-white shadow-md rounded-lg p-5">
+                            {/* <div className="bg-white shadow-md rounded-lg p-5">
                                 <h3 className="flex items-center gap-2 font-semibold mb-4">
                                     <Folder className="h-5 w-5 text-[#115D8E]" /> Categories
                                 </h3>
                                 <div className="space-y-2">
-                                    {Object.entries(categories).map(([cat, count]) => (
-                                        <Link
-                                            key={cat}
-                                            href="/blog"
-                                            className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-100"
-                                        >
-                                            <span className="text-sm font-medium">{cat}</span>
-                                            <span className="text-xs bg-gray-100 text-gray-600 rounded px-2 py-1">
+                                       {Object.entries(categories)
+                    .sort(([, a], [, b]) => b - a)
+                    .map(([category, count]) => (
+                      <Link
+                        key={category}
+                        href={`/blog`}
+                        className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors group"
+                      >
+                        <span className="text-sm font-medium group-hover:text-[#ab6545] dark:group-hover:text-[#e8ab8f] transition-colors">
+                          {category}
+                        </span>
+                          <span className="text-xs bg-gray-100 text-gray-600 rounded px-2 py-1">
                                                 {count}
                                             </span>
-                                        </Link>
-                                    ))}
+                      </Link>
+                    ))}
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
