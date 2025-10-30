@@ -36,7 +36,7 @@ const timelineData = [
 
 const TimelineStep = ({ stepNumber, title, description, imageUrl, isReversed, isLast }) => {
     return (
-        <div className={`flex flex-col lg:flex-row  gap-6 lg:gap-0`}>
+        <div className={`flex flex-col lg:flex-row  gap-6 lg:gap-0 lastSvg `}>
             <div className={` lg:w-5/12 items-start ${isReversed ? 'flex justify-end align-top ' : 'flex justify-start'}`}>
                 <Image src={imageUrl} alt={title} width={400} height={400} className="rounded-xl  object-contain" />
             </div>
@@ -45,7 +45,7 @@ const TimelineStep = ({ stepNumber, title, description, imageUrl, isReversed, is
                     {stepNumber}
                 </div>
                 {!isLast && (
-                    <div className={`hidden lg:block h-64 lg:h-56 w-32 lg:w-auto flex-grow svg1 ${isReversed ? 'lg:-scale-x-100' : ''}`}>
+                    <div className={`hidden lg:block h-64 lg:h-56 w-32 lg:w-auto flex-grow  svg1 ${isReversed ? 'lg:-scale-x-100' : ''}`}>
                         <svg
                             width="100%"
                             height="100%"
@@ -79,7 +79,7 @@ const TimelineStep = ({ stepNumber, title, description, imageUrl, isReversed, is
 
 const HowItWorks1 = () => {
     return (
-        <section className="bg-slate-50 py-20 px-4 sm:px-6 lg:px-24">
+        <section className="bg-slate-50 pt-20 px-4 sm:px-6 lg:px-24">
 
 <div className="text-center pb-10 pt-6">
       <p className="text-2xl font-semibold text-[#24576C] tracking-widest uppercase">
@@ -111,8 +111,8 @@ const HowItWorks1 = () => {
                         <TimelineStep
                             key={step.stepNumber}
                             {...step}
-                            isReversed={index % 2 !== 0}
-                            isLast={index === timelineData.length - 1}
+                             isReversed={index % 2 !== 0}
+                            // isLast={index === timelineData.length - 1}
                         />
                     ))}
                 </div>
