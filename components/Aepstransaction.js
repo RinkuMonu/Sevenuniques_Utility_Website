@@ -51,7 +51,7 @@ const transactions = [
 const Aepstransaction = () => {
   return (
   <section className="py-16">
-  <div className="max-w-7xl mx-auto px-6">
+  <div className="max-w-7xl mx-auto px-4 lg:px-0">
     <h2 className="text-3xl font-bold text-[#0C3D4C] mb-8 text-center">
       AePS Transactional Limits
     </h2>

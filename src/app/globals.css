@@ -196,10 +196,9 @@ button{
       vline to 0)
 }
 
-:nth-child(4 of .svg1) {
-  height: 500px
+.lastSvg:last-child .svg1 svg {
+  display: none;
 }
-
 
 .plane {
   position: absolute;
