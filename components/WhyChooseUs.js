@@ -84,7 +84,7 @@ export default function WhyChooseUs() {
 
   return (
 
-    <div className="max-w-7xl mx-auto px-4 lg:px-18 pb-10 ">
+    <div className="max-w-7xl mx-auto px-4 lg:px-18 py-20">
       <div className="text-center mb-8">
         <h2 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] leading-tight mb-4">
           Why Partner with SevenUnique
