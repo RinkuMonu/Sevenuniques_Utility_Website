@@ -160,7 +160,7 @@ export default function App() {
     const loanTermStyle = { '--progress-percent': `${loanTermProgress}%` };
     
     return (
-        <div className=" px-4 lg:px-0 max-w-7xl mx-auto py-20">
+        <div className="px-4 max-w-9xl py-20">
                <style>{`
                 .slider-thumb {
                     -webkit-appearance: none;

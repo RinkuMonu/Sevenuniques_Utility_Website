@@ -149,7 +149,7 @@ const CreditScoreReport = () => {
   ];
 
   return (
-    <div className="px-4 lg:px-0 py-16">
+    <div className="px-4 lg:px-0 py-6">
       <div className="w-full max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column */}
