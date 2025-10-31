@@ -72,16 +72,24 @@ function Contact() {
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
+
     if (name === "phone") {
+      // Allow only digits
       const digitsOnly = value.replace(/\D/g, "");
       setFormData({ ...formData, [name]: digitsOnly });
+    } else if (name === "name") {
+      // Allow only alphabets and spaces
+      const lettersOnly = value.replace(/[^a-zA-Z\s]/g, "");
+      setFormData({ ...formData, [name]: lettersOnly });
     } else {
+      // Handle all other inputs normally
       setFormData({
         ...formData,
         [name]: type === "checkbox" ? checked : value,
       });
     }
   };
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -102,8 +110,8 @@ function Contact() {
   return (
     <>
       {/* ----------- Hero Section ----------- */}
-      <section className="relative overflow-hidden">
-        <div className="relative flex flex-col md:flex-row items-center justify-between">
+      <section className="relative overflow-hidden ">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${data?.bgImage})` }}
@@ -112,7 +120,7 @@ function Contact() {
           <div className="container z-10 w-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
               {/* Left Text Section */}
-              <div className="px-6 md:px-20 py-12 lg:py-20">
+              <div className="px-6 md:px-10 py-12 lg:py-20">
                 <p className="text-xs md:text-sm font-bold uppercase tracking-widest text-[#0C3D4C]">
                   {data?.subheading}
                 </p>
@@ -123,7 +131,7 @@ function Contact() {
                   {data.description}
                 </p>
                 <Link
-             href="https://utility.sevenuniques.in/register"
+                  href="https://utility.sevenuniques.in/register"
                   className="inline-block mt-6 rounded-full border border-[#0C3D4C] p-[2px]"
                 >
                   <span className="block px-6 py-2 md:px-8 md:py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 hover:bg-transparent hover:text-[#0d2f4d]">
@@ -133,15 +141,15 @@ function Contact() {
               </div>
 
               {/* Right Image */}
-          <div className="relative flex justify-center sm:mt-0">
-  <Image
-    src={data.centerImage}
-    height={700}
-    width={600}
-    alt="center image"
-    className="hidden sm:absolute sm:block -top-32 max-h-[85vh] md:max-h-[100vh] lg:max-h-[100vh] object-contain z-20 scale-110"
-  />
-</div>
+              <div className="">
+                <Image
+                  src={data.centerImage}
+                  height={700}
+                  width={600}
+                  alt="center image"
+                  className="hidden sm:absolute sm:block bottom-0 right-0 md:max-h-[100vh] lg:max-h-[100vh] object-contain z-20 "
+                />
+              </div>
 
             </div>
           </div>
@@ -186,7 +194,7 @@ function Contact() {
           {/* Left Form */}
           <div className="border rounded-lg p-6 sm:p-8 shadow-[2px_2px_15px_0px_rgba(188,188,188,0.4)]">
             <h2 className="text-2xl md:text-3xl font-bold text-[#39464F] mb-6">
-     Contact Info Section:
+              Contact Info Section:
             </h2>
             <form onSubmit={handleSubmit} noValidate>
               {/* Full Name */}
@@ -196,6 +204,7 @@ function Contact() {
                 </label>
                 <input
                   type="text"
+
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
@@ -300,16 +309,16 @@ function Contact() {
 
             <ul className="space-y-5 text-[#39464F] text-sm md:text-base">
               <li className="flex items-start gap-3">
-                <span><MdOutlineMail  className="text-[#24576C] text-lg mt-2"/></span>
+                <span><MdOutlineMail className="text-[#24576C] text-lg mt-2" /></span>
                 <div>
                   <p className="font-bold text-lg">Email</p>
-                   <p className="text-gray-500 text-sm">support@7unique.in</p>
+                  <p className="text-gray-500 text-sm">support@7unique.in</p>
                   <p className="text-gray-500 text-sm"> info@7unique.in</p>
                 </div>
               </li>
 
               <li className="flex items-start gap-3">
-                <span><MdOutlinePhone  className="text-[#24576C] text-lg mt-2 "/></span>
+                <span><MdOutlinePhone className="text-[#24576C] text-lg mt-2 " /></span>
                 <div>
                   <p className="font-bold text-lg">Call us</p>
                   <p className="text-gray-500 text-sm"> 0141-4511098</p>
@@ -317,25 +326,25 @@ function Contact() {
               </li>
 
               <li className="flex align-middle items-center gap-3">
-                <span><FaRegClock  className="text-[#24576C]   mt-1"/></span>
+                <span><FaRegClock className="text-[#24576C]   mt-1" /></span>
                 <div>
                   <p className="font-bold text-lg">Office Hours: </p>
                   <p className="text-gray-500 text-sm">
-                   Mon–Fri: 9:30 AM to 6:30 PM <br></br>
- Sat–Sun: Closed
+                    Mon–Fri: 9:30 AM to 6:30 PM <br></br>
+                    Sat–Sun: Closed
                   </p>
                 </div>
               </li>
 
-               <li className="flex align-middle items-center gap-3">
-                <span><MdOutlineLocationOn className="text-[#24576C] text-xl "/></span>
+              <li className="flex align-middle items-center gap-3">
+                <span><MdOutlineLocationOn className="text-[#24576C] text-xl " /></span>
                 <div>
                   <p className="font-bold text-lg">Visit us</p>
                   <p className="text-gray-500 text-sm">
-                   <span className="font-bold">Head Office:</span> Plot No 97, Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura, Jaipur, Rajasthan, India, 302017
+                    <span className="font-bold">Head Office:</span> Plot No 97, Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura, Jaipur, Rajasthan, India, 302017
                   </p>
-                   <p className="text-gray-500 text-sm">
-                   <span className="font-bold">Corporate Office:</span>Office No. 101/2, Vakratunda Corporate Park Premises Co-operative Society Limited, Off Aarey Road, Goregaon (East), Mumbai – 400 063
+                  <p className="text-gray-500 text-sm">
+                    <span className="font-bold">Corporate Office:</span>Office No. 101/2, Vakratunda Corporate Park Premises Co-operative Society Limited, Off Aarey Road, Goregaon (East), Mumbai – 400 063
 
                   </p>
                 </div>
@@ -357,10 +366,10 @@ function Contact() {
       {/* ----------- MAP SECTION ----------- */}
       <section className="relative bg-white py-8 text-center px-4 sm:px-6 lg:px-16 xl:px-24 lg:mt-12">
         <p className="text-sm md:text-lg text-[#115D8E] mb-2 font-bold">
-         Map Section:
+          Map Section:
         </p>
         <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-8 md:mb-16">
-       Here where you can find us! We are easy to find and always ready to connect.
+          Here where you can find us! We are easy to find and always ready to connect.
         </h3>
 
         <div className="overflow-hidden rounded-lg shadow-md mb-6">

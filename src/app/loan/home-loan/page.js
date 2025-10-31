@@ -139,7 +139,7 @@ function page() {
                                 height={500}
                                 width={500}
                                 alt="center image"
-                                className="md:pt-4 pt-16 lg:absolute bottom-20 right-32 md:scale-150 z-20"
+                                className="xs:pt-16 md:pt-4  lg:absolute bottom-20 right-32 lg:scale-150 z-20"
 
                             />
                         </div>
@@ -147,30 +147,29 @@ function page() {
                 </div>
             </div>
             <section>
-                <div className={`relative lg:pt-20`} style={{ backgroundColor: "#CEF5F5" }}>
-                    <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
-                        <div className="grid grid-cols-1 md:grid-cols-2 ">
-                            <div className="relative ">
-                                <div className="flex space-x-4 md:space-x-6">
-                                    {letters.map((char) => (
-                                        <LetterCircle key={char} letter={char} />
-                                    ))}
-                                </div>
-                            </div>
-
-                            <div className="hidden md:block  h-[200px] mt-10 md:mt-0 ">
-                                <div className=" lg:absolute bottom-0 right-0  w-[42%] lg:h-100 z-20">
-                                    <Image
-                                        src={"/loan/home1.png"}
-                                        alt="loan-section"
-                                        fill
-                                        className="object-cover right-0"
-                                        style={{ objectPosition: 'right' }}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div className={`relative lg:py-16`} style={{ backgroundColor: "#CEF5F5" }}>
+                  <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
+                             <div className="grid grid-cols-1 md:grid-cols-2 ">
+                                 <div className="flex space-x-4 md:space-x-6">
+                                   {letters.map((char) => (
+                                     <LetterCircle key={char} letter={char} />
+                                   ))}
+                                 </div>
+                        
+                 
+                 
+                               <div className="hidden md:block md:absolute bottom-0 right-0  z-11">
+                                 <Image
+                                 src={"/loan/home1.png"}
+                                   alt="loan-section"
+                                   width={500}
+                                   height={200}
+                 
+                                 />
+                               </div>
+                 
+                             </div>
+                           </div>
                 </div>
             </section>
             <VerticalSlider slide={slide}/>

@@ -58,7 +58,7 @@ export default function WhatIsBBPS() {
         </div>
 
         {/* Right Column */}
-        <div className="col-span-1 md:col-span-2 p-8 md:p-12 flex flex-col">
+        <div className="col-span-1 md:col-span-2 p-4 lg:p-6 flex flex-col">
  
           {/* Image */}
           <div className="flex-grow flex flex-col justify-center">
@@ -75,7 +75,7 @@ export default function WhatIsBBPS() {
             </div>
             {/* CTA */}
             <div className="mt-10 w-full text-center md:text-left">
-              <Link href={"/contact"} className="mt-5 px-10 py-3 bg-gray-700 text-white font-bold tracking-wider relative transition-all duration-300 ease-in-out
+              <Link href={"/contact"} className="mt-5 px-6 py-3 bg-gray-700 text-white font-bold tracking-wider relative transition-all duration-300 ease-in-out
               hover:shadow-none hover:translate-x-1 hover:translate-y-1
               shadow-[8px_8px_0_0_#0C3D4C]">
                 LET&#39;S COLLABORATE

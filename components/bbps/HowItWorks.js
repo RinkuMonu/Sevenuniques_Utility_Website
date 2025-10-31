@@ -58,8 +58,8 @@ export default function HowItWorks() {
   };
 
   return (
-    <section className="bg-white p-16 lg:px-26">
-      <div className="mx-auto max-w-7xl px-4 lg:px-0">
+    <section className="px-4 lg:px-0">
+      <div className="mx-auto max-w-7xl ">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}

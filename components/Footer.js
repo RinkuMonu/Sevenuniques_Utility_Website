@@ -148,10 +148,10 @@ const Footer = () => {
       >
         <div className="max-w-7xl mx-auto px-6 pb-6 pt-12">
           <div className="grid md:grid-cols-3 gap-8 align-middle pb-4">
-            <div className="col-span-1 bg-white rounded">
+            <div className="md:col-span-1 bg-white rounded">
               <Image src="/image/sevenunique-logo.png" className=" p-1 mx-auto" alt="" width={100} height={100} />
             </div>
-            <div className="col-span-2">
+            <div className="md:col-span-2">
               <p className=" text-white text-sm font-light">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
               </p>

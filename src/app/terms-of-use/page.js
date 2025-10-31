@@ -551,19 +551,19 @@ export default function Privacy() {
 
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <section className="min-h-screen ">
-          <div className="bg-[#F4FCFF] rounded-2xl shadow-lg">
+          <div className="bg-[#F4FCFF] rounded-2xl shadow-lg ">
             <section>
               <div className="max-w-8xl mx-auto px-4 py-12">
                 <div className="flex flex-col lg:flex-row gap-8">
                   {/* Table of Contents */}
-                  <div className="lg:w-1/4">
-                    <div className="sticky top-32 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                  <div className="lg:w-1/4 ">
+                    <div className="sticky top-32 bg-white p-6 rounded-xl shadow-sm border border-gray-100 ">
                       <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
                         <ClipboardList className="w-5 h-5 mr-2 text-[#115D8E]" /> Policy Sections
                       </h3>
-                      <ul className="space-y-2" style={{height:"calc(100vh - 268px)",overflowY: "auto"}}>
+                      <ul className="space-y-2 overflow-y-visible">
                         {termsSections.map((section, index) => (
                           <li key={index}>
                             <button

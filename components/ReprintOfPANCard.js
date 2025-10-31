@@ -84,7 +84,7 @@ export default function ReprintOfpancard() {
   };
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-white via-[#f9fcfd] to-[#f1f9fa]">
+    <section className="py-20 px-4 lg:px-0 bg-gradient-to-br from-white via-[#f9fcfd] to-[#f1f9fa]">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <motion.div
@@ -105,7 +105,7 @@ export default function ReprintOfpancard() {
         </motion.div>
 
         {/* Content Layout */}
-        <div className="grid lg:grid-cols-3 gap-12 items-start lg:px-10">
+        <div className="grid lg:grid-cols-3 gap-12 items-start ">
           {/* Left Column */}
 
           <motion.div

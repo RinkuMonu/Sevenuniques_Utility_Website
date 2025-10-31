@@ -35,7 +35,7 @@ const features = [
 export default function BBPSFeatures() {
   return (
     <section className="overflow-hidden py-10">
-      <div className="mx-auto max-w-7xl lg:px-12">
+      <div className="mx-auto max-w-7xl px-4 lg:px-0">
         <div className="grid grid-cols-1 items-center gap-x-16 gap-y-16 lg:grid-cols-2">
           
           {/* Left Column: Image */}

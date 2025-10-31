@@ -19,14 +19,9 @@ function page() {
   };
   return (
     <>
-      <div className="relative flex flex-col md:flex-row items-center justify-between ">
-        <div
-          className="absolute inset-0 bg-cover bg-center hidden md:block"
-          style={{ backgroundImage: `url(${data?.bgImage})` }}
-        ></div>
-        <div className=" z-10 mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 space-y-6 md:space-y-0 items-center w-7xl">
-            <div className=" px-10 py-10 lg:py-16 rounded-2xl overflow-hidden max-w-2xl w-full">
+      <div className=" bg-no-repeat bg-cover bg-center"   style={{ backgroundImage: `url(${data?.bgImage})` , }}>
+          <div className="max-w-7xl mx-auto space-y-6 md:space-y-0 px-4 lg:px-0">
+            <div className=" py-10 lg:py-16 rounded-2xl w-full">
               <div className=" z-10">
                 <p className="text-sm font-bold uppercase tracking-widest text-[#0C3D4C]">
                   {data?.subheading}
@@ -48,22 +43,9 @@ function page() {
               </div>
             </div>
 
-            {/* <div className="w-full  flex justify-center items-end">
-              {data.centerImage ? (
-                <Image
-                  src={data.centerImage}
-                  height={700}
-                  width={600}
-                  alt="center image"
-                  className="md:pt-4 lg:pt-16  lg:h-[86vh] lg:w-[80vh] z-20"
-                />
-              ) : (
-                ""
-              )}
-            </div> */}
           </div>
         </div>
-      </div>
+     
       <div className="bg-[#EEF2F5] relative py-10 overflow-visible">
         <div className="max-w-7xl mx-auto px-4 lg:px-0 relative">
           <div className="grid grid-cols-1 md:grid-cols-2 ">
@@ -75,14 +57,13 @@ function page() {
                 height={400}
               />
             </div>
-            <div className="overflow-visible md:block relative h-[200px] mt-10 md:mt-0 ">
-                            <div className="absolute -top-96 left-3 md:right-1/2 rounded-xl w-[530px] h-[604px] z-20 hidden md:block">
+            <div className="lg:block relative md:h-[200px] mt-10 md:mt-0 ">
+                            <div className="absolute -top-96 left-0 rounded-xl w-[350px] md:w-[400px] lg:w-[600px] h-[604px] z-20 hidden md:block ">
                                 <Image
                                     src="/image/service-img.png"
                                     alt="center image"
                                     fill
-                                    className="object-cover scale-105 top-0 left-0 "
-                                    style={{ objectPosition: 'center' }}
+                                    className="  top-0 left-0 "
                                 />
                             </div>
                             {/* <div className="bg-[#E6F6FF] border-8 border-white rounded-xl absolute -top-28 right-10 md:right-8 w-[220px] h-[240px] z-20 shadow-md overflow-visible">

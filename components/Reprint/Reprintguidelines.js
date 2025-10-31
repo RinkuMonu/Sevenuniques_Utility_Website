@@ -34,7 +34,7 @@ console.log(points);
                 <h3 className="text-xl font-semibold text-[#0C3D4C] mb-2">
                   {points.question}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">{points.answer}</p>
+                <div className="text-gray-600 leading-relaxed">{points.answer}</div>
               </div>
             </div>
           ))}

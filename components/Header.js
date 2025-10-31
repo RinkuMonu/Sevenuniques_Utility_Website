@@ -39,6 +39,11 @@ export default function Header() {
     { name: "Car Loan", href: "/loan/car-loan" },
     { name: "Instant Loan", href: "/loan" },
   ];
+  const handleCloseMenu = () => {
+  setMobileOpen(false);
+  setServicesOpen(false);
+  setLoanOpen(false);
+};
 
   return (
     <>
@@ -78,7 +83,7 @@ export default function Header() {
       </div>
 
       {/* Main Header */}
-      <header className="bg-white shadow-md sticky top-0 z-50">
+      <header className="bg-white shadow-md sticky top-0 z-50 overflow-x-hidden xl:overflow-x-visible">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
@@ -160,89 +165,102 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu */}
-        {mobileOpen && (
-          <div className="md:hidden bg-white border-t shadow-lg max-h-[80vh] overflow-y-auto transition-all duration-300 ease-in-out">
-            <div className="px-6 py-4 space-y-3">
-              {navLinks.map((link, index) => (
-                <div key={index}>
-                  {link.dropdown ? (
-                    <>
-                      <button
-                        onClick={() =>
-                          link.name === "Services"
-                            ? setServicesOpen(!servicesOpen)
-                            : setLoanOpen(!loanOpen)
-                        }
-                        className="flex items-center justify-between w-full text-gray-800 font-medium py-2"
-                      >
-                        {link.name} <ChevronDown size={16} />
-                      </button>
+    {mobileOpen && (
+  <div className="md:hidden bg-white border-t border-gray-100 shadow-xl max-h-[85vh] overflow-y-auto transition-all duration-300 ease-in-out animate-fadeIn">
+    <div className="px-5 py-3 space-y-1">
+      {navLinks.map((link, index) => (
+        <div key={index} className="rounded-lg">
+          {link.dropdown ? (
+            <>
+              <button
+                onClick={() =>
+                  link.name === "Services"
+                    ? setServicesOpen(!servicesOpen)
+                    : setLoanOpen(!loanOpen)
+                }
+                className="flex items-center justify-between w-full text-gray-800 font-semibold py-3 px-3 rounded-lg hover:bg-gray-50 transition-all"
+              >
+                <span className="tracking-wide">{link.name}</span>
+                <ChevronDown
+                  size={18}
+                  className={`transition-transform duration-300 ${
+                    (link.name === "Services" && servicesOpen) ||
+                    (link.name === "Loan" && loanOpen)
+                      ? "rotate-180 text-[#0C3D4C]"
+                      : "text-gray-500"
+                  }`}
+                />
+              </button>
 
-                      {/* Services dropdown (mobile) */}
-                      {link.name === "Services" && servicesOpen && (
-                        <div className="pl-4 space-y-2 mt-1">
-                          {servicesDropdown.map((item, i) => (
-                            <Link
-                              key={i}
-                              href={item.href}
-                              className="flex items-center gap-3 text-gray-700 hover:text-[#0C3D4C] transition"
-                            >
-                              <span className="w-2 h-2 bg-[#0C3D4C] rounded-full"></span>
-                              {item.name}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-
-                      {/* Loan dropdown (mobile) */}
-                      {link.name === "Loan" && loanOpen && (
-                        <div className="pl-4 space-y-2 mt-1">
-                          {loanDropdown.map((item, i) => (
-                            <Link
-                              key={i}
-                              href={item.href}
-                              className="flex items-center gap-3 text-gray-700 hover:text-[#0C3D4C] transition"
-                            >
-                              <span className="w-2 h-2 bg-[#0C3D4C] rounded-full"></span>
-                              {item.name}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </>
-                  ) : (
+              {/* Services dropdown (mobile) */}
+              {link.name === "Services" && servicesOpen && (
+                <div className="pl-6 py-2 space-y-2 animate-slideDown">
+                  {servicesDropdown.map((item, i) => (
                     <Link
-                      href={link.href}
-                      className={`block font-medium py-2 ${
-                        pathname === link.href
-                          ? "text-[#0C3D4C] font-semibold"
-                          : "text-gray-800 hover:text-[#0C3D4C]"
-                      }`}
+                      key={i}
+                      href={item.href}
+                       onClick={handleCloseMenu}
+                      className="flex items-center gap-2 text-gray-600 font-medium hover:text-[#0C3D4C] transition-all"
                     >
-                      {link.name}
+                    
+                      {item.name}
                     </Link>
-                  )}
+                  ))}
                 </div>
-              ))}
+              )}
 
-              {/* Mobile Buttons */}
-              <div className="pt-4 flex flex-col gap-3">
-                <Link
-                  href="https://utility.finuniques.in/"
-                  className="w-full text-center px-5 py-2 bg-[#0C3D4C] text-white rounded-full font-medium hover:bg-[#145E6E] transition"
-                >
-                  Login
-                </Link>
-                <Link
-                  href="https://utility.finuniques.in/register"
-                  className="w-full text-center px-5 py-2 border border-[#0C3D4C] text-[#0C3D4C] rounded-full font-medium hover:bg-[#0C3D4C] hover:text-white transition"
-                >
-                  Register
-                </Link>
-              </div>
-            </div>
-          </div>
-        )}
+              {/* Loan dropdown (mobile) */}
+              {link.name === "Loan" && loanOpen && (
+                <div className="pl-6 py-2 space-y-2 animate-slideDown">
+                  {loanDropdown.map((item, i) => (
+                    <Link
+                      key={i}
+                      href={item.href}
+                       onClick={handleCloseMenu}
+                      className="flex items-center gap-2 text-gray-600 font-medium hover:text-[#0C3D4C] transition-all"
+                    >
+                    
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </>
+          ) : (
+            <Link
+              href={link.href}
+               onClick={handleCloseMenu}
+              className={`block font-semibold py-3 px-3 rounded-lg transition-all ${
+                pathname === link.href
+                  ? "text-[#0C3D4C] bg-[#EAF4F6]"
+                  : "text-gray-800 hover:bg-gray-50 hover:text-[#0C3D4C]"
+              }`}
+            >
+              {link.name}
+            </Link>
+          )}
+        </div>
+      ))}
+
+      {/* Mobile Buttons */}
+      <div className="pt-5 flex flex-col gap-3">
+        <Link
+          href="https://utility.finuniques.in/"
+          className="w-full text-center px-5 py-3 bg-[#0C3D4C] text-white rounded-full font-semibold hover:bg-[#145E6E] shadow-md transition"
+        >
+          Login
+        </Link>
+        <Link
+          href="https://utility.finuniques.in/register"
+          className="w-full text-center px-5 py-3 border border-[#0C3D4C] text-[#0C3D4C] rounded-full font-semibold hover:bg-[#0C3D4C] hover:text-white shadow-sm transition"
+        >
+          Register
+        </Link>
+      </div>
+    </div>
+  </div>
+)}
+
       </header>
     </>
   );
