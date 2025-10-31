@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
+
 import { motion } from "framer-motion";
 import {
   ArrowRightLeft,
@@ -25,6 +27,10 @@ import {
   Zap,
 } from "lucide-react";
 import Link from "next/link";
+
+
+
+
 
 const serviceIcons = {
   aeps: <Fingerprint className="w-5 h-5" />,
@@ -180,6 +186,33 @@ const rowVariants = {
   visible: { opacity: 1, x: 0 },
 };
 
+
+
+
+
+const cardsData = [
+    {
+      title: "Free Credit Score",
+      description:
+        "Seamlessly transfer funds using our fast, secure and reliable money transfer API.Seamlessly transfer funds using our fast, secure and reliable money transfer API.Seamlessly transfer funds using our fast, secure and reliable money transfer API.Seamlessly transfer funds using our fast, secure and reliable money transfer API.",
+      image: "/images/money-transfer.jpg",
+    },
+    {
+      title: "Free Credit Score",
+      description:
+        "Instant recharge and bill payment APIs for all major telecom and utility services.Seamlessly transfer funds using our fast, secure and reliable money transfer API.Seamlessly transfer funds using our fast, secure and reliable money transfer API.Seamlessly transfer funds using our fast, secure and reliable money transfer API.",
+      image: "/images/recharge-bills.jpg",
+    },
+    {
+      title: "Free Credit Score",
+      description:
+        "Verify PAN, Aadhaar, GST, and more using our powerful verification API suite.Seamlessly transfer funds using our fast, secure and reliable money transfer API.Seamlessly transfer funds using our fast, secure and reliable money transfer API.Seamlessly transfer funds using our fast, secure and reliable money transfer API.",
+      image: "/images/verification.jpg",
+    },
+  ];
+
+
+
 export default function IncomeCalculator() {
   const [selectedTab, setSelectedTab] = useState("retailer");
 
@@ -333,8 +366,42 @@ export default function IncomeCalculator() {
     setData((prev) => ({ ...prev, [key]: numValue }));
   };
 
+
+
   return (
-    <section className="py-5 min-h-screen bg-slate-50">
+<>
+     <section className="bg-gradient-to-r from-[#033047] to-[#0a81b0] text-white py-10 md:py-16 px-6 md:px-20 flex flex-col md:flex-row items-center justify-between overflow-hidden">
+          {/* Left Content */}
+          <div className="md:w-1/2 space-y-4 text-center md:text-left">
+            <p className="uppercase tracking-[0.2em] text-sm text-gray-200">
+              Income Calculator
+            </p>
+            <h1 className="text-3xl md:text-5xl font-bold leading-snug">
+              Ab Bill Payment Banega <br /> Chill Payment
+            </h1>
+            <p className="text-gray-200 max-w-md mx-auto md:mx-0">
+              At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio
+              Dignissimos At Vero Eos Et Accusamus Et
+            </p>
+          </div>
+
+          {/* Right Image */}
+          <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center relative">
+            <div className="relative w-[280px] md:w-[380px] h-[220px] md:h-[280px]">
+              <Image
+                src="/image/income-calc-img.png"
+                alt="creditscore"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+          </div>
+        </section>
+
+
+
+    <section className="py-5 lg:py-10  px-6 lg:px-12 min-h-screen bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 lg:px-0">
         <motion.h2
           className="text-4xl md:text-5xl font-bold text-slate-900  mb-5"
@@ -506,6 +573,27 @@ export default function IncomeCalculator() {
           </motion.div>
         </div>
       </div>
+
+
+
     </section>
+
+
+     <section className="max-w-8xl px-6 py-10 space-y-6">
+      {cardsData.map((card, index) => (
+        <div
+          key={index}
+          className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row items-center md:items-stretch hover:shadow-lg transition-shadow duration-300"
+        >
+          <div className="w-full p-6 md:p-8">
+            <h2 className="text-2xl font-semibold bg-[#1f718a] p-3 rounded-lg text-gray-200 mb-2">
+              {card.title}
+            </h2>
+            <p className="text-gray-600">{card.description}</p>
+          </div>
+        </div>
+      ))}
+    </section>
+    </>
   );
 }

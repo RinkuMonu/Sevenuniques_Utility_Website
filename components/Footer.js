@@ -199,30 +199,21 @@ const Footer = () => {
               <h3 className="font-semibold text-base text-white mb-1">Quick Links</h3>
               <ul className="space-y-1 text-sm ">
                 <li><Link href="/" className="hover:text-blue-400 text-white ">Home</Link></li>
-                <li><Link href="/about" className="hover:text-blue-400 text-white ">About</Link></li>
+                <li><Link href="/about" className="hover:text-blue-400 text-white ">About Us</Link></li>
                 <li><Link href="/blog" className="hover:text-blue-400 text-white ">Blog</Link></li>
-                <li><Link href="/loan" className="hover:text-blue-400 text-white ">Instant Loan</Link></li>
-                <li><Link href="/loan/business-loan" className="hover:text-blue-400 text-white ">Business Loan</Link></li>
-                <li><Link href="/loan/home-loan" className="hover:text-blue-400 text-white ">Home Loan</Link></li>
-                <li><Link href="/loan/personal-loan" className="hover:text-blue-400 text-white ">Personal Loan</Link></li>
-                <li><Link href="/loan/construction-equipment-loan" className="hover:text-blue-400 text-white ">Construction Loan</Link></li>
-                <li><Link href="/loan/car-loan" className="hover:text-blue-400 text-white ">Car Loan</Link></li>
+                 <li><Link href="/contact" className="hover:text-blue-400 text-white ">Contact Us</Link></li>
+
               </ul>
             </div>
 
             {/* Company */}
             <div className="pl-6  col-span-3 md:col-span-2 ">
-              <h3 className="font-semibold text-base mb-1 text-white">Services</h3>
+              <h3 className="font-semibold text-base mb-1 text-white">Tools</h3>
               <ul className="space-y-1 text-sm ">
-                <li><Link href="/aeps" className="hover:text-blue-400 text-white ">AEPS</Link></li>
-                <li><Link href="/bbps" className="hover:text-blue-400 text-white ">Bill Payments</Link></li>
-                <li><Link href="/dmt" className="hover:text-blue-400 text-white ">DMT</Link></li>
-                <li><Link href="/recharge" className="hover:text-blue-400 text-white ">Recharge</Link></li>
-                <li><Link href="/insurance" className="hover:text-blue-400 text-white ">Insurance</Link></li>
-                <li><Link href="/booking" className="hover:text-blue-400 text-white ">Booking</Link></li>
-                <li><Link href="/credit-card" className="hover:text-blue-400 text-white ">Credit Card</Link></li>
-                <li><Link href="/pan-card" className="hover:text-blue-400 text-white ">Pan Card</Link></li>
-                 <li><Link href="/tools" className="hover:text-blue-400 text-white ">Tools</Link></li>
+                <li><Link href="/income-calc" className="hover:text-blue-400 text-white ">Income Calculator</Link></li>
+                <li><Link href="/freecreditscore" className="hover:text-blue-400 text-white ">Free Credit Score</Link></li>
+                <li><Link href="/loanEMI" className="hover:text-blue-400 text-white ">Loan EMI Calculator</Link></li>
+
               </ul>
             </div>
 

@@ -10,6 +10,7 @@ import ComplianceSection from "../../components/ComplianceSection";
 import HomeMap from "../../components/HomeMap";
 import APi from "../../components/APi";
 
+
 export default function Home() {
   return (
   <>
@@ -22,6 +23,7 @@ export default function Home() {
   <HomeMap/>
   <TestimonialSlider/>
   <ComplianceSection/>
+
 
   </>
   );
