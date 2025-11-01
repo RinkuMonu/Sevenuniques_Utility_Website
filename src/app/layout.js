@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import PreFooterSection from "../../components/Prefooter";
+import HomeQRBanner from "../../components/HomeQRSection";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
 
 
         {children}
+        <HomeQRBanner />
         <PreFooterSection />
         <Footer/>
       </body>
