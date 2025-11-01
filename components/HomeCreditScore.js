@@ -72,15 +72,16 @@ export default function HomeCreditScoreSection() {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="flex-1 flex justify-center md:justify-end">
-          <Image
-            src="/image/credit-score.png"
-            alt="Credit Score Preview"
-            width={300}
-            height={600}
-            className="w-full h-100"
-          />
-        </div>
+        <div className=" flex justify-center md:justify-end hidden md:flex">
+  <Image
+    src="/image/credit-score.png"
+    alt="Credit Score Preview"
+    width={300}
+    height={600}
+    className="w-full h-100"
+  />
+</div>
+
       </div>
     </section>
   );

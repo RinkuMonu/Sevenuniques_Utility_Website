@@ -65,7 +65,7 @@ export default function HomePaymentGatewaySection() {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="flex-1 flex justify-center md:justify-end">
+        <div className="flex-1 flex justify-center md:justify-end hidden md:flex">
           <Image
             src="/image/easy-payment.png"
             alt="Credit Score Preview"
