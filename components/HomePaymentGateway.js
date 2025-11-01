@@ -14,11 +14,23 @@ export default function HomePaymentGatewaySection() {
   ];
 
   return (
-    <section className="bg-orange-100 p-8 lg:py-12">
-        <div className="bg-white max-w-6xl mx-auto rounded-2xl py-16 px-6 md:px-20">
+    <section className="p-8 lg:py-12">
+        <div className="bg-gray-100 max-w-6xl mx-auto rounded-2xl py-10 px-6 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
         {/* LEFT CONTENT */}
-        <div className="flex-1 space-y-6">
+  <div className="flex-1 flex justify-center md:justify-end hidden md:flex">
+          <Image
+            src="/image/easy-payment.png"
+            alt="Credit Score Preview"
+            width={300}
+            height={600}
+            className="w-full h-100"
+          />
+        </div>
+
+
+        {/* RIGHT IMAGE */}
+   <div className="flex-1 space-y-6">
           {/* Header */}
           <div className="flex items-center gap-2">
             <h3 className="font-bold">Payment Gateway</h3>
@@ -62,17 +74,6 @@ export default function HomePaymentGatewaySection() {
               Know More
             </Link>
           </div>
-        </div>
-
-        {/* RIGHT IMAGE */}
-        <div className="flex-1 flex justify-center md:justify-end hidden md:flex">
-          <Image
-            src="/image/easy-payment.png"
-            alt="Credit Score Preview"
-            width={300}
-            height={600}
-            className="w-full h-100"
-          />
         </div>
       </div>
     </div>
