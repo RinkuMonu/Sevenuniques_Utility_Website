@@ -24,7 +24,7 @@ export default function HomePaymentGatewaySection() {
             alt="Credit Score Preview"
             width={300}
             height={600}
-            className="w-full h-100"
+            className="w-full h-100 "
           />
         </div>
 
