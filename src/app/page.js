@@ -9,6 +9,10 @@ import TestimonialSlider from "../../components/TestimonialSlider";
 import ComplianceSection from "../../components/ComplianceSection";
 import HomeMap from "../../components/HomeMap";
 import APi from "../../components/APi";
+import HomeRechargeSection from "../../components/HomeRechargeSection";
+import HomeCreditScoreSection from "../../components/HomeCreditScore";
+import HomePaymentGatewaySection from "../../components/HomePaymentGateway";
+import HomeTrustedSecureSection from "../../components/HomeSecure";
 
 
 export default function Home() {
@@ -16,9 +20,13 @@ export default function Home() {
   <>
   <Banner/>
   <HomePartners/>
+  <HomeRechargeSection />
   <HomeSecurity/>
+  <HomeTrustedSecureSection />
+  <HomeCreditScoreSection />
   <HomeOnboarding/>
   <UtilitiesHome/>
+<HomePaymentGatewaySection />
   <APi />
   <HomeMap/>
   <TestimonialSlider/>
