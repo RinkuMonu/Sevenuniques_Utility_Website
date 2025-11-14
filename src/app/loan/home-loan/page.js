@@ -29,11 +29,11 @@ function page() {
 
     const aepsData = {
         subheading: 'Mortgage Loan',
-        heading: 'Your Dream Home, Now a Reality Home Loans by SevenUnique',
-        description: 'At SevenUnique Tech Solutions Private Limited, we bring the reality of homeownership to life. Our home loan solutions are based on simplicity, transparency, and ease of use. We offer rapid approvals, a low documentation burden, and competitive interest rates to make your home purchase process simple and stress-free.',
+        heading: 'Your Dream Home, Now a Reality Home Loans by Finunique',
+        description: 'At Finunique Small Private Limited, we bring the reality of homeownership to life. Our home loan solutions are based on simplicity, transparency, and ease of use. We offer rapid approvals, a low documentation burden, and competitive interest rates to make your home purchase process simple and stress-free.',
         features: [
-            'If you want to purchase your first home, buy a newly constructed home, or renovate your existing home, SevenUnique has an array of personalized loan plans that align with your financial objectives. We offer flexible repayment and transparent processing for you to easily plan your finances.',
-            'Our experienced team will guide you through the entire process from eligibility to documentation to final approval. We are heavily focused on helping you digitally to apply online, track your application through experienced real-time updates, and complete the process fast and with limited environmental impact. With SevenUnique, your dream of home ownership is closer than you think! ',
+            'If you want to purchase your first home, buy a newly constructed home, or renovate your existing home, Finunique has an array of personalized loan plans that align with your financial objectives. We offer flexible repayment and transparent processing for you to easily plan your finances.',
+            'Our experienced team will guide you through the entire process from eligibility to documentation to final approval. We are heavily focused on helping you digitally to apply online, track your application through experienced real-time updates, and complete the process fast and with limited environmental impact. With Finunique, your dream of home ownership is closer than you think! ',
         ]
     };
 
@@ -52,7 +52,7 @@ function page() {
   image: "/loan/hvs.png",
   heading: (
     <>
-      At Sevenunique, <br />
+      At Finuniques, <br />
       how to secure  <br />
       a <span className="text-blue-300">Home</span> loan.
     </>
@@ -64,7 +64,7 @@ function page() {
       image: "/loan/loan4.png",
       cta: "Request Calculations",
       details: [
-        "Home Loan platform of Visit Sevenunique.",
+        "Home Loan platform of Visit Finuniques.",
         "Add the basic information: name, mobile number, Aadhaar, and PAN.",
         "Select location and type of property.",
         "Check the eligible amount of the loan instantly.",
@@ -121,7 +121,7 @@ function page() {
                                     {data.description}
                                 </p>
                                 <Link
-                                    href="https://utility.sevenuniques.in/register"
+                                    href="https://utility.Finuniques.in/register"
                                     className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]"
                                 >
                                     <span className="block px-8 py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#0d2f4d]">

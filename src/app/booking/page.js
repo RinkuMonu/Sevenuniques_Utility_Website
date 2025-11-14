@@ -26,22 +26,22 @@ function Page() {
                     { id: 4, url: "/booking/s1.png", alt: "A year-end travel promotion banner showing a hand holding a ticket through an airplane window." },
                 ],
                 booking: {
-                    title: "Book Smart,\nBook Sevenunique",
+                    title: "Book Smart,\nBook Finuniques",
                     features: [
-                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Sevenunique par", boldWords: [], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Finuniques par", boldWords: [], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c2.png", iconUrl: "/booking/i2.png", text: "Fast, Easy aur\nReliable Booking", boldWords: ["Reliable"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c3.png", iconUrl: "/booking/i3.png", text: "Har Booking Par Trust,\nHar Journey Par Comfort", boldWords: ["Trust,", "Comfort"], textColor: "text-white" },
-                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Sevenunique Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Finuniques Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c5.png", iconUrl: "/booking/i5.png", text: "24x7 \nCustomer support", boldWords: ["24x7"], textColor: "text-white" },
                     ],
                 },
                 aeps: {
                     subheading: "FLIGHT BOOKING",
-                    heading: "Flying Becomes Easy, with SevenUnique.",
-                    description: "With SevenUnique, you can easily book your flights. We guarantee that your every journey is hassle-free and quick, whether your trips are domestic or international. ",
+                    heading: "Flying Becomes Easy, with Finunique.",
+                    description: "With Finunique, you can easily book your flights. We guarantee that your every journey is hassle-free and quick, whether your trips are domestic or international. ",
                     features: [
                         "Flights are just a few clicks away - search, select, and book the flights when you want. Get booked immediately, and fly without worries in a simple and hassle-free trip.",
-                        "Travel smarter, with flexible options, real-time support, and reliable services with SevenUnique. Plan your escape, whether it is a business trip or a holiday, and trust that you will have an easy and confident journey ",
+                        "Travel smarter, with flexible options, real-time support, and reliable services with Finunique. Plan your escape, whether it is a business trip or a holiday, and trust that you will have an easy and confident journey ",
                     ],
                 },
                 travel: {
@@ -58,25 +58,25 @@ function Page() {
                     {
                         title: "Book Today, Fly Tomorrow",
                         description: [
-                            "You have never had it easier planning your next trip. With SevenUnique, book flights instantly and receive confirmed tickets within minutes. Travel stress-free and enjoy your ride, whether it’s a business trip or a vacation.",
+                            "You have never had it easier planning your next trip. With Finunique, book flights instantly and receive confirmed tickets within minutes. Travel stress-free and enjoy your ride, whether it’s a business trip or a vacation.",
                             "We provide secure and fast booking, whether you’re on mobile or desktop. Search flights, compare fares, and choose the most convenient timings in just a few steps.",
-                            "As a company that provides quality services and immediate response, SevenUnique ensures that your traveling process is stress-free throughout. Your journey with us is easy and comfortable, whenever you fly."
+                            "As a company that provides quality services and immediate response, Finunique ensures that your traveling process is stress-free throughout. Your journey with us is easy and comfortable, whenever you fly."
                         ]
                     },
                     {
                         title: "Fast and easy booking of flights.", description: [
 
-                            "SevenUnique saves you a few clicks to book your flights. Local or overseas, experience immediate assurance and commute without any tension.",
+                            "Finunique saves you a few clicks to book your flights. Local or overseas, experience immediate assurance and commute without any tension.",
                             "We identify, assess, and choose the best options as per your availability and budget. We offer a platform that promises easy booking, secure payment, and excellent support anytime, anywhere.",
-                            "Experience quick, secure, and effortless travel with SevenUnique. Travel in style, and every trip is a trip worth a lifetime memory.",
+                            "Experience quick, secure, and effortless travel with Finunique. Travel in style, and every trip is a trip worth a lifetime memory.",
                         ]
                     },
                     {
                         title: "Book your Flights Instantly", description: [
 
-                            "SevenUnique allows you to book your flights within a few clicks. Local or global, find out immediately and relax.",
+                            "Finunique allows you to book your flights within a few clicks. Local or global, find out immediately and relax.",
                             "Compare the airlines, select the most appropriate timings and fares, and pay online safely. The process of booking is easy, fast, and convenient with us at any time and any place.",
-                            "While traveling with SevenUnique, there is no hassle at the beginning and end of the trip. Fly away with comfort, ease, and tranquility.",
+                            "While traveling with Finunique, there is no hassle at the beginning and end of the trip. Fly away with comfort, ease, and tranquility.",
                         ]
                     },
 
@@ -95,19 +95,19 @@ function Page() {
                     { id: 4, url: "/booking/h4.png", alt: "A year-end travel promotion banner showing a hand holding a ticket through an airplane window." },
                 ],
                 booking: {
-                    title: "Book Smart,\nBook Sevenunique",
+                    title: "Book Smart,\nBook Finuniques",
                     features: [
-                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Sevenunique par", boldWords: [], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Finuniques par", boldWords: [], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c2.png", iconUrl: "/booking/i2.png", text: "Fast, Easy aur\nReliable Booking", boldWords: ["Reliable"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c3.png", iconUrl: "/booking/i3.png", text: "Har Booking Par Trust,\nHar Journey Par Comfort", boldWords: ["Trust,", "Comfort"], textColor: "text-white" },
-                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Sevenunique Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Finuniques Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c5.png", iconUrl: "/booking/i5.png", text: "24x7 \nCustomer support", boldWords: ["24x7"], textColor: "text-white" },
                     ],
                 },
                 aeps: {
                     subheading: "HOTAL BOOKING",
                     heading: "Turant Confirmation, Aasaan Booking.",
-                    description: "It has never been so easy to book your hotel stay. While booking with SevenUnique, one can search, compare, and book a room just by clicking a few times. From budget rooms to luxurious suites, we make booking a smooth and easy process for travelers.",
+                    description: "It has never been so easy to book your hotel stay. While booking with Finunique, one can search, compare, and book a room just by clicking a few times. From budget rooms to luxurious suites, we make booking a smooth and easy process for travelers.",
                     features: [
                         "All our reservations are instantly confirmed. You do not have to wait until email arrives or fear about the hotel being overbooked. You can arrange your travel at your own time because of flexible check-in and check-out, which will provide you with the maximum freedom.",
                         "We also provide the best deals and 24/7 customer service. Compare various hotels, get competitive prices, and be sure that our team is always at your service. Travel without the worry that you have a place to stay and be with you throughout the journey   .",
@@ -126,7 +126,7 @@ function Page() {
                 info: [
                     {
                         title: "Fast and easy hotel reservation", description: [
-                            "Reserve a hotel in real time with SevenUnique. Whether it is a budget accommodation or luxury suites, search and book the ideal accommodation in a few clicks.",
+                            "Reserve a hotel in real time with Finunique. Whether it is a budget accommodation or luxury suites, search and book the ideal accommodation in a few clicks.",
                             "Book at several hotels, compare prices, and make the final decision in the shortest time possible. Make a booking in a secure, comfortable, and convenient way at any time and place.",
                             "Travel worry free and make your stay worry free with 24/7 support and flexibility in the check-in/check-out."
                         ]
@@ -135,7 +135,7 @@ function Page() {
                     {
                         title: "Your Perfect Stay, Just a Click Away",
                         description:
-                            ["Booking a hotel has never been easier. With SevenUnique, you can find the ideal room in seconds whether it’s a cozy budget option or a luxurious suite.",
+                            ["Booking a hotel has never been easier. With Finunique, you can find the ideal room in seconds whether it’s a cozy budget option or a luxurious suite.",
                                 "Compare deals, choose your favorite, and get instant confirmation. Enjoy hassle-free payments, flexible check-in and check-out, and worry-free reservations.",
                                 "Our friendly 24/7 support team ensures your trip is smooth, relaxing, and memorable from start to finish.",
                             ]
@@ -143,7 +143,7 @@ function Page() {
                     },
                     {
                         title: "Fast and stress-free hotel reservation.", description: [
-                            " Reserve your hotel within a few clicks with SevenUnique. Whether it is budget accommodations or luxury suites, book the best accommodation to enjoy your trip immediately.",
+                            " Reserve your hotel within a few clicks with Finunique. Whether it is budget accommodations or luxury suites, book the best accommodation to enjoy your trip immediately.",
                             "Check and compare hotels, select the most attractive deals, and receive confirmation. Have a comfortable, safe, and convenient booking process anywhere, anytime.",
                             "Travel without stress and make it a comfortable and stress-free stay with flexible check-in /check-out schedules and 24/7 customer care."
 
@@ -165,19 +165,19 @@ function Page() {
                     { id: 4, url: "/booking/t4.png", alt: "A year-end travel promotion banner showing a hand holding a ticket through an airplane window." },
                 ],
                 booking: {
-                    title: "Book Smart,\nBook Sevenunique",
+                    title: "Book Smart,\nBook Finuniques",
                     features: [
-                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Sevenunique par", boldWords: [], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Finuniques par", boldWords: [], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c2.png", iconUrl: "/booking/i2.png", text: "Fast, Easy aur\nReliable Booking", boldWords: ["Reliable"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c3.png", iconUrl: "/booking/i3.png", text: "Har Booking Par Trust,\nHar Journey Par Comfort", boldWords: ["Trust,", "Comfort"], textColor: "text-white" },
-                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Sevenunique Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Finuniques Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c5.png", iconUrl: "/booking/i5.png", text: "24x7 \nCustomer support", boldWords: ["24x7"], textColor: "text-white" },
                     ],
                 },
                 aeps: {
                     subheading: "TRAINS BOOKING",
                     heading: "Turant Confirmation, Aasaan Booking.",
-                    description: "With SevenUnique, booking your train tickets has become a simple affair. Local trains or long-distance trains: discover the best routes and seats in the shortest time possible with a few clicks.",
+                    description: "With Finunique, booking your train tickets has become a simple affair. Local trains or long-distance trains: discover the best routes and seats in the shortest time possible with a few clicks.",
                     features: [
                         "Travel when you want and choose your coach to suit your schedule. Real-time confirmations make you travel without worries and on time.",
                         "Compare trains, best fares, and 24/7 customer support. You can travel without worrying that you will never see a face because help will always be there when you need it.",
@@ -197,7 +197,7 @@ function Page() {
                     {
                         title: "Fast and Convenient Train ticket booking.", description:
                             [
-                                "Book tickets instantly with SevenUnique. Whether it is a regional trip or long-distance travel, book your seat within a few clicks.",
+                                "Book tickets instantly with Finunique. Whether it is a regional trip or long-distance travel, book your seat within a few clicks.",
                                 "Compare trains, select the most suitable coach, and receive instant confirmation. Book smoothly, safely, and conveniently anywhere around the clock.",
                                 "Flexible travel dates, 24/7 customer support, plan your trip without any stress, and travel with confidence."
                             ]
@@ -205,7 +205,7 @@ function Page() {
                     {
                         title: "Fast & Reliable Train Tickets",
                         description: [
-                            "Make your train reservations fast with SevenUnique. Select among all the existing trains, classes, and times that will best fit your plans.",
+                            "Make your train reservations fast with Finunique. Select among all the existing trains, classes, and times that will best fit your plans.",
                             "Get real-time seat availability, and bookings are confirmed. The waiting time is now over, and there is no doubt that your travel is booked in a few clicks.",
                             "Flexible cancellations, best fare offers, and 24/7 customer service. Always travel with confidence, stress-free, and smart enough whenever you get to the tracks."
                         ]
@@ -214,7 +214,7 @@ function Page() {
                     {
                         title: "Fast & Easy Train Booking",
                         description: [
-                            "SevenUnique allows you to book your train tickets in a few clicks. Whether it is a local train or a long-distance ride, reserve your seat immediately.",
+                            "Finunique allows you to book your train tickets in a few clicks. Whether it is a local train or a long-distance ride, reserve your seat immediately.",
                             "Compare trains, choose a coach of your choice and timing, and get immediate confirmation to have a hassle-free ride",
                             "Bring your own dates, cancel without any difficulties, and with 24/7 customer service, you can plan your trip and travel without any worries.",
 
@@ -235,19 +235,19 @@ function Page() {
                     { id: 4, url: "/booking/b4.png", alt: "A year-end travel promotion banner showing a hand holding a ticket through an airplane window." },
                 ],
                 booking: {
-                    title: "Book Smart,\nBook Sevenunique",
+                    title: "Book Smart,\nBook Finuniques",
                     features: [
-                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Sevenunique par", boldWords: [], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Finuniques par", boldWords: [], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c2.png", iconUrl: "/booking/i2.png", text: "Fast, Easy aur\nReliable Booking", boldWords: ["Reliable"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c3.png", iconUrl: "/booking/i3.png", text: "Har Booking Par Trust,\nHar Journey Par Comfort", boldWords: ["Trust,", "Comfort"], textColor: "text-white" },
-                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Sevenunique Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Finuniques Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c5.png", iconUrl: "/booking/i5.png", text: "24x7 \nCustomer support", boldWords: ["24x7"], textColor: "text-white" },
                     ],
                 },
                 aeps: {
                     subheading: "BUS BOOKING",
                     heading: "Turant Confirmation, Aasaan Booking.",
-                    description: "Get your bus tickets with SevenUnique. From local routes to intercity travels, book your seat within a few clicks and travel without any hassles. Travel When You Want To",
+                    description: "Get your bus tickets with Finunique. From local routes to intercity travels, book your seat within a few clicks and travel without any hassles. Travel When You Want To",
                     features: [
                         "Enjoy the opportunity to travel at your time and in the seat or coach of your choice. Schedule your trip with quick bookings that will give you confidence in your travels.",
                         "Get real-time seat availability, and bookings are confirmed. The waiting time is now over, and there is no doubt that your travel is booked in a few clicks.",
@@ -268,7 +268,7 @@ function Page() {
                     {
                         title: "Fast & Hassle-Free Bus Booking",
                         description: [
-                            "SevenUnique provides the quickest experience with your bus booking. Reserve your bus tickets quickly and easily. If you are booking a local route or intercity travel, your tickets can be bought in 3-clicks or less, and travel without the stress of long wait times.",
+                            "Finunique provides the quickest experience with your bus booking. Reserve your bus tickets quickly and easily. If you are booking a local route or intercity travel, your tickets can be bought in 3-clicks or less, and travel without the stress of long wait times.",
                             "Compare buses, select your ideal premium seat and time, and receive immediate confirmation for your bus ticket. Enjoy personalized, convenient bus booking no matter where you go.",
                             "Plan your trip with confidence, and travel easily with flexible cancellations, easy refunds, and 24/7 customer care."
 
@@ -277,9 +277,9 @@ function Page() {
                     {
                         title: "Your Journey, Our Priority",
                         description: [
-                            "At any time you travel, SevenUnique is there to get you there. Book your bus ticket now ,so that you can sit back and enjoy the ride, whether it is local or an intercity trip you'll stay relaxed on your journey.",
+                            "At any time you travel, Finunique is there to get you there. Book your bus ticket now ,so that you can sit back and enjoy the ride, whether it is local or an intercity trip you'll stay relaxed on your journey.",
                             "Choose from several bus companies, select your seat and time of departure, and receive an instant confirmation to help provide you a pleasurable journey.",
-                            "Flexible cancellations, secure payment processing, and customer support 24/7, all add to the comfort, peace of mind and stress-free travel that a SevenUnique traveler is accustomed to!"
+                            "Flexible cancellations, secure payment processing, and customer support 24/7, all add to the comfort, peace of mind and stress-free travel that a Finunique traveler is accustomed to!"
                         ]
                     },
                 ],
@@ -322,7 +322,7 @@ function Page() {
                                 <p className="text-sm font-bold uppercase tracking-widest text-[#0C3D4C]">{data?.subheading}</p>
                                 <h2 className="mt-2 text-4xl md:text-5xl font-bold text-[#0C3D4C] leading-tight">{data.heading}</h2>
                                 <p className="mt-4 my-8 text-base text-[#5D5D5D] max-w-md">{data.description}</p>
-                                <Link href="https://utility.sevenuniques.in/register" className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]">
+                                <Link href="https://utility.Finuniques.in/register" className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]">
                                     <span className="block px-8 py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#0d2f4d]">
                                         Register now
                                     </span>

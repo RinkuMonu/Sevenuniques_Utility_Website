@@ -90,7 +90,7 @@ const chargeSections = [
     icon: <Shield />,
     content: (
       <>
-        The Chargeback Policy of SevenUnique Tech Solutions Private Limited outlines the procedures for handling chargebacks initiated by customers, distributors, retailers, or white-label partners. It ensures fair, transparent, and respectful dispute resolution for unauthorized or disputed transactions. This policy applies to all digital and utility services offered on <strong>www.sevenuniques.com</strong>, including:
+        The Chargeback Policy of Finunique Small Private Limited outlines the procedures for handling chargebacks initiated by customers, distributors, retailers, or white-label partners. It ensures fair, transparent, and respectful dispute resolution for unauthorized or disputed transactions. This policy applies to all digital and utility services offered on <strong>www.Finuniques.in</strong>, including:
         <ul className="list-disc list-inside mt-2 space-y-1">
           <li>BBPS bill payments (electricity, gas, water, etc.)</li>
           <li>AEPS/DMT transactions (Aadhaar Enabled Payment System & Domestic Money Transfer)</li>
@@ -130,7 +130,7 @@ const chargeSections = [
       <>
         Before initiating a chargeback, users must:
         <ul className="list-disc list-inside mt-2 space-y-1">
-          <li>Contact SevenUnique Support at <strong>info@7unique.in</strong> or <strong>0141-4511098</strong> to resolve the issue directly.</li>
+          <li>Contact Finunique Support at <strong>info@7unique.in</strong> or <strong>0141-4511098</strong> to resolve the issue directly.</li>
           <li>Provide complete information including Transaction ID, registered mobile number, service type, date, and description of the issue.</li>
           <li>Allow adequate time for the company to investigate and resolve the issue.</li>
           <li>Act in good faith; malicious or false claims may lead to account suspension, flagging, or legal action.</li>
@@ -145,7 +145,7 @@ const chargeSections = [
     icon: <Building2 />,
     content: (
       <>
-        SevenUnique is committed to:
+        Finunique is committed to:
         <ul className="list-disc list-inside mt-2 space-y-1">
           <li>Transparent Investigation: All chargeback requests reviewed fairly and thoroughly.</li>
           <li>Prompt Response: Users receive acknowledgment within 24–48 hours.</li>
@@ -201,7 +201,7 @@ const chargeSections = [
       <>
 
         <ul className="list-disc list-inside mt-2 space-y-1">
-          <li>Initiating a chargeback without contacting SevenUnique constitutes a policy violation</li>
+          <li>Initiating a chargeback without contacting Finunique constitutes a policy violation</li>
           <li>Accounts may be suspended, restricted, or permanently banned.</li>
           <li>Repeated offenses may result in legal action to recover losses or damages.</li>
         </ul>
@@ -258,7 +258,7 @@ const chargeSections = [
     icon: <Gavel />,
     content: (
       <>
-        This policy is governed by Indian law under the jurisdiction of Jaipur, Rajasthan. SevenUnique may amend the policy to comply with legal, regulatory, or operational changes without prior notice.
+        This policy is governed by Indian law under the jurisdiction of Jaipur, Rajasthan. Finunique may amend the policy to comply with legal, regulatory, or operational changes without prior notice.
       </>
     ),
   },
@@ -295,11 +295,11 @@ const chargeSections = [
   },
   {
     id: "company-duties",
-    title: "Responsibilities of SevenUnique Tech Solutions",
+    title: "Responsibilities of Finunique Small Private Limiteds",
     icon: <CheckCircle />,
     content: (
       <>
-        SevenUnique must:
+        Finunique must:
         <ul className="list-disc list-inside mt-2 space-y-1">
           <li>Review chargeback requests fairly and transparently.</li>
           <li>Maintain documentation and evidence for all transactions.</li>
@@ -315,7 +315,7 @@ const chargeSections = [
     icon: <Shield />,
     content: (
       <>
-        This Chargeback Policy ensures fairness, transparency, and accountability in dispute handling across SevenUnique’s services. Following these procedures helps maintain trust, operational integrity, and compliance.
+        This Chargeback Policy ensures fairness, transparency, and accountability in dispute handling across Finuniques’s services. Following these procedures helps maintain trust, operational integrity, and compliance.
       </>
     ),
   },
@@ -420,8 +420,8 @@ export default function ChargebackPolicy() {
                         </h1> */}
                         <div className="h-1 w-20 bg-gradient-to-r from-[#358EBA] to-[#24576C] mx-auto mb-6 rounded-full"></div>
                         <p className="text-gray-600 text-start text-lg leading-relaxed">
-                          <span className="font-bold">SevenUnique Tech Solutions Private Limited </span><br />
-<span className="font-bold"> Website:</span> www.sevenuniques.com<br />
+                          <span className="font-bold">Finunique Small Private Limited </span><br />
+<span className="font-bold"> Website:</span> www.Finuniques.in<br />
  <span className="font-bold">Email:</span> info@7unique.in<br />
   <span className="font-bold">Phone:</span> 0141-4511098<br />
    <span className="font-bold">Effective Date:</span> 03 June 2025

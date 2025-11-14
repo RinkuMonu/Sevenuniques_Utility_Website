@@ -32,7 +32,7 @@ export default function CreditComp() {
             Multiple Benefits
           </h3>
           <p className="text-gray-300 text-base md:text-lg mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-           It has got a unique credit card, the SevenUnique, which opens a world of opportunities and conveniences. Get unique advantages and swipe with it.
+           It has got a unique credit card, the Finunique, which opens a world of opportunities and conveniences. Get unique advantages and swipe with it.
           </p>
           <Link href="/coming-soon" className=" text-white font-semibold py-3 px-8 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-cyan-500/50 transform hover:scale-105"  style={{
                             background: "linear-gradient(90deg,#358EBA  0%, #24576C 100%)"

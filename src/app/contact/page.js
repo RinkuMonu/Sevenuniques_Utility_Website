@@ -131,7 +131,7 @@ function Contact() {
                   {data.description}
                 </p>
                 <Link
-                  href="https://utility.sevenuniques.in/register"
+                  href="https://utility.Finuniques.in/register"
                   className="inline-block mt-6 rounded-full border border-[#0C3D4C] p-[2px]"
                 >
                   <span className="block px-6 py-2 md:px-8 md:py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 hover:bg-transparent hover:text-[#0d2f4d]">

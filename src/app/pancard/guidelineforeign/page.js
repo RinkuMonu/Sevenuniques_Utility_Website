@@ -58,7 +58,7 @@ export default function Guidelineforeign () {
       "Applicants who do not have an office in India:",
       "Identity Evidence: Certificate of Registration, issued in the country where the applicant is resident, duly attested by Apostille or Indian Embassy/High Commission/Consulate or other approved persons of overseas branches of the scheduled banks in India (in prescribed form)",
       "Evidence of Address: Above",
-      "Example: Sevenunique Tech Solutions Private Limited would have to provide a Certificate of Incorporation issued by the Registrar of Companies as POI and POA in case the office is in India."
+      "Example: Finunique Small Private Limited would have to provide a Certificate of Incorporation issued by the Registrar of Companies as POI and POA in case the office is in India."
     ]
   }
 ];

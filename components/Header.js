@@ -88,7 +88,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="/image/sevenunique-logo.png"
+              src="/image/sevenunique-logo1.png"
               width={66}
               height={60}
               alt="7Unique Logo"

@@ -65,7 +65,7 @@ function page() {
       image: "/loan/loan4.png",
       cta: "Request Calculations",
       details: [
-        "Sevenunique car loan sites.",
+        "Finuniques car loan sites.",
         "Fill in some basic information: Name, mobile number, Aadhaar, and PAN.",
         "Enter car model and loan.",
         "Determine the amount of a check-eligible loan immediately.",
@@ -122,7 +122,7 @@ function page() {
                                     {data.description}
                                 </p>
                                 <Link
-                                    href="https://utility.sevenuniques.in/register"
+                                    href="https://utility.Finuniques.in/register"
                                     className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]"
                                 >
                                     <span className="block px-8 py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#0d2f4d]">

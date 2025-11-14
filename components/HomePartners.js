@@ -57,7 +57,7 @@ const HomePartners = () => {
             Open up Unlimited Growth
           </h3>
           <p className="mt-4 max-w-2xl mx-auto text-gray-500">
-            We, at Sevenunique, realize that successful business development depends on effective partnerships. By partnering with us, you can tap into numerous opportunities that can fuel the development of the digital financial sector exponentially. 
+            We, at Finuniques, realize that successful business development depends on effective partnerships. By partnering with us, you can tap into numerous opportunities that can fuel the development of the digital financial sector exponentially. 
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto ">

@@ -21,7 +21,7 @@ function page() {
     <>
      How to take <br />
       a loan with  <br />
-      <span className="text-blue-300">Sevenunique</span>
+      <span className="text-blue-300">Finuniques</span>
     </>
   ),
   sliderData: [
@@ -71,10 +71,10 @@ function page() {
   const datasteps = {
   heading: (
     <>
-      Paise Ka Solution, Turant <br className="hidden sm:block" /> SevenUnique Se
+      Paise Ka Solution, Turant <br className="hidden sm:block" /> Finunique Se
     </>
   ),
-  desc: " SevenUnique offers fast, convenient, and safe services for all your loaning requirements. Be it emergency, education, or personal requirements, our process would be easy, paper-free, and fast.",
+  desc: " Finunique offers fast, convenient, and safe services for all your loaning requirements. Be it emergency, education, or personal requirements, our process would be easy, paper-free, and fast.",
   loanFeatures: [
     {
       number: 1,

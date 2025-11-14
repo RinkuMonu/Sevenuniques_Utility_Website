@@ -7,7 +7,7 @@ export default function Guidelines() {
   const guidelinesData = [
     {
       title: "Online PAN Application Steps",
-      desc: `At Sevenunique Tech Solutions Pvt. Ltd., we provide a digital pancard service for Indian citizens.
+      desc: `At Finunique Small Private Limited., we provide a digital pancard service for Indian citizens.
       Foreign nationals of Indian origin can also use this service. The first step is to pick Form 49A,
       select the appropriate category, and fill in general information. A token number is created and shown
       on screen once the form is submitted. This token is emailed as well, allowing applicants to save and
@@ -33,7 +33,7 @@ export default function Guidelines() {
     },
     {
       title: "Contact Us",
-      desc: `For assistance, contact Sevenunique Tech Solutions Pvt. Ltd. Head office: Plot No 97, Dakshinpuri-I,
+      desc: `For assistance, contact Finunique Small Private Limited. Head office: Plot No 97, Dakshinpuri-I,
       Shrikishan, Sanganer, Jagatpura, Jaipur, Rajasthan, India-302017. Email: support@7unique.in, info@7unique.in.
       Call: 0141-4511098. We provide reliable and professional online pancard services.`
     },

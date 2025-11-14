@@ -48,7 +48,7 @@ const privacySections = [
     icon: <Shield />,
     title: "Introduction",
     content: [
-      "Sevenunique Tech Solutions Private Limited (“Company”, “we”, “our”, or “us”) values the privacy of its users and is fully committed to safeguarding personal data. This Privacy Policy outlines how we collect, use, store, and protect your information when you access or use our services, including but not limited to Bharat Bill Payment System (BBPS), Aadhaar Enabled Payment System (AEPS), Domestic Money Transfer (DMT), Mobile/DTH Recharges, Utility Bill Payments, and other financial technology solutions offered by us.",
+      "Finunique Small Private Limited (“Company”, “we”, “our”, or “us”) values the privacy of its users and is fully committed to safeguarding personal data. This Privacy Policy outlines how we collect, use, store, and protect your information when you access or use our services, including but not limited to Bharat Bill Payment System (BBPS), Aadhaar Enabled Payment System (AEPS), Domestic Money Transfer (DMT), Mobile/DTH Recharges, Utility Bill Payments, and other financial technology solutions offered by us.",
       "Our goal is to ensure that your personal and financial information is handled responsibly, securely, and in compliance with applicable laws and regulatory guidelines, including those prescribed by the Reserve Bank of India (RBI), National Payments Corporation of India (NPCI), and Unique Identification Authority of India (UIDAI).",
       "By using our services, you consent to the collection and use of your information in accordance with this Privacy Policy. We only gather information that is essential to provide seamless transactions, meet compliance obligations, and enhance user experience. We do not sell or rent your personal data to unauthorized third parties.",
       "We encourage all users to read this policy carefully to understand how we handle your information and to exercise your rights effectively."
@@ -59,7 +59,7 @@ const privacySections = [
     icon: <Database />,
     title: "Information We Collect",
     content: [
-      "At Sevenunique Tech Solutions Private Limited, we are committed to collecting only such information that is necessary for providing our financial and utility services in a safe, secure, and legally compliant manner. The categories of information we may collect include:",
+      "At Finunique Small Private Limited, we are committed to collecting only such information that is necessary for providing our financial and utility services in a safe, secure, and legally compliant manner. The categories of information we may collect include:",
       "Personal Information — such as your full name, contact details, Aadhaar, PAN, and KYC-related data.",
       "Financial Information — including bank details, UPI IDs, wallet data, and transaction history.",
       "Technical Information — like IP address, device details, and usage logs.",
@@ -170,7 +170,7 @@ const privacySections = [
 
       ["In compliance with Indian law, we have appointed a Grievance Officer to address privacy-related concerns.",
         "Grievance Officer",
-        "Sevenunique Tech Solutions Private Limited",
+        "Finunique Small Private Limited",
         "Email: support@7unique.in / info@7unique.in",
         "Phone: 0141-4511098",
         "All complaints will be acknowledged and resolved promptly.",]
@@ -281,7 +281,7 @@ export default function Privacy() {
                       <p className="text-[#0C3D4C] text-start text-lg leading-relaxed">
                         <span className="font-bold">Effective Date:</span>{" "}
                         28-09-2025 <br />
-                        <span className="font-bold">Company:</span> Sevenunique
+                        <span className="font-bold">Company:</span> Finuniques
                         Tech Solutions Private Limited <br />
                         <span className="font-bold">
                           Registered Office:

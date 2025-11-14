@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "SevenUnique Bill Payment, Recharge, Insurance, Booking, Credit Card, pancard, Loan",
-  description: "SevenUnique Bill Payment, Recharge, Insurance, Booking, Credit Card, pancard, Loan",
+  title: "Finunique Bill Payment, Recharge, Insurance, Booking, Credit Card, pancard, Loan",
+  description: "Finunique Bill Payment, Recharge, Insurance, Booking, Credit Card, pancard, Loan",
 };
 
 export default function RootLayout({ children }) {

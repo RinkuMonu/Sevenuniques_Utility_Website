@@ -50,7 +50,7 @@ export default function Page() {
   content: (
     <p>
       For guidance or help with your PAN reprint or correction application:<br />
-      SevenUniques – PAN Services Unit<br />
+      Finuniques – PAN Services Unit<br />
       Plot No. 97, Dakshinpuri – I Shrikishan, Sanganer, Jagatpura, Jaipur, Shri Kishanpura, Rajasthan – 302017<br />
       Phone: 0141 451 1098<br />
       Email: info@7unique.in<br />

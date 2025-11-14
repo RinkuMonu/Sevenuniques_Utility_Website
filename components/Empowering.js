@@ -27,7 +27,7 @@ const InfoCard = ({ title, benefits, imageUrl, imageAlt, reverse = false }) => {
             ))}
           </ul>
         </div>
-        <Link  href="https://utility.sevenuniques.in/register"  className="mt-6 w-fit bg-white text-[#018EDE] font-semibold py-2 px-8 rounded-full hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <Link  href="https://utility.Finuniques.in/register"  className="mt-6 w-fit bg-white text-[#018EDE] font-semibold py-2 px-8 rounded-full hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">
           Join us as a {title.slice(0, -1)}
         </Link>
       </div>

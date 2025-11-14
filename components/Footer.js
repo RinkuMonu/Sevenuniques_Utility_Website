@@ -135,7 +135,7 @@ const Footer = () => {
     //     {/* Footer Bottom */}
     //     <div className="mt-12 py-8 border-t border-gray-800 text-center">
     //       <p className="text-white text-sm">
-    //         &copy; {new Date().getFullYear()} Sevenunique Tech Solutions Private Limited. All
+    //         &copy; {new Date().getFullYear()} Finunique Small Private Limited. All
     //         rights reserved.
     //       </p>
     //     </div>
@@ -149,7 +149,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-6 pb-6 pt-12">
           <div className="grid md:grid-cols-3 gap-8 align-middle pb-4">
             <div className="md:col-span-1 bg-white rounded">
-              <Image src="/image/sevenunique-logo.png" className=" p-1 mx-auto" alt="" width={100} height={100} />
+              <Image src="/image/sevenunique-logo1.png" className=" p-1 mx-auto" alt="" width={100} height={100} />
             </div>
             <div className="md:col-span-2">
               <p className=" text-white text-sm font-light">
@@ -265,7 +265,7 @@ const Footer = () => {
            
 
             <p className="text-white text-sm">
-              &copy; {new Date().getFullYear()} Sevenunique Tech Solutions Private Limited. All
+              &copy; {new Date().getFullYear()} Finunique Small Private Limited. All
               rights reserved.
             </p>
              <div className="flex space-x-2">

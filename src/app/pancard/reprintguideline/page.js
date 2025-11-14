@@ -91,16 +91,16 @@ export default function Reprintguideline() {
                     <br />
                     Income Tax PAN Services Unit
                     <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
-                        <li>Sevenunique Tech Solutions Private Limited</li>
+                        <li>Finunique Small Private Limited</li>
                         <li>Plot No. 97, Dakshinpuri – I, Shrikishan, Sanganer, Jagatpura, Jaipur, Shri Kishanpura, Rajasthan – 302017</li>
                         <li>Phone: 0141 451 1098</li>
                         <li> Website:  <Link
-        href="http://www.sevenuniques.com"
+        href="http://www.Finuniques.com"
         target="_blank"
         rel="noopener noreferrer"
         className="text-blue-600 hover:underline"
       >
-        www.sevenuniques.com
+        www.Finuniques.in
       </Link></li>
                     </ul>
                     <br />
@@ -110,7 +110,7 @@ export default function Reprintguideline() {
                     Superscribe the envelope with:
                     ‘APPLICATION FOR PAN – N-[15 digit Acknowledgement Number]’
                     (e.g., APPLICATION FOR PAN – N-881010200000097).
-                    Your acknowledgement and proofs should reach Sevenunique Tech Solutions Private Limited within 15 days from the date of online application.
+                    Your acknowledgement and proofs should reach Finunique Small Private Limited within 15 days from the date of online application.
                     Applications shall be processed upon receipt of relevant documents (acknowledgment and proofs).
 
                 </>,
@@ -121,7 +121,7 @@ export default function Reprintguideline() {
             answer:
               <>
   <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
-    <li>Sevenunique Tech Solutions Private Limited</li>
+    <li>Finunique Small Private Limited</li>
     <li>
       Plot No. 97, Dakshinpuri – I, Shrikishan, Sanganer, Jagatpura, Jaipur, Shri Kishanpura, Rajasthan – 302017
     </li>
@@ -129,12 +129,12 @@ export default function Reprintguideline() {
     <li>
       Website:
       <Link
-        href="http://www.sevenuniques.com"
+        href="http://www.Finuniques.com"
         target="_blank"
         rel="noopener noreferrer"
         className="text-blue-600 hover:underline"
       >
-        www.sevenuniques.com
+        www.Finuniques.in
       </Link>
     </li>
   </ul>

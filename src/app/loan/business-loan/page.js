@@ -46,7 +46,7 @@ function page() {
   image: "/loan/bvs.png",
   heading: (
     <>
-      At Sevenunique, <br />
+      At Finuniques, <br />
       how to secure  <br />
       a <span className="text-blue-300">business</span> loan.
     </>
@@ -58,7 +58,7 @@ function page() {
       image: "/loan/loan4.png",
       cta: "Request Calculations",
       details: [
-        "The business loan platform of Visit Sevenunique.",
+        "The business loan platform of Visit Finuniques.",
         "You will need to fill in your basic details: name, mobile number, Aadhaar, and PAN.",
         "Select the type of loan (business loan, working capital, expansion loan, etc.).",
         "Ask to calculate a loan in order to verify your eligibility.",
@@ -91,10 +91,10 @@ function page() {
   const datasteps = {
   heading: (
     <>
-      Paise Ka Solution, Turant <br className="hidden sm:block" /> SevenUnique Se
+      Paise Ka Solution, Turant <br className="hidden sm:block" /> Finunique Se
     </>
   ),
-  desc: " SevenUnique provides instant loans for all your requirements. It is easy and easygoing to borrow money through our fast, safe, and paperless system. Between application and approval, have experience banking your way",
+  desc: " Finunique provides instant loans for all your requirements. It is easy and easygoing to borrow money through our fast, safe, and paperless system. Between application and approval, have experience banking your way",
   loanFeatures: [
     {
       number: 1,

@@ -70,7 +70,7 @@ const UtilitiesHome = () => {
               Fast Utilities, Zero Hassle
             </h2>
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-              Sevenunique provides smooth and easy payment systems with the help of
+              Finuniques provides smooth and easy payment systems with the help of
               digital payment systems that are the most smooth and secure. Whether you
               are at home, on the move, or on the go, our platform offers you quick,
               dependable, and secure transactions.

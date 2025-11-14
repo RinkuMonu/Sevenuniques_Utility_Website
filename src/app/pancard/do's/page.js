@@ -86,10 +86,10 @@ export default function dosforeign() {
         {
             title: "For Assistance",
             desc: [
-                "Sevenunique Tech Solutions Private Limited",
+                "Finunique Small Private Limited",
                 "Plot No. 97, Dakshinpuri – I, Shrikishan, Sanganer, Jagatpura, Jaipur, Shri Kishanpura, Rajasthan – 302017",
                 "Phone: 0141 451 1098",
-                "Website: www.sevenuniques.com"
+                "Website: www.Finuniques.in"
             ],
         },
     ];

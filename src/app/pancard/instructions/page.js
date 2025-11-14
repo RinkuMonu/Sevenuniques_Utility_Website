@@ -52,7 +52,7 @@ export default function InstructionsIndianCitizens() {
         },
         {
           title: "Full Name - Company",
-          desc: "Name: Sevenunique Tech Solutions Private Limited.\nLast Name/Surname: S E V E N U N I Q U E T E C H S O L U T I O N S.\nFirst Name: P R I V A T E\nMiddle Name: L I M I T E D\nAvoid abbreviations like Pvt Ltd or P.Ltd. Titles like Shri, Smt., Dr. should not be used.",
+          desc: "Name: Finunique Small Private Limited.\nLast Name/Surname: S E V E N U N I Q U E T E C H S O L U T I O N S.\nFirst Name: P R I V A T E\nMiddle Name: L I M I T E D\nAvoid abbreviations like Pvt Ltd or P.Ltd. Titles like Shri, Smt., Dr. should not be used.",
         },
         {
           title: "Name on pancard",
@@ -104,7 +104,7 @@ export default function InstructionsIndianCitizens() {
         },
         {
           title: "Source of Income",
-          desc: "Choose one or more sources. Business/profession must provide code (e.g., 12 - Information Technology for Seven Unique Tech Solutions Private Limited).",
+          desc: "Choose one or more sources. Business/profession must provide code (e.g., 12 - Information Technology for Finunique Small Private Limited).",
         },
         {
           title: "Representative Assessee",

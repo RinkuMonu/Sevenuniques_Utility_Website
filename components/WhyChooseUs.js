@@ -87,7 +87,7 @@ export default function WhyChooseUs() {
     <div className="max-w-7xl mx-auto px-4 lg:px-18 py-20">
       <div className="text-center mb-8">
         <h2 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] leading-tight mb-4">
-          Why Partner with SevenUnique
+          Why Partner with Finunique
         </h2>
         <p className="text-lg text-zinc-600 mt-2 max-w-2xl mx-auto">
           From routine maintenance to major repairs, we’ve got your car covered with reliable and friendly service.

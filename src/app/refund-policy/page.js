@@ -29,13 +29,13 @@ const refundSections = [
     title: "Cancellation and Refund Policy",
     icon: <XCircle className="w-5 h-5" />,
     content: [
-      "1. Overview\nThis Cancellation and Refund Policy of SevenUnique Tech Solutions Private Limited explains the terms under which customers can cancel a service or request a refund for payments made through our digital platform www.sevenuniques.com. Our objective is to ensure complete transparency, fairness, and customer satisfaction while maintaining compliance with applicable laws, industry standards, and the policies of our third-party service providers.",
+      "1. Overview\nThis Cancellation and Refund Policy of Finunique Small Private Limited explains the terms under which customers can cancel a service or request a refund for payments made through our digital platform www.Finuniques.in. Our objective is to ensure complete transparency, fairness, and customer satisfaction while maintaining compliance with applicable laws, industry standards, and the policies of our third-party service providers.",
 
       "We provide multiple digital services, including bill payments, AEPS, DMT, recharges, loan applications, insurance, pancard processing, and other utility-based financial services. Once a service or transaction is successfully completed, it cannot be cancelled as our systems operate in real time with partner institutions. However, in certain cases such as failed, duplicate, or incomplete transactions, customers may be eligible for a refund.",
 
       "Refund requests must be submitted within 7 days of the transaction by emailing info@7unique.in with complete transaction details. Approved refunds will be processed within 5–10 business days to the original payment method used.",
 
-      "At SevenUnique Tech Solutions Private Limited, we strive to maintain honesty, efficiency, and customer trust by ensuring a transparent process for handling cancellations and refunds."
+      "At Finunique Small Private Limited, we strive to maintain honesty, efficiency, and customer trust by ensuring a transparent process for handling cancellations and refunds."
     ]
   },
   {
@@ -43,13 +43,13 @@ const refundSections = [
     title: "Scope of Services",
     icon: <Globe className="w-5 h-5" />,
     content: [
-      "2. Scope of Services\nThis Cancellation and Refund Policy applies to all services provided by SevenUnique Tech Solutions Private Limited through its official website www.sevenuniques.com and mobile application. The policy covers every transaction and digital service offered to customers, ensuring clarity in all engagements and payments.",
+      "2. Scope of Services\nThis Cancellation and Refund Policy applies to all services provided by Finunique Small Private Limited through its official website www.Finuniques.in and mobile application. The policy covers every transaction and digital service offered to customers, ensuring clarity in all engagements and payments.",
 
       "Our platform provides a wide range of digital and financial services designed to make daily transactions seamless, secure, and convenient. These include Loan Application and Processing, BBPS (Bharat Bill Payment System) for utility payments such as electricity, gas, water, and broadband bills, as well as AEPS (Aadhaar Enabled Payment System) for secure biometric transactions.",
 
       "We also offer DMT (Domestic Money Transfer) services for quick fund transfers, along with Insurance solutions for various categories. Additionally, users can access Mobile, DTH, and Data Card Recharges, Credit Card Bill Payments, and pancard Application services through our platform.",
 
-      "Beyond these, SevenUnique Tech Solutions Private Limited may provide other related utility, government, or financial services as per customer requirements. This policy governs all such services to maintain transparency, protect customer interests, and ensure fair handling of cancellations and refunds across every transaction."
+      "Beyond these, Finunique Small Private Limited may provide other related utility, government, or financial services as per customer requirements. This policy governs all such services to maintain transparency, protect customer interests, and ensure fair handling of cancellations and refunds across every transaction."
     ]
   },
   {
@@ -57,13 +57,13 @@ const refundSections = [
   title: "Cancellation Policy",
   icon: <Ban className="w-5 h-5" />,
   content: [
-    "3. Cancellation Policy\nAt SevenUnique Tech Solutions Private Limited, transactions are processed in real time through secure integrations with banks, government APIs, and third-party service providers. Therefore, once a transaction or service request has been successfully completed by a user, distributor, retailer, or white-label partner, it cannot be cancelled or reversed under normal circumstances.",
+    "3. Cancellation Policy\nAt Finunique Small Private Limited, transactions are processed in real time through secure integrations with banks, government APIs, and third-party service providers. Therefore, once a transaction or service request has been successfully completed by a user, distributor, retailer, or white-label partner, it cannot be cancelled or reversed under normal circumstances.",
 
     "However, if a service remains pending due to technical errors, server downtime, or verification delays, the concerned party may submit a cancellation request within 7 days from the date of transaction. The request must be sent to info@7unique.in with the Transaction ID, Registered Mobile Number, and Service Type clearly mentioned.",
 
     "All cancellation requests are thoroughly reviewed by our support team and, when necessary, coordinated with relevant banks, billers, or API partners to verify eligibility. Approval or rejection of such requests depends on the service status and confirmation from associated partners.",
 
-    "Please note that SevenUnique Tech Solutions Private Limited reserves the right to deny cancellation if the transaction has already been processed or acknowledged as successful by the service provider. This ensures operational integrity, transparency, and fairness across all levels—user, distributor, retailer, and white-label partner."
+    "Please note that Finunique Small Private Limited reserves the right to deny cancellation if the transaction has already been processed or acknowledged as successful by the service provider. This ensures operational integrity, transparency, and fairness across all levels—user, distributor, retailer, and white-label partner."
   ]
 }
 ,
@@ -72,7 +72,7 @@ const refundSections = [
   title: "Refund Eligibility",
   icon: <RotateCcwIcon className="w-5 h-5" />,
   content: [
-    "4. Refund Eligibility\nAt SevenUnique Tech Solutions Private Limited, refunds are considered only under specific circumstances to ensure transparency and fairness for all customers, distributors, retailers, and white-label partners.",
+    "4. Refund Eligibility\nAt Finunique Small Private Limited, refunds are considered only under specific circumstances to ensure transparency and fairness for all customers, distributors, retailers, and white-label partners.",
 
     "1. Failed or Unsuccessful Transactions:\nIf a service such as a recharge, bill payment, fund transfer, or AEPS transaction fails, but the amount is deducted from the customer’s account and not credited to the intended beneficiary, a refund request will be eligible for review and processing.",
 
@@ -82,7 +82,7 @@ const refundSections = [
 
     "4. Unfulfilled PAN/Insurance Applications:\nIf a pancard or insurance application cannot be processed due to administrative, system, or partner-related issues beyond the customer’s control, the amount paid for the service may be refunded after verification.",
 
-    "All refund requests must be submitted within 7 days of the transaction, and approval is subject to verification by SevenUnique Tech Solutions Private Limited and associated partners."
+    "All refund requests must be submitted within 7 days of the transaction, and approval is subject to verification by Finunique Small Private Limited and associated partners."
   ]
 },
   {
@@ -90,7 +90,7 @@ const refundSections = [
   title: "Non-Refundable Services",
   icon: <XOctagon className="w-5 h-5" />,
   content: [
-    "5. Non-Refundable Services\nAt SevenUnique Tech Solutions Private Limited, certain services and fees are strictly non-refundable to maintain operational efficiency, comply with third-party agreements, and ensure transparency for all users, distributors, retailers, and white-label partners.",
+    "5. Non-Refundable Services\nAt Finunique Small Private Limited, certain services and fees are strictly non-refundable to maintain operational efficiency, comply with third-party agreements, and ensure transparency for all users, distributors, retailers, and white-label partners.",
 
     "1. Successfully Completed Transactions:\nOnce a service such as recharge, bill payment, AEPS, or DMT transfer is successfully processed, the transaction is considered final and cannot be refunded, as the amount has already been credited to the respective beneficiary or service provider.",
 
@@ -108,7 +108,7 @@ const refundSections = [
   title: "Refund Processing Time",
   icon: <Clock className="w-5 h-5" />,
   content: [
-    "6. Refund Processing Time\nAt SevenUnique Tech Solutions Private Limited, we aim to process all approved refunds efficiently and transparently to maintain customer trust and satisfaction across all users, distributors, retailers, and white-label partners.",
+    "6. Refund Processing Time\nAt Finunique Small Private Limited, we aim to process all approved refunds efficiently and transparently to maintain customer trust and satisfaction across all users, distributors, retailers, and white-label partners.",
 
     "Once a refund request has been reviewed and approved, the processing time typically ranges from 5 to 10 business days from the date of approval. The exact timing may vary depending on factors such as internal verification procedures, bank processing schedules, and payment gateway requirements.",
 
@@ -116,7 +116,7 @@ const refundSections = [
 
     "In cases where the original payment method is no longer active or available, the customer may be required to provide an alternative verified method to receive the refund.",
 
-    "While we strive to process refunds promptly, delays may occasionally occur due to bank holidays, system maintenance, or third-party processing delays. By providing clear timelines and regular updates, SevenUnique Tech Solutions Private Limited ensures transparency and a smooth refund experience for all parties involved."
+    "While we strive to process refunds promptly, delays may occasionally occur due to bank holidays, system maintenance, or third-party processing delays. By providing clear timelines and regular updates, Finunique Small Private Limited ensures transparency and a smooth refund experience for all parties involved."
   ]
 },
 {
@@ -124,13 +124,13 @@ const refundSections = [
   title: "Partial Refunds or Adjustments",
   icon: <Divide className="w-5 h-5" />,
   content: [
-    "7. Partial Refunds or Adjustments\nAt SevenUnique Tech Solutions Private Limited, we understand that in some cases, a service may have been partially delivered before a cancellation request is made. To ensure fairness to both the customer and our platform, partial refunds or adjustments may be provided based on the extent of service usage.",
+    "7. Partial Refunds or Adjustments\nAt Finunique Small Private Limited, we understand that in some cases, a service may have been partially delivered before a cancellation request is made. To ensure fairness to both the customer and our platform, partial refunds or adjustments may be provided based on the extent of service usage.",
 
     "For example, if a user, distributor, retailer, or white-label partner has already utilized part of a service—such as a recharge, bill payment, AEPS/DMT transaction, or loan processing—any refund will be calculated proportionately. This calculation considers the services already rendered, resources consumed, and any applicable administrative or processing fees.",
 
     "Customers requesting partial refunds must submit the cancellation or refund request within 7 days of the transaction, providing all relevant details including Transaction ID, registered mobile number, and service type. Each request is carefully verified by our support team and, where necessary, coordinated with third-party partners or service providers to determine the refundable amount.",
 
-    "By implementing proportionate refunds and adjustments, SevenUnique Tech Solutions Private Limited ensures transparency, minimizes disputes, and maintains trust with all stakeholders, including users, distributors, retailers, and white-label partners."
+    "By implementing proportionate refunds and adjustments, Finunique Small Private Limited ensures transparency, minimizes disputes, and maintains trust with all stakeholders, including users, distributors, retailers, and white-label partners."
   ]
 },
 {
@@ -138,13 +138,13 @@ const refundSections = [
   title: "Late Cancellations or Post-Usage",
   icon: <Slash className="w-5 h-5" />,
   content: [
-    "8. Late Cancellations or Post-Usage\nAt SevenUnique Tech Solutions Private Limited, it is important to clarify the terms regarding late cancellations or services already utilized. Once a customer, distributor, retailer, or white-label partner has availed or benefited from a service, the transaction is considered complete, and no refund will be processed.",
+    "8. Late Cancellations or Post-Usage\nAt Finunique Small Private Limited, it is important to clarify the terms regarding late cancellations or services already utilized. Once a customer, distributor, retailer, or white-label partner has availed or benefited from a service, the transaction is considered complete, and no refund will be processed.",
 
     "This policy applies to all services provided through our platform, including AEPS withdrawals, bill payments, mobile/DTH recharges, fund transfers (DMT), loan processing, insurance, pancard applications, and other utility or financial services. Once these services are successfully executed, the amount paid is non-recoverable, as the service has been delivered and the associated resources have been consumed.",
 
     "Customers are encouraged to review transaction details carefully before initiating any request. Any cancellation request after service completion will be declined, even if submitted within the typical refund window, because the service has already been rendered and cannot be reversed.",
 
-    "By maintaining this policy, SevenUnique Tech Solutions Private Limited ensures operational integrity, fairness, and transparency while protecting both the company and its partners from disputes related to post-usage refund claims."
+    "By maintaining this policy, Finunique Small Private Limited ensures operational integrity, fairness, and transparency while protecting both the company and its partners from disputes related to post-usage refund claims."
   ]
 },
 {
@@ -152,13 +152,13 @@ const refundSections = [
   title: "Refund Method",
   icon: <CreditCard className="w-5 h-5" />,
   content: [
-    "9. Refund Method\nAt SevenUnique Tech Solutions Private Limited, all refunds are processed using the same payment method that was used for the original transaction to ensure transparency and security for all customers, distributors, retailers, and white-label partners. This includes payments made through bank accounts, credit or debit cards, UPI, or other online payment systems.",
+    "9. Refund Method\nAt Finunique Small Private Limited, all refunds are processed using the same payment method that was used for the original transaction to ensure transparency and security for all customers, distributors, retailers, and white-label partners. This includes payments made through bank accounts, credit or debit cards, UPI, or other online payment systems.",
 
     "The refund process begins once a request has been verified and approved by our support team. Refunds are then initiated promptly and are subject to processing times of 5–10 business days, depending on the payment method and the associated bank or payment gateway’s timelines.",
 
     "In cases where the original payment method is unavailable or inactive—for example, a closed bank account or expired card—the customer may be required to provide an alternative verified payment method to receive the refund. Our team will guide the customer through this process to ensure funds are transferred safely and accurately.",
 
-    "SevenUnique Tech Solutions Private Limited ensures that refunds are secure, traceable, and credited only to the rightful account, minimizing any risk of fraud or error. Clear communication is maintained throughout the refund process so that all parties are informed about the status and expected timeline of the refund."
+    "Finunique Small Private Limited ensures that refunds are secure, traceable, and credited only to the rightful account, minimizing any risk of fraud or error. Clear communication is maintained throughout the refund process so that all parties are informed about the status and expected timeline of the refund."
   ]
 },
 {
@@ -166,7 +166,7 @@ const refundSections = [
   title: "Contact Us",
   icon: <Phone className="w-5 h-5" />,
   content: [
-    "10. Contact Us\nFor any cancellation or refund-related concerns, customers, distributors, retailers, and white-label partners are encouraged to contact SevenUnique Tech Solutions Private Limited. Our support team is available to assist with queries, verification of transactions, and guidance on the refund process.",
+    "10. Contact Us\nFor any cancellation or refund-related concerns, customers, distributors, retailers, and white-label partners are encouraged to contact Finunique Small Private Limited. Our support team is available to assist with queries, verification of transactions, and guidance on the refund process.",
 
     "Head Office:\nPlot No. 97, Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura, Jaipur, Rajasthan, India, 302017",
 
@@ -180,7 +180,7 @@ const refundSections = [
 
     "Our team strives to respond promptly and provide clear instructions for cancellation or refund procedures. By maintaining multiple contact channels, we aim to ensure transparency, trust, and a seamless experience for all stakeholders.",
 
-    "SevenUnique Tech Solutions Private Limited is committed to efficient and secure handling of all customer concerns and ensures that each case is reviewed thoroughly in coordination with third-party service providers or partners when required."
+    "Finunique Small Private Limited is committed to efficient and secure handling of all customer concerns and ensures that each case is reviewed thoroughly in coordination with third-party service providers or partners when required."
   ]
 },
 {
@@ -188,11 +188,11 @@ const refundSections = [
   title: "Disclaimer",
   icon: <AlertTriangleIcon className="w-5 h-5" />,
   content: [
-    "11. Disclaimer\nSevenUnique Tech Solutions Private Limited operates as a technology facilitator for a wide range of financial and utility transactions, including bill payments, recharges, AEPS/DMT services, loans, insurance, PAN applications, and other digital financial services. The company provides a secure platform to enable transactions between customers and third-party service providers, including banks, utility companies, insurance providers, and government agencies.",
+    "11. Disclaimer\nFinunique Small Private Limited operates as a technology facilitator for a wide range of financial and utility transactions, including bill payments, recharges, AEPS/DMT services, loans, insurance, PAN applications, and other digital financial services. The company provides a secure platform to enable transactions between customers and third-party service providers, including banks, utility companies, insurance providers, and government agencies.",
 
     "While we strive to ensure accurate, timely, and efficient processing of all services, final settlement, transaction confirmation, and refund eligibility may depend on the policies, systems, and procedures of third-party service providers, banks, or government APIs. Delays, errors, or discrepancies arising from these entities may impact the timing or approval of cancellations and refunds.",
 
-    "SevenUnique Tech Solutions Private Limited does not assume liability for delays, failures, or losses resulting from third-party actions beyond our control. All refunds, cancellations, and adjustments are subject to verification and confirmation in coordination with the relevant service providers.",
+    "Finunique Small Private Limited does not assume liability for delays, failures, or losses resulting from third-party actions beyond our control. All refunds, cancellations, and adjustments are subject to verification and confirmation in coordination with the relevant service providers.",
 
     "The company reserves the right to amend, update, or modify this Cancellation and Refund Policy at any time without prior notice, in order to comply with changes in legal, regulatory, operational, or technological requirements. Customers, distributors, retailers, and white-label partners are encouraged to regularly review the policy to remain informed of any updates."
   ]
@@ -286,9 +286,9 @@ export default function RefundPolicy() {
                         <p className="text-gray-600 text-lg leading-relaxed">
                           Our refund policy is designed to be fair and transparent. We understand that circumstances may change, and we strive to make the cancellation and refund process as straightforward as possible. Below you will find detailed information about our policies, eligibility criteria, and processes.
                         </p>
-                        <p className="space-y-4 text-black text-lg leading-relaxed">SevenUnique Tech Solutions Private Limited<br />
+                        <p className="space-y-4 text-black text-lg leading-relaxed">Finunique Small Private Limited<br />
                           Email: info@7unique.in<br />
-                          Website: www.sevenuniques.com<br />
+                          Website: www.Finuniques.in<br />
                           Effective Date: 07 October 2025</p>
                       </div>
                     </div>

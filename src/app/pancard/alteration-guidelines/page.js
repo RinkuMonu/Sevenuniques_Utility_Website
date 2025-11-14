@@ -114,7 +114,7 @@ const sections = [
         </li>
         <li>
           Address for Submission:<br />
-          Income Tax PAN Services Unit (Managed by Sevenuniques)<br />
+          Income Tax PAN Services Unit (Managed by Finuniques)<br />
           Plot No 97, Dakshinpuri - I Shrikishan, Sanganer, Jagatpura,<br />
           Jaipur, Shri Kishanpura, Rajasthan 302017
         </li>
