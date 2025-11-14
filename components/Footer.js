@@ -231,11 +231,11 @@ const Footer = () => {
                   <h3 className="font-semibold text-white mb-1">Contact us</h3>
                  <p className="text-white inline-flex gap-1 items-center">
                 <FaPhoneAlt className="pt-1 text-sm" />
-                  91+987654321
+                  0141-4511098
                  </p>
                     <p className="text-white inline-flex gap-1 items-center">
                <MdOutlineMail className="text-sm" />
-                  7unique@gmail.com
+                  support@7unique.in
                  </p>
                 </div>
 
