@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "sevenuniques.com",
+      name: "finuniques.in",
       script: "npm",
       args: "start", // next start
       cwd: "/home/sevenu/public_html/Sevenuniques_Utility_Website",
