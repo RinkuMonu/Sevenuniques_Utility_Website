@@ -26,7 +26,7 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
           source: "."
-          target: "/home/finuniqu/public_html/finuniquniques_Utility_Website"
+          target: "/home/finuniqu/public_html/Sevenuniques_Utility_Website"
 
       - name: 🔄 Build & Restart App via PM2 using ecosystem.config.js
         uses: appleboy/ssh-action@master
@@ -36,7 +36,7 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cd /home/finuniqu/public_html/finuniquniques_Utility_Website
+            cd /home/finuniqu/public_html/Sevenuniques_Utility_Website
             npm install --legacy-peer-deps
             npm run build
             pm2 delete finuniques.in || true
