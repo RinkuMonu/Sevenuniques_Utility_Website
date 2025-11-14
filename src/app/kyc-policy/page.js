@@ -11,7 +11,7 @@ const kycSections = [
     title: "Purpose",
     icon: <Shield />,
     content:
-      "The Chargeback Policy of Finunique Small Private Limited outlines the standards and procedures for handling chargebacks initiated by customers, distributors, retailers, or white-label partners. It aims to provide fair, transparent, and mutually respectful resolution of disputes related to unauthorized or disputed transactions. This policy applies to all digital and utility services provided through www.Finuniques.in, including BBPS bill payments, AEPS/DMT transactions, mobile/DTH/data card recharges, loan applications, insurance, credit card bill payments, PAN applications, subscriptions, and any other digital financial or utility service offered on the platform.",
+      "The Chargeback Policy of Finunique Small Private Limited outlines the standards and procedures for handling chargebacks initiated by customers, distributors, retailers, or white-label partners. It aims to provide fair, transparent, and mutually respectful resolution of disputes related to unauthorized or disputed transactions. This policy applies to all digital and utility services provided through www.finuniques.in, including BBPS bill payments, AEPS/DMT transactions, mobile/DTH/data card recharges, loan applications, insurance, credit card bill payments, PAN applications, subscriptions, and any other digital financial or utility service offered on the platform.",
   },
   {
     id: "scope",
@@ -208,7 +208,7 @@ export default function KycPolicy() {
                         <div className="h-1 w-20 bg-gradient-to-r from-[#358EBA] to-[#24576C] mx-auto mb-6 rounded-full"></div>
                         <p className="text-gray-600 text-start text-lg leading-relaxed">
                           <span className="font-bold">Finunique Small Private Limited </span><br />
-<span className="font-bold"> Website:</span> www.Finuniques.in<br />
+<span className="font-bold"> Website:</span> www.finuniques.in<br />
  <span className="font-bold">Email:</span> info@7unique.in<br />
   <span className="font-bold">Phone:</span> 0141-4511098<br />
    <span className="font-bold">Effective Date:</span> 03 June 2025

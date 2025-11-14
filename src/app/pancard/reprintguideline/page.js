@@ -100,7 +100,7 @@ export default function Reprintguideline() {
         rel="noopener noreferrer"
         className="text-blue-600 hover:underline"
       >
-        www.Finuniques.in
+        www.finuniques.in
       </Link></li>
                     </ul>
                     <br />
@@ -134,7 +134,7 @@ export default function Reprintguideline() {
         rel="noopener noreferrer"
         className="text-blue-600 hover:underline"
       >
-        www.Finuniques.in
+        www.finuniques.in
       </Link>
     </li>
   </ul>

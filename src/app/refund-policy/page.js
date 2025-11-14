@@ -29,7 +29,7 @@ const refundSections = [
     title: "Cancellation and Refund Policy",
     icon: <XCircle className="w-5 h-5" />,
     content: [
-      "1. Overview\nThis Cancellation and Refund Policy of Finunique Small Private Limited explains the terms under which customers can cancel a service or request a refund for payments made through our digital platform www.Finuniques.in. Our objective is to ensure complete transparency, fairness, and customer satisfaction while maintaining compliance with applicable laws, industry standards, and the policies of our third-party service providers.",
+      "1. Overview\nThis Cancellation and Refund Policy of Finunique Small Private Limited explains the terms under which customers can cancel a service or request a refund for payments made through our digital platform www.finuniques.in. Our objective is to ensure complete transparency, fairness, and customer satisfaction while maintaining compliance with applicable laws, industry standards, and the policies of our third-party service providers.",
 
       "We provide multiple digital services, including bill payments, AEPS, DMT, recharges, loan applications, insurance, pancard processing, and other utility-based financial services. Once a service or transaction is successfully completed, it cannot be cancelled as our systems operate in real time with partner institutions. However, in certain cases such as failed, duplicate, or incomplete transactions, customers may be eligible for a refund.",
 
@@ -43,7 +43,7 @@ const refundSections = [
     title: "Scope of Services",
     icon: <Globe className="w-5 h-5" />,
     content: [
-      "2. Scope of Services\nThis Cancellation and Refund Policy applies to all services provided by Finunique Small Private Limited through its official website www.Finuniques.in and mobile application. The policy covers every transaction and digital service offered to customers, ensuring clarity in all engagements and payments.",
+      "2. Scope of Services\nThis Cancellation and Refund Policy applies to all services provided by Finunique Small Private Limited through its official website www.finuniques.in and mobile application. The policy covers every transaction and digital service offered to customers, ensuring clarity in all engagements and payments.",
 
       "Our platform provides a wide range of digital and financial services designed to make daily transactions seamless, secure, and convenient. These include Loan Application and Processing, BBPS (Bharat Bill Payment System) for utility payments such as electricity, gas, water, and broadband bills, as well as AEPS (Aadhaar Enabled Payment System) for secure biometric transactions.",
 
@@ -288,7 +288,7 @@ export default function RefundPolicy() {
                         </p>
                         <p className="space-y-4 text-black text-lg leading-relaxed">Finunique Small Private Limited<br />
                           Email: info@7unique.in<br />
-                          Website: www.Finuniques.in<br />
+                          Website: www.finuniques.in<br />
                           Effective Date: 07 October 2025</p>
                       </div>
                     </div>

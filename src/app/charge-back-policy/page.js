@@ -90,7 +90,7 @@ const chargeSections = [
     icon: <Shield />,
     content: (
       <>
-        The Chargeback Policy of Finunique Small Private Limited outlines the procedures for handling chargebacks initiated by customers, distributors, retailers, or white-label partners. It ensures fair, transparent, and respectful dispute resolution for unauthorized or disputed transactions. This policy applies to all digital and utility services offered on <strong>www.Finuniques.in</strong>, including:
+        The Chargeback Policy of Finunique Small Private Limited outlines the procedures for handling chargebacks initiated by customers, distributors, retailers, or white-label partners. It ensures fair, transparent, and respectful dispute resolution for unauthorized or disputed transactions. This policy applies to all digital and utility services offered on <strong>www.finuniques.in</strong>, including:
         <ul className="list-disc list-inside mt-2 space-y-1">
           <li>BBPS bill payments (electricity, gas, water, etc.)</li>
           <li>AEPS/DMT transactions (Aadhaar Enabled Payment System & Domestic Money Transfer)</li>
@@ -421,7 +421,7 @@ export default function ChargebackPolicy() {
                         <div className="h-1 w-20 bg-gradient-to-r from-[#358EBA] to-[#24576C] mx-auto mb-6 rounded-full"></div>
                         <p className="text-gray-600 text-start text-lg leading-relaxed">
                           <span className="font-bold">Finunique Small Private Limited </span><br />
-<span className="font-bold"> Website:</span> www.Finuniques.in<br />
+<span className="font-bold"> Website:</span> www.finuniques.in<br />
  <span className="font-bold">Email:</span> info@7unique.in<br />
   <span className="font-bold">Phone:</span> 0141-4511098<br />
    <span className="font-bold">Effective Date:</span> 03 June 2025

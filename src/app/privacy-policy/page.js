@@ -281,8 +281,8 @@ export default function Privacy() {
                       <p className="text-[#0C3D4C] text-start text-lg leading-relaxed">
                         <span className="font-bold">Effective Date:</span>{" "}
                         28-09-2025 <br />
-                        <span className="font-bold">Company:</span> Finuniques
-                        Tech Solutions Private Limited <br />
+                        <span className="font-bold">Company:</span> Finunique
+                         Small Private Limited <br />
                         <span className="font-bold">
                           Registered Office:
                         </span>{" "}
