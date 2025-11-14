@@ -4,7 +4,7 @@ module.exports = {
       name: "finuniques.in",
       script: "npm",
       args: "start", // next start
-      cwd: "/home/sevenu/public_html/Sevenuniques_Utility_Website",
+      cwd: "/home/finuniqu/public_html/Sevenuniques_Utility_Website",
       env: {
         NODE_ENV: "production",
         PORT: 3000,
