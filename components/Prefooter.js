@@ -10,18 +10,18 @@ export default function PreFooterSection() {
       links: [
         { name: "AePS", href: "/aeps" },
         { name: "Credit Card", href: "/credit-card" },
-        { name: "PAN Card", href: "/pancard" },
+        { name: "PAN Card", href: "/pan-card" },
       ],
     },
     {
       title: "Financial Services",
       links: [
-         { name: "Business Loan", href: "/loan/business-loan" },
-    { name: "Home Loan", href: "/loan/home-loan" },
-    { name: "Personal Loan", href: "/loan/personal-loan" },
-    { name: "Construction Loan", href: "/loan/construction-equipment-loan" },
-    { name: "Car Loan", href: "/loan/car-loan" },
-    { name: "Instant Loan", href: "/loan" },
+         { name: "Business Loan", href: "/instant-loan/business-loan" },
+    { name: "Home Loan", href: "/instant-loan/home-loan" },
+    { name: "Personal Loan", href: "/instant-loan/personal-loan" },
+    { name: "Construction Loan", href: "/instant-loan/construction-equipment-loan" },
+    { name: "Car Loan", href: "/instant-loan/car-loan" },
+    { name: "Instant Loan", href: "/instant-loan" },
 { name: "Insurance", href: "/insurance" },
       ],
     },
@@ -40,7 +40,7 @@ export default function PreFooterSection() {
     {
       title: "Booking Services",
       links: [
-        { name: "Buss Booking", href: "/booking" },
+        { name: "Bus Booking", href: "/booking" },
         { name: "Train Booking", href: "/booking" },
         { name: "Hotel Booking", href: "/booking" },
         { name: "Flight Booking", href: "/booking" },

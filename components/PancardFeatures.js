@@ -13,7 +13,7 @@ const features = [
     title: "PAN Card Correction",
     description:
       "Get your PAN Card instantly with online verification and hassle-free documentation.",
-    link: "/pancard/pancardcorrection",
+    link: "/pan-card/pan-card-correction",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const features = [
     title: "Apply for New",
     description:
       "All PAN Card applications are processed through secure and authorized government channels.",
-    link: "/pancard/pancardApplyNew",
+    link: "/pan-card/pan-card-Apply-New",
   },
   // {
   //   id: 3,
@@ -37,7 +37,7 @@ const features = [
     title: "Address Update",
     description:
       "Experience smooth and fast PAN processing with real-time status tracking.",
-    link: "/pancard/pancardaddressupdate",
+    link: "/pan-card/pan-card-address-update",
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const features = [
     title: "Reprint Pan",
     description:
       "Easily apply for a PAN Card from rural and urban areas with simple Aadhaar-based verification.",
-    link: "/pancard/reprintpan",
+    link: "/pan-card/reprint-pan",
   },
 ];
 

@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export default function PancardAllotment() {
   const links = [
-    { label: "Read Guidelines", href: "/pancard/guidelines" },
-    { label: "Read Instructions", href: "/pancard/instructions" },
-    { label: "Documents Required", href: "/pancard/documents-required" },
+    { label: "Read Guidelines", href: "/pan-card/guidelines" },
+    { label: "Read Instructions", href: "/pan-card/instructions" },
+    { label: "Documents Required", href: "/pan-card/documents-required" },
   ];
 
   return (

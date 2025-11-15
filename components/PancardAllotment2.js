@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export default function PancardAllotment2() {
   const menuItems = [
-    { label: "Read Guidelines", link: "/pancard/guidelineforeign" },
-    { label: "Read Instructions", link: "/pancard/instructionforeign" },
-    { label: "Documents Required", link: "/pancard/documentsforeign" },
-    { label: "Do’s & Don’ts", link: "/pancard/do's" },
+    { label: "Read Guidelines", link: "/pan-card/guideline-foreign" },
+    { label: "Read Instructions", link: "/pan-card/instruction-foreign" },
+    { label: "Documents Required", link: "/pan-card/documents-foreign" },
+    { label: "Do’s & Don’ts", link: "/pan-card/do's" },
   ];
 
   return (

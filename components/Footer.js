@@ -1,4 +1,3 @@
-
 import { Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -142,144 +141,266 @@ const Footer = () => {
     //   </div>
     // </footer>
     <>
-      <footer
-        className="bg-[radial-gradient(circle_at_center,_#018EDE,_#0C3D4C_70%)] border-t border-gray-200"
-
-      >
+      <footer className="bg-[radial-gradient(circle_at_center,_#018EDE,_#0C3D4C_70%)] border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-6 pb-6 pt-12">
           <div className="grid md:grid-cols-3 gap-8 align-middle pb-4">
             <div className="md:col-span-1 bg-white rounded">
-              <Image src="/image/sevenunique-logo1.png" className=" p-1 mx-auto" alt="" width={100} height={100} />
+              <Image
+                src="/image/sevenunique-logo1.png"
+                className=" p-1 mx-auto"
+                alt=""
+                width={100}
+                height={100}
+              />
             </div>
             <div className="md:col-span-2">
               <p className=" text-white text-sm font-light">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry standard dummy text
+                ever since the 1500s, when an
               </p>
             </div>
-
           </div>
-          <div className=" grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-sm text-gray-700 
-                   my-3 rounded-lg">
+          <div
+            className=" grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-sm text-gray-700 
+                   my-3 rounded-lg"
+          >
             <div className="col-span-1">
               <div className="relative group space-y-8 transition duration-300 mb-3">
-             <div>
-                 <h3 className="text-base font-semibold text-white mb-1 flex items-center">
-                  Head office
-                </h3>
-                <div className="text-white gap-2 flex">
-                  <div>
-                    <FaMapMarkerAlt className=" mt-1" />
+                <div>
+                  <h3 className="text-base font-semibold text-white mb-1 flex items-center">
+                    Head office
+                  </h3>
+                  <div className="text-white gap-2 flex">
+                    <div>
+                      <FaMapMarkerAlt className=" mt-1" />
+                    </div>
+                    <p className="font-light">
+                      Plot No 97, Dakshinpuri - I, Shrikishan, Sanganer,
+                      Jagatpura, Jaipur, Rajasthan, India - 302017
+                    </p>
                   </div>
-                  <p className="font-light">Plot No 97, Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura,
-                    Jaipur, Rajasthan, India - 302017</p>
+                </div>
+                <div>
+                  <h3 className="text-base font-semibold text-white mb-1 flex items-center">
+                    Corporate Office
+                  </h3>
+                  <div className="text-white gap-2 flex">
+                    <div>
+                      <FaMapMarkerAlt className=" mt-1" />
+                    </div>
+                    <p className="font-light">
+                      Office No. 101/2, Vakratunda Corporate Park Premise
+                      Co-operative Society Limited, Off. Aarey Road, Goregaon
+                      (East), Mumbai - 400 063
+                    </p>
+                  </div>
                 </div>
               </div>
-             <div>
-                 <h3 className="text-base font-semibold text-white mb-1 flex items-center">
-                  Corporate Office
-                </h3>
-                <div className="text-white gap-2 flex">
-                  <div>
-                    <FaMapMarkerAlt className=" mt-1" />
+            </div>
+
+            <div className="md:col-span-2">
+              <div className="grid md:grid-cols-7">
+                {/* Insights */}
+                <div className="pl-6 col-span-3 md:col-span-2">
+                  <h3 className="font-semibold text-base text-white mb-1">
+                    Quick Links
+                  </h3>
+                  <ul className="space-y-1 text-sm ">
+                    <li>
+                      <Link
+                        href="/"
+                        className="hover:text-blue-400 text-white "
+                      >
+                        Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/about"
+                        className="hover:text-blue-400 text-white "
+                      >
+                        About Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/blog"
+                        className="hover:text-blue-400 text-white "
+                      >
+                        Blog
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/contact"
+                        className="hover:text-blue-400 text-white "
+                      >
+                        Contact Us
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Company */}
+                <div className="pl-6  col-span-3 md:col-span-2 ">
+                  <h3 className="font-semibold text-base mb-1 text-white">
+                    Tools
+                  </h3>
+                  <ul className="space-y-1 text-sm ">
+                    <li>
+                      <Link
+                        href="/income-calc"
+                        className="hover:text-blue-400 text-white "
+                      >
+                        Income Calculator
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/free-credit-score"
+                        className="hover:text-blue-400 text-white "
+                      >
+                        Free Credit Score
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/loan-emi"
+                        className="hover:text-blue-400 text-white "
+                      >
+                        Loan EMI Calculator
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Connect */}
+                <div className=" col-span-7 md:col-span-3 space-y-2 mt-5 md:mt-0">
+                  <div className="flex gap-4 bg-white/20 align-middle py-3 px-2 lg:px-5 rounded  items-center ">
+                    <h3 className="font-semibold text-white mb-3">
+                      Verified By
+                    </h3>
+                    <Image
+                      className="bg-white px-3 py-1 rounded-md"
+                      src="/home/pci-logo.png"
+                      width={70}
+                      height={100}
+                      alt="Verified 1"
+                    />
+                    <Image
+                      className="bg-white px-3 py-1 rounded-md"
+                      src="/home/iso-logo.png"
+                      width={70}
+                      height={100}
+                      alt="Verified 2"
+                    />
                   </div>
-                  <p className="font-light">Office No. 101/2, Vakratunda Corporate Park Premise
-                    Co-operative Society Limited, Off. Aarey Road, Goregaon (East), Mumbai - 400 063</p>
-             </div>
-                </div>
 
-              </div>
-          
-            </div>
-
-
-       <div className="md:col-span-2">
-   <div className="grid md:grid-cols-7">
-  {/* Insights */}
-            <div className="pl-6 col-span-3 md:col-span-2">
-              <h3 className="font-semibold text-base text-white mb-1">Quick Links</h3>
-              <ul className="space-y-1 text-sm ">
-                <li><Link href="/" className="hover:text-blue-400 text-white ">Home</Link></li>
-                <li><Link href="/about" className="hover:text-blue-400 text-white ">About Us</Link></li>
-                <li><Link href="/blog" className="hover:text-blue-400 text-white ">Blog</Link></li>
-                 <li><Link href="/contact" className="hover:text-blue-400 text-white ">Contact Us</Link></li>
-
-              </ul>
-            </div>
-
-            {/* Company */}
-            <div className="pl-6  col-span-3 md:col-span-2 ">
-              <h3 className="font-semibold text-base mb-1 text-white">Tools</h3>
-              <ul className="space-y-1 text-sm ">
-                <li><Link href="/income-calc" className="hover:text-blue-400 text-white ">Income Calculator</Link></li>
-                <li><Link href="/freecreditscore" className="hover:text-blue-400 text-white ">Free Credit Score</Link></li>
-                <li><Link href="/loanEMI" className="hover:text-blue-400 text-white ">Loan EMI Calculator</Link></li>
-
-              </ul>
-            </div>
-
-            {/* Connect */}
-            <div className=" col-span-7 md:col-span-3 space-y-2 mt-5 md:mt-0">
-              
-           
-                <div className="flex gap-4 bg-white/20 align-middle py-3 px-2 lg:px-5 rounded  items-center ">
-                  <h3 className="font-semibold text-white mb-3">Verified By</h3>
-                  <Image className="bg-white px-3 py-1 rounded-md" src="/home/pci-logo.png" width={70} height={100} alt="Verified 1" />
-                  <Image className="bg-white px-3 py-1 rounded-md" src="/home/iso-logo.png" width={70} height={100} alt="Verified 2" />
-                </div>
-          
-              <div className="flex flex-col gap-1 bg-white/20 align-middle py-3  px-2 lg:px-5 rounded ">
-                  <h3 className="font-semibold text-white mb-1">Contact us</h3>
-                 <p className="text-white inline-flex gap-1 items-center">
-                <FaPhoneAlt className="pt-1 text-sm" />
-                  0141-4511098
-                 </p>
+                  <div className="flex flex-col gap-1 bg-white/20 align-middle py-3  px-2 lg:px-5 rounded ">
+                    <h3 className="font-semibold text-white mb-1">
+                      Contact us
+                    </h3>
                     <p className="text-white inline-flex gap-1 items-center">
-               <MdOutlineMail className="text-sm" />
-                  support@7unique.in
-                 </p>
-                </div>
+                      <FaPhoneAlt className="pt-1 text-sm" />
+                      <a href="tel:01414511098" className="hover:underline">
+                        0141-4511098
+                      </a>
+                    </p>
+
+                    <p className="text-white inline-flex gap-1 items-center">
+                      <MdOutlineMail className="text-sm" />
+                      <a
+                        href="mailto:support@7unique.in"
+                        className="hover:underline"
+                      >
+                        support@7unique.in
+                      </a>
+                    </p>
+                  </div>
 
                   <div className="mt-4  px-2 lg:px-5">
-                <h3 className="font-semibold mb-2 text-white">Follow us</h3>
-                <div className="flex flex-row space-x-3 text-xl">
-                  <Link href="#" className="hover:text-blue-400 text-white"><FaFacebookF /></Link>
-                  <Link href="#" className="hover:text-red-500 text-white"><FaYoutube /></Link>
-                  <Link href="#" className="hover:text-pink-500 text-white"><FaInstagram /></Link>
-                  <Link href="#" className="hover:text-gray-400 text-white"><FaXTwitter /></Link>
-                  <Link href="#" className="hover:text-blue-500 text-white"><FaLinkedinIn /></Link>
-                  <Link href="#" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 text-white"><FaWhatsapp /></Link>
-                  <Link href="#" className="hover:text-red-500 text-white"><FaPinterest /></Link>
+                    <h3 className="font-semibold mb-2 text-white">Follow us</h3>
+                    <div className="flex flex-row space-x-3 text-xl">
+                      <Link href="https://www.facebook.com/people/Finunique-small-private-limited/61584013341134" className="hover:text-blue-400 text-white">
+                        <FaFacebookF />
+                      </Link>
+                      <Link href="#" className="hover:text-red-500 text-white">
+                        <FaYoutube />
+                      </Link>
+                      <Link href="https://www.instagram.com/finunques" className="hover:text-pink-500 text-white">
+                        <FaInstagram />
+                      </Link>
+                      <Link href="#" className="hover:text-gray-400 text-white">
+                        <FaXTwitter />
+                      </Link>
+                      <Link href="#" className="hover:text-blue-500 text-white">
+                        <FaLinkedinIn />
+                      </Link>
+                      <Link
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-green-500 text-white"
+                      >
+                        <FaWhatsapp />
+                      </Link>
+                      <Link href="#" className="hover:text-red-500 text-white">
+                        <FaPinterest />
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-       </div>
           </div>
         </div>
 
-
         {/* Bottom bar */}
-        <div className="border-t border-gray-200 py-4 text-center text-xs text-gray-500 
-                rounded-lg">
+        <div
+          className="border-t border-gray-200 py-4 text-center text-xs text-gray-500 
+                rounded-lg"
+        >
           <div className="flex flex-col md:flex-row justify-center md:justify-between items-center max-w-7xl mx-auto px-6 gap-2">
-           
-
             <p className="text-white text-sm">
-              &copy; {new Date().getFullYear()} Finunique Small Private Limited. All
-              rights reserved.
+              &copy; {new Date().getFullYear()} Finunique Small Private Limited.
+              All rights reserved.
             </p>
-             <div className="flex space-x-2">
-              <Link href="/privacy-policy" className="hover:underline text-[12px] text-white  pr-2 font-light border-r border-white">Privacy Policy</Link>
-              <Link href="/terms-of-use" className="hover:underline text-[12px] text-white  pr-2 font-light border-r border-white"  >Terms of Use</Link>
-              <Link href="/refund-policy" className="hover:underline text-[12px] text-white  pr-2 font-light border-r border-white">Cancellation & Refund Policy</Link>
-              <Link href="/charge-back-policy" className="hover:underline text-[12px] text-white  pr-2 font-light border-r border-white">Chargeback Policy</Link>
-              <Link href="/kyc-policy" className="hover:underline text-[12px] text-white  pr-2 font-light ">KYC Policy & Onboarding</Link>
+            <div className="flex space-x-2">
+              <Link
+                href="/privacy-policy"
+                className="hover:underline text-[12px] text-white  pr-2 font-light border-r border-white"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms-of-use"
+                className="hover:underline text-[12px] text-white  pr-2 font-light border-r border-white"
+              >
+                Terms of Use
+              </Link>
+              <Link
+                href="/refund-policy"
+                className="hover:underline text-[12px] text-white  pr-2 font-light border-r border-white"
+              >
+                Cancellation & Refund Policy
+              </Link>
+              <Link
+                href="/charge-back-policy"
+                className="hover:underline text-[12px] text-white  pr-2 font-light border-r border-white"
+              >
+                Charge back Policy
+              </Link>
+              <Link
+                href="/kyc-policy"
+                className="hover:underline text-[12px] text-white  pr-2 font-light "
+              >
+                KYC Policy & Onboarding
+              </Link>
             </div>
           </div>
         </div>
       </footer>
-
-
     </>
   );
 };

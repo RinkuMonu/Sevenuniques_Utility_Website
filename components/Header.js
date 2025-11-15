@@ -28,22 +28,22 @@ export default function Header() {
     { name: "Insurance", href: "/insurance" },
     { name: "Booking", href: "/booking" },
     { name: "Credit Card", href: "/credit-card" },
-    { name: "PAN Card", href: "/pancard" },
+    { name: "PAN Card", href: "/pan-card" },
   ];
 
   const loanDropdown = [
-    { name: "Business Loan", href: "/loan/business-loan" },
-    { name: "Home Loan", href: "/loan/home-loan" },
-    { name: "Personal Loan", href: "/loan/personal-loan" },
-    { name: "Construction Loan", href: "/loan/construction-equipment-loan" },
-    { name: "Car Loan", href: "/loan/car-loan" },
-    { name: "Instant Loan", href: "/loan" },
+    { name: "Business Loan", href: "/instant-loan/business-loan" },
+    { name: "Home Loan", href: "/instant-loan/home-loan" },
+    { name: "Personal Loan", href: "/instant-loan/personal-loan" },
+    { name: "Construction Loan", href: "/instant-loan/construction-equipment-loan" },
+    { name: "Car Loan", href: "/instant-loan/car-loan" },
+    { name: "Instant Loan", href: "/instant-loan" },
   ];
   const handleCloseMenu = () => {
-  setMobileOpen(false);
-  setServicesOpen(false);
-  setLoanOpen(false);
-};
+    setMobileOpen(false);
+    setServicesOpen(false);
+    setLoanOpen(false);
+  };
 
   return (
     <>
@@ -55,11 +55,19 @@ export default function Header() {
           </span>
           <span className="hidden md:inline text-gray-100 ">-</span>
           <span className="flex items-center">
-            <Mail className="mr-2 w-4 h-4" />support@7unique.in
+            <Mail className="mr-2 w-4 h-4" />
+            <a href="mailto:support@7unique.in" className="hover:underline">
+              support@7unique.in
+            </a>
           </span>
+
           <span className="hidden md:inline text-gray-400">|</span>
+
           <span className="flex items-center">
-            <Phone className="mr-2 w-4 h-4" /> 0141-4511098
+            <Phone className="mr-2 w-4 h-4" />
+            <a href="tel:01414511098" className="hover:underline">
+              0141-4511098
+            </a>
           </span>
         </div>
 
@@ -165,102 +173,99 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu */}
-    {mobileOpen && (
-  <div className="md:hidden bg-white border-t border-gray-100 shadow-xl max-h-[85vh] overflow-y-auto transition-all duration-300 ease-in-out animate-fadeIn">
-    <div className="px-5 py-3 space-y-1">
-      {navLinks.map((link, index) => (
-        <div key={index} className="rounded-lg">
-          {link.dropdown ? (
-            <>
-              <button
-                onClick={() =>
-                  link.name === "Services"
-                    ? setServicesOpen(!servicesOpen)
-                    : setLoanOpen(!loanOpen)
-                }
-                className="flex items-center justify-between w-full text-gray-800 font-semibold py-3 px-3 rounded-lg hover:bg-gray-50 transition-all"
-              >
-                <span className="tracking-wide">{link.name}</span>
-                <ChevronDown
-                  size={18}
-                  className={`transition-transform duration-300 ${
-                    (link.name === "Services" && servicesOpen) ||
-                    (link.name === "Loan" && loanOpen)
-                      ? "rotate-180 text-[#0C3D4C]"
-                      : "text-gray-500"
-                  }`}
-                />
-              </button>
+        {mobileOpen && (
+          <div className="md:hidden bg-white border-t border-gray-100 shadow-xl max-h-[85vh] overflow-y-auto transition-all duration-300 ease-in-out animate-fadeIn">
+            <div className="px-5 py-3 space-y-1">
+              {navLinks.map((link, index) => (
+                <div key={index} className="rounded-lg">
+                  {link.dropdown ? (
+                    <>
+                      <button
+                        onClick={() =>
+                          link.name === "Services"
+                            ? setServicesOpen(!servicesOpen)
+                            : setLoanOpen(!loanOpen)
+                        }
+                        className="flex items-center justify-between w-full text-gray-800 font-semibold py-3 px-3 rounded-lg hover:bg-gray-50 transition-all"
+                      >
+                        <span className="tracking-wide">{link.name}</span>
+                        <ChevronDown
+                          size={18}
+                          className={`transition-transform duration-300 ${
+                            (link.name === "Services" && servicesOpen) ||
+                            (link.name === "Loan" && loanOpen)
+                              ? "rotate-180 text-[#0C3D4C]"
+                              : "text-gray-500"
+                          }`}
+                        />
+                      </button>
 
-              {/* Services dropdown (mobile) */}
-              {link.name === "Services" && servicesOpen && (
-                <div className="pl-6 py-2 space-y-2 animate-slideDown">
-                  {servicesDropdown.map((item, i) => (
+                      {/* Services dropdown (mobile) */}
+                      {link.name === "Services" && servicesOpen && (
+                        <div className="pl-6 py-2 space-y-2 animate-slideDown">
+                          {servicesDropdown.map((item, i) => (
+                            <Link
+                              key={i}
+                              href={item.href}
+                              onClick={handleCloseMenu}
+                              className="flex items-center gap-2 text-gray-600 font-medium hover:text-[#0C3D4C] transition-all"
+                            >
+                              {item.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+
+                      {/* Loan dropdown (mobile) */}
+                      {link.name === "Loan" && loanOpen && (
+                        <div className="pl-6 py-2 space-y-2 animate-slideDown">
+                          {loanDropdown.map((item, i) => (
+                            <Link
+                              key={i}
+                              href={item.href}
+                              onClick={handleCloseMenu}
+                              className="flex items-center gap-2 text-gray-600 font-medium hover:text-[#0C3D4C] transition-all"
+                            >
+                              {item.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </>
+                  ) : (
                     <Link
-                      key={i}
-                      href={item.href}
-                       onClick={handleCloseMenu}
-                      className="flex items-center gap-2 text-gray-600 font-medium hover:text-[#0C3D4C] transition-all"
+                      href={link.href}
+                      onClick={handleCloseMenu}
+                      className={`block font-semibold py-3 px-3 rounded-lg transition-all ${
+                        pathname === link.href
+                          ? "text-[#0C3D4C] bg-[#EAF4F6]"
+                          : "text-gray-800 hover:bg-gray-50 hover:text-[#0C3D4C]"
+                      }`}
                     >
-                    
-                      {item.name}
+                      {link.name}
                     </Link>
-                  ))}
+                  )}
                 </div>
-              )}
+              ))}
 
-              {/* Loan dropdown (mobile) */}
-              {link.name === "Loan" && loanOpen && (
-                <div className="pl-6 py-2 space-y-2 animate-slideDown">
-                  {loanDropdown.map((item, i) => (
-                    <Link
-                      key={i}
-                      href={item.href}
-                       onClick={handleCloseMenu}
-                      className="flex items-center gap-2 text-gray-600 font-medium hover:text-[#0C3D4C] transition-all"
-                    >
-                    
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </>
-          ) : (
-            <Link
-              href={link.href}
-               onClick={handleCloseMenu}
-              className={`block font-semibold py-3 px-3 rounded-lg transition-all ${
-                pathname === link.href
-                  ? "text-[#0C3D4C] bg-[#EAF4F6]"
-                  : "text-gray-800 hover:bg-gray-50 hover:text-[#0C3D4C]"
-              }`}
-            >
-              {link.name}
-            </Link>
-          )}
-        </div>
-      ))}
-
-      {/* Mobile Buttons */}
-      <div className="pt-5 flex flex-col gap-3">
-        <Link
-          href="https://utility.finuniques.in/"
-          className="w-full text-center px-5 py-3 bg-[#0C3D4C] text-white rounded-full font-semibold hover:bg-[#145E6E] shadow-md transition"
-        >
-          Login
-        </Link>
-        <Link
-          href="https://utility.finuniques.in/register"
-          className="w-full text-center px-5 py-3 border border-[#0C3D4C] text-[#0C3D4C] rounded-full font-semibold hover:bg-[#0C3D4C] hover:text-white shadow-sm transition"
-        >
-          Register
-        </Link>
-      </div>
-    </div>
-  </div>
-)}
-
+              {/* Mobile Buttons */}
+              <div className="pt-5 flex flex-col gap-3">
+                <Link
+                  href="https://utility.finuniques.in/"
+                  className="w-full text-center px-5 py-3 bg-[#0C3D4C] text-white rounded-full font-semibold hover:bg-[#145E6E] shadow-md transition"
+                >
+                  Login
+                </Link>
+                <Link
+                  href="https://utility.finuniques.in/register"
+                  className="w-full text-center px-5 py-3 border border-[#0C3D4C] text-[#0C3D4C] rounded-full font-semibold hover:bg-[#0C3D4C] hover:text-white shadow-sm transition"
+                >
+                  Register
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
       </header>
     </>
   );

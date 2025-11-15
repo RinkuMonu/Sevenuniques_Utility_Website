@@ -6,7 +6,11 @@ import BenefitsSection2 from "../../../components/BenefitsSection2";
 import PartnersSection from "../../../components/PartnersSection";
 import TestimonialSlider from "../../../components/TestimonialSlider";
 import ContactBanner from "../../../components/ContactBanner";
-import { MdOutlineLocationOn, MdOutlineMail, MdOutlinePhone } from "react-icons/md";
+import {
+  MdOutlineLocationOn,
+  MdOutlineMail,
+  MdOutlinePhone,
+} from "react-icons/md";
 import { FaRegClock } from "react-icons/fa6";
 
 function Contact() {
@@ -90,7 +94,6 @@ function Contact() {
     }
   };
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
@@ -150,7 +153,6 @@ function Contact() {
                   className="hidden sm:absolute sm:block bottom-0 right-0 md:max-h-[100vh] lg:max-h-[100vh] object-contain z-20 "
                 />
               </div>
-
             </div>
           </div>
         </div>
@@ -204,7 +206,6 @@ function Contact() {
                 </label>
                 <input
                   type="text"
-
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
@@ -309,24 +310,49 @@ function Contact() {
 
             <ul className="space-y-5 text-[#39464F] text-sm md:text-base">
               <li className="flex items-start gap-3">
-                <span><MdOutlineMail className="text-[#24576C] text-lg mt-2" /></span>
+                <span>
+                  <MdOutlineMail className="text-[#24576C] text-lg mt-2" />
+                </span>
                 <div>
                   <p className="font-bold text-lg">Email</p>
-                  <p className="text-gray-500 text-sm">support@7unique.in</p>
-                  <p className="text-gray-500 text-sm"> info@7unique.in</p>
+                  <p className="text-gray-500 text-sm">
+                    <a
+                      href="mailto:support@7unique.in"
+                      className="hover:underline"
+                    >
+                      support@7unique.in
+                    </a>
+                  </p>
+
+                  <p className="text-gray-500 text-sm">
+                    <a
+                      href="mailto:info@7unique.in"
+                      className="hover:underline"
+                    >
+                      info@7unique.in
+                    </a>
+                  </p>
                 </div>
               </li>
 
               <li className="flex items-start gap-3">
-                <span><MdOutlinePhone className="text-[#24576C] text-lg mt-2 " /></span>
+                <span>
+                  <MdOutlinePhone className="text-[#24576C] text-lg mt-2 " />
+                </span>
                 <div>
                   <p className="font-bold text-lg">Call us</p>
-                  <p className="text-gray-500 text-sm"> 0141-4511098</p>
+                  <p className="text-gray-500 text-sm">
+                    <a href="tel:01414511098" className="hover:underline">
+                      0141-4511098
+                    </a>
+                  </p>
                 </div>
               </li>
 
               <li className="flex align-middle items-center gap-3">
-                <span><FaRegClock className="text-[#24576C]   mt-1" /></span>
+                <span>
+                  <FaRegClock className="text-[#24576C]   mt-1" />
+                </span>
                 <div>
                   <p className="font-bold text-lg">Office Hours: </p>
                   <p className="text-gray-500 text-sm">
@@ -337,15 +363,21 @@ function Contact() {
               </li>
 
               <li className="flex align-middle items-center gap-3">
-                <span><MdOutlineLocationOn className="text-[#24576C] text-xl " /></span>
+                <span>
+                  <MdOutlineLocationOn className="text-[#24576C] text-xl " />
+                </span>
                 <div>
                   <p className="font-bold text-lg">Visit us</p>
                   <p className="text-gray-500 text-sm">
-                    <span className="font-bold">Head Office:</span> Plot No 97, Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura, Jaipur, Rajasthan, India, 302017
+                    <span className="font-bold">Head Office:</span> Plot No 97,
+                    Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura, Jaipur,
+                    Rajasthan, India, 302017
                   </p>
                   <p className="text-gray-500 text-sm">
-                    <span className="font-bold">Corporate Office:</span>Office No. 101/2, Vakratunda Corporate Park Premises Co-operative Society Limited, Off Aarey Road, Goregaon (East), Mumbai – 400 063
-
+                    <span className="font-bold">Corporate Office:</span>Office
+                    No. 101/2, Vakratunda Corporate Park Premises Co-operative
+                    Society Limited, Off Aarey Road, Goregaon (East), Mumbai –
+                    400 063
                   </p>
                 </div>
               </li>
@@ -369,7 +401,8 @@ function Contact() {
           Map Section:
         </p>
         <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-8 md:mb-16">
-          Here where you can find us! We are easy to find and always ready to connect.
+          Here where you can find us! We are easy to find and always ready to
+          connect.
         </h3>
 
         <div className="overflow-hidden rounded-lg shadow-md mb-6">

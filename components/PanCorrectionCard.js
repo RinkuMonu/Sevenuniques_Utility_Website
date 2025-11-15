@@ -42,10 +42,10 @@ export default function PanCorrectionCard() {
 
   const links = [
 
-    { name: "Read Guidelines", icon: <BookOpen size={16} />, link: "/pancard/alteration-guidelines" },
-    { name: "Read Instructions", icon: <MdIntegrationInstructions size={16} />, link: "/pancard/alteration-instruction" },
-    { name: "Documents Required", icon: <FileCheck size={16} />, link: "/pancard/alteration-documents" },
-    { name: "Do’s & Don’ts", icon: <CheckSquare size={16} />, link: "/pancard/alteration-do-donts" },
+    { name: "Read Guidelines", icon: <BookOpen size={16} />, link: "/pan-card/alteration-guidelines" },
+    { name: "Read Instructions", icon: <MdIntegrationInstructions size={16} />, link: "/pan-card/alteration-instruction" },
+    { name: "Documents Required", icon: <FileCheck size={16} />, link: "/pan-card/alteration-documents" },
+    { name: "Do’s & Don’ts", icon: <CheckSquare size={16} />, link: "/pan-card/alteration-do-donts" },
  
   ];
 
