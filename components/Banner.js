@@ -423,7 +423,7 @@ const Banner = () => {
                         >
 
                             <div
-                                className="absolute inset-0 bg-cover bg-center hidden md:blockmd:h-[110vh]"
+                                className="absolute inset-0 bg-cover bg-center hidden md:block md:h-[110vh]"
                                 style={{ backgroundImage: `url(${slide.bgImage})` }}
                             ></div>
 
