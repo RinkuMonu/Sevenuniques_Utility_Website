@@ -26,6 +26,41 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta
+          name="p:domain_verify"
+          content="af39ba6ce6e91e27bb91d26563303735"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://finuniques.in/"
+        },
+        "headline": "Finunique Bill Payment, Recharge, Insurance, Booking, Credit Card, pancard, Loan",
+        "image": "https://finuniques.in/_next/image?url=%2Fimage%2Fmen-home.png&w=1200&q=75",
+        "author": {
+          "@type": "Organization",
+          "name": ""
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "",
+          "logo": {
+            "@type": "ImageObject",
+            "url": ""
+          }
+        },
+        "datePublished": ""
+      }
+      `,
+          }}
+        />
+
         <link rel="icon" href="/white/sevenunique-logo.ico" />
 
         {/* Google Tag Manager */}
