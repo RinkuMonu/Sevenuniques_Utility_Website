@@ -232,7 +232,7 @@ const ServiceGrid = () => {
                   className="relative h-40 cursor-pointer"
                   onHoverStart={() => setHoveredCard(`${catIdx}-${idx}`)}
                   onHoverEnd={() => setHoveredCard(null)}
-                  onClick={handleClick} // Redirect on click
+                  // onClick={handleClick} // Redirect on click
                 >
                   {/* Top-left triangle */}
                   <motion.div
