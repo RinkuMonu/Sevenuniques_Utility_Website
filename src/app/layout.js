@@ -73,6 +73,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5TKFRRHQ');`,
           }}
         />
+        <meta property="og:image" content="https://finuniques.in/white/sevenunique-logo.ico" />
         {/* End Google Tag Manager */}
       </head>
 
