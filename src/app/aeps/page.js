@@ -38,8 +38,8 @@ function page() {
     heading: 'Aadhaar Enabled Payment System',
     description: 'AePS will also allow you to open a bank account with your Aadhaar card and fingerprint. Pay without cards or PIN. Make transfers, balance checks, and cash withdrawals and deposits using authorized agents in a secure manner.',
     features: [
-      'The retailers are able to provide AePS services, such as cash withdrawal and balance checks, through Finuniques. Users have easy banking, and distributors have the ability to increase their network. We provide hassle-free and safe dealings to everyone.',
-      'Finuniques use AePS to take banking to underserved regions. Distributors and retailers offer crucial services and minimize the addressing of banks. We encourage online payments and financial development for all.',
+      'The retailers are able to provide AePS services, such as cash withdrawal and balance checks, through Finunique. Users have easy banking, and distributors have the ability to increase their network. We provide hassle-free and safe dealings to everyone.',
+      'Finunique use AePS to take banking to underserved regions. Distributors and retailers offer crucial services and minimize the addressing of banks. We encourage online payments and financial development for all.',
     ]
   };
 
@@ -52,20 +52,20 @@ function page() {
     retailer: {
       title: 'Aadhaar Enabled Payment System—Retailer Partnership Program',
       features: [
-        'Be our AePS retailer, and turn your retail store into a full-service bank. Being a licensed Finuniques agent, providing crucial banking services, and receiving a good commission on each deal.',
+        'Be our AePS retailer, and turn your retail store into a full-service bank. Being a licensed Finunique agent, providing crucial banking services, and receiving a good commission on each deal.',
         'Begin with a little investment—only a smartphone and a biometric device. Offer cash withdrawal, balance inquiry, fund transfer, and bill payment services so that your store is the preferred banking service in your neighborhood.',
         'We have a program that guarantees the greatest profitability and convenience. Gain commissions as well as more customer visits. Full training, technical support, and RBI-approved secure systems all come with our one hundred percent peace of mind.',
-        'Be a part of the successful retailers nationwide in India who have grown their business using AEPS. Real-time processing with daily settlements: you concentrate on growth, and we take care of the technical features. Start your own business by enrolling as a Finuniques AePS retailer.'
+        'Be a part of the successful retailers nationwide in India who have grown their business using AEPS. Real-time processing with daily settlements: you concentrate on growth, and we take care of the technical features. Start your own business by enrolling as a Finunique AePS retailer.'
       ],
       image: '/aeps/e1.png'
     },
     distributor: {
       title: 'Aadhaar Enabled Payment System—partnership with Distributors Program',
       features: [
-        'Expand a profitable banking network using the AePS program at Finuniques and gain access to numerous sources of revenue by onboarding retailers. Being an approved distributor, you will be able to build retailers in your region and get competitive commissions on all transactions made with your expanding network, becoming one of the pioneers of digital finance.',
+        'Expand a profitable banking network using the AePS program at Finunique and gain access to numerous sources of revenue by onboarding retailers. Being an approved distributor, you will be able to build retailers in your region and get competitive commissions on all transactions made with your expanding network, becoming one of the pioneers of digital finance.',
         'We also offer full business solutions of professional training, marketing resources, and technical support in order to make you successful. Our established business model assists you in establishing a stable stream of revenue and encourages financial inclusion within your area. All you need is some basic knowledge of business and a smartphone to initiate this entrepreneurial process.',
         'Increase your business presence in a great way by enabling local retailers with key AePS banking services. You will not only empower shop proprietors to serve their clients with improved services but also develop your own distribution business with our clear commission system and on-demand performance monitoring systems.',
-        'Enter the already established network of successful distributors of Finuniques in India and get to be a part of the digital banking revolution. You can start your journey to becoming financially independent and a business leader and become an authorized AePS distributor today to start creating your own legacy in the financial services industry.'
+        'Enter the already established network of successful distributors of Finunique in India and get to be a part of the digital banking revolution. You can start your journey to becoming financially independent and a business leader and become an authorized AePS distributor today to start creating your own legacy in the financial services industry.'
       ],
       image: '/aeps/e2.png'
     }

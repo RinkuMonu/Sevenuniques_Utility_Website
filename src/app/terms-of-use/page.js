@@ -323,25 +323,25 @@ const termsSections = [
 {
   id: "MISCELLANEOUS",
   title: "Miscellaneous",
-  icon: <Gavel className="w-5 h-5" />, 
+  icon: <Gavel className="w-5 h-5" />,
   content: [
     "11.1 Governing Law:\nThese Terms and Conditions shall be governed by and construed in accordance with the laws of India, as in force from time to time, and shall be subject exclusively to the jurisdiction of the competent courts at Delhi, India.",
 
-    "11.2 Dispute Resolution:\nThe Parties shall attempt in good faith to resolve any disputes, controversies, or claims arising out of or relating to these Terms and Conditions amicably. In the event that such disputes cannot be resolved, the same shall be referred to arbitration in accordance with the provisions of the Arbitration and Conciliation Act, 1996, and any amendments or re-enactments thereof. The arbitration shall be conducted by a sole arbitrator mutually appointed by the Parties. The venue of arbitration shall be New Delhi, and the arbitration proceedings shall be conducted in the English language. The arbitral award shall be final and binding on the Parties.\nFor clarity, the Retailer / Partner / Distributor is recognized solely as a business associate of Finunique Small Private Limited and not as a customer of Finuniques. Hence, no claims shall be entertained under the Consumer Protection Act, 2019. Any dispute between a Retailer and a Distributor under this Agreement shall be resolved by an authorized officer of Finunique Small Private Limited, whose decision shall be final and binding.",
+    "11.2 Dispute Resolution:\nThe Parties shall attempt in good faith to resolve any disputes, controversies, or claims arising out of or relating to these Terms and Conditions amicably. In the event that such disputes cannot be resolved, the same shall be referred to arbitration in accordance with the provisions of the Arbitration and Conciliation Act, 1996, and any amendments or re-enactments thereof. The arbitration shall be conducted by a sole arbitrator mutually appointed by the Parties. The venue of arbitration shall be New Delhi, and the arbitration proceedings shall be conducted in the English language. The arbitral award shall be final and binding on the Parties.\nFor clarity, the Retailer / Partner / Distributor is recognized solely as a business associate of Finunique Small Private Limited and not as a customer of Finunique. Hence, no claims shall be entertained under the Consumer Protection Act, 2019. Any dispute between a Retailer and a Distributor under this Agreement shall be resolved by an authorized officer of Finunique Small Private Limited, whose decision shall be final and binding.",
 
-    "11.3 Non-Exclusive Appointment:\nThe Retailer / Partner / Distributor acknowledges and agrees that all rights granted under this Agreement, including the limited license to use Finunique’s Intellectual Property, are non-exclusive in nature. Nothing contained herein shall restrict Finuniques from appointing other Retailers, Partners, or Distributors to provide similar services in any territory or area.",
+    "11.3 Non-Exclusive Appointment:\nThe Retailer / Partner / Distributor acknowledges and agrees that all rights granted under this Agreement, including the limited license to use Finunique’s Intellectual Property, are non-exclusive in nature. Nothing contained herein shall restrict Finunique from appointing other Retailers, Partners, or Distributors to provide similar services in any territory or area.",
 
-    "11.4 Force Majeure:\nIf Finunique Small Private Limited is prevented, hindered, or delayed in the performance of any of its obligations due to circumstances beyond its reasonable control, including but not limited to natural disasters, fire, flood, war, strikes, lockouts, governmental restrictions, regulatory actions, system breakdowns, cyberattacks, or other similar events (“Force Majeure Event”), the performance of Finunique’s obligations shall be suspended for the duration of such event. If the Force Majeure Event continues for more than thirty (30) days, Finuniques shall have the right to terminate this Agreement without liability or compensation.",
+    "11.4 Force Majeure:\nIf Finunique Small Private Limited is prevented, hindered, or delayed in the performance of any of its obligations due to circumstances beyond its reasonable control, including but not limited to natural disasters, fire, flood, war, strikes, lockouts, governmental restrictions, regulatory actions, system breakdowns, cyberattacks, or other similar events (“Force Majeure Event”), the performance of Finunique’s obligations shall be suspended for the duration of such event. If the Force Majeure Event continues for more than thirty (30) days, Finunique shall have the right to terminate this Agreement without liability or compensation.",
 
     "11.5 Injunctive Relief:\nFinunique shall be entitled to seek injunctive relief, including interim relief, against the Retailer / Partner / Distributor in the event of any actual or threatened breach of the terms of this Agreement to prevent irreparable harm to its business, reputation, goodwill, or Intellectual Property.",
 
-    "11.6 Relationship:\nThe relationship between the Retailer / Partner / Distributor and Finunique Small Private Limited is on a “Principal-to-Principal” basis. Nothing in this Agreement shall be construed as creating any partnership, joint venture, employer-employee, or principal-agent relationship. The Retailer / Partner / Distributor shall not represent itself as an agent of Finuniques in any manner, nor shall it have the authority to bind Finuniques to any obligations with third parties.",
+    "11.6 Relationship:\nThe relationship between the Retailer / Partner / Distributor and Finunique Small Private Limited is on a “Principal-to-Principal” basis. Nothing in this Agreement shall be construed as creating any partnership, joint venture, employer-employee, or principal-agent relationship. The Retailer / Partner / Distributor shall not represent itself as an agent of Finunique in any manner, nor shall it have the authority to bind Finunique to any obligations with third parties.",
 
     "11.7 Notice:\nAny notice, communication, or correspondence under this Agreement shall be made in writing and delivered by (i) hand delivery, (ii) registered courier with acknowledgment, or (iii) email with delivery confirmation. Such notices shall be delivered to the addresses specified in the Application Form or any updated address notified by either Party.",
 
-    "11.8 Assignment:\nThe Retailer / Partner / Distributor shall not assign, transfer, or delegate its rights or obligations under this Agreement without the prior written consent of Finuniques. Any unauthorized assignment shall be void. This Agreement shall be binding upon and insure to the benefit of the Parties, their legal heirs, successors, and permitted assigns.",
+    "11.8 Assignment:\nThe Retailer / Partner / Distributor shall not assign, transfer, or delegate its rights or obligations under this Agreement without the prior written consent of Finunique. Any unauthorized assignment shall be void. This Agreement shall be binding upon and insure to the benefit of the Parties, their legal heirs, successors, and permitted assigns.",
 
-    "11.9 Software:\nFor the purposes of this Agreement, “Software” shall mean any proprietary or licensed software provided by Finuniques or its technology partners, including any documentation, modules, or APIs related thereto. The Retailer / Partner / Distributor shall have only a limited, non-transferable, non-exclusive right to use the Software strictly for the purposes of this Agreement.",
+    "11.9 Software:\nFor the purposes of this Agreement, “Software” shall mean any proprietary or licensed software provided by Finunique or its technology partners, including any documentation, modules, or APIs related thereto. The Retailer / Partner / Distributor shall have only a limited, non-transferable, non-exclusive right to use the Software strictly for the purposes of this Agreement.",
 
     "11.10 Software Restrictions:\nThe Retailer / Partner / Distributor shall not, directly or indirectly:",
     "(a) Sublicense, assign, transfer, distribute, or otherwise provide the Software to any third party;",
@@ -352,7 +352,7 @@ const termsSections = [
 
     "11.12 Amendment:\nNo amendment, modification, or addition to this Agreement shall be valid unless made in writing and duly executed by authorized representatives of Finunique Small Private Limited.",
 
-    "11.13 Waiver:\nAny waiver by Finuniques of a breach of any provision shall not be deemed a waiver of any other or subsequent breach. The failure of Finuniques to enforce any provision shall not constitute a waiver of such provision.",
+    "11.13 Waiver:\nAny waiver by Finunique of a breach of any provision shall not be deemed a waiver of any other or subsequent breach. The failure of Finunique to enforce any provision shall not constitute a waiver of such provision.",
 
     "11.14 Third Parties:\nNothing in this Agreement shall be construed as conferring any rights, benefits, or remedies on any third party, other than the Parties hereto and their permitted successors or assigns.",
 
@@ -366,7 +366,7 @@ const termsSections = [
 {
   id: "CHANGE IN RETAILER / PARTNER / DISTRIBUTOR",
   title: "Change in Retailer / Partner / Distributor",
-  icon: <Repeat className="w-5 h-5" />, 
+  icon: <Repeat className="w-5 h-5" />,
   content: [
     "12.1 Individual Retailer/Partner/Distributor\nIf the Retailer, Partner, or Distributor appointed under this Agreement is an individual person, then in the unfortunate event of his/her death, permanent incapacity, or inability to operate the Retail Outlet, the successor, legal heir, or duly authorized assignee of such individual may continue to operate the Retail Outlet.\nHowever, such continuation shall only be permitted after obtaining prior written approval from Finunique Small Private Limited. Without such approval, the successor or assignee will not have any legal right to operate the Retail Outlet under this Agreement.",
 

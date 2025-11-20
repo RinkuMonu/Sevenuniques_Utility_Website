@@ -71,7 +71,7 @@ function page() {
         image: "/loan/loan4.png",
         cta: "Request Calculations",
         details: [
-          "Construction Equipment Loan by Visit Finuniques.",
+          "Construction Equipment Loan by Visit Finunique.",
           "Fill in personal information: Name, Mobile Number, Aadhaar, PAN",
           "Select the type of equipment and the amount of the loan",
           "Check the eligible loan amount on the fly.",

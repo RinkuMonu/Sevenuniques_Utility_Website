@@ -65,7 +65,7 @@ function page() {
       image: "/loan/loan4.png",
       cta: "Request Calculations",
       details: [
-        "Finuniques car loan sites.",
+        "Finunique car loan sites.",
         "Fill in some basic information: Name, mobile number, Aadhaar, and PAN.",
         "Enter car model and loan.",
         "Determine the amount of a check-eligible loan immediately.",

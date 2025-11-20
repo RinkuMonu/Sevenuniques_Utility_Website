@@ -4,11 +4,11 @@ import BenefitsSection2 from "./BenefitsSection2";
 const RechargeInfo = () => {
     const infoData = [
         {
-            title: "Safe and Fast Mobile Recharge with Finuniques Your Reliable Digital Ally.",
-description: "The best convenience of instantaneous mobile recharge is experienced in the highly secure and technologically advanced platform of Finuniques. Quickly and dependably recharge 24/7 with the most competitive plans and special deals from all major telecom operators such as Jio, Airtel, Vi, and BSNL. On our platform, transactions are flawless with instant activation and full transparency of transactions.",
+            title: "Safe and Fast Mobile Recharge with Finunique Your Reliable Digital Ally.",
+description: "The best convenience of instantaneous mobile recharge is experienced in the highly secure and technologically advanced platform of Finunique. Quickly and dependably recharge 24/7 with the most competitive plans and special deals from all major telecom operators such as Jio, Airtel, Vi, and BSNL. On our platform, transactions are flawless with instant activation and full transparency of transactions.",
         },
         {
-            title: "Why is Finuniques your choice for a recharge destination?",
+            title: "Why is Finunique your choice for a recharge destination?",
             description: "The most effective mobile recharge service with an unmatched 99.9% success rate is discovered at Discover India. We also offer various safe payment options such as UPI, credit/debit cards, popular digital wallets, and net banking services. We have an impressive security system that is bank-level encrypted and fraud protection systems, and this guarantees your financial security and complete privacy during all transactions.",
         }, 
         {

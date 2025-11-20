@@ -247,7 +247,7 @@ export default function Page() {
       title: "Submission & Support",
       content: (
         <p>
-          Finuniques – PAN Services Unit<br />
+          Finunique – PAN Services Unit<br />
           Plot No. 97, Dakshinpuri – I Shrikishan,<br />
           Sanganer, Jagatpura, Jaipur, Shri Kishanpura,<br />
           Rajasthan – 302017<br />
@@ -261,7 +261,7 @@ export default function Page() {
   return (
     <PanGuidelines
       title="Documents Required for PAN Reprint / Change / Correction"
-      sub=" Issued & Managed by: Finuniques — PAN Services Unit, Jaipur"
+      sub=" Issued & Managed by: Finunique — PAN Services Unit, Jaipur"
       sections={sections}
     />
   );
