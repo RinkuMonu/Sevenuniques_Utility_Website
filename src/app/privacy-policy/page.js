@@ -171,7 +171,7 @@ const privacySections = [
       ["In compliance with Indian law, we have appointed a Grievance Officer to address privacy-related concerns.",
         "Grievance Officer",
         "Finunique Small Private Limited",
-        "Email: support@7unique.in / info@7unique.in",
+        "Email: support@7unique.in / info@finuniques.in",
         "Phone: 0141-4511098",
         "All complaints will be acknowledged and resolved promptly.",]
   },
