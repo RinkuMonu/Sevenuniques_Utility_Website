@@ -17,22 +17,22 @@ import HomeTrustedSecureSection from "../../components/HomeSecure";
 
 export default function Home() {
   return (
-  <>
-  <Banner/>
-  <HomePartners/>
-  <HomeRechargeSection />
-  <HomeSecurity/>
-  <HomeTrustedSecureSection />
-  <HomeCreditScoreSection />
-  <HomeOnboarding/>
-  <UtilitiesHome/>
-<HomePaymentGatewaySection />
-  <APi />
-  <HomeMap/>
-  <TestimonialSlider/>
-  <ComplianceSection/>
+    <>
+      <Banner />
+      <HomePartners />
+      <HomeRechargeSection />
+      <HomeSecurity />
+      <HomeTrustedSecureSection />
+      <HomeCreditScoreSection />
+      <HomeOnboarding />
+      <UtilitiesHome />
+      <HomePaymentGatewaySection />
+      <APi />
+      <HomeMap />
+      <TestimonialSlider />
+      <ComplianceSection />
 
 
-  </>
+    </>
   );
 }

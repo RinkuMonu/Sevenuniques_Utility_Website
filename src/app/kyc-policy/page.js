@@ -11,7 +11,7 @@ const kycSections = [
     title: "Purpose",
     icon: <Shield />,
     content:
-      "The Chargeback Policy of Finunique Small Private Limited outlines the standards and procedures for handling chargebacks initiated by customers, distributors, retailers, or white-label partners. It aims to provide fair, transparent, and mutually respectful resolution of disputes related to unauthorized or disputed transactions. This policy applies to all digital and utility services provided through www.finuniques.in, including BBPS bill payments, AEPS/DMT transactions, mobile/DTH/data card recharges, loan applications, insurance, credit card bill payments, PAN applications, subscriptions, and any other digital financial or utility service offered on the platform.",
+      "The Chargeback Policy of Finunique Small Private Limited outlines the standards and procedures for handling chargebacks initiated by customers, distributors, retailers, or white-label partners. It aims to provide fair, transparent, and mutually respectful resolution of disputes related to unauthorized or disputed transactions. This policy applies to all digital and utility services provided through www.finunique.in, including BBPS bill payments, AEPS/DMT transactions, mobile/DTH/data card recharges, loan applications, insurance, credit card bill payments, PAN applications, subscriptions, and any other digital financial or utility service offered on the platform.",
   },
   {
     id: "scope",

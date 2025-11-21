@@ -41,7 +41,7 @@ export default function ReprintOfpancard() {
   const contentData = [
     {
       content:
-        "Request a reprint of your PAN Card quickly using online PAN services at Finuniques. You can take this option in case you do not require any changes in your PAN data.",
+        "Request a reprint of your PAN Card quickly using online PAN services at Finunique. You can take this option in case you do not require any changes in your PAN data.",
     },
     {
       content:

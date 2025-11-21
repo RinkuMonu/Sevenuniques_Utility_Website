@@ -20,7 +20,7 @@ function page() {
     const faqData = [
 
   {
-    question: "What services does Finuniques provide?",
+    question: "What services does Finunique provide?",
     answer: "We offer BBPS, AePS, bill payments, recharges, insurances, bookings, credit and pancard services, and various loan solutions, including business, home, personal, construction, and car loans."
   },
   {
@@ -28,7 +28,7 @@ function page() {
     answer: "You can register via our website or contact our support team directly for guidance on signing up for any service."
   },
   {
-    question: "Is Finuniques’s payment system secure?",
+    question: "Is Finunique payment system secure?",
     answer: "Yes, all transactions are encrypted and processed through secure channels to ensure safety and reliability."
   },
   {
@@ -64,7 +64,7 @@ function page() {
         heading: 'Finunique – Trusted & Reliable',
         description: 'Finunique Small Private Limited is dedicated to providing innovative and reliable solutions across India. With a focus on technology-driven growth, we aim to simplify operations and enhance business efficiency for our partners and clients.',
         features: [
-            'Founded by Mr. Dinesh Kumar and Mr. Amit Balotiya, Finuniques has established a strong network of over 120,000 retailers, 2,300 distributors, and 700+ field executives working across various districts. This widespread presence ensures seamless operations and consistent customer satisfaction.',
+            'Founded by Mr. Dinesh Kumar and Mr. Amit Balotiya, Finunique has established a strong network of over 120,000 retailers, 2,300 distributors, and 700+ field executives working across various districts. This widespread presence ensures seamless operations and consistent customer satisfaction.',
             'Our mission is to strengthen partnerships, expand reach, and deliver smart solutions that help our clients achieve growth and success. We continually strive to provide services that are efficient, reliable, and tailored to meet evolving business needs.',
         ]
     };

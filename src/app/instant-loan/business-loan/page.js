@@ -46,7 +46,7 @@ function page() {
   image: "/loan/bvs.png",
   heading: (
     <>
-      At Finuniques, <br />
+      At Finunique, <br />
       how to secure  <br />
       a <span className="text-blue-300">business</span> loan.
     </>
@@ -58,7 +58,7 @@ function page() {
       image: "/loan/loan4.png",
       cta: "Request Calculations",
       details: [
-        "The business loan platform of Visit Finuniques.",
+        "The business loan platform of Visit Finunique.",
         "You will need to fill in your basic details: name, mobile number, Aadhaar, and PAN.",
         "Select the type of loan (business loan, working capital, expansion loan, etc.).",
         "Ask to calculate a loan in order to verify your eligibility.",

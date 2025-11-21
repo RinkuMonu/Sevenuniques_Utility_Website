@@ -52,7 +52,7 @@ function page() {
   image: "/loan/hvs.png",
   heading: (
     <>
-      At Finuniques, <br />
+      At Finunique, <br />
       how to secure  <br />
       a <span className="text-blue-300">Home</span> loan.
     </>
@@ -64,7 +64,7 @@ function page() {
       image: "/loan/loan4.png",
       cta: "Request Calculations",
       details: [
-        "Home Loan platform of Visit Finuniques.",
+        "Home Loan platform of Visit Finunique.",
         "Add the basic information: name, mobile number, Aadhaar, and PAN.",
         "Select location and type of property.",
         "Check the eligible amount of the loan instantly.",

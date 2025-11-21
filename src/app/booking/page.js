@@ -26,12 +26,12 @@ function Page() {
                     { id: 4, url: "/booking/s1.png", alt: "A year-end travel promotion banner showing a hand holding a ticket through an airplane window." },
                 ],
                 booking: {
-                    title: "Book Smart,\nBook Finuniques",
+                    title: "Book Smart,\nBook Finunique",
                     features: [
-                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Finuniques par", boldWords: [], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Finunique par", boldWords: [], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c2.png", iconUrl: "/booking/i2.png", text: "Fast, Easy aur\nReliable Booking", boldWords: ["Reliable"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c3.png", iconUrl: "/booking/i3.png", text: "Har Booking Par Trust,\nHar Journey Par Comfort", boldWords: ["Trust,", "Comfort"], textColor: "text-white" },
-                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Finuniques Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Finunique Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c5.png", iconUrl: "/booking/i5.png", text: "24x7 \nCustomer support", boldWords: ["24x7"], textColor: "text-white" },
                     ],
                 },
@@ -95,12 +95,12 @@ function Page() {
                     { id: 4, url: "/booking/h4.png", alt: "A year-end travel promotion banner showing a hand holding a ticket through an airplane window." },
                 ],
                 booking: {
-                    title: "Book Smart,\nBook Finuniques",
+                    title: "Book Smart,\nBook Finunique",
                     features: [
-                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Finuniques par", boldWords: [], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Finunique par", boldWords: [], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c2.png", iconUrl: "/booking/i2.png", text: "Fast, Easy aur\nReliable Booking", boldWords: ["Reliable"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c3.png", iconUrl: "/booking/i3.png", text: "Har Booking Par Trust,\nHar Journey Par Comfort", boldWords: ["Trust,", "Comfort"], textColor: "text-white" },
-                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Finuniques Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Finunique Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c5.png", iconUrl: "/booking/i5.png", text: "24x7 \nCustomer support", boldWords: ["24x7"], textColor: "text-white" },
                     ],
                 },
@@ -165,12 +165,12 @@ function Page() {
                     { id: 4, url: "/booking/t4.png", alt: "A year-end travel promotion banner showing a hand holding a ticket through an airplane window." },
                 ],
                 booking: {
-                    title: "Book Smart,\nBook Finuniques",
+                    title: "Book Smart,\nBook Finunique",
                     features: [
-                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Finuniques par", boldWords: [], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Finunique par", boldWords: [], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c2.png", iconUrl: "/booking/i2.png", text: "Fast, Easy aur\nReliable Booking", boldWords: ["Reliable"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c3.png", iconUrl: "/booking/i3.png", text: "Har Booking Par Trust,\nHar Journey Par Comfort", boldWords: ["Trust,", "Comfort"], textColor: "text-white" },
-                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Finuniques Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Finunique Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c5.png", iconUrl: "/booking/i5.png", text: "24x7 \nCustomer support", boldWords: ["24x7"], textColor: "text-white" },
                     ],
                 },
@@ -235,12 +235,12 @@ function Page() {
                     { id: 4, url: "/booking/b4.png", alt: "A year-end travel promotion banner showing a hand holding a ticket through an airplane window." },
                 ],
                 booking: {
-                    title: "Book Smart,\nBook Finuniques",
+                    title: "Book Smart,\nBook Finunique",
                     features: [
-                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Finuniques par", boldWords: [], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Finunique par", boldWords: [], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c2.png", iconUrl: "/booking/i2.png", text: "Fast, Easy aur\nReliable Booking", boldWords: ["Reliable"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c3.png", iconUrl: "/booking/i3.png", text: "Har Booking Par Trust,\nHar Journey Par Comfort", boldWords: ["Trust,", "Comfort"], textColor: "text-white" },
-                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Finuniques Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
+                        { cardBgImageUrl: "/booking/c4.png", iconUrl: "/booking/i4.png", text: "Finunique Jahan Har \nBooking Ho Assured", boldWords: ["Assured"], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c5.png", iconUrl: "/booking/i5.png", text: "24x7 \nCustomer support", boldWords: ["24x7"], textColor: "text-white" },
                     ],
                 },

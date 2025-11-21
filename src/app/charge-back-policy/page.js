@@ -315,7 +315,7 @@ const chargeSections = [
     icon: <Shield />,
     content: (
       <>
-        This Chargeback Policy ensures fairness, transparency, and accountability in dispute handling across Finuniques’s services. Following these procedures helps maintain trust, operational integrity, and compliance.
+        This Chargeback Policy ensures fairness, transparency, and accountability in dispute handling across Finunique services. Following these procedures helps maintain trust, operational integrity, and compliance.
       </>
     ),
   },

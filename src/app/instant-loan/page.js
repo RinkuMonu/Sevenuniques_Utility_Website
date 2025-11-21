@@ -21,7 +21,7 @@ function page() {
     <>
      How to take <br />
       a loan with  <br />
-      <span className="text-blue-300">Finuniques</span>
+      <span className="text-blue-300">Finunique</span>
     </>
   ),
   sliderData: [
