@@ -1,5 +1,4 @@
 // seoConfig.js
-'use client'
 
 import axios from "axios";
 
