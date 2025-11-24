@@ -15,8 +15,9 @@ export default async function seoConfig(path) {
         },
       }
     );
-
+   console.log("SEO data", SEO);
     return SEO.data.data[0];
+
   } catch (error) {
     console.log("SEO error", error);
     return null;
