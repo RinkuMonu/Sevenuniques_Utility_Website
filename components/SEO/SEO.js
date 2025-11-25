@@ -84,7 +84,7 @@ import seoConfig from "@/app/seoConfig";
 const SEO = () => {
   const pathname = usePathname();
   const currentPath = pathname || "/";
-  const baseUrl = "https://www.finuniques.in";
+  const baseUrl = "https://finuniques.in";
   const [seoData, setSeoData] = useState(null);
 
   useEffect(() => {
