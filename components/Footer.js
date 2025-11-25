@@ -154,10 +154,7 @@ const Footer = () => {
               />
             </div>
             <div className="md:col-span-2">
-              <p className=" text-white text-sm font-light">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry standard dummy text
-                ever since the 1500s, when an
+              <p className=" text-white text-sm font-light">Finunique Small Private Limited is dedicated to providing innovative and reliable solutions across India. With a focus on technology-driven growth, we aim to simplify operations and enhance business efficiency for our partners and clients. Our mission is to strengthen partnerships, expand reach, and deliver smart solutions that help our clients achieve growth and success.
               </p>
             </div>
           </div>
