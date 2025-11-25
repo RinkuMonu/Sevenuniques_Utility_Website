@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import PreFooterSection from "../../components/Prefooter";
 import HomeQRBanner from "../../components/HomeQRSection";
+import SEO from "../../components/SEO/SEO"; // ⭐ Yaha import karo
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
           name="p:domain_verify"
           content="af39ba6ce6e91e27bb91d26563303735"
         />
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -43,17 +45,11 @@ export default function RootLayout({ children }) {
         },
         "headline": "Finunique Bill Payment, Recharge, Insurance, Booking, Credit Card, pancard, Loan",
         "image": "https://finuniques.in/_next/image?url=%2Fimage%2Fmen-home.png&w=1200&q=75",
-        "author": {
-          "@type": "Organization",
-          "name": ""
-        },
+        "author": { "@type": "Organization", "name": "" },
         "publisher": {
           "@type": "Organization",
           "name": "",
-          "logo": {
-            "@type": "ImageObject",
-            "url": ""
-          }
+          "logo": { "@type": "ImageObject", "url": "" }
         },
         "datePublished": ""
       }
@@ -74,12 +70,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }}
         />
         <meta property="og:image" content="https://finuniques.in/white/sevenunique-logo.ico" />
-        {/* End Google Tag Manager */}
       </head>
 
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        
+        {/* ⭐ SEO component yahi lagana hai */}
+        <SEO />
+
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -89,7 +86,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        {/* End Google Tag Manager (noscript) */}
 
         <Header />
         {children}

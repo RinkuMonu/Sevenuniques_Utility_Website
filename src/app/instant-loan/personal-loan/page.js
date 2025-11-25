@@ -51,7 +51,7 @@ function page() {
   image: "/loan/pvs.png",
   heading: (
     <>
-      At Finuniques, <br />
+      At Finunique, <br />
       how to secure  <br />
       a <span className="text-blue-300">Personal</span> loan.
     </>

@@ -70,7 +70,7 @@ export default function PanMoreinfo() {
                             <h2 className="text-lg font-semibold mb-3">
                                 Two PAN applications are primarily used, and it depends on whether you are seeking a new PAN application or renewing the existing one.
                             </h2>
-                            <p className="mb-2">At Finuniques, the online PAN service portal is what simplifies, makes the process fast, and makes it digital</p>
+                            <p className="mb-2">At Finunique, the online PAN service portal is what simplifies, makes the process fast, and makes it digital</p>
                             <ol className="list-decimal list-inside space-y-10">
                                 <li className="">
                                     <span className="font-bold mb-2">
@@ -104,7 +104,7 @@ export default function PanMoreinfo() {
                                             The new card is going to be issued with the same PAN with new information.
                                         </li>
                                         <li style={{ listStylePosition: "outside" }}>
-                                            Under the Indian <b> digital pancard service, </b> Indian citizens as well as the foreign citizens will be able to do these processes online by using the <b> pancard online quick service of Finuniques.</b>
+                                            Under the Indian <b> digital pancard service, </b> Indian citizens as well as the foreign citizens will be able to do these processes online by using the <b> pancard online quick service of Finunique.</b>
                                         </li>
                                     </ul>
                                 </li>
@@ -117,7 +117,7 @@ export default function PanMoreinfo() {
                             <h2 className="text-lg font-semibold mb-3">How to Apply for PAN</h2>
                             <p className="mb-4">
                                 There are two simple methods in which applicants can apply for PAN at
-                                <span className="text-[#E60012] font-semibold"> Finuniques</span>:
+                                <span className="text-[#E60012] font-semibold"> Finunique</span>:
                             </p>
 
                             <ol className="list-decimal list-inside space-y-6">
@@ -140,7 +140,7 @@ export default function PanMoreinfo() {
                                         You can download and print a copy of the PAN application form,
                                         complete it manually, attach the required supporting documents, and
                                         submit it to any authorized PAN center of{" "}
-                                        <span className="text-[#E60012] font-semibold">Finuniques</span>.
+                                        <span className="text-[#E60012] font-semibold">Finunique</span>.
                                     </p>
                                     <p className="text-gray-700 mt-2">
                                         Please make sure to carefully read all{" "}
@@ -171,7 +171,7 @@ export default function PanMoreinfo() {
                             <h2 className="text-lg font-semibold mb-3">Communications</h2>
                             <p className="mb-3 text-gray-700">
                                 Once submitted,{" "}
-                                <span className="text-[#E60012] font-semibold">Finuniques</span>{" "}
+                                <span className="text-[#E60012] font-semibold">Finunique</span>{" "}
                                 authenticates, scans, and securely forwards the PAN application
                                 information to the{" "}
                                 <span className="font-semibold">Income Tax Department (ITD)</span>.
@@ -179,14 +179,14 @@ export default function PanMoreinfo() {
 
                             <p className="mb-3 text-gray-700">
                                 In the case of <b>Form 49A (New PAN)</b>, the ITD generates a new PAN.
-                                <span className="text-[#E60012] font-semibold"> Finuniques</span> then
+                                <span className="text-[#E60012] font-semibold"> Finunique</span> then
                                 prints and dispatches your physical pancard, while the{" "}
                                 <b>e-pancard</b> is delivered directly to your registered email address.
                             </p>
 
                             <p className="mb-3 text-gray-700">
                                 In case of <b>change or correction</b> requests,{" "}
-                                <span className="text-[#E60012] font-semibold">Finuniques</span> sends
+                                <span className="text-[#E60012] font-semibold">Finunique</span> sends
                                 the requested updates to ITD. Once verification is completed, a{" "}
                                 <b>new pancard</b> reflecting the updated information is printed and
                                 sent to your communication address.
@@ -217,7 +217,7 @@ export default function PanMoreinfo() {
                             <h2 className="text-lg font-semibold mb-4">Processing Fee Structure</h2>
 
                             <p className="mb-3 text-gray-700">
-                                <span className="text-[#E60012] font-semibold">Finuniques</span> offers
+                                <span className="text-[#E60012] font-semibold">Finunique</span> offers
                                 affordable and transparent charges for all categories of PAN applications
                                 through its online pancard service.
                             </p>
@@ -230,7 +230,7 @@ export default function PanMoreinfo() {
                             <p className="mb-6 text-gray-700">
                                 All payments made through the{" "}
                                 <span className="text-[#E60012] font-semibold">
-                                    Finuniques PAN service portal
+                                    Finunique PAN service portal
                                 </span>{" "}
                                 are handled in a safe and secure manner, ensuring instant and reliable
                                 processing for a smooth experience.
@@ -367,7 +367,7 @@ export default function PanMoreinfo() {
                                 For <b>paperless e-PAN applications</b>, processing and digital delivery
                                 can be completed within <b>2–3 working days</b> using our{" "}
                                 <span className="text-[#E60012] font-semibold">
-                                    Finuniques pancard Online Quick Service
+                                    Finunique pancard Online Quick Service
                                 </span>
                                 .
                             </p>
@@ -375,7 +375,7 @@ export default function PanMoreinfo() {
                             <p className="mb-3 text-gray-700">
                                 Through the{" "}
                                 <span className="text-[#E60012] font-semibold">
-                                    Finuniques PAN Service Portal
+                                    Finunique PAN Service Portal
                                 </span>
                                 , applicants can monitor the status of their PAN application at any time
                                 using their <b>acknowledgment number</b>.

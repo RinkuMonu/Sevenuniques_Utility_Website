@@ -30,7 +30,7 @@ Indian citizens are to apply with the help of Form 49A, and foreign citizens wil
         </p>
 
         <p className="text-gray-700 leading-relaxed">
-          In the case of an individual and HUF applicant, where the office address is chosen as a communication address, the office address proof and residential address proof should be given to Finuniques.
+          In the case of an individual and HUF applicant, where the office address is chosen as a communication address, the office address proof and residential address proof should be given to Finunique.
         </p>
 
         <p className="text-gray-700 leading-relaxed">

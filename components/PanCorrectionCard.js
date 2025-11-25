@@ -74,7 +74,7 @@ export default function PanCorrectionCard() {
               or date of birth). <br />
               You will be issued with a new PAN card of the same number with
               updated details. <br />
-              In the case of the Finuniques PAN service portal, it is 100%
+              In the case of the Finunique PAN service portal, it is 100%
               online verification and a 100% online process. Our PAN card
               service online is fast and provides accuracy on data.
             </p>

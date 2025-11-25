@@ -58,7 +58,7 @@ export default function Reprintguideline() {
   <li>Call PAN/TDS Call Centre: <strong>0141 451 1098</strong></li>
   <li>E-mail: <a href="mailto:info@7unique.in" className="text-blue-600 hover:underline">info@7unique.in</a></li>
   <li>Postal Address: Plot No 97, Dakshinpuri - I Shrikishan, Sanganer, Jagatpura, Jaipur, Shri Kishanpura, Rajasthan 302017</li>
-  <li>Track Status / SMS Status: Send <strong>Finuniques 15-digit Acknowledgement No.</strong> to <strong>57575</strong> to obtain application status.</li>
+  <li>Track Status / SMS Status: Send <strong>Finunique 15-digit Acknowledgement No.</strong> to <strong>57575</strong> to obtain application status.</li>
 </ul>
 
         </>,

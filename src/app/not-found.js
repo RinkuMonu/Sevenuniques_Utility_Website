@@ -19,7 +19,7 @@ export default function NotFound() {
 
       {/* Subtitle */}
       <p className="text-gray-600 mb-6">
-        The page you're looking for doesn't exist or has been moved.
+        The page you are looking for does not exist or has been moved.
       </p>
 
       {/* Back to Home Button */}
