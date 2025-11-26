@@ -43,81 +43,81 @@ function page() {
     { label: "Employment", value: "Self Employed" },
   ]
   const slide = {
-  image: "/loan/bvs.png",
-  heading: (
-    <>
-      At Finunique, <br />
-      how to secure  <br />
-      a <span className="text-blue-300">business</span> loan.
-    </>
-  ),
-  sliderData: [
-    {
-      step: 1,
-      title: "Apply Online",
-      image: "/loan/loan4.png",
-      cta: "Request Calculations",
-      details: [
-        "The business loan platform of Visit Finunique.",
-        "You will need to fill in your basic details: name, mobile number, Aadhaar, and PAN.",
-        "Select the type of loan (business loan, working capital, expansion loan, etc.).",
-        "Ask to calculate a loan in order to verify your eligibility.",
-      ],
-    },
-    {
-      step: 2,
-      title: "Upload Documents",
-      image: "/loan/loan12.png",
-      cta: "Submit Docs",
-      details: [
-        "Add the required documents: pancard, Aadhaar Card, business financials, and income proof (bank statements or tax returns).",
-        "Your documents will be instantly checked by our system, which will then be processed much faster.",
-      ],
-    },
-    {
-      step: 3,
-      title: "Receive Your Loan",
-      image: "/loan/loan13.png",
-      cta: "Get Construction Equipment Loan Now",
-      details: [
-        "Upon the loan approval, the funds of the business loan will be transferred to your business account.",
-        "You can get money within a few hours and use it immediately for the business.",
-      ],
-    },
-  ],
-};
+    image: "/loan/bvs.png",
+    heading: (
+      <>
+        At Finunique, <br />
+        how to secure  <br />
+        a <span className="text-blue-300">business</span> loan.
+      </>
+    ),
+    sliderData: [
+      {
+        step: 1,
+        title: "Apply Online",
+        image: "/loan/loan4.png",
+        cta: "Request Calculations",
+        details: [
+          "The business loan platform of Visit Finunique.",
+          "You will need to fill in your basic details: name, mobile number, Aadhaar, and PAN.",
+          "Select the type of loan (business loan, working capital, expansion loan, etc.).",
+          "Ask to calculate a loan in order to verify your eligibility.",
+        ],
+      },
+      {
+        step: 2,
+        title: "Upload Documents",
+        image: "/loan/loan12.png",
+        cta: "Submit Docs",
+        details: [
+          "Add the required documents: pancard, Aadhaar Card, business financials, and income proof (bank statements or tax returns).",
+          "Your documents will be instantly checked by our system, which will then be processed much faster.",
+        ],
+      },
+      {
+        step: 3,
+        title: "Receive Your Loan",
+        image: "/loan/loan13.png",
+        cta: "Get Construction Equipment Loan Now",
+        details: [
+          "Upon the loan approval, the funds of the business loan will be transferred to your business account.",
+          "You can get money within a few hours and use it immediately for the business.",
+        ],
+      },
+    ],
+  };
 
 
   const datasteps = {
-  heading: (
-    <>
-      Paise Ka Solution, Turant <br className="hidden sm:block" /> Finunique Se
-    </>
-  ),
-  desc: " Finunique provides instant loans for all your requirements. It is easy and easygoing to borrow money through our fast, safe, and paperless system. Between application and approval, have experience banking your way",
-  loanFeatures: [
-    {
-      number: 1,
-      text: "Get immediate approval and fast disbursement with minimum paperwork.",
-    },
-    {
-      number: 2,
-      text: "Hassle-Free and Paperless Process.",
-    },
-    {
-      number: 3,
-      text: "Apply online with no paperwork.",
-    },
-    {
-      number: 4,
-      text: "Safe and Trusted Platform",
-    },
-    {
-      number: 5,
-      text: "Your information and finances are secured at a bank level.",
-    },
-  ],
-};
+    heading: (
+      <>
+        Paise Ka Solution, Turant <br className="hidden sm:block" /> Finunique Se
+      </>
+    ),
+    desc: " Finunique provides instant loans for all your requirements. It is easy and easygoing to borrow money through our fast, safe, and paperless system. Between application and approval, have experience banking your way",
+    loanFeatures: [
+      {
+        number: 1,
+        text: "Get immediate approval and fast disbursement with minimum paperwork.",
+      },
+      {
+        number: 2,
+        text: "Hassle-Free and Paperless Process.",
+      },
+      {
+        number: 3,
+        text: "Apply online with no paperwork.",
+      },
+      {
+        number: 4,
+        text: "Safe and Trusted Platform",
+      },
+      {
+        number: 5,
+        text: "Your information and finances are secured at a bank level.",
+      },
+    ],
+  };
 
 
   return (
@@ -127,26 +127,26 @@ function page() {
       <section>
         <div className={`relative lg:pt-20`} style={{ backgroundColor: "#FFE9D3" }}>
           <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
-            <div className="grid grid-cols-1 md:grid-cols-2 ">
+            <div className="grid grid-cols-1 md:grid-cols-2  ">
 
-                <div className="flex space-x-4 md:space-x-6 md:mb-16">
-                  {letters.map((char) => (
-                    <LetterCircle key={char} letter={char} />
-                  ))}
-                </div>
-           
+              <div className="flex space-x-4 md:space-x-6 md:mb-16">
+                {letters.map((char) => (
+                  <LetterCircle key={char} letter={char} />
+                ))}
+              </div>
+
 
               <div className="hidden md:block md:absolute bottom-0 right-0 mt-10 md:mt-0 ">
-           
-                  <Image
-                    src="/loan/loanb1.png"
-                    alt="loan-section"
-                    width={500}
-                    height={600}
-                    className=""
-                  // style={{ objectPosition: 'right' }}
-                  />
-               
+
+                <Image
+                  src="/loan/loanb1.png"
+                  alt="loan-section"
+                  width={500}
+                  height={600}
+                  className=""
+                // style={{ objectPosition: 'right' }}
+                />
+
               </div>
             </div>
           </div>
@@ -155,9 +155,9 @@ function page() {
 
 
 
-      <VerticalSlider slide={slide}/>
+      <VerticalSlider slide={slide} />
 
- <LoanStep data={datasteps}/>
+      <LoanStep data={datasteps} />
       <StatsBanner />
       <EMICal2 />
       <div className="bg-[#EFF9FF] mb-30">
@@ -165,7 +165,7 @@ function page() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
               <h3 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] max-w-lg">
-               Eligibility Check, Loan Approve Quick
+                Eligibility Check, Loan Approve Quick
               </h3>
               <div className="grid grid-cols-2 gap-4 pt-4">
                 {infoData.map((item, index) => (
