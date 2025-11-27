@@ -127,7 +127,7 @@ function page() {
       <section>
         <div className={`relative lg:pt-20`} style={{ backgroundColor: "#FFE9D3" }}>
           <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
-            <div className="grid grid-cols-1 md:grid-cols-2  ">
+            <div className="grid grid-cols-1 md:grid-cols-2">
 
               <div className="flex space-x-4 md:space-x-6 md:mb-16">
                 {letters.map((char) => (
