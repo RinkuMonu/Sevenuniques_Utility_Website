@@ -12,6 +12,8 @@ import {
   MdOutlinePhone,
 } from "react-icons/md";
 import { FaRegClock } from "react-icons/fa6";
+import axios from "axios";
+import Swal from "sweetalert2";
 
 function Contact() {
   const data = {
@@ -94,22 +96,76 @@ function Contact() {
     }
   };
 
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (validate()) {
+  //     alert("Form submitted successfully!");
+  //     console.log(formData);
+  //     setFormData({
+  //       name: "",
+  //       email: "",
+  //       phone: "",
+  //       message: "",
+  //       terms: false,
+  //     });
+  //     setErrors({});
+  //   }
+  // };
+ const handleSubmit = async (e) => {
     e.preventDefault();
-    if (validate()) {
-      alert("Form submitted successfully!");
-      console.log(formData);
+    // setLoading(true);
+  
+    const postData = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+      service: "N/A",
+      website_id: 6,
+    };
+  
+    try {
+      const response = await axios.post(
+        "https://cms.sevenunique.com/apis/contact-query/set-contact-details.php",
+        postData,
+        {
+          headers: {
+            Authorization: "Bearer jibhfiugh84t3324fefei#*fef",
+            "Content-Type": "application/json",
+          },
+        }
+      );
+  
+      console.log("Response:", response.data);
+     if (response.data.status !== "success") {
+        throw new Error("Failed to send message");
+      }
+      Swal.fire({
+        icon: "success",
+        title: "Success!",
+        text: "Your message has been sent successfully.",
+        confirmButtonColor: "#ffb300",
+      });
+  
       setFormData({
         name: "",
-        email: "",
         phone: "",
+        email: "",
         message: "",
-        terms: false,
       });
-      setErrors({});
+    } catch (error) {
+      console.error("Error sending message:", error);
+  
+      Swal.fire({
+        icon: "error",
+        title: "Oops!",
+        text: "Failed to send message. Please try again later.",
+        confirmButtonColor: "#ffb300",
+      });
+    } finally {
+      // setLoading(false);
     }
   };
-
   return (
     <>
       {/* ----------- Hero Section ----------- */}
