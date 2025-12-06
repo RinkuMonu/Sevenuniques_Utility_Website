@@ -29,7 +29,7 @@ jobs:
             --exclude=.next/cache \
             .
 
-      # 4️⃣ Clean old directory
+      # 4️⃣ Clean old directory on server
       - name: 🧹 Clean old deployment folder
         uses: appleboy/ssh-action@v0.1.7
         with:
@@ -41,7 +41,7 @@ jobs:
             rm -rf /home/finuniqu/public_html/Sevenuniques_Utility_Website/*
             mkdir -p /home/finuniqu/public_html/Sevenuniques_Utility_Website
 
-      # 5️⃣ Upload tar.gz
+      # 5️⃣ Upload tar.gz file only
       - name: 📤 Upload project.tar.gz
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -78,7 +78,7 @@ jobs:
             npm install --legacy-peer-deps
             npm run build
 
-      # 8️⃣ PM2 Restart
+      # 8️⃣ Restart PM2
       - name: 🔄 Restart PM2
         uses: appleboy/ssh-action@v0.1.7
         with:
@@ -88,7 +88,6 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd /home/finuniqu/public_html/Sevenuniques_Utility_Website
-
             pm2 delete finunique || true
             pm2 start ecosystem.config.js --name finunique
             pm2 save
