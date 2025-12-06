@@ -1,4 +1,3 @@
-           
 name: Deploy Next.js SSR App via PM2 (Optimized)
 
 on:
@@ -11,17 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Get latest code
+      # 1️⃣ Checkout code
       - name: 📥 Checkout Code
         uses: actions/checkout@v3
 
-      # 2️⃣ Setup Node environment
+      # 2️⃣ Setup Node.js
       - name: 🛠 Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      # 3️⃣ Create tar.gz (Safe, no file changed errors)
+      # 3️⃣ Create project.tar.gz
       - name: 📦 Create deployment tarball
         run: |
           tar --warning=no-file-changed --ignore-failed-read -czf project.tar.gz \
@@ -30,9 +29,9 @@ jobs:
             --exclude=.next/cache \
             .
 
-      # 4️⃣ Clean old project folder on server
+      # 4️⃣ Clean old directory
       - name: 🧹 Clean old deployment folder
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
@@ -42,9 +41,9 @@ jobs:
             rm -rf /home/finuniqu/public_html/Sevenuniques_Utility_Website/*
             mkdir -p /home/finuniqu/public_html/Sevenuniques_Utility_Website
 
-      # 5️⃣ Upload ONLY the tar.gz (no folder upload → no tar corruption)
-      - name: 📤 Upload project.tar.gz (SAFE UPLOAD)
-        uses: appleboy/scp-action@master
+      # 5️⃣ Upload tar.gz
+      - name: 📤 Upload project.tar.gz
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
@@ -54,8 +53,8 @@ jobs:
           target: "/home/finuniqu/public_html/Sevenuniques_Utility_Website"
 
       # 6️⃣ Extract tar.gz on server
-      - name: 📂 Extract project on server
-        uses: appleboy/ssh-action@master
+      - name: 📂 Extract on Server
+        uses: appleboy/ssh-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
@@ -66,9 +65,9 @@ jobs:
             tar -xzf project.tar.gz
             rm -f project.tar.gz
 
-      # 7️⃣ Install dependencies + Build Next.js project
-      - name: 🔨 Install & Build Project
-        uses: appleboy/ssh-action@master
+      # 7️⃣ Install dependencies + Build
+      - name: 🔨 Install & Build
+        uses: appleboy/ssh-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
@@ -79,9 +78,9 @@ jobs:
             npm install --legacy-peer-deps
             npm run build
 
-      # 8️⃣ PM2 Zero-Downtime Restart
+      # 8️⃣ PM2 Restart
       - name: 🔄 Restart PM2
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
