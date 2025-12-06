@@ -319,30 +319,30 @@ const Footer = () => {
                   <div className="mt-4  px-2 lg:px-5">
                     <h3 className="font-semibold mb-2 text-white">Follow us</h3>
                     <div className="flex flex-row space-x-3 text-xl">
-                      <Link href="https://www.facebook.com/people/Finunique-small-private-limited/61584013341134" className="hover:text-blue-400 text-white">
+                      <Link href="https://www.facebook.com/people/Finunique-small-private-limited/61584013341134" className="hover:text-blue-400 text-white" target="_blank">
                         <FaFacebookF />
                       </Link>
-                      <Link href="#" className="hover:text-red-500 text-white">
+                      <Link href="https://www.youtube.com/@finuniques" className="hover:text-red-500 text-white" target="_blank">
                         <FaYoutube />
                       </Link>
-                      <Link href="https://www.instagram.com/finunques" className="hover:text-pink-500 text-white">
+                      <Link href="https://www.instagram.com/finunques" className="hover:text-pink-500 text-white" target="_blank">
                         <FaInstagram />
                       </Link>
-                      <Link href="#" className="hover:text-gray-400 text-white">
+                      <Link href="https://x.com/Finuniques" className="hover:text-gray-400 text-white" target="_blank">
                         <FaXTwitter />
                       </Link>
-                      <Link href="#" className="hover:text-blue-500 text-white">
+                      <Link href="https://linkedin.com/company/finunique-small-private-limited" className="hover:text-blue-500 text-white" target="_blank">
                         <FaLinkedinIn />
                       </Link>
-                      <Link
-                        href="#"
+                      {/* <Link
+                        href="tel:"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-green-500 text-white"
                       >
                         <FaWhatsapp />
-                      </Link>
-                      <Link href="#" className="hover:text-red-500 text-white">
+                      </Link> */}
+                      <Link href="https://www.youtube.com/@finuniqueswww.youtube.com/@finuniques" className="hover:text-red-500 text-white">
                         <FaPinterest />
                       </Link>
                     </div>
