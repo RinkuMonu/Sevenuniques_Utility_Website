@@ -1,4 +1,4 @@
-name: Deploy Next.js SSR App via PM2 (Optimized)
+name: Deploy Next.js SSR App via PM2 (Safe Version)
 
 on:
   push:
@@ -10,18 +10,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout code
+      # 1️⃣ Checkout repo
       - name: 📥 Checkout Code
         uses: actions/checkout@v3
 
       # 2️⃣ Setup Node.js
-      - name: 🛠 Setup Node.js
+      - name: 🛠️ Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
-      # 3️⃣ Create project.tar.gz
-      - name: 📦 Create deployment tarball
+      # 3️⃣ Create tar.gz instead of uploading full folder
+      - name: 📦 Create project.tar.gz
         run: |
           tar --warning=no-file-changed --ignore-failed-read -czf project.tar.gz \
             --exclude=node_modules \
@@ -29,20 +29,8 @@ jobs:
             --exclude=.next/cache \
             .
 
-      # 4️⃣ Clean old directory on server
-      - name: 🧹 Clean old deployment folder
-        uses: appleboy/ssh-action@v0.1.7
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
-          port: ${{ secrets.SSH_PORT }}
-          script: |
-            rm -rf /home/finuniqu/public_html/Sevenuniques_Utility_Website/*
-            mkdir -p /home/finuniqu/public_html/Sevenuniques_Utility_Website
-
-      # 5️⃣ Upload tar.gz file only
-      - name: 📤 Upload project.tar.gz
+      # 4️⃣ Upload project.tar.gz to server
+      - name: 📤 Upload tar.gz
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
@@ -52,8 +40,8 @@ jobs:
           source: "project.tar.gz"
           target: "/home/finuniqu/public_html/Sevenuniques_Utility_Website"
 
-      # 6️⃣ Extract tar.gz on server
-      - name: 📂 Extract on Server
+      # 5️⃣ Extract → Install → Build → PM2 restart (all same like your old one)
+      - name: 🔄 Build & Restart App via PM2
         uses: appleboy/ssh-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
@@ -62,32 +50,19 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd /home/finuniqu/public_html/Sevenuniques_Utility_Website
+
+            # Clean old app
+            rm -rf *
+
+            # Extract uploaded project
             tar -xzf project.tar.gz
             rm -f project.tar.gz
 
-      # 7️⃣ Install dependencies + Build
-      - name: 🔨 Install & Build
-        uses: appleboy/ssh-action@v0.1.7
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
-          port: ${{ secrets.SSH_PORT }}
-          script: |
-            cd /home/finuniqu/public_html/Sevenuniques_Utility_Website
+            # Install + Build
             npm install --legacy-peer-deps
             npm run build
 
-      # 8️⃣ Restart PM2
-      - name: 🔄 Restart PM2
-        uses: appleboy/ssh-action@v0.1.7
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
-          port: ${{ secrets.SSH_PORT }}
-          script: |
-            cd /home/finuniqu/public_html/Sevenuniques_Utility_Website
-            pm2 delete finunique || true
-            pm2 start ecosystem.config.js --name finunique
+            # PM2 Restart (same as your old workflow)
+            pm2 delete finuniques.in || true
+            pm2 start ecosystem.config.js --name finuniques.in
             pm2 save
