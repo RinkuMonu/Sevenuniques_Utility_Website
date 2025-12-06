@@ -19,7 +19,7 @@ export default function Header() {
     { name: "Services", href: "/services", dropdown: true },
     { name: "AePS", href: "/aeps" },
     { name: "Bill Payments", href: "/bbps" },
-    { name: "Loan", href: "/loan", dropdown: true },
+    { name: "Instant Loan", href: "/instant-loan", dropdown: true },
     { name: "Contact us", href: "/contact" },
   ];
 
@@ -37,7 +37,7 @@ export default function Header() {
     { name: "Personal Loan", href: "/instant-loan/personal-loan" },
     { name: "Construction Loan", href: "/instant-loan/construction-equipment-loan" },
     { name: "Car Loan", href: "/instant-loan/car-loan" },
-    { name: "Instant Loan", href: "/instant-loan" },
+    // { name: "Instant Loan", href: "/instant-loan" },
   ];
   const handleCloseMenu = () => {
     setMobileOpen(false);
@@ -146,7 +146,7 @@ export default function Header() {
                         </Link>
                       ))}
 
-                    {link.name.toLowerCase() === "loan" &&
+                    {link.name.toLowerCase() === "instant loan" &&
                       loanDropdown.map((item, i) => (
                         <Link
                           key={i}
@@ -193,7 +193,7 @@ export default function Header() {
                           size={18}
                           className={`transition-transform duration-300 ${
                             (link.name === "Services" && servicesOpen) ||
-                            (link.name === "Loan" && loanOpen)
+                            (link.name === "Instant Loan" && loanOpen)
                               ? "rotate-180 text-[#0C3D4C]"
                               : "text-gray-500"
                           }`}
@@ -217,7 +217,7 @@ export default function Header() {
                       )}
 
                       {/* Loan dropdown (mobile) */}
-                      {link.name === "Loan" && loanOpen && (
+                      {link.name === "Instant Loan" && loanOpen && (
                         <div className="pl-6 py-2 space-y-2 animate-slideDown">
                           {loanDropdown.map((item, i) => (
                             <Link
