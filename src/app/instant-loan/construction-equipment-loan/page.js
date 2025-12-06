@@ -155,15 +155,13 @@ function page() {
       </div>
       <section>
         <div className={`relative py-10`} style={{ backgroundColor: "#F2E6FF" }}>
-          <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
-            <div className="grid grid-cols-1 md:grid-cols-2 ">
-                <div className="flex space-x-4 md:space-x-6">
-                  {letters.map((char) => (
-                    <LetterCircle key={char} letter={char} />
-                  ))}
-                </div>
-       
-
+          <div className="max-w-7xl mx-auto px-4 lg:px-0">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="flex space-x-4 md:space-x-6">
+                {letters.map((char) => (
+                  <LetterCircle key={char} letter={char} />
+                ))}
+              </div>
 
               <div className="hidden md:block md:absolute bottom-0 right-0  z-11">
                 <Image
@@ -171,7 +169,6 @@ function page() {
                   alt="loan-section"
                   width={400}
                   height={100}
-
                 />
               </div>
 
@@ -209,7 +206,6 @@ function page() {
         <BenefitsSection />
       </div>
 
-
       <div className="bg-[#EFF9FF] mb-10 relative">
         <div className=" px-4 lg:px-0 max-w-7xl mx-auto py-10 ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -220,7 +216,7 @@ function page() {
               <div className="grid grid-cols-2 gap-4 pt-4">
                 {infoData.map((item, index) => (
                   <div key={index} className="rounded-lg border border-[#0063A2] px-4 py-6 w-full text-center hover:shadow-lg transition-shadow duration-300">
-                    <p className=" font-semibold text-[#0C3D4C] py-3">{item.label}</p>
+                    <p className="font-semibold text-[#0C3D4C] py-3">{item.label}</p>
                     <p className="font-bold text-lg text-[#0C3D4C]">{item.value}</p>
                   </div>
                 ))}
@@ -233,7 +229,7 @@ function page() {
                 width={400}
                 height={400}
                 alt="Eligibility section illustration"
-                className=" absolute bottom-0 right-0 "
+                className="absolute bottom-0 right-0"
               />
             </div>
           </div>

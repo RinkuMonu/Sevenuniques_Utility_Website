@@ -16,12 +16,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title:
-    "Finunique Bill Payment, Recharge, Insurance, Booking, Credit Card, pancard, Loan",
-  description:
-    "Finunique Bill Payment, Recharge, Insurance, Booking, Credit Card, pancard, Loan",
-};
+// export const metadata = {
+//   title:
+//     "Finunique Bill Payment, Recharge, Insurance, Booking, Credit Card, pancard, Loan",
+//   description:
+//     "Finunique Bill Payment, Recharge, Insurance, Booking, Credit Card, pancard, Loan",
+// };
 
 export default function RootLayout({ children }) {
   return (

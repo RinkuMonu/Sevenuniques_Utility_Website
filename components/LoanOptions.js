@@ -6,22 +6,22 @@ const loanOptions = [
   {
     title: 'Home Loan',
      imageUrl: '/loan/loanb4.jpg',
-     link:"/loan/home-loan"
+     link:"/instant-loan/home-loan"
   },
   {
     title: 'Personal Loan',
      imageUrl: '/loan/1.jpg',
-     link:"/loan/personal-loan"
+     link:"/instant-loan/personal-loan"
   },
   {
     title: 'Construction Loan',
      imageUrl: '/loan/2.jpg',
-     link:"/loan/construction-equipment-loan"
+     link:"/instant-loan/construction-equipment-loan"
   },
   {
     title: 'Car Loan',
     imageUrl: '/loan/3.jpg',
-    link:"/loan/car-loan"
+    link:"/instant-loan/car-loan"
   },
 ];
 
