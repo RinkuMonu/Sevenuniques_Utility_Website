@@ -51,7 +51,7 @@ const StatsBanner = () => {
 
                         />
                     </Link>
-                    <Link href="/coming-soon" aria-label="Get it on Google Play">
+                    <Link href="https://play.google.com/store/apps/details?id=com.utility.finunique" target="blank" aria-label="Get it on Google Play">
                         <Image
                             src="/loan/image8.png"
                             alt="logo-bbps"
@@ -68,5 +68,3 @@ const StatsBanner = () => {
 };
 
 export default StatsBanner;
-
-

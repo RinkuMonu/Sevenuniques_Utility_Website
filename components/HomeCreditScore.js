@@ -53,7 +53,7 @@ export default function HomeCreditScoreSection() {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 mt-6">
-            <Link href="" className="bg-[#f56600] text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 hover:bg-[#e35b00] transition">
+            <Link href="https://play.google.com/store/apps/details?id=com.utility.finunique" target="blank" className="bg-[#f56600] text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 hover:bg-[#e35b00] transition">
               Download App
 
               <Image
