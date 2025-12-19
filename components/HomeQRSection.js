@@ -9,7 +9,7 @@ export default function HomeQRBanner({
   return (
   <div className="relative w-full h-[400px] my-6 lg:mb-10">
   <Image
-    src="/image/qr-code-banner.png"
+    src="/image/qr-code-banner.jpg"
     alt="QR Banner"
     fill
     className="object-cover"

@@ -46,7 +46,7 @@ const BenefitsSection2 = () => {
                                 height={160}
                             />
                         </Link>
-                        <Link href="/coming-soon" aria-label="Get it on Google Play">
+                        <Link href="https://play.google.com/store/apps/details?id=com.utility.finunique" target="blank" aria-label="Get it on Google Play">
                             <Image
                                 src="/loan/image8.png"
                                 alt="logo-bbps"
@@ -98,7 +98,7 @@ const BenefitsSection2 = () => {
                     {/* Download button below the image for mobile */}
                     <div className="mt-4 flex justify-center">
                         <Link
-                            href="/coming-soon"
+                            href="https://play.google.com/store/apps/details?id=com.utility.finunique" target="blank"
                             className="absolute left-1/2 -translate-x-1/2 inline-block
                             top-[60%] sm:top-[62%] md:top-[65%] lg:top-[51%]"
                         >
@@ -112,7 +112,7 @@ const BenefitsSection2 = () => {
 
             </div>
         </section>
-    );
+    ); 
 };
 
 export default BenefitsSection2;
