@@ -7,9 +7,9 @@ import CreditScoreReport from '../../../components/CreditScoreReport';
 import PartnersSection from '../../../components/PartnersSection';
 import BenefitsSection from '../../../components/BenefitsSection';
 import LoanS2 from '../../../components/LoanS2';
-import VerticalSlider from '../../../components/VerticalSlider';
 import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
+import VerticalSlider from '../../../components/VerticalSlider';
 
 
 
