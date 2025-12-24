@@ -17,7 +17,7 @@ const FeatureCard = ({ number, text }) => (
 const LoanStep = ({data}) => {
     return (
         <div className="  px-4 lg:px-0 pt-16 pb-20">
-            <div className="w-full max-w-7xl mx-auto">
+            <div className="w-full max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div className="">
                         <h3 className="text-2xl sm:text-4xl font-bold leading-tight mb-6 text-[#0C3D4C]">

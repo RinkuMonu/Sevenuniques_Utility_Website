@@ -50,7 +50,7 @@ const Aepskeyfeatures = () => {
     >
       <div className="absolute inset-0 bg-black/50"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-0 text-center text-white">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 lg:px-0 text-center text-white">
         <h3 className="text-4xl md:text-5xl font-bold mb-4">
 Key Benefits
         </h3>

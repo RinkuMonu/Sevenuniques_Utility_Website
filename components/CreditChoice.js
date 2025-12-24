@@ -48,7 +48,7 @@ export default function CreditChoice() {
     ];
 
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:p-6 lg:px-0">
+        <div className="max-w-6xl mx-auto px-4 sm:p-6 lg:px-0">
                  <h3 className="text-2xl lg:text-4xl pb-10 font-bold text-[#0C3D4C]">
         Easy 10-Door, Instant Approval
           </h3>

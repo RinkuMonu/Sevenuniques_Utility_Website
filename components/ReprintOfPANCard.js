@@ -85,7 +85,7 @@ export default function ReprintOfpancard() {
 
   return (
     <section className="py-20 px-4 lg:px-0 bg-gradient-to-br from-white via-[#f9fcfd] to-[#f1f9fa]">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <motion.div
           className="text-center mb-14"

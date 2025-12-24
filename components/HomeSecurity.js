@@ -13,7 +13,7 @@ function HomeSecurity() {
         >
             <div className='grid md:grid-cols-2 max-w-7xl mx-auto px-4 lg:px-0'>
                 <div className=" text-white flex items-center justify-center " >
-                    <div className="container mx-auto py-12 max-w-4xl">
+                    <div className="container mx-auto py-12 max-w-4xl md:pl-12">
                         <div className="text-left mb-12">
                             <h3 className="text-3xl md:text-5xl font-bold leading-tight">
                                 Guarding Your Data,<br />Securing Your Future

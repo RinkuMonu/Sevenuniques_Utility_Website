@@ -32,7 +32,7 @@ const BenefitsSection2 = () => {
         >
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                 {/* Left Content */}
-                <div className="text-white flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
+                <div className="text-white flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 md:pl-12">
                     <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
                         One-Click Signups, <br /> One Second Later.
                     </h3>

@@ -23,7 +23,7 @@ export default function CreditComp() {
           backgroundColor: '#0a192f' // Fallback color
       }}
     >
-      <main className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+      <main className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
         
         {/* Left Content Section */}
         <div className="text-white text-center lg:text-left animate-fade-in-up">

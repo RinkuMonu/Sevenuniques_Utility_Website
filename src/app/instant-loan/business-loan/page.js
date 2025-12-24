@@ -126,7 +126,7 @@ function page() {
 
       <section>
         <div className={`relative lg:pt-20`} style={{ backgroundColor: "#FFE9D3" }}>
-          <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
+          <div className="max-w-6xl mx-auto px-4 lg:px-0 ">
             <div className="grid grid-cols-1 md:grid-cols-2">
 
               <div className="flex space-x-4 md:space-x-6 md:mb-16">
@@ -161,7 +161,7 @@ function page() {
       <StatsBanner />
       <EMICal2 />
       <div className="bg-[#EFF9FF] mb-30">
-        <div className=" px-4 lg:px-0 max-w-7xl mx-auto py-20 relative">
+        <div className=" px-4 lg:px-0 max-w-6xl mx-auto py-20 relative">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
               <h3 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] max-w-lg">

@@ -50,7 +50,7 @@ const ProcessStepCard = ({ step, title, description, eta }) => (
 const OnboardingProcess = () => {
   return (
     <div className=" flex items-center justify-center pt-16 py-30 px-4 lg:px-0">
-      <div className="w-full max-w-7xl mx-auto">
+      <div className="w-full max-w-6xl mx-auto">
         <div className="mb-12 text-left">
           <h2 className="text-2xl md:text-4xl font-bold text-[#0C3D4C]">
             Easy Onboarding,
