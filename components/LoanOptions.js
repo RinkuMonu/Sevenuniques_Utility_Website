@@ -48,7 +48,7 @@ const LoanCard = ({ title, imageUrl, link }) => {
 const LoanOptions = () => {
   return (
     <section className="my-30 px-4 lg:px-0">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] mb-8">More Options</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {loanOptions.map((loan, index) => (

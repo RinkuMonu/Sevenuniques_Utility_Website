@@ -16,7 +16,7 @@ const Eligibility = ({
 }) => {
   return (
     <div className="bg-[#EFF9FF] mb-20 relative">
-      <div className=" px-4 lg:px-0 max-w-7xl mx-auto py-10 ">
+      <div className=" px-4 lg:px-0 max-w-6xl mx-auto py-10 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Side Content */}
           <div className="space-y-6">
@@ -37,7 +37,7 @@ const Eligibility = ({
               width={400}
               height={400}
               alt="Eligibility section illustration"
-              className={`absolute bottom-0 right-0 `}
+              className={`absolute bottom-0 right-10 `}
             />
           </div>
         </div>

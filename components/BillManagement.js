@@ -390,7 +390,7 @@ const BillItem = ({ icon, title, description }) => (
 const BillManagement = () => {
   return (
     <section className="py-10 ">
-      <div className="max-w-7xl mx-auto px-2">
+      <div className="max-w-6xl mx-auto px-2">
     
           <h3 className=" text-4xl font-bold text-[#0C3D4C] ">
           Easy Monthly Billing

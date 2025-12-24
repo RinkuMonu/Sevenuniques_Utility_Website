@@ -89,12 +89,12 @@ function page() {
                   </div>
 
 
-      <section className='pt-10 px-4'>
+      <section className='pt-10 px-4 max-w-6xl mx-auto '>
         <div className="text-center pt-6">
           <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase">
             WHAT IS
           </p>
-          <h3 className="mt-2 text-4xl font-bold text-[#175369] pb-10">
+          <h3 className="mt-2 text-4xl font-bold text-[#175369] pb-6">
             Aadhaar Enabled Payment System
           </h3>
         </div>

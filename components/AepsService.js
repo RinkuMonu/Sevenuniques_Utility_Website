@@ -48,7 +48,7 @@ const AepsService = () => {
   return (
     <section className="bg-[#E6F4FA] py-16">
 
-      <div className="max-w-7xl mx-auto px-4 lg:px-0 text-center">
+      <div className="max-w-6xl mx-auto px-4 lg:px-0 text-center">
         <p className="text-lg font-semibold text-[#0C3D4C] tracking-wide">Services</p>
         <h2 className="mt-2 text-2xl md:text-4xl font-bold text-[#0C3D4C] leading-snug">
           We make payments and banking faster, safer, and easier through our services.

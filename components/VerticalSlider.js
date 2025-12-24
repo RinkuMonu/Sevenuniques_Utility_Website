@@ -40,7 +40,7 @@ const VerticalSlider = ({slide}) => {
 
   return (
     <div className="">
-      <div className="mx-auto max-w-7xl md:grid md:grid-cols-2 md:gap-x-4 relative">
+      <div className="mx-auto max-w-6xl md:grid md:grid-cols-2 md:gap-x-4 relative">
         {/* --- LEFT (Sticky Image Panel) --- */}
         <div className="sticky top-20 flex h-[70vh] sm:h-[80vh] items-center p-4 md:p-8">
           <div className="h-full w-full rounded-2xl bg-gradient-to-tr from-[#014D78] to-[#1DADFF] text-white shadow-2xl flex flex-col justify-between p-6 sm:p-8">

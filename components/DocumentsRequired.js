@@ -26,13 +26,13 @@ const DocumentsRequired = () => {
 
   return (
     <section className=" py-10">
-      <div className="max-w-7xl mx-auto px-4  lg:px-0">
+      <div className="max-w-6xl mx-auto px-4  lg:px-0">
         <div className="text-center mb-12">
           <h2 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C]">
             Documents Ready, Loan Easy
           </h2>
         </div>
-        <div className="flex flex-wrap justify-center items-start gap-8 md:gap-10 lg:gap-14">
+        <div className="flex flex-wrap justify-center items-start gap-8 md:gap-4 lg:gap-4">
           {documents.map((doc, index) => (
             <DocumentItem key={index} title={doc.title} description={doc.description} />
           ))}

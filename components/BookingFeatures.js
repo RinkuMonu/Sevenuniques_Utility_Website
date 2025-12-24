@@ -52,7 +52,7 @@ const settings = {
 
   return (
     <section className=" w-full py-24 ">
-      <div className="max-w-7xl mx-auto px-4 lg:px-0">
+      <div className="max-w-6xl mx-auto px-4 lg:px-0">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0C3D4C] leading-tight">
             {titleLine1}<br />{titleLine2}

@@ -207,7 +207,7 @@ function page() {
       </div>
 
       <div className="bg-[#EFF9FF] mb-10 relative">
-        <div className=" px-4 lg:px-0 max-w-7xl mx-auto py-10 ">
+        <div className=" px-4 lg:px-0 max-w-6xl mx-auto py-10 ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
               <h3 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] max-w-lg">

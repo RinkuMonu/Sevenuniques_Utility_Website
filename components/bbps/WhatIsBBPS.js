@@ -20,7 +20,7 @@ const Stat = ({ value, redWidth }) => (
 export default function WhatIsBBPS() {
   return (
    <div className=" px-4 lg:px-0">
-      <div className="max-w-7xl   mx-auto rounded-lg grid grid-cols-1 md:grid-cols-5">
+      <div className="max-w-6xl mx-auto rounded-lg grid grid-cols-1 md:grid-cols-5">
         
         {/* Left Column */}
         <div className="col-span-1 md:col-span-3 py-8 px-6 md:py-12 ">

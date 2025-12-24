@@ -235,7 +235,7 @@ function page() {
             <StatsBanner />
             <DocumentsRequired />
             <div className="bg-[#EFF9FF] mb-30 relative">
-                <div className=" px-4 lg:px-0 max-w-7xl mx-auto py-10 ">
+                <div className=" px-4 lg:px-0 max-w-6xl mx-auto py-10 ">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                         <div className="space-y-6">
                             <h3 className="text-2xl lg:text-4xl font-bold text-[#0C3D4C] max-w-lg">
@@ -258,7 +258,7 @@ function page() {
                                 width={400}
                                 height={400}
                                 alt="Eligibility section illustration"
-                                className=" lg:absolute right-0 bottom-0"
+                                className="object-cover lg:absolute right-30 bottom-0"
                             />
                         </div>
                     </div>
