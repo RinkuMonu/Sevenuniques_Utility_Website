@@ -12,7 +12,7 @@ export default function HomeRechargeSection() {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push("http://localhost:3000/recharge"); // redirect on click
+    router.push("http://localhost:3000/recharge"); 
   };
 
   const services = [
@@ -23,21 +23,21 @@ export default function HomeRechargeSection() {
           icon: "/icons/mp.png",
           hoverIcon: "/white/mp.png",
           link: "/bill-payments",
-          description: "Recharge any mobile number in seconds.",
+          description: "Fast mobile recharges with great deals and savings.",
         },
         {
           title: "Mobile Postpaid",
           icon: "/icons/mpo.png",
           hoverIcon: "/white/mpo.png",
           link: "/bill-payments",
-          description: "Pay postpaid mobile bills easily.",
+          description: "Pay your postpaid bills instantly.",
         },
         {
           title: "Electricity",
           icon: "/icons/bp.png",
           hoverIcon: "/white/bp.png",
           link: "/bill-payments",
-          description: "Pay your broadband bills in time.",
+          description: "Pay Electricity Bills Quickly, Stay Always Powered.",
         },
         {
           title: "FasTag",
@@ -71,8 +71,7 @@ export default function HomeRechargeSection() {
         Recharges & Bill Payments
       </h2>
       <p className="text-gray-600 mt-2 max-w-2xl text-lg mx-auto">
-        Enjoy lightning fast payments, exciting rewards and seamless
-        transactions on every recharge & bill payment
+        Boost your earnings with recharges, bill payments & special offers Fast services, smooth transactions, and extra benefits for every user
       </p>
 
       {services.map((category, catIdx) => (

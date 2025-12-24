@@ -24,7 +24,7 @@ export default function HomePaymentGatewaySection() {
             alt="Credit Score Preview"
             width={300}
             height={600}
-            className="w-full h-100 "
+            className="w-full h-100"
           />
         </div>
 
@@ -40,10 +40,11 @@ export default function HomePaymentGatewaySection() {
           <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 leading-tight">
             Collecting Payments <br /> Made Easy
           </h2>
+          <h3>Seamless Payment Solutions</h3>
 
           {/* Description */}
           <p className="text-gray-600 max-w-lg">
-            End-to-end payment solutions for businesses. Enables acceptance of payments by UPI.
+            Easily receive payments from your customers and loved ones anytime, anywhere. Simplify transactions and keep your business cash flow smooth and hassle-free.
           </p>
 
           {/* Benefits */}
@@ -70,6 +71,7 @@ export default function HomePaymentGatewaySection() {
                 />
 
             </Link>
+            
             <Link href="/contact" className="border border-[#f56600] text-[#f56600] px-6 py-3 rounded-lg font-bold hover:bg-[#f56600] hover:text-white transition">
               Know More
             </Link>

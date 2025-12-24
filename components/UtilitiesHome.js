@@ -24,7 +24,7 @@ const services = [
   { name: "DTH", src: "/home/dth.png", position: "top-1 right-20 -translate-x-1/2" },
   { name: "Mobile Recharge", src: "/home/mobile.png", position: "bottom-12 -right-12" },
   { name: "Education", src: "/home/education.png", position: "top-[15%] left-[46.1%]" },
-    { name: "Credit", src: "/home/credit.png", position: "top-50 -right-10 -translate-x-1/3" },
+  { name: "Credit", src: "/home/credit.png", position: "top-50 -right-10 -translate-x-1/3" },
   { name: "Money", src: "/home/money.png", position: "top-0 -right-15" },
   { name: "Telephone", src: "/home/tel.png", position: "top-1/3 left-[42.1%]" },
 ];
@@ -33,14 +33,14 @@ const UtilitiesHome = () => {
   return (
     <section className="bg-[#eaf5ff] pt-14 pb-10 mt-20 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Floating service icons (desktop only) */}
+     
         <div className="hidden lg:block">
           {services.map((service) => (
             <div
               key={service.name}
               className={`absolute ${service.position} group z-20 transition-transform duration-300 hover:scale-110`}
             >
-              {/* Tooltip */}
+        
               <span
                 className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 text-sm text-white font-semibold bg-[#0C3D4C]
                 rounded-md shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300"
@@ -48,7 +48,6 @@ const UtilitiesHome = () => {
                 {service.name}
               </span>
 
-              {/* Icon */}
               <div className="bg-white/90 p-4 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-pulse">
                 <Image
                   src={service.src}
@@ -62,21 +61,21 @@ const UtilitiesHome = () => {
           ))}
         </div>
 
-        {/* Main Content Section */}
+  
         <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-10 lg:gap-16 relative z-10">
-          {/* Left Content */}
+        
           <div className="w-full md:w-1/2 lg:w-2/5 text-center md:text-left space-y-6">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0d3d57] leading-tight">
               Fast Utilities, Zero Hassle
             </h2>
+            <h4 className="text-2xl font-bold">Quick Services, No Stress
+</h4>
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-              Finunique provides smooth and easy payment systems with the help of
-              digital payment systems that are the most smooth and secure. Whether you
-              are at home, on the move, or on the go, our platform offers you quick,
-              dependable, and secure transactions.
+              At Finunique, we make digital payments simple and hassle-free. Whether you’re at home, traveling, or anywhere on the go, our platform ensures fast, secure, and reliable transactions. Enjoy a seamless experience with services designed to save you time and give you peace of mind.
+
             </p>
 
-            {/* Feature Boxes */}
+        
             <div className="grid grid-cols-3 gap-3 sm:gap-4 pt-2 sm:pt-4">
               {["Easy", "Fast", "Connectivity"].map((text) => (
                 <p
@@ -89,7 +88,6 @@ const UtilitiesHome = () => {
               ))}
             </div>
 
-            {/* CTA Button */}
             <div className="pt-6 pb-8">
               <Link
                 href="/bbps"
@@ -101,7 +99,6 @@ const UtilitiesHome = () => {
             </div>
           </div>
 
-          {/* Right Image */}
           <div className="w-full md:w-1/2 flex justify-center md:justify-end relative">
             <div className="relative max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
               <Image

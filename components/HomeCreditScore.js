@@ -7,10 +7,10 @@ import React from "react";
 
 export default function HomeCreditScoreSection() {
   const benefits = [
-    "Get detailed insights",
-    "Check overdues",
-    "View active loans",
-    "Access Better Deals",
+    "See Your Score",
+    "Spot Overdues",
+    "Track Loansls",
+    "Get Better Deals",
   ];
 
   return (
@@ -32,13 +32,13 @@ export default function HomeCreditScoreSection() {
 
           {/* Title */}
           <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 leading-tight">
-            Track your Credit score <br /> for Free
+            Stay on Top of Your<br />  Credit Health – Instantly!
           </h2>
 
           {/* Description */}
           <p className="text-gray-600 max-w-lg">
-            Check your score and get your full credit report in seconds. 100%
-            secure!
+           Monitor your credit score anytime, anywhere, and take control of your financial future. 
+
           </p>
 
           {/* Benefits */}

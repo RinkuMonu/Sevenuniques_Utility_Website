@@ -19,7 +19,9 @@ function HomeSecurity() {
                                 Guarding Your Data,<br />Securing Your Future
                             </h3>
                             <p className="mt-6 max-w-2xl text-gray-400">
-                                Your business integrity is what we care about. The presence of the most sophisticated security measures and the promise to keep your data safe will allow you to be confident that you will be collaborating with the most progressive industry in terms of encryption and compliance.
+                             Protecting Your Data, Empowering Your Business
+"With strong encryption and reliable security systems, we make sure your business data remains secure while you focus on building success."
+
                             </p>
                         </div>
                         <div className="mb-12">
