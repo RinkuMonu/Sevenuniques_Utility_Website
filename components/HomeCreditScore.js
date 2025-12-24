@@ -15,9 +15,9 @@ export default function HomeCreditScoreSection() {
 
   return (
     <section className="bg-white py-16 px-6 md:px-20">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
         {/* LEFT CONTENT */}
-        <div className="flex-1 space-y-6">
+        <div className="md:basis-[60%] space-y-6">
           {/* Header */}
           <div className="flex items-center gap-2">
             <Image
@@ -57,30 +57,30 @@ export default function HomeCreditScoreSection() {
               Download App
 
               <Image
-                               src="/image/logoplaystore.png"
-                               width={20}
-                               height={20}
-                               alt="img"
-                               className="invert brightness-0 saturate-0"
-                             />
+                src="/image/logoplaystore.png"
+                width={20}
+                height={20}
+                alt="img"
+                className="invert brightness-0 saturate-0"
+              />
 
             </Link>
-            <Link href="/contact" className="border border-[#f56600] text-[#f56600] px-6 py-3 rounded-lg font-bold hover:bg-[#f56600] hover:text-white transition">
+            <Link href="/free-credit-score" className="border border-[#f56600] text-[#f56600] px-6 py-3 rounded-lg font-bold hover:bg-[#f56600] hover:text-white transition">
               Know More
             </Link>
           </div>
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className=" flex justify-center md:justify-end hidden md:flex">
-  <Image
-    src="/image/credit-score.png"
-    alt="Credit Score Preview"
-    width={300}
-    height={600}
-    className="w-full h-100"
-  />
-</div>
+        <div className="md:basis-[40%] flex justify-center md:justify-end hidden md:flex">
+          <Image
+            src="/image/credit-score.png"
+            alt="Credit Score Preview"
+            width={300}
+            height={600}
+            className="w-full h-75"
+          />
+        </div>
 
       </div>
     </section>

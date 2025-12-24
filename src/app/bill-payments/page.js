@@ -21,7 +21,7 @@ function page() {
     <>
       <div className=" bg-no-repeat bg-cover bg-center"   style={{ backgroundImage: `url(${data?.bgImage})` , }}>
           <div className="max-w-7xl mx-auto space-y-6 md:space-y-0 px-4 lg:px-0">
-            <div className=" py-10 lg:py-16 rounded-2xl w-full">
+            <div className=" py-10 lg:py-16 rounded-2xl w-full md:pl-10">
               <div className=" z-10">
                 <p className="text-sm font-bold uppercase tracking-widest text-[#0C3D4C]">
                   {data?.subheading}

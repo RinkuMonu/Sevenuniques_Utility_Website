@@ -51,7 +51,7 @@ export default function PanCorrectionCard() {
 
   return (
     <section className="py-20 px-4  lg:px-0  bg-amber-50">
-     <div className="max-w-7xl mx-auto ">
+     <div className="max-w-6xl mx-auto ">
        {/* Heading */}
       <div className="text-center mb-10">
         <h3 className="text-3xl md:text-4xl font-bold text-[#0C3D4C] leading-snug">

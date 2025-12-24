@@ -69,7 +69,7 @@ export default function GetInsurance() {
     const backgroundImageUrl = '/insurance/icbg.png';
 
   return (
-    <section className=" py-10">
+    <section className="px-6 md:px-12 py-8">
       <div className="max-w-7xl mx-auto px-4  lg:px-0">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {cardData.map((card) => (

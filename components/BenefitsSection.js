@@ -13,8 +13,8 @@ const BenefitsSection = () => {
       }}
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className="text-white flex flex-col items-center lg:items-start text-center lg:text-left">
-          <h3 className="text-2xl md:text-4xl font-bold leading-tight mb-8">
+        <div className="text-white flex flex-col items-center lg:items-start md:pl-12 text-center lg:text-left">
+          <h3 className="text-2xl md:text-4xl font-bold leading-tight mb-8 ">
             One App, Endless <br /> Benefits
           </h3>
 
@@ -67,7 +67,7 @@ const BenefitsSection = () => {
           width={300}
           height={400}
           alt="Mobile App Interface"
-          className=" z-10 mx-auto  lg:absolute -top-10 right-50 h-[64vh] w-auto"
+          className=" z-10 mx-auto  lg:absolute -top-0 right-20 h-[64vh] w-auto"
         />
 
       </div>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 const ContactBanner = () => {
   return (
     <section className="bg-[#0099ff] text-white my-10">
-      <div className="max-w-7xl mx-auto flex flex-col items-center justify-between gap-8 px-4 lg:px-0 py-16 md:flex-row md:gap-0">
+      <div className="max-w-6xl mx-auto flex flex-col items-center justify-between gap-8 px-4 lg:px-0 py-16 md:flex-row md:gap-0">
         
         {/* Left Side: Text Content */}
         <div className="text-center md:text-left">

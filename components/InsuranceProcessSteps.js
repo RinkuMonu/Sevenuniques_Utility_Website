@@ -42,7 +42,7 @@ export default function InsuranceProcessSteps() {
 
     return (
         <section className="w-full mb-16">
-            <div className="max-w-7xl mx-auto py-16 px-4 lg:px-0">
+            <div className="max-w-6xl mx-auto py-16 px-4 lg:px-0">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center">
                     {/* Left Side */}
                     <div className="text-center lg:text-left">

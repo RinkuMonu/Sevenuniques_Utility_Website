@@ -301,8 +301,9 @@ function Page() {
 
     return (
         <>
-            {/* Hero Section */}
-            <div className="relative flex flex-col md:flex-row items-center justify-between overflow-hidden lg:h-[70vh]">
+         
+        
+  <div className="relative flex flex-col md:flex-row items-center justify-between overflow-hidden lg:h-[70vh]">
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${data?.bgImage})` }}></div>
                 <div className="z-10 mx-auto">
                     {/* Plane Path */}
@@ -361,7 +362,7 @@ function Page() {
             <section className="py-16">
                 <div className="">
                     {/* Tab Buttons */}
-                    <div className="flex gap-8 mb-10 max-w-7xl mx-auto px-4 lg:px-0">
+                    <div className="flex gap-8 mb-10 max-w-6xl mx-auto px-4 lg:px-0">
                         {tabs.map((tab) => (
                             <button
                                 key={tab.id}
@@ -451,6 +452,7 @@ function Page() {
             <PartnersSection />
             <TestimonialSlider />
             <ContactBanner />
+      
         </>
     )
 }

@@ -132,7 +132,7 @@ const CreditCard = ({ bank, points, title, tag, image, benefit }) => {
 
 export default function CardGrid() {
     return (
-        <div className="px-4 lg:px-0   max-w-7xl mx-auto ">
+        <div className="px-4 lg:px-0   max-w-6xl mx-auto ">
             <h3 className="text-2xl sm:text-3xl mb-5 lg:mb-24 font-bold text-[#0C3D4C]">
                 Hot-Selling Credit Cards
             </h3>

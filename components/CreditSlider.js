@@ -56,7 +56,7 @@ export default function App() {
 
   return (
     <div className="px-4 sm:px-6 lg:px-0 py-8 sm:py-10">
-      <div className="max-w-7xl mx-auto w-full">
+      <div className="max-w-6xl mx-auto w-full">
         <header className="mb-6 sm:mb-8">
           <h3 className="text-2xl sm:text-3xl font-bold text-gray-800">
             Simple Steps, Instant Approval
