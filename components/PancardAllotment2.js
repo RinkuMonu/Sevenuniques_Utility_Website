@@ -18,7 +18,7 @@ export default function PancardAllotment2() {
         {/* Left Image */}
         <div className="flex justify-center md:justify-center w-full relative z-10 ">
           <Image
-            src="/image/pancard-foreign3.png"
+            src="/image/newpan.png"
             width={360}
             height={160}
             alt="image"
