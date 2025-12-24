@@ -65,7 +65,7 @@ export default function HomeCreditScoreSection() {
                              />
 
             </Link>
-            <Link href="/contact" className="border border-[#f56600] text-[#f56600] px-6 py-3 rounded-lg font-bold hover:bg-[#f56600] hover:text-white transition">
+            <Link href="/free-credit-score" className="border border-[#f56600] text-[#f56600] px-6 py-3 rounded-lg font-bold hover:bg-[#f56600] hover:text-white transition">
               Know More
             </Link>
           </div>

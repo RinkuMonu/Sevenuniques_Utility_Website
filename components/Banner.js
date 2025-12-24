@@ -274,7 +274,7 @@ const slides = [
             maxRating: 5,
             text: 'I feel confident sending money here!',
         },
-         activities: [
+        activities: [
             {
                 id: 3,
                 name: 'Hariom',
@@ -322,7 +322,7 @@ const slides = [
             maxRating: 5,
             text: 'I feel confident sending money here!',
         },
-          activities: [
+        activities: [
             {
                 id: 1,
                 name: 'Kailash Choudhary',
@@ -416,7 +416,7 @@ const Banner = () => {
         <div className=" ">
             <div className="w-full">
                 <Slider {...settings}>
-                    {slides.map((slide) => (
+                    {slides.map((slide, index) => (
                         <div
                             key={slide.id}
                             className="relative flex flex-col md:flex-row items-center justify-between md:h-auto  text-center pt-10 md:pt-5"
@@ -434,9 +434,15 @@ const Banner = () => {
                                     <p className="text-lg font-semibold tracking-widest text-[#0C3D4C] uppercase">
                                         {slide.subheading}
                                     </p>
-                                    <h1 className="mt-1 text-2xl md:text-5xl font-bold text-[#0C3D4C] leading-tight md:max-w-xl">
-                                        {slide.heading}
-                                    </h1>
+                                    {index === 0 ? (
+                                        <h1 className="mt-1 text-2xl md:text-5xl font-bold text-[#0C3D4C] leading-tight md:max-w-xl">
+                                            {slide.heading}
+                                        </h1>
+                                    ) : (
+                                        <h3 className="mt-1 text-2xl md:text-5xl font-bold text-[#0C3D4C] leading-tight md:max-w-xl">
+                                            {slide.heading}
+                                        </h3>
+                                    )}
                                 </div>
                                 <div className='flex flex-col md:flex-row items-center justify-between w-full space-y-6 md:space-y-0'>
 
@@ -453,14 +459,14 @@ const Banner = () => {
                                                 width={400}
                                                 alt="center image"
                                                 className={`
-    absolute
-    left-1/2 transform -translate-x-1/2
-    md:left-0 md:translate-x-0
-    ${slide.position}
-    ${slide.id === 8 ? "scale-115 md:scale-120" : ""}
-    ${slide.id === 1 ? "scale-90 md:scale-75 pb-10" : ""}
-    ${slide.id === 6 ? "md:scale-90" : ""}
-  `}
+                                                absolute
+                                                left-1/2 transform -translate-x-1/2
+                                                md:left-0 md:translate-x-0
+                                                ${slide.position}
+                                                ${slide.id === 8 ? "scale-115 md:scale-120" : ""}
+                                                ${slide.id === 1 ? "scale-90 md:scale-75 pb-10" : ""}
+                                                ${slide.id === 6 ? "md:scale-90" : ""}
+                                              `}
                                             />
 
 

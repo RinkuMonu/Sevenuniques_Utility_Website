@@ -144,7 +144,7 @@ const Footer = () => {
       <footer className="bg-[radial-gradient(circle_at_center,_#018EDE,_#0C3D4C_70%)] border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-6 pb-6 pt-12">
           <div className="grid md:grid-cols-3 gap-8 align-middle pb-4">
-            <div className="md:col-span-1 bg-white rounded">
+            <Link href={"/"} className="md:col-span-1 bg-white rounded">
               <Image
                 src="/image/sevenunique-logo1.png"
                 className=" p-1 mx-auto"
@@ -152,7 +152,7 @@ const Footer = () => {
                 width={100}
                 height={100}
               />
-            </div>
+            </Link>
             <div className="md:col-span-2">
               <p className=" text-white text-sm font-light">Finunique Small Private Limited is dedicated to providing innovative and reliable solutions across India. With a focus on technology-driven growth, we aim to simplify operations and enhance business efficiency for our partners and clients. Our mission is to strengthen partnerships, expand reach, and deliver smart solutions that help our clients achieve growth and success.
               </p>

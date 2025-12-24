@@ -1,14 +1,15 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Expertise() {
   const data = [
-    { title: "AePS (Aadhaar Enabled Payment System)", img: "/about/aeps.jpg" },
-    { title: "Utility & Bill Payment", img: "/about/bbps.jpg" },
-    { title: "Money Transfer (DMT)", img: "/about/dmt.jpg" },
-    { title: "Micro ATM Services", img: "/about/m-atm.jpg" },
-    { title: "Credit Card Solutions", img: "/about/ccs.jpg" },
+    { title: "AePS (Aadhaar Enabled Payment System)", img: "/about/aeps.jpg", link:"/aeps" },
+    { title: "Utility & Bill Payment", img: "/about/bbps.jpg", link:"/bill-payments" },
+    { title: "Money Transfer (DMT)", img: "/about/dmt.jpg", link:"/dmt" },
+    { title: "Micro ATM Services", img: "/about/m-atm.jpg", link:"/" },
+    { title: "Credit Card Solutions", img: "/about/ccs.jpg", link:"/credit-card" },
   ];
 
   return (
@@ -20,7 +21,8 @@ export default function Expertise() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {data.map((feature, idx) => (
-            <div
+            <Link 
+            href={feature.link}
               key={idx}
               className="bg-white shadow-[2px_4px_22.5px_0px_#00000026] rounded-lg px-6  text-center 
               flex flex-col justify-between items-center transition hover:shadow-lg min-h-[200px]"
@@ -39,7 +41,7 @@ export default function Expertise() {
                   {feature.title}
                 </h4>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
