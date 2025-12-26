@@ -43,44 +43,45 @@ const FeatureCard = ({ icon, title, children }) => (
 );
 
 export default function WhyChooseUs() {
-  const features = [
-    {
-      icon: <WrenchIcon />,
-      title: '100% Transparency',
-      description: 'Clear Commission Slabs And Guaranteed Settlements.',
-      align: 'right'
-    },
-    {
-      icon: <RefreshCwIcon />,
-      title: 'Quick & Easy Setup',
-      description: 'Start Services Instantly From Your Shop.',
-      align: 'right'
-    },
-    {
-      icon: <TagIcon />,
-      title: 'Affordable Devices',
-      description: 'Micro ATM available at just ₹1,300 + GST',
-      align: 'right'
-    },
-    {
-      icon: <PackageCheckIcon />,
-      title: '24/7 Dedicated Support',
-      description: ' Fast Help Whenever You Need It.',
-      align: 'left'
-    },
-    {
-      icon: <TagIcon />,
-      title: 'Latest Technology',
-      description: 'Secure, Reliable, And Smooth Digital Transactions.',
-      align: 'left'
-    },
-    {
-      icon: <PackageCheckIcon />,
-      title: 'Trusted Nationwide',
-      description: 'Partnered By Thousands Of Retailers & Distributors Across India.',
-      align: 'left'
-    }
-  ];
+const features = [
+  {
+    icon: <WrenchIcon />,
+    title: 'Complete Transparency',
+    description: 'Simple commission structures with assured and timely settlements.',
+    align: 'right'
+  },
+  {
+    icon: <RefreshCwIcon />,
+    title: 'Quick & Hassle-Free Onboarding',
+    description: 'Activate services easily and start working directly from your shop.',
+    align: 'right'
+  },
+  {
+    icon: <TagIcon />,
+    title: 'Affordable Micro ATM Solutions',
+    description: 'Get Micro ATM devices at just ₹1,300 + GST, making digital banking accessible.',
+    align: 'right'
+  },
+  {
+    icon: <PackageCheckIcon />,
+    title: 'Dedicated Support, Anytime',
+    description: 'Our support team is available 24/7 to assist you whenever required.',
+    align: 'left'
+  },
+  {
+    icon: <TagIcon />,
+    title: 'Advanced & Secure Technology',
+    description: 'Smooth, reliable, and secure digital transactions powered by the latest technology.',
+    align: 'left'
+  },
+  {
+    icon: <PackageCheckIcon />,
+    title: 'Trusted Across India',
+    description: 'A growing network of thousands of retailers and distributors nationwide.',
+    align: 'left'
+  }
+];
+
 
   return (
 
@@ -90,7 +91,7 @@ export default function WhyChooseUs() {
           Why Partner with Finunique
         </h2>
         <p className="text-lg text-zinc-600 mt-2 max-w-2xl mx-auto">
-          From routine maintenance to major repairs, we’ve got your car covered with reliable and friendly service.
+          We offer everything you need to grow your digital services business with trust, support, and technology you can rely on.
         </p>
       </div>
 

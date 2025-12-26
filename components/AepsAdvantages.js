@@ -5,59 +5,59 @@ import Image from "next/image";
 const advantages = [
   {
     id: 1,
-    title: "Easy Cash Withdrawals",
+    title: "Easy Cash Withdrawal",
     description:
-      "Customers can withdraw money securely from their bank accounts using Aadhaar authentication without needing an ATM or card.",
+      "Withdraw cash from your bank account using your Aadhaar number and fingerprint—no ATM card required.",
     icon: "/image/aeps1.png",
   },
   {
     id: 2,
-    title: "Bank Balance Enquiry",
+    title: "Instant Balance Check",
     description:
-      "Check your bank balance instantly through AEPS with just your Aadhaar number and fingerprint verification.",
+      "Check your bank account balance instantly with Aadhaar and biometric verification.",
     icon: "/image/aeps2.png",
   },
   {
     id: 3,
-    title: "Fund Transfer",
+    title: "Quick Fund Transfer",
     description:
-      "Transfer funds easily between banks using Aadhaar authentication — quick, safe, and hassle-free.",
+      "Send money securely between bank accounts using Aadhaar authentication in just a few steps.",
     icon: "/image/aeps3.png",
   },
   {
     id: 4,
     title: "Mini Statement",
     description:
-      "Get a quick mini statement of your bank account showing recent transactions through AEPS-enabled agents.",
+      "View your recent bank transactions instantly through AEPS service points.",
     icon: "/image/aeps4.png",
   },
   {
     id: 5,
-    title: "Increased Rural Reach",
+    title: "Banking for Rural Areas",
     description:
-      "Empowers rural and semi-urban customers to access basic banking services easily without visiting branches.",
+      "Brings essential banking services to rural and semi-urban areas without the need to visit a bank branch.",
     icon: "/image/aeps5.png",
   },
   {
     id: 6,
-    title: "Secure & Paperless",
+    title: "Safe & Paperless Transactions",
     description:
-      "AEPS transactions are Aadhaar and biometric-based, ensuring security and eliminating paperwork.",
+      "All AEPS transactions are biometric-based, making them secure, fast, and completely paperless.",
     icon: "/image/aeps6.png",
   },
 ];
+
 
 const AepsAdvantages = () => {
   return (
     <section className="py-16 bg-gradient-to-br from-[#e8f0f7] to-white">
       <div className="max-w-6xl mx-auto px-4 lg:px-0 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-[#0C3D4C] mb-4">
-          Advantages of AEPS Services
+        Benefits of AEPS Services
+
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-          Aadhaar Enabled Payment System (AEPS) brings convenience, security,
-          and accessibility to financial transactions — empowering citizens
-          across India.
+          Aadhaar Enabled Payment System (AEPS) makes everyday banking easy, safe, and accessible for everyone across India.
         </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

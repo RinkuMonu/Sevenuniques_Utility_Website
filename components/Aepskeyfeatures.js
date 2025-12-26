@@ -7,40 +7,41 @@ const features = [
   {
     id: 1,
     icon: <Shield className="text-orange-400 w-8 h-8" />,
-    title: "Security You Can Trust",
-    description: "Your business data stays safe, always.",
+    title: "Strong Security",
+    description: "Your business data is always protected.",
   },
   {
     id: 2,
     icon: <Users className="text-pink-400 w-8 h-8" />,
-    title: "Chosen by Businesses Worldwide",
-    description: "Thousands rely on us for success.",
+    title: "Trusted by Many Businesses",
+    description: "Thousands of businesses use and trust our services.",
   },
   {
     id: 3,
     icon: <Award className="text-blue-400 w-8 h-8" />,
-    title: "Experts Recognized Globally",
-    description: "Celebrated for creativity and innovation.",
+    title: "Recognized Industry Experts",
+    description: "Known for innovation and smart solutions.",
   },
   {
     id: 4,
     icon: <CheckCircle className="text-green-400 w-8 h-8" />,
-    title: "Success That Speaks for Itself",
-    description: "Delivering measurable growth across industries.",
+    title: "Proven Results",
+    description: "Helping businesses grow across different industries.",
   },
   {
     id: 5,
     icon: <Headphones className="text-purple-400 w-8 h-8" />,
-    title: "Support Without Boundaries",
-    description: "Round-the-clock assistance when you need it most.",
+    title: "24/7 Customer Support",
+    description: "Help is always available whenever you need it.",
   },
   {
     id: 6,
     icon: <Rocket className="text-red-400 w-8 h-8" />,
-    title: "Launch at Lightning Speed",
-    description: "Seamless setup with zero delays.",
+    title: "Quick and Easy Setup",
+    description: "Get started fast without any delays.",
   },
 ];
+
 
 const Aepskeyfeatures = () => {
   return (
