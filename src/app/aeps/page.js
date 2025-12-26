@@ -23,7 +23,7 @@ function page() {
     // heading: 'Angootha Lagao, Transaction Pao',
     heading: 'Bas Angootha Lagao , Paise Turant Pao',
     // description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable Domestic Money Transfer service.',
-    description: 'Aadhaar Enabled Payment System to withdraw cash, transfer and balance any amount any time and anywhere.',
+    description: 'Withdraw cash, transfer money and check balance anytime, anywhere using Aadhaar.',
     bgImage: '/aeps/aepsbg.png',
     centerImage: '/aeps/aeps1.png',
   }
@@ -36,10 +36,10 @@ function page() {
   const aepsData = {
     subheading: 'AePS ',
     heading: 'Aadhaar Enabled Payment System',
-    description: 'AePS will also allow you to open a bank account with your Aadhaar card and fingerprint. Pay without cards or PIN. Make transfers, balance checks, and cash withdrawals and deposits using authorized agents in a secure manner.',
+    description: 'AePS allows you to use banking services with just your Aadhaar number and fingerprint no card or PIN required. You can withdraw cash, check your balance, transfer funds, and deposit money safely through authorized service points.',
     features: [
-      'The retailers are able to provide AePS services, such as cash withdrawal and balance checks, through Finunique. Users have easy banking, and distributors have the ability to increase their network. We provide hassle-free and safe dealings to everyone.',
-      'Finunique use AePS to take banking to underserved regions. Distributors and retailers offer crucial services and minimize the addressing of banks. We encourage online payments and financial development for all.',
+      'Finunique enables retailers to offer AePS services, making banking easier for customers and creating income opportunities for distributors. Our system ensures fast, secure, and reliable transactions.',
+      'By expanding AePS services in remote areas, Finunique helps reduce bank dependency and supports digital and financial inclusion across India.',
     ]
   };
 
@@ -52,20 +52,20 @@ function page() {
     retailer: {
       title: 'Aadhaar Enabled Payment System—Retailer Partnership Program',
       features: [
-        'Be our AePS retailer, and turn your retail store into a full-service bank. Being a licensed Finunique agent, providing crucial banking services, and receiving a good commission on each deal.',
-        'Begin with a little investment—only a smartphone and a biometric device. Offer cash withdrawal, balance inquiry, fund transfer, and bill payment services so that your store is the preferred banking service in your neighborhood.',
-        'We have a program that guarantees the greatest profitability and convenience. Gain commissions as well as more customer visits. Full training, technical support, and RBI-approved secure systems all come with our one hundred percent peace of mind.',
-        'Be a part of the successful retailers nationwide in India who have grown their business using AEPS. Real-time processing with daily settlements: you concentrate on growth, and we take care of the technical features. Start your own business by enrolling as a Finunique AePS retailer.'
+        'Become an AePS retailer and turn your shop into a mini banking point. As an authorized Finunique agent, you can offer essential banking services and earn attractive commissions on every transaction.',
+        'Start with minimal investment with just a smartphone and a biometric device. Provide services like cash withdrawal, balance enquiry, fund transfer, and bill payments, making your store the go-to banking hub in your area.',
+        'Our retailer program is designed for maximum profit and ease of use. Earn commissions and increase daily footfall with complete training, technical assistance, and secure RBI-approved systems for total peace of mind.',
+        'Join thousands of successful retailers across India who are growing their business with AEPS. Enjoy real-time transactions and daily settlements to focus on expanding your business while we manage the technology. Register today as a Finunique AePS retailer and start your journey.'
       ],
       image: '/aeps/e1.png'
     },
     distributor: {
       title: 'Aadhaar Enabled Payment System—partnership with Distributors Program',
       features: [
-        'Expand a profitable banking network using the AePS program at Finunique and gain access to numerous sources of revenue by onboarding retailers. Being an approved distributor, you will be able to build retailers in your region and get competitive commissions on all transactions made with your expanding network, becoming one of the pioneers of digital finance.',
-        'We also offer full business solutions of professional training, marketing resources, and technical support in order to make you successful. Our established business model assists you in establishing a stable stream of revenue and encourages financial inclusion within your area. All you need is some basic knowledge of business and a smartphone to initiate this entrepreneurial process.',
-        'Increase your business presence in a great way by enabling local retailers with key AePS banking services. You will not only empower shop proprietors to serve their clients with improved services but also develop your own distribution business with our clear commission system and on-demand performance monitoring systems.',
-        'Enter the already established network of successful distributors of Finunique in India and get to be a part of the digital banking revolution. You can start your journey to becoming financially independent and a business leader and become an authorized AePS distributor today to start creating your own legacy in the financial services industry.'
+        'Grow a strong and profitable banking network with Finunique’s AePS Distributor Program. As a distributor, you can onboard retailers in your area and earn attractive commissions on every transaction made through your network. This opportunity allows you to expand your reach while becoming a key contributor to digital banking services.',
+        'Finunique supports you at every step with professional training, marketing assistance, and reliable technical support. Our proven business model helps you build a steady income while promoting financial inclusion in your region. All you need to get started is basic business understanding and a smartphone.',
+        'Boost your business visibility by enabling local retailers to offer essential AePS banking services. By supporting shop owners in serving their customers better, you also grow your own distribution network through a transparent commission structure and real-time performance tracking.',
+        'Join Finunique’s trusted network of distributors across India and be part of the digital banking transformation. Take the first step toward financial independence and leadership by becoming an authorized AePS distributor today.'
       ],
       image: '/aeps/e2.png'
     }

@@ -38,22 +38,25 @@ const InfoCard = ({ title, benefits, imageUrl, imageAlt, reverse = false }) => {
 
  const Empowering = () => {
   const retailerBenefits = [
-    'Earn More Money—Earn a commission on each individual AePS transaction that is made in your shop.',
-    'Increase Footfall -Get more customers to come into your shop every day to get basic banking services.',
-    'Provide a variety of services—cash withdrawal, deposits, fund transfer, and balance inquiries.',
-    'Create Customer Loyalty—Become the dependable and reliable financial service hub within your locality.',
-    'Low Investment, High Returns: Earn repeating income at a very small startup cost.',
-    'Achieve Targets, Get Bonus—Receive extra bonus payments on meeting your targets of transactions monthly.',
-  ];
+  'Earn More with Every Transaction – Get a commission for every AePS transaction done at your shop.',
+  'Attract More Customers – Bring in more footfall as people visit your shop for essential banking services.',
+  'Offer a Range of Services – From cash withdrawals and deposits to fund transfers and balance checks.',
+  'Build Customer Trust – Become the go-to financial service hub in your neighborhood.',
+  'Small Investment, Big Rewards – Start with minimal cost and enjoy recurring income.',
+  'Hit Targets, Earn Bonuses – Get extra incentives when you achieve your monthly transaction goals.',
+];
 
-  const distributorBenefits = [
-    'Prepare a Network—Manage and build a network of retailers within your area of location.',
-    'Get a commission on all transactions within your network—earn higher commissions.',
-    'Exclusive Territory Rights – Operate and grow your business in a protected area.',
-    'Business Development Support – We provide quality training, marketing and technical support exclusively for you.',
-    'Scalable Model - The distributor model allows you to start out small and grow your distributor business in size.',
-    'Base salary + Incentives - You have a monthly base salary + bonuses based on performance when you meet your targets.',
-  ];
+
+const distributorBenefits = [
+  'Build Your Network – Connect with and manage retailers in your area.',
+  'Earn More – Get commissions on all transactions within your network.',
+  'Protected Territory – Operate your business in an exclusive area.',
+  'Full Support – Receive training, marketing, and technical assistance just for you.',
+  'Grow at Your Pace – Start small and expand your distributor business over time.',
+  'Salary + Rewards – Enjoy a fixed monthly salary plus performance-based bonuses.',
+];
+
+
 
   return (
     <div className=" font-sans px-4 lg:px-20">
@@ -62,7 +65,7 @@ const InfoCard = ({ title, benefits, imageUrl, imageAlt, reverse = false }) => {
           Empowering Retailers and Distributors
         </h3>
 
-        <div className="space-y-12">
+        <div className="space-y-12 text-[15px]">
           <InfoCard
             title="Retailers"
             benefits={retailerBenefits}

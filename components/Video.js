@@ -7,27 +7,28 @@ const cardData = [
     id: 1,
     title: 'Personal',
     mainTitle: 'Personal Banking',
-    description: 'Get personalized banking solutions for your own individual needs. Our specialists will assist you in account management, transactions, and any other personal banking needs you may have.',
+    description:
+      'Get customized banking support for your unique needs. Our team will help you with account services, transactions, and all your personal banking requests.',
     img: '/aeps/s1.jpg',
-
   },
   {
     id: 2,
     title: 'Business',
     mainTitle: 'Business Solutions',
-    description: 'Expand your business through our full line of business banking products. We provide tailor-made solutions to businesses of any size, small and big stores.',
+    description:
+      'Grow your business with our complete range of business banking services. We offer customized solutions for businesses of all sizes, from small shops to large stores.',
     img: '/aeps/s2.png',
-
   },
   {
     id: 3,
     title: 'Freelance',
     mainTitle: 'Freelancer Hub',
-    description: 'Dedicated freelancer and professional financial services. Our freelancer support system will make sure you manage your income, taxes, and business transactions.',
+    description:
+      'A dedicated financial support center for freelancers and professionals. Our system helps you easily manage your income, taxes, and business finances.',
     img: '/aeps/s3.png',
-
   },
 ];
+
 
 // --- Arrow Icon Component ---
 const ArrowIcon = () => (
@@ -61,12 +62,12 @@ const Video = () => {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
             <div className="md:w-2/3">
               <h3 className="text-2xl md:text-4xl font-bold leading-tight text-[#0C3D4C]">
-                Your data and money are protected with high-level authentication
+                Your data and money are protected with advanced authentication
               </h3>
             </div>
             <div className="md:w-1/3 mt-4 flex flex-col items-start">
               <p className="text-base max-w-sm mb-4">
-                Just in case your data or money is at risk, we secure it with high-end security controls and Aadhaar authentication that guarantee that all your transactions are fully secured and safeguarded
+                To protect you at all times, we use strong security measures and Aadhaar authentication to  ensure every transaction is fully secured and protected.
               </p>
               <Link href="/contact" className="bg-[#018EDE] w-full text-center hover:bg-[#018EDE]/90 cursor-pointer text-white font-semibold py-3 px-6 rounded-full  transition-colors duration-300">
                 Contact Us

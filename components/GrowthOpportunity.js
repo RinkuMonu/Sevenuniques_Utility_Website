@@ -9,10 +9,10 @@ export default function GrowthOpportunities() {
   const kpis =
     audience === "retailers"
       ? [
-        { label: "Earn Commission On Every AePS Withdrawal, Money Transfer, Recharge, And Bill Payment.", image: "/about/commision.jpg" },
-        { label: "Attract More Customers To Your Shop By Offering Digital Banking Services.", image: "/about/custom.jpg" },
-        { label: "Increase Monthly Income Without Any Heavy Investment Or Complex Setup.", image: "/about/incre.jpg" },
-        { label: "Build Trust And Loyalty In Your Local Area With Reliable Services.", image: "/about/trust.jpg" },
+        { label: "Earn commissions on every transaction including AePS withdrawals, money transfers, recharges, and bill payments.", image: "/about/commision.jpg" },
+        { label: "Bring more customers to your shop by offering easy and reliable digital banking services.", image: "/about/custom.jpg" },
+        { label: "Boost your monthly income without heavy investment or complicated setup.", image: "/about/incre.jpg" },
+        { label: "Strengthen trust and build long-term customer loyalty in your local area.", image: "/about/trust.jpg" },
       ]
       : [
         { label: "Expand Your Network By Connecting With More Retailers Across Towns And Villages.", image: "/about/network.jpg" },
@@ -30,16 +30,14 @@ export default function GrowthOpportunities() {
           <div className="space-y-6">
             <p className="border-primary text-[#0C3D4C]  w-fit font-bold rounded-2xl bg-[#0C3D4C]/30 px-3 py-1"> Growth Opportunities </p>
             <h2 className="text-2xl lg:text-4xl font-bold text-gray-800 leading-tight mb-4">
-              Unlock revenue for{" "}
+              Designed to Increase{" "}
               <span className="text-[#0C3D4C]  font-bold">
                 {audience === "retailers" ? "retailers" : "distributors"}
               </span>{" "}
-              with actionable insights
+           Retailer Revenue
             </h2>
-
-            <p className="text-lg text-gray-600 max-w-prose leading-relaxed">
-              Launch data-driven playbooks that turn insights into results. Measure impact with transparent KPIs and
-              iterate quickly.
+ <p className="text-lg text-gray-600 max-w-prose leading-relaxed">
+              We provide easy-to-use insights that help retailers take the right actions, measure success transparently, and grow faster.
             </p>
           </div>
 

@@ -2,37 +2,43 @@ import Image from 'next/image';
 import React from 'react';
 
 const timelineData = [
-    {
-        stepNumber: 1,
-        title: 'Visit an AePS Agent',
-        description: 'The customer goes to a local banking Agent that provides the AePS services. To initiate the transaction process, they give their bank name and Aadhaar number.',
-        imageUrl: '/aeps/p1.png',
-    },
-    {
-        stepNumber: 2,
-        title: 'Enter Transaction Details',
-        description: 'The user inserts the type of transaction (withdrawal) and the amount in his micro-ATM machine to initiate the transaction.',
-        imageUrl: '/aeps/p2.png',
-    },
-    {
-        stepNumber: 3,
-        title: 'Biometric Authentication',
-        description: 'The customer will check who he is by scanning his finger on a biometric scanner, and this will assure a secure and authorized transaction.',
-        imageUrl: '/aeps/p3.png',
-    },
-    {
-        stepNumber: 4,
-        title: 'Checking/Approving',
-        description: 'The real-time verification of the details and biometric data by the banking system authenticates the transaction and authorizes the transaction.',
-        imageUrl: '/aeps/p4.png',
-    },
-    {
-        stepNumber: 5,
-        title: 'Withdraw Transaction',
-        description: 'After approving the transaction, the agent is informed, and the desired sum is given to the customer, and this is where the process is completed.',
-        imageUrl: '/aeps/p5.png',
-    },
+  {
+    stepNumber: 1,
+    title: 'Visit an AEPS Agent',
+    description:
+      'Go to a nearby AEPS agent. Share your bank name and Aadhaar number to start the transaction.',
+    imageUrl: '/aeps/p1.png',
+  },
+  {
+    stepNumber: 2,
+    title: 'Enter Transaction Details',
+    description:
+      'Select the type of transaction (such as cash withdrawal) and enter the amount in the micro-ATM.',
+    imageUrl: '/aeps/p2.png',
+  },
+  {
+    stepNumber: 3,
+    title: 'Fingerprint Verification',
+    description:
+      'Place your finger on the biometric scanner to confirm your identity securely.',
+    imageUrl: '/aeps/p3.png',
+  },
+  {
+    stepNumber: 4,
+    title: 'Transaction Approval',
+    description:
+      'The bank system verifies your details and approves the transaction instantly.',
+    imageUrl: '/aeps/p4.png',
+  },
+  {
+    stepNumber: 5,
+    title: 'Receive Cash',
+    description:
+      'Once approved, the agent gives you the cash, and the transaction is completed successfully.',
+    imageUrl: '/aeps/p5.png',
+  },
 ];
+
 
 const TimelineStep = ({ stepNumber, title, description, imageUrl, isReversed, isLast }) => {
     return (
@@ -96,12 +102,13 @@ const HowItWorks1 = () => {
                             How AePS Works
                         </h2>
                         <p className="text-4xl text-[#0C3D4C] font-bold">
-                            Banking Made Simple using Aadhaar—Safe, Fast, and Easy.
+                            Easy Banking with Aadhaar – Fast, Safe, and Simple
                         </p>
                     </div>
                     <div>
                         <p>
-                            AePS brings the much-needed banking services to your community with a well-thought-out 5-step process that encompasses your Aadhaar identity and biometric fingerprint recognition, which provides not only full security but also unmatched convenience to all users.
+                          AEPS makes basic banking services available near you through a simple 5-step process. It uses your Aadhaar number and fingerprint to complete transactions securely and quickly.
+
                         </p>
                     </div>
                 </div>

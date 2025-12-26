@@ -3,44 +3,43 @@ import React from "react";
 
 const services = [
   {
-    title: "Cash Withdraw",
+    title: "Cash Withdrawal",
     description:
-      "Get instant cash in your Aadhaar-linked bank account with simple verification of your fingerprint. You do not need debit cards or PINs, and you have secure and convenient banking at your fingertips.",
+      "Withdraw money instantly using your Aadhaar and fingerprint. No debit card or PIN needed—quick, safe, and convenient.",
     icon: "/icons/a1.png",
   },
-   {
+  {
     title: "Cash Deposit",
     description:
-      "Pay your merchants directly out of your bank account linked to your Aadhaar through fingerprint identification. Safe and easy online payments do not require cash or cards.",
+      "Deposit money directly into your Aadhaar-linked bank account using just your fingerprint. It’s a safe, simple way to pay without needing cash, cards, or PINs.",
     icon: "/icons/a5.png",
   },
   {
     title: "Balance Enquiry",
     description:
-      "Aadhaar authentication will allow you to check your bank account balance instantly. You can also receive real-time updates on available balance without having to visit the bank or use internet banking.",
+      "Know your bank balance instantly with Aadhaar verification. Get real-time balance information without cards, PINs, or bank visits.",
     icon: "/icons/a2.png",
   },
   {
     title: "Mini Statement",
     description:
-      "Get an immediate mini statement of your 10 most recent transactions. With AePS service, it is easy to keep track of your account activity as well as keep track of your financial transactions.",
+      "View your last 10 bank transactions instantly through AePS. This helps you easily check and track your recent account activity anytime.",
     icon: "/icons/a3.png",
   },
   {
     title: "Fund Transfer",
     description:
-      "Send money safely to any bank account that is linked to Aadhaar through biometric authentication. The service is instant, safe, and reliable, and it allows transferring money between the accounts of various banks.",
+      "Transfer money instantly to any Aadhaar-linked bank account using biometric verification. The process is quick, secure, and works across different banks.",
     icon: "/icons/a4.png",
   },
-
-    {
+  {
     title: "Micro-ATM",
     description:
-      "Pay your utility bills, cell phone charges, DTH, and other services with AEPS. One and the same payment system that handles all your payment requirements and is absolutely secure and real-time.",
+      "Use AEPS to pay utility bills, mobile and DTH charges, and more, all in one place. It’s a secure, real-time payment solution that handles all your payment needs.",
     icon: "/icons/a2.png",
-  }
-
+  },
 ];
+
 
 
 
@@ -51,7 +50,7 @@ const AepsService = () => {
       <div className="max-w-6xl mx-auto px-4 lg:px-0 text-center">
         <p className="text-lg font-semibold text-[#0C3D4C] tracking-wide">Services</p>
         <h2 className="mt-2 text-2xl md:text-4xl font-bold text-[#0C3D4C] leading-snug">
-          We make payments and banking faster, safer, and easier through our services.
+         Enjoy quick and secure banking and payments every time.
         </h2>
 
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">

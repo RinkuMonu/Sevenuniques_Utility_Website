@@ -17,35 +17,34 @@ import FAQ from '../../../components/Bike Insurance/FAQ';
 
 
 function page() {
-    const faqData = [
-
+const faqData = [
   {
-    question: "What services does Finunique provide?",
-    answer: "We offer BBPS, AePS, bill payments, recharges, insurances, bookings, credit and pancard services, and various loan solutions, including business, home, personal, construction, and car loans."
+    question: "What services does Finunique offer?",
+    answer: "Finunique provides services such as BBPS, AEPS, bill payments, mobile recharges, insurance, bookings, PAN card services, credit support, and multiple loan options including personal, business, home, construction, and car loans."
   },
   {
-    question: "How can I register for a service?",
-    answer: "You can register via our website or contact our support team directly for guidance on signing up for any service."
+    question: "How can I get started with Finunique?",
+    answer: "You can register directly through our website or reach out to our support team for step-by-step assistance."
   },
   {
-    question: "Is Finunique payment system secure?",
-    answer: "Yes, all transactions are encrypted and processed through secure channels to ensure safety and reliability."
+    question: "Are transactions on Finunique safe?",
+    answer: "Yes, all payments and transactions are processed through secure and encrypted systems to ensure complete safety."
   },
   {
-    question: "Can I track my loan application?",
-    answer: "Absolutely! Once you apply for a loan, you will receive updates via email or SMS and can also contact our support team for real-time tracking."
+    question: "Can I check the status of my loan application?",
+    answer: "Yes, you’ll receive regular updates via SMS or email. You can also contact our support team for current status updates."
   },
   {
-    question: "What are the office hours for support?",
-    answer: "Our offices are open Monday–Friday, 9:30 AM to 6:30 PM. Saturday and Sunday are closed."
-  },
-
+    question: "When is customer support available?",
+    answer: "Our support team is available from Monday to Friday, 9:30 AM to 6:30 PM. We remain closed on weekends."
+  }
 ];
+
     const data = {
         id: 1,
         subheading: 'ABOUT US',
-        heading: 'Aapka Vishwas ,Hamari Pehchaan',
-        description: 'Send money quickly and securely to your loved ones anytime, anywhere. Experience fast, reliable, and hassle-free transfers.',
+        heading: 'Har Transfer Mein Vishwas',
+        description: 'Sending money to family and friends has never been easier, faster, or more secure.',
         bgImage: '/about/aboutbg.png',
         // centerImage: '/about/about1.png',
     }
@@ -61,11 +60,11 @@ function page() {
 
        const aepsData = {
         subheading: 'ABOUT',
-        heading: 'Finunique – Trusted & Reliable',
-        description: 'Finunique Small Private Limited is dedicated to providing innovative and reliable solutions across India. With a focus on technology-driven growth, we aim to simplify operations and enhance business efficiency for our partners and clients.',
+        heading: 'Finunique – Built on Trust, Driven by Technology',
+        description: 'Finunique Small Private Limited is committed to delivering dependable and innovative digital solutions across India. By using technology, we help our partners and clients simplify their operations and improve overall business efficiency.',
         features: [
-            'Founded by Mr. Dinesh Kumar Finunique has established a strong network of over 120,000 retailers, 2,300 distributors, and 700+ field executives working across various districts. This widespread presence ensures seamless operations and consistent customer satisfaction.',
-            'Our mission is to strengthen partnerships, expand reach, and deliver smart solutions that help our clients achieve growth and success. We continually strive to provide services that are efficient, reliable, and tailored to meet evolving business needs.',
+            'Established by Mr. Dinesh Kumar Finunique has grown into a strong nationwide network with 120,000+ retailers, 2,300 distributors, and over 700+ field executives actively serving across multiple districts. This extensive reach enables us to ensure smooth service delivery and a consistently positive customer experience.',
+            'Our mission is to build long-term partnerships, widen our presence, and offer smart, practical solutions that support business growth. We continuously work towards providing services that are reliable, efficient, and aligned with the changing needs of our clients.',
         ]
     };
 

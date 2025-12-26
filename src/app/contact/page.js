@@ -206,7 +206,7 @@ function Contact() {
                   height={700}
                   width={600}
                   alt="center image"
-                  className="hidden sm:absolute sm:block bottom-0 right-0 md:max-h-[100vh] lg:max-h-[100vh] object-contain z-20 "
+                  className="hidden sm:absolute sm:block bottom-0 right-0 md:max-h-[100vh] lg:max-h-[100vh] object-contain z-20"
                 />
               </div>
             </div>
@@ -376,7 +376,7 @@ function Contact() {
                       href="mailto:support@7unique.in"
                       className="hover:underline"
                     >
-                      support@7unique.in
+                      info@finuniques.in
                     </a>
                   </p>
 
