@@ -3,10 +3,10 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 const testimonials = [
-  { id: 1, name: " Ravi Kumar - Retailer", text: "Finunique helped me to make my small store a service center online. The commissions have been quite supportive in boosting my monthly income, and the support team is outstanding!", date: "25 July 2024", avatar: "/image/p5.jpg", rating: 5 },
-  { id: 2, name: "Raghu Sharma - Distributor", text: " The Adhikari network of Finunique helped me to grow my business easily. The site was easy to navigate, and the staff was available and accommodating in terms of helping me climb at a better pace than I had imagined.", date: "26 July 2025", avatar: "/image/p2.jpg", rating: 5 },
-  { id: 3, name: "RadheyShyam - User", text: "Paying off bills and transferringmoney has never been easy. The app is fast and secure, and it has not let us down. It's a real game-changer", date: "27 July 2025", avatar: "/image/p7.jpg", rating: 4 },
-  { id: 4, name: "Amit Verma - Retailer", text: "Finunique assisted me in receiving online payments in my village. It has become the standard option among all the people here, and it has revolutionized the way we conduct transactions considerably.", date: "28 July 2025", avatar: "/image/p1.jpg", rating: 5 },
+  { id: 1, name: " Ravi Kumar - Retailer", text: "Finunique helped turn my small shop into an online service center. The commissions really help increase my monthly income, and the support team is always excellent.", date: "25 July 2024", avatar: "/image/p5.jpg", rating: 5 },
+  { id: 2, name: "Raghu Sharma - Distributor", text: " Finunique’s Adhikari network made it easy for me to grow my business. The website is simple to use, and the team is always supportive. Their guidance helped me move forward faster than I expected.", date: "26 July 2025", avatar: "/image/p2.jpg", rating: 5 },
+  { id: 3, name: "RadheyShyam - User", text: "Paying bills and sending money is now quick. The app is fast, secure, and always reliable. It truly makes everyday payments easier.", date: "27 July 2025", avatar: "/image/p7.jpg", rating: 4 },
+  { id: 4, name: "Amit Verma - Retailer", text: "Finunique helped me accept online payments in my village. Now, most people here use it, and it has made transactions much easier for everyone.", date: "28 July 2025", avatar: "/image/p1.jpg", rating: 5 },
 ];
 
 // --- Star Rating Component ---

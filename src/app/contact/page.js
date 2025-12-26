@@ -19,9 +19,9 @@ function Contact() {
   const data = {
     id: 1,
     subheading: "Contact",
-    heading: "Get in Touch with Our Support Team",
+    heading: "We’re Here to Help — Get in Touch",
     description:
-      "We’re here to help you with any questions or concerns. Reach out via phone, email, or WhatsApp, and we’ll respond promptly. ",
+      "If you have any questions or need assistance, contact us through phone, email, or WhatsApp. Our support team will respond quickly.",
     bgImage: "/image/contact-bg-img.png",
     centerImage: "/image/contact-main-img.png",
   };
@@ -250,7 +250,7 @@ function Contact() {
       <section className="bg-white py-12 px-6 md:px-12">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Left Form */}
-          <div className="border rounded-lg p-6 sm:p-8 shadow-[2px_2px_15px_0px_rgba(188,188,188,0.4)]">
+          <div className="border border-gray-200 ounded-lg p-6 sm:p-8 shadow-[2px_2px_15px_0px_rgba(188,188,188,0.4)]">
             <h2 className="text-2xl md:text-3xl font-bold text-[#39464F] mb-6">
               Contact Info Section:
             </h2>
@@ -265,7 +265,7 @@ function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full border border-[#39464F] rounded-md px-4 py-2 text-sm md:text-base focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-[1px_1px_10px_0px_#d6d6d6]"
+                  className="w-full rounded-md px-4 py-2 text-sm md:text-base focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-md"
                   placeholder="Enter your name"
                 />
                 {errors.name && (
@@ -283,7 +283,7 @@ function Contact() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full border border-[#39464F] rounded-md px-4 py-2 text-sm md:text-base focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-[1px_1px_10px_0px_#d6d6d6]"
+                  className="w-full  rounded-md px-4 py-2 text-sm md:text-base focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-md"
                   placeholder="Enter your email"
                 />
                 {errors.email && (
@@ -302,7 +302,7 @@ function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   maxLength="10"
-                  className="w-full border border-[#39464F] rounded-md px-4 py-2 text-sm md:text-base focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-[1px_1px_10px_0px_#d6d6d6]"
+                  className="w-full  rounded-md px-4 py-2 text-sm md:text-base focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-md"
                   placeholder="Enter your phone number"
                 />
                 {errors.phone && (
@@ -319,7 +319,7 @@ function Contact() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full border border-[#39464F] rounded-md px-4 py-2 text-sm md:text-base focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-[1px_1px_10px_0px_#d6d6d6]"
+                  className="w-full  rounded-md px-4 py-2 text-sm md:text-base focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-md"
                   rows="3"
                   placeholder="Tell us about your needs.."
                 ></textarea>
@@ -457,8 +457,7 @@ function Contact() {
           Map Section:
         </p>
         <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-8 md:mb-16">
-          Here where you can find us! We are easy to find and always ready to
-          connect.
+          Here where you can find us! Very simple to find and ready to assist you.
         </h3>
 
         <div className="overflow-hidden rounded-lg shadow-md mb-6">

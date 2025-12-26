@@ -15,12 +15,11 @@ export default function GrowthOpportunities() {
         { label: "Strengthen trust and build long-term customer loyalty in your local area.", image: "/about/trust.jpg" },
       ]
       : [
-        { label: "Expand Your Network By Connecting With More Retailers Across Towns And Villages.", image: "/about/network.jpg" },
-        { label: "Earn Commission From Every Transaction Made By Your Retailer Network.", image: "/about/commision.jpg" },
-        { label: "Receive A Fixed Monthly Salary If You Achieve Your Monthly Target.", image: "/about/ccs.jpg" },
-        { label: "Earn An Additional Bonus For Every New Retailer You Onboard.", image: "/about/gift.jpg" },
-        { label: "Grow A Consistent Income With Clear Slabs And Transparent Settlements.", image: "/about/iincre.jpg" },
-        { label: "Strengthen Your Position As A Trusted Digital Service Provider In Your Region.", image: "/about/regional.jpg" },
+        { label: "Connect with more retailers in nearby towns and villages.", image: "/about/network.jpg" },
+        { label: "Get commission from every transaction made by your retailer network.", image: "/about/commision.jpg" },
+        { label: "Receive a fixed monthly salary when you meet your targets.", image: "/about/ccs.jpg" },
+        { label: "Earn additional bonuses for every retailer you onboard.", image: "/about/gift.jpg" },
+        { label: "Enjoy steady income with clear slabs and transparent settlements.", image: "/about/iincre.jpg" },
       ];
 
   return (
@@ -36,7 +35,7 @@ export default function GrowthOpportunities() {
               </span>{" "}
            Retailer Revenue
             </h2>
- <p className="text-lg text-gray-600 max-w-prose leading-relaxed">
+            <p className="text-lg text-gray-600 max-w-prose leading-relaxed">
               We provide easy-to-use insights that help retailers take the right actions, measure success transparently, and grow faster.
             </p>
           </div>
