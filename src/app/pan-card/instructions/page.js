@@ -52,11 +52,11 @@ export default function InstructionsIndianCitizens() {
         },
         {
           title: "Full Name - Company",
-          desc: "Name: Finunique Small Private Limited.\nLast Name/Surname: S E V E N U N I Q U E T E C H S O L U T I O N S.\nFirst Name: P R I V A T E\nMiddle Name: L I M I T E D\nAvoid abbreviations like Pvt Ltd or P.Ltd. Titles like Shri, Smt., Dr. should not be used.",
+          desc: "Name: Finunique Small Private Limited.\nLast Name/Surname: F I N U N I Q U E S M A L L  P R I V A T E  L I M I T E D .\nFirst Name: P R I V A T E\nMiddle Name: L I M I T E D\nAvoid abbreviations like Pvt Ltd or P.Ltd. Titles like Shri, Smt., Dr. should not be used.",
         },
         {
           title: "Name on pancard",
-          desc: "Individual alternatives: V I V E K K U M A R S I N G H, V. K. S I N G H, V I V E K K. S I N G H.\nCompany name: S E V E N U N I Q U E T E C H S O L U T I O N S P R I V A T E L I M I T E D.",
+          desc: "Individual alternatives: V I V E K K U M A R S I N G H, V. K. S I N G H, V I V E K K. S I N G H.\nCompany name:  F I N U N I Q U E S M A L L  P R I V A T E  L I M I T E D.",
         },
         {
           title: "Previous Names",
