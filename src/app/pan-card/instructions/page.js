@@ -126,7 +126,6 @@ export default function InstructionsIndianCitizens() {
   return (
     <>
         <Instructions items={instructionsData} />
-
     </>
   );
 }
