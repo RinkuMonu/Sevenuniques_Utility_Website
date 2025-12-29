@@ -40,7 +40,6 @@ export default function GrowthOpportunities() {
             </p>
           </div>
 
-          {/* Audience Switcher */}
           <div className="flex flex-col gap-6">
             <div className="inline-grid grid-cols-2 rounded-lg border border-gray-300 bg-gray-100 p-1 w-fit">
               {["retailers", "distributors"].map((v) => (
@@ -59,7 +58,7 @@ export default function GrowthOpportunities() {
           </div>
         </div>
 
-        {/* Right Section */}
+    
         <div className="flex flex-col gap-8">
           {/* Image */}
           <div className="relative overflow-hidden rounded-xl shadow-lg">
@@ -83,11 +82,10 @@ export default function GrowthOpportunities() {
               {audience === "retailers" ? "Retail execution" : "Distributor network"}
             </span>
           </div>
-
         </div>
       </div>
 
-      {/* KPI Cards */}
+  
       <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 mt-10">
         {kpis.map((k) => (
           <div
