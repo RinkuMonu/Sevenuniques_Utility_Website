@@ -20,7 +20,7 @@ function HomeSecurity() {
                             </h3>
                             <p className="mt-6 max-w-2xl text-gray-400">
                              Protecting Your Data, Empowering Your Business
-"With strong encryption and reliable security systems, we make sure your business data remains secure while you focus on building success."
+                                With strong encryption and reliable security systems, we make sure your business data remains secure while you focus on building success.
 
                             </p>
                         </div>
