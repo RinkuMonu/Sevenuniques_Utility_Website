@@ -15,18 +15,18 @@ import DynamicTable from '../../../../components/DynamicTable'
 
 export default function page() {
     const data = {
-        subheading: 'TICKET BOOKING',
-        heading: 'Apka Safar, Hamara Support',
-        description: 'Book your flights, hotels, trains, or buses easily and travel without worries, plan smart, and have fun throughout  your journey.',
+        subheading: 'Commercial Vehicle Insurance',
+        heading: 'Jab Gadi Safe, To Business Safe',
+        description: 'Protect your business vehicles with reliable insurance coverage that safeguards against accidents, damages, theft, and third-party liabilities so your operations never slow down.',
         bgImage: '/image/insurance-bg.png',
         centerImage: '/image/truck.png',
     };
     const aboutData = {
         badge: "About Us",
-        heading: "Your Trusted Partner in Bike Insurance",
+        heading: "Your Reliable Partner in Commercial Vehicle Insurance",
         paragraphs: [
-            "We understand that your bike is more than just a vehicle - it's your freedom, your passion, and your daily companion. That's why we've dedicated ourselves to providing comprehensive insurance coverage that protects what matters most to you.",
-            "With over a decade of experience in the insurance industry, we've helped thousands of riders find the perfect coverage for their needs. Our commitment to transparency, quick claim settlements, and customer satisfaction has made us a leading choice for bike insurance.",
+            "We know your commercial vehicle is more than just a means of transport as it is the backbone of your business. That’s why we focus on providing comprehensive insurance solutions that safeguard your vehicles, your cargo, and your livelihood.",
+            "With years of experience in the insurance sector, we’ve supported countless businesses in finding coverage that fits their specific needs. Our commitment to transparent policies, fast claim settlements, and exceptional customer service makes us a trusted partner for commercial vehicle owners across India.",
         ],
         stats: [
             { value: "50K+", label: "Happy Customers" },
@@ -44,165 +44,151 @@ export default function page() {
         },
     };
 
-    const featuresData = {
-        sectionTitle: "Comprehensive Bike Insurance Features",
-        sectionDesc:
-            "Protect your bike with our extensive coverage options designed to give you complete peace of mind on every ride.",
-        features: [
-            {
-                icon: Shield,
-                title: "Comprehensive Coverage",
-                description:
-                    "Complete protection against theft, accidents, natural disasters, and third-party liabilities.",
-            },
-            {
-                icon: Clock,
-                title: "Instant Policy Issuance",
-                description:
-                    "Get your bike insured in minutes with our quick and hassle-free digital process.",
-            },
-            {
-                icon: DollarSign,
-                title: "Affordable Premiums",
-                description:
-                    "Competitive pricing with flexible payment options and attractive discounts for safe riders.",
-            },
-            {
-                icon: FileText,
-                title: "Easy Claims Process",
-                description:
-                    "Simple, transparent claims settlement with minimal documentation and quick approvals.",
-            },
-            {
-                icon: Headphones,
-                title: "24/7 Customer Support",
-                description:
-                    "Round-the-clock assistance for policy queries, claims, and roadside emergencies.",
-            },
-            {
-                icon: Award,
-                title: "Cashless Repairs",
-                description:
-                    "Access to 5000+ network garages across India for hassle-free cashless repairs.",
-            },
-        ],
-    };
+    // const featuresData = {
+    //     sectionTitle: "Comprehensive Bike Insurance Features",
+    //     sectionDesc:
+    //         "Protect your bike with our extensive coverage options designed to give you complete peace of mind on every ride.",
+    //     features: [
+    //         {
+    //             icon: Shield,
+    //             title: "Comprehensive Coverage",
+    //             description:
+    //                 "Complete protection against theft, accidents, natural disasters, and third-party liabilities.",
+    //         },
+    //         {
+    //             icon: Clock,
+    //             title: "Instant Policy Issuance",
+    //             description:
+    //                 "Get your bike insured in minutes with our quick and hassle-free digital process.",
+    //         },
+    //         {
+    //             icon: DollarSign,
+    //             title: "Affordable Premiums",
+    //             description:
+    //                 "Competitive pricing with flexible payment options and attractive discounts for safe riders.",
+    //         },
+    //         {
+    //             icon: FileText,
+    //             title: "Easy Claims Process",
+    //             description:
+    //                 "Simple, transparent claims settlement with minimal documentation and quick approvals.",
+    //         },
+    //         {
+    //             icon: Headphones,
+    //             title: "24/7 Customer Support",
+    //             description:
+    //                 "Round-the-clock assistance for policy queries, claims, and roadside emergencies.",
+    //         },
+    //         {
+    //             icon: Award,
+    //             title: "Cashless Repairs",
+    //             description:
+    //                 "Access to 5000+ network garages across India for hassle-free cashless repairs.",
+    //         },
+    //     ],
+    // };
 
     
 const whydata = {
-  title1: "Why Choose BikeSecure",
-  title2: "  India's Most Trusted Bike Insurance Partner",
-  desc: "     We provide comprehensive bike insurance solutions with unmatched benefits and customer service. Join over 1 million satisfied riders.",
-  features: [
-    {
-      icon: Shield,
-      title: "Comprehensive Coverage",
-      description: "Complete protection against accidents, theft, natural calamities, and third-party liabilities.",
-    },
-    {
-      icon: Clock,
-      title: "Instant Policy Issuance",
-      description: "Get your bike insured in minutes with our quick and easy online process.",
-    },
-    {
-      icon: Headphones,
-      title: "24/7 Customer Support",
-      description: "Round-the-clock assistance for claims, queries, and emergency roadside support.",
-    },
-    {
-      icon: BadgeCheck,
-      title: "Cashless Claims",
-      description: "Network of 5000+ garages across India for hassle-free cashless repairs.",
-    },
-    {
-      icon: Wallet,
-      title: "Affordable Premiums",
-      description: "Best rates in the market with flexible payment options and no hidden charges.",
-    },
-    {
-      icon: FileCheck,
-      title: "Quick Claim Settlement",
-      description: "Fast and transparent claim process with 95% settlement rate within 7 days.",
-    },
-  ]
+  title1: "Why Choose CommercialSecure",
+  title2: "India's Most Trusted Commercial Insurancess Partner",
+  desc: "We provide comprehensive commercial insurance solutions with unmatched benefits and customer service. Join over 1 million satisfied riders.",
+  features:  [
+                {
+                  icon: Shield,
+                  title: "Comprehensive Coverage",
+                  description: "Safeguard your bike from accidents, theft, natural events, and third-party liabilities.",
+                },
+                {
+                  icon: Clock,
+                  title: "Instant Policy Issuance",
+                  description: "Get your bike insured online in minutes through a quick, simple, and paperless process",
+                },
+                {
+                  icon: Headphones,
+                  title: "24/7 Customer Support",
+                  description: "Quick and dependable assistance for claims, policies, and roadside emergencies 24/7.",
+                },
+                {
+                  icon: BadgeCheck,
+                  title: "Cashless Claims",
+                  description: "Get your bike repaired at 5000+ network garages across India without paying cash.",
+                },
+                {
+                  icon: Wallet,
+                  title: "Affordable Premiums",
+                  description: "Get competitive rates with flexible payment options and zero hidden charges.",
+                },
+                {
+                  icon: FileCheck,
+                  title: "Quick Claim Settlement",
+                  description: "Get your claims processed quickly with a 95% settlement rate within 7 days.",
+                },
+              ]
 }
 
 
 
     const processdata = {
         title1: "Simple & Fast Process",
-        title2: "Get Insured in 4 Easy Steps",
-        desc: "  Our streamlined process ensures you get your bike insurance in minutes, not hours. No paperwork, no hassle.",
+        title2: "Fast Insurance in 4 Steps",
+        desc: "Paperless, quick, and simple get full coverage online in minutes for your Business Vehicle.",
         steps: [
             {
                 number: "1",
                 icon: FileText,
-                title: "Enter Bike Details",
-                description: "Provide your bike registration number and basic details in our simple form.",
+                title: "Enter Vehicle Details",
+                description: "Provide your Vehicle registration number and basic information in our simple, user-friendly form.",
             },
             {
                 number: "2",
                 icon: Search,
                 title: "Compare Plans",
-                description: "View and compare multiple insurance plans tailored to your needs and budget.",
+                description: "Explore and compare various vehicle insurance plans to choose the one that best fits your needs, whether it’s a new policy or renewal.",
             },
             {
                 number: "3",
                 icon: CreditCard,
                 title: "Make Payment",
-                description: "Choose your preferred plan and complete secure payment using multiple options.",
+                description: "Select your preferred plan and complete a secure online payment using multiple convenient options.",
             },
             {
                 number: "4",
                 icon: CheckCircle,
                 title: "Get Instant Policy",
-                description: "Receive your policy document instantly via email and SMS. Start riding protected!",
+                description: "Receive your insurance policy immediately via email and SMS. Ride safely and confidently from day one.",
             },
         ]
     }
 
-    const faqs = [
-  {
-    question: "What does bike insurance cover?",
-    answer:
-      "Bike insurance covers damages to your vehicle due to accidents, theft, fire, natural calamities, and third-party liabilities. Comprehensive plans also include personal accident cover for the rider and passengers.",
-  },
-  {
-    question: "Is bike insurance mandatory in India?",
-    answer:
-      "Yes, third-party bike insurance is mandatory as per the Motor Vehicles Act, 1988. However, comprehensive insurance is recommended for complete protection of your bike and yourself.",
-  },
+ const faqs = [
   {
     question: "How is the premium calculated?",
     answer:
-      "Premium is calculated based on factors like bike model, age, cubic capacity, location (IDV), add-on covers selected, and your claim history. Our smart calculator provides instant quotes.",
+      "The premium is calculated based on factors such as vehicle type, age, location, usage, selected add-on covers, and your previous claim history.",
   },
   {
-    question: "What is IDV in bike insurance?",
+    question: "What is IDV?",
     answer:
-      "IDV (Insured Declared Value) is the current market value of your bike. It is the maximum amount you can claim in case of total loss or theft. IDV decreases with the age of the vehicle.",
+      "Insured Declared Value (IDV) is your vehicle’s current market value. It represents the maximum amount you can claim in case of total loss or theft.",
   },
   {
     question: "How do I file a claim?",
     answer:
-      "You can file a claim by calling our 24/7 helpline, through our mobile app, or website. For cashless claims, visit any of our 5000+ network garages. Our team will guide you through the entire process.",
+      "You can file a claim through our 24/7 helpline, mobile app, or website. Cashless claims are available at 5000+ network garages.",
   },
   {
-    question: "Can I transfer my insurance to a new bike?",
+    question: "Can I transfer my insurance to a new vehicle?",
     answer:
-      "No, bike insurance is vehicle-specific and cannot be transferred to a new bike. However, if you sell your bike, the insurance can be transferred to the new owner with proper documentation.",
+      "No, insurance policies are vehicle-specific and cannot be transferred to a new vehicle. However, the policy can be transferred to a new owner if you sell the vehicle.",
   },
   {
     question: "What are add-on covers?",
     answer:
-      "Add-on covers are optional coverages like zero depreciation, engine protection, roadside assistance, consumables cover, and return to invoice. These enhance your basic policy coverage.",
+      "Add-on covers are optional protections such as zero depreciation, engine cover, roadside assistance, and return-to-invoice that enhance your basic policy coverage.",
   },
-  {
-    question: "How long does claim settlement take?",
-    answer:
-      "For cashless claims at network garages, approval is instant. For reimbursement claims, we settle 95% of claims within 7 days after receiving all required documents.",
-  },
-]
+];
+
   const headers = [
         { key: 'rep', label: 'Sales Rep' },
         { key: 'dealId', label: 'Deal ID' },
@@ -222,7 +208,7 @@ const whydata = {
         <>
             <Herobanner data={data} />
             <AboutSection aboutData={aboutData} />
-            <Features data={featuresData} />
+            {/* <Features data={featuresData} /> */}
             <Process processdata={processdata} />
             <WhyChooseUs whydata={whydata} />
             <DynamicTable  headers={headers} rows={rows}/>

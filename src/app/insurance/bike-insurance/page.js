@@ -14,18 +14,18 @@ import DynamicTable from '../../../../components/DynamicTable'
 
 export default function page() {
   const data = {
-    subheading: 'BEST ONLINE TWO-WHEELER INSURANCE.',
-    heading: 'Har Ride Ke Saath, Full Protection Ka Saath.',
-    description: 'Insure your bike with the best online two-wheeler insurance. Compare and select coverage in case of accidents, theft, or natural calamities, and ride without any hassle or worry.',
+    subheading: 'Best Bike Insurance Online',
+    heading: 'Har Ride Ke Liye Smart Protection',
+    description: 'Insure your bike online quickly. Get protection against accidents, theft, or natural disasters. Compare plans, enjoy instant approval, and ride confidently without any hassle or worry',
     bgImage: '/image/insurance-bg.png',
     centerImage: '/image/bike.png',
   };
   const aboutData = {
     badge: "About Us",
-    heading: "Your reliable bike insurance Partner",
+    heading: "Your Trusted Bike Insurance Partner",
     paragraphs: [
-      "You have made your bike more than just a vehicle; it is your freedom, your passion, and your day-to-day companion. That is why we work on offering the perfect bike insurance that protects what is of utmost importance to you.",
-      "As the most experienced insurance industry player, with more than 10 years of experience, we made sure to assist thousands of riders and get them the cover they needed. We are passionate about transparency, expedited settlement of claims, and satisfied customers, and that has made us their favorite bike insurance online",
+      "Your bike is more than just a vehicle as it’s your freedom, your passion, and your everyday companion. That’s why we focus on providing bike insurance that truly protects what matters most to you.",
+      "With over 10 years of experience in the insurance industry, we’ve assisted thousands of riders in getting the coverage they need. Our commitment to transparency, fast claim settlements, and customer satisfaction has made us a preferred choice for online bike insurance.",
     ],
     stats: [
       { value: "50K+", label: "Happy Customers" },
@@ -43,85 +43,85 @@ export default function page() {
     },
   };
 
-  const featuresData = {
-    sectionTitle: "Elaborated Bike Insurance Plans",
-    sectionDesc:
-      "Get our wide range of two-wheeler insurance to cover your bike, a policy that would ensure utmost peace of mind when riding your bike.",
-    features: [
-      {
-        icon: Shield,
-        title: "Comprehensive Coverage",
-        description:
-          "Complete coverage against accidents, theft, natural disasters, and third-party cover.",
-      },
-      {
-        icon: Clock,
-        title: "Instant Policy Issuance",
-        description:
-          "In a few minutes, you can get your bike insured online in the most convenient and simple way.",
-      },
-      {
-        icon: DollarSign,
-        title: "Affordable Premiums",
-        description:
-          "Low charges and captivating discounts to save riders with flexibility in payment.",
-      },
-      {
-        icon: FileText,
-        title: "Easy Claims Process",
-        description:
-          "Uncomplicated and clear claims settlement having minimum documentation and quick approvals.",
-      },
-      {
-        icon: Headphones,
-        title: "24/7 Customer Support",
-        description:
-          "24/7 customer support for policy questions, claims, and roadside emergencies.",
-      },
-      {
-        icon: Award,
-        title: "Cashless Repairs",
-        description:
-          "Get 5000+ network garages in India to shop painlessly without cash.",
-      },
-    ],
-  };
+  // const featuresData = {
+  //   sectionTitle: "Elaborated Bike Insurance Plans",
+  //   sectionDesc:
+  //     "Get our wide range of two-wheeler insurance to cover your bike, a policy that would ensure utmost peace of mind when riding your bike.",
+  //   features: [
+  //     {
+  //       icon: Shield,
+  //       title: "Comprehensive Coverage",
+  //       description:
+  //         "Complete coverage against accidents, theft, natural disasters, and third-party cover.",
+  //     },
+  //     {
+  //       icon: Clock,
+  //       title: "Instant Policy Issuance",
+  //       description:
+  //         "In a few minutes, you can get your bike insured online in the most convenient and simple way.",
+  //     },
+  //     {
+  //       icon: DollarSign,
+  //       title: "Affordable Premiums",
+  //       description:
+  //         "Low charges and captivating discounts to save riders with flexibility in payment.",
+  //     },
+  //     {
+  //       icon: FileText,
+  //       title: "Easy Claims Process",
+  //       description:
+  //         "Uncomplicated and clear claims settlement having minimum documentation and quick approvals.",
+  //     },
+  //     {
+  //       icon: Headphones,
+  //       title: "24/7 Customer Support",
+  //       description:
+  //         "24/7 customer support for policy questions, claims, and roadside emergencies.",
+  //     },
+  //     {
+  //       icon: Award,
+  //       title: "Cashless Repairs",
+  //       description:
+  //         "Get 5000+ network garages in India to shop painlessly without cash.",
+  //     },
+  //   ],
+  // };
 
 
   const whydata = {
-    title1: "Why Choose BikeSecure ?",
-    title2: "The Best Insurance Company for Bikes in India.",
-    desc: "We have end-to-end two-wheeler insurance plans with unparalleled benefits and customer care. Sign up with more than 1 million happy riders who have trusted us to secure their bikes.",
+    title1: "Why Choose BikeSecure?",
+    title2: "India’s Most Trusted Bike Insurance Partner",
+    desc: "We offer comprehensive two-wheeler insurance plans with unmatched benefits and dedicated customer support. Join over 1 million satisfied riders who trust us to protect their bikes.",
     features: [
       {
         icon: Shield,
         title: "Comprehensive Coverage",
-        description: "Complete coverage against accident, theft, natural disasters, and third-party liability.",
+        description: "Safeguard your bike from accidents, theft, natural events, and third-party liabilities.",
       },
       {
         icon: Clock,
         title: "Instant Policy Issuance",
-        description: "Insure your bike within minutes easily through our digital and hassle-free process.",
+        description: "Get your bike insured online in minutes through a quick, simple, and paperless process",
       },
       {
         icon: Headphones,
         title: "24/7 Customer Support",
-        description: "24-hour service for policy questions, claims, and roadside service.",
+        description: "Quick and dependable assistance for claims, policies, and roadside emergencies 24/7.",
       },
       {
         icon: BadgeCheck,
         title: "Cashless Claims",
-        description: "Repairs in 5000+ network garages throughout India with ease and without cash.",
+        description: "Get your bike repaired at 5000+ network garages across India without paying cash.",
       },
       {
         icon: Wallet,
         title: "Affordable Premiums",
-        description: "Low competitive prices, options of payment, and no extra charges",
+        description: "Get competitive rates with flexible payment options and zero hidden charges.",
       },
       {
         icon: FileCheck,
         title: "Quick Claim Settlement",
-        description: "Quick and open claims having a 95 percent settlement rate in 7 days.",
+        description: "Get your claims processed quickly with a 95% settlement rate within 7 days.",
       },
     ]
   }
@@ -130,77 +130,63 @@ export default function page() {
 
   const processdata = {
     title1: "Simple & Fast Process",
-    title2: "Get Insured in 4 Easy Steps",
-    desc: "Our fast and efficient system also sees you having your two-wheeler insurance within a few  minutes. No paperwork, no hassle.",
+    title2: "Fast Insurance in 4 Steps",
+    desc: "Paperless, quick, and simple get full two-wheeler coverage online in minutes.",
     steps: [
       {
         number: "1",
         icon: FileText,
-        title: "Enter Bike Details",
-        description: "Enter your bike registration number and other simple information in our simple form.",
+        title: "Enter Vechile Details",
+        description: "Provide your Vehicle registration number and basic information in our simple, user-friendly form.",
       },
       {
         number: "2",
         icon: Search,
         title: "Compare Plans",
-        description: "Compare and view various bike insurance plans according to your requirements, either in the case of new two-wheeler insurance or in the case of policy renewal online",
+        description: "Explore and compare various vehicle insurance plans to choose the one that best fits your needs, whether it’s a new policy or renewal.",
       },
       {
         number: "3",
         icon: CreditCard,
         title: "Make Payment",
-        description: "Select your plan of choice and do a secure online payment using various choices",
+        description: "Select your preferred plan and complete a secure online payment using multiple convenient options.",
       },
       {
         number: "4",
         icon: CheckCircle,
         title: "Get Instant Policy",
-        description: "Get your insurance policy document immediately through email and SMS. Ride protected from day one!",
+        description: "Receive your insurance policy immediately via email and SMS. Ride safely and confidently from day one.",
       },
     ]
   }
 
   const faqs = [
     {
-      question: "What does the bike insurance include?",
+      question: "What does bike insurance cover?",
       answer:
-        "Accidents, theft, fire, natural calamities, and third-party liabilities can be covered under bike insurance. There are also optional covers, such as personal accidents, roadside assistance, and others that can be added",
+        "Accidents, theft, fire, natural disasters, and third-party liabilities.",
     },
     {
-      question: "Do you have bike insurance in India?",
+      question: "Is bike insurance mandatory in India?",
       answer:
-        "Yes, third-party liability insurance is compulsory according to the Indian laws. Extensive policies to cover your bike are unnecessary but very welcome.",
+        "Yes, third-party bike insurance is compulsory by law.",
     },
     {
-      question: "What is the calculation of the premium?",
+      question: "How is the bike insurance premium calculated?",
       answer:
-        "The premiums will depend on the IDV (Insured Declared Value) of your bike, age, engine capacity, location, and history of previous claims. The price is also influenced by the add-ons and no-claim bonuses",
+        "Based on IDV, bike age, engine capacity, location, claims history, and add-ons.",
     },
     {
       question: "What is IDV in bike insurance?",
       answer:
-        "IDV is an acronym that means insured declared value This is the limit that your insurer will give out in case your bike is stolen or totally damaged.",
+        "IDV is the maximum amount paid if your bike is stolen or totally damaged.",
     },
     {
-      question: "How do I file a claim?",
+      question: "How can I file a bike insurance claim?",
       answer:
-        "To claim, you need to report to your insurer at once, in addition to providing the insurer with the required documents (FIR, copy of your policy, and bills of repair) and having your bike repaired in one of the network garages which does not require cash",
+        "Report the incident and claim through a network garage or online process.",
     },
-    {
-      question: "Is it possible to transfer the insurance to a different bike?",
-      answer:
-        "Yes,garages, the majority of insurers permit a transfer of the policy in case you sell your old bicycle and purchase a new bike. The premium can also be changed according to the new bike in terms of IDV and age.",
-    },
-    {
-      question: "What are add-on covers?",
-      answer:
-        "Add-ons are optional coverings that offer additional protection to your usual policy, e.g., zero depreciation, roadside assistance, engine protection, and personal accident cover",
-    },
-    {
-      question: "What is the length of the claim settlement?",
-      answer:
-        "Cashless repairs take less than 7-15 days. The quick claim settlement is based on correct documentation and reporting",
-    },
+    
   ]
   const headers = [
     { key: 'rep', label: 'Sales Rep' },
@@ -221,7 +207,7 @@ export default function page() {
     <>
       <Herobanner data={data} />
       <AboutSection aboutData={aboutData} />
-      <Features data={featuresData} />
+      {/* <Features data={Features} /> */}
       <Process processdata={processdata} />
       <WhyChooseUs whydata={whydata} />
       <DynamicTable headers={headers} rows={rows} />

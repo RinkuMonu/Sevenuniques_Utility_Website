@@ -44,7 +44,7 @@ const App = ({headers , rows}) => {
 
     return (
         <div className="mt-12 border-b-2 border-gray-200 pb-10">
-            <div className="w-full max-w-7xl  mx-auto">
+            <div className="w-full max-w-6xl mx-auto">
                 <header className="text-center mb-8">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#0d3b4f] mb-4 text-balance">
                         Commission Payouts

@@ -10,10 +10,10 @@ import Link from "next/link";
 function page() {
   const data = {
     id: 1,
-    subheading: "BBPS",
+    subheading: "Ek Click me hoga Bhugtan vo bhi Bina kisi Uljhan ",
     heading: "Ek System, Har Bill Ka Solution",
     description:
-      "Make all your payments hassle-free using the integrated bill payment system in India. Safe, quick, and hassle-free.",
+      "Make all your payments hassle-free using the integrated bill payment system in India. Safe, quick, and hassle-free",
     bgImage: "/image/services-bbps-bg.png",
     centerImage: "/image/service-img.png",
   };

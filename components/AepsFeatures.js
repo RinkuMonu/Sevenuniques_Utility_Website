@@ -24,7 +24,7 @@ function AepsFeatures() {
               </p>
             </div>
             <div className="md:w-1/2">
-              <Image src="/aeps/f2.png" alt="Secure Transactions" width={400} height={400} className="rounded-lg" />
+              <Image src="/aeps/f23d.png" alt="Secure Transactions" width={400} height={400} className="rounded-lg" />
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
@@ -42,7 +42,7 @@ function AepsFeatures() {
                 Banking services are available conveniently at shops within your neighborhood.
                 </p>
               </div>
-              <Image src="/aeps/f4.png" alt="Cash Withdrawal" width={180} height={180} className="hidden md:block absolute top-2 left-0" />
+              <Image src="/aeps/f43d.png" alt="Cash Withdrawal" width={160} height={160} className="hidden md:block absolute top-27 left-0" />
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ function AepsFeatures() {
           <p className="text-[#5D5D5D] text-base mb-4">
            We offer 24/7 customer assistance to ensure smooth and worry-free banking.
           </p>
-          <Image src="/aeps/f6.png" alt="Customer Support" width={400} height={400} className="rounded-lg " />
+          <Image src="/aeps/f63d.png" alt="Customer Support" width={400} height={400} className="rounded-lg " />
         </div>
       </div>
     </div>

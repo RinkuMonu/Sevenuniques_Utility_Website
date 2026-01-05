@@ -114,7 +114,7 @@ const features = [
             alt="High-performance sports car"
             width={600}
             height={600}
-            className="relative w-full h-72 rounded-2xl shadow-2xl"
+            className="relative w-full h-[36vh] rounded-2xl shadow-2xl"
           />
         </div>
 

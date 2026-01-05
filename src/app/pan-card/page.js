@@ -23,9 +23,9 @@ function page() {
   const data = {
     id: 1,
     subheading: "PAN Card",
-    heading: "Apki Pehchaan, Apki Power",
+    heading: "Pehchaan Bhi, Power Bhi",
     description:
-      "Get your PAN Card fast and easily with Finunique. Apply your PAN to do your financial transactions, tax filing, and identity verification in just a few steps.",
+      "Apply for your PAN Card easily with Finunique. Enjoy a smooth online process that helps you manage taxes, complete financial transactions, and verify your identity without stress",
     bgImage: "/pan/panbg.png",
     centerImage: "/pan/pan1.png",
   };
@@ -43,16 +43,16 @@ function page() {
   );
   const info = [
     {
-      title: "Apply now, and get PAN immediately.",
+      title: "Apply now and get your PAN instantly",
       description:
-        "Swipe your PAN Card with Finunique. Apply online, send your documents, and receive your acknowledgment within seconds, having a hassle-free experience. Whether you are filling in your personal information or attaching identity and address documents, our hassle-free system makes your application process without a hustle. Monitor your PAN application in real time, update it, and have your PAN delivered to your registered address easily and conveniently.",
-      image: "/image/pan-sideimg1.png"
+        "Apply online with Finunique, submit your details and documents quickly, and receive your acknowledgment in seconds. Our streamlined process makes it easy to complete your application, upload identity and address proofs, and track your PAN status in real time. Get your PAN delivered conveniently to your registered address.",
+      image: "/image/pan-sideimg13d.png"
     },
     {
-      title: "Your Identity, Your Power.",
+      title: "Your Identity, Your Power",
       description:
-        "This is done easily as you apply your PAN Card with Finunique. The entire application process is unfortunately very easy, as you do it online, attach the needed documents, and receive instant recognition. Have a safe and stable verification process. Be sure to enter both your personal and address information; this will help you to be on time with your PAN Card in hand. Keep in touch with real-time application tracking. Get your PAN at your registered address within the shortest time and begin using it to carry out financial transactions and taxes with confidence.",
-      image: "/image/panimg-2.png"
+        "Applying for your PAN Card with Finunique is simple, secure, and fully online. Submit your details, upload the required documents, and receive instant acknowledgment. Our reliable verification process ensures accuracy while real-time tracking keeps you informed at every step. Get your PAN delivered quickly to your registered address and manage your financial and tax activities with confidence.",
+      image: "/image/panimg-23d.png"
     },
   ];
   const text = "PAN Card";
@@ -143,13 +143,14 @@ function page() {
       <section className="py-16">
         <PanCorrectionCard />
       </section>
+       <PanMoreinfo />
 
       <PartnersSection />
 
       <TestimonialSlider />
 
       <ContactBanner />
-      <PanMoreinfo />
+     
     </>
   );
 }

@@ -74,7 +74,7 @@ export default function Dos({ items }) {
           Do&#39;s & Don&#39;ts
         </h1>
         <p className="text-gray-600 text-lg text-center mb-10">
-          Important guidelines to follow for your PAN application process.
+         Important guidelines to follow for your PAN application process
         </p>
 
         {/* Vertical Timeline/Stepper */}

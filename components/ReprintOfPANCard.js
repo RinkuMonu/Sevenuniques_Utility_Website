@@ -41,19 +41,19 @@ export default function ReprintOfpancard() {
   const contentData = [
     {
       content:
-        "Request a reprint of your PAN Card quickly using online PAN services at Finunique. You can take this option in case you do not require any changes in your PAN data.",
+        "Request a reprint of your PAN Card easily through Finunique’s online PAN services. This option is available if you do not need to make any changes to your PAN information.",
     },
     {
       content:
-        "Chargeable as a fee in the case of Indian addresses. In the case of foreign addresses, it will incur a fee.",
+        "A nominal fee applies for PAN services to Indian addresses. For foreign addresses, applicable charges will be levied.",
     },
     {
       content:
-        "When you are employing our service of digital PAN Card, there are no necessary physical forms or supporting documentation.",
+        "When using our digital PAN Card service, no physical forms or supporting documents are required.",
     },
     {
       content:
-        "Only the “Address for Communication” checkbox should remain selected in this form by default.",
+        "By default, only the “Address for Communication” checkbox should be selected in this form",
     },
   ];
 
@@ -97,10 +97,7 @@ export default function ReprintOfpancard() {
             Reprint of PAN Card
           </h3>
           <p className="text-lg mt-5 text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            In case you already have a PAN and require a duplicate or a
-            replacement card, then apply for a reprint of the PAN Card.
-            <br />
-            You will be issued with a new card with PAN details—fast and safe.
+            If you already have a PAN and need a duplicate or replacement, you can apply for a PAN card reprint. A new card with your existing PAN details will be issued quickly and securely.
           </p>
         </motion.div>
 

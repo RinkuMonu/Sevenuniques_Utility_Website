@@ -90,8 +90,8 @@ export default function HowItWorks() {
           >
             {/* Main Image */}
             <Image
-              src="/bbps/bbps5.jpg"
-              width={400}
+              src="/bbps/How3d.png"
+              width={300}
               height={400}
               alt="Professional scientist at a computer"
               className="rounded-3xl  w-full max-w-lg h-auto object-cover z-10"

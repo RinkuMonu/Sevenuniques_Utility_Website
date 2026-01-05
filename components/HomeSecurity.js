@@ -21,11 +21,11 @@ function HomeSecurity() {
                             <p className="mt-6 max-w-2xl text-gray-400">
                              Protecting Your Data, Empowering Your Business
                                 With strong encryption and reliable security systems, we make sure your business data remains secure while you focus on building success.
-
-                            </p>
+                                 </p>
                         </div>
                         <div className="mb-12">
-                            <Link href="https://utility.Finuniques.in/register" className=" text-white font-bold py-3 px-8 rounded-full transition-colors duration-300"   style={{
+                            <Link href="https://utility.Finuniques.in/register" className=" text-white font-bold py-3 px-8 rounded-full transition-colors duration-300"  
+                             style={{
     background: "linear-gradient(90deg,#358EBA  0%, #24576C 100%)"
   }}>
                                 Register now
@@ -42,7 +42,7 @@ function HomeSecurity() {
                     </div>
                 </div>
                 <div>
-                    <Image src="/home/homesecutity.png" width={400} height={400} alt='homesecutity' className='object-contain w-full h-full' />
+                    <Image src="/banner/homesecurity3d.png" width={400} height={400} alt='homesecutity' className='object-contain w-full h-full' />
                 </div>
             </div>
 

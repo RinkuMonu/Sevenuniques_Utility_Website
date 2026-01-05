@@ -73,7 +73,7 @@ export default function BBPSFeatures() {
           </div>
              <div className="flex items-center justify-center">
             <Image
-             src="/image/aeps-vec.png"
+             src="/image/aeps-vec3d.png"
               width={500}
               height={500}
               alt="Digital interface showing secure payment and data connections."

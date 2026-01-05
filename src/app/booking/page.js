@@ -26,7 +26,7 @@ function Page() {
                     { id: 4, url: "/booking/s1.png", alt: "A year-end travel promotion banner showing a hand holding a ticket through an airplane window." },
                 ],
                 booking: {
-                    title: "Book Smart,\nBook Finunique",
+                    title: "Travel Smart,\nTravel Finunique",
                     features: [
                         { cardBgImageUrl: "/booking/c1.png", iconUrl: "/booking/i1.png", text: "Best Deals, Best Service\nsirf Finunique par", boldWords: [], textColor: "text-white" },
                         { cardBgImageUrl: "/booking/c2.png", iconUrl: "/booking/i2.png", text: "Fast, Easy aur\nReliable Booking", boldWords: ["Reliable"], textColor: "text-white" },
@@ -37,20 +37,20 @@ function Page() {
                 },
                 aeps: {
                     subheading: "FLIGHT BOOKING",
-                    heading: "Flying Becomes Easy, with Finunique.",
-                    description: "With Finunique, you can easily book your flights. We guarantee that your every journey is hassle-free and quick, whether your trips are domestic or international. ",
+                    heading: "Travel Made Simple with Finunique",
+                    description: "Book your flights effortlessly with Finunique, whether for domestic or international journeys. Enjoy a smooth, hassle-free booking experience with just a few clicks. ",
                     features: [
-                        "Flights are just a few clicks away - search, select, and book the flights when you want. Get booked immediately, and fly without worries in a simple and hassle-free trip.",
-                        "Travel smarter, with flexible options, real-time support, and reliable services with Finunique. Plan your escape, whether it is a business trip or a holiday, and trust that you will have an easy and confident journey ",
+                        "Search, select, and secure your flights instantly. With flexible options, real-time support, and reliable service, your trips whether business or leisure are always stress-free and on time. ",
+                        "Fly smart, travel confidently, and make every journey seamless with Finunique.",
                     ],
                 },
                 travel: {
-                    title: "Air Travel Assured",
+                    title: "Air Travel Made Easy",
                     cards: [
-                        { title: "Booking Confirmation", description: "Book your tickets over the Internet with superior protection, no lines, no hassles." },
-                        { title: "Flexible Rescheduling", description: "Changing your plans is simple, with no additional hassle, no nonrefundable fees. Best Price Guarantee" },
-                        { title: "24/7 Customer Support", description: " Worry-free travel we provide you 24/7 Customer Support" },
-                        { title: "Safe & Secure Payments", description: "Make bookings at the convenience of online secure payment." },
+                        { title: "Instant Booking Confirmation", description: "Reserve your tickets online quickly, safely, and without any queues or hassle." },
+                        { title: "Flexible Rescheduling", description: "Change your plans effortlessly with no extra fees or penalties." },
+                        { title: "24/7 Customer Support", description: "Enjoy worry-free travel with round-the-clock assistance." },
+                        { title: "Safe & Secure Payments", description: "Book flights conveniently with our secure online payment system." },
                     ],
                     imageUrl: "/booking/air1.png",
                 },
@@ -58,25 +58,25 @@ function Page() {
                     {
                         title: "Book Today, Fly Tomorrow",
                         description: [
-                            "You have never had it easier planning your next trip. With Finunique, book flights instantly and receive confirmed tickets within minutes. Travel stress-free and enjoy your ride, whether it’s a business trip or a vacation.",
-                            "We provide secure and fast booking, whether you’re on mobile or desktop. Search flights, compare fares, and choose the most convenient timings in just a few steps.",
-                            "As a company that provides quality services and immediate response, Finunique ensures that your traveling process is stress-free throughout. Your journey with us is easy and comfortable, whenever you fly."
+                            "Planning your next trip has never been easier. With Finunique, you can book flights instantly and receive confirmed tickets within minutes. Enjoy a stress-free journey, whether it’s for business or leisure.",
+                            "Our platform offers fast, secure booking on both mobile and desktop. Compare fares, select convenient timings, and confirm your flights in just a few simple steps.",
+                            "At Finunique, we prioritize quality service and prompt support, ensuring your travel experience is smooth, comfortable, and hassle-free from start to finish."
                         ]
                     },
                     {
-                        title: "Fast and easy booking of flights.", description: [
+                        title: "Quick and Hassle-Free Flight Booking", description: [
 
-                            "Finunique saves you a few clicks to book your flights. Local or overseas, experience immediate assurance and commute without any tension.",
-                            "We identify, assess, and choose the best options as per your availability and budget. We offer a platform that promises easy booking, secure payment, and excellent support anytime, anywhere.",
-                            "Experience quick, secure, and effortless travel with Finunique. Travel in style, and every trip is a trip worth a lifetime memory.",
+                            "Finunique makes booking your flights faster and easier than ever. Whether it’s a domestic or international journey, enjoy instant confirmation and travel without worries.",
+                            "We help you find the best flights that match your schedule and budget, providing a platform with secure payments, easy booking, and reliable support anytime, anywhere.",
+                            "Travel smart, travel comfortably, and make every trip a memorable experience with Finunique.",
                         ]
                     },
                     {
-                        title: "Book your Flights Instantly", description: [
+                        title: "Instant Flight Booking with Finunique", description: [
 
-                            "Finunique allows you to book your flights within a few clicks. Local or global, find out immediately and relax.",
-                            "Compare the airlines, select the most appropriate timings and fares, and pay online safely. The process of booking is easy, fast, and convenient with us at any time and any place.",
-                            "While traveling with Finunique, there is no hassle at the beginning and end of the trip. Fly away with comfort, ease, and tranquility.",
+                            "Book your flights in just a few clicks, whether it’s a domestic or international journey. Find the best options quickly and travel with peace of mind.",
+                            "Compare airlines, choose convenient timings and fares, and make secure online payments. Our booking process is fast, simple, and available anytime, anywhere.",
+                            "With Finunique, enjoy a hassle-free travel experience from start to finish. Fly comfortably, conveniently, and stress-free.",
                         ]
                     },
 
@@ -293,8 +293,8 @@ function Page() {
     // Static top-section data
     const data = {
         subheading: 'TICKET BOOKING',
-        heading: 'Apka Safar, Hamara Support',
-        description: 'Book your flights, hotels, trains, or buses easily and travel without worries, plan smart, and have fun throughout  your journey.',
+        heading: 'Safar Ki Baat, Booking Ki Saat',
+        description: 'Easily book flights, hotels, trains, and buses all in one place. Travel hassle-free, plan smart, and enjoy every step of your adventure.',
         bgImage: '/booking/bookingbg.png',
         centerImage: '/booking/book1.png',
     };

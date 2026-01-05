@@ -21,19 +21,19 @@ function page() {
   const data = {
     id: 1,
     subheading: 'Mortgage LOAN',
-    heading: 'Ab Banaye Apne Sapno Ka Ghar , Bina Kisi Fikar',
-    description: 'You dream of buying, building, or renovating a home and we make that dream come true. With low interest rates, long repayment periods, and flexible EMIs.',
+    heading: 'Ghar Ka Sapna, EMI se Hoga Apna',
+    description: 'Make your dream home a reality with low interest rates, flexible EMIs, and easy repayment plans.',
     bgImage: '/loan/homebg.png',
     centerImage: '/loan/home.png',
   }
 
   const aepsData = {
     subheading: 'Mortgage Loan',
-    heading: 'Your Dream Home, Now a Reality Home Loans by Finunique',
-    description: 'At Finunique Small Private Limited, we bring the reality of homeownership to life. Our home loan solutions are based on simplicity, transparency, and ease of use. We offer rapid approvals, a low documentation burden, and competitive interest rates to make your home purchase process simple and stress-free.',
+    heading: 'From Dream to Doorstep, with Finunique',
+    description: 'At Finunique Small Private Limited, we make home loans simple, transparent, and stress-free. Our mortgage loan solutions offer quick approvals, minimal documentation, and competitive interest rates to help you buy your home with confidence.',
     features: [
-      'If you want to purchase your first home, buy a newly constructed home, or renovate your existing home, Finunique has an array of personalized loan plans that align with your financial objectives. We offer flexible repayment and transparent processing for you to easily plan your finances.',
-      'Our experienced team will guide you through the entire process from eligibility to documentation to final approval. We are heavily focused on helping you digitally to apply online, track your application through experienced real-time updates, and complete the process fast and with limited environmental impact. With Finunique, your dream of home ownership is closer than you think! ',
+      'Whether you are purchasing your first home, buying a new property, or renovating your existing house, Finunique provides customized loan options to match your financial goals. With flexible repayment plans and a clear process, managing your home loan becomes easy.',
+      'Our expert team supports you at every step from checking eligibility to final disbursement. Apply online, track your application in real time, and complete the process digitally with ease. With Finunique, owning your dream home is just a few steps away. ',
     ]
   };
 
@@ -64,10 +64,10 @@ function page() {
         image: "/loan/loan4.png",
         cta: "Request Calculations",
         details: [
-          "Home Loan platform of Visit Finunique.",
-          "Add the basic information: name, mobile number, Aadhaar, and PAN.",
-          "Select location and type of property.",
-          "Check the eligible amount of the loan instantly.",
+          "Visit Finunique for a fast and simple home loan process.",
+          "Enter basic details to start your application.",
+          "Choose your property details in seconds.",
+          "Know your loan eligibility instantly.",
         ],
       },
       {
@@ -76,10 +76,10 @@ function page() {
         image: "/loan/loan12.png",
         cta: "Submit Docs",
         details: [
-          "pancard and Aadhaar card upload.",
-          "Provide income documents—salary slips or bank statements.",
-          "Present property records and valuation papers.",
-          "Our system authenticates documents in a short time to process them fast.",
+          "Upload your PAN card and Aadhaar easily",
+          "Submit income proof such as salary slips or bank statements.",
+          "Add property documents and valuation details.",
+          "Our system verifies documents quickly for faster processing.",
         ],
       },
       {
@@ -88,10 +88,10 @@ function page() {
         image: "/loan/loan13.png",
         cta: "Get Construction Equipment Loan Now",
         details: [
-          "Secure approval within a short time.",
-          "Deposit of loan directly to your account.",
-          "Money changed in less than 24 hours of authorization.",
-          "Set off on the home journey now.",
+          "Get quick approval with minimal wait time.",
+          "Loan amount credited directly to your bank account.",
+          "Funds disbursed within 24 hours of approval.",
+          "Start your homeownership journey today.",
         ],
       },
     ],

@@ -9,44 +9,43 @@ const PancardApplyOnline = () => {
       {/* Left Content */}
       <div className="md:w-2/3 space-y-4">
         <div className="flex items-center gap-3 mb-4">
-         <div className="flex items-center justify-center text-[#133845]">
-  <Image
-    src="/image/thumbprint.png"
-    alt="Thumbprint Icon"
-    width={50}
-    height={50}
-    className="-ml-2 "
-  />
-</div>
+          <div className="flex items-center justify-center text-[#133845]">
+            <Image
+              src="/image/thumbprint.png"
+              alt="Thumbprint Icon"
+              width={50}
+              height={50}
+              className="-ml-2 "
+            />
+          </div>
           <h3 className="text-3xl md:text-4xl mb-4 font-bold text-[#0C3D4C]">
             Apply Online
           </h3>
         </div>
 
         <p className="text-gray-700 leading-relaxed">
-          As of April 08, 2012, the PAN applications should be provided according to the revised forms published by the Income Tax Department (ITD).
-Indian citizens are to apply with the help of Form 49A, and foreign citizens will fill out Form 49AA.
+          PAN applications must be submitted using the prescribed forms issued by the Income Tax Department (ITD). Indian citizens are required to apply using Form 49A, while foreign citizens must apply through Form 49AA.
 
         </p>
 
         <p className="text-gray-700 leading-relaxed">
-          In the case of an individual and HUF applicant, where the office address is chosen as a communication address, the office address proof and residential address proof should be given to Finunique.
+          For individual and HUF applicants who select an office address as the communication address, both office address proof and residential address proof must be submitted to Finunique.
         </p>
 
         <p className="text-gray-700 leading-relaxed">
-          According to the RBI guidelines, any online payment requires that the applicants enter their Personal Identification Number (PIN). Always ensure that you verify that your card has the PIN activated before taking out the money using a debit or credit card with your bank.
+          As per RBI guidelines, all online payments require PIN authentication. Please ensure that your debit or credit card PIN is activated with your bank before making any payment.
         </p>
       </div>
 
       {/* Right Graphic */}
       <div className="relative md:w-1/3 flex md:pl-10 ">
-<Image
-src="/image/applyonline.jpg"
-alt="apply online"
-width={300}
-height={300}
-className="rounded-lg shadow-lg"
-/>
+        <Image
+          src="/image/apllyonline3d.png"
+          alt="apply online"
+          width={300}
+          height={300}
+          className="rounded-lg shadow-lg"
+        />
       </div>
     </section>
   );

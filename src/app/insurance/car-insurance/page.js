@@ -14,18 +14,18 @@ import DynamicTable from '../../../../components/DynamicTable'
 export default function page() {
  const data = {
     subheading: 'BUY CAR INSURANCE ONLINE',
-    heading: 'Ab Har Safar Banega Sure Safar',
-    description: 'Take affordable car insurance online. Compare plans, select coverage in accidents, theft, or natural calamities, and drive without any hassle with full peace of mind.',
+    heading: 'Drive Safe, Peace of Mind Ke Saath',
+    description: 'Compare plans and get instant coverage for your car against accidents, theft, and natural events.',
     bgImage: '/image/insurance-bg.png',
     centerImage: '/image/car.png',
 };
 
 const aboutData = {
     badge: "About Us",
-    heading: "Your Reliable Partner in Car Insurance.",
+    heading: "Your Trusted Partner in Car Insurance",
     paragraphs: [
-        "We understand that your car is not just a car for you; it is your coziness, your liberty, and your constant companion. That's the reason why we offer detailed car insurance solutions to safeguard the most important things.",
-        "We hold the experience of decades in assisting thousands of drivers to purchase car insurance online and renew car insurance, as well as select the most suitable car insurance at their own cost. We have become a preferred car insurance provider of choice on the internet due to our commitment and transparency, fast payments claim, and customer satisfaction.",
+        "We know your car is more than just a vehicle, it’s your comfort, freedom, and daily companion. That’s why we provide comprehensive car insurance solutions to protect what matters most.",
+        "With decades of experience, we’ve helped thousands of drivers buy and renew car insurance online, selecting plans that fit their needs. Our focus on transparency, fast claim settlements, and customer satisfaction has made us a preferred choice for online car insurance.",
     ],
     stats: [
         { value: "50K+", label: "Happy Customers" },
@@ -43,146 +43,135 @@ const aboutData = {
     },
 };
 
-const featuresData = {
-    sectionTitle: "Comprehensive Automobile Insurance Bundle",
-    sectionDesc: "Guard your vehicle against all damages and enjoy a wide variety of car covers, which aim at providing total relaxation whenever you are driving.",
-    features: [
-        {
-            icon: Shield,
-            title: "Comprehensive Coverage",
-            description: "Complete coverage of accidents, theft, fire, natural disasters, and liabilities by third parties.",
-        },
-        {
-            icon: Clock,
-            title: "Instant Policy Issuance",
-            description: "The process of getting your car insurance policy online takes minutes to achieve the goal in a hassle-free manner.",
-        },
-        {
-            icon: DollarSign,
-            title: "Affordable Premiums",
-            description: "Competitive rates and payments and discounts for safe drivers.",
-        },
-        {
-            icon: FileText,
-            title: "Easy Claims Process",
-            description: "Minimal documentation and simple and transparent claims settlement.",
-        },
-        {
-            icon: Headphones,
-            title: "24/7 Customer Support",
-            description: "Policy inquiries, claims, and emergency roadside assistance.",
-        },
-        {
-            icon: Award,
-            title: "Cashless Repairs",
-            description: "Use the local garage to get hassle-free cashless repairs throughout the nation.",
-        },
-    ],
-};
+// const featuresData = {
+//     sectionTitle: "Comprehensive Automobile Insurance Bundle",
+//     sectionDesc: "Guard your vehicle against all damages and enjoy a wide variety of car covers, which aim at providing total relaxation whenever you are driving.",
+//     features: [
+//         {
+//             icon: Shield,
+//             title: "Comprehensive Coverage",
+//             description: "Complete coverage of accidents, theft, fire, natural disasters, and liabilities by third parties.",
+//         },
+//         {
+//             icon: Clock,
+//             title: "Instant Policy Issuance",
+//             description: "The process of getting your car insurance policy online takes minutes to achieve the goal in a hassle-free manner.",
+//         },
+//         {
+//             icon: DollarSign,
+//             title: "Affordable Premiums",
+//             description: "Competitive rates and payments and discounts for safe drivers.",
+//         },
+//         {
+//             icon: FileText,
+//             title: "Easy Claims Process",
+//             description: "Minimal documentation and simple and transparent claims settlement.",
+//         },
+//         {
+//             icon: Headphones,
+//             title: "24/7 Customer Support",
+//             description: "Policy inquiries, claims, and emergency roadside assistance.",
+//         },
+//         {
+//             icon: Award,
+//             title: "Cashless Repairs",
+//             description: "Use the local garage to get hassle-free cashless repairs throughout the nation.",
+//         },
+//     ],
+// };
 
 const whydata = {
     title1: "Why Choose Us",
-    title2: "The Best-Known Budget Car Insurance Company in India.",
-    desc: "We offer all-round coverage and insurance to our customers with the best benefits and services to the customers. On the road to 1 million content customers.",
-    features: [
-        {
+    title2: "Why Choose Finunique Insurance ",
+    desc: "Protect your vehicle from all major risks with flexible coverage options designed for stress-free driving.",
+    features:[
+          {
             icon: Shield,
             title: "Comprehensive Coverage",
-            description: "Covers accidents, theft, fire, natural disasters, and third-party liability.",
-        },
-        {
+            description: "Safeguard your bike from accidents, theft, natural events, and third-party liabilities.",
+          },
+          {
             icon: Clock,
             title: "Instant Policy Issuance",
-            description: "Insure your car in just a few minutes using an online digital platform.",
-        },
-        {
+            description: "Get your bike insured online in minutes through a quick, simple, and paperless process",
+          },
+          {
             icon: Headphones,
             title: "24/7 Customer Support",
-            description: "24-hour claims, queries, or emergency support.",
-        },
-        {
+            description: "Quick and dependable assistance for claims, policies, and roadside emergencies 24/7.",
+          },
+          {
             icon: BadgeCheck,
             title: "Cashless Claims",
-            description: "Nationwide network of garages to make repairing hassle-free and cashless.",
-        },
-        {
+            description: "Get your bike repaired at 5000+ network garages across India without paying cash.",
+          },
+          {
             icon: Wallet,
             title: "Affordable Premiums",
-            description: "Pay accordingly, by plan rates with no extra fees.",
-        },
-        {
+            description: "Get competitive rates with flexible payment options and zero hidden charges.",
+          },
+          {
             icon: FileCheck,
             title: "Quick Claim Settlement",
-            description: "Quick and open payables with 95% paid within 7 days.",
-        },
-    ]
+            description: "Get your claims processed quickly with a 95% settlement rate within 7 days.",
+          },
+        ]
 }
 
 const processdata = {
     title1: "Simple & Fast Process",
     title2: "Get Insured in 4 Easy Steps",
-    desc: "Our streamlined process ensures you get your car insurance in minutes, not hours. No paperwork, no hassle.",
+    desc: "Paperless, quick, and simple get full four-wheeler coverage online in minutes.",
     steps: [
         {
             number: "1",
             icon: FileText,
             title: "Enter Vehicle Details",
-            description: "In our form, give your car registration number and simple details.",
+            description: "Provide your Vehicle registration number and basic information in our simple, user-friendly form.",
         },
         {
             number: "2",
             icon: Search,
             title: "Compare Plans",
-            description: "Compare and contrast the plans of new car insurance, 3rd party car insurance, and first party.",
+            description: "Explore and compare various vehicle insurance plans to choose the one that best fits your needs, whether it’s a new policy or renewal.",
         },
         {
             number: "3",
             icon: CreditCard,
             title: "Make Payment",
-            description: "Full secure online payment on the policy of your choice.",
+            description: "Select your preferred plan and complete a secure online payment using multiple convenient options.",
         },
         {
             number: "4",
             icon: CheckCircle,
             title: "Get Instant Policy",
-            description: "E-mail and SMS your car insurance certificate immediately. Drive protected!",
+            description: "Receive your insurance policy immediately via email and SMS. Ride safely and confidently from day one",
         },
     ]
 }
 
 const faqs = [
     {
-        question: "What is included in car insurance?",
-        answer: "Protects against accidents, robbery, fire, natural disasters, and third-party losses. Add-on features such as engine protection and personal accident cover can be added as well.",
+        question: "What does car insurance cover?",
+        answer: "Accidents, theft, fire, natural disasters, and third-party damages",
     },
     {
-        question: "Is it obligatory to insure cars in India?",
-        answer: "Yes, there is third-party liability insurance, which is compulsory. All-encompassing coverage is not compulsory but desirable.",
+        question: "Is car insurance mandatory in India?",
+        answer: "Yes, third-party insurance is compulsory by law.",
     },
     {
-        question: "What is the calculation of the premium?",
-        answer: "Premium relies on IDV, the age of the car, engine capacity, location, previous claims, and the add-ons that are chosen.",
+        question: "How is the premium calculated?",
+        answer: "Based on IDV, car age, engine size, location, and add-ons.",
     },
     {
-        question: "What is IDV in car insurance?",
-        answer: "IDV is the Insured Declared Value, which is the highest amount that your insurance company will pay in case your car is stolen or utterly damaged.",
+        question: "What is IDV?",
+        answer: "The maximum amount paid if the car is stolen or totally damaged.",
     },
     {
         question: "How do I file a claim?",
-        answer: "Claim cashless via the networked garage, report, and hand in the necessary documents.",
+        answer: "Report the incident and claim through a network garage or online.",
     },
-    {
-        question: "Am I able to transfer my insurance to another car?",
-        answer: "Yes, policies can be transferred or renewed to a new vehicle where adjustment of premium based on IDV is made.",
-    },
-    {
-        question: "What are add-on covers?",
-        answer: "Additional protection such as optional covers includes zero depreciation, roadside assistance, engine protection, and personal accident cover.",
-    },
-    {
-        question: "What is the duration of the settlement of claims?",
-        answer: "The claims are usually closed in between 7 and 15 days depending on the adequate documentation and prompt reporting.",
-    },
+    
 ]
     const headers = [
         { key: 'rep', label: 'Sales Rep' },
@@ -203,7 +192,7 @@ const faqs = [
         <>
             <Herobanner data={data} />
             <AboutSection aboutData={aboutData} />
-            <Features data={featuresData} />
+            {/* <Features data={featuresData} /> */}
             <Process processdata={processdata} />
             <WhyChooseUs whydata={whydata} />
             <FAQ faqs={faqs}/>

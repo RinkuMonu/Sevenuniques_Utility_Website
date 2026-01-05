@@ -20,19 +20,19 @@ function page() {
   const data = {
     id: 1,
     subheading: 'CAR LOAN',
-    heading: 'Apni Car Ka Sapna, Ab Aasaan',
-    description: 'Our car loans are easy and affordable, and get you the car of your dreams. It could be a new car or an old car; we have a quick approval with low interest and repayment terms that are flexible to make your dream car come true. ',
+    heading: 'Car Ka Plan, Ab krein Done!',
+    description: 'Get your dream car with ease! Whether it’s brand new or pre-owned, our car loans offer quick approvals, low interest rates, and flexible repayment options designed to fit your budget. Fast, simple, and tailored just for you. ',
     bgImage: '/loan/carbg.png',
     centerImage: '/loan/car1.png',
   }
 
   const aepsData = {
     subheading: 'CAR LOAN',
-    heading: 'Owned Car Loan',
-    description: 'Our owned car loans will get you the best deal on your next used car. We provide low-cost financing solutions on certified and non-certified used vehicles, with fast approvals and a flexible repayment schedule. ',
+    heading: 'Own Your Dream Car with Ease',
+    description: 'Our car loans make buying your next vehicle simple and affordable. We offer financing solutions for both certified and non-certified used cars, with quick approvals and flexible repayment options.',
     features: [
-      'We have loans that will allow you to purchase quality used cars without overworking your budget. Low interest rates, minimal paperwork, and quick processing will get you to drive home with the perfect car.',
-      'We fund cars of every model and make and loan tenures that fit your budget. We have a clear and transparent process and no surprises ',
+      'Purchase quality cars without stretching your budget. Enjoy low interest rates, minimal paperwork, and fast processing so you can drive home your perfect car sooner',
+      'We provide loans for all car makes and models, with tenures tailored to your budget. Our process is transparent, with no hidden charges or surprises. ',
     ]
   };
 
@@ -59,43 +59,43 @@ function page() {
       </>
     ),
     sliderData: [
-      {
-        step: 1,
-        title: "Apply Online",
-        image: "/loan/loan4.png",
-        cta: "Request Calculations",
-        details: [
-          "Finunique car loan sites.",
-          "Fill in some basic information: Name, mobile number, Aadhaar, and PAN.",
-          "Enter car model and loan.",
-          "Determine the amount of a check-eligible loan immediately.",
-        ],
-      },
-      {
-        step: 2,
-        title: "Upload Documents",
-        image: "/loan/loan12.png",
-        cta: "Submit Docs",
-        details: [
-          "Upload the pancard and Aadhaar Card.",
-          "Provide evidence of income—bank statements or salary slips.",
-          "Present address proving papers.",
-          "Our system checks documents in a matter of seconds.",
-        ],
-      },
-      {
-        step: 3,
-        title: "Receive Your Loan",
-        image: "/loan/loan13.png",
-        cta: "Get Construction Equipment Loan Now",
-        details: [
-          "Get immediate approval with the least paperwork",
-          "Credit the loan into your account.",
-          "Money is transferred in less than 24 hours.",
-          "Get home to your dream car.",
-        ],
-      },
+  {
+    step: 1,
+    title: "Apply Online",
+    image: "/loan/loan4.png",
+    cta: "Request Calculations",
+    details: [
+      "Fill in your basic details such as Name, Mobile Number, Aadhaar, and PAN",
+      "Select your desired car model and loan amount",
+      "Get instant confirmation of your eligible loan amount",
     ],
+  },
+  {
+    step: 2,
+    title: "Upload Documents",
+    image: "/loan/loan12.png",
+    cta: "Submit Docs",
+    details: [
+      "Upload your PAN Card and Aadhaar Card",
+      "Submit proof of income such as bank statements or salary slips",
+      "Provide address verification documents",
+      "Our system reviews all documents instantly for fast processing",
+    ],
+  },
+  {
+    step: 3,
+    title: "Receive Your Loan",
+    image: "/loan/loan13.png",
+    cta: "Get Car Loan Now",
+    details: [
+      "Get quick approval with minimal paperwork",
+      "The loan amount is credited directly to your account",
+      "Funds are transferred in less than 24 hours",
+      "Drive home your dream car without any delay",
+    ],
+  },
+],
+
   };
 
 
@@ -178,22 +178,23 @@ function page() {
       <ServicesSection3 data={aepsData} />
       <StatsBanner />
       <LoanBenefits
-        title="Easy Loans to Drive Your Dream Car."
-        description="Drive your dream car with our low-cost and easy car loans. We provide prompt approvals, low interest rates, and easy repayment plans on new and used cars.
+        title="Drive Your Dream, Pay with Ease"
+        description="Turn your car dreams into reality with fast approvals, low interest rates, and hassle-free repayment plans on new and used cars.
 "
         image="/loan/car3.png"
-        benefits={[
-          "Fast application with limited documentation.",
-          "Customize EMI according to your budget.",
-          "New and used car loans",
-          "Attractive and competitive interest rates.",
-          "No sneaky fees, no strings attached.",
-          " No prepayment penalties—even if a variable loan is more worth it than a fixed loan, you can pay it off without incurring any fees.",
-          " Insurance assistance—you can ask us about potential car insurance options for you.",
-          "Manage your loan online—access your loan anytime and from anywhere",
-          "A vast dealer network—choose from our approved dealers.",
-          "Get Your Loan Immediately—funds available near instantly.",
-        ]}
+       benefits={[
+  "Quick application with minimal documentation",
+  "Flexible EMI options tailored to your budget",
+  "Loans for new and used cars",
+  "Competitive interest rates for affordable financing",
+  "Transparent process with no hidden charges",
+  "Repay early without extra fees",
+  "Guidance on suitable car insurance options",
+  "Access and track your loan anytime, anywhere",
+  "Choose from our approved car dealers",
+  "Receive your loan quickly and drive home your car",
+]}
+
       />
 
       <EMICal2 />

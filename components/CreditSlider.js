@@ -5,24 +5,24 @@ const stepsData = [
   {
     step: 1,
     title: 'Fill out the application form.',
-    description: 'Start by filling out the credit card application online through the bank\'s website/app or offline at the branch. Provide your basic details such as name, mobile number, email ID, and occupation.',
+    description: 'Easily fill out your credit card application online via the bank’s website or app, or visit a branch to apply offline. Provide your essential details like name, mobile number, email, and occupation',
     image: '/credit/credits1.png',
   },
   {
     step: 2,
     title: 'Upload Documents ',
-    intro: 'Attach/upload the necessary documents for verification:',
+    intro: 'Submit the required documents for verification to complete your credit card application:',
     details: [
       '<strong>Proof of identity</strong> &ndash; (Aadhaar, PAN, passport, or voter ID)',
-      '<strong>Proof of address</strong> &ndash; (utility bill, driving license, rental agreement)',
-      '<strong>Proof of income </strong> &ndash; (pay slip, ITR, or bank statement).',
+      '<strong>Proof of address</strong> &ndash; (Utility Bill, Driving License, Rental Agreement)',
+      '<strong>Proof of income </strong> &ndash; (Pay Slip, ITR, or Bank Statement).',
     ],
     image: '/credit/credits2.png',
   },
   {
     step: 3,
     title: 'Approval',
-    description: 'After checking your documents, the bank will process your application. If that is all good, you should receive your approval message, and a new credit card should be sent to you.',
+    description: 'Once your documents are verified, the bank will review your application. If everything is in order, you’ll receive an approval notification, and your new credit card will be delivered to you',
     image: '/credit/credits3.png',
   },
 ];
@@ -108,7 +108,7 @@ export default function App() {
                   </div>
                   <div className="flex flex-col m md:mt-0 px-4 lg:px-0">
                     {item.description && (
-                      <p className="text-sm sm:text-base md:text-lg leading-relaxed mt-10">
+                      <p className="text-sm sm:text-base md:text-lg leading-relaxed mt-10 me-8">
                         {item.description}
                       </p>
                     )}
