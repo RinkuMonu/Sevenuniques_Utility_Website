@@ -9,7 +9,7 @@ const cardData = [
   {
     id: 1,
     title: "Bike Insurance",
-    subheading:"Ride Safe, Stay Protected",
+    subheading:"Coverage That Keeps You Moving",
     buttonText: "Insure my bike",
     link:"/insurance/bike-insurance"
   },
@@ -17,13 +17,13 @@ const cardData = [
     id: 2,
     title: "Car Insurance",
     buttonText: "Insure my car",
-     subheading:"Your car , our car.",
+     subheading:"Because Your Car Matters",
      link:"/insurance/car-insurance"
   },
   {
     id: 3,
     title: "Taxi Car",
-    subheading:"Protect Your Business Rides",
+    subheading:"That Keeps Your Business Moving",
     buttonText: "Protect my taxi",
      link:"/insurance/taxi-insurance"
   },
@@ -31,7 +31,7 @@ const cardData = [
     id: 4,
     title: "Commercial Vehicle",
     subheading:"Keep Your Business Moving",
-    buttonText: "Get covered now",
+    buttonText: "Stay Covered, Stay Productive",
      link:"/insurance/commercial-vehicle"
   },
 ];

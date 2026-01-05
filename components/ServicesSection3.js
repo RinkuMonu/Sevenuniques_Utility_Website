@@ -43,7 +43,7 @@ const ServicesSection3 = ({ data }) => {
         {/* Right Column */}
           <div className="mt-6 md:mt-0 relative">
       <Image
-        src="/image/aeps-vec.png"
+        src="/image/aeps-vec3d.png"
         alt="Example image"
         width={400}
         height={400}

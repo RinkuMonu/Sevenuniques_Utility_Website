@@ -34,17 +34,12 @@ export default function PancardAllotment2() {
           </h2>
 
           <p className="text-gray-700 mt-6 leading-relaxed text-sm sm:text-base relative text-justify md:text-left">
-            This type is assigned to foreign individuals and entities that did not
-            receive a PAN previously.
+           Form 49AA is intended for foreign individuals and entities who have not previously been allotted a PAN.
+
             <br />
-            Finunique <span className="font-bold">e PAN Card service</span>:
-            You can apply online by using the Finunique{" "}
-            <span className="font-bold">e PAN Card service</span> and upload your
-            documents and be given the PAN number without setting foot in any
-            office.
-            <br />
-            It is easy, clear, and trustworthy to the international user through
-            our online PAN services.
+           With Finunique’s e-PAN service, you can apply online, upload your documents, and receive your PAN number without visiting any office. Our online process is simple, secure, and reliable for international applicants.
+
+           
             <span className="absolute left-0 bottom-[-20px] w-full h-[2px] bg-[#FFD84C] rounded-full"></span>
           </p>
 

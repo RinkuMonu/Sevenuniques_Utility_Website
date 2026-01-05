@@ -10,11 +10,11 @@ export default function HomeTrustedSecureSection() {
         {/* Left Icon */}
         <div className="flex-shrink-0">
           <Image
-            src="/image/check-mark.png"
+            src="/image/check-mark3d.png"
             alt="Security Shield"
             width={400}
             height={400}
-            className="w-40 sm:w-56 md:w-72 lg:w-96 h-auto drop-shadow-2xl"
+            className="w-40 sm:w-56 md:w-72 lg:w-76 h-auto drop-shadow-2xl"
           />
         </div>
 

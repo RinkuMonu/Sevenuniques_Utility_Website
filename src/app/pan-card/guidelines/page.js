@@ -6,43 +6,27 @@ export default function Guidelines() {
 
   const guidelinesData = [
     {
-      title: "Online PAN Application Steps",
-      desc: `At Finunique Small Private Limited., we provide a digital pancard service for Indian citizens.
-      Foreign nationals of Indian origin can also use this service. The first step is to pick Form 49A,
-      select the appropriate category, and fill in general information. A token number is created and shown
-      on screen once the form is submitted. This token is emailed as well, allowing applicants to save and
-      edit the form before final submission. After completing all information, the system authenticates it.
-      Any errors can be rectified before submission. Once successfully validated, a confirmation screen shows
-      all entered information for review.`
+      title: "Online PAN Applications Steps",
+      desc: `Finunique Small Private Limited provides a secure digital PAN card application service for Indian citizens, and it is also available to foreign nationals of Indian origin. Applicants must begin by selecting Form 49A, choosing the correct category, and entering basic personal details. After submission, a unique token number is generated and sent to the registered email address, allowing the form to be saved and edited before final submission. The system verifies all information entered, and any errors can be corrected. Once validation is complete, a confirmation page displays the details for final review.`
     },
     {
-      title: "Acknowledgment and Verification",
-      desc: `After submission, an acknowledgement receipt is generated and emailed. Download, print, and sign
-      the acknowledgment as instructed. The signature or left-hand thumb impression must partially cover the
-      photograph. For non-individual applicants (companies, firms, trusts), the authorized signatory (director,
-      partner, trustee, or karta) should sign. Thumb impressions must be verified by a notary, magistrate, or
-      gazetted officer with an official seal and stamp.`
+      title: "Acknowledgement and Verifications",
+      desc: `Once the application is submitted, an acknowledgment receipt is generated and sent to the registered email address. Applicants must download, print, and sign the acknowledgment following the given instructions. The signature or left-hand thumb impression should partially overlap the photograph. In the case of non-individual applicants such as companies, firms, or trusts, the acknowledgment must be signed by the authorized signatory, including a director, partner, trustee, or karta. If a thumb impression is used, it must be duly attested by a notary, magistrate, or gazetted officer along with an official seal and stamp`
     },
     {
       title: "Submission of Documents",
-      desc: `For physical submission, attach the signed acknowledgment and documents such as proof of identity,
-      proof of address, and date of birth to our office. For paperless PAN online services (e-KYC, e-Sign,
-      DSC-based applications), no physical copies are needed. Quoting an Aadhaar number in Form 49A is mandatory,
-      and a copy of the Aadhaar allotment letter must be attached. Documents should reach us within 15 days.
-      Customers can monitor status and download their e-PAN after approval.`
+      desc: `For offline submissions, applicants must send the signed acknowledgement along with required documents such as proof of identity, address proof, and date of birth to our office. For paperless online PAN services, including e-KYC, e-Sign, and DSC-based applications, submission of physical documents is not required. Mentioning the Aadhaar number in Form 49A is compulsory, and a copy of the Aadhaar allotment letter must be enclosed where applicable. All documents should be submitted within 15 days. Applicants can track their application status and download the e-PAN once it is approved.`
     },
     {
       title: "Contact Us",
-      desc: `For assistance, contact Finunique Small Private Limited. Head office: Plot No 97, Dakshinpuri-I,
-      Shrikishan, Sanganer, Jagatpura, Jaipur, Rajasthan, India-302017. Email: support@7unique.in, info@7unique.in.
-      Call: 0141-4511098. We provide reliable and professional online pancard services.`
+      desc: `For support, reach out to Finunique Small Private Limited at our head office located at Plot No. 97, Dakshinpuri-I, Shrikishan, Sanganer, Jagatpura, Jaipur, Rajasthan – 302017. You may email support@7unique.in or info@7unique.in, or call 0141-4511098 for dependable online PAN services.`
     },
   ];
 
   return (
     <>
     <section className='bg-gradient-to-br from-[#ebf7fa] to-[#fffaf0] '>
-            <h1 className="text-3xl md:text-5xl font-bold text-[#176B87] mb-4 text-center tracking-tight mx-auto pt-10" >
+            <h1 className="text-3xl md:text-3xl font-bold text-[#176B87] mb-4 text-center tracking-tight mx-auto pt-10" >
               Application Form PAN (Form 49A) - Document Guidelines.</h1>
           {/* <p className='text-center text-gray-800 pb-6'>
             Individuals and Hindu Undivided Families (HUF).

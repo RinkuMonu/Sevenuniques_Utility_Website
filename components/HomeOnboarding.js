@@ -12,13 +12,13 @@ import Slider from 'react-slick';
 const onboardingData = {
         User: {
         image:[
-    '/home/user1.png', '/home/user2.png', '/home/user3.png', '/home/user4.png',
+    '/home/user13d.png', '/home/user23d.png', '/home/user33d.png', '/home/user43d.png',
 ],
         steps: [
             { id: 1, title: 'Download App', description: 'Install the Finunique app in a few seconds in either the Play Store or the App Store.' },
             { id: 2, title: 'Create Account', description: ' The only thing that you need to do is to create your account using just your mobile number, and that is it.' },
             { id: 3, title: 'Link Bank Account', description: 'Link your bank account without any risk and start experiencing hassle-free transactions.' },
-            { id: 4, title: 'Start Transacting', description: ' Pay bills, transfer money, and recharge easily, simply by using one application.' },
+            { id: 4, title: 'Start Transacting', description: 'Pay bills, transfer money, and recharge easily, simply by using one application.' },
         ],
     },
         Retailer: {

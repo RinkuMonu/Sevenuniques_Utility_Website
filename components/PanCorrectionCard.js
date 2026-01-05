@@ -59,7 +59,7 @@ export default function PanCorrectionCard() {
           PAN Data
         </h3>
         <p className="mt-3 text-gray-600 text-base">
-          Update or correct your PAN details easily with our fast and secure process.
+          Easily update or correct your PAN details with our secure and efficient process.
         </p>
       </div>
 
@@ -69,14 +69,9 @@ export default function PanCorrectionCard() {
         <div className="grid md:grid-cols-2 md:w-full bg-gradient-to-br from-white to-[#F8FAFB] border border-gray-100 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8 gap-4">
           <div className="">
             <p className="text-gray-700  text-lg leading-relaxed mb-8">
-              Select this option in case you already have a PAN, yet you would
-              like to change or amend your information (e.g., name, father name
-              or date of birth). <br />
-              You will be issued with a new PAN card of the same number with
-              updated details. <br />
-              In the case of the Finunique PAN service portal, it is 100%
-              online verification and a 100% online process. Our PAN card
-              service online is fast and provides accuracy on data.
+              Choose this option if you already have a PAN and need to update or correct your details, such as your name, father’s name, or date of birth. <br />
+              A new PAN card will be issued with the same PAN number and the updated information. <br />
+              With the Finunique PAN service portal, the entire process is fully online, secure, and verified digitally to ensure fast and accurate results.
             </p>
 
             <Link

@@ -74,7 +74,7 @@ export default function HomeCreditScoreSection() {
         {/* RIGHT IMAGE */}
         <div className="md:basis-[40%] flex justify-center md:justify-end hidden md:flex">
           <Image
-            src="/image/credit-score.png"
+            src="/image/credit-score3d.png"
             alt="Credit Score Preview"
             width={300}
             height={600}

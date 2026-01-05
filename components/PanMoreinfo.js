@@ -68,43 +68,43 @@ export default function PanMoreinfo() {
                     {activeTab === "types" && (
                         <div>
                             <h2 className="text-lg font-semibold mb-3">
-                                Two PAN applications are primarily used, and it depends on whether you are seeking a new PAN application or renewing the existing one.
+                                There are mainly two types of PAN applications, depending on whether you are applying for a new PAN or updating an existing one.
                             </h2>
-                            <p className="mb-2">At Finunique, the online PAN service portal is what simplifies, makes the process fast, and makes it digital</p>
+                            <p className="mb-2"> Finunique offers an online PAN service platform that streamlines the entire process, making it faster, simpler, and completely digital.</p>
                             <ol className="list-decimal list-inside space-y-10">
                                 <li className="">
                                     <span className="font-bold mb-2">
-                                        Application for allotment of PAN:
+                                       Application for Allotment of PAN:
                                     </span>
-                                    <p className="my-2">
-                                        Applicants that have never obtained a PAN or who have not gotten one yet utilize this form.
+                                    {/* <p className="my-2">
+                                       This option is meant for individuals who have never been issued a PAN earlier. Before applying, applicants can verify on the official Income Tax Department website whether a PAN has already been allotted in their name.
 
-                                    </p>
+                                    </p> */}
                                     <ul className="list-disc list-inside ml-4 space-y-1">
                                         <li>
-                                            The official Income Tax Department site will tell you whether your name has a PAN or not.
+                                           This option is meant for individuals who have never been issued a PAN earlier. Before applying, applicants can verify on the official Income Tax Department website whether a PAN has already been allotted in their name.
                                         </li>
                                         <li>
-                                            The applicable forms are as follows (according to the ITD guidelines as of November 1, 2011):
+                                            As per Income Tax Department guidelines effective from November 1, 2011, the following forms are applicable:
                                         </li>
                                     </ul>
-                                    <p className="my-3"> <b>Form 49A:</b> This is the form for Indian citizens, irrespective of their residence in or out of India.</p>
-                                    <p className="my-3"> <b>Form 49AA:</b>  For foreign citizens who are applying to PAN.</p>
+                                    <p className="my-3"> <b>Form 49A:</b> is used by Indian citizens, whether they are residing in India or abroad.</p>
+                                    <p className="my-3"> <b>Form 49AA:</b> is applicable for foreign nationals who wish to apply for a PAN.</p>
                                 </li>
 
                                 <li>
                                     <span className="font-bold mb-2">
-                                        New pancard Applications / PAN Data Corrections / Changes.
+                                        New PAN Card or PAN Detail Correction:
                                     </span>
                                     <ul className="list-disc list-inside ml-8 space-y-1 mt-3">
                                         <li style={{ listStylePosition: "outside" }}>
-                                            In case you have a PAN and need a new pancard or need to change certain details like your name, date of birth, or address, then use this form.
+                                           If you already hold a PAN and require a reprinted card or need to update details such as name, date of birth, or address, this option should be selected.
                                         </li>
                                         <li style={{ listStylePosition: "outside" }}>
-                                            The new card is going to be issued with the same PAN with new information.
+                                            A new PAN card will be issued carrying the same PAN number with the updated information.
                                         </li>
                                         <li style={{ listStylePosition: "outside" }}>
-                                            Under the Indian <b> digital pancard service, </b> Indian citizens as well as the foreign citizens will be able to do these processes online by using the <b> pancard online quick service of Finunique.</b>
+                                           Through India’s digital PAN card system, both Indian and foreign citizens can conveniently apply for new PANs or request corrections online using Finunique’s quick and reliable PAN application services.
                                         </li>
                                     </ul>
                                 </li>
@@ -116,37 +116,32 @@ export default function PanMoreinfo() {
                         <div>
                             <h2 className="text-lg font-semibold mb-3">How to Apply for PAN</h2>
                             <p className="mb-4">
-                                There are two simple methods in which applicants can apply for PAN at
-                                <span className="text-[#E60012] font-semibold"> Finunique</span>:
+                               Finunique offers two convenient ways to apply for a PAN card, allowing applicants to choose the method that best suits them:
                             </p>
 
                             <ol className="list-decimal list-inside space-y-6">
                                 {/* Online Mode */}
                                 <li>
-                                    <p className="font-semibold text-gray-900 mb-1">Online Mode:</p>
+                                    <p className="font-semibold text-gray-900 mb-1">Online Application:</p>
                                     <p className="text-gray-700">
-                                        Apply online through our PAN service portal to complete and file your
-                                        PAN application digitally. You have the option of paperless
-                                        submission using <b>e-KYC</b>, <b>e-Sign</b>, or <b>Digital Signature
-                                            Certificate (DSC)</b>. Alternatively, you can also forward physical
-                                        documents for verification after online submission.
+                                       Applicants can submit their PAN request digitally through Finunique’s online PAN platform. The entire process can be completed paperlessly using e-KYC, e-Sign, or a Digital Signature Certificate (DSC). If preferred, applicants may also upload the form online and later send physical documents for verification.
+
                                     </p>
                                 </li>
 
                                 {/* Offline Mode */}
                                 <li>
-                                    <p className="font-semibold text-gray-900 mb-1">Offline Mode:</p>
+                                    <p className="font-semibold text-gray-900 mb-1">Offline Application:</p>
                                     <p className="text-gray-700">
-                                        You can download and print a copy of the PAN application form,
-                                        complete it manually, attach the required supporting documents, and
-                                        submit it to any authorized PAN center of{" "}
-                                        <span className="text-[#E60012] font-semibold">Finunique</span>.
+                                       For those who prefer an offline process, the PAN application form can be downloaded and printed. After filling in the details manually and attaching the necessary supporting documents, the completed form can be submitted at any Finunique-authorized PAN service center.
+Before submitting the application, applicants are advised to review all instructions and guidelines carefully to ensure accurate details and smooth processing without delays.
+
                                     </p>
-                                    <p className="text-gray-700 mt-2">
+                                    {/* <p className="text-gray-700 mt-2">
                                         Please make sure to carefully read all{" "}
                                         <b>instructions and guidelines</b> before filling the form to avoid
                                         mistakes or delays in processing.
-                                    </p>
+                                    </p> */}
                                 </li>
                             </ol>
                         </div>
@@ -159,9 +154,9 @@ export default function PanMoreinfo() {
                                 Supporting Documents Required
                             </h2>
                             <ul className="list-disc ml-8 space-y-6">
-                                <li style={{ listStylePosition: "outside" }}>The applicants will be required to provide valid Proof of Identity (POI) and Proof of Address (POA) documents as stated in rule 114 of the Income Tax Department.</li>
-                                <li style={{ listStylePosition: "outside" }}>The same name in the application shall be identical to the name in the submitted documents.</li>
-                                <li style={{ listStylePosition: "outside" }}>All the acceptable documents are also listed on our PAN service portal in the Documents Required section.</li>
+                                <li style={{ listStylePosition: "outside" }}>Applicants must submit valid Proof of Identity (POI) and Proof of Address (POA) documents in accordance with Rule 114 of the Income Tax Department.</li>
+                                <li style={{ listStylePosition: "outside" }}>The name mentioned in the PAN application must exactly match the name appearing on the submitted documents.</li>
+                                <li style={{ listStylePosition: "outside" }}>A complete list of accepted documents is available on our PAN service portal under the “Documents Required” section.</li>
                             </ul>
                         </div>
                     )}
@@ -170,43 +165,28 @@ export default function PanMoreinfo() {
                         <div>
                             <h2 className="text-lg font-semibold mb-3">Communications</h2>
                             <p className="mb-3 text-gray-700">
-                                Once submitted,{" "}
-                                <span className="text-[#E60012] font-semibold">Finunique</span>{" "}
-                                authenticates, scans, and securely forwards the PAN application
-                                information to the{" "}
-                                <span className="font-semibold">Income Tax Department (ITD)</span>.
+                               After submission, Finunique verifies and digitizes your PAN application details before securely transmitting them to the Income Tax Department (ITD).
                             </p>
 
                             <p className="mb-3 text-gray-700">
-                                In the case of <b>Form 49A (New PAN)</b>, the ITD generates a new PAN.
-                                <span className="text-[#E60012] font-semibold"> Finunique</span> then
-                                prints and dispatches your physical pancard, while the{" "}
-                                <b>e-pancard</b> is delivered directly to your registered email address.
+                               For Form 49A (New PAN) applications, the ITD issues a fresh PAN number. Finunique then arranges the printing and delivery of the physical PAN card, while the e-PAN is sent directly to your registered email address.
                             </p>
 
                             <p className="mb-3 text-gray-700">
-                                In case of <b>change or correction</b> requests,{" "}
-                                <span className="text-[#E60012] font-semibold">Finunique</span> sends
-                                the requested updates to ITD. Once verification is completed, a{" "}
-                                <b>new pancard</b> reflecting the updated information is printed and
-                                sent to your communication address.
+                                For correction or update requests, the revised information is forwarded to the ITD. Once approved, a new PAN card containing the updated details is printed and dispatched to the address provided in the application.
                             </p>
 
                             <p className="mb-3 text-gray-700">
-                                All official communication will be sent to your{" "}
-                                <b>registered communication address</b> as mentioned in the application
-                                form.
+                               All official correspondence related to your PAN application will be sent to the communication address specified in your form.
+
                             </p>
 
                             <p className="mb-3 text-gray-700">
-                                Applicants providing a valid <b>email ID</b> will receive the{" "}
-                                <b>e-pancard immediately</b>, in addition to the physical pancard.
+                               Applicants who provide a valid email address will receive the e-PAN card promptly, along with the physical PAN card.
                             </p>
 
                             <p className="text-gray-700">
-                                We strongly recommend including your{" "}
-                                <b>mobile number</b> to receive timely updates and to quickly resolve any
-                                discrepancies during the application process.
+                               To stay informed throughout the process and to ensure quick resolution of any issues, we highly recommend adding your mobile number during the application.
                             </p>
                         </div>
                     )}
@@ -214,17 +194,16 @@ export default function PanMoreinfo() {
 
                     {activeTab === "fee" && (
                         <div>
-                            <h2 className="text-lg font-semibold mb-4">Processing Fee Structure</h2>
+                            <h2 className="text-lg font-semibold mb-4">Processing Fee</h2>
 
                             <p className="mb-3 text-gray-700">
-                                <span className="text-[#E60012] font-semibold">Finunique</span> offers
-                                affordable and transparent charges for all categories of PAN applications
-                                through its online pancard service.
+                                <span className="text-[#E60012] font-semibold">Finunique</span> provides cost-effective and fully transparent pricing for all types of PAN card applications submitted through its online PAN service platform.
                             </p>
 
                             <p className="mb-3 text-gray-700">
-                                <b>Note:</b> Charges for <b>eSign</b> are applicable when the{" "}
-                                <b>e-KYC</b> or <b>e-Sign</b> options are selected.
+                                <b>Note:</b>eSign charges apply only when applicants opt for e-KYC or e-Sign based verification.
+All payments processed via the Finunique PAN service portal are completed through secure and protected channels. This ensures fast confirmation, dependable transactions, and a seamless application experience for users.
+
                             </p>
 
                             <p className="mb-6 text-gray-700">
@@ -238,7 +217,7 @@ export default function PanMoreinfo() {
 
                             {/* Section A */}
                             <h3 className="text-md font-semibold text-gray-900 mb-3">
-                                A) When a Physical pancard Is Necessary
+                                A) When a Physical PAN card Is Necessary
                             </h3>
 
                             <div className="overflow-x-auto mb-6">
@@ -304,8 +283,7 @@ export default function PanMoreinfo() {
                             </div>
 
                             <p className="text-gray-700 italic mb-8">
-                                <b>Remark:</b> There are eSign fees of ₹5.90 (including taxes) when the
-                                e-KYC and/or e-Sign service is utilized.
+                                <b>Remark:</b> An eSign fee of ₹5.90 (inclusive of applicable taxes) is charged whenever the e-KYC and/or e-Sign service is selected.
                             </p>
 
                             {/* Section B */}
@@ -313,9 +291,7 @@ export default function PanMoreinfo() {
                                 B) Physical pancard Not Needed (e-PAN Only)
                             </h3>
                             <p className="mb-4 text-gray-700">
-                                With our digital pancard service, applicants can choose to receive only
-                                the <b>e-PAN</b>. The e-PAN will be sent directly to your registered email
-                                address.
+                               Applicants who prefer a completely digital option can choose to receive only the e-PAN. The <b>e-PAN </b>will be issued electronically and delivered directly to the applicant’s registered email address.
                             </p>
 
                             <div className="overflow-x-auto">
@@ -357,35 +333,21 @@ export default function PanMoreinfo() {
                             <h2 className="text-lg font-semibold mb-3">Processing Time</h2>
 
                             <p className="mb-3 text-gray-700">
-                                When a PAN application is properly completed and the provided information
-                                and documents are accurate, the usual processing period is around{" "}
-                                <b>two weeks</b> to review the application and dispatch the{" "}
-                                <b>physical pancard</b>.
+                                Once a PAN application is submitted with complete and correct details along with valid supporting documents, it generally takes about two weeks for the application to be verified and for the physical PAN card to be printed and dispatched.
                             </p>
 
                             <p className="mb-3 text-gray-700">
-                                For <b>paperless e-PAN applications</b>, processing and digital delivery
-                                can be completed within <b>2–3 working days</b> using our{" "}
-                                <span className="text-[#E60012] font-semibold">
-                                    Finunique pancard Online Quick Service
-                                </span>
-                                .
+                               For applicants choosing the paperless e-PAN option, the processing is significantly faster. Using Finunique’s Online Quick PAN Service, the e-PAN is usually generated and delivered digitally within 2–3 working days.
+
                             </p>
 
                             <p className="mb-3 text-gray-700">
-                                Through the{" "}
-                                <span className="text-[#E60012] font-semibold">
-                                    Finunique PAN Service Portal
-                                </span>
-                                , applicants can monitor the status of their PAN application at any time
-                                using their <b>acknowledgment number</b>.
+                               Applicants can conveniently track the progress of their PAN application at any stage through the Finunique PAN Service Portal by entering their acknowledgment number.
+
                             </p>
 
                             <p className="text-gray-700">
-                                Since the beginning of 2015, there has been a consistent growth in the
-                                number of jobs created annually on average. This steady growth reflects
-                                increased efficiency and improved processing capabilities across the
-                                system.
+                               Since early 2015, the PAN processing ecosystem has shown steady year-on-year growth in operational capacity. This consistent improvement highlights enhanced efficiency, better infrastructure, and faster turnaround times across the system.
                             </p>
                         </div>
                     )}

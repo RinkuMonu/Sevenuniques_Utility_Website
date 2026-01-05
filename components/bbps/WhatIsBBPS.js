@@ -63,7 +63,7 @@ export default function WhatIsBBPS() {
           {/* Image */}
           <div className="flex-grow flex flex-col justify-center">
             <Image
-              src="/bbps/bbps4.jpg" 
+              src="/bbps/Crafting3d.png" 
               width={200}
               height={200}
               alt="Sangvi working on a laptop"

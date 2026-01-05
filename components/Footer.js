@@ -147,19 +147,19 @@ const Footer = () => {
             <Link href={"/"} className="md:col-span-1 bg-white rounded">
               <Image
                 src="/image/sevenunique-logo1.png"
-                className=" p-1 mx-auto"
-                alt=""
+                className="p-1 mx-auto"
+                alt="logo"
                 width={100}
                 height={100}
               />
             </Link>
             <div className="md:col-span-2">
-              <p className=" text-white text-sm font-light">Finunique Small Private Limited is dedicated to providing innovative and reliable solutions across India. With a focus on technology-driven growth, we aim to simplify operations and enhance business efficiency for our partners and clients. Our mission is to strengthen partnerships, expand reach, and deliver smart solutions that help our clients achieve growth and success.
+              <p className="text-white text-sm font-light">Finunique Small Private Limited is dedicated to providing innovative and reliable solutions across India. With a focus on technology-driven growth, we aim to simplify operations and enhance business efficiency for our partners and clients. Our mission is to strengthen partnerships, expand reach, and deliver smart solutions that help our clients achieve growth and success.
               </p>
             </div>
           </div>
           <div
-            className=" grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-sm text-gray-700 
+            className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-sm text-gray-700 
                    my-3 rounded-lg"
           >
             <div className="col-span-1">

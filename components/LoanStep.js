@@ -26,7 +26,7 @@ const LoanStep = ({data}) => {
                         <p className="text-gray-500 leading-relaxed mb-8 ">
                            {data.desc}
                         </p>
-                      <Image src="/loan/loan5.png" className="object-cover w-full lg:pe-4" width={400} height={400} alt='' />
+                      <Image src="/loan/loan53d.png" className="object-cover w-full lg:pe-4" width={400} height={400} alt='' />
                     </div>
 
                     {/* Right Section */}

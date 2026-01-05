@@ -21,19 +21,19 @@ function page() {
   const data = {
     id: 1,
     subheading: 'Construction Loan',
-    heading: 'Machine Lo, Kaam Badhao. Construction Loan Se!',
-    description: 'Excavator ho ya crane, apni machine khareedne ka sapna ab ho sakta hai poora. Kam paperwork, fast processing. Register Now!',
+    heading: 'Machine Lo, Kaam Ko Boost Karo!',
+    description: 'Excavator ho ya crane, apni machine ka sapna ab ho sakta hai poora. Kam paperwork, fast approval, aur easy registration ab apna kaam turbo speed pe le jao!',
     bgImage: '/loan/constructbg.png',
     centerImage: '/loan/construct1.png',
   }
 
   const aepsData = {
     subheading: 'Construction EQUIPMENT Loan',
-    heading: 'Strong Partner Apke Project Ka',
-    description: 'Our Construction Equipment Loans can help you get the heavy machinery you require. We lend out excavators, cranes, concrete mixers, and any other equipment needed to energize your projects and expand your business.',
+    heading: 'Heavy Kaam, Light Loan!',
+    description: 'Our Construction Equipment Loans help you get the heavy machinery you need. We provide financing for excavators, cranes, concrete mixers, and any other equipment to power up your projects and grow your business',
     features: [
-      'Our customized repayment plans include both new and used machinery, which is financed flexibly. Get the benefit of competitive interest rates, fast approvals, and very few documents to fill in to have a hassle-free experience.',
-      'We know construction deadlines and provide expedited processing to have equipment when you need it. Our professionals will guide you to select the most suitable financing option that will fulfill your business requirements.',
+      'Choose from flexible repayment plans for both new and used machinery. Enjoy competitive interest rates, fast approvals, and minimal paperwork for a smooth, hassle-free experience.',
+      'We understand construction deadlines and ensure quick processing so your equipment is ready when you need it. Our experts guide you to pick the best financing option to perfectly suit your business needs.',
     ]
   };
 
@@ -70,36 +70,39 @@ function page() {
         title: "Apply Online",
         image: "/loan/loan4.png",
         cta: "Request Calculations",
-        details: [
-          "Construction Equipment Loan by Visit Finunique.",
-          "Fill in personal information: Name, Mobile Number, Aadhaar, PAN",
-          "Select the type of equipment and the amount of the loan",
-          "Check the eligible loan amount on the fly.",
-        ],
+       details: [
+  "Fill in your details like Name, Mobile Number, Aadhaar, and PAN",
+  "Choose your equipment such as Excavator, Crane, or other machinery",
+  "Select your loan amount and check eligibility instantly",
+  "Fast approval with minimal paperwork",
+],
+
       },
       {
         step: 2,
         title: "Upload Documents",
         image: "/loan/loan12.png",
         cta: "Submit Docs",
-        details: [
-          "Add pancard and Aadhaar Card.",
-          "Provide business documents—GST and business registration",
-          "Give equipment quote and supplier information.",
-          "Our system authenticates documents in a short time",
-        ],
+       details: [
+  "Upload your PAN and Aadhaar card",
+  "Submit business documents like GST and business registration",
+  "Provide the equipment quote and supplier details",
+  "Our system verifies all documents quickly and securely",
+],
+
       },
       {
         step: 3,
         title: "Receive Your Loan",
         image: "/loan/loan13.png",
         cta: "Get Construction Equipment Loan Now",
-        details: [
-          "Get rapid approval with few documents.",
-          "Direct deposit of the loan to your account.",
-          "Money sent out in less than 48 hours",
-          "Buy your building materials now.",
-        ],
+       details: [
+  "Get fast approval with minimal documentation",
+  "Loan amount credited directly to your account",
+  "Receive funds in under 48 hours",
+  "Start purchasing your construction equipment immediately",
+],
+
       },
     ],
   };
@@ -184,21 +187,20 @@ function page() {
       <EMICal2 />
       <StatsBanner />
       <LoanBenefits
-        title="Get a machine, and get to work! This construction loan is the new way forward."
-        description="Finance the heavy machinery your business needs to succeed. We can finance all the equipment you need – be it excavators, backhoes, or cranes—enabling you to efficiently carry out projects and grow your business faster. "
+        title="Our Construction Equipment Loan is designed to help your business move forward."
+        description="Finance the heavy machinery you need: excavators, backhoes, cranes, and more so you can complete projects efficiently and accelerate your business growth."
         image="/loan/construct4.png"
         benefits={[
-          "Rapid approvals with less paperwork.",
-          "Flexible repayment terms according to the project cash flow.",
-          "There are loans for new and used equipment",
-          "Appealing and competitive interest rates",
-          "No additional fees, all open.",
-          "Why should we use our equipment loans?",
-          "Quick processing of urgent needs.",
-          "Individualized financing options",
-          "Pan-India service coverage",
-          "No hidden charges, fully transparent.",
-        ]}
+  "Rapid approvals with minimal documentation",
+  "Flexible repayment options that suit your project cash flow",
+  "Finance for both new and used machinery",
+  "Competitive interest rates you can trust",
+  "No extra charges, fully transparent",
+  "Fast processing for urgent equipment needs",
+  "Tailored loan options for every project",
+  "Pan-India support for all your sites",
+]}
+
       />
 
 

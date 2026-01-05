@@ -20,8 +20,8 @@ function page() {
     const data = {
         id: 1,
         subheading: 'PERSONAL LOAN',
-        heading: 'Apna Personal Loan, Bilkul Simple aur Sirf Aapke Liye!',
-        description: 'Enjoy fast approval with very few forms. Choose a repayment plan that works for you. Your financial independence is just a click away.',
+        heading: 'Simple Loan, Smart Solution Sirf Aapke Liye!',
+        description: 'Get quick approval with minimal paperwork and a hassle-free online process. Flexible repayment options and transparent terms make managing your finances easier than ever. Take control of your financial goals with Finunique.',
         bgImage: '/loan/perbg.png',
         images: ['/loan/fl1.png', '/loan/fl2.png', '/loan/fl3.png', '/loan/fl4.png']
     }
@@ -63,9 +63,9 @@ function page() {
       image: "/loan/loan4.png",
       cta: "Request Calculations",
       details: [
-        "Enter the simple details: name, mobile number, Aadhaar, and PAN.",
-        "Choose the size and term of the loan.",
-        "Immediately check the amount of loan that is allowed.",
+        "Fill in basic details such as your name, mobile number, Aadhaar, and PAN",
+        "Select your preferred loan amount and repayment tenure.",
+        "Instantly view the loan amount you’re eligible for.",
       ],
     },
     {
@@ -74,10 +74,10 @@ function page() {
       image: "/loan/loan12.png",
       cta: "Submit Docs",
       details: [
-        "Post Aadhaar Card and pancard.",
-        "Produce income evidence, bank statements, or salary slips.",
-        "Present address evidence.",
-        "We have a system that validates documents at high speed.",
+        "Upload your Aadhaar and PAN card details securely",
+        "Submit income proof such as salary slips or bank statements.",
+        "Provide address proof for verification.",
+        "Our system verifies your documents quickly and securely.",
       ],
     },
     {
@@ -86,10 +86,10 @@ function page() {
       image: "/loan/loan13.png",
       cta: "Get Construction Equipment Loan Now",
       details: [
-        "Get quick approval with the least amount of paperwork.",
-        "The funds get deposited in your account as a loan.",
-        "The payment of money will be done within a space of 24 hours.",
-        "Use money on your personal expenses.",
+        "Get quick approval with minimal documentation.",
+        "Once approved, the loan amount is credited directly to your bank account",
+        "Funds are usually disbursed within 24 hours",
+        "Use the money to meet your personal financial needs.",
       ],
     },
   ],
@@ -214,21 +214,22 @@ function page() {
 
 
             <LoanBenefits
-                title="You can borrow money to finance any of your projects."
-                description="We provide quick approvals, reduced paperwork, and customer-friendly service to every borrower"
+                title="You can borrow funds for any personal need or project."
+                description="We ensure quick approvals, minimal paperwork, and a smooth, customer-friendly experience."
                 image="/loan/per3.png"
                 benefits={[
-                    "Light processing with minimal documentation.",
-                    "Budget-flexible EMI options",
-                    "General purpose loans",
-                    "Sweet and low interest rates",
-                    "None of that sleazy skin stuff, on record.",
-                    "Internet action—any place, anytime.",
-                    "No security was necessary—no collateral necessary—no guarantor necessary",
-                    "Personalized offers—personalized loans to your profile",
-                    "Automatic money transfer—Get money within less than a day.",
-                    "Easy top-up—Top up your limit with ease.",
-                ]}
+  "Fast processing with minimal paperwork",
+  "Flexible EMI options to suit your budget",
+  "Loans for any personal purpose",
+  "Competitive and low interest rates",
+  "Completely transparent with no hidden charges",
+  "Apply online anytime, anywhere",
+  "No collateral and no guarantor required",
+  "Personalized loan offers tailored to your profile",
+  "Instant fund transfer — receive money within 24 hours",
+  "Easy top-up — increase your loan limit with ease",
+]}
+
             />
 
             <EMICal2 />

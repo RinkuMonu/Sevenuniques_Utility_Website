@@ -29,7 +29,7 @@ const refundSections = [
     title: "Cancellation and Refund Policy",
     icon: <XCircle className="w-5 h-5" />,
     content: [
-      "1. Overview\nThis Cancellation and Refund Policy of Finunique Small Private Limited explains the terms under which customers can cancel a service or request a refund for payments made through our digital platform www.finuniques.in. Our objective is to ensure complete transparency, fairness, and customer satisfaction while maintaining compliance with applicable laws, industry standards, and the policies of our third-party service providers.",
+      "This Cancellation and Refund Policy of Finunique Small Private Limited explains the terms under which customers can cancel a service or request a refund for payments made through our digital platform www.finuniques.in. Our objective is to ensure complete transparency, fairness, and customer satisfaction while maintaining compliance with applicable laws, industry standards, and the policies of our third-party service providers.",
 
       "We provide multiple digital services, including bill payments, AEPS, DMT, recharges, loan applications, insurance, pancard processing, and other utility-based financial services. Once a service or transaction is successfully completed, it cannot be cancelled as our systems operate in real time with partner institutions. However, in certain cases such as failed, duplicate, or incomplete transactions, customers may be eligible for a refund.",
 
@@ -43,7 +43,7 @@ const refundSections = [
     title: "Scope of Services",
     icon: <Globe className="w-5 h-5" />,
     content: [
-      "2. Scope of Services\nThis Cancellation and Refund Policy applies to all services provided by Finunique Small Private Limited through its official website www.finuniques.in and mobile application. The policy covers every transaction and digital service offered to customers, ensuring clarity in all engagements and payments.",
+      "This Cancellation and Refund Policy applies to all services provided by Finunique Small Private Limited through its official website www.finuniques.in and mobile application. The policy covers every transaction and digital service offered to customers, ensuring clarity in all engagements and payments.",
 
       "Our platform provides a wide range of digital and financial services designed to make daily transactions seamless, secure, and convenient. These include Loan Application and Processing, BBPS (Bharat Bill Payment System) for utility payments such as electricity, gas, water, and broadband bills, as well as AEPS (Aadhaar Enabled Payment System) for secure biometric transactions.",
 
@@ -57,7 +57,7 @@ const refundSections = [
   title: "Cancellation Policy",
   icon: <Ban className="w-5 h-5" />,
   content: [
-    "3. Cancellation Policy\nAt Finunique Small Private Limited, transactions are processed in real time through secure integrations with banks, government APIs, and third-party service providers. Therefore, once a transaction or service request has been successfully completed by a user, distributor, retailer, or white-label partner, it cannot be cancelled or reversed under normal circumstances.",
+    "At Finunique Small Private Limited, transactions are processed in real time through secure integrations with banks, government APIs, and third-party service providers. Therefore, once a transaction or service request has been successfully completed by a user, distributor, retailer, or white-label partner, it cannot be cancelled or reversed under normal circumstances.",
 
     "However, if a service remains pending due to technical errors, server downtime, or verification delays, the concerned party may submit a cancellation request within 7 days from the date of transaction. The request must be sent to info@7unique.in with the Transaction ID, Registered Mobile Number, and Service Type clearly mentioned.",
 
@@ -72,7 +72,7 @@ const refundSections = [
   title: "Refund Eligibility",
   icon: <RotateCcwIcon className="w-5 h-5" />,
   content: [
-    "4. Refund Eligibility\nAt Finunique Small Private Limited, refunds are considered only under specific circumstances to ensure transparency and fairness for all customers, distributors, retailers, and white-label partners.",
+    "At Finunique Small Private Limited, refunds are considered only under specific circumstances to ensure transparency and fairness for all customers, distributors, retailers, and white-label partners.",
 
     "1. Failed or Unsuccessful Transactions:\nIf a service such as a recharge, bill payment, fund transfer, or AEPS transaction fails, but the amount is deducted from the customer’s account and not credited to the intended beneficiary, a refund request will be eligible for review and processing.",
 
@@ -90,15 +90,15 @@ const refundSections = [
   title: "Non-Refundable Services",
   icon: <XOctagon className="w-5 h-5" />,
   content: [
-    "5. Non-Refundable Services\nAt Finunique Small Private Limited, certain services and fees are strictly non-refundable to maintain operational efficiency, comply with third-party agreements, and ensure transparency for all users, distributors, retailers, and white-label partners.",
+    "At Finunique Small Private Limited, certain services and fees are strictly non-refundable to maintain operational efficiency, comply with third-party agreements, and ensure transparency for all users, distributors, retailers, and white-label partners.",
 
-    "1. Successfully Completed Transactions:\nOnce a service such as recharge, bill payment, AEPS, or DMT transfer is successfully processed, the transaction is considered final and cannot be refunded, as the amount has already been credited to the respective beneficiary or service provider.",
+    "\n1. Successfully Completed Transactions: Once a service such as recharge, bill payment, AEPS, or DMT transfer is successfully processed, the transaction is considered final and cannot be refunded, as the amount has already been credited to the respective beneficiary or service provider.",
 
-    "2. Loan Processing and Verification Fees:\nFees associated with loan application, verification, processing, or approval are non-refundable, even if the loan is not sanctioned, because these charges cover administrative and operational costs incurred by our platform and its partners.",
+    "\n2. Loan Processing and Verification Fees: Fees associated with loan application, verification, processing, or approval are non-refundable, even if the loan is not sanctioned, because these charges cover administrative and operational costs incurred by our platform and its partners.",
 
-    "3. pancard and Government Applications:\npancard application fees or similar government service charges are non-refundable once submitted, as these payments are processed directly by the relevant government agency or API partner.",
+    "\n3. pancard and Government Applications: pancard application fees or similar government service charges are non-refundable once submitted, as these payments are processed directly by the relevant government agency or API partner.",
 
-    "4. Third-Party Confirmed Services:\nAny transaction where a third-party provider or government API has already confirmed success is non-refundable.",
+    "\n4. Third-Party Confirmed Services: Any transaction where a third-party provider or government API has already confirmed success is non-refundable.",
 
     "Additionally, all service charges, convenience fees, and applicable GST are non-refundable under any circumstances. This ensures clarity and prevents disputes regarding payments for completed or confirmed services."
   ]
@@ -108,7 +108,7 @@ const refundSections = [
   title: "Refund Processing Time",
   icon: <Clock className="w-5 h-5" />,
   content: [
-    "6. Refund Processing Time\nAt Finunique Small Private Limited, we aim to process all approved refunds efficiently and transparently to maintain customer trust and satisfaction across all users, distributors, retailers, and white-label partners.",
+    "At Finunique Small Private Limited, we aim to process all approved refunds efficiently and transparently to maintain customer trust and satisfaction across all users, distributors, retailers, and white-label partners.",
 
     "Once a refund request has been reviewed and approved, the processing time typically ranges from 5 to 10 business days from the date of approval. The exact timing may vary depending on factors such as internal verification procedures, bank processing schedules, and payment gateway requirements.",
 
@@ -124,7 +124,7 @@ const refundSections = [
   title: "Partial Refunds or Adjustments",
   icon: <Divide className="w-5 h-5" />,
   content: [
-    "7. Partial Refunds or Adjustments\nAt Finunique Small Private Limited, we understand that in some cases, a service may have been partially delivered before a cancellation request is made. To ensure fairness to both the customer and our platform, partial refunds or adjustments may be provided based on the extent of service usage.",
+    "At Finunique Small Private Limited, we understand that in some cases, a service may have been partially delivered before a cancellation request is made. To ensure fairness to both the customer and our platform, partial refunds or adjustments may be provided based on the extent of service usage.",
 
     "For example, if a user, distributor, retailer, or white-label partner has already utilized part of a service—such as a recharge, bill payment, AEPS/DMT transaction, or loan processing—any refund will be calculated proportionately. This calculation considers the services already rendered, resources consumed, and any applicable administrative or processing fees.",
 
@@ -138,7 +138,7 @@ const refundSections = [
   title: "Late Cancellations or Post-Usage",
   icon: <Slash className="w-5 h-5" />,
   content: [
-    "8. Late Cancellations or Post-Usage\nAt Finunique Small Private Limited, it is important to clarify the terms regarding late cancellations or services already utilized. Once a customer, distributor, retailer, or white-label partner has availed or benefited from a service, the transaction is considered complete, and no refund will be processed.",
+    "At Finunique Small Private Limited, it is important to clarify the terms regarding late cancellations or services already utilized. Once a customer, distributor, retailer, or white-label partner has availed or benefited from a service, the transaction is considered complete, and no refund will be processed.",
 
     "This policy applies to all services provided through our platform, including AEPS withdrawals, bill payments, mobile/DTH recharges, fund transfers (DMT), loan processing, insurance, pancard applications, and other utility or financial services. Once these services are successfully executed, the amount paid is non-recoverable, as the service has been delivered and the associated resources have been consumed.",
 
@@ -152,7 +152,7 @@ const refundSections = [
   title: "Refund Method",
   icon: <CreditCard className="w-5 h-5" />,
   content: [
-    "9. Refund Method\nAt Finunique Small Private Limited, all refunds are processed using the same payment method that was used for the original transaction to ensure transparency and security for all customers, distributors, retailers, and white-label partners. This includes payments made through bank accounts, credit or debit cards, UPI, or other online payment systems.",
+    "At Finunique Small Private Limited, all refunds are processed using the same payment method that was used for the original transaction to ensure transparency and security for all customers, distributors, retailers, and white-label partners. This includes payments made through bank accounts, credit or debit cards, UPI, or other online payment systems.",
 
     "The refund process begins once a request has been verified and approved by our support team. Refunds are then initiated promptly and are subject to processing times of 5–10 business days, depending on the payment method and the associated bank or payment gateway’s timelines.",
 
@@ -166,15 +166,15 @@ const refundSections = [
   title: "Contact Us",
   icon: <Phone className="w-5 h-5" />,
   content: [
-    "10. Contact Us\nFor any cancellation or refund-related concerns, customers, distributors, retailers, and white-label partners are encouraged to contact Finunique Small Private Limited. Our support team is available to assist with queries, verification of transactions, and guidance on the refund process.",
+    "For any cancellation or refund-related concerns, customers, distributors, retailers, and white-label partners are encouraged to contact Finunique Small Private Limited. Our support team is available to assist with queries, verification of transactions, and guidance on the refund process.",
 
-    "Head Office:\nPlot No. 97, Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura, Jaipur, Rajasthan, India, 302017",
+    "\nHead Office: Plot No. 97, Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura, Jaipur, Rajasthan, India, 302017",
 
-    "Corporate Office:\nOffice No. 101/2, Vakratunda Corporate Park Premises Co-operative Society Limited, Off. Aarey Road, Goregaon (East), Mumbai – 400 063",
+    "\nCorporate Office: Office No. 101/2, Vakratunda Corporate Park Premises Co-operative Society Limited, Off. Aarey Road, Goregaon (East), Mumbai – 400 063",
 
-    "Email Addresses:\nsupport@7unique.in\ninfo@7unique.in",
+    "\nEmail Addresses: support@7unique.in\ninfo@7unique.in",
 
-    "Phone:\n0141-4511098",
+    "\nPhone: 0141-4511098",
 
     "Customers are requested to provide complete details when contacting support, including Transaction ID, registered mobile number, service type, and date of transaction, to ensure timely processing of queries or refund requests.",
 
@@ -188,7 +188,7 @@ const refundSections = [
   title: "Disclaimer",
   icon: <AlertTriangleIcon className="w-5 h-5" />,
   content: [
-    "11. Disclaimer\nFinunique Small Private Limited operates as a technology facilitator for a wide range of financial and utility transactions, including bill payments, recharges, AEPS/DMT services, loans, insurance, PAN applications, and other digital financial services. The company provides a secure platform to enable transactions between customers and third-party service providers, including banks, utility companies, insurance providers, and government agencies.",
+    "Finunique Small Private Limited operates as a technology facilitator for a wide range of financial and utility transactions, including bill payments, recharges, AEPS/DMT services, loans, insurance, PAN applications, and other digital financial services. The company provides a secure platform to enable transactions between customers and third-party service providers, including banks, utility companies, insurance providers, and government agencies.",
 
     "While we strive to ensure accurate, timely, and efficient processing of all services, final settlement, transaction confirmation, and refund eligibility may depend on the policies, systems, and procedures of third-party service providers, banks, or government APIs. Delays, errors, or discrepancies arising from these entities may impact the timing or approval of cancellations and refunds.",
 
@@ -272,7 +272,7 @@ export default function RefundPolicy() {
                     <div className="bg-white p-8 rounded-2xl shadow-sm mb-8">
                       <div className=" mb-10">
                         <div className="mb-6">
-                          <div className="w-20 h-20  bg-gradient-to-r from-[#358EBA] to-[#24576C] rounded-full flex items-center justify-center">
+                          <div className="w-20 h-20 bg-gradient-to-r from-[#358EBA] to-[#24576C] rounded-full flex items-center justify-center">
                             <FileText className="w-10 h-10 text-white" />
                           </div>
                         </div>
@@ -309,7 +309,7 @@ export default function RefundPolicy() {
                           </h3>
                         </div>
                         <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent my-4"></div>
-                        <p className="text-gray-600  whitespace-pre-line">{section.content}</p>
+                        <p className="text-gray-600 whitespace-pre-line">{section.content}</p>
                       </div>
                     ))}
                   </div>

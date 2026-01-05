@@ -5,31 +5,36 @@ const processSteps = [
   {
     step: 1,
     title: 'NDA Signing',
-    description: 'The identity is required to sign a Non-Disclosure Agreement (NDA) before the onboarding process.',
+    description:
+      'The entity is required to sign a Non-Disclosure Agreement (NDA) before initiating the onboarding process.',
     eta: '1 day',
   },
   {
     step: 2,
     title: 'Draft Agreement',
-    description: 'The entity views the draft agreement provided and gives comments or recommendations on how to make amendments.',
+    description:
+      'The entity reviews the draft agreement shared and provides feedback or suggested modifications, if required.',
     eta: '2 days',
   },
   {
     step: 3,
     title: 'Agreement Sign-Off',
-    description: 'The agreement is signed by authorized representatives of both the parties and formally formalizes the partnership.',
+    description:
+      'Authorized representatives from both parties sign the agreement, officially confirming and formalizing the partnership.',
     eta: '2 days',
   },
   {
     step: 4,
     title: 'Service Integration',
-    description: ' Test and technically integrate the PAN Redirection Service so as to facilitate smooth functionality.',
+    description:
+      'The PAN Redirection Service is tested and technically integrated to ensure smooth and seamless functionality.',
     eta: '3 days',
   },
   {
     step: 5,
     title: 'Launch Of The Service',
-    description: 'Formal introduction of the PAN Redirection Service, and it is live and accessible to users.',
+    description:
+      'The PAN Redirection Service is formally launched and made live, becoming accessible to end users.',
     eta: '3 days',
   },
 ];

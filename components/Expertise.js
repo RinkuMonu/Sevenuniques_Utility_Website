@@ -5,11 +5,11 @@ import Link from "next/link";
 
 export default function Expertise() {
   const data = [
-    { title: "AePS (Aadhaar Enabled Payment System)", img: "/about/aeps.jpg", link:"/aeps" },
-    { title: "Utility & Bill Payment", img: "/about/bbps.jpg", link:"/bill-payments" },
-    { title: "Money Transfer (DMT)", img: "/about/dmt.jpg", link:"/dmt" },
-    { title: "Micro ATM Services", img: "/about/m-atm.jpg", link:"/" },
-    { title: "Credit Card Solutions", img: "/about/ccs.jpg", link:"/credit-card" },
+    { title: "AePS (Aadhaar Enabled Payment System)", img: "/about/aeps3d.png", link:"/aeps" },
+    { title: "Utility & Bill Payment", img: "/about/Utility3d.png", link:"/bill-payments" },
+    { title: "Money Transfer (DMT)", img: "/about/dmt3d.png", link:"/dmt" },
+    { title: "Micro ATM Services", img: "/about/matm3d.png", link:"/" },
+    { title: "Credit Card Solutions", img: "/about/cc3d.png", link:"/credit-card" },
   ];
 
   return (
@@ -37,7 +37,7 @@ export default function Expertise() {
                     className="object-contain"
                   />
                 </div>
-                <h4 className="text-sm font-semibold text-[#09343D] mt-4 text-center leading-snug min-h-[40px]">
+                <h4 className="text-sm font-semibold text-[#09343D] mt-7 text-center leading-snug min-h-[40px]">
                   {feature.title}
                 </h4>
               </div>

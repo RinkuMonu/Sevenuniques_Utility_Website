@@ -20,18 +20,18 @@ function page() {
         id: 1,
         subheading: 'INSURANCE',
         heading: ' Apki Suraksha, Hamari Jimmedari.',
-        description: 'Obtain trustworthy insurance coverage for your family. Simple signup, prompt support of claims, and complete financial protection.',
+        description: 'Enjoy fast online insurance signup, continuous support, and dependable coverage to protect what matters most.',
         bgImage: '/insurance/ibg.png',
         centerImage: '/insurance/i3.png',
 
     }
     const aepsData = {
         subheading: 'Insurance',
-        heading: 'Har Risk Ka Perfect Cover',
-        description: 'Insurance is an assurance that covers you from all financial dangers. The correct insurance cover ensures that you are safe in any circumstance, whether in your personal life or in your business.',
+        heading: 'Har Jokhim ke liye sahi Suraksha!',
+        description: 'Insurance is more than just a policy, it is financial security for you, your family, and your business. The right insurance cover protects you from unexpected expenses and helps you stay prepared for any situation, personal or professional.',
         features: [
-            'We know that each person and each company is different. This is the reason why we provide tailored insurance that provides coverage to your vehicles, health, and assets. Easy procedures, fast orders, and convenient services that is what we promise.',
-            'Do something witty and make a difference today. We think, because we know, that the perfect cover for every risk is the answer to real peace of mind.',
+            'At Finunique, we understand that every individual and business has unique needs. That’s why we offer customized insurance solutions covering vehicles, health, and valuable assets. With simple processes, quick assistance, and reliable service, we make insurance easy and stress-free.',
+          
         ]
     };
 

@@ -18,8 +18,8 @@ function page() {
   const data = {
     id: 1,
     subheading: 'BUSINESS LOAN',
-    heading: 'Apka Business , Hamara Support',
-    description: 'Get the finance you need to expand your business in a safe and fast manner. Get a business loan today and have the flexibility and easy access to capital. ',
+    heading: 'Apka Kaam, Hamara Saath',
+    description: 'Get fast and reliable financing to expand your business. Enjoy flexibility and hassle-free access to funds with our business loans. ',
     bgImage: '/loan/loanbbg.png',
 
   }
@@ -58,10 +58,9 @@ function page() {
         image: "/loan/loan4.png",
         cta: "Request Calculations",
         details: [
-          "The business loan platform of Visit Finunique.",
-          "You will need to fill in your basic details: name, mobile number, Aadhaar, and PAN.",
-          "Select the type of loan (business loan, working capital, expansion loan, etc.).",
-          "Ask to calculate a loan in order to verify your eligibility.",
+          "Start your business loan application with Finunique. Fill in your basic details like name, mobile number, Aadhaar, and PAN.",
+          "Select the type of loan you need, such as a business loan, working capital, or expansion loan.",
+          "Use the eligibility calculator to check your loan options instantly",
         ],
       },
       {
@@ -70,8 +69,8 @@ function page() {
         image: "/loan/loan12.png",
         cta: "Submit Docs",
         details: [
-          "Add the required documents: pancard, Aadhaar Card, business financials, and income proof (bank statements or tax returns).",
-          "Your documents will be instantly checked by our system, which will then be processed much faster.",
+          "Submit your PAN, Aadhaar, business financials, and income proof.",
+          "Documents are quickly verified to speed up your loan approval.",
         ],
       },
       {
@@ -80,8 +79,8 @@ function page() {
         image: "/loan/loan13.png",
         cta: "Get Construction Equipment Loan Now",
         details: [
-          "Upon the loan approval, the funds of the business loan will be transferred to your business account.",
-          "You can get money within a few hours and use it immediately for the business.",
+          "Once your loan is approved, the funds will be transferred directly to your business account.",
+          "You can access the money within a few hours and use it immediately to grow or manage your business.",
         ],
       },
     ],
@@ -91,30 +90,30 @@ function page() {
   const datasteps = {
     heading: (
       <>
-        Paise Ka Solution, Turant <br className="hidden sm:block" /> Finunique Se
+        Funds Ho Quick,<br className="hidden sm:block" />  Growth Ho Thick
       </>
     ),
-    desc: " Finunique provides instant loans for all your requirements. It is easy and easygoing to borrow money through our fast, safe, and paperless system. Between application and approval, have experience banking your way",
+    desc: "Get instant business loans with Finunique. Our fast, safe, and paperless process makes borrowing easy and hassle-free. Experience seamless funding from application to approval, and access your money when you need it most.",
     loanFeatures: [
       {
         number: 1,
-        text: "Get immediate approval and fast disbursement with minimum paperwork.",
+        text: "Get quick approval and instant fund transfer with minimal documentation.",
       },
       {
         number: 2,
-        text: "Hassle-Free and Paperless Process.",
+        text: "Enjoy a completely hassle-free and paperless loan process.",
       },
       {
         number: 3,
-        text: "Apply online with no paperwork.",
+        text: "Apply online easily with no physical paperwork required",
       },
       {
         number: 4,
-        text: "Safe and Trusted Platform",
+        text: "A safe and trusted platform for all your business loan needs.",
       },
       {
         number: 5,
-        text: "Your information and finances are secured at a bank level.",
+        text: "Your personal and financial information is secured at the highest banking standards.",
       },
     ],
   };

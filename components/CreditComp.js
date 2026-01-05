@@ -29,10 +29,10 @@ export default function CreditComp() {
         <div className="text-white text-center lg:text-left animate-fade-in-up">
           <h3 className="text-2xl lg:text-4xl  font-bold leading-tight mb-4">
             One Card, <br />
-            Multiple Benefits
+            Endless Rewards
           </h3>
           <p className="text-gray-300 text-base md:text-lg mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-           It has got a unique credit card, the Finunique, which opens a world of opportunities and conveniences. Get unique advantages and swipe with it.
+           Introducing the Finunique Credit Card your gateway to a world of convenience and exclusive benefits. Enjoy special perks, earn rewards, and make every swipe count.
           </p>
           <Link href="/coming-soon" className=" text-white font-semibold py-3 px-8 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-cyan-500/50 transform hover:scale-105"  style={{
                             background: "linear-gradient(90deg,#358EBA  0%, #24576C 100%)"
@@ -44,13 +44,12 @@ export default function CreditComp() {
         {/* Right Grid Section */}
         <div className="relative w-full  max-w-2xl mx-auto lg:mx-0 flex flex-col gap-2 md:block lg:h-[400px] md:h-[500px] animate-fade-in">
           {/* Using absolute positioning for a more flexible and overlapping layout */}
-          <FeatureCard className="md:absolute top-0 right-1/4 md:w-1/3 h-1/4">Build Credit Score</FeatureCard>
-          <FeatureCard className="md:absolute top-[5%] left-0 md:w-1/3 h-1/4">Extra Benefits</FeatureCard>
-          <FeatureCard className="md:absolute top-1/2 -left-[10%] md:w-2/5 h-1/4">Rewards & <br/> Cashback</FeatureCard>
-          <FeatureCard className="md:absolute top-1/3 right-1/3 md:w-1/3 h-1/4">Easy & Cashless <br/>Payments</FeatureCard>
-          <FeatureCard className="md:absolute top-1/3 -right-[5%] md:w-1/3 h-1/4">Credit Facility</FeatureCard>
-          <FeatureCard className="md:absolute -bottom-[5%] left-1/8 md:w-2/5 h-1/4">Emergency Support</FeatureCard>
-          <FeatureCard className="md:absolute bottom-0 right-0 md:w-2/5 h-1/4 ">Online Shopping & EMI Option</FeatureCard>
+          <FeatureCard className="md:absolute top-0 right-1/4 md:w-1/3 h-1/4">Boost Your Credit Score</FeatureCard>
+          <FeatureCard className="md:absolute top-[5%] left-0 md:w-1/3 h-1/4">Exclusive Rewards & Cashback</FeatureCard>
+          <FeatureCard className="md:absolute top-1/2 -left-[10%] md:w-2/5 h-1/4">Easy & <br/> Cashless Payments</FeatureCard>
+          <FeatureCard className="md:absolute top-1/3 -right-[5%] md:w-1/3 h-1/4">Flexible Credit Facility</FeatureCard>
+          <FeatureCard className="md:absolute -bottom-[5%] left-1/8 md:w-2/5 h-1/4">Emergency Assistance</FeatureCard>
+          <FeatureCard className="md:absolute bottom-0 right-0 md:w-2/5 h-1/4 ">OOnline Shopping & EMI Options</FeatureCard>
         </div>
 
       </main>

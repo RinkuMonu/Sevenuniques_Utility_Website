@@ -71,11 +71,13 @@ export default function Instructions({ items }) {
   return (
     <main className="min-h-screen bg-gradient-to-br from-[#ebf7fa] to-[#fcfbf5] flex flex-col items-center py-10 px-4 md:px-8 relative">
       <div className="max-w-7xl w-full mx-auto">
-        <h1 className="text-3xl md:text-5xl font-bold text-[#176B87] mb-3 text-center tracking-tight">
+        <h1 className="text-3xl md:text-3xl font-bold text-[#176B87] mb-3 text-center tracking-tight">
           Instructions
         </h1>
         <p className="text-gray-600 text-lg text-center mb-10">
-          To maintain a friendly and respectful environment, please follow these simple guidelines and PAN form instructions.
+To ensure a smooth and respectful application process, applicants are requested to carefully follow the PAN application instructions mentioned below.
+
+
         </p>
 
         {/* Vertical Timeline/Stepper */}

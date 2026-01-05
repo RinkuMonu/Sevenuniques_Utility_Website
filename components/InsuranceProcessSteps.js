@@ -9,17 +9,17 @@ const stepsData = [
     {
         id: 1,
         title: 'Apply online',
-        description: 'Complete a form and select the insurance plan that suits you.'
+        description: 'Choose your ideal insurance plan in just a few simple steps.'
     },
     {
         id: 2,
         title: 'Document upload',
-        description: 'Get your documents verified fast and safely.'
+        description: 'Submit your documents for quick and secure verification.'
     },
     {
         id: 3,
         title: 'Get Coverage',
-        description: 'Get complete protection on the spot—drive, ride, or live without worry.'
+        description: 'Enjoy instant protection and move forward with complete peace of mind.'
     }
 ];
 
@@ -49,12 +49,12 @@ export default function InsuranceProcessSteps() {
                         <h2 className="text-2xl md:text-4xl font-bold text-[#24576C] leading-tight">
                             Apply Now,
                             <br />
-                             Take the First Step
+                             Because Your Future 
                             <br />
-                             Toward Your Financial Freedom!
+                             Deserves Protection
                         </h2>
                         <p className="mt-6 text-gray-600 max-w-lg mx-auto lg:mx-0">
-                           Get protected it a smart step to have entire protection of yourself, your family, and your assets be a worry free person today.
+                          Get the right insurance cover and enjoy complete peace of mind every day.
                         </p>
                         <Link
                             href="/coming-soon"

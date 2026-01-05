@@ -64,11 +64,11 @@ export default function Documents({ items }) {
     
 
       <div className="max-w-7xl w-full mx-auto">
-        <h1 className="text-3xl md:text-5xl font-bold text-[#176B87] mb-3 text-center tracking-tight">
+        <h1 className="text-3xl md:text-3xl font-bold text-[#176B87] mb-3 text-center tracking-tight">
           Documents Required
         </h1>
         <p className="text-gray-600 text-lg text-center mb-10">
-          To maintain a friendly and organized process, please ensure you have the following documents ready.
+          To ensure a smooth and organized process, please have the following documents ready before applying.
         </p>
 
         {/* Vertical Timeline/Stepper */}

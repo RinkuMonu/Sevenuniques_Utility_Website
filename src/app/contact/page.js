@@ -233,9 +233,9 @@ function Contact() {
 
             {/* Right Overlay Image */}
             <div className="hidden md:block relative">
-              <div className="lg:absolute -bottom-24 right-0 lg:w-[600px] lg:h-[280px] z-20">
+              <div className="lg:absolute -bottom-28 right-0 lg:w-full lg:h-[280px] z-20">
                 <Image
-                  src="/image/contact-overlay-img.png"
+                  src="/image/contact3d.png"
                   alt="overlay"
                   fill
                   className="object-contain lg:right-0"

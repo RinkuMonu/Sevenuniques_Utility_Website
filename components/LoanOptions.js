@@ -5,22 +5,22 @@ import React from 'react';
 const loanOptions = [
   {
     title: 'Home Loan',
-     imageUrl: '/loan/loanb4.jpg',
+     imageUrl: '/loan/home-vec3d.png',
      link:"/instant-loan/home-loan"
   },
   {
     title: 'Personal Loan',
-     imageUrl: '/loan/1.jpg',
+     imageUrl: '/loan/personal3d.png',
      link:"/instant-loan/personal-loan"
   },
   {
     title: 'Construction Loan',
-     imageUrl: '/loan/2.jpg',
+     imageUrl: '/loan/const3d.png',
      link:"/instant-loan/construction-equipment-loan"
   },
   {
     title: 'Car Loan',
-    imageUrl: '/loan/3.jpg',
+    imageUrl: '/loan/carloan3d.png',
     link:"/instant-loan/car-loan"
   },
 ];

@@ -16,8 +16,8 @@ function page() {
     const data = {
         id: 1,
         subheading: 'Credit Card',
-        heading: 'Extra Benefits , Ab Har Swipe Par',
-        description: 'Get points, cashback, and premium treatment with each swipe. Spend on your own, get points, and enjoy points-based perks in the lifestyle customized to you.',
+        heading: 'Swipe Karein, Rewards Paayein!',
+        description: 'Unlock a world of rewards every time you swipe. Earn points, enjoy cashback, and access exclusive lifestyle perks tailored just for you. Spend smart, live better, and make every transaction count',
         bgImage: '/credit/creditbg.png',
         centerImage: '/credit/credit1.png',
     }
@@ -31,9 +31,9 @@ function page() {
         </div>
     );
     const info = [
-        { title: "Quick Application and Instant Approval.", description: "Make your credit card applications in a few minutes either online or at your branch.Share your basic details, provide documents, and get approved quickly to start redeeming card benefits. " },
-        { title: "Reward, Cashback, and Lifestyle Benefits.", description: "With each swipe, you’ll earn rewards, cashback, and exclusive offers on dining, shopping, traveling, and much more. You’ll also be able to enjoy exclusive lifestyle benefits, including lounge access, complimentary rounds of golf, partner discounts, and designer lifestyle benefits. " },
-        { title: "Payment Flexibility and 24/7 Support ", description: "Allow easy, secured online and offline transactions. Convert purchases to EMIs, manage your credit limit, and you'll always have an emergency back-up when needed. Go buy-once, twice, thrice, with no fear or worry. " },
+        { title: "Fast Application, Quick Approval.", description: "Apply for your credit card in just a few minutes online or at a branch. Submit basic details, upload documents, and get approved quickly to enjoy instant benefits. " },
+        { title: "Rewards, Cashback & Lifestyle Privileges", description: "Earn rewards and cashback on every swipe while enjoying exclusive offers on dining, shopping, travel, and more. Unlock premium lifestyle benefits such as lounge access, partner discounts, and curated experiences." },
+        { title: "Flexible Payments with 24/7 Support ", description: "Enjoy secure online and offline payments with the freedom to convert purchases into easy EMIs. Manage your credit limit effortlessly and rely on round-the-clock support whenever you need assistance. " },
 
     ]
     const text = "CREDIT CARD";

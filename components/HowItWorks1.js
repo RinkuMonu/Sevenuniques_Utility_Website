@@ -21,14 +21,14 @@ const timelineData = [
     title: 'Fingerprint Verification',
     description:
       'Place your finger on the biometric scanner to confirm your identity securely.',
-    imageUrl: '/aeps/p3.png',
+    imageUrl: '/aeps/p33d.png',
   },
   {
     stepNumber: 4,
     title: 'Transaction Approval',
     description:
       'The bank system verifies your details and approves the transaction instantly.',
-    imageUrl: '/aeps/p4.png',
+    imageUrl: '/aeps/p43d.png',
   },
   {
     stepNumber: 5,
@@ -44,7 +44,7 @@ const TimelineStep = ({ stepNumber, title, description, imageUrl, isReversed, is
     return (
         <div className={`flex flex-col lg:flex-row  gap-6 lg:gap-0 lastSvg `}>
             <div className={` lg:w-5/12 items-start ${isReversed ? 'flex justify-end align-top ' : 'flex justify-start'}`}>
-                <Image src={imageUrl} alt={title} width={400} height={400} className="rounded-xl  object-contain" />
+                <Image src={imageUrl} alt={title} width={400} height={400} className="rounded-xl object-contain" />
             </div>
             <div className="w-full lg:w-2/12 flex lg:flex-col items-center justify-center gap-y-10 lg:gap-y-0">
                 <div className="w-12 h-12 flex-shrink-0 bg-slate-800 text-white font-bold text-xl rounded-full flex items-center justify-center z-10">

@@ -20,12 +20,9 @@ export default function PancardAllotment() {
         </h2>
 
         <p className="text-gray-700 mt-6 leading-relaxed text-sm sm:text-base relative text-justify md:text-left">
-          You should use this form in case you have not yet applied to obtain a PAN or you do not possess a PAN. There is a place on the Income Tax Department site where you can check whether a PAN has been allotted to you or not.
+         This form should be used if you have not previously applied for a PAN or do not currently possess one. You can also verify whether a PAN has already been allotted to you through the official Income Tax Department portal.
           <br />
-          Finunique provides the service of online pancards, in which the digital PAN Card is provided within a limited time, and the entire online submission is done via our{" "}
-          <span className="font-bold">online PAN service portal</span>. The{" "}
-          <span className="font-bold">PAN Card online quick service</span> method
-          is a paperless and smooth experience.
+          Finunique offers a seamless online PAN application service, providing a digital PAN within a short turnaround time. The entire submission process is paperless, secure, and completed through our online PAN service portal for a smooth and hassle-free experience.
           <span className="absolute left-0 bottom-[-20px] w-full h-[2px] bg-[#FFD84C] rounded-full"></span>
         </p>
 

@@ -12,7 +12,7 @@ const features = [
     icon: <FaAddressCard className="w-10 h-10 text-orange-800" />,
     title: "PAN Card Correction",
     description:
-      "Get your PAN Card instantly with online verification and hassle-free documentation.",
+      "Correct your PAN Card details quickly with online verification and simplified documentation.",
     link: "/pan-card/pan-card-correction",
   },
   {
@@ -20,34 +20,27 @@ const features = [
     icon: <IoNewspaperSharp className="w-10 h-10 text-orange-800" />,
     title: "Apply for New",
     description:
-      "All PAN Card applications are processed through secure and authorized government channels.",
+      "All new PAN card applications are processed securely through official government channels.",
     link: "/pan-card/pan-card-Apply-New",
   },
-  // {
-  //   id: 3,
-  //   icon: <MdOutlineTrackChanges className="w-10 h-10 text-orange-800" />,
-  //   title: "Track PAN",
-  //   description:
-  //     "No need for physical paperwork — everything is managed digitally for faster approvals.",
-  //   link: "/PAN Card/track",
-  // },
   {
     id: 4,
     icon: <MdOutlineBrowserUpdated className="w-10 h-10 text-orange-800" />,
     title: "Address Update",
     description:
-      "Experience smooth and fast PAN processing with real-time status tracking.",
+      "Enjoy seamless and speedy PAN processing with real-time status updates.",
     link: "/pan-card/pan-card-address-update",
   },
   {
     id: 5,
     icon: <IoIosPrint className="w-10 h-10 text-orange-800" />,
-    title: "Reprint Pan",
+    title: "Reprint PAN",
     description:
-      "Easily apply for a PAN Card from rural and urban areas with simple Aadhaar-based verification.",
+      "Apply for a PAN Card reprint easily using Aadhaar-based verification, available across both rural and urban areas.",
     link: "/pan-card/reprint-pan",
   },
 ];
+
 
 const pancardFeatures = () => {
   return (
@@ -57,8 +50,7 @@ const pancardFeatures = () => {
           PAN Card Service Features
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-          Simplify your pan card application with our secure, fast, and
-          paperless services designed for everyone.
+          Experience a seamless, secure, and fully digital PAN card application process tailored for all users.
         </p>
 
         <div className="flex flex-wrap justify-center gap-8 lg:px-0">

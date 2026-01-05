@@ -8,7 +8,7 @@ export default function WhyChooseUs({whydata}) {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <p className="text-[#00b4d8] font-semibold mb-2 uppercase tracking-wide text-sm">{whydata.title1}</p>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0d3b4f] mb-4 text-balance">
-            India&apos;s Most Trusted Bike Insurance Partner
+            {whydata.title2}
           </h2>
           <p className="text-gray-600 leading-relaxed">
        {whydata.desc}
