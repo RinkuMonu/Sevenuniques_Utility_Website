@@ -124,7 +124,7 @@ function page() {
         </div>
       </section>
 
-      <div
+      {/* <div
         className="w-full "
         style={{
           background: "linear-gradient(90deg, #01202A 0%, #01202A 25%, #0B4051 50%, #095C8C 75%, #095C8C 100%)"
@@ -155,7 +155,7 @@ function page() {
           </div>
         </div>
 
-      </div>
+      </div> */}
 
 
 
@@ -163,7 +163,7 @@ function page() {
 
       <DmtWork />
       <AdvantageDMT />
-      <ContactBanner />
+      {/* <ContactBanner /> */}
     </>
   )
 }

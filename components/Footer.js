@@ -236,6 +236,14 @@ const Footer = () => {
                         Contact Us
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href="/team"
+                        className="hover:text-blue-400 text-white "
+                      >
+                        Team Members
+                      </Link>
+                    </li>
                   </ul>
                 </div>
 

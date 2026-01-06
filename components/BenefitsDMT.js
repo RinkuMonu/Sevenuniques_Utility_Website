@@ -1,99 +1,65 @@
 import React from 'react';
-import { ShieldCheck, SmartphoneNfc, CheckSquare, ArrowDownUp, Network, History } from 'lucide-react';
+import {
+  ShieldCheck,
+  SmartphoneNfc,
+  CheckSquare,
+  ArrowDownUp,
+  Network,
+  History,
+} from 'lucide-react';
 
 const benefitItems = [
-  { icon: <SmartphoneNfc size={40} strokeWidth={1.25} />, title: 'Quick Settlements' },
-  { icon: <ShieldCheck size={40} strokeWidth={1.25} />, title: 'Safe & Reliable Transactions' },
-  { icon: <CheckSquare size={40} strokeWidth={1.25} />, title: 'User-Friendly Service' },
-  { icon: <ArrowDownUp size={40} strokeWidth={1.25} />, title: 'Low Transaction Fees' },
-  { icon: <Network size={40} strokeWidth={1.25} />, title: 'Strong Network Reach' },
-  { icon: <History size={40} strokeWidth={1.25} />, title: '24x7 Availability' },
+  { icon: SmartphoneNfc, title: 'Quick Settlements', desc: 'Instant credits so your business cashflow stays smooth and predictable.' },
+  { icon: ShieldCheck, title: 'Safe & Reliable', desc: 'Bank-grade security with encrypted, fully compliant transactions.' },
+  { icon: CheckSquare, title: 'User-Friendly', desc: 'Simple flows that work for you, your staff, and your customers.' },
+  { icon: ArrowDownUp, title: 'Low Fees', desc: 'Competitive pricing to keep more of every transaction in your pocket.' },
+  { icon: Network, title: 'Wide Reach', desc: 'Accept payments from customers across a strong, pan-India network.' },
+  { icon: History, title: '24x7 Availability', desc: 'Always-on services so you never miss a payment opportunity.' },
 ];
 
-const BenefitCard = ({ icon, title }) => (
-  <div className="flex h-40 w-full flex-col items-center justify-center gap-4 rounded-2xl bg-[#018EDE] p-4 text-center text-white shadow-xl shadow-blue-500/20 transition-transform duration-300 hover:scale-105">
-    {icon}
-    <h3 className="font-medium text-lg">{title}</h3>
+const BenefitCard = ({ icon: Icon, title, desc }) => (
+  <div className="group flex flex-col gap-3 rounded-2xl border border-sky-100 bg-white/80 p-5 shadow-sm shadow-sky-100 backdrop-blur transition hover:-translate-y-1 hover:border-sky-300 hover:bg-white hover:shadow-lg">
+    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-50 text-sky-600 ring-1 ring-sky-100 transition group-hover:bg-sky-100 group-hover:text-sky-700">
+      <Icon size={26} strokeWidth={1.6} />
+    </div>
+    <h3 className="text-base font-semibold text-slate-900">{title}</h3>
+    <p className="text-sm text-slate-600 leading-relaxed">
+      {desc}
+    </p>
   </div>
 );
 
-/**
- * The central piece, now with precisely rendered lines.
- */
-const DiagramCenterpiece = () => {
-    const buttonWidth = '220px';
-    const horizontalLineLength = `calc(25% - ${parseInt(buttonWidth, 10) / 3}px)`; 
-    const lineWidth = '2px'; 
-    const lineColor = '#018EDE'; 
-
-    return (
-        <div className="relative my-4 hidden h-44 w-full max-w-5xl lg:block">
-            <div 
-                className="absolute left-0 top-1/2 h-[2px] -translate-y-1/2 bg-[#018EDE]" 
-                style={{ width: `calc(${horizontalLineLength} - 8px)`, borderRadius: '0 1px 1px 0' }} 
-            ></div>
-            <div 
-                className="absolute right-0 top-1/2 h-[2px] -translate-y-1/2 bg-[#018EDE]" 
-                style={{ width: `calc(${horizontalLineLength} - 8px)`, borderRadius: '1px 0 0 1px' }} 
-            ></div>
-          <div className="absolute bottom-1/2 left-[2.66%] h-1/3 w-px bg-[#018EDE]" style={{width: lineWidth}}></div>
-            <div className="absolute bottom-1/2 left-1/2 h-1/2 w-px bg-[#018EDE]" style={{width: lineWidth}}></div>
-            <div className="absolute bottom-1/2 left-[83.33%] h-1/3 w-px bg-[#018EDE]" style={{width: lineWidth}}></div>
-            <div className="absolute top-1/2 left-[16.66%] h-1/3 w-px bg-[#018EDE]" style={{width: lineWidth}}></div>
-            <div className="absolute top-1/2 left-1/2 h-1/2 w-px bg-[#018EDE]" style={{width: lineWidth}}></div>
-            <div className="absolute top-1/2 left-[83.33%] h-1/3 w-px bg-[#018EDE]" style={{width: lineWidth}}></div>
-
-            <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
-                <div 
-                    className="rounded-full bg-gradient-to-br from-cyan-300 to-blue-500 p-[2px] shadow-2xl shadow-blue-500/40"
-                    style={{ width: buttonWidth }}
-                >
-                    <div className="flex items-center justify-center rounded-full bg-gradient-to-t from-[#34B5FF] to-[#007599] py-5 px-4">
-                         <span className="text-3xl font-bold uppercase tracking-wider text-white px-10">
-                            Benefits
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div 
-                className="absolute left-1/2 top-1/2 z-10 h-[2px] w-2 -translate-x-full -translate-y-1/2 bg-[#018EDE] rounded-r-full" 
-                style={{ marginLeft: `calc(-${parseInt(buttonWidth, 10) / 2}px + 6px)` }} 
-            ></div>
-            <div 
-                className="absolute left-1/2 top-1/2 z-10 h-[2px] w-2 -translate-y-1/2 bg-blue-200 rounded-l-full" 
-                style={{ marginLeft: `calc(${parseInt(buttonWidth, 10) / 2}px - 6px)` }} 
-            ></div>
-        </div>
-    );
-};
-
 const BenefitsDMT = () => {
-  const topBenefits = benefitItems.slice(0, 3);
-  const bottomBenefits = benefitItems.slice(3, 6);
-
   return (
-    <section className="bg-white py-10 font-sans">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center">
-          <div className="grid w-full max-w-5xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-            {topBenefits.map((item) => (
-              <BenefitCard key={item.title} icon={item.icon} title={item.title} />
-            ))}
-          </div>
-            
-          <div className=" lg:hidden">
-              <span className="inline-block rounded-full bg-gradient-to-b from-[#007599] to-[#34B5FF] px-10 py-3  font-bold uppercase text-white shadow-xl">
-                  Benefits
-              </span>
-          </div>
+    <section className="relative overflow-hidden bg-slate-50 py-14 sm:py-16">
+      {/* subtle background accent */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(14,165,233,0.10),transparent_55%),radial-gradient(circle_at_bottom,rgba(37,99,235,0.06),transparent_60%)]" />
 
-          <DiagramCenterpiece />
+      <div className="relative mx-auto flex max-w-7xl flex-col gap-10 px-4 sm:px-6 lg:px-8">
+        {/* Heading */}
+        <header className="mx-auto max-w-7xl text-center">
+          <span className="inline-flex items-center gap-2 rounded-full bg-sky-100 px-4 py-1 text-lg font-medium uppercase tracking-[0.18em] text-sky-700">
+            <span className="h-1.5 w-1.5 rounded-full bg-sky-500" />
+            Benefits
+          </span>
+          <h2 className="mt-4 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+            Make every digital transaction work harder for your business
+          </h2>
+          <p className="mt-3 text-sm text-slate-600 sm:text-base">
+            Designed for merchants who want fast, secure and always-on payments without adding complexity to their day-to-day operations.
+          </p>
+        </header>
 
-          <div className="grid w-full max-w-5xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-            {bottomBenefits.map((item) => (
-              <BenefitCard key={item.title} icon={item.icon} title={item.title} />
-            ))}
-          </div>
+        {/* Grid */}
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {benefitItems.map((item) => (
+            <BenefitCard
+              key={item.title}
+              icon={item.icon}
+              title={item.title}
+              desc={item.desc}
+            />
+          ))}
         </div>
       </div>
     </section>

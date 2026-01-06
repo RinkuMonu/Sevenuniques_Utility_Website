@@ -65,7 +65,7 @@ export default function HomeRechargeSection() {
   ];
 
   return (
-    <section className="bg-[#f7fbff] py-12 px-6 md:px-16 text-center my-8 lg:my-12">
+    <section className=" py-12 px-6 md:px-16 text-center">
       {/* Heading */}
       <h2 className="text-2xl md:text-4xl font-semibold text-gray-900">
         Recharges & Bill Payments
