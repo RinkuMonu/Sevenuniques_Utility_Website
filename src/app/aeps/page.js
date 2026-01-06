@@ -103,9 +103,9 @@ function page() {
       <AepsService />
       <HowItWorks1 />
       <ComplianceSection />
-      <AepsAdvantages />
-      <AepsFeatures />
-      <Aepskeyfeatures />
+      {/* <AepsAdvantages /> */}
+      {/* <AepsFeatures /> */}
+      {/* <Aepskeyfeatures /> */}
       {/* <EligibilityAeps data={aepsData}/> */}
       <EligibilityAeps data={aepsData2} />
 

@@ -294,7 +294,7 @@ const ServiceGrid = () => {
           <div key={catIdx} className="space-y-6">
             <h3 className="text-xl font-bold text-[#0C3D4C]">{category.category}</h3>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-x-3 gap-y-10 my-10 relative">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-3 gap-y-10 my-10 relative">
             {category.services.map((service, idx) => {
               const isHovered = hoveredCard === `${catIdx}-${idx}`;
 
