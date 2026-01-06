@@ -25,7 +25,8 @@ const steps = [
 
 export default function DmtWork() {
     return (
-        <div className=" px-4 lg:px-0 py-16">
+        <section className='bg-[#f0f8ff]'>
+        <div className="px-4 lg:px-0 py-16">
             <div className="w-full max-w-7xl mx-auto text-center">
 
                 {/* Header Section */}
@@ -43,6 +44,7 @@ export default function DmtWork() {
 
             </div>
         </div>
+        </section>
     );
 }
 

@@ -24,8 +24,8 @@ export default function Home() {
       <HomeRechargeSection />
       <HomeSecurity />
       <HomeTrustedSecureSection />
-      <HomeCreditScoreSection />
       <UtilitiesHome />
+      <HomeCreditScoreSection />
       <HomePaymentGatewaySection />
       <APi />
       <HomeMap />

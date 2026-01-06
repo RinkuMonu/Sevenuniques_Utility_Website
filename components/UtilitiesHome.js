@@ -31,7 +31,7 @@ const services = [
 
 const UtilitiesHome = () => {
   return (
-    <section className="bg-[#eaf5ff] pt-14 pb-10 mt-20 overflow-hidden">
+    <section className="bg-[#eaf5ff] pt-14 pb-10 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
      
         <div className="hidden lg:block">

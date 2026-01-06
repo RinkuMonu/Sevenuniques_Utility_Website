@@ -475,7 +475,7 @@ function Contact() {
       </section>
 
       {/* ----------- Additional Sections ----------- */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <BenefitsSection2 />
       </section>
       <section className="py-16">
@@ -484,7 +484,7 @@ function Contact() {
       <section className="pt-6">
         <TestimonialSlider />
       </section>
-      <ContactBanner />
+      <ContactBanner /> */}
     </>
   );
 }

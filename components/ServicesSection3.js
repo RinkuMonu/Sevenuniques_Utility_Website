@@ -16,9 +16,9 @@ const ServicesSection3 = ({ data }) => {
 
   return (
     <section className="bg-white py-4 md:pt-6 md:pb-16">
-      <div className="bg-orange-50 shadow-lg rounded-lg max-w-7xl mx-auto px-8 lg:px-0 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
+      <div className="mx-auto px-8 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
         {/* Left Column */}
-        <div className="md:pl-16 py-10">
+        <div className="md:pl-16 py-10 col-span-8">
           <p className="text-base font-semibold text-[#0C3D4C] tracking-wider">
             {data?.subheading}
           </p>
@@ -41,7 +41,7 @@ const ServicesSection3 = ({ data }) => {
         </div>
 
         {/* Right Column */}
-          <div className="mt-6 md:mt-0 relative">
+          {/* <div className="mt-6 md:mt-0 relative">
       <Image
         src="/image/aeps-vec3d.png"
         alt="Example image"
@@ -49,7 +49,7 @@ const ServicesSection3 = ({ data }) => {
         height={400}
         className="mx-auto object-cover"
       />
-    </div>
+    </div> */}
       </div>
     </section>
   );
