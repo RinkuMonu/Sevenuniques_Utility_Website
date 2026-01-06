@@ -10,6 +10,7 @@ import BenefitsSection2 from '../../../components/BenefitsSection2';
 import PartnersSection from '../../../components/PartnersSection';
 import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
+import BookingServicesSection from '../../../components/BookingServices';
 
 function Page() {
 
@@ -36,8 +37,8 @@ function Page() {
                     ],
                 },
                 aeps: {
-                    subheading: "FLIGHT BOOKING",
-                    heading: "Travel Made Simple with Finunique",
+                    subheading: "BOOKING",
+                    heading: "Easy Travelling with Finunique",
                     description: "Book your flights effortlessly with Finunique, whether for domestic or international journeys. Enjoy a smooth, hassle-free booking experience with just a few clicks. ",
                     features: [
                         "Search, select, and secure your flights instantly. With flexible options, real-time support, and reliable service, your trips whether business or leisure are always stress-free and on time. ",
@@ -56,7 +57,7 @@ function Page() {
                 },
                 info: [
                     {
-                        title: "Book Today, Fly Tomorrow",
+                        title: "Bus Booking",
                         description: [
                             "Planning your next trip has never been easier. With Finunique, you can book flights instantly and receive confirmed tickets within minutes. Enjoy a stress-free journey, whether it’s for business or leisure.",
                             "Our platform offers fast, secure booking on both mobile and desktop. Compare fares, select convenient timings, and confirm your flights in just a few simple steps.",
@@ -64,7 +65,7 @@ function Page() {
                         ]
                     },
                     {
-                        title: "Quick and Hassle-Free Flight Booking", description: [
+                        title: "Train Booking", description: [
 
                             "Finunique makes booking your flights faster and easier than ever. Whether it’s a domestic or international journey, enjoy instant confirmation and travel without worries.",
                             "We help you find the best flights that match your schedule and budget, providing a platform with secure payments, easy booking, and reliable support anytime, anywhere.",
@@ -72,7 +73,15 @@ function Page() {
                         ]
                     },
                     {
-                        title: "Instant Flight Booking with Finunique", description: [
+                        title: "Hotel Booking", description: [
+
+                            "Book your flights in just a few clicks, whether it’s a domestic or international journey. Find the best options quickly and travel with peace of mind.",
+                            "Compare airlines, choose convenient timings and fares, and make secure online payments. Our booking process is fast, simple, and available anytime, anywhere.",
+                            "With Finunique, enjoy a hassle-free travel experience from start to finish. Fly comfortably, conveniently, and stress-free.",
+                        ]
+                    },
+                     {
+                        title: "Flight Booking", description: [
 
                             "Book your flights in just a few clicks, whether it’s a domestic or international journey. Find the best options quickly and travel with peace of mind.",
                             "Compare airlines, choose convenient timings and fares, and make secure online payments. Our booking process is fast, simple, and available anytime, anywhere.",
@@ -107,7 +116,7 @@ function Page() {
                 aeps: {
                     subheading: "HOTAL BOOKING",
                     heading: "Turant Confirmation, Aasaan Booking.",
-                    description: "It has never been so easy to book your hotel stay. While booking with Finunique, one can search, compare, and book a room just by clicking a few times. From budget rooms to luxurious suites, we make booking a smooth and easy process for travelers.",
+                    description: "It has never been so easy to book your hotel stay. While booking with Finunique, one can search, compare, and book a room just by clicking a few times. From budget rooms to luxurious suites, we make booking a smooth and easy process for travellers.",
                     features: [
                         "All our reservations are instantly confirmed. You do not have to wait until email arrives or fear about the hotel being overbooked. You can arrange your travel at your own time because of flexible check-in and check-out, which will provide you with the maximum freedom.",
                         "We also provide the best deals and 24/7 customer service. Compare various hotels, get competitive prices, and be sure that our team is always at your service. Travel without the worry that you have a place to stay and be with you throughout the journey   .",
@@ -116,16 +125,21 @@ function Page() {
                 travel: {
                     title: "Hotel Stay Assured",
                     cards: [
-                        { title: "Instant Confirmation", description: " Book a hotel immediately and avoid waiting, no doubt." },
-                        { title: "Flexible Cancellation", description: "Book or cancel or make changes to your stay in minutes, and have refunds within hours according to the policy." },
-                        { title: "Best Price Guarantee", description: "Book and be sure that you are getting the best rates at your selected hotel." },
-                        { title: "24/7 Customer Support", description: " You can always contact our group to help with booking problems or amendments." },
+                        { title: "Instant Confirmation", 
+                          description: " Book a hotel immediately and avoid waiting, no doubt." },
+                        { title: "Flexible Cancellation", 
+                          description: "Book or cancel or make changes to your stay in minutes, and have refunds within hours according to the policy." },
+                        { title: "Best Price Guarantee", 
+                          description: "Book and be sure that you are getting the best rates at your selected hotel." },
+                        { title: "24/7 Customer Support", 
+                          description: " You can always contact our group to help with booking problems or amendments." },
                     ],
                     imageUrl: "/booking/hotel1.png",
                 },
                 info: [
                     {
-                        title: "Fast and easy hotel reservation", description: [
+                        title: "Fast and easy hotel reservation", 
+                        description: [
                             "Reserve a hotel in real time with Finunique. Whether it is a budget accommodation or luxury suites, search and book the ideal accommodation in a few clicks.",
                             "Book at several hotels, compare prices, and make the final decision in the shortest time possible. Make a booking in a secure, comfortable, and convenient way at any time and place.",
                             "Travel worry free and make your stay worry free with 24/7 support and flexibility in the check-in/check-out."
@@ -142,7 +156,8 @@ function Page() {
 
                     },
                     {
-                        title: "Fast and stress-free hotel reservation.", description: [
+                        title: "Fast and stress-free hotel reservation.",
+                        description: [
                             " Reserve your hotel within a few clicks with Finunique. Whether it is budget accommodations or luxury suites, book the best accommodation to enjoy your trip immediately.",
                             "Check and compare hotels, select the most attractive deals, and receive confirmation. Have a comfortable, safe, and convenient booking process anywhere, anytime.",
                             "Travel without stress and make it a comfortable and stress-free stay with flexible check-in /check-out schedules and 24/7 customer care."
@@ -357,12 +372,12 @@ function Page() {
                     </div>
                 </div>
             </section>
-
-            {/* Tabs Section */}
-            <section className="py-16">
+<ServicesSection3 data={activeData?.data.aeps} />
+  {/* Tabs Section */}
+            <section className="pb-10">
                 <div className="">
                     {/* Tab Buttons */}
-                    <div className="flex gap-8 mb-10 max-w-6xl mx-auto px-4 lg:px-0">
+                    {/* <div className="flex gap-8 mb-10 max-w-6xl mx-auto px-4 lg:px-0">
                         {tabs.map((tab) => (
                             <button
                                 key={tab.id}
@@ -383,16 +398,16 @@ function Page() {
                                 <p className="mt-3 text-sm font-medium">{tab.label}</p>
                             </button>
                         ))}
-                    </div>
+                    </div> */}
 
                     {/* Active Tab Content */}
-                    <PromotionSlider sliderImages={activeData?.data.sliderImages} />
+                    {/* <PromotionSlider sliderImages={activeData?.data.sliderImages} /> */}
                     <BookingFeatures title={activeData?.data.booking.title} features={activeData?.data.booking.features} />
-                    <BenefitsSection2 />
-                    <ServicesSection3 data={activeData?.data.aeps} />
+                    {/* <BenefitsSection2 /> */}
+                   
 
                     {/* Info Sections + Travel Assured */}
-                    <section className=" mt-10 mb-16">
+                    {/* <section className=" mt-10 mb-16">
                         <div>
                             {activeData?.data.info.slice(0, 2).map((item, index) => (
                                 <div
@@ -444,13 +459,19 @@ function Page() {
                             ))}
                         </div>
 
-                    </section>
+                    </section> */}
                 </div>
             </section>
+<BookingServicesSection />
+
+             
 
 
-            <PartnersSection />
-            <TestimonialSlider />
+          
+
+
+            {/* <PartnersSection /> */}
+            {/* <TestimonialSlider /> */}
             <ContactBanner />
       
         </>
