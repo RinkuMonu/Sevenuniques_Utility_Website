@@ -26,7 +26,7 @@ function page() {
 
     }
     const aepsData = {
-        subheading: 'Insurance',
+        subheading: 'What is Insurance',
         heading: 'Har Jokhim ke liye sahi Suraksha!',
         description: 'Insurance is more than just a policy, it is financial security for you, your family, and your business. The right insurance cover protects you from unexpected expenses and helps you stay prepared for any situation, personal or professional.',
         features: [
@@ -126,12 +126,12 @@ function page() {
             <InsuranceProcessSteps />
 
 
-            <BenefitsSection2 />
+            {/* <BenefitsSection2 /> */}
             <InsuranceDocumentsSection />
             <InsuranceBenefitsSection />
 
             <PartnersSection />
-            <TestimonialSlider />
+            {/* <TestimonialSlider /> */}
             <ContactBanner />
         </>
     )

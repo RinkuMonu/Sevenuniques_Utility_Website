@@ -1,97 +1,107 @@
 "use client";
 
-import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
-import Link from 'next/link';
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
-// Data for the steps
 const stepsData = [
-    {
-        id: 1,
-        title: 'Apply online',
-        description: 'Choose your ideal insurance plan in just a few simple steps.'
-    },
-    {
-        id: 2,
-        title: 'Document upload',
-        description: 'Submit your documents for quick and secure verification.'
-    },
-    {
-        id: 3,
-        title: 'Get Coverage',
-        description: 'Enjoy instant protection and move forward with complete peace of mind.'
-    }
+  {
+    id: 1,
+    title: "Apply online",
+    description: "Choose your ideal insurance plan in just a few simple steps.",
+    stepimg: "/aeps/onlineapply.svg",
+    stepalt: "Apply online",
+  },
+  {
+    id: 2,
+    title: "Document upload",
+    description: "Submit your documents for quick and secure verification.",
+    stepimg: "/aeps/document.svg",
+    stepalt: "Document upload",
+  },
+  {
+    id: 3,
+    title: "Get Coverage",
+    description:
+      "Enjoy instant protection and move forward with complete peace of mind.",
+    stepimg: "/aeps/payment.svg",
+    stepalt: "Get coverage",
+  },
 ];
 
-// Component for the active step's number icon
-const ActiveStepIcon = ({ number }) => (
-    <div className="w-12 h-12 bg-[#028CCA] rounded-xl flex items-center justify-center absolute -top-6 left-1/2 -translate-x-1/2 shadow-lg">
-        <span className="text-2xl font-bold text-white">{number}</span>
+function StepIconChip({ stepimg, stepalt }) {
+  return (
+    <div className="relative mx-auto mb-6 flex items-center justify-center">
+      {/* make this relative so Image fill works */}
+      <div className="relative flex h-50 w-50 items-center justify-center ">
+        {!!stepimg && (
+          <Image
+            src={stepimg}
+            alt={stepalt || ""}
+            fill
+            className="object-contain p-1"
+          />
+        )}
+      </div>
     </div>
-);
-
-// Component for an inactive step's number icon
-const InactiveStepIcon = ({ number }) => (
-    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center absolute -top-6 left-1/2 -translate-x-1/2 shadow-lg ">
-        <span className="text-2xl font-bold text-[#0C3D4C]">{number}</span>
-    </div>
-);
+  );
+}
 
 export default function InsuranceProcessSteps() {
-    const [activeStep] = useState(2);
+  return (
+    <section className="w-full py-16">
+      <div className="mx-auto max-w-6xl px-4 lg:px-0">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#24576C] leading-tight">
+            How it works
+          </h2>
+          <p className="mt-4 text-gray-600">
+            Apply now because your future deserves protection—finish in a few
+            simple steps.
+          </p>
+        </div>
 
-    return (
-        <section className="w-full mb-16">
-            <div className="max-w-6xl mx-auto py-16 px-4 lg:px-0">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center">
-                    {/* Left Side */}
-                    <div className="text-center lg:text-left">
-                        <h2 className="text-2xl md:text-4xl font-bold text-[#24576C] leading-tight">
-                            Apply Now,
-                            <br />
-                             Because Your Future 
-                            <br />
-                             Deserves Protection
-                        </h2>
-                        <p className="mt-6 text-gray-600 max-w-lg mx-auto lg:mx-0">
-                          Get the right insurance cover and enjoy complete peace of mind every day.
-                        </p>
-                        <Link
-                            href="/coming-soon"
-                            className="mt-8 inline-flex items-center gap-2 px-6 py-3 border-2 border-[#1297E2] text-[#1297E2] font-semibold rounded-full hover:bg-[#33B5E5] hover:text-white transition-colors duration-300"
-                        >
-                            Apply Now
-                            <ArrowRight size={20} />
-                        </Link>
-                    </div>
+        <div className="relative mt-12">
+          <div className="pointer-events-none absolute left-1/2 top-8 hidden w-[92%] -translate-x-1/2 lg:block">
+            <svg viewBox="0 0 1000 200" className="h-36 w-full" preserveAspectRatio="none">
+              <path
+                d="M 40 120 C 250 10, 450 210, 660 110 S 920 110, 960 70"
+                fill="none"
+                stroke="rgba(156, 163, 175, 0.55)"
+                strokeWidth="2.5"
+                strokeDasharray="2 10"
+                strokeLinecap="round"
+              />
+            </svg>
+          </div>
 
-                    {/* Right Side: Step Cards */}
-                    <div className="flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap justify-center items-center gap-6 lg:justify-end w-full">
-                        {stepsData.map((step) => {
-                            const isActive = step.id === activeStep;
-                            return (
-                                <div
-                                    key={step.id}
-                                    className={`
-                                        relative pt-10 px-4 sm:px-6 pb-8 rounded-2xl w-full sm:w-48 lg:w-52 text-center
-                                        transition-all duration-300 ease-in-out transform
-                                        ${isActive
-                                            ? 'bg-[#027DA7] text-white shadow-[0px_14px_32px_rgba(0,0,0,0.1)] scale-105'
-                                            : 'bg-white text-gray-700 shadow-[0px_14px_32px_rgba(0,0,0,0.1)] scale-100'
-                                        }
-                                    `}
-                                >
-                                    {isActive ? <ActiveStepIcon number={step.id} /> : <InactiveStepIcon number={step.id} />}
-                                    <h3 className="text-md sm:text-lg font-bold mb-2 mt-4">{step.title}</h3>
-                                    <p className={`text-xs sm:text-sm ${isActive ? 'text-blue-100' : 'text-gray-500'}`}>
-                                        {step.description}
-                                    </p>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
+            {stepsData.map((step) => (
+              <div key={step.id} className="relative text-center">
+                <StepIconChip stepimg={step.stepimg} stepalt={step.stepalt} />
+
+                <h3 className="text-xl font-semibold text-[#0C3D4C]">
+                  {step.title}
+                </h3>
+                <p className="mx-auto mt-3 max-w-xs text-sm leading-6 text-gray-600">
+                  {step.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-14 flex justify-center">
+          <Link
+            href="/coming-soon"
+            className="inline-flex items-center gap-2 rounded-full border-2 border-[#1297E2] px-6 py-3 font-semibold text-[#1297E2] transition-colors duration-300 hover:bg-[#33B5E5] hover:text-white"
+          >
+            Apply Now
+            <ArrowRight size={20} />
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
 }
