@@ -28,8 +28,8 @@ export default function CreditComp() {
         {/* Left Content Section */}
         <div className="text-white text-center lg:text-left animate-fade-in-up">
           <h3 className="text-2xl lg:text-4xl  font-bold leading-tight mb-4">
-            One Card, <br />
-            Endless Rewards
+            Why Finunique ,<br />
+            for Your Credit Card
           </h3>
           <p className="text-gray-300 text-base md:text-lg mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
            Introducing the Finunique Credit Card your gateway to a world of convenience and exclusive benefits. Enjoy special perks, earn rewards, and make every swipe count.

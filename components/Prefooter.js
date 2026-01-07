@@ -9,6 +9,7 @@ export default function PreFooterSection() {
       title: "Money Transfer & other Services",
       links: [
         { name: "AePS", href: "/aeps" },
+        { name: "DMT", href: "/dmt" },
         { name: "Credit Card", href: "/credit-card" },
         { name: "PAN Card", href: "/pan-card" },
       ],
@@ -16,13 +17,13 @@ export default function PreFooterSection() {
     {
       title: "Financial Services",
       links: [
-         { name: "Business Loan", href: "/instant-loan/business-loan" },
+    { name: "Business Loan", href: "/instant-loan/business-loan" },
     { name: "Home Loan", href: "/instant-loan/home-loan" },
     { name: "Personal Loan", href: "/instant-loan/personal-loan" },
     { name: "Construction Loan", href: "/instant-loan/construction-equipment-loan" },
     { name: "Car Loan", href: "/instant-loan/car-loan" },
     { name: "Instant Loan", href: "/instant-loan" },
-{ name: "Insurance", href: "/insurance" },
+    { name: "Insurance", href: "/insurance" },
       ],
     },
     {
