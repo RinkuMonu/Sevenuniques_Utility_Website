@@ -74,27 +74,47 @@ function page() {
                     </div>
                 </div>
             </section>
-            <BankLogoGrid />
-            <CreditSlider  />
-            <div className='mt-20 pb-10 lg:pb-40'>
+             <CreditComp />
+            {/* <BankLogoGrid /> */}
+            <CreditSlider />
+
+
+                    <div className="max-w-7xl mx-auto px-4 py-12 mb-8">
+             <h3 className='text-3xl md:text-4xl py-12 text-center font-bold text-[#043C5C]'>Features of Credit Card</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+   
+    {info.map((item, index) => (
+      <div
+        key={index}
+        className="group bg-white rounded-2xl p-6 lg:p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-[#E6F6FE]"
+      >
+        {/* Optional top accent */}
+        <div className="w-12 h-1 bg-[#026381] rounded-full mb-4"></div>
+
+        <h2 className="text-xl md:text-2xl font-bold text-[#043C5C] mb-3 group-hover:text-[#026381] transition">
+          {item.title}
+        </h2>
+
+        <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+          {item.description}
+        </p>
+      </div>
+    ))}
+  </div>
+</div>
+            {/* <div className='mt-20 pb-10 lg:pb-40'>
                 <BenefitsSection2 />
-            </div>
+            </div> */}
             <CardGrid />
-            <CreditComp />
-            <CreditChoice />
 
-            <div>
-                {info.map((item, index) => (
-                    <div key={index} className={`bg-[#E6F6FE] rounded-2xl p-5 lg:p-16 max-w-6xl my-10 ${index % 2 === 0 ? "" : "ms-auto"}`}>
-                        <h2 className="text-2xl md:text-3xl font-bold text-[#043C5C] mb-4">{item.title}</h2>
-                        <p className="text-gray-600 leading-relaxed">{item.description}</p>
-                    </div>
-                ))}
-            </div>
+            {/* <CreditChoice /> */}
 
-            <PartnersSection />
+   
+
+
+            {/* <PartnersSection />
             <TestimonialSlider />
-            <ContactBanner />
+            <ContactBanner /> */}
         </>
     )
 }

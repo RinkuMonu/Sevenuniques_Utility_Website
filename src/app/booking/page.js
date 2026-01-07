@@ -374,7 +374,7 @@ function Page() {
             </section>
 <ServicesSection3 data={activeData?.data.aeps} />
   {/* Tabs Section */}
-            <section className="pb-10">
+            <section className="">
                 <div className="">
                     {/* Tab Buttons */}
                     {/* <div className="flex gap-8 mb-10 max-w-6xl mx-auto px-4 lg:px-0">
@@ -402,7 +402,7 @@ function Page() {
 
                     {/* Active Tab Content */}
                     {/* <PromotionSlider sliderImages={activeData?.data.sliderImages} /> */}
-                    <BookingFeatures title={activeData?.data.booking.title} features={activeData?.data.booking.features} />
+                    {/* <BookingFeatures title={activeData?.data.booking.title} features={activeData?.data.booking.features} /> */}
                     {/* <BenefitsSection2 /> */}
                    
 

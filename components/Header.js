@@ -22,7 +22,7 @@ export default function Header() {
      <div className="bg-[#0C3D4C] text-white text-sm py-2 px-4 md:px-8 flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-0">
         <div className="flex flex-wrap justify-center md:justify-start items-center gap-x-4 gap-y-1 text-gray-200">
           <span className="flex items-center">
-            <FaUser className="mr-2 w-4 h-4" /> 24x7 Technical Support
+            <FaUser className="mr-2 w-4 h-4"/> 24x7 Technical Support
           </span>
           <span className="hidden md:inline text-gray-100 ">-</span>
           <span className="flex items-center">
@@ -100,26 +100,26 @@ export default function Header() {
   ${open ? "opacity-100 visible translate-y-0" : "opacity-0 invisible translate-y-2"}
   `}
 >
-
-
+<div className="absolute bottom-0 left-0">
+  <Image
+            src="/image/img-tower.png"
+            width={300}
+            height={300}
+            alt="Finunique Logo"
+          />
+</div>
               <div className="grid grid-cols-4 gap-8">
-
-                {/* Banking Services */}
                 <div>
                   <h4 className="font-semibold text-lg bg-[#E6F3F7] text-[#026381] px-3 py-1 rounded-md mb-4">
                     Banking Services
                   </h4>
                   <ul className="space-y-2 text-base md:ml-4" onClick={() => setOpen(false)}>
-                  <li className="hover:text-[#026381]">
-  <Link href="/dmt">DMT</Link></li>
-
-                    <li className="hover:text-[#026381]"><Link href="/matm">Micro ATM</Link></li>
-                    <li className="hover:text-[#026381]"><Link href="/credit-card">Credit Card</Link></li>
-                    <li className="hover:text-[#026381]"><Link href="/pan-card">PAN Card</Link></li>
+                  <li className="hover:text-[#026381]"><Link href="/dmt">DMT</Link></li>
+                  <li className="hover:text-[#026381]"><Link href="/matm">Micro ATM</Link></li>
+                  <li className="hover:text-[#026381]"><Link href="/credit-card">Credit Card</Link></li>
+                  <li className="hover:text-[#026381]"><Link href="/pan-card">PAN Card</Link></li>
                   </ul>
                 </div>
-
-                {/* Utility Services */}
                 <div>
                   <h4 className="font-semibold text-lg bg-[#E6F3F7] text-[#026381] px-3 py-1 rounded-md  mb-4">
                     Utility Services
@@ -129,14 +129,11 @@ export default function Header() {
                     <li className="hover:text-[#026381]"><Link href="/bbps">BBPS</Link></li>
                   </ul>
                 </div>
-
-                {/* Financial Services */}
                 <div>
                   <h4 className="font-semibold text-lg bg-[#E6F3F7] text-[#026381] px-3 py-1 rounded-md  mb-3">
                     Financial Services
                   </h4>
-
-                  <p className="text-base font-semibold text-lg text-gray-600 mb-2 md:ml-4">
+                  <p className="text-base font-semibold text-gray-600 mb-2 md:ml-4">
                     Insurance
                   </p>
                   <ul className="space-y-1 text-base mb-3 md:ml-4"  onClick={() => setOpen(false)}>
@@ -145,7 +142,6 @@ export default function Header() {
                     <li className="hover:text-[#026381]"><Link href="/insurance/taxi-insurance">Taxi</Link></li>
                     <li className="hover:text-[#026381]"><Link href="/insurance/commercial-vechile">Commercial</Link></li>
                   </ul>
-
                   <p className="text-base font-semibold text-gray-600 mb-2 md:ml-4">
                     Loan
                   </p>
@@ -157,24 +153,20 @@ export default function Header() {
                     <li className="hover:text-[#026381]"><Link href="/instant-loan/car-loan">Car</Link></li>
                   </ul>
                 </div>
-
-                {/* Booking */}
                 <div>
                   <h4 className="font-semibold text-lg bg-[#E6F3F7] text-[#026381] px-3 py-1 rounded-md  mb-4">
                     Booking
                   </h4>
                   <ul className="space-y-2 text-base md:ml-4"  onClick={() => setOpen(false)}>
                     <li className="hover:text-[#026381]"><Link href="/booking">Bus Booking</Link></li>
-                    <li className="hover:text-[#026381]"><Link href="/booking#train-booking"  >Train Booking</Link></li>
-                    <li className="hover:text-[#026381]"><Link href="/booking#hotel-booking" >Hotel Booking</Link></li>
-                    <li className="hover:text-[#026381]"><Link href="/booking#flight-booking" >Flight Booking</Link></li>
+                    <li className="hover:text-[#026381]"><Link href="/booking#train-booking">Train Booking</Link></li>
+                    <li className="hover:text-[#026381]"><Link href="/booking#hotel-booking">Hotel Booking</Link></li>
+                    <li className="hover:text-[#026381]"><Link href="/booking#flight-booking">Flight Booking</Link></li>
                   </ul>
                 </div>
-
               </div>
             </div>
           </div>
-
           <Link href="/aeps"  className="hover:text-[#026381] text-lg">AEPS</Link>
           <Link href="/bbps" className="hover:text-[#026381] text-lg">Bill Payments</Link>
           <Link href="/contact" className="hover:text-[#026381] text-lg">Contact Us</Link>
