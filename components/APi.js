@@ -12,7 +12,7 @@ const logos = [
 
 const APi = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 via-white to-gray-50 relative">
+    <section className="py-20 bg-white relative">
       <div className="text-center max-w-4xl mx-auto mb-12">
         <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase">
           Our Network

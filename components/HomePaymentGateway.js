@@ -1,84 +1,172 @@
+// "use client";
+
+// import React from "react";
+// import Image from "next/image";
+// import Link from "next/link";
+// import { CheckCircle2, ArrowRight } from "lucide-react";
+
+// export default function HomePaymentGatewaySection() {
+//   const benefits = [
+//     "Get detailed insights",
+//     "Check overdues",
+//     "View active loans",
+//     "Access better deals",
+//   ];
+
+//   return (
+//     <section className="bg-white py-14">
+//       <div className="mx-auto max-w-6xl px-4 sm:px-6">
+//         <div className="rounded-3xl border border-slate-200 bg-white shadow-sm">
+//           <div className="grid items-center gap-10 p-6 sm:p-10 lg:grid-cols-2">
+//             {/* Left visual */}
+//             <div className="hidden lg:block">
+//               <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-indigo-900 to-fuchsia-800 p-8">
+//                 <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/10 blur-2xl" />
+//                 <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-orange-400/10 blur-2xl" />
+
+//                 <div className="rounded-2xl bg-white/10 p-6 backdrop-blur">
+//                   <Image
+//                     src="/home/easy-payment3d.png"
+//                     alt="Easy payment illustration"
+//                     width={520}
+//                     height={520}
+//                     className="h-auto w-full object-contain"
+//                     style={{ width: "100%", height: "auto" }}
+//                     priority
+//                   />
+//                 </div>
+
+//                 <p className="mt-6 text-sm text-white/75">
+//                   Fast checkout • Secure payments • Real-time tracking
+//                 </p>
+//               </div>
+//             </div>
+
+//             {/* Right content */}
+//             <div>
+//               <span className="inline-flex w-fit rounded-full bg-orange-50 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-orange-700">
+//                 Payment Gateway
+//               </span>
+
+//               <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+//                 Collecting payments made easy
+//               </h2>
+
+//               <p className="mt-3 max-w-xl text-sm leading-relaxed text-slate-600 sm:text-base">
+//                 Receive payments from customers anytime, anywhere. Simplify transactions
+//                 and keep your cash flow smooth and hassle-free.
+//               </p>
+
+//               <div className="mt-6 grid gap-3 sm:grid-cols-2">
+//                 {benefits.map((item) => (
+//                   <div key={item} className="flex items-center gap-2 text-slate-700">
+//                     <CheckCircle2 className="h-5 w-5 text-emerald-600" />
+//                     <span className="text-sm sm:text-base">{item}</span>
+//                   </div>
+//                 ))}
+//               </div>
+
+//               <div className="mt-8 flex flex-wrap gap-3">
+//                 <Link
+//                   href="https://play.google.com/store/apps/details?id=com.utility.finunique"
+//                   target="_blank"
+//                   className="inline-flex items-center gap-2 rounded-xl bg-[#f56600] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#e35b00]"
+//                 >
+//                   Download app
+//                   <Image
+//                     src="/image/logoplaystore.png"
+//                     width={18}
+//                     height={18}
+//                     alt="Play Store"
+//                     className="h-[18px] w-[18px] object-contain invert"
+//                   />
+//                 </Link>
+
+//                 <Link
+//                   href="/contact"
+//                   className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+//                 >
+//                   Know more
+//                   <ArrowRight className="h-4 w-4" />
+//                 </Link>
+//               </div>
+
+//               {/* Mobile visual (optional) */}
+//               <div className="mt-10 rounded-2xl bg-slate-50 p-6 lg:hidden">
+//                 <Image
+//                   src="/home/easy-payment3d.png"
+//                   alt="Easy payment illustration"
+//                   width={520}
+//                   height={520}
+//                   className="h-auto w-full object-contain"
+//                   style={{ width: "100%", height: "auto" }}
+//                 />
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 "use client";
 
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { CheckCircle } from "lucide-react";
-import React from "react";
 
-export default function HomePaymentGatewaySection() {
-  const benefits = [
-    "Get detailed insights",
-    "Check overdues",
-    "View active loans",
-    "Access Better Deals",
-  ];
-
+export default function PaymentHeroSection() {
   return (
-    <section className="p-8 lg:py-12">
-        <div className="bg-gray-100 max-w-6xl mx-auto rounded-2xl py-10 px-6 md:px-20">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-        {/* LEFT CONTENT */}
-  <div className="flex-1 flex justify-center md:justify-end hidden md:flex">
-          <Image
-            src="/home/easy-payment3d.png"
-            alt="Credit Score Preview"
-            width={400}
-            height={400}
-            className="w-full h-full"
-          />
-        </div>
+    <section className="bg-slate-50 py-14 sm:py-8">
+      <div className="mx-auto grid  items-center gap-12 px-6 md:px-12 lg:grid-cols-12 lg:px-20">
+        {/* Left content */}
+        <div className="lg:col-span-6">
+        <span className="inline-flex w-fit rounded-full bg-orange-50 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-orange-700">
+                 Payment Gateway
+         </span>
+          <h1 className="text-4xl mt-2 font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+          Collecting payments made easy
+          </h1>
 
-
-        {/* RIGHT IMAGE */}
-   <div className="flex-1 space-y-6">
-          {/* Header */}
-          <div className="flex items-center gap-2">
-            <h3 className="font-bold">Payment Gateway</h3>
-          </div>
-
-          {/* Title */}
-          <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 leading-tight">
-            Collecting Payments <br /> Made Easy
-          </h2>
-          <h3>Seamless Payment Solutions</h3>
-
-          {/* Description */}
-          <p className="text-gray-600 max-w-lg">
-            Easily receive payments from your customers and loved ones anytime, anywhere. Simplify transactions and keep your business cash flow smooth and hassle-free.
+          <p className="mt-5 max-w-xl text-sm leading-relaxed text-slate-600 sm:text-base">
+          Receive payments from customers anytime, anywhere. Simplify transactions
+                          and keep your cash flow smooth and hassle-free.
           </p>
 
-          {/* Benefits */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6 mt-4">
-            {benefits.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-2">
-                <CheckCircle className="text-green-500 w-5 h-5" />
-                <span className="text-gray-700 text-base">{item}</span>
-              </div>
-            ))}
-          </div>
-
-          {/* Buttons */}
-          <div className="flex flex-wrap gap-4 mt-6">
-            <Link href="https://play.google.com/store/apps/details?id=com.utility.finunique" target="blank" className="bg-[#f56600] text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 hover:bg-[#e35b00] transition">
-              Download App
-
-                <Image
-                  src="/image/logoplaystore.png"
-                  width={20}
-                  height={20}
-                  alt="img"
-                  className="invert brightness-0 saturate-0"
-                />
-
+          <div className="mt-8 flex flex-wrap items-center gap-5">
+            {/* Primary CTA */}
+            <Link
+              href="https://play.google.com/store/apps/details?id=com.utility.finunique"
+              style={{background:"linear-gradient(90deg,#358EBA  0%, #24576C 100%)"}}
+              className="rounded-full  px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-500/25 transition hover:shadow-indigo-500/35"
+            >
+             Download App
             </Link>
-            
-            <Link href="/contact" className="border border-[#f56600] text-[#f56600] px-6 py-3 rounded-lg font-bold hover:bg-[#f56600] hover:text-white transition">
+
+            {/* Secondary CTA */}
+            <Link
+              href="/contact"
+              className="text-sm font-semibold text-slate-900 underline underline-offset-4 hover:text-slate-700"
+            >
               Know More
             </Link>
           </div>
         </div>
+
+        {/* Right visual (overlapping cards) */}
+        <div className="lg:col-span-6">
+  <Image
+    src="/image/payment.png"
+    alt="Cards"
+    width={900}
+    height={600}
+    className="h-auto w-full object-contain"
+    style={{ width: "100%", height: "auto" }}
+    priority
+  />
+</div>
+
       </div>
-    </div>
     </section>
   );
 }

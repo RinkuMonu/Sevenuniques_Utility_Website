@@ -38,8 +38,6 @@ const timelineData = [
     imageUrl: '/aeps/p5.png',
   },
 ];
-
-
 const TimelineStep = ({ stepNumber, title, description, imageUrl, isReversed, isLast }) => {
     return (
         <div className={`flex flex-col lg:flex-row  gap-6 lg:gap-0 lastSvg `}>
@@ -47,11 +45,11 @@ const TimelineStep = ({ stepNumber, title, description, imageUrl, isReversed, is
                 <Image src={imageUrl} alt={title} width={400} height={400} className="rounded-xl object-contain" />
             </div>
             <div className="w-full lg:w-2/12 flex lg:flex-col items-center justify-center gap-y-10 lg:gap-y-0">
-                <div className="w-12 h-12 flex-shrink-0 bg-slate-800 text-white font-bold text-xl rounded-full flex items-center justify-center z-10">
+                <div className="w-12 h-12 shrink-0 bg-slate-800 text-white font-bold text-xl rounded-full flex items-center justify-center z-10">
                     {stepNumber}
                 </div>
                 {!isLast && (
-                    <div className={`hidden lg:block h-64 lg:h-56 w-32 lg:w-auto flex-grow  svg1 ${isReversed ? 'lg:-scale-x-100' : ''}`}>
+                    <div className={`hidden lg:block h-64 lg:h-56 w-32 lg:w-auto grow  svg1 ${isReversed ? 'lg:-scale-x-100' : ''}`}>
                         <svg
                             width="100%"
                             height="100%"
