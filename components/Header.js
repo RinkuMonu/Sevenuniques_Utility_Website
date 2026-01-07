@@ -125,26 +125,28 @@ export default function Header() {
                     Utility Services
                   </h4>
                   <ul className="space-y-2 text-base md:ml-4"  onClick={() => setOpen(false)}>
+                     <li className="hover:text-[#026381]"><Link href="/bill-payments">Bill Payments</Link></li>
                     <li className="hover:text-[#026381]"><Link href="/recharge">Recharges</Link></li>
                     <li className="hover:text-[#026381]"><Link href="/bbps">BBPS</Link></li>
+                   
                   </ul>
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg bg-[#E6F3F7] text-[#026381] px-3 py-1 rounded-md  mb-3">
                     Financial Services
                   </h4>
-                  <p className="text-base font-semibold text-gray-600 mb-2 md:ml-4">
+                  <Link href="/insurance" className="text-base font-semibold text-gray-600 mb-2 md:ml-4">
                     Insurance
-                  </p>
+                  </Link>
                   <ul className="space-y-1 text-base mb-3 md:ml-4"  onClick={() => setOpen(false)}>
                     <li className="hover:text-[#026381]"><Link href="/insurance/car-insurance">Car</Link></li>
                     <li className="hover:text-[#026381]"><Link href="/insurance/bike-insurance">Bike</Link></li>
                     <li className="hover:text-[#026381]"><Link href="/insurance/taxi-insurance">Taxi</Link></li>
                     <li className="hover:text-[#026381]"><Link href="/insurance/commercial-vechile">Commercial</Link></li>
                   </ul>
-                  <p className="text-base font-semibold text-gray-600 mb-2 md:ml-4">
+                  <Link href="/loan-emi" className="text-base font-semibold text-gray-600 mb-2 md:ml-4">
                     Loan
-                  </p>
+                  </Link>
                   <ul className="space-y-1 text-base md:ml-4"  onClick={() => setOpen(false)}>
                     <li className="hover:text-[#026381]"><Link href="/instant-loan/home-loan">Home</Link></li>
                     <li className="hover:text-[#026381]"><Link href="/instant-loan/business-loan">Business</Link></li>
