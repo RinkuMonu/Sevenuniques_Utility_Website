@@ -71,21 +71,22 @@ const CreditCard = ({ bank, points, title, tag, image, benefit }) => {
                     <div className=" bg-red-500 text-white text-end text-sm font-semibold px-5 py-2  md:rounded-tr-2xl">
                         {tag}
                     </div>
-                    <p className="text-end text-[#24576C] font-bold text-2xl pe-4 ">
+                    <p className="text-end text-[#24576C] font-bold text-2xl pe-4 mt-4">
                         {bank}
                     </p>
                 </div>
-                <div className="relative overflow-visible col-span-2 md:order-1">
+               
+            </div>
+             <div className="relative overflow-visible col-span-2 md:order-1">
                     <Image
                         src={image}
                         alt="logo-bbps"
-                        width={400}
-                        height={400}
-                        className="lg:absolute -top-18"
+                        width={200}
+                        height={200}
+                        className="lg:absolute -top-14 right-10"
                     />
                 </div>
-            </div>
-            <div className="py-6 px-4 lg:mt-10 flex flex-col">
+            <div className="py-6 px-4  flex flex-col">
 
 
 
@@ -110,18 +111,18 @@ const CreditCard = ({ bank, points, title, tag, image, benefit }) => {
                         </p>
                     )}
 
-                    <Link href="/coming-soon" className="text-[#018BDA] font-bold">
+                    <Link href="/coming-soon" className="text-[#24576C] font-bold">
                         Offers more
                     </Link>
                 </div>
 
 
                 {/* Action Buttons */}
-                <div className=" flex space-x-4 justify-end align-bottom">
-                    <Link   href="https://utility.finuniques.in/register"  className=" w-fit bg-[#018EDE] text-white font-bold py-2 px-10 rounded-full hover:bg-[#018EDE]/70 transition-colors">
+                <div className="mt-4 flex space-x-4 align-bottom">
+                    <Link   href="https://utility.finuniques.in/register"  className=" w-fit bg-[#24576C] text-white font-bold py-2 px-10 rounded-md hover:bg-[#24576C]/70 transition-colors">
                         Apply
                     </Link>
-                    <Link href="/contact"  className="w-fit border border-[#018EDE] text-[#018EDE] font-bold py-2 px-10 rounded-full hover:bg-[#018EDE] hover:text-white transition-colors">
+                    <Link href="/contact"  className="w-fit border border-[#24576C] text-[#24576C] font-bold py-2 px-10 rounded-md hover:bg-[#24576C] hover:text-white transition-colors">
                         Details
                     </Link>
                 </div>
