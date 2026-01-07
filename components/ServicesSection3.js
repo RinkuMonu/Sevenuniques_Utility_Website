@@ -15,7 +15,7 @@ const ServicesSection3 = ({ data }) => {
   if (!data) return null;
 
   return (
-    <section className="bg-white py-4 md:pt-6 md:pb-16">
+    <section className="bg-white py-4 md:pt-6 md:pb-10">
       <div className="mx-auto px-8 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
         {/* Left Column */}
         <div className="md:pl-16 py-10 col-span-8">
