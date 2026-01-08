@@ -10,6 +10,7 @@ import LoanS2 from '../../../components/LoanS2';
 import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
 import VerticalSlider from '../../../components/VerticalSlider';
+import FAQ from '../../../components/Bike Insurance/FAQ';
 
 
 
@@ -98,7 +99,28 @@ function page() {
     },
   ],
 };
-
+const faqs = [
+  {
+    question: "What types of loans are available?",
+    answer: "We offer Business Loans, Home Loans, Personal Loans, Construction Loans, and Car Loans.",
+  },
+  {
+    question: "How fast can I get the loan?",
+    answer: "Most instant loans are approved quickly, often within 24–48 hours, depending on documentation.",
+  },
+  {
+    question: "What documents are required?",
+    answer: "Basic KYC documents, income proof, and loan-specific documents (like property papers for home/construction loans).",
+  },
+  {
+    question: "Can I apply online?",
+    answer: "Yes, you can apply directly through finunique.in without visiting a branch.",
+  },
+  {
+    question: "Is the process safe?",
+    answer: "Absolutely, your personal and financial information is securely handled with encryption.",
+  },
+];
   return (
     <>
       <ServiceBanner data={data} />
@@ -114,12 +136,12 @@ function page() {
       <LoanStep data={datasteps}/>
       <StatsBanner/>
       <CreditScoreReport/>
-      <BenefitsSection/>
-<section className='pt-28'>
+      {/* <BenefitsSection/> */}
   <PartnersSection/>
-</section>
-      <TestimonialSlider/>
+      {/* <TestimonialSlider/> */}
       <ContactBanner/>
+      <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
+
     </>
   )
 }

@@ -12,6 +12,7 @@ import GetInsurance from '../../../components/GetInsurance';
 import InsuranceProcessSteps from '../../../components/InsuranceProcessSteps';
 import InsuranceDocumentsSection from '../../../components/InsuranceDocumentsSection';
 import InsuranceBenefitsSection from '../../../components/InsuranceBenefitsSection';
+import FAQ from '../../../components/Bike Insurance/FAQ';
 
 
 
@@ -35,7 +36,32 @@ function page() {
         ]
     };
 
-
+    const faqs = [
+        {
+          question: "What types of insurance can I get?",
+          answer: "You can get coverage for vehicles (car, bike, commercial), health, home, and other personal or asset risks.",
+        },
+        {
+          question: "How do I apply for insurance?",
+          answer: "Just fill the online form, upload the required documents, and choose your plan coverage can start quickly.",
+        },
+        {
+          question: "Are my documents and information secure?",
+          answer: "Yes, we handle all documents securely and use safe processes for verification.",
+        },
+        {
+          question: "Can I insure multiple assets?",
+          answer: "Yes, you can choose different policies for your car, bike, home, or other assets based on your needs.",
+        },
+        {
+          question: "Do I need custom coverage?",
+          answer: "Our insurance options are flexible, so you can tailor coverage to fit your personal or business needs.",
+        },
+        {
+          question: "What happens if I need to make a claim?",
+          answer: "You can contact support anytime, and we’ll guide you through the claims process.",
+        },
+      ];
 
     return (
         <>
@@ -133,6 +159,8 @@ function page() {
             <PartnersSection />
             {/* <TestimonialSlider /> */}
             <ContactBanner />
+      <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
+
         </>
     )
 }

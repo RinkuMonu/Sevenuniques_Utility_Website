@@ -15,6 +15,7 @@ import AepsAdvantages from '../../../components/AepsAdvantages'
 import Aepskeyfeatures from '../../../components/Aepskeyfeatures'
 import Aepstransaction from '../../../components/Aepstransaction'
 import Image from 'next/image'
+import FAQ from '../../../components/Bike Insurance/FAQ'
 
 function page() {
   const data = {
@@ -71,7 +72,28 @@ function page() {
     }
   };
 
-
+  const faqs = [
+    {
+      question: "What is AEPS?",
+      answer: "AEPS lets you use your Aadhaar number and fingerprint to do basic banking like cash withdrawal, balance checks, deposits, and fund transfers without a card or PIN.",
+    },
+    {
+      question: " What services can I do through AEPS?",
+      answer: "You can withdraw cash, deposit money, check balance, view mini statements, and transfer funds to Aadhaar‑linked bank accounts.",
+    },
+    {
+      question: "Do I need a bank card or PIN?",
+      answer: "No, only your Aadhaar number and biometric (fingerprint) verification are required for AEPS transactions.",
+    },
+    {
+      question: " Is AEPS safe to use?",
+      answer: "Yes. Transactions use Aadhaar biometric authentication and secure verification, making them safe and simple.",
+    },
+    {
+      question: " Where can I use AEPS?",
+      answer: "You can use it at AEPS‑enabled service points/agents nearby & no need to visit a bank branch.",
+    },
+  ];
   return (
     <>
       <ServiceBanner data={data} />
@@ -114,6 +136,8 @@ function page() {
       <Empowering />
       <Aepstransaction />
       <ContactBanner />
+      <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
+
     </>
   )
 }

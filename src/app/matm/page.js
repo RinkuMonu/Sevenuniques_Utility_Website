@@ -3,6 +3,7 @@ import React from 'react'
 import ServiceBanner from '../../../components/ServiceBanner'
 import Image from 'next/image'
 import WhyMicroATM from '../../../components/Bike Insurance/Whymatm'
+import FAQ from '../../../components/Bike Insurance/FAQ'
 
 
 
@@ -109,7 +110,32 @@ const features = [
   }
 ];
 
-
+const faqs = [
+  {
+    question: "What is M.ATM?",
+    answer: "M.ATM allows you to perform banking services like cash withdrawal, balance enquiry, and fund transfers through a mini ATM device.",
+  },
+  {
+    question: " Do I need a bank account?",
+    answer: "Yes, you need an Aadhaar-linked bank account to use M.ATM services.",
+  },
+  {
+    question: "Is it safe to use M.ATM?",
+    answer: "Yes, all transactions are secure and authenticated using Aadhaar or biometric verification.",
+  },
+  {
+    question: "Can I transfer money using M.ATM?",
+    answer: "Yes, you can transfer funds to other Aadhaar-linked bank accounts instantly.",
+  },
+  {
+    question: "What are the transaction limits?",
+    answer: "Transaction limits depend on your bank and KYC details; they are displayed before you confirm any operation.",
+  },
+  {
+    question: "What if a transaction fails?",
+    answer: "Failed transactions are refunded automatically, or our support team will help resolve it quickly.",
+  },
+];
 
 
     return (
@@ -211,6 +237,8 @@ const features = [
                     </div>
             </section>
              <WhyMicroATM />
+            <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
+
 
             
         </>

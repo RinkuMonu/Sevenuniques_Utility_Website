@@ -11,6 +11,7 @@ import PartnersSection from '../../../components/PartnersSection';
 import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
 import BookingServicesSection from '../../../components/BookingServices';
+import FAQ from '../../../components/Bike Insurance/FAQ';
 
 function Page() {
 
@@ -313,7 +314,32 @@ function Page() {
         bgImage: '/booking/bookingbg.png',
         centerImage: '/booking/book1.png',
     };
-
+    const faqs = [
+        {
+          question: "What can I book on Finunique?",
+          answer: "You can book flights, trains, buses, and hotels online easily.",
+        },
+        {
+          question: "How do I make a booking?",
+          answer: "Search your travel options, select the best choice, and complete the booking with secure payment.",
+        },
+        {
+          question: "Is the booking process secure?",
+          answer: "Yes, all bookings use safe and secure online payment methods.",
+        },
+        {
+          question: "Will I get instant confirmation?",
+          answer: "Yes, once booked, your ticket or reservation is confirmed quickly.",
+        },
+        {
+          question: "Can I cancel or change my booking?",
+          answer: "Cancellation and changes depend on the provider’s policy check details before confirming.",
+        },
+        {
+          question: "What support is available if I face issues?",
+          answer: "You can contact our 24/7 support team for any booking help.",
+        },
+      ];
     return (
         <>
          
@@ -470,9 +496,11 @@ function Page() {
           
 
 
-            {/* <PartnersSection /> */}
+            <PartnersSection />
             {/* <TestimonialSlider /> */}
             <ContactBanner />
+      <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
+
       
         </>
     )

@@ -6,6 +6,7 @@ import ServiceGrid from "../../../components/ServiceGrid";
 import { Droplets, Lightbulb } from "lucide-react";
 import BillManagement from "../../../components/BillManagement";
 import Link from "next/link";
+import FAQ from "../../../components/Bike Insurance/FAQ";
 
 function page() {
   const data = {
@@ -17,6 +18,32 @@ function page() {
     bgImage: "/image/services-bbps-bg.png",
     centerImage: "/image/service-img.png",
   };
+  const faqs = [
+    {
+      question: "What bills can I pay here",
+      answer: "You can pay for electricity, water, gas, broadband, DTH, mobile, credit cards, loans, and more.",
+    },
+    {
+      question: "Is it safe to make payments?",
+      answer: "Yes. All transactions are secured with encrypted payment gateways.",
+    },
+    {
+      question: "How fast is the payment confirmed?",
+      answer: "Most payments are instant, and you get real-time updates.",
+    },
+    {
+      question: "Can I pay bills anytime?",
+      answer: "Yes, our service is available 24/7 for your convenience.",
+    },
+    {
+      question: "Can I schedule recurring payments?",
+      answer: "Absolutely! Set up automatic payments for regular bills to avoid late fees.",
+    },
+    {
+      question: "What if my payment fails?",
+      answer: "Failed payments are refunded automatically, or our support team can assist you quickly.",
+    },
+  ];
   return (
     <>
       <div className=" bg-no-repeat bg-cover bg-center"   style={{ backgroundImage: `url(${data?.bgImage})` , }}>
@@ -82,6 +109,7 @@ function page() {
 
       <ServiceGrid />
       <BillManagement />
+      <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
     </>
   );
 }

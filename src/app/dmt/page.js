@@ -9,6 +9,7 @@ import Image from 'next/image'
 import AdvantageDMT from '../../../components/AdvantageDMT'
 import ContactBanner from '../../../components/ContactBanner'
 import DmtWork from '../../../components/DmtWork'
+import FAQ from '../../../components/Bike Insurance/FAQ'
 
 
 const StepCard = ({ number, title, text, icon }) => (
@@ -63,7 +64,32 @@ function page() {
       'To serve the higher value needs, we provide transfers up to ₹ 500,000 within one month through our X-Press DMT service with immediate settlement. This renders it the appropriate option when making business payments, emergency costs, or transfers in bulk. Big or small, all transactions are executed in a fast, secure, and trustworthy manner over our retailer network.',
     ]
   };
-
+  const faqs = [
+    {
+      question: "What is DMT?",
+      answer: "DMT lets you send money instantly to any Indian bank account safely and securely.",
+    },
+    {
+      question: "How fast is the transfer?",
+      answer: "Most transfers are instant; some may take a few minutes depending on the bank.",
+    },
+    {
+      question: "Is it safe to use Finunique for DMT?",
+      answer: "Yes, all transfers are encrypted and verified through bank IFSC codes.",
+    },
+    {
+      question: "Do I need an account to transfer money?",
+      answer: "Yes, registering allows you to manage transfers, save beneficiaries, and track history.",
+    },
+    {
+      question: "Are there limits on transfers?",
+      answer: "Yes, limits depend on your KYC and bank. They are displayed before confirming any transfer.",
+    },
+    {
+      question: "What happens if the transfer fails?",
+      answer: "Failed transfers are refunded automatically, or our support team assists immediately.",
+    },
+  ];
   return (
     <>
       <ServiceBanner data={data} />
@@ -164,6 +190,8 @@ function page() {
       <DmtWork />
       <AdvantageDMT />
       {/* <ContactBanner /> */}
+      <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
+
     </>
   )
 }

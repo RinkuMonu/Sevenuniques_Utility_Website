@@ -144,7 +144,7 @@ export default function Header() {
                     <li className="hover:text-[#026381]"><Link href="/insurance/taxi-insurance">Taxi</Link></li>
                     <li className="hover:text-[#026381]"><Link href="/insurance/commercial-vechile">Commercial</Link></li>
                   </ul>
-                  <Link href="/loan-emi" className="text-base font-semibold text-gray-600 mb-2 md:ml-4">
+                  <Link href="/instant-loan" className="text-base font-semibold text-gray-600 mb-2 md:ml-4">
                     Loan
                   </Link>
                   <ul className="space-y-1 text-base md:ml-4"  onClick={() => setOpen(false)}>
