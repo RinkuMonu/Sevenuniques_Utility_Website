@@ -208,7 +208,7 @@ function page() {
         ]}
         image="/loan/car4.png"
       />
-      <BenefitsSection />
+      {/* <BenefitsSection /> */}
       <LoanOptions />
       <PartnersSection />
       <TestimonialSlider />

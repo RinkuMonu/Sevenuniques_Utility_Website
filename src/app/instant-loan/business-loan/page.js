@@ -190,7 +190,7 @@ function page() {
         </div>
       </div>
 
-      <BenefitsSection />
+      {/* <BenefitsSection /> */}
       <LoanOptions />
       <PartnersSection />
       <TestimonialSlider />

@@ -12,9 +12,6 @@ import ContactBanner from '../../../components/ContactBanner';
 import VerticalSlider from '../../../components/VerticalSlider';
 import FAQ from '../../../components/Bike Insurance/FAQ';
 
-
-
-
 function page() {
   const slide = {
   image: "/loan/loan3.png",
@@ -64,7 +61,7 @@ function page() {
     id: 1,
     subheading: 'INSTANT LOAN',
     heading: 'For Every Need, Ready Loan.',
-    description: 'You can get fast, convenient, and urgent loans for any of your needs. This could be for education, health care, or any alternative emergency financial need; we can extend instant loans with easy processing and cost conditions. ',
+    description: 'You can get fast, convenient, and urgent loans for any of your needs. This could be for education, health care, or any alternative emergency financial need; we can extend instant loans with easy processing and cost conditions.',
     bgImage: '/loan/loanbg.png',
     centerImage: '/loan/loan1.png',
   }
@@ -130,13 +127,11 @@ const faqs = [
   bgColor="#FFF3C9"
 />
 <VerticalSlider slide={slide}/>
-
-
-
       <LoanStep data={datasteps}/>
       <StatsBanner/>
       <CreditScoreReport/>
       {/* <BenefitsSection/> */}
+{/* <section className='pt-28'> */}
   <PartnersSection/>
       {/* <TestimonialSlider/> */}
       <ContactBanner/>

@@ -170,9 +170,13 @@ function page() {
           </div>
         </div>
       </section>
+
+       <ServicesSection3 data={aepsData} />
+
+
       <VerticalSlider slide={slide} />
 
-      <ServicesSection3 data={aepsData} />
+     
       <StatsBanner />
       <LoanBenefits
         title="Home Loan Apna Sapna Ghar Ka"
@@ -205,7 +209,7 @@ function page() {
         image="/loan/home4.png"
         scale=""
       />
-      <BenefitsSection />
+      {/* <BenefitsSection /> */}
       <LoanOptions />
       <PartnersSection />
       <TestimonialSlider />
