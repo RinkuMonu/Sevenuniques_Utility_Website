@@ -31,7 +31,7 @@ const cardData = [
     id: 4,
     title: "Commercial Vehicle",
     subheading:"Keep Your Business Moving",
-    buttonText: "Stay Covered, Stay Productive",
+    buttonText: "Insure Vehicle",
      link:"/insurance/commercial-vehicle"
   },
 ];
@@ -69,7 +69,7 @@ export default function GetInsurance() {
     const backgroundImageUrl = '/insurance/icbg.png';
 
   return (
-    <section className="px-6 md:px-12 py-8">
+    <section className="px-6 md:px-12 py-8 bg-[#f6fcfffb]">
       <div className="max-w-7xl mx-auto px-4  lg:px-0">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {cardData.map((card) => (

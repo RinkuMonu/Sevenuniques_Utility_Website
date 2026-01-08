@@ -1,10 +1,8 @@
 "use client";
-import React from 'react';
-import { MoveRight } from 'lucide-react';
-import Link from 'next/link';
+import React from "react";
+import { MoveRight } from "lucide-react";
+import Link from "next/link";
 
-// --- Data for the document cards ---
-// This approach makes it easy to add or modify cards later.
 const documentCards = [
   {
     title: "ID & Address Proof",
@@ -12,7 +10,8 @@ const documentCards = [
   },
   {
     title: "Income Proof",
-    description: "Salary Slip, ITR, and Bank Statement (where necessary for specific plans).",
+    description:
+      "Salary Slip, ITR, and Bank Statement (where necessary for specific plans).",
   },
   {
     title: "Photographs",
@@ -24,55 +23,71 @@ const documentCards = [
   },
 ];
 
-
-// --- Reusable Card Sub-component ---
 const DocumentCard = ({ title, description }) => (
-  <div className="bg-white rounded-xl shadow-lg flex overflow-hidden w-full h-32  items-center border-s-8 border-[#018EDE]">
-    <div className="p-5">
-      <h4 className="font-bold text-lg text-[#018EDE]">{title}</h4>
-      <p className="mt-1 text-gray-600 text-sm">{description}</p>
+  <div className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-[#018EDE] via-[#7C3AED] to-[#06B6D4] shadow-[0_18px_55px_rgba(2,125,167,0.18)]">
+    <div className="relative h-32 w-full rounded-2xl bg-white/80 backdrop-blur-xl px-5 py-5 overflow-hidden">
+      {/* subtle pattern */}
+      <div className="pointer-events-none absolute -right-14 -top-14 h-44 w-44 rounded-full bg-gradient-to-br from-[#018EDE]/20 to-[#7C3AED]/15 blur-2xl" />
+      <div className="pointer-events-none absolute -left-16 -bottom-16 h-44 w-44 rounded-full bg-gradient-to-br from-[#06B6D4]/20 to-[#018EDE]/10 blur-2xl" />
+
+      <h4 className="text-lg font-bold text-[#0C3D4C]">{title}</h4>
+      <p className="mt-1 text-sm text-slate-600 leading-6">{description}</p>
+
+      {/* micro interaction */}
+      <div className="mt-4 h-[3px] w-10 rounded-full bg-[#018EDE]/70 transition-all duration-300 group-hover:w-16" />
     </div>
   </div>
 );
 
-
-// --- Main Section Component ---
 export default function InsuranceDocumentsSection() {
   return (
-    <section className="bg-white font-sans py-16 sm:py-24">
+    <section className="relative overflow-hidden py-16 sm:py-24">
+      {/* new background (overall UI change) */}
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-[#F5FBFF] via-white to-white" />
+      <div className="pointer-events-none absolute -left-28 top-20 -z-10 h-80 w-80 rounded-full bg-[#018EDE]/15 blur-3xl" />
+      <div className="pointer-events-none absolute -right-28 bottom-8 -z-10 h-80 w-80 rounded-full bg-[#7C3AED]/12 blur-3xl" />
+
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 items-center">
-          
-          {/* Left Column: Text Content */}
+          {/* Left Column (same structure, new style) */}
           <div className="text-center lg:text-left">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-              Easy Documents,<br /> Easy Insurance
-            </h2>
-            <p className="mt-6 text-gray-600 max-w-md mx-auto lg:mx-0">
-              Insurance should not be a complex process. Provide minimal documents and obtain comprehensive coverage in no time.
+            <p className="inline-flex items-center rounded-full border border-slate-200 bg-white/70 px-4 py-2 text-sm font-semibold text-slate-700 backdrop-blur">
+              Documents checklist
             </p>
-            <Link href="/coming-soon" className="mt-8 inline-flex items-center gap-2 px-6 py-2 font-semibold text-[#018EDE] border-2 border-[#018EDE] rounded-full hover:bg-cyan-50 hover:border-cyan-400 transition-all duration-300">
+
+            <h2 className="mt-5 text-4xl md:text-5xl font-bold leading-tight text-[#0C3D4C]">
+              Easy Documents,
+              <br /> Easy Insurance
+            </h2>
+
+            <p className="mt-6 text-slate-600 max-w-md mx-auto lg:mx-0">
+              Insurance should not be a complex process. Provide minimal
+              documents and obtain comprehensive coverage in no time.
+            </p>
+
+            <Link
+              href="/coming-soon"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#0C3D4C] px-6 py-3 font-semibold text-white shadow-[0_16px_40px_rgba(12,61,76,0.22)] transition hover:bg-[#018EDE]"
+            >
               Apply Now
               <MoveRight className="w-5 h-5" />
             </Link>
           </div>
 
-          {/* Right Column: Document Cards Grid */}
+          {/* Right Column (same staggered grid) */}
           <div className="w-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {/* First column of cards */}
-                <div className="flex flex-col gap-6">
-                    <DocumentCard title={documentCards[0].title} description={documentCards[0].description} />
-                    <DocumentCard title={documentCards[2].title} description={documentCards[2].description} />
-                </div>
-                {/* Second column of cards, staggered down */}
-                <div className="flex flex-col gap-6 mt-0 sm:mt-10">
-                    <DocumentCard title={documentCards[1].title} description={documentCards[1].description} />
-                    <DocumentCard title={documentCards[3].title} description={documentCards[3].description} />
-                </div>
+              <div className="flex flex-col gap-6">
+                <DocumentCard {...documentCards[0]} />
+                <DocumentCard {...documentCards[2]} />
+              </div>
+
+              <div className="flex flex-col gap-6 mt-0 sm:mt-10">
+                <DocumentCard {...documentCards[1]} />
+                <DocumentCard {...documentCards[3]} />
+              </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

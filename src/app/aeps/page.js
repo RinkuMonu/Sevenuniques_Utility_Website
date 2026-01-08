@@ -34,7 +34,7 @@ function page() {
   }
 
   const aepsData = {
-    subheading: 'AePS ',
+    subheading: 'What is AePS ',
     heading: 'Aadhaar Enabled Payment System',
     description: 'AePS allows you to use banking services with just your Aadhaar number and fingerprint no card or PIN required. You can withdraw cash, check your balance, transfer funds, and deposit money safely through authorized service points.',
     features: [
@@ -89,8 +89,8 @@ function page() {
                   </div>
 
 
-      <section className='pt-10 px-4 max-w-6xl mx-auto '>
-        <div className="text-center pt-6">
+      {/* <section className='pt-10 px-0 max-w-7xl mx-auto '>
+        <div className="text-left pt-6">
           <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase">
             WHAT IS
           </p>
@@ -98,8 +98,8 @@ function page() {
             Aadhaar Enabled Payment System
           </h3>
         </div>
+      </section> */}
         <ServicesSection3 data={aepsData} />
-      </section>
       <AepsService />
       <HowItWorks1 />
       <ComplianceSection />
