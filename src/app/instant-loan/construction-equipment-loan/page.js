@@ -204,9 +204,9 @@ function page() {
       />
 
 
-      <div className='pt-10 pb-30'>
+      {/* <div className='pt-10 pb-30'>
         <BenefitsSection />
-      </div>
+      </div> */}
 
       <div className="bg-[#EFF9FF] mb-10 relative">
         <div className=" px-4 lg:px-0 max-w-6xl mx-auto py-10 ">

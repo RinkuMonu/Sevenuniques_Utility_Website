@@ -15,7 +15,7 @@ const loanOptions = [
   },
   {
     title: 'Construction Loan',
-     imageUrl: '/loan/const3d.png',
+     imageUrl: '/image/construction-vector.png',
      link:"/instant-loan/construction-equipment-loan"
   },
   {

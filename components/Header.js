@@ -6,12 +6,6 @@ import Image from "next/image";
 import { ChevronDown, Mail, Phone } from "lucide-react";
 import { FaUser, FaUserPlus } from "react-icons/fa";
 
-
-
-
-
-
-
 export default function Header() {
 
   const [open, setOpen] = useState(false);
@@ -142,7 +136,7 @@ export default function Header() {
                     <li className="hover:text-[#026381]"><Link href="/insurance/car-insurance">Car</Link></li>
                     <li className="hover:text-[#026381]"><Link href="/insurance/bike-insurance">Bike</Link></li>
                     <li className="hover:text-[#026381]"><Link href="/insurance/taxi-insurance">Taxi</Link></li>
-                    <li className="hover:text-[#026381]"><Link href="/insurance/commercial-vechile">Commercial</Link></li>
+                    <li className="hover:text-[#026381]"><Link href="/insurance/commercial-vehicle">Commercial</Link></li>
                   </ul>
                   <Link href="/loan-emi" className="text-base font-semibold text-gray-600 mb-2 md:ml-4">
                     Loan
