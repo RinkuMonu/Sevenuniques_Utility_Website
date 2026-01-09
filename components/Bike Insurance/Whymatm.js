@@ -13,32 +13,32 @@ const reasons = [
   {
     icon: ShieldCheck,
     title: "RBI & NPCI Compliant",
-    desc: "Finunique Micro ATM services operate under strict RBI and NPCI guidelines, ensuring secure and compliant transactions.",
+    desc: "Finunique Micro ATM services follow strict RBI and NPCI regulations, guaranteeing safe, secure, and fully compliant transactions.",
   },
   {
     icon: IndianRupee,
-    title: "High Commission Structure",
-    desc: "Earn attractive commissions on every cash withdrawal, balance enquiry, and mini statement transaction.",
+    title: "Attractive Commission Structure",
+    desc: "Earn generous commissions on every cash withdrawal, balance check, and mini statement transaction.",
   },
   {
     icon: Zap,
     title: "Fast & Reliable Transactions",
-    desc: "Instant transaction processing with high success rates and minimal downtime across all banks.",
+    desc: "Experience instant transactions with high success rates and minimal downtime across all banks.",
   },
   {
     icon: Headphones,
     title: "24×7 Technical Support",
-    desc: "Dedicated support team available round-the-clock to resolve transaction and device-related issues.",
+    desc: "Our dedicated team is available around the clock to assist with any transaction or device-related issues.",
   },
   {
     icon: Users,
     title: "Wide Bank Coverage",
-    desc: "Serve customers of multiple banks using a single Micro ATM device with Aadhaar-based authentication.",
+    desc: "Serve customers from multiple banks using a single Micro ATM device with secure Aadhaar-based authentication.",
   },
   {
     icon: LineChart,
     title: "Business Growth Opportunity",
-    desc: "Increase footfall and grow your retail business by offering essential banking services in your locality.",
+    desc: "Boost footfall and expand your retail business by providing essential banking services in your area.",
   },
 ];
 
