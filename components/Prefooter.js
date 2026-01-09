@@ -30,12 +30,12 @@ export default function PreFooterSection() {
       title: "Recharge & Bills",
       links: [
         { name: "Mobile Recharge", href: "/recharge" },
-        { name: "FasTag Recharge", href: "/coming-soon" },
-        { name: "Mobile Bill Payment", href: "/coming-soon" },
-        { name: "Book Cylinder", href: "/coming-soon" },
-        { name: "Landline", href: "/coming-soon" },
-        { name: "Broadband", href: "/coming-soon" },
-        { name: "Eletricity", href: "/coming-soon" },
+        { name: "FasTag Recharge", href: "/fastag" },
+        { name: "Mobile Bill Payment", href: "/recharge#mobile" },
+        { name: "Book Cylinder", href: "/recharge#lpg" },
+        { name: "Landline", href: "/recharge#landline" },
+        { name: "Broadband", href: "/recharge#broadband" },
+        { name: "Eletricity", href: "/recharge#electricity" },
       ],
     },
     {

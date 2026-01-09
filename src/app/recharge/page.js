@@ -5,6 +5,7 @@ import ServicesSection3 from '../../../components/ServicesSection3';
 import ContactBanner from '../../../components/ContactBanner';
 import { IoMdDownload } from 'react-icons/io';
 import RechargeInfo from '../../../components/RechargeInfo';
+import RechargeServicesSection from '../../../components/Rechargesbillpayments';
 
 
 
@@ -122,6 +123,9 @@ function page() {
                     </div>
                 </div>
             </section>
+
+
+            <RechargeServicesSection />
             <ServicesSection3 data={aepsData} />
 
             <RechargeInfo />
