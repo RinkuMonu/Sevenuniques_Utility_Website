@@ -47,13 +47,13 @@ const VerticalSlider = ({slide}) => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug max-w-sm z-20">
               {slide.heading}
             </h2>
-            <div className="relative hidden  justify-center md:block mt-6 md:mt-0">
+            <div className="relative hidden justify-center md:block mt-6 md:mt-0">
               <Image
                 src={slide.image}
                 width={400}
                 height={400}
                 alt="Happy customer with loan"
-                className="  md:absolute md:-bottom-10 md:left-50 z-10 scale-95"
+                className="md:absolute md:-bottom-10 md:left-50 z-10 scale-95"
               />
             </div>
           </div>
@@ -94,7 +94,7 @@ const VerticalSlider = ({slide}) => {
                     <ArrowRight size={18} className="sm:size-5" />
                   </Link> */}
                 </div>
-                <div className="absolute right-2 sm:right-4 bottom-10 sm:bottom-20 opacity-30">
+                <div className="absolute right-2 sm:right-4  bottom-10 sm:bottom-20 opacity-30">
                   <Image
                     src={currentContent.image}
                     width={120}

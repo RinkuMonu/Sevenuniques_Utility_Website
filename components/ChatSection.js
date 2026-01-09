@@ -81,7 +81,7 @@ export default function ChatSection() {
       {open && (
         <div className="mb-3 w-[360px] overflow-hidden rounded-[32px]  bg-white shadow-2xl">
           {/* Header */}
-          <div className="bg-gradient-to-r from-indigo-500 via-blue-500 to-sky-500 px-4 py-4 text-white">
+          <div className="bg-[#4c7ab2]  px-4 py-4 text-white">
             <div className="flex items-start justify-between">
               <div className="flex items-center gap-3">
                 <div className="h-10 w-10 overflow-hidden rounded-full bg-white/20 flex items-center justify-center">
@@ -171,7 +171,7 @@ export default function ChatSection() {
 
             <button
               type="submit"
-              className="h-11 w-11 rounded-full bg-indigo-600 text-white hover:bg-indigo-700 flex items-center justify-center"
+              className="h-11 w-11 rounded-full bg-[#4c7ab2] text-white flex items-center justify-center"
               aria-label="Send"
             >
               ➤
@@ -184,7 +184,7 @@ export default function ChatSection() {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="flex h-14 w-14 items-center justify-center rounded-full float-end bg-indigo-600 text-white shadow-lg"
+        className="flex h-14 w-14 items-center justify-center rounded-full float-end bg-[#4c7ab2] text-white shadow-lg"
         aria-label={open ? "Close chat" : "Open chat"}
       >
         {open ? (
