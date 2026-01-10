@@ -12,8 +12,8 @@ import FAQ from '../../../components/Bike Insurance/FAQ';
 function page() {
     const data = {
         id: 1,
-        subheading: 'pancard',
-        heading: 'Apki Pehchaan, Apki Power',
+        subheading: 'Blog',
+        heading: 'Jaankaari jo banaye, Aapko Smart',
         description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable Domestic Money Transfer service.',
         bgImage: '/blog/blogbg.png',
           centerImage: '/blog/blog2.png',
@@ -38,31 +38,31 @@ function page() {
     };
 
     const faqData = [
-        {
-            question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-            answer: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio Dignissimos DucimusAt Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Od At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus DucimusAt Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Od"
-        },
-        {
-            question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-            answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
-        },
-        {
-            question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-            answer: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-        },
-        {
-            question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-            answer: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
-        },
-        {
-            question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-            answer: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
-        },
-        {
-            question: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos",
-            answer: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
-        }
-    ];
+    {
+      question: "What is BBPS?",
+      answer: "BBPS is a secure bill payment system by NPCI that lets you pay all types of bills through banks, apps, and agent outlets.",
+    },
+    {
+      question: "How do I know if my biller is available?",
+      answer: "Supported billers appear in the list while selecting a biller. Most utilities, telecom, DTH, broadband, and loan billers are already covered.",
+    },
+    {
+      question: "Is paying bills online safe?",
+      answer: "Yes. BBPS uses NPCI-backed secure systems and provides instant digital receipts for every payment.",
+    },
+    {
+      question: "What if my payment fails?",
+      answer: "You’ll see the payment status instantly. If needed, refunds or reversals are processed as per BBPS guidelines.",
+    },
+    {
+      question: "How do I get a receipt?",
+      answer: "A digital receipt with a unique transaction ID is generated instantly and can be viewed anytime in payment history.",
+    },
+    {
+      question: "Where can I use BBPS?",
+      answer: "You can pay bills via BBPS using banks, authorized agents, and popular payment apps.",
+    },
+  ];
 
     const text = "Blog";
     return (
