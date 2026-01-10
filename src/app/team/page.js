@@ -151,10 +151,14 @@ export default function TeamSection() {
   ];
 
   const salesTeam = [
-    { name: "Sophie Chamberlain", role: "Head of Sales", image: "/team/3.jpg", accent: "stone" },
-    { name: "Lana Steiner", role: "VP of Customer Success", image: "/team/4.jpg", accent: "amber" },
-    { name: "Sasha Kindred", role: "VP of Marketing", image: "/team/6.jpg", accent: "stone" },
-    { name: "Emmy Rosum", role: "Co‑Founder and CEO", image: "/team/1.jpg", accent: "stone" },
+    { name: "Akshay Yogi", role: "Sales Manager", image: "/teams/akshay.jpg", accent: "stone" },
+    { name: "Anish Sharma", role: "Business Analyst", image: "/teams/anish.jpg", accent: "amber" },
+    { name: "Rekha Kirad", role: "Sr. Relationship Manager", image: "/teams/rekha.jpg", accent: "stone" },
+    { name: "Anchal Kumari", role: "Relationship Manager", image: "/teams/anchal.jpg", accent: "stone" },
+    { name: "Kusum Joshi", role: "Relationship Manager", image: "/teams/kusum.png", accent: "stone" },
+    { name: "Deepa Lalwani", role: "Relationship Manager", image: "/teams/deepa.jpg", accent: "stone" },
+    { name: "Nisha Rajput", role: "Relationship Manager", image: "/teams/nisha.png", accent: "stone" },
+    { name: "Riya Mahawar", role: "Relationship Manager", image: "/teams/riya.jpg", accent: "stone" },
   ];
 
   const data = {
