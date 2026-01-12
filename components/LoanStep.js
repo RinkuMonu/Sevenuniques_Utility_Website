@@ -1,9 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
 
-
-
-
 const FeatureCard = ({ number, text }) => (
     <div className="flex items-center p-5 space-x-4 bg-[#e0f2ff] shadow-sm w-full ">
         <div className="flex items-center justify-center w-12 h-12 text-3xl font-semibold text-[#0C3D4C] bg-white  ">
@@ -13,10 +10,9 @@ const FeatureCard = ({ number, text }) => (
     </div>
 );
 
-
 const LoanStep = ({data}) => {
     return (
-        <div className="  px-4 lg:px-0 pt-16 pb-20">
+        <div className="px-4 lg:px-0 pt-16 pb-20">
             <div className="w-full max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div className="">

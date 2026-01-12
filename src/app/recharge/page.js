@@ -5,6 +5,7 @@ import ServicesSection3 from '../../../components/ServicesSection3';
 import ContactBanner from '../../../components/ContactBanner';
 import { IoMdDownload } from 'react-icons/io';
 import RechargeInfo from '../../../components/RechargeInfo';
+import RechargeServicesSection from '../../../components/Rechargesbillpayments';
 
 
 
@@ -16,7 +17,7 @@ function page() {
         heading: 'Mobile Recharge Bina Tension',
         description: 'Fill up your mobile immediately with Finunique! Get the most popular plans and offers of all the major operators. Quick, safe, and dependable mobile recharge services.',
         bgImage: '/recharge/rbg.png',
-        centerImage: '/recharge/r1.png',
+        centerImage: '/recharge/QRr1.png',
     }
 
     const aepsData = {
@@ -122,6 +123,9 @@ function page() {
                     </div>
                 </div>
             </section>
+
+
+            <RechargeServicesSection />
             <ServicesSection3 data={aepsData} />
 
             <RechargeInfo />

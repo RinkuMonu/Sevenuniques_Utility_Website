@@ -193,7 +193,7 @@ const faqs = [
             <Herobanner data={data} />
             <AboutSection aboutData={aboutData} />
             {/* <Features data={featuresData} /> */}
-            <Process processdata={processdata} />
+           
             <WhyChooseUs whydata={whydata} />
             <FAQ faqs={faqs}/>
               <DynamicTable  headers={headers} rows={rows}/>
