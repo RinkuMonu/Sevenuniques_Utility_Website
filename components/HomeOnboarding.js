@@ -10,10 +10,10 @@ import Slider from 'react-slick';
 
 
 const onboardingData = {
-        User: {
-        image:[
-    '/home/user13d.png', '/home/user23d.png', '/home/user33d.png', '/home/user43d.png',
-],
+    User: {
+        image: [
+            '/home/user13d.png', '/home/user23d.png', '/home/user33d.png', '/home/user43d.png',
+        ],
         steps: [
             { id: 1, title: 'Download App', description: 'Install the Finunique app in a few seconds in either the Play Store or the App Store.' },
             { id: 2, title: 'Create Account', description: ' The only thing that you need to do is to create your account using just your mobile number, and that is it.' },
@@ -21,10 +21,10 @@ const onboardingData = {
             { id: 4, title: 'Start Transacting', description: 'Pay bills, transfer money, and recharge easily, simply by using one application.' },
         ],
     },
-        Retailer: {
-        image:[
-    '/home/ret1.png', '/home/ret2.png', '/home/ret3.png', '/home/ret4.png',
-],
+    Retailer: {
+        image: [
+            '/home/ret1.png', '/home/ret2.png', '/home/ret3.png', '/home/ret4.png',
+        ],
         steps: [
             { id: 1, title: 'Easy Sign-up', description: 'Join our network in a very simple and smooth mobile-friendly system.' },
             { id: 2, title: 'Instant Verification', description: 'Check yourself with your distributor and have it all on demand.' },
@@ -34,8 +34,19 @@ const onboardingData = {
     },
     Distributor: {
         image: [
-    '/home/dis1.png', '/home/dis2.png', '/home/dis3.png', '/home/dis4.png',
-],
+            '/home/dis3d1.png', '/home/dis3d3.png', '/home/dis3d2.png', '/home/dis3d4.png',
+        ],
+        steps: [
+            { id: 1, title: 'Register Online', description: 'Sign up in a few minutes through our easy-to-use and safe distributor portal.' },
+            { id: 2, title: 'Complete KYC', description: ' It is easy to access your identity by simply confirming who you are through our fast system.' },
+            { id: 3, title: 'Add Funds', description: 'Pay conveniently using a wide range of secure payment options.' },
+            { id: 4, title: 'Start Transacting', description: 'Offer an extensive range of services to your clients and start to make commissions right away.' },
+        ],
+    },
+    WhiteLabel: {
+        image: [
+            '/home/dis1.png', '/home/dis2.png', '/home/dis3.png', '/home/dis4.png',
+        ],
         steps: [
             { id: 1, title: 'Register Online', description: 'Sign up in a few minutes through our easy-to-use and safe distributor portal.' },
             { id: 2, title: 'Complete KYC', description: ' It is easy to access your identity by simply confirming who you are through our fast system.' },
@@ -73,74 +84,74 @@ const HomeOnboarding = () => {
                 {/* Header Text Section */}
                 <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase text-center">PRODUCT & ONBOARDING</p>
                 <h3 className="mt-2 text-4xl md:text-4xl font-bold text-[#0C3D4C] text-center">
-                     Integration, infinite possibilities, and onboarding.
+                    Integration, infinite possibilities, and onboarding.
                 </h3>
 
                 {/* Tabs Section */}
                 <div className="my-10 flex justify-center items-center gap-2 md:gap-4">
                     {tabs.map((tab) => (
-                        <button
+                        <div
                             key={tab}
                             onClick={() => setActiveTab(tab)}
-                            className={`py-2 px-3 md:px-6 rounded-full font-semibold text-lg transition-all duration-300 ${activeTab === tab
+                            className={`py-2 px-3 md:px-6 rounded-md w-50 text-center font-semibold text-lg transition-all duration-300 ${activeTab === tab
                                 ? 'bg-[#3080A6] text-white shadow-md'
-                                : 'bg-white text-[#0C3D4C] border border-[#3080A6] hover:bg-gray-100'
+                                : 'bg-white text-[#0C3D4C]  hover:bg-gray-100'
                                 }`}
                         >
                             {tab}
-                        </button>
+                        </div>
                     ))}
                 </div>
 
                 {/* Main Content Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-8 lg:gap-4">
-                    {/* Left Column Steps */}
-                    <div className="flex flex-col gap-8 items-center lg:items-end">
-                        <StepCard number={activeData.steps[0].id} title={activeData.steps[0].title} description={activeData.steps[0].description} />
-                        <StepCard number={activeData.steps[1].id} title={activeData.steps[1].title} description={activeData.steps[1].description} />
-                    </div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center bg-gray-100 rounded-xl">
 
-                    {/* Center Column Image */}
-                    <div>
+                    {/* ===== Left Side : All Steps ===== */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:ml-8">
+  {activeData.steps.map((step) => (
+    <StepCard
+      key={step.id}
+      number={step.id}
+      title={step.title}
+      description={step.description}
+    />
+  ))}
+</div>
+
+
+                    {/* ===== Right Side : Mobile Image / Slider ===== */}
+                    <div className="flex justify-center">
                         <div
-                            className="relative w-full h-[450px]  bg-center bg-no-repeat bg-cover hidden lg:flex items-center justify-center  "
-                            style={{ backgroundImage: `url('/home/mobilebg.png')` }}
-                        >
-                            <div className="w-full max-w-4xl mt-40 ">
+                            className="relative w-full max-w-md h-[480px] bg-center bg-no-repeat bg-contain flex  justify-center">
+                            <div className="w-full max-w-xs mt-14">
                                 <Slider
-                                    dots={true}
-                                    infinite={true}
-                                    speed={800}
-                                    autoplay={true}
+                                   
+                                    infinite
+                                    speed={700}
+                                    autoplay
                                     slidesToShow={1}
                                     slidesToScroll={1}
-                                    arrows={true}
-                                    slide={false}
-                                    fade={true}
+                                    arrows={false}
+                                    fade
                                 >
                                     {activeData.image.map((img, index) => (
-                                        <div key={index} className="mt-10 ">
-                                            <Image 
-                                                width={200}
-                                                height={200}
+                                        <div key={index} className="flex justify-center">
+                                            <Image
                                                 src={img}
                                                 alt={`slide-${index}`}
-                                                className="max-w-[250px] h-full  mx-auto flex items-baseline align-bottom justify-baseline "
+                                                width={300}
+                                                height={600}
+                                                className="object-contain"
                                             />
                                         </div>
                                     ))}
                                 </Slider>
                             </div>
                         </div>
-
                     </div>
 
-                    {/* Right Column Steps */}
-                    <div className="flex flex-col gap-8 items-center lg:items-start">
-                        <StepCard number={activeData.steps[2].id} title={activeData.steps[2].title} description={activeData.steps[2].description} />
-                        <StepCard number={activeData.steps[3].id} title={activeData.steps[3].title} description={activeData.steps[3].description} />
-                    </div>
                 </div>
+
 
             </div>
         </div>
