@@ -32,7 +32,6 @@ const TeamCard = ({ name, role, bio, image }) => {
       )}
     </div>
   );
-
 };
 
 
