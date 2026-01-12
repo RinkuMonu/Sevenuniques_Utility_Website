@@ -61,7 +61,7 @@ export default function GrowthOpportunities() {
     
         <div className="flex flex-col gap-8">
           {/* Image */}
-          <div className="relative overflow-hidden rounded-xl shadow-lg">
+          <div className="relative overflow-hidden rounded-md">
             <div className="aspect-[2/1]">
               <Image
                 src={
