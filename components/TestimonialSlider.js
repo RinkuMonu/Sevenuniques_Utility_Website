@@ -47,7 +47,7 @@ const TestimonialSlider = () => {
       <div className="flex flex-col md:flex-row max-w-7xl mx-auto">
         {/* Left Image Panel */}
         <div className="hidden md:block w-full md:w-1/2 lg:w-1/2 mt-8 md:mt-0 relative">
-          <Image src="/home/homefarmer.png" width={850} height={535} alt="Happy" className="rounded-lg md:absolute bottom-0 -left-20" style={{ width: "850px", height: "527px" }} />
+          <Image src="/home/homefarmer.png" width={750} height={435} alt="Happy" className="rounded-lg md:absolute bottom-0 -left-20" style={{ width: "850px", height: "527px" }} />
         </div>
 
         {/* Right Slider Panel */}

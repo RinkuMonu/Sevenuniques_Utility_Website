@@ -118,16 +118,16 @@ const HomeMap = () => {
       />
       <div className="absolute inset-0 bg-black/70" />
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:pl-10 grid md:grid-cols-2 items-center">
-        <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-4">
+        <div className="text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-4 text-center">
             Our Network Across India In
           </h2>
-          <p className="text-gray-200 mb-10 max-w-lg">
+          <p className="text-gray-200 mb-10 max-w-lg text-center md:ml-12">
             We are building one of India’s fastest growing retailer and
             distributor networks delivering secure digital financial services.
           </p>
-          <div className="w-[60vh] max-w-4xl bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1">
+          <div className="w-[60vh] max-w-4xl bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden md:ml-27">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 text-start">
           {stats.map((stat, index) => (
             <StatCard key={index} value={stat.value} label={stat.label} />
           ))}

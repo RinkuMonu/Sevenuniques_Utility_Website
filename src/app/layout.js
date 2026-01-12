@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import PreFooterSection from "../../components/Prefooter";
 import HomeQRBanner from "../../components/HomeQRSection";
-import SEO from "../../components/SEO/SEO"; // ⭐ Yaha import karo
+import SEO from "../../components/SEO/SEO"; 
 import ChatSection from "../../components/ChatSection";
 
 const geistSans = Geist({
