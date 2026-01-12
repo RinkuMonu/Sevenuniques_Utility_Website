@@ -19,20 +19,18 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <HomeOnboarding />
       <HomePartners />
-      <HomeRechargeSection />
-      <HomeSecurity />
-      <HomeTrustedSecureSection />
-      <UtilitiesHome />
-      <HomeCreditScoreSection />
-      <HomePaymentGatewaySection />
       <APi />
+      <HomeCreditScoreSection />
+      <HomeOnboarding />
+      <HomeRechargeSection />
+      {/* <HomeSecurity /> */}
+      <HomeTrustedSecureSection />
+      {/* <UtilitiesHome /> */}
+      {/* <HomePaymentGatewaySection /> */}
       <HomeMap />
       <TestimonialSlider />
       <ComplianceSection />
-
-
     </>
   );
 }
