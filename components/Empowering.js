@@ -2,11 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const InfoCard = ({ title, benefits, imageUrl, imageAlt, reverse = false }) => {
+const InfoCard = ({ id, title, benefits, imageUrl, imageAlt, reverse = false }) => {
   const directionClass = reverse ? 'md:flex-row-reverse' : 'md:flex-row';
 
   return (
-    <div className={`flex flex-col ${directionClass} items-stretch gap-8`}>
+    <div id={id} className={`flex flex-col ${directionClass} items-stretch gap-8`}>
       <div className="flex-shrink-0 w-full md:w-1/3 lg:w-1/4 flex">
         <div className="w-full h-full pt-2 bg-gradient-to-t from-[#0F86D2] to-[#FFFFFF] rounded-2xl shadow-md flex">
           <Image
@@ -59,26 +59,30 @@ const distributorBenefits = [
 
 
   return (
-    <div className=" font-sans px-4 lg:px-20">
+    <div className="font-sans px-4 lg:px-20 py-8 lg:py-12 md:mt-16">
       <main className="max-w-7xl mx-auto">
         <h3 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-10 text-center">
           Empowering Retailers and Distributors
         </h3>
 
         <div className="space-y-12 text-[15px]">
-          <InfoCard
-            title="Retailers"
-            benefits={retailerBenefits}
-            imageUrl="/aeps/retailer.png"
-            imageAlt="Happy retailer in his shop"
-          />
-          <InfoCard
-            title="Distributors"
-            benefits={distributorBenefits}
-              imageUrl="/aeps/distributor.png"
-            imageAlt="Distributor managing his business"
-            reverse={true}
-          />
+         <InfoCard
+  id="retailersection"
+  title="Retailers"
+  benefits={retailerBenefits}
+  imageUrl="/aeps/retailer.png"
+  imageAlt="Happy retailer in his shop"
+/>
+
+<InfoCard
+  id="distributorsection"
+  title="Distributors"
+  benefits={distributorBenefits}
+  imageUrl="/aeps/distributor.png"
+  imageAlt="Distributor managing his business"
+  reverse={true}
+/>
+
         </div>
       </main>
     </div>

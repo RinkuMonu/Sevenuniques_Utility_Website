@@ -265,7 +265,7 @@ function page() {
                     </div>
                 </div>
             </div>
-            <BenefitsSection />
+            {/* <BenefitsSection /> */}
             <LoanOptions />
             <PartnersSection />
             <TestimonialSlider />

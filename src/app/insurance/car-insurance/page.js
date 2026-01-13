@@ -10,15 +10,10 @@ import { Shield, Clock, DollarSign, FileText, Headphones, Award } from "lucide-r
 import { Search, CreditCard, CheckCircle } from "lucide-react"
 import { BadgeCheck, Wallet, FileCheck } from "lucide-react"
 import DynamicTable from '../../../../components/DynamicTable'
+import CarInsuranceBannerSection from '../../../../components/Carinsurancebanner'
 
 export default function page() {
- const data = {
-    subheading: 'BUY CAR INSURANCE ONLINE',
-    heading: 'Drive Safe, Peace of Mind Ke Saath',
-    description: 'Compare plans and get instant coverage for your car against accidents, theft, and natural events.',
-    bgImage: '/image/insurance-bg.png',
-    centerImage: '/image/car.png',
-};
+
 
 const aboutData = {
     badge: "About Us",
@@ -190,7 +185,7 @@ const faqs = [
 
     return (
         <>
-            <Herobanner data={data} />
+            <CarInsuranceBannerSection />
             <AboutSection aboutData={aboutData} />
             {/* <Features data={featuresData} /> */}
            

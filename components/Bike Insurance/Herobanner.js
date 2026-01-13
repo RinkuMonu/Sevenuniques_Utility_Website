@@ -38,7 +38,7 @@ export default function Herobanner({data}) {
                                 <Image src="/booking/book2.png" height={200} width={200} alt="center image" className="md:pt-4 lg:pt-20 z-20" />
                                 <Image src="/booking/book3.png" height={200} width={200} alt="center image" className="md:pt-4 lg:pb-20 z-20" />
                             </div> */}
-                            <Image src={data.centerImage} height={400} width={400} alt="center image" className="md:pt-4 lg:pt-16 lg:absolute bottom-24 right-62 md:scale-150 z-20" />
+                            <Image src={data.centerImage} height={400} width={400} alt="center image" className="md:pt-4 lg:pt-16 lg:absolute bottom-24 right-32 rounded-xl md:scale-150 z-20" />
                         </div>
                     </div>
                 </div>

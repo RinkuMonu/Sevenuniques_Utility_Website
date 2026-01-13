@@ -27,14 +27,14 @@ const loanOptions = [
 
 const LoanCard = ({ title, imageUrl, link }) => {
   return (
-    <div className="border border-[#1297E2] rounded-xl p-4 flex flex-col items-center text-center shadow-sm hover:shadow-lg transition-shadow duration-300">
+    <div className="border border-[#1297E2] lg:h-[55vh] rounded-xl p-4 flex flex-col items-center text-center shadow-sm hover:shadow-xl transition-shadow duration-300">
       <div className="w-full mb-4">
         <Image
         width={200}
         height={200}
           src={imageUrl}
           alt={title}
-          className="w-full h-auto object-cover rounded-lg"
+          className="w-full h-[26vh] object-contain rounded-lg"
         />
       </div>
       <h3 className="text-lg font-semibold text-gray-800 mb-4 h-14 flex items-center">{title}</h3>
