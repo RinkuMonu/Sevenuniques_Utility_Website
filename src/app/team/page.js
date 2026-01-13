@@ -158,6 +158,8 @@ export default function TeamSection() {
     { name: "Deepa Lalwani", role: "Relationship Manager", image: "/teams/deepa.jpg", accent: "stone" },
     { name: "Nisha Rajput", role: "Relationship Manager", image: "/teams/nisha.png", accent: "stone" },
     { name: "Riya Mahawar", role: "Relationship Manager", image: "/teams/riya.jpg", accent: "stone" },
+    { name: "Anjali eena", role: "Relationship Manager", image: "/teams/anjali.jpg", accent: "stone" },
+
   ];
 
   const data = {

@@ -41,7 +41,7 @@ description: "The best convenience of instantaneous mobile recharge is experienc
                 ))}
             </div>
 
-           <BenefitsSection2/>
+           {/* <BenefitsSection2/> */}
 
             {/* Bottom 3 Cards */}
             <div className="mt-24">

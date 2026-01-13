@@ -18,7 +18,7 @@ export default function page() {
     heading: 'Har Ride Ke Liye Smart Protection',
     description: 'Insure your bike online quickly. Get protection against accidents, theft, or natural disasters. Compare plans, enjoy instant approval, and ride confidently without any hassle or worry',
     bgImage: '/image/insurance-bg.png',
-    centerImage: '/image/bike.png',
+    centerImage: '/image/bike-ins-banner.JPG',
   };
   const aboutData = {
     badge: "About Us",

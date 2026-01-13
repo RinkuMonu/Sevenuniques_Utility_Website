@@ -25,7 +25,7 @@ const services = [
     title: "LPG Gas Cylinder Booking",
     desc: "Book your LPG cylinders instantly from HP, Indane, or Bharat Gas. Quick, secure, and convenient making utility services hassle-free for your customers.",
     points: ["HP, Indane & Bharat Gas Supported", "Fast booking", "Safe & Secure payments"],
-    image: "/image/lpg.jpg",
+    image: "/image/lpg-cylinder.jpg",
     icon: Flame,
     bgcolor: "bg-orange-100",
     badge: "bg-orange-500",

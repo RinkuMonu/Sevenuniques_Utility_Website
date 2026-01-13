@@ -66,7 +66,7 @@ export default function InsuranceDocumentsSection() {
             </p>
 
             <Link
-              href="/coming-soon"
+              href="/contact"
               className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#0C3D4C] px-6 py-3 font-semibold text-white shadow-[0_16px_40px_rgba(12,61,76,0.22)] transition hover:bg-[#018EDE]"
             >
               Apply Now

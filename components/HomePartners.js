@@ -1,52 +1,60 @@
 import Image from 'next/image';
+import Link from "next/link";
+
 import React from 'react';
 
 // --- Data for the partner cards ---
 const partners = [
-
-  
   {
     name: 'User',
     imageUrl: '/home/homeP3.png',
+    link: '/merchant#usersection'
   },
   {
     name: 'Retailer',
     imageUrl: '/home/homeP2.png',
+    link: '/merchant#retailersection'
   },
-    {
+  {
     name: 'Distributor',
     imageUrl: '/home/homeP1.png',
+    link: '/merchant#distributorsection'
   },
   {
     name: 'WhiteLabel',
     imageUrl: '/home/homeP4.png',
+    link: '/merchant#usersection'
   },
 ];
 
-// --- Partner Card Component ---
-const PartnerCard = ({ name, imageUrl , index }) => (
-  <div
-  className={`relative overflow-hidden rounded-xl shadow-lg group h-84 ${
-    index % 2 == 0 ? "bg-[#018EDE] text-white" : "bg-white text-[#018EDE]"
-  }`}
->
 
-   <div>
-     <Image
-     width={200}
-     height={200}
-      src={imageUrl}
-      alt={name}
-      className="w-full h-full object-cover mt-3"
-    />
-    <div className="absolute top-0 left-0 p-4">
-      <h3 className=" text-2xl pt-5 font-bold">{name}</h3>
+// --- Partner Card Component ---
+const PartnerCard = ({ name, imageUrl, index, link }) => (
+  <Link href={link} className="block">
+    <div
+      className={`relative overflow-hidden rounded-xl shadow-lg group h-84 cursor-pointer transition-transform duration-300 hover:-translate-y-2 ${
+        index % 2 === 0 ? "bg-[#018EDE] text-white" : "bg-white text-[#018EDE]"
+      }`}
+    >
+      <div>
+        <Image
+          width={200}
+          height={200}
+          src={imageUrl}
+          alt={name}
+          className="w-full h-full object-cover mt-3"
+        />
+
+        <div className="absolute top-0 left-0 p-4">
+          <h3 className="text-2xl pt-5 font-bold">{name}</h3>
+        </div>
+      </div>
     </div>
-   </div>
-  </div>
+  </Link>
 );
 
-// --- Main Partners Section Component ---
+
+
 const HomePartners = () => {
   return (
     <div className=" bg-[#E6F6FF] ">
@@ -61,9 +69,10 @@ const HomePartners = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto ">
-          {partners.map((partner , index) => (
-            <PartnerCard key={index} {...partner} index={index} />
-          ))}
+         {partners.map((partner, index) => (
+  <PartnerCard key={index} {...partner} index={index} />
+))}
+
         </div>
       </div>
     </div>

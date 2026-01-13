@@ -19,7 +19,7 @@ function Contact() {
   const data = {
     id: 1,
     subheading: "Contact",
-    heading: "We’re Here to Help — Get in Touch",
+    heading: "We’re Here to Help Get in Touch",
     description:
       "If you have any questions or need assistance, contact us through phone, email, or WhatsApp. Our support team will respond quickly.",
     bgImage: "/image/contact-bg-img.png",

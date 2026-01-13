@@ -81,7 +81,7 @@ export default function HeroBanner() {
       <div className="mx-auto  px-6">
         <div className="relative mx-auto text-center">
           <h1 className="text-balance text-4xl font-semibold tracking-tight text-[#0C3D4C] md:text-[3.5rem] lg:text-6xl leading-[0.9]">
-            Your team's go-to for
+            Your team&apos;s go-to for
             <br className="hidden md:block" />
             <span className="bg-linear-to-r from-[#0C3D4C] to-[#018EDE] bg-clip-text text-transparent">
               instant answers.
@@ -89,7 +89,7 @@ export default function HeroBanner() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-xl text-pretty text-lg leading-relaxed text-zinc-600 md:text-xl">
-            Finunique's platform provides the fastest way to access trusted business
+            Finunique&apos;s platform provides the fastest way to access trusted business
             <br className="hidden md:block" />
             information for retailers, distributors and partners just ask for it.
           </p>

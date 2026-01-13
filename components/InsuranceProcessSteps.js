@@ -94,7 +94,7 @@ export default function InsuranceProcessSteps() {
 
         <div className="mt-14 flex justify-center">
           <Link
-            href="/coming-soon"
+            href="/contact"
             className="inline-flex items-center gap-2 rounded-full border-2 border-[#1297E2] px-6 py-3 font-semibold text-[#1297E2] transition-colors duration-300 hover:bg-[#33B5E5] hover:text-white"
           >
             Apply Now

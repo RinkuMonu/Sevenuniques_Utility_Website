@@ -48,10 +48,10 @@ const onboardingData = {
             '/home/dis1.png', '/home/dis2.png', '/home/dis3.png', '/home/dis4.png',
         ],
         steps: [
-            { id: 1, title: 'Register Online', description: 'Sign up in a few minutes through our easy-to-use and safe distributor portal.' },
-            { id: 2, title: 'Complete KYC', description: ' It is easy to access your identity by simply confirming who you are through our fast system.' },
-            { id: 3, title: 'Add Funds', description: 'Pay conveniently using a wide range of secure payment options.' },
-            { id: 4, title: 'Start Transacting', description: 'Offer an extensive range of services to your clients and start to make commissions right away.' },
+            { id: 1, title: 'Initial Consultation', description: 'A dedicated Finunique representative connects with the client to understand their goals and explain the overall process.' },
+            { id: 2, title: 'Requirement Analysis & Panel Demo', description: 'Client requirements are carefully analyzed, followed by a complete demonstration of the WhiteLabel panel and its features.' },
+            { id: 3, title: 'Documentation & Compliance', description: 'All required documents and agreements are collected and verified to ensure a smooth onboarding process.' },
+            { id: 4, title: 'Payment & Service Activation', description: 'After successful payment, the WhiteLabel solution is activated and the client is fully onboarded.' },
         ],
     },
 
@@ -93,7 +93,7 @@ const HomeOnboarding = () => {
                         <div
                             key={tab}
                             onClick={() => setActiveTab(tab)}
-                            className={`py-2 px-3 md:px-6 rounded-md w-50 text-center font-semibold text-lg transition-all duration-300 ${activeTab === tab
+                            className={`py-2 px-3 md:px-6 rounded-md w-50 text-center cursor-pointer font-semibold text-lg transition-all duration-300 ${activeTab === tab
                                 ? 'bg-[#3080A6] text-white shadow-md'
                                 : 'bg-white text-[#0C3D4C]  hover:bg-gray-100'
                                 }`}
