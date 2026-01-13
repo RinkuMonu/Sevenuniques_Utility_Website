@@ -23,7 +23,7 @@ const partners = [
   {
     name: 'WhiteLabel',
     imageUrl: '/home/homeP4.png',
-    link: '/merchant#usersection'
+    link: '/merchant#whitelabelsection'
   },
 ];
 

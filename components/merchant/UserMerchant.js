@@ -4,7 +4,7 @@ import { FaRegUser } from "react-icons/fa";
 
 export default function UserMerchantSection() {
     return (
-        <section id="#usersection" className='relative bg-cover bg-top bg-no-repeat'
+        <section id="usersection" className='relative bg-cover bg-top bg-no-repeat'
   style={{ backgroundImage: `
       linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.45), rgba(0,0,0,0)),
       url('/image/user-image.JPG')
