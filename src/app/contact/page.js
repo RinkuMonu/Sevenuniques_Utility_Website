@@ -444,7 +444,7 @@ function Contact() {
             </p>
             <div className="flex flex-wrap items-center gap-3 mt-3">
               <img src="/image/logo-img.png" alt="logo" className="h-6" />
-              <img src="/image/logo-abdks.png" alt="logo" className="h-6" />
+              {/* <img src="/image/logo-abdks.png" alt="logo" className="h-6" /> */}
               <img src="/image/verify-logo.png" alt="logo" className="h-6" />
             </div>
           </div>
