@@ -5,7 +5,7 @@ import React from 'react';
 const loanOptions = [
   {
     title: 'Home Loan',
-     imageUrl: '/loan/home-vec3d.png',
+     imageUrl: '/loan/Home-vec3d.png',
      link:"/instant-loan/home-loan"
   },
   {
