@@ -99,7 +99,7 @@ export default function AllServices() {
       title: "Banking",
       desc:
         "Finunique BBPS offers digital banking services that let users check account balances, transfer funds, and manage their accounts directly from their mobile phones. This minimizes the need for branch visits and long waiting lines, making banking more convenient especially in remote areas. With instant access to transaction history and alerts, users can monitor their spending and keep their finances secure.",
-      imageSrc: "/allservices/Banking.png",
+      imageSrc: "/allservices/Banking.PNG",
       icons: ["🏦", "🔒"],
       blobs: ["bg-indigo-100/70", "bg-emerald-100/70", "bg-sky-100/70"],
       frame: "#0C3D4C",
@@ -110,7 +110,7 @@ export default function AllServices() {
       title: "Booking",
       desc:
         "Finunique BBPS enables users to book services online with quick and instant confirmation. This helps save time, reduces unnecessary travel, and makes scheduling more reliable. With features like reminders and simple rescheduling, users can plan ahead smoothly and avoid last-minute inconvenience.",
-      imageSrc: "/allservices/Booking.png",
+      imageSrc: "/allservices/booking.png",
       icons: ["📅", "✅"],
       blobs: ["bg-amber-100/70", "bg-rose-100/70", "bg-emerald-100/70"],
       frame: "#0184be",

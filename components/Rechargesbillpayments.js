@@ -35,7 +35,7 @@ const services = [
     title: "Landline Bill Payments",
     desc: "Enable customers to pay landline bills instantly with live bill fetch and secure digital settlement. Simple, fast, and reliable.",
     points: ["Covers all major operators", "Live bill fetch", "Instant receipt"],
-    image: "/image/landline-vec.jpg",
+    image: "/image/landline-vec.JPG",
     icon: PhoneCall,
     bgcolor: "bg-purple-100",
     badge: "bg-fuchsia-600",
