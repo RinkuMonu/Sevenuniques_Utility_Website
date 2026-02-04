@@ -65,7 +65,7 @@ const services = [
 export default function RechargeServicesSection() {
   return (
     <section className="bg-gradient-to-b from-white to-slate-50 py-20">
-      <div className="max-w-7xl mx-auto px-5 space-y-28">
+      <div className="max-w-7xl mx-auto px-5 space-y-28">   
 
         {services.map((item, index) => {
           const reverse = index % 2 !== 0;
@@ -91,7 +91,7 @@ export default function RechargeServicesSection() {
                       src={item.image}
                       alt={item.title}
                       fill
-                      className="object-cover "
+                      className="object-cover"
                     />
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export default function RechargeServicesSection() {
                     <div
                       className={`w-12 h-12 rounded-xl ${item.badge} flex items-center justify-center `}
                     >
-                      <Icon className="w-6 h-6 text-white" />
+                    <Icon className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-3xl font-bold text-slate-900">
                       {item.title}
@@ -117,7 +117,7 @@ export default function RechargeServicesSection() {
                         key={i}
                         className="flex items-center gap-2 text-slate-700 font-medium"
                       >
-                        <CheckCircle2 className="w-5 h-5 text-emerald-500" />
+                        <CheckCircle2 className="w-5 h-5 text-emerald-500"/>
                         {point}
                       </li>
                     ))}

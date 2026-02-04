@@ -9,8 +9,8 @@ export default function GrowthOpportunities() {
   const kpis =
     audience === "retailers"
       ? [
-        { label: "Earn commissions on every transaction including AePS withdrawals, money transfers, recharges, and bill payments.", image: "/about/money3d.png" },
-        { label: "Bring more customers to your shop by offering easy and reliable digital banking services.", image: "/about/digital3d.png" },
+        { label: "Earn commissions on every transaction including AePS withdrawals, money transfers, recharges, and bill payments.", image: "/about/Money3d.png" },
+        { label: "Bring more customers to your shop by offering easy and reliable digital banking services.", image: "/about/Digital3d.png" },
         { label: "Boost your monthly income without heavy investment or complicated setup.", image: "/about/Increase3d.png" },
         { label: "Strengthen trust and build long-term customer loyalty in your local area.", image: "/about/trust.jpg" },
       ]
