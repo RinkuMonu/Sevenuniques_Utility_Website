@@ -1,7 +1,7 @@
-
-
 import Image from "next/image"
 import Link from "next/link"
+import { notFound } from "next/navigation"
+import axios from "axios"
 import {
     Calendar,
     User,
@@ -15,91 +15,208 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa"
 import { MdShare } from "react-icons/md"
 import { MdArrowOutward } from "react-icons/md"
 
-const post = {
-    title: "The Future of Web Development in 2025",
-    slug: "future-of-web-development",
-    created_at: "2025-09-05",
-    image: "/home/RA.avif",
-    categoryName: "Technology",
-    content: `
-    <p>Web development is evolving rapidly with AI-powered tools, frameworks, 
-    and better performance optimization. In this article, we explore the 
-    latest trends shaping the industry.</p>
-    <p>Expect more serverless, edge computing, and immersive experiences 
-    powered by WebGPU and WASM.</p>   <p>Web development is evolving rapidly with AI-powered tools, frameworks, 
-    and better performance optimization. In this article, we explore the 
-    latest trends shaping the industry.</p>
-    <p>Expect more serverless, edge computing, and immersive experiences 
-    powered by WebGPU and WASM.</p>   <p>Web development is evolving rapidly with AI-powered tools, frameworks, 
-    and better performance optimization. In this article, we explore the 
-    latest trends shaping the industry.</p>
-        <p>Expect more serverless, edge computing, and immersive experiences 
-    powered by WebGPU and WASM.</p>   <p>Web development is evolving rapidly with AI-powered tools, frameworks, 
-    and better performance optimization. In this article, we explore the 
-    latest trends shaping the industry.</p>
-    <p>Expect more serverless, edge computing, and immersive experiences 
-    powered by WebGPU and WASM.</p>   <p>Web development is evolving rapidly with AI-powered tools, frameworks, 
-    and better performance optimization. In this article, we explore the 
-    latest trends shaping the industry.</p>
-        <p>Expect more serverless, edge computing, and immersive experiences 
-    powered by WebGPU and WASM.</p>   <p>Web development is evolving rapidly with AI-powered tools, frameworks, 
-    and better performance optimization. In this article, we explore the 
-    latest trends shaping the industry.</p>
-    <p>Expect more serverless, edge computing, and immersive experiences 
-    powered by WebGPU and WASM.</p>   <p>Web development is evolving rapidly with AI-powered tools, frameworks, 
-    and better performance optimization. In this article, we explore the 
-    latest trends shaping the industry.</p>
-  
-  `,
+// API Configuration
+const API_BASE_URL = "https://cms.sevenunique.com/apis"
+const API_HEADERS = {
+    Authorization: "Bearer jibhfiugh84t3324fefei#*fef",
 }
 
-// Example related posts with full data
-const relatedPosts = [
-    {
-        id: 1,
-        title: "Why Tailwind CSS is Taking Over",
-        slug: "blog-details",
-        created_at: "2025-08-15",
-        image: "/home/RA.avif",
-        categoryName: "Design",
-        author: "Jane Doe",
-        description: "Discover why Tailwind CSS has become the go-to utility framework for developers.",
-    },
-    {
-        id: 2,
-        title: "Mastering Next.js in 2025",
-           slug: "blog-details",
-        created_at: "2025-07-30",
-        image: "/home/RA.avif",
-        categoryName: "Development",
-        author: "John Smith",
-        description: "Learn the latest Next.js features and best practices for high-performance apps.",
-    },
-]
-
-
-const trendingPosts = [
-    { title: "10 AI Tools Every Dev Should Know", id:1,       slug: "blog-details", created_at: "2025-08-20", image: "/home/RA.avif", categoryName: "AI" },
-    { title: "React Server Components Explained",  id:2,     slug: "blog-details",created_at: "2025-07-18", image: "/home/RA.avif", categoryName: "Development" },
-]
-
-const recentPosts = [
-    { title: "Building Apps with Bun.js",    id:1,   slug: "blog-details", created_at: "2025-09-01", image: "/home/RA.avif", categoryName: "JavaScript" },
-    { title: "CSS Tricks for Responsive Design",   id:2,    slug: "blog-details",created_at: "2025-08-25", image: "/home/RA.avif", categoryName: "Design" },
-]
-
-const categories = {
-    Technology: 5,
-    Design: 3,
-    Development: 7,
-    AI: 4,
+// Fetch single blog post by slug
+async function getBlogBySlug(slug) {
+    try {
+        const res = await axios.get(
+            `${API_BASE_URL}/blogs/get-blogs.php?website_id=6&status=2&limit=1000`,
+            { headers: API_HEADERS }
+        )
+        
+        const blogs = res.data?.data || []
+        const blog = blogs.find((b) => b.slug === slug)
+        
+        if (!blog) return null
+        
+        // Get category name if category_id exists
+        let categoryName = "Uncategorized"
+        if (blog.category_id) {
+            const categoryRes = await axios.get(
+                `${API_BASE_URL}/category/get_category_by_id.php?category_id=${blog.category_id}`,
+                { headers: API_HEADERS }
+            )
+            categoryName = categoryRes.data?.data?.category_name || categoryName
+        }
+        
+        return {
+            ...blog,
+            categoryName,
+            author: blog.author || "Admin"
+        }
+    } catch (err) {
+        console.error("Blog fetch failed:", err)
+        return null
+    }
 }
-export default function BlogPostPage() {
+
+// Fetch all blogs for related posts
+async function getAllBlogs() {
+    try {
+        const res = await axios.get(
+            `${API_BASE_URL}/blogs/get-blogs.php?website_id=6&status=2&limit=1000`,
+            { headers: API_HEADERS }
+        )
+        return res.data?.data || []
+    } catch (err) {
+        console.error("Blogs fetch failed:", err)
+        return []
+    }
+}
+
+// Get trending posts (based on is_trending flag)
+async function getTrendingPosts() {
+    try {
+        const blogs = await getAllBlogs()
+        return blogs
+            .filter((blog) => blog.is_trending === 1)
+            .slice(0, 5) // Limit to 5 trending posts
+            .map((blog) => ({
+                id: blog.id,
+                title: blog.title,
+                slug: blog.slug,
+                created_at: blog.created_at,
+                image: blog.image,
+                categoryName: "Loading...", // Will be populated if needed
+            }))
+    } catch {
+        return []
+    }
+}
+
+// Get recent posts (sorted by created_at)
+async function getRecentPosts() {
+    try {
+        const blogs = await getAllBlogs()
+        return blogs
+            .sort((a, b) => 
+                new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+            )
+            .slice(0, 5) // Limit to 5 recent posts
+            .map((blog) => ({
+                id: blog.id,
+                title: blog.title,
+                slug: blog.slug,
+                created_at: blog.created_at,
+                image: blog.image,
+                categoryName: "Loading...",
+            }))
+    } catch {
+        return []
+    }
+}
+
+// Get related posts (by same category)
+async function getRelatedPosts(currentBlogSlug, categoryId) {
+    try {
+        const blogs = await getAllBlogs()
+        
+        return blogs
+            .filter((blog) => 
+                blog.slug !== currentBlogSlug && // Exclude current blog
+                (!categoryId || blog.category_id === categoryId) // Same category if available
+            )
+            .slice(0, 2) // Limit to 2 related posts
+            .map((blog) => ({
+                id: blog.id,
+                title: blog.title,
+                slug: blog.slug,
+                created_at: blog.created_at,
+                image: blog.image,
+                categoryName: "Loading...",
+                author: blog.author || "Admin",
+                description: blog.summary || "",
+            }))
+    } catch {
+        return []
+    }
+}
+
+// Get categories with count
+async function getCategories() {
+    try {
+        const blogs = await getAllBlogs()
+        const categoryMap = {}
+        
+        // Fetch all categories first
+        for (const blog of blogs) {
+            if (blog.category_id) {
+                try {
+                    const res = await axios.get(
+                        `${API_BASE_URL}/category/get_category_by_id.php?category_id=${blog.category_id}`,
+                        { headers: API_HEADERS }
+                    )
+                    const categoryName = res.data?.data?.category_name
+                    if (categoryName) {
+                        categoryMap[categoryName] = (categoryMap[categoryName] || 0) + 1
+                    }
+                } catch {
+                    // Skip if category fetch fails
+                }
+            }
+        }
+        
+        return categoryMap
+    } catch {
+        return {}
+    }
+}
+
+
+export default async function BlogPostPage({ params }) {
+    const { slug } = params
+    
+    // Fetch data in parallel
+    const [post, trendingPosts, recentPosts, relatedPosts, categories] = await Promise.all([
+        getBlogBySlug(slug),
+        getTrendingPosts(),
+        getRecentPosts(),
+        getRelatedPosts(slug),
+        getCategories()
+    ])
+    
+    // If post not found, show 404
+    if (!post) {
+        notFound()
+    }
+    
+    // Update related posts with current post's category
+    const relatedPostsWithCategory = await Promise.all(
+        relatedPosts.map(async (related) => {
+            if (related.id) {
+                try {
+                    const res = await axios.get(
+                        `${API_BASE_URL}/category/get_category_by_id.php?category_id=${related.id}`,
+                        { headers: API_HEADERS }
+                    )
+                    return {
+                        ...related,
+                        categoryName: res.data?.data?.category_name || "Uncategorized"
+                    }
+                } catch {
+                    return related
+                }
+            }
+            return related
+        })
+    )
+
     return (
         <div className="bg-gray-50 ">
             {/* Hero */}
             <div className="relative h-[50vh] md:h-[75vh]">
-                <Image src={post.image} alt={post.title} fill className="object-cover" priority />
+                <Image 
+                    src={post.image || "/placeholder-image.jpg"} 
+                    alt={post.title} 
+                    fill 
+                    className="object-cover" 
+                    priority 
+                />
                 <div className="absolute inset-0 bg-black/40" />
                 <div className="absolute inset-0 flex items-center">
                     <div className="container mx-auto px-4">
@@ -112,7 +229,7 @@ export default function BlogPostPage() {
                                 </div>
                                 <div className="flex items-center">
                                     <User className="h-4 w-4 mr-1" />
-                                    Admin
+                                    {post.author || "Admin"}
                                 </div>
                                 <div className="flex items-center">
                                     <Tag className="h-4 w-4 mr-1" />
@@ -167,14 +284,14 @@ export default function BlogPostPage() {
                         <div className="mt-10">
                             <h2 className="text-2xl font-bold mb-6">Related Articles</h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                {relatedPosts.map((related) => (
+                                {relatedPostsWithCategory.map((related) => (
                                     <div
                                         key={related.id}
                                         className="group relative min-h-[300px] rounded-2xl overflow-hidden bg-white"
                                     >
                                         {/* image */}
                                         <Image
-                                            src={related.image}
+                                            src={related.image || "/placeholder-image.jpg"}
                                             alt={related.title}
                                             fill
                                             className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -226,11 +343,17 @@ export default function BlogPostPage() {
                                 <div className="space-y-4">
                                     {trendingPosts.map((trend, index) => (
                                         <Link 
-                                       href="/blog/blog-details"
-                                        key={trend.id} 
-                                        className="flex gap-3">
+                                            href={`/blog/${trend.slug}`}
+                                            key={trend.id} 
+                                            className="flex gap-3"
+                                        >
                                             <div className="w-16 h-16 relative rounded-lg overflow-hidden">
-                                                <Image src={trend.image} alt={trend.title} fill className="object-cover" />
+                                                <Image 
+                                                    src={trend.image || "/placeholder-image.jpg"} 
+                                                    alt={trend.title} 
+                                                    fill 
+                                                    className="object-cover" 
+                                                />
                                             </div>
                                             <div className="flex-1 min-w-0">
                                                 <span className="text-xs font-bold text-[#115d8e] bg-[#115d8e]/10 px-2 py-1 rounded">
@@ -254,9 +377,18 @@ export default function BlogPostPage() {
                                 </h3>
                                 <div className="space-y-4">
                                     {recentPosts.map((recent) => (
-                                        <Link href="/blog/blog-details" key={recent.id} className="flex gap-3">
+                                        <Link 
+                                            href={`/blog/${recent.slug}`} 
+                                            key={recent.id} 
+                                            className="flex gap-3"
+                                        >
                                             <div className="w-16 h-16 relative rounded-lg overflow-hidden">
-                                                <Image src={recent.image} alt={recent.title} fill className="object-cover" />
+                                                <Image 
+                                                    src={recent.image || "/placeholder-image.jpg"} 
+                                                    alt={recent.title} 
+                                                    fill 
+                                                    className="object-cover" 
+                                                />
                                             </div>
                                             <div className="flex-1 min-w-0">
                                                 <span className="inline-block text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded mb-1">
@@ -274,33 +406,50 @@ export default function BlogPostPage() {
                             </div>
 
                             {/* Categories */}
-                            {/* <div className="bg-white shadow-md rounded-lg p-5">
+                            <div className="bg-white shadow-md rounded-lg p-5">
                                 <h3 className="flex items-center gap-2 font-semibold mb-4">
                                     <Folder className="h-5 w-5 text-[#115D8E]" /> Categories
                                 </h3>
                                 <div className="space-y-2">
-                                       {Object.entries(categories)
-                    .sort(([, a], [, b]) => b - a)
-                    .map(([category, count]) => (
-                      <Link
-                        key={category}
-                        href={`/blog`}
-                        className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors group"
-                      >
-                        <span className="text-sm font-medium group-hover:text-[#ab6545] dark:group-hover:text-[#e8ab8f] transition-colors">
-                          {category}
-                        </span>
-                          <span className="text-xs bg-gray-100 text-gray-600 rounded px-2 py-1">
-                                                {count}
-                                            </span>
-                      </Link>
-                    ))}
+                                    {Object.entries(categories)
+                                        .sort(([, a], [, b]) => b - a)
+                                        .map(([category, count]) => (
+                                            <Link
+                                                key={category}
+                                                href={`/blog/category/${category.toLowerCase()}`}
+                                                className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-100 transition-colors group"
+                                            >
+                                                <span className="text-sm font-medium group-hover:text-[#115d8e] transition-colors">
+                                                    {category}
+                                                </span>
+                                                <span className="text-xs bg-gray-100 text-gray-600 rounded px-2 py-1">
+                                                    {count}
+                                                </span>
+                                            </Link>
+                                        ))}
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     )
+}
+
+// Generate static paths for SSG (optional)
+export async function generateStaticParams() {
+    try {
+        const res = await axios.get(
+            `${API_BASE_URL}/blogs/get-blogs.php?website_id=6&status=2&limit=1000`,
+            { headers: API_HEADERS }
+        )
+        
+        const blogs = res.data?.data || []
+        return blogs.map((blog) => ({
+            slug: blog.slug,
+        }))
+    } catch {
+        return []
+    }
 }
