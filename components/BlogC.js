@@ -39,7 +39,7 @@ const FilterBar = ({
     </div>
 
     {/* Category */}
-    <div className="relative w-full md:min-w-[200px]">
+    <div className="relative md:min-w-[200px]">
       <Filter className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
       <select
         value={selectedCategory}
