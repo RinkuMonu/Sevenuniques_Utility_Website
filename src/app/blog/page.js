@@ -26,7 +26,7 @@ function page() {
                 </span>
             </div>
         </div>
-    );
+    ); 
     const aepsData = {
         subheading: 'BLOG',
         heading: 'Ideas Ki Duniya, Blog Pe Sabka Saath',
