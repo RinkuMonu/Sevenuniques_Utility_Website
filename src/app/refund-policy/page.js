@@ -33,7 +33,7 @@ const refundSections = [
 
       "We provide multiple digital services, including bill payments, AEPS, DMT, recharges, loan applications, insurance, pancard processing, and other utility-based financial services. Once a service or transaction is successfully completed, it cannot be cancelled as our systems operate in real time with partner institutions. However, in certain cases such as failed, duplicate, or incomplete transactions, customers may be eligible for a refund.",
 
-      "Refund requests must be submitted within 7 days of the transaction by emailing info@7unique.in with complete transaction details. Approved refunds will be processed within 5–10 business days to the original payment method used.",
+      "Refund requests must be submitted within 7 days of the transaction by emailing support@finuniques.in with complete transaction details. Approved refunds will be processed within 5–10 business days to the original payment method used.",
 
       "At Finunique Small Private Limited, we strive to maintain honesty, efficiency, and customer trust by ensuring a transparent process for handling cancellations and refunds."
     ]
@@ -59,7 +59,7 @@ const refundSections = [
   content: [
     "At Finunique Small Private Limited, transactions are processed in real time through secure integrations with banks, government APIs, and third-party service providers. Therefore, once a transaction or service request has been successfully completed by a user, distributor, retailer, or white-label partner, it cannot be cancelled or reversed under normal circumstances.",
 
-    "However, if a service remains pending due to technical errors, server downtime, or verification delays, the concerned party may submit a cancellation request within 7 days from the date of transaction. The request must be sent to info@7unique.in with the Transaction ID, Registered Mobile Number, and Service Type clearly mentioned.",
+    "However, if a service remains pending due to technical errors, server downtime, or verification delays, the concerned party may submit a cancellation request within 7 days from the date of transaction. The request must be sent to support@finuniques.in with the Transaction ID, Registered Mobile Number, and Service Type clearly mentioned.",
 
     "All cancellation requests are thoroughly reviewed by our support team and, when necessary, coordinated with relevant banks, billers, or API partners to verify eligibility. Approval or rejection of such requests depends on the service status and confirmation from associated partners.",
 
@@ -172,7 +172,7 @@ const refundSections = [
 
     "\nCorporate Office: Office No. 101/2, Vakratunda Corporate Park Premises Co-operative Society Limited, Off. Aarey Road, Goregaon (East), Mumbai – 400 063",
 
-    "\nEmail Addresses: support@7unique.in\ninfo@7unique.in",
+    "\nEmail Addresses: support@finuniques.in\nsupport@finuniques.in",
 
     "\nPhone: 0141-4511098",
 
@@ -287,7 +287,7 @@ export default function RefundPolicy() {
                           Our refund policy is designed to be fair and transparent. We understand that circumstances may change, and we strive to make the cancellation and refund process as straightforward as possible. Below you will find detailed information about our policies, eligibility criteria, and processes.
                         </p>
                         <p className="space-y-4 text-black text-lg leading-relaxed">Finunique Small Private Limited<br />
-                          Email: info@7unique.in<br />
+                          Email: support@finuniques.in<br />
                           Website: www.finuniques.in<br />
                           Effective Date: 07 October 2025</p>
                       </div>

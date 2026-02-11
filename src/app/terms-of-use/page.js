@@ -487,7 +487,7 @@ const termsSections = [
 
     "Grievance Officer\nFinunique Small Private Limited",
     "Plot No. 97, Dakshinpuri-I, Shrikishanpura, Sanganer, Jagatpura, Jaipur – 302017, Rajasthan",
-    "Email: info@7unique.in",
+    "Email: support@finuniques.in",
     "Phone: 0141-4511098",
 
     "The Grievance Officer shall acknowledge and address complaints within the timelines prescribed under applicable law."
@@ -499,7 +499,7 @@ const termsSections = [
   icon: <Package className="w-5 h-5" />, 
   content: [
     "Shipping and Delivery Policy\nThe Company shall make all reasonable efforts to deliver products/services within the estimated timelines provided at the time of transaction initiation. Delivery timelines are indicative and not guaranteed unless expressly committed in writing by the Company.",
-    "Any delivery charges shall be calculated based on the shipping address provided by the customer and collected as part of the transaction. If the delivery is not completed within seven (7) days from the estimated date, the customer/partner shall promptly notify the Company at info@7unique.in for appropriate resolution.",
+    "Any delivery charges shall be calculated based on the shipping address provided by the customer and collected as part of the transaction. If the delivery is not completed within seven (7) days from the estimated date, the customer/partner shall promptly notify the Company at support@finuniques.in for appropriate resolution.",
 
     "Annual Maintenance Charges (AMC)\nThe Retailer / Partner / Distributor / Super Distributor agrees to pay an Annual Maintenance Charge (AMC) of INR 500/- (inclusive of GST) per user per year.",
     "The AMC shall be billed annually in advance and is payable within the timelines specified by the Company. Non-payment of AMC may result in suspension or termination of services until dues are cleared.",

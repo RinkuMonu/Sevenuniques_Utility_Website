@@ -130,7 +130,7 @@ const chargeSections = [
       <>
         Before initiating a chargeback, users must:
         <ul className="list-disc list-inside mt-2 space-y-1">
-          <li>Contact Finunique Support at <strong>info@7unique.in</strong> or <strong>0141-4511098</strong> to resolve the issue directly.</li>
+          <li>Contact Finunique Support at <strong>support@finuniques.in</strong> or <strong>0141-4511098</strong> to resolve the issue directly.</li>
           <li>Provide complete information including Transaction ID, registered mobile number, service type, date, and description of the issue.</li>
           <li>Allow adequate time for the company to investigate and resolve the issue.</li>
           <li>Act in good faith; malicious or false claims may lead to account suspension, flagging, or legal action.</li>
@@ -164,7 +164,7 @@ const chargeSections = [
       <>
 <span className="font-bold">5.1 Initiating a Chargeback</span>
         <ul className="list-disc list-inside mt-2 space-y-1">
-          <li>Users must first submit a written request to info@7unique.in, providing all relevant details of the disputed transaction.
+          <li>Users must first submit a written request to support@finuniques.in, providing all relevant details of the disputed transaction.
 </li>
           <li>The support team will review the request and verify the transaction against internal records and third-party service confirmations.</li>
           <li>If required, additional documentation or clarification may be requested from the user.</li>
@@ -270,7 +270,7 @@ const chargeSections = [
       <>
         Users can contact support:
         <ul className="list-disc list-inside mt-2 space-y-1">
-          <li>Email: info@7unique.in</li>
+          <li>Email: support@finuniques.in</li>
           <li>Phone: 0141-4511098 (Mon–Sat, 10:00 AM–6:30 PM IST)</li>
           <li>Include Transaction ID, registered mobile number, service type, and issue description for faster resolution.</li>
         </ul>
@@ -422,7 +422,7 @@ export default function ChargebackPolicy() {
                         <p className="text-gray-600 text-start text-lg leading-relaxed">
                           <span className="font-bold">Finunique Small Private Limited </span><br />
 <span className="font-bold"> Website:</span> www.finuniques.in<br />
- <span className="font-bold">Email:</span> info@7unique.in<br />
+ <span className="font-bold">Email:</span> support@finuniques.in<br />
   <span className="font-bold">Phone:</span> 0141-4511098<br />
    <span className="font-bold">Effective Date:</span> 03 June 2025
 

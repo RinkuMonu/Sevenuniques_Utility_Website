@@ -252,7 +252,7 @@ export default function Page() {
           Sanganer, Jagatpura, Jaipur, Shri Kishanpura,<br />
           Rajasthan – 302017<br />
           Phone: 0141 451 1098<br />
-          Email: info@7unique.in
+          Email: support@finuniques.in
         </p>
       ),
     },

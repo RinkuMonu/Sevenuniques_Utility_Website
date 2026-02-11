@@ -140,7 +140,7 @@ const sections = [
       <>
       <ul className="list-disc pl-6">
         <li>Phone: 0141 451 1098</li>
-        <li>Email: info@7unique.in</li>
+        <li>Email: support@finuniques.in</li>
         <li>
           Postal Address: Plot No 97, Dakshinpuri - I Shrikishan, Sanganer, Jagatpura, Jaipur, Shri Kishanpura, Rajasthan 302017
         </li>
