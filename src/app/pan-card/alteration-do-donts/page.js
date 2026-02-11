@@ -53,7 +53,7 @@ export default function Page() {
       Finunique – PAN Services Unit<br />
       Plot No. 97, Dakshinpuri – I Shrikishan, Sanganer, Jagatpura, Jaipur, Shri Kishanpura, Rajasthan – 302017<br />
       Phone: 0141 451 1098<br />
-      Email: info@7unique.in<br />
+      Email: support@finuniques.in<br />
       Track your application: <a href="https://www.7unique.in/pan-status" className="text-blue-600 underline">www.7unique.in/pan-status</a> (custom link can be configured)
     </p>
   ),

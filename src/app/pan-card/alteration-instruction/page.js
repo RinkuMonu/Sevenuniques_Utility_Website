@@ -316,7 +316,7 @@ export default function Page() {
         Income Tax PAN Services Unit (Managed by Finunique)<br />
         Plot No. 97, Dakshinpuri – I Shrikishan, Sanganer, Jagatpura, Jaipur, Shri Kishanpura, Rajasthan – 302017<br />
         Phone: 0141 451 1098<br />
-        Email: info@7unique.in
+        Email: support@finuniques.in
       </p>
     ),
   },

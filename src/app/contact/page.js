@@ -373,19 +373,19 @@ function Contact() {
                   <p className="font-bold text-lg">Email</p>
                   <p className="text-gray-500 text-sm">
                     <a
-                      href="mailto:support@7unique.in"
+                      href="mailto:support@finuniques.in"
                       className="hover:underline"
                     >
-                      info@finuniques.in
+                      support@finuniques.in
                     </a>
                   </p>
 
                   <p className="text-gray-500 text-sm">
                     <a
-                      href="mailto:info@7unique.in"
+                      href="mailto:support@finuniques.in"
                       className="hover:underline"
                     >
-                      info@7unique.in
+                      support@finuniques.in
                     </a>
                   </p>
                 </div>

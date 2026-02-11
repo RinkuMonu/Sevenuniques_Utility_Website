@@ -32,12 +32,7 @@ const services = [
       "Transfer money instantly to any Aadhaar-linked bank account using biometric verification. The process is quick, secure, and works across different banks.",
     icon: "/icons/a4.png",
   },
-  {
-    title: "Micro-ATM",
-    description:
-      "Use AEPS to pay utility bills, mobile and DTH charges, and more, all in one place. It’s a secure, real-time payment solution that handles all your payment needs.",
-    icon: "/icons/a2.png",
-  },
+
 ];
 
 

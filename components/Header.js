@@ -31,8 +31,8 @@ export default function Header() {
           <span className="hidden md:inline text-gray-100 ">-</span>
           <span className="flex items-center">
             <Mail className="mr-2 w-4 h-4" />
-            <a href="mailto:support@7unique.in" className="hover:underline">
-              support@7unique.in
+            <a href="mailto:support@finuniques.in" className="hover:underline">
+              support@finuniques.in
             </a>
           </span>
 
@@ -121,16 +121,16 @@ export default function Header() {
                     </h4>
                     <ul className="space-y-2 text-base md:ml-4">
                       <li className="hover:text-[#026381]">
-                        <Link href="/dmt">DMT</Link>
+                        <Link href="/dmt">Money Transfer</Link>
                       </li>
                       <li className="hover:text-[#026381]">
                         <Link href="/matm">Micro ATM</Link>
                       </li>
                       <li className="hover:text-[#026381]">
-                        <Link href="/credit-card">Credit Card</Link>
+                        <Link href="/credit-card">Credit Card Creation</Link>
                       </li>
                       <li className="hover:text-[#026381]">
-                        <Link href="/pan-card">PAN Card</Link>
+                        <Link href="/pan-card">PAN Card Creation</Link>
                       </li>
                     </ul>
                   </div>
@@ -148,7 +148,7 @@ export default function Header() {
                         <Link href="/recharge">Recharges</Link>
                       </li>
                       <li className="hover:text-[#026381]">
-                        <Link href="/bbps">BBPS</Link>
+                        <Link href="/bbps">BBPS Services</Link>
                       </li>
                     </ul>
                   </div>
@@ -166,13 +166,13 @@ export default function Header() {
                     </Link>
                     <ul className="space-y-1 text-base mb-3 md:ml-4">
                       <li className="hover:text-[#026381]">
-                        <Link href="/insurance/car-insurance">Car</Link>
+                        <Link href="/insurance/car-insurance">Car Insuarance</Link>
                       </li>
                       <li className="hover:text-[#026381]">
-                        <Link href="/insurance/bike-insurance">Bike</Link>
+                        <Link href="/insurance/bike-insurance">Bike Insuarance</Link>
                       </li>
                       <li className="hover:text-[#026381]">
-                        <Link href="/insurance/taxi-insurance">Taxi</Link>
+                        <Link href="/insurance/taxi-insurance">Taxi Insuarance</Link>
                       </li>
                       <li className="hover:text-[#026381]">
                         <Link href="/insurance/commercial-vehicle">
@@ -188,10 +188,10 @@ export default function Header() {
                     </Link>
                     <ul className="space-y-1 text-base md:ml-4">
                       <li className="hover:text-[#026381]">
-                        <Link href="/instant-loan/home-loan">Home</Link>
+                        <Link href="/instant-loan/home-loan">Home Loan</Link>
                       </li>
                       <li className="hover:text-[#026381]">
-                        <Link href="/instant-loan/business-loan">Business</Link>
+                        <Link href="/instant-loan/business-loan">Business Loan</Link>
                       </li>
                       <li className="hover:text-[#026381]">
                         <Link href="/instant-loan/construction-equipment-loan">
@@ -199,10 +199,10 @@ export default function Header() {
                         </Link>
                       </li>
                       <li className="hover:text-[#026381]">
-                        <Link href="/instant-loan/personal-loan">Personal</Link>
+                        <Link href="/instant-loan/personal-loan">Personal Loan</Link>
                       </li>
                       <li className="hover:text-[#026381]">
-                        <Link href="/instant-loan/car-loan">Car</Link>
+                        <Link href="/instant-loan/car-loan">Car Loan</Link>
                       </li>
                     </ul>
                   </div>
@@ -210,7 +210,7 @@ export default function Header() {
                   {/* Booking */}
                   <div>
                     <h4 className="font-semibold text-lg bg-[#E6F3F7] text-[#026381] px-3 py-1 rounded-md mb-4">
-                      Booking
+                      Travels & Booking
                     </h4>
                     <ul className="space-y-2 text-base md:ml-4">
                       <li className="hover:text-[#026381]">
@@ -310,7 +310,7 @@ export default function Header() {
                 >
                   <li><Link href="/bill-payments">Bill Payments</Link></li>
                   <li><Link href="/recharge">Recharges</Link></li>
-                  <li><Link href="/bbps">BBPS</Link></li>
+                  <li><Link href="/bbps">BBPS Services</Link></li>
                 </ul>
 
                 {/* Financial */}
@@ -341,7 +341,7 @@ export default function Header() {
                   className="flex justify-between w-full items-center font-semibold mt-2"
                   onClick={() => toggleMobileDropdown("booking")}
                 >
-                  Booking <ChevronDown size={14} />
+                  Travels & Booking <ChevronDown size={14} />
                 </button>
                 <ul
                   className={`pl-4 mt-1 space-y-1 transition-all duration-300 ${

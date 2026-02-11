@@ -324,10 +324,10 @@ const Footer = () => {
                     <p className="text-white inline-flex gap-1 items-center">
                       <MdOutlineMail className="text-sm" />
                       <a
-                        href="mailto:info@finuniques.in"
+                        href="mailto:support@finuniques.in"
                         className="hover:underline"
                       >
-                        info@finuniques.in
+                        support@finuniques.in
                       </a>
                     </p>
                   </div>
