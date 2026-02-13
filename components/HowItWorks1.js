@@ -13,7 +13,7 @@ const timelineData = [
     stepNumber: 2,
     title: 'Enter Transaction Details',
     description:
-      'Select the type of transaction (such as cash withdrawal) and enter the amount in the micro-ATM.',
+      'Select the type of transaction (such as cash withdrawal) and enter the amount.',
     imageUrl: '/aeps/p2.png',
   },
   {
