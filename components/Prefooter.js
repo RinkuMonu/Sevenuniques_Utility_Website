@@ -9,7 +9,7 @@ export default function PreFooterSection() {
       title: "Money Transfer & other Services",
       links: [
         { name: "AePS", href: "/aeps" },
-        { name: "DMT", href: "/dmt" },
+        { name: "Money Transfer", href: "/dmt" },
         { name: "Credit Card", href: "/credit-card" },
         { name: "PAN Card", href: "/pan-card" },
       ],

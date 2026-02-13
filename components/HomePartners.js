@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Link from "next/link";
 
+
+
+
 import React from 'react';
 
 // --- Data for the partner cards ---
@@ -32,9 +35,8 @@ const partners = [
 const PartnerCard = ({ name, imageUrl, index, link }) => (
   <Link href={link} className="block">
     <div
-      className={`relative overflow-hidden rounded-xl shadow-lg group h-84 cursor-pointer transition-transform duration-300 hover:-translate-y-2 ${
-        index % 2 === 0 ? "bg-[#018EDE] text-white" : "bg-white text-[#018EDE]"
-      }`}
+      className={`relative overflow-hidden rounded-xl shadow-lg group h-84 cursor-pointer transition-transform duration-300 hover:-translate-y-2 ${index % 2 === 0 ? "bg-[#018EDE] text-white" : "bg-white text-[#018EDE]"
+        }`}
     >
       <div>
         <Image
@@ -57,27 +59,40 @@ const PartnerCard = ({ name, imageUrl, index, link }) => (
 
 const HomePartners = () => {
   return (
-    <div className=" bg-[#E6F6FF] ">
-      <div className=" mx-auto px-4 py-12">
+    <div className="relative bg-[#E6F6FF]">
+      <Link href="/">
+        <img
+          src="/icons/finunique.svg"
+          alt="Finunique Icon"
+          className="absolute top-0 w-12 h-12 left-0 invisible"
+        />
+      </Link>
+      <div className="mx-auto px-4 py-12">
         <div className="text-center mb-12">
-          <p className="text-sm font-semibold text-[#24576C] tracking-widest">PARTNERS WITH US</p>
+          <p className="text-sm font-semibold text-[#24576C] tracking-widest">
+            PARTNERS WITH US
+          </p>
           <h3 className="mt-2 text-3xl md:text-5xl font-bold text-[#0C3D4C]">
             Open up Unlimited Growth
           </h3>
           <p className="mt-4 max-w-2xl mx-auto text-gray-500">
-            We, at Finunique, realize that successful business development depends on effective partnerships. By partnering with us, you can tap into numerous opportunities that can fuel the development of the digital financial sector exponentially. 
+            We, at Finunique, realize that successful business development
+            depends on effective partnerships. By partnering with us, you can
+            tap into numerous opportunities that can fuel the development of
+            the digital financial sector exponentially.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto ">
-         {partners.map((partner, index) => (
-  <PartnerCard key={index} {...partner} index={index} />
-))}
 
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          {partners.map((partner, index) => (
+            <PartnerCard key={index} {...partner} index={index} />
+          ))}
         </div>
       </div>
     </div>
   );
 };
+
 
 export default HomePartners;
 
