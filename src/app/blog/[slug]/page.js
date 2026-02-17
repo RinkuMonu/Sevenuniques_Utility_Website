@@ -47,7 +47,7 @@ async function getBlogBySlug(slug) {
         return {
             ...blog,
             categoryName,
-            author: blog.author || "Admin"
+            author: blog?.author || "Admin"
         }
     } catch (err) {
         console.error("Blog fetch failed:", err)
@@ -62,7 +62,7 @@ async function getAllBlogs() {
             `${API_BASE_URL}/blogs/get-blogs.php?website_id=6&status=2&limit=1000`,
             { headers: API_HEADERS }
         )
-        return res.data?.data || []
+        return res?.data?.data || []
     } catch (err) {
         console.error("Blogs fetch failed:", err)
         return []
@@ -187,7 +187,7 @@ export default async function BlogPostPage({ params }) {
     
     // Update related posts with current post's category
     const relatedPostsWithCategory = await Promise.all(
-        relatedPosts.map(async (related) => {
+        relatedPosts?.map(async (related) => {
             if (related.id) {
                 try {
                     const res = await axios.get(
@@ -211,8 +211,8 @@ export default async function BlogPostPage({ params }) {
             {/* Hero */}
             <div className="relative h-[50vh] md:h-[75vh]">
                 <Image 
-                    src={post.image || "/placeholder-image.jpg"} 
-                    alt={post.title} 
+                    src={post?.image || "/placeholder-image.jpg"} 
+                    alt={post?.title} 
                     fill 
                     className="object-cover" 
                     priority 
@@ -221,19 +221,19 @@ export default async function BlogPostPage({ params }) {
                 <div className="absolute inset-0 flex items-center">
                     <div className="container mx-auto px-4">
                         <div className="max-w-3xl mx-auto text-center text-white">
-                            <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
+                            <h1 className="text-4xl font-bold mb-4">{post?.title}</h1>
                             <div className="flex flex-wrap justify-center gap-4 text-sm">
                                 <div className="flex items-center">
                                     <Calendar className="h-4 w-4 mr-1" />
-                                    {new Date(post.created_at).toLocaleDateString()}
+                                    {new Date(post?.created_at).toLocaleDateString()}
                                 </div>
                                 <div className="flex items-center">
                                     <User className="h-4 w-4 mr-1" />
-                                    {post.author || "Admin"}
+                                    {post?.author || "Admin"}
                                 </div>
                                 <div className="flex items-center">
                                     <Tag className="h-4 w-4 mr-1" />
-                                    {post.categoryName}
+                                    {post?.categoryName}
                                 </div>
                             </div>
                         </div>
@@ -256,7 +256,7 @@ export default async function BlogPostPage({ params }) {
 
                         <article
                             className="prose prose-lg max-w-none mb-12"
-                            dangerouslySetInnerHTML={{ __html: post.content }}
+                            dangerouslySetInnerHTML={{ __html: post?.content }}
                         />
 
                         {/* Share */}
@@ -284,15 +284,15 @@ export default async function BlogPostPage({ params }) {
                         <div className="mt-10">
                             <h2 className="text-2xl font-bold mb-6">Related Articles</h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                {relatedPostsWithCategory.map((related) => (
+                                {relatedPostsWithCategory?.map((related) => (
                                     <div
-                                        key={related.id}
+                                        key={related?.id}
                                         className="group relative min-h-[300px] rounded-2xl overflow-hidden bg-white"
                                     >
                                         {/* image */}
                                         <Image
-                                            src={related.image || "/placeholder-image.jpg"}
-                                            alt={related.title}
+                                            src={related?.image || "/placeholder-image.jpg"}
+                                            alt={related?.title}
                                             fill
                                             className="object-cover transition-transform duration-500 group-hover:scale-105"
                                             sizes="(min-width:1024px) 25vw, 100vw"
@@ -305,17 +305,17 @@ export default async function BlogPostPage({ params }) {
                                             <div className="mb-2 flex items-center justify-between text-xs opacity-90">
                                                 <span className="inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur px-2.5 py-1">
                                                     <span className="inline-block h-2 w-2 rounded-full bg-sky-400"></span>
-                                                    {related.author}
+                                                    {related?.author}
                                                 </span>
-                                                <span>{new Date(related.created_at).toLocaleDateString()}</span>
+                                                <span>{new Date(related?.created_at).toLocaleDateString()}</span>
                                             </div>
 
-                                            <h4 className="text-xl font-semibold leading-snug">{related.title}</h4>
-                                            <p className="mt-2 text-white/80 line-clamp-2">{related.description}</p>
+                                            <h4 className="text-xl font-semibold leading-snug">{related?.title}</h4>
+                                            <p className="mt-2 text-white/80 line-clamp-2">{related?.description}</p>
 
                                             <div className="mt-4">
                                                 <Link
-                                                    href={`/blog/${related.slug}`}
+                                                    href={`/blog/${related?.slug}`}
                                                     className="inline-flex items-center gap-1.5 rounded-lg bg-white/90 text-gray-900 px-3 py-1.5 text-xs font-semibold hover:bg-white transition"
                                                 >
                                                     Read more <MdArrowOutward />
@@ -341,16 +341,16 @@ export default async function BlogPostPage({ params }) {
                                     <TrendingUp className="h-5 w-5 text-[#115d8e]" /> Trending Posts
                                 </h3>
                                 <div className="space-y-4">
-                                    {trendingPosts.map((trend, index) => (
+                                    {trendingPosts?.map((trend, index) => (
                                         <Link 
-                                            href={`/blog/${trend.slug}`}
-                                            key={trend.id} 
+                                            href={`/blog/${trend?.slug}`}
+                                            key={trend?.id} 
                                             className="flex gap-3"
                                         >
                                             <div className="w-16 h-16 relative rounded-lg overflow-hidden">
                                                 <Image 
-                                                    src={trend.image || "/placeholder-image.jpg"} 
-                                                    alt={trend.title} 
+                                                    src={trend?.image || "/placeholder-image.jpg"} 
+                                                    alt={trend?.title} 
                                                     fill 
                                                     className="object-cover" 
                                                 />
@@ -359,10 +359,10 @@ export default async function BlogPostPage({ params }) {
                                                 <span className="text-xs font-bold text-[#115d8e] bg-[#115d8e]/10 px-2 py-1 rounded">
                                                     #{index + 1}
                                                 </span>
-                                                <h4 className="text-sm font-medium line-clamp-2 mt-1">{trend.title}</h4>
+                                                <h4 className="text-sm font-medium line-clamp-2 mt-1">{trend?.title}</h4>
                                                 <p className="text-xs text-gray-500 mt-1 flex items-center">
                                                     <Calendar className="h-3 w-3 mr-1" />
-                                                    {new Date(trend.created_at).toLocaleDateString()}
+                                                    {new Date(trend?.created_at).toLocaleDateString()}
                                                 </p>
                                             </div>
                                         </Link>
@@ -376,28 +376,28 @@ export default async function BlogPostPage({ params }) {
                                     <Clock className="h-5 w-5 text-[#115D8E]" /> Recent Posts
                                 </h3>
                                 <div className="space-y-4">
-                                    {recentPosts.map((recent) => (
+                                    {recentPosts?.map((recent) => (
                                         <Link 
-                                            href={`/blog/${recent.slug}`} 
-                                            key={recent.id} 
+                                            href={`/blog/${recent?.slug}`} 
+                                            key={recent?.id} 
                                             className="flex gap-3"
                                         >
                                             <div className="w-16 h-16 relative rounded-lg overflow-hidden">
                                                 <Image 
-                                                    src={recent.image || "/placeholder-image.jpg"} 
-                                                    alt={recent.title} 
+                                                    src={recent?.image || "/placeholder-image.jpg"} 
+                                                    alt={recent?.title} 
                                                     fill 
                                                     className="object-cover" 
                                                 />
                                             </div>
                                             <div className="flex-1 min-w-0">
                                                 <span className="inline-block text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded mb-1">
-                                                    {recent.categoryName}
+                                                    {recent?.categoryName}
                                                 </span>
-                                                <h4 className="text-sm font-medium line-clamp-2">{recent.title}</h4>
+                                                <h4 className="text-sm font-medium line-clamp-2">{recent?.title}</h4>
                                                 <p className="text-xs text-gray-500 mt-1 flex items-center">
                                                     <Calendar className="h-3 w-3 mr-1" />
-                                                    {new Date(recent.created_at).toLocaleDateString()}
+                                                    {new Date(recent?.created_at).toLocaleDateString()}
                                                 </p>
                                             </div>
                                         </Link>
@@ -445,8 +445,8 @@ export async function generateStaticParams() {
             { headers: API_HEADERS }
         )
         
-        const blogs = res.data?.data || []
-        return blogs.map((blog) => ({
+        const blogs = res?.data?.data || []
+        return blogs?.map((blog) => ({
             slug: blog.slug,
         }))
     } catch {

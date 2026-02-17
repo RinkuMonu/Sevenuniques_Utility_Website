@@ -191,25 +191,25 @@ const rowVariants = {
 
 
 const cardsData = [
-    {
-      title: "Free Credit Score",
-      description:
-        "Seamlessly transfer funds using our fast, secure and reliable money transfer API.Seamlessly transfer funds using our fast, secure and reliable money transfer API.Seamlessly transfer funds using our fast, secure and reliable money transfer API.Seamlessly transfer funds using our fast, secure and reliable money transfer API.",
-      image: "/images/money-transfer.jpg",
-    },
-    {
-      title: "Free Credit Score",
-      description:
-        "Instant recharge and bill payment APIs for all major telecom and utility services.Seamlessly transfer funds using our fast, secure and reliable money transfer API.Seamlessly transfer funds using our fast, secure and reliable money transfer API.Seamlessly transfer funds using our fast, secure and reliable money transfer API.",
-      image: "/images/recharge-bills.jpg",
-    },
-    {
-      title: "Free Credit Score",
-      description:
-        "Verify PAN, Aadhaar, GST, and more using our powerful verification API suite.Seamlessly transfer funds using our fast, secure and reliable money transfer API.Seamlessly transfer funds using our fast, secure and reliable money transfer API.Seamlessly transfer funds using our fast, secure and reliable money transfer API.",
-      image: "/images/verification.jpg",
-    },
-  ];
+  {
+    title: "Accurate Income Estimation",
+    description:
+      "Get a clear estimate of your expected earnings based on your transactions and services.",
+    image: "/images/money-transfer.jpg",
+  },
+  {
+    title: "Real-Time Calculation",
+    description:
+      "Instantly calculate your income and plan your business growth more effectively..",
+    image: "/images/recharge-bills.jpg",
+  },
+  {
+    title: "Easy & Smart Planning",
+    description:
+      "Track your potential earnings and make better financial decisions with smart calculations.",
+    image: "/images/verification.jpg",
+  },
+];
 
 
 
@@ -369,231 +369,231 @@ export default function IncomeCalculator() {
 
 
   return (
-<>
-     <section className="bg-gradient-to-r from-[#033047] to-[#0a81b0] text-white py-10 md:py-16 px-6 md:px-20 flex flex-col md:flex-row items-center justify-between overflow-hidden">
-          {/* Left Content */}
-          <div className="md:w-1/2 space-y-4 text-center md:text-left">
-            <p className="uppercase tracking-[0.2em] text-sm text-gray-200">
-              Income Calculator
-            </p>
-            <h1 className="text-3xl md:text-5xl font-bold leading-snug">
-              Ab Bill Payment Banega <br /> Chill Payment
-            </h1>
-            <p className="text-gray-200 max-w-md mx-auto md:mx-0">
-              At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Odio
-              Dignissimos At Vero Eos Et Accusamus Et
-            </p>
-          </div>
-
-          {/* Right Image */}
-          <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center relative">
-            <div className="relative w-[280px] md:w-[380px] h-[220px] md:h-[280px]">
-              <Image
-                src="/image/income-calc-img.png"
-                alt="creditscore"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-          </div>
-        </section>
-
-
-
-    <section className="py-5 lg:py-10  px-6 lg:px-12 min-h-screen bg-slate-50">
-      <div className="max-w-7xl mx-auto px-4 lg:px-0">
-        <motion.h2
-          className="text-4xl md:text-5xl font-bold text-slate-900  mb-5"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          Estimate Your <span className="text-[#115D8E]">Earning Potential</span>
-          <p className="text-sm font-normal mt-3">Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data.</p>
-        </motion.h2>
-        <div className="flex mb-4 gap-3">
-          <button
-            onClick={() => setSelectedTab("retailer")}
-            className={`px-5 py-2 rounded-lg font-medium border transition-all ${selectedTab === "retailer"
-              ? "bg-[#115D8E] text-white border-[#115D8E]"
-              : "bg-white text-[#115D8E] border-[#115D8E]/30"
-              }`}
-          >
-            Retailer
-          </button>
-          <button
-            onClick={() => setSelectedTab("distributor")}
-            className={`px-5 py-2 rounded-lg font-medium border transition-all ${selectedTab === "distributor"
-              ? "bg-[#115D8E] text-white border-[#115D8E]"
-              : "bg-white text-[#115D8E] border-[#115D8E]/30"
-              }`}
-          >
-            Distributor
-          </button>
+    <>
+      <section className="bg-gradient-to-r from-[#033047] to-[#0a81b0] text-white py-10 md:py-16 px-6 md:px-20 flex flex-col md:flex-row items-center justify-between overflow-hidden">
+        {/* Left Content */}
+        <div className="md:w-1/2 space-y-4 text-center md:text-left">
+          <p className="uppercase tracking-[0.2em] text-sm text-gray-200">
+            Income Calculator
+          </p>
+          <h1 className="text-3xl md:text-5xl font-bold leading-snug">
+            Ab Bill Payment Banega <br /> Easy & Smart Payment
+          </h1>
+          <p className="text-gray-200 max-w-lg mx-auto md:mx-0">
+            Apni monthly income, commission aur earning ko easily calculate karein.
+            Smart planning karein, better earning decisions lein aur apne business ko grow karein sab ek hi jagah par.
+          </p>
         </div>
 
+        {/* Right Image */}
+        <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center relative">
+          <div className="relative w-[280px] md:w-[380px] h-[220px] md:h-[280px]">
+            <Image
+              src="/image/income-calc-img.png"
+              alt="creditscore"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+        </div>
+      </section>
 
-        <div className="grid lg:grid-cols-5 gap-10 md:gap-14">
-          {/* LEFT SECTION */}
-          <motion.div
-            className="lg:col-span-3 space-y-8 overflow-x-scroll lg:overflow-x-hidden"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
+
+
+      <section className="py-5 lg:py-10  px-6 lg:px-12 min-h-screen bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 lg:px-0">
+          <motion.h2
+            className="text-4xl md:text-5xl font-bold text-slate-900  mb-5"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
           >
-            {serviceGroups.map((group) => (
-              <motion.div
-                key={group.title}
-                variants={itemVariants}
-                className="bg-white rounded-2xl border border-slate-200 shadow-lg shadow-slate-900/5 transition-shadow duration-300 overflow-hidden"
-              >
-                <div className="px-6 py-4 border-b border-slate-100">
-                  <h3 className="text-xl font-semibold text-slate-800">
-                    {group.title}
-                  </h3>
-                  {/* <p className="text-sm text-gray-700 py-1">
+            Estimate Your <span className="text-[#115D8E]">Earning Potential</span>
+            <p className="text-sm font-normal mt-3">Calculate your income from bill payments and financial services with our smart income calculator. Get accurate earning estimates to make informed financial decisions.</p>
+          </motion.h2>
+          <div className="flex mb-4 gap-3">
+            <button
+              onClick={() => setSelectedTab("retailer")}
+              className={`px-5 py-2 rounded-lg font-medium border transition-all ${selectedTab === "retailer"
+                ? "bg-[#115D8E] text-white border-[#115D8E]"
+                : "bg-white text-[#115D8E] border-[#115D8E]/30"
+                }`}
+            >
+              Retailer
+            </button>
+            <button
+              onClick={() => setSelectedTab("distributor")}
+              className={`px-5 py-2 rounded-lg font-medium border transition-all ${selectedTab === "distributor"
+                ? "bg-[#115D8E] text-white border-[#115D8E]"
+                : "bg-white text-[#115D8E] border-[#115D8E]/30"
+                }`}
+            >
+              Distributor
+            </button>
+          </div>
+
+
+          <div className="grid lg:grid-cols-5 gap-10 md:gap-14">
+            {/* LEFT SECTION */}
+            <motion.div
+              className="lg:col-span-3 space-y-8 overflow-x-scroll lg:overflow-x-hidden"
+              variants={containerVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              {serviceGroups.map((group) => (
+                <motion.div
+                  key={group.title}
+                  variants={itemVariants}
+                  className="bg-white rounded-2xl border border-slate-200 shadow-lg shadow-slate-900/5 transition-shadow duration-300 overflow-hidden"
+                >
+                  <div className="px-6 py-4 border-b border-slate-100">
+                    <h3 className="text-xl font-semibold text-slate-800">
+                      {group.title}
+                    </h3>
+                    {/* <p className="text-sm text-gray-700 py-1">
                     {group.desc}
                   </p> */}
+                  </div>
+
+                  {/* Table Version */}
+                  <div className="overflow-x-auto w-full">
+                    <table className="w-full border-collapse text-sm">
+                      <thead className="bg-slate-100/80 text-slate-500 uppercase text-xs tracking-wider border-b border-slate-100">
+                        <tr>
+                          <th className="px-6 py-3 text-left font-semibold">
+                            Service
+                          </th>
+                          <th className="px-6 py-3 text-center font-semibold">
+                            Daily Transactions
+                          </th>
+                          <th className="px-6 py-3 text-right font-semibold">
+                            Daily Income
+                          </th>
+                        </tr>
+                      </thead>
+                      <motion.tbody
+                        variants={rowListVariants}
+                        initial="hidden"
+                        animate="visible"
+                        className="divide-y divide-slate-100"
+                      >
+                        {group.items.map((item) => (
+                          <motion.tr
+                            key={item.key}
+                            variants={rowVariants}
+                            className="border-b-0 hover:bg-slate-50/80 transition-all"
+                          >
+                            <td className="px-6 py-3">
+                              <div className="flex items-center gap-3">
+                                {/* --- COLOR CHANGE HERE --- */}
+                                <span className="text-[#115D8E] bg-[#115D8E]/10 p-2 rounded-lg">
+                                  {serviceIcons[item.key]}
+                                </span>
+                                <p className="font-medium text-slate-700 text-sm md:text-base">
+                                  {item.label}
+                                  <br />
+                                  {group.title === "Credit Card" ? "" : (<span className="text-slate-500 text-sm">
+                                    Avg transaction of ₹{item.avgT.toLocaleString("en-IN")}
+                                  </span>)}
+
+
+                                </p>
+                              </div>
+                            </td>
+                            <td className="px-6 py-4 text-center">
+                              <input
+                                type="number"
+                                min="0"
+                                value={data[item.key]}
+                                onChange={(e) => {
+                                  const value = e.target.value.slice(0, 3); // limit to 3 digits
+                                  handleChange(item.key, value);
+                                }}
+                                className="w-20 text-center border border-slate-300 rounded-md text-sm py-1.5 shadow-sm focus:border-[#115D8E] focus:ring-2 focus:ring-[#115D8E]/30 outline-none transition-all"
+                              />
+                            </td>
+                            <td className="px-6 py-4 text-right font-semibold text-[#115D8E] text-lg">
+                              ₹
+                              {(
+                                data[item.key] * incomeRates[item.key]
+                              ).toLocaleString()}
+                            </td>
+                          </motion.tr>
+                        ))}
+                      </motion.tbody>
+                    </table>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            {/* RIGHT SECTION */}
+            <motion.div
+              className="lg:col-span-2 rounded-2xl bg-gradient-to-br from-white/80 to-sky-50/60 backdrop-blur-xl border border-sky-100 shadow-xl shadow-sky-100/50 p-6 md:p-8 sticky top-24 h-fit"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <div className="space-y-4 text-center">
+                {/* Per Day Income */}
+                <div className="bg-[#115D8E]/10  rounded-xl py-4 px-5 border border-[#115D8E]/20 flex items-center justify-between">
+                  <div className="flex items-center gap-3 text-[#115D8E] font-medium">
+                    <CalendarDays className="w-6 h-6 text-[#115D8E]" />
+                    <span>Per Day Income</span>
+                  </div>
+                  <span className="text-2xl font-bold text-[#115D8E]">
+                    ₹{dailyIncome.toLocaleString()}
+                  </span>
                 </div>
 
-                {/* Table Version */}
-                <div className="overflow-x-auto w-full">
-                  <table className="w-full border-collapse text-sm">
-                    <thead className="bg-slate-100/80 text-slate-500 uppercase text-xs tracking-wider border-b border-slate-100">
-                      <tr>
-                        <th className="px-6 py-3 text-left font-semibold">
-                          Service
-                        </th>
-                        <th className="px-6 py-3 text-center font-semibold">
-                          Daily Transactions
-                        </th>
-                        <th className="px-6 py-3 text-right font-semibold">
-                          Daily Income
-                        </th>
-                      </tr>
-                    </thead>
-                    <motion.tbody
-                      variants={rowListVariants}
-                      initial="hidden"
-                      animate="visible"
-                      className="divide-y divide-slate-100"
-                    >
-                      {group.items.map((item) => (
-                        <motion.tr
-                          key={item.key}
-                          variants={rowVariants}
-                          className="border-b-0 hover:bg-slate-50/80 transition-all"
-                        >
-                          <td className="px-6 py-3">
-                            <div className="flex items-center gap-3">
-                              {/* --- COLOR CHANGE HERE --- */}
-                              <span className="text-[#115D8E] bg-[#115D8E]/10 p-2 rounded-lg">
-                                {serviceIcons[item.key]}
-                              </span>
-                              <p className="font-medium text-slate-700 text-sm md:text-base">
-                                {item.label}
-                                <br />
-                                {group.title === "Credit Card" ?  "" :( <span className="text-slate-500 text-sm">
-                                  Avg transaction of ₹{item.avgT.toLocaleString("en-IN")}
-                                </span>) }
-                               
-
-                              </p>
-                            </div>
-                          </td>
-                          <td className="px-6 py-4 text-center">
-                            <input
-                              type="number"
-                              min="0"
-                              value={data[item.key]}
-                              onChange={(e) => {
-                                const value = e.target.value.slice(0, 3); // limit to 3 digits
-                                handleChange(item.key, value);
-                              }}
-                              className="w-20 text-center border border-slate-300 rounded-md text-sm py-1.5 shadow-sm focus:border-[#115D8E] focus:ring-2 focus:ring-[#115D8E]/30 outline-none transition-all"
-                            />
-                          </td>
-                          <td className="px-6 py-4 text-right font-semibold text-[#115D8E] text-lg">
-                            ₹
-                            {(
-                              data[item.key] * incomeRates[item.key]
-                            ).toLocaleString()}
-                          </td>
-                        </motion.tr>
-                      ))}
-                    </motion.tbody>
-                  </table>
+                {/* Monthly Income */}
+                <div>
+                  <p className="text-sm text-slate-500 mb-1">Estimated Monthly Income</p>
+                  <h3 className="text-4xl md:text-5xl font-extrabold text-[#115D8E] tracking-tight">
+                    ₹{monthlyIncome.toLocaleString("en-IN")}
+                  </h3>
                 </div>
-              </motion.div>
-            ))}
-          </motion.div>
 
-          {/* RIGHT SECTION */}
-          <motion.div
-            className="lg:col-span-2 rounded-2xl bg-gradient-to-br from-white/80 to-sky-50/60 backdrop-blur-xl border border-sky-100 shadow-xl shadow-sky-100/50 p-6 md:p-8 sticky top-24 h-fit"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <div className="space-y-4 text-center">
-              {/* Per Day Income */}
-              <div className="bg-[#115D8E]/10  rounded-xl py-4 px-5 border border-[#115D8E]/20 flex items-center justify-between">
-                <div className="flex items-center gap-3 text-[#115D8E] font-medium">
-                  <CalendarDays className="w-6 h-6 text-[#115D8E]" />
-                  <span>Per Day Income</span>
+                {/* Wallet Icon */}
+                <div className="flex justify-center">
+                  <Wallet size={70} strokeWidth={1} className="text-[#115D8E]" />
                 </div>
-                <span className="text-2xl font-bold text-[#115D8E]">
-                  ₹{dailyIncome.toLocaleString()}
-                </span>
+
+                {/* CTA Button */}
+                <Link
+                  className="w-full bg-[#115D8E]  text-white font-semibold py-3 rounded-xl hover:bg-[#115D8E]/90  transition-all duration-200 flex items-center justify-center gap-2 group"
+                  href="https://utility.finuniques.in/register"
+                >
+                  Become a Partner
+                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </Link>
               </div>
-
-              {/* Monthly Income */}
-              <div>
-                <p className="text-sm text-slate-500 mb-1">Estimated Monthly Income</p>
-                <h3 className="text-4xl md:text-5xl font-extrabold text-[#115D8E] tracking-tight">
-                  ₹{monthlyIncome.toLocaleString("en-IN")}
-                </h3>
-              </div>
-
-              {/* Wallet Icon */}
-              <div className="flex justify-center">
-                <Wallet size={70} strokeWidth={1} className="text-[#115D8E]" />
-              </div>
-
-              {/* CTA Button */}
-              <Link
-                className="w-full bg-[#115D8E]  text-white font-semibold py-3 rounded-xl hover:bg-[#115D8E]/90  transition-all duration-200 flex items-center justify-center gap-2 group"
-                href="https://utility.finuniques.in/register"
-              >
-                Become a Partner
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </div>
-
-
-
-    </section>
-
-
-     <section className="max-w-8xl px-6 py-10 space-y-6">
-      {cardsData.map((card, index) => (
-        <div
-          key={index}
-          className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row items-center md:items-stretch hover:shadow-lg transition-shadow duration-300"
-        >
-          <div className="w-full p-6 md:p-8">
-            <h2 className="text-2xl font-semibold bg-[#1f718a] p-3 rounded-lg text-gray-200 mb-2">
-              {card.title}
-            </h2>
-            <p className="text-gray-600">{card.description}</p>
+            </motion.div>
           </div>
         </div>
-      ))}
-    </section>
+
+
+
+      </section>
+
+
+      <section className="max-w-8xl px-6 py-10 space-y-6">
+        {cardsData.map((card, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row items-center md:items-stretch hover:shadow-lg transition-shadow duration-300"
+          >
+            <div className="w-full p-6 md:p-8">
+              <h2 className="text-2xl font-semibold bg-[#1f718a] p-3 rounded-lg text-gray-200 mb-2">
+                {card.title}
+              </h2>
+              <p className="text-gray-600">{card.description}</p>
+            </div>
+          </div>
+        ))}
+      </section>
     </>
   );
 }
