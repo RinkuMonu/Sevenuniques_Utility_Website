@@ -610,7 +610,7 @@ export default function Privacy() {
                        <div className="mt-10 text-center">
 <button
   onClick={() => window.open("/terms_and_condition.pdf", "_blank")}
-  className="bg-gradient-to-r from-[#358EBA] to-[#24576C] text-white px-6 py-3 rounded-md shadow-md hover:opacity-90 transition"
+  className="bg-gradient-to-r hidden from-[#358EBA] to-[#24576C] text-white px-6 py-3 rounded-md shadow-md hover:opacity-90 transition"
 >
   View Terms & Conditions (PDF)
 </button>
