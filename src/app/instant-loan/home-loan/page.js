@@ -24,7 +24,7 @@ function page() {
     heading: 'Ghar Ka Sapna, EMI se Hoga Apna',
     description: 'Make your dream home a reality with low interest rates, flexible EMIs, and easy repayment plans.',
     bgImage: '/loan/homebg.png',
-    centerImage: '/loan/home.png',
+    centerImage: '/loan/home1.png',
   }
 
   const aepsData = {
@@ -100,13 +100,12 @@ function page() {
 
   return (
     <>
-      <div className="relative flex flex-col md:flex-row items-center justify-between pt-10"
-      >
+      <div className="relative flex flex-col md:flex-row items-center justify-between pt-10 pb-16">
         <div
           className="absolute inset-0 bg-cover bg-center hidden md:block"
           style={{ backgroundImage: `url(${data?.bgImage})` }}
         ></div>
-        <div className="z-10 mx-auto">
+        <div className="relative z-10 max-w-7xl mx-auto px-4">
           <div className='grid grid-cols-1 md:grid-cols-2 w-full space-y-6 md:space-y-0 items-center'>
 
             <div className=" px-10 py-10 lg:py-16 rounded-2xl overflow-hidden max-w-2xl w-full">
@@ -134,19 +133,28 @@ function page() {
 
             <div className="w-full h-100">
 
-              <Image
-                src={data.centerImage}
-                height={500}
-                width={500}
-                alt="center image"
-                className="xs:pt-16 md:pt-4  lg:absolute bottom-20 right-32 lg:scale-150 z-20"
-
-              />
+<Image
+  src={data.centerImage}
+  width={450}
+  height={450}
+  alt="center image"
+  className="
+    mt-6 md:mt-5
+    w-full
+    max-w-[300px]
+    md:max-w-[340px]
+    h-auto
+    object-contain
+    mx-auto
+    md:ml-6
+    lg:ml-15
+  "
+/>        
             </div>
           </div>
         </div>
       </div>
-      <section>
+      {/* <section>
         <div className={`relative lg:py-16`} style={{ backgroundColor: "#CEF5F5" }}>
           <div className="max-w-7xl mx-auto px-4 lg:px-0">
             <div className="grid grid-cols-1 md:grid-cols-2 ">
@@ -156,27 +164,28 @@ function page() {
                 ))}
               </div>
 
-              <div className="hidden md:block md:absolute bottom-0 right-0  z-11">
+              <div className="hidden md:block absolute bottom-0 right-6 z-10">
                 <Image
                   src={"/loan/home1.png"}
                   alt="loan-section"
-                  width={500}
-                  height={200}
-
+                  width={380}
+                  height={380}
+                  className="w-[280px] lg:w-[350px] h-auto object-contain"
+                  priority
                 />
               </div>
 
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-       <ServicesSection3 data={aepsData} />
+      <ServicesSection3 data={aepsData} />
 
 
       <VerticalSlider slide={slide} />
 
-     
+
       <StatsBanner />
       <LoanBenefits
         title="Home Loan Apna Sapna Ghar Ka"

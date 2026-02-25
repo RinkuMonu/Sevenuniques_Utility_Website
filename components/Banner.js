@@ -15,7 +15,8 @@ const slides = [
         id: 2,
         subheading: ' Aadhaar Enabled Payment System',
         heading: " Aadhaar se Banking, Har Jagah Possible!",
-        centerImage: '/image/AEPS-sm-banner.png',
+        centerImage: '/home/homebanner1.png',
+        alt:"aeps",
         bgImage: '/banner/bbg2.png',
 
         cta: {
@@ -64,7 +65,8 @@ const slides = [
         id: 4,
         subheading: ' Bharat Bill Payment System',
         heading: "Har Bill, Har Payment, BBPS ke Saath!",
-        centerImage: '/banner/bcenter4.png',
+        centerImage: '/home/homebanner6.png',
+        alt: 'BBPS',
         bgImage: '/banner/bbg4.png',
 
         cta: {
@@ -112,7 +114,8 @@ const slides = [
         id: 1,
         subheading: 'Domestic Money Transfer',
         heading: "Aapka Paisa, Aapke Apno Tak, Seedha!",
-        centerImage: '/banner/bcenter1.png',
+        centerImage: '/home/homebanner2.png',
+        alt:'DMT',
         bgImage: '/banner/bbg1.png',
         position: "-top-10",
         cta: {
@@ -160,7 +163,8 @@ const slides = [
         id: 3,
         subheading: 'Micro Automated Teller Machine',
         heading: "Chhoti Machine, Badi Banking Suvidha!",
-        centerImage: '/banner/bcenter3.png',
+        centerImage: '/home/homebanner4.png',
+        alt:'MATM',
         bgImage: '/banner/bbg3.png',
 
         cta: {
@@ -207,7 +211,8 @@ const slides = [
         id: 5,
         subheading: 'pancard',
         heading: "Apni Pehchaan, Apna PAN!",
-        centerImage: '/banner/c4.png',
+        centerImage: '/home/homebanner8.png',
+        alt:'PAN',
         bgImage: '/banner/b4.png',
 
         cta: {
@@ -256,7 +261,8 @@ const slides = [
         id: 6,
         subheading: 'Insurance',
         heading: "Kal ki chinta nahi, aaj ka insurance hai sahi.",
-        centerImage: '/banner/c5.png',
+        centerImage: '/home/homebanner5.png',
+        alt: 'Insurance',
         bgImage: '/banner/b5.png',
 
         cta: {
@@ -304,7 +310,8 @@ const slides = [
         id: 7,
         subheading: 'CREDIT CARD',
         heading: "Life ke upgrades, credit card ke saath!",
-        centerImage: '/banner/c6.png',
+        centerImage: '/home/homebanner7.png',
+        alt: 'credit',
         bgImage: '/banner/b6.png',
 
         cta: {
@@ -351,7 +358,8 @@ const slides = [
         id: 8,
         subheading: 'BOOKING',
         heading: "Booking itni easy, bas ek click mein!",
-        centerImage: '/banner/c7.png',
+        centerImage: '/home/homebanner3.png',
+        alt: 'booking',
         bgImage: '/banner/b7.png',
         position: "top-10 md:top-0",
         cta: {
@@ -457,7 +465,7 @@ const Banner = () => {
                                                 src={slide.centerImage}
                                                 height={400}
                                                 width={400}
-                                                alt="center image"
+                                                alt={slide.alt}
                                                 className={`
                                                 absolute
                                                 left-1/2 transform -translate-x-1/2
@@ -466,7 +474,7 @@ const Banner = () => {
                                                 ${slide.id === 8 ? "scale-115 md:scale-120" : ""}
                                                 ${slide.id === 1 ? "scale-90 md:scale-75 pb-10" : ""}
                                                 ${slide.id === 6 ? "md:scale-90" : ""}
-                                              `}
+                                            `}
                                             />
 
 

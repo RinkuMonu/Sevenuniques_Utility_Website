@@ -47,12 +47,12 @@ function page() {
     heading: 'Paisa pohchaaye, rishton ko jode',
     description: 'Send money to your loved ones in any part of India. Our domestic money transfer service is safe and secure and will always keep the transactions quick and safe',
     bgImage: '/dmt/dmtbg.png',
-    centerImage: '/dmt/dmt1.png',
+    centerImage: '/dmt/Newdmt.png',
   }
 
   const section2data = {
     img1: "/dmt/dmt.png",
-    img2: "/dmt/dmt2.png",
+    img2: "/dmt/Newdmt1.png",
     color: "#CDFFEF"
   }
   const dmtData = {

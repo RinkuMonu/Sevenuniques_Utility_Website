@@ -7,12 +7,13 @@ import Link from "next/link";
 export default function CarInsuranceBannerSection() {
   return (
     <section className="w-full bg-white"
-    style={{ backgroundImage: `
+      style={{
+        backgroundImage: `
 
       url('/image/insurance-bg.png')
     ` }}>
       <div className="max-w-7xl mx-auto px-6 py-6 lg:py-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-        
+
         {/* Left Content */}
         <div>
           <p className="uppercase tracking-widest text-sm font-semibold text-sky-700 mb-3">
@@ -20,7 +21,7 @@ export default function CarInsuranceBannerSection() {
           </p>
 
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-5">
-           Drive Safe, <br className="hidden md:block" />
+            Drive Safe, <br className="hidden md:block" />
             Peace of Mind Ke Saath
           </h1>
 

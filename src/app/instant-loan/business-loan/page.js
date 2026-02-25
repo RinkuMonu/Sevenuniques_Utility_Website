@@ -135,15 +135,14 @@ function page() {
               </div>
 
 
-              <div className="hidden md:block md:absolute bottom-0 right-0 mt-10 md:mt-0 ">
+              <div className="hidden md:block md:absolute bottom-10 right-50 mt-10 md:mt-0 ">
 
                 <Image
                   src="/loan/loanb1.png"
                   alt="loan-section"
                   width={500}
-                  height={600}
-                  className=""
-                // style={{ objectPosition: 'right' }}
+                  height={300}
+                  className="lg:h-[500px] w-auto"
                 />
 
               </div>

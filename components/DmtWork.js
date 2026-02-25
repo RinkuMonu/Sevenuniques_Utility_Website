@@ -36,7 +36,7 @@ export default function DmtWork() {
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-8 md:gap-4">
                     {steps.map((step, index) => (
-                        <React.Fragment key={index} className="">
+                        <React.Fragment key={index}>
                             <ProcessStep icon={step.icon} text={step.text} />
                         </React.Fragment>
                     ))}

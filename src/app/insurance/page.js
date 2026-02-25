@@ -23,7 +23,7 @@ function page() {
         heading: ' Apki Suraksha, Hamari Jimmedari.',
         description: 'Enjoy fast online insurance signup, continuous support, and dependable coverage to protect what matters most.',
         bgImage: '/insurance/ibg.png',
-        centerImage: '/insurance/i3.png',
+        centerImage: '/insurance/i2.png',
 
     }
     const aepsData = {
@@ -32,40 +32,40 @@ function page() {
         description: 'Insurance is more than just a policy, it is financial security for you, your family, and your business. The right insurance cover protects you from unexpected expenses and helps you stay prepared for any situation, personal or professional.',
         features: [
             'At Finunique, we understand that every individual and business has unique needs. That’s why we offer customized insurance solutions covering vehicles, health, and valuable assets. With simple processes, quick assistance, and reliable service, we make insurance easy and stress-free.',
-          
+
         ]
     };
 
     const faqs = [
         {
-          question: "What types of insurance can I get?",
-          answer: "You can get coverage for vehicles (car, bike, commercial), health, home, and other personal or asset risks.",
+            question: "What types of insurance can I get?",
+            answer: "You can get coverage for vehicles (car, bike, commercial), health, home, and other personal or asset risks.",
         },
         {
-          question: "How do I apply for insurance?",
-          answer: "Just fill the online form, upload the required documents, and choose your plan coverage can start quickly.",
+            question: "How do I apply for insurance?",
+            answer: "Just fill the online form, upload the required documents, and choose your plan coverage can start quickly.",
         },
         {
-          question: "Are my documents and information secure?",
-          answer: "Yes, we handle all documents securely and use safe processes for verification.",
+            question: "Are my documents and information secure?",
+            answer: "Yes, we handle all documents securely and use safe processes for verification.",
         },
         {
-          question: "Can I insure multiple assets?",
-          answer: "Yes, you can choose different policies for your car, bike, home, or other assets based on your needs.",
+            question: "Can I insure multiple assets?",
+            answer: "Yes, you can choose different policies for your car, bike, home, or other assets based on your needs.",
         },
         {
-          question: "Do I need custom coverage?",
-          answer: "Our insurance options are flexible, so you can tailor coverage to fit your personal or business needs.",
+            question: "Do I need custom coverage?",
+            answer: "Our insurance options are flexible, so you can tailor coverage to fit your personal or business needs.",
         },
         {
-          question: "What happens if I need to make a claim?",
-          answer: "You can contact support anytime, and we’ll guide you through the claims process.",
+            question: "What happens if I need to make a claim?",
+            answer: "You can contact support anytime, and we’ll guide you through the claims process.",
         },
-      ];
+    ];
 
     return (
         <>
-            <div className="relative flex flex-col md:flex-row items-center justify-between pt-10 overflow-hidden"
+            <div className="relative flex flex-col md:flex-row items-center justify-between pt-10 overflow-visible"
             >
                 <div
                     className="absolute inset-0 bg-cover bg-center hidden md:block"
@@ -98,34 +98,33 @@ function page() {
                         </div>
 
                         <div className="w-full  ">
-
-                            <Image
+ <Image
                                 src={data.centerImage}
-                                height={500}
-                                width={500}
+                                width={450}
+                                height={450}
                                 alt="center image"
-                                className="md:pt-4 lg:pt-16 lg:absolute bottom-20 right-32 md:scale-150 z-20"
-
+                                className="mt-6 md:mt-10 w-full h-auto max-w-[580px]"
                             />
+
                         </div>
                     </div>
                 </div>
             </div>
 
-            <section>
+            {/* <section>
                 <div className={`py-5 md:py-0 lg:pt-20 overflow-visible`} style={{ backgroundColor: "#E6F6FF" }}>
                     <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
                         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
 
-                       <div>
-                             <Image
-                                src='/insurance/i1.png'
-                                alt="loan-section"
-                                width={400}
-                                height={400}
-                                className=""
-                            />
-                       </div>
+                            <div>
+                                <Image
+                                    src='/insurance/i1.png'
+                                    alt="loan-section"
+                                    width={400}
+                                    height={400}
+                                    className=""
+                                />
+                            </div>
 
 
 
@@ -136,14 +135,14 @@ function page() {
                                     width={500}
                                     height={500}
                                     className="lg:absolute bottom-0 z-20"
-                                // style={{ objectPosition: 'right' }}
+
                                 />
                             </div>
 
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* <InsuranceCards /> */}
             <ServicesSection3 data={aepsData} />
@@ -159,7 +158,7 @@ function page() {
             <PartnersSection />
             {/* <TestimonialSlider /> */}
             <ContactBanner />
-      <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
+            <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
 
         </>
     )

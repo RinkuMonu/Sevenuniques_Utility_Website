@@ -42,14 +42,15 @@ const ServiceBanner = ({ data }) => {
 
                     <div className="w-full  flex justify-center items-end">
 
-                    {data.centerImage ? (    <Image
-                            src={data.centerImage }
-                            height={500}
-                            width={500}
-                            alt="center image"
-                            className="md:pt-4 "
-
-                        />) : ""}
+                        {data?.centerImage && (
+                            <Image
+                                src={data.centerImage}
+                                width={450}
+                                height={450}
+                                alt="center image"
+                                className="mt-6 md:mt-10 w-full h-auto max-w-[450px]"
+                            />
+                        )}
                     </div>
                 </div>
             </div>
