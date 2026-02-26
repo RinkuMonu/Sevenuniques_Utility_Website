@@ -18,8 +18,8 @@ export default function page() {
         subheading: 'TAXI INSUARANCE',
         heading: 'Har Ride Secure, Tension Bilkul Door',
         description: 'Your taxi works hard every day to make sure it’s protected. Get reliable taxi insurance that covers damages, liabilities, and risks so your income never stops.',
-        bgImage: '/image/insurance-bg.png',
-        centerImage: '/image/taxi.png',
+        bgImage: '/image/4-1.jpg',
+        // centerImage: '/image/taxi.png',
     };
     const aboutData = {
         badge: "About Us",
