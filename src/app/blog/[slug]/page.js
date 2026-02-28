@@ -15,6 +15,9 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa"
 import { MdShare } from "react-icons/md"
 import { MdArrowOutward } from "react-icons/md"
 
+// import SEO from "../../../../components/SEO/SEO"
+import seoConfig from "@/app/seoConfig"
+
 // API Configuration
 const API_BASE_URL = "https://cms.sevenunique.com/apis"
 const API_HEADERS = {
@@ -30,8 +33,10 @@ async function getBlogBySlug(slug) {
         )
         
         const blogs = res.data?.data || []
-        const blog = blogs.find((b) => b.slug === slug)
-        
+        // const blog = blogs.find((b) => b.slug === slug)
+        const blog = blogs.find(
+  (b) => b.slug?.trim().toLowerCase() === slug?.trim().toLowerCase()
+)
         if (!blog) return null
         
         // Get category name if category_id exists
@@ -54,6 +59,43 @@ async function getBlogBySlug(slug) {
         return null
     }
 }
+
+
+
+
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+
+  const seo = await seoConfig(`/blog/${slug}`);
+
+  if (!seo) {
+    return {
+      title: "Blog – Finunique",
+    };
+  }
+
+  return {
+    title: seo.meta_title,
+    description: seo.meta_description,
+
+    openGraph: {
+      title: seo.og_title || seo.meta_title,
+      description: seo.og_description || seo.meta_description,
+      images: seo.og_image
+        ? [{ url: seo.og_image, width: 1200, height: 630 }]
+        : [],
+      type: "article",
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: seo.twitter_title || seo.meta_title,
+      description: seo.twitter_description || seo.meta_description,
+      images: seo.twitter_image ? [seo.twitter_image] : [],
+    },
+  };
+}
+
 
 // Fetch all blogs for related posts
 async function getAllBlogs() {
@@ -208,6 +250,7 @@ export default async function BlogPostPage({ params }) {
 
     return (
         <div className="bg-gray-50 ">
+        
             {/* Hero */}
             <div className="relative h-[50vh] md:h-[75vh]">
                 <Image 
