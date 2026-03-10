@@ -412,8 +412,8 @@ function Contact() {
                 <div>
                   <p className="font-bold text-lg">Office Hours: </p>
                   <p className="text-gray-500 text-sm">
-                    Mon–Fri: 9:30 AM to 6:30 PM <br></br>
-                    Sat–Sun: Closed
+                    Mon–Sat: 9:30 AM to 6:30 PM <br></br>
+                    Sun: Closed
                   </p>
                 </div>
               </li>

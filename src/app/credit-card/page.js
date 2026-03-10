@@ -19,7 +19,7 @@ function page() {
         heading: 'Swipe Karein, Rewards Paayein!',
         description: 'Unlock a world of rewards every time you swipe. Earn points, enjoy cashback, and access exclusive lifestyle perks tailored just for you. Spend smart, live better, and make every transaction count',
         bgImage: '/credit/creditbg.png',
-        centerImage: '/credit/credit1.png',
+        centerImage: '/credit/credit2.png',
     }
     const LetterCircle = ({ letter, index }) => (
         <div className="flex  items-center justify-center rounded-full  lg:p-1 lg:h-12 lg:w-12" key={index}>
@@ -42,7 +42,7 @@ function page() {
     return (
         <>
             <ServiceBanner data={data} />
-            <section>
+            {/* <section>
                 <div className={`relative py-5 lg:pb-0 lg:pt-20 overflow-y-visible`} style={{ backgroundColor: "#CEF5F5" }}>
                     <div className="max-w-7xl mx-auto px-4 lg:px-0 relative">
                         <div className="grid grid-cols-1 md:grid-cols-2 ">
@@ -60,7 +60,7 @@ function page() {
                             </div>
 
                             <div className="hidden md:block relative h-[200px] mt-10 md:mt-0 ">
-                                <div className=" lg:absolute bottom-0 right-0 lg:w-[500px] lg:h-[600px] z-20  " style={{ "overflow": "hidden" }}>
+                                <div className=" lg:absolute bottom-0 right-0 lg:w-[400px] lg:h-[500px] z-20  " style={{ "overflow": "hidden" }}>
                                     <Image
                                         src={"/credit/credit2.png"}
                                         alt="loan-section"
@@ -73,7 +73,7 @@ function page() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             <CreditComp />
             {/* <BankLogoGrid /> */}
             <CreditSlider />

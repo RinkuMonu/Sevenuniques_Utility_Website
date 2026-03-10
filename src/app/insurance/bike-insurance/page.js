@@ -10,6 +10,8 @@ import { Shield, Clock, DollarSign, FileText, Headphones, Award } from "lucide-r
 import { Search, CreditCard, CheckCircle } from "lucide-react"
 import { BadgeCheck, Wallet, FileCheck } from "lucide-react"
 import DynamicTable from '../../../../components/DynamicTable'
+import Herobannerbike from '../../../../components/Bike Insurance/Herobannerbike'
+
 
 
 export default function page() {
@@ -17,8 +19,8 @@ export default function page() {
     subheading: 'Best Bike Insurance Online',
     heading: 'Har Ride Ke Liye Smart Protection',
     description: 'Insure your bike online quickly. Get protection against accidents, theft, or natural disasters. Compare plans, enjoy instant approval, and ride confidently without any hassle or worry',
-    bgImage: '/image/insurance-bg.png',
-    centerImage: '/image/bike-ins-banner.JPG',
+    bgImage: '/image/3-1.jpg',
+    // centerImage: '/image/bike-ins-banner.JPG',
   };
   const aboutData = {
     badge: "About Us",
@@ -205,7 +207,7 @@ export default function page() {
 
   return (
     <>
-      <Herobanner data={data} />
+      <Herobannerbike data={data} />
       <AboutSection aboutData={aboutData} />
       {/* <Features data={Features} /> */}
       <Process processdata={processdata} />

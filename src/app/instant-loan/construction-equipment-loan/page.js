@@ -24,7 +24,7 @@ function page() {
     heading: 'Machine Lo, Kaam Ko Boost Karo!',
     description: 'Excavator ho ya crane, apni machine ka sapna ab ho sakta hai poora. Kam paperwork, fast approval, aur easy registration ab apna kaam turbo speed pe le jao!',
     bgImage: '/loan/constructbg.png',
-    centerImage: '/loan/construct1.png',
+    centerImage: '/loan/construct2.png',
   }
 
   const aepsData = {
@@ -70,12 +70,12 @@ function page() {
         title: "Apply Online",
         image: "/loan/loan4.png",
         cta: "Request Calculations",
-       details: [
-  "Fill in your details like Name, Mobile Number, Aadhaar, and PAN",
-  "Choose your equipment such as Excavator, Crane, or other machinery",
-  "Select your loan amount and check eligibility instantly",
-  "Fast approval with minimal paperwork",
-],
+        details: [
+          "Fill in your details like Name, Mobile Number, Aadhaar, and PAN",
+          "Choose your equipment such as Excavator, Crane, or other machinery",
+          "Select your loan amount and check eligibility instantly",
+          "Fast approval with minimal paperwork",
+        ],
 
       },
       {
@@ -83,12 +83,12 @@ function page() {
         title: "Upload Documents",
         image: "/loan/loan12.png",
         cta: "Submit Docs",
-       details: [
-  "Upload your PAN and Aadhaar card",
-  "Submit business documents like GST and business registration",
-  "Provide the equipment quote and supplier details",
-  "Our system verifies all documents quickly and securely",
-],
+        details: [
+          "Upload your PAN and Aadhaar card",
+          "Submit business documents like GST and business registration",
+          "Provide the equipment quote and supplier details",
+          "Our system verifies all documents quickly and securely",
+        ],
 
       },
       {
@@ -96,12 +96,12 @@ function page() {
         title: "Receive Your Loan",
         image: "/loan/loan13.png",
         cta: "Get Construction Equipment Loan Now",
-       details: [
-  "Get fast approval with minimal documentation",
-  "Loan amount credited directly to your account",
-  "Receive funds in under 48 hours",
-  "Start purchasing your construction equipment immediately",
-],
+        details: [
+          "Get fast approval with minimal documentation",
+          "Loan amount credited directly to your account",
+          "Receive funds in under 48 hours",
+          "Start purchasing your construction equipment immediately",
+        ],
 
       },
     ],
@@ -144,19 +144,28 @@ function page() {
 
             <div className="w-full  ">
 
-              <Image
-                src={data.centerImage}
-                height={800}
-                width={1024}
-                alt="center image"
-                className="md:pt-4"
+<Image
+  src={data.centerImage}
+  width={350}
+  height={350}
+  alt="center image"
+  className="
+    w-[220px]
+    sm:w-[260px]
+    md:w-[300px]
+    lg:w-[340px]
+    h-auto
+    object-contain
+    mx-auto
+    md:mx-0
+  "
+/>
 
-              />
             </div>
           </div>
         </div>
       </div>
-      <section>
+      {/* <section>
         <div className={`relative py-10`} style={{ backgroundColor: "#F2E6FF" }}>
           <div className="max-w-7xl mx-auto px-4 lg:px-0">
             <div className="grid grid-cols-1 md:grid-cols-2">
@@ -166,19 +175,21 @@ function page() {
                 ))}
               </div>
 
-              <div className="hidden md:block md:absolute bottom-0 right-0  z-11">
+              <div className="hidden md:block absolute bottom-0 right-6 z-10">
                 <Image
                   src={"/loan/construct2.png"}
                   alt="loan-section"
-                  width={400}
-                  height={100}
+                  width={350}
+                  height={350}
+                  className="w-[220px] md:w-[280px] lg:w-[320px] h-auto object-contain"
+                  priority
                 />
               </div>
 
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <VerticalSlider slide={slide} />
 
@@ -191,15 +202,15 @@ function page() {
         description="Finance the heavy machinery you need: excavators, backhoes, cranes, and more so you can complete projects efficiently and accelerate your business growth."
         image="/loan/construct4.png"
         benefits={[
-  "Rapid approvals with minimal documentation",
-  "Flexible repayment options that suit your project cash flow",
-  "Finance for both new and used machinery",
-  "Competitive interest rates you can trust",
-  "No extra charges, fully transparent",
-  "Fast processing for urgent equipment needs",
-  "Tailored loan options for every project",
-  "Pan-India support for all your sites",
-]}
+          "Rapid approvals with minimal documentation",
+          "Flexible repayment options that suit your project cash flow",
+          "Finance for both new and used machinery",
+          "Competitive interest rates you can trust",
+          "No extra charges, fully transparent",
+          "Fast processing for urgent equipment needs",
+          "Tailored loan options for every project",
+          "Pan-India support for all your sites",
+        ]}
 
       />
 

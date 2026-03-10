@@ -48,52 +48,52 @@ function page() {
     ]
 
     const slide = {
-  image: "/loan/pvs.png",
-  heading: (
-    <>
-      At Finunique, <br />
-      how to secure  <br />
-      a <span className="text-blue-300">Personal</span> loan.
-    </>
-  ),
-  sliderData: [
-    {
-      step: 1,
-      title: "Apply Online",
-      image: "/loan/loan4.png",
-      cta: "Request Calculations",
-      details: [
-        "Fill in basic details such as your name, mobile number, Aadhaar, and PAN",
-        "Select your preferred loan amount and repayment tenure.",
-        "Instantly view the loan amount you’re eligible for.",
-      ],
-    },
-    {
-      step: 2,
-      title: "Upload Documents",
-      image: "/loan/loan12.png",
-      cta: "Submit Docs",
-      details: [
-        "Upload your Aadhaar and PAN card details securely",
-        "Submit income proof such as salary slips or bank statements.",
-        "Provide address proof for verification.",
-        "Our system verifies your documents quickly and securely.",
-      ],
-    },
-    {
-      step: 3,
-      title: "Receive Your Loan",
-      image: "/loan/loan13.png",
-      cta: "Get Construction Equipment Loan Now",
-      details: [
-        "Get quick approval with minimal documentation.",
-        "Once approved, the loan amount is credited directly to your bank account",
-        "Funds are usually disbursed within 24 hours",
-        "Use the money to meet your personal financial needs.",
-      ],
-    },
-  ],
-};
+        image: "/loan/pvs.png",
+        heading: (
+            <>
+                At Finunique, <br />
+                how to secure  <br />
+                a <span className="text-blue-300">Personal</span> loan.
+            </>
+        ),
+        sliderData: [
+            {
+                step: 1,
+                title: "Apply Online",
+                image: "/loan/loan4.png",
+                cta: "Request Calculations",
+                details: [
+                    "Fill in basic details such as your name, mobile number, Aadhaar, and PAN",
+                    "Select your preferred loan amount and repayment tenure.",
+                    "Instantly view the loan amount you’re eligible for.",
+                ],
+            },
+            {
+                step: 2,
+                title: "Upload Documents",
+                image: "/loan/loan12.png",
+                cta: "Submit Docs",
+                details: [
+                    "Upload your Aadhaar and PAN card details securely",
+                    "Submit income proof such as salary slips or bank statements.",
+                    "Provide address proof for verification.",
+                    "Our system verifies your documents quickly and securely.",
+                ],
+            },
+            {
+                step: 3,
+                title: "Receive Your Loan",
+                image: "/loan/loan13.png",
+                cta: "Get Construction Equipment Loan Now",
+                details: [
+                    "Get quick approval with minimal documentation.",
+                    "Once approved, the loan amount is credited directly to your bank account",
+                    "Funds are usually disbursed within 24 hours",
+                    "Use the money to meet your personal financial needs.",
+                ],
+            },
+        ],
+    };
 
 
     return (
@@ -197,20 +197,29 @@ function page() {
                                 </div>
                             </div>
 
-                            <div className="hidden lg:block mt-10 md:mt-0 lg:absolute bottom-0 right-0">
-                                    <Image
-                                        src={"/loan/per2.png"}
-                                        alt="loan-section"
-                                    width={600}
-                                    height={600}
-                                    />
-                              
+                            <div className="hidden lg:block absolute bottom-0 right-6">
+                                <Image
+                                    src={"/loan/per2.png"}
+                                    alt="loan-section"
+                                    width={380}
+                                    height={380}
+                                    className="
+    w-[220px]
+    sm:w-[260px]
+    lg:w-[350px]
+    left-1/2
+    -translate-x-1/2
+    h-auto
+    object-contain
+  "
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <VerticalSlider slide={slide}/>
+            <VerticalSlider slide={slide} />
 
 
             <LoanBenefits
@@ -218,17 +227,17 @@ function page() {
                 description="We ensure quick approvals, minimal paperwork, and a smooth, customer-friendly experience."
                 image="/loan/per3.png"
                 benefits={[
-  "Fast processing with minimal paperwork",
-  "Flexible EMI options to suit your budget",
-  "Loans for any personal purpose",
-  "Competitive and low interest rates",
-  "Completely transparent with no hidden charges",
-  "Apply online anytime, anywhere",
-  "No collateral and no guarantor required",
-  "Personalized loan offers tailored to your profile",
-  "Instant fund transfer — receive money within 24 hours",
-  "Easy top-up — increase your loan limit with ease",
-]}
+                    "Fast processing with minimal paperwork",
+                    "Flexible EMI options to suit your budget",
+                    "Loans for any personal purpose",
+                    "Competitive and low interest rates",
+                    "Completely transparent with no hidden charges",
+                    "Apply online anytime, anywhere",
+                    "No collateral and no guarantor required",
+                    "Personalized loan offers tailored to your profile",
+                    "Instant fund transfer — receive money within 24 hours",
+                    "Easy top-up — increase your loan limit with ease",
+                ]}
 
             />
 

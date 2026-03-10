@@ -18,8 +18,8 @@ export default function page() {
         subheading: 'Commercial Vehicle Insurance',
         heading: 'Jab Gadi Safe, To Business Safe',
         description: 'Protect your business vehicles with reliable insurance coverage that safeguards against accidents, damages, theft, and third-party liabilities so your operations never slow down.',
-        bgImage: '/image/insurance-bg.png',
-        centerImage: '/image/truck.png',
+        bgImage: '/image/1.jpg',
+        // centerImage: '/image/truck.png',
     };
     const aboutData = {
         badge: "About Us",
