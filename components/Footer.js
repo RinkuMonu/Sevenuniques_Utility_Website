@@ -146,7 +146,7 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8 align-middle pb-4">
             <Link href={"/"} className="md:col-span-1 bg-white rounded">
               <Image
-                src="/image/sevenunique-logo1.png"
+                src="/image/finunque_logo_new.png"
                 className="p-1 mx-auto"
                 alt="logo"
                 width={100}

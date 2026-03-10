@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        <link rel="icon" href="/white/sevenunique-logo.ico" />
+        <link rel="icon" href="/image/app_icon.png" />
 
         {/* Google Tag Manager */}
         <script
