@@ -72,7 +72,7 @@ export default function Header() {
           <Link href="/">
             <Image
               src="/image/finunque_logo_new.png"
-              width={65}
+              width={55}
               height={55}
               alt="Finunique Logo"
             />
