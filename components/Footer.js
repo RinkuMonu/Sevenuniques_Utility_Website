@@ -149,8 +149,8 @@ const Footer = () => {
                 src="/image/finunque_logo_new.png"
                 className="p-1 mx-auto"
                 alt="logo"
-                width={100}
-                height={100}
+                width={70}
+                height={70}
               />
             </Link>
             <div className="md:col-span-2">
