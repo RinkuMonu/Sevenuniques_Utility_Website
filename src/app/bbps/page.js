@@ -8,6 +8,8 @@ import FAQ from '../../../components/Bike Insurance/FAQ'
 import AllServices from '../../../components/bbps/AllServices'
 
 function page() {
+
+  
   const logos = [
     { src: "/bank/instantpay.png", width: 120, height: 60 },
     { src: "/bank/nsdl.png", width: 150, height: 70 },
