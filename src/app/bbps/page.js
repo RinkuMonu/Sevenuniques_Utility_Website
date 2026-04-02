@@ -24,7 +24,7 @@ function page() {
     heading: 'Easy Pay, Happy Day',
     description: 'Make all your payments hassle-free using the integrated bill payment system in India. Safe, quick, and hassle-free.',
     bgImage: '/bbps/bbpsbg.png',
-    centerImage: '/bbps/bbps1.png',
+    centerImage: '/bbps/billpayment.png',
   }
 
   const faqs = [
@@ -89,14 +89,15 @@ function page() {
 
             <div className="w-full  flex justify-center items-end">
 
-              {data.centerImage ? (<Image
-                src={data.centerImage}
-                height={500}
-                width={360}
-                alt="center image"
-                className="md:pt-4 lg:pt-16  lg:h-[70vh] z-20"
-
-              />) : ""}
+              {data.centerImage && (
+                <Image
+                  src={data.centerImage}
+                  alt="center image"
+                  width={380}
+                  height={500}
+                  className="md:pt-4 lg:pt-16 w-auto h-auto max-h-[70vh] object-contain z-20"
+                />
+              )}
             </div>
           </div>
         </div>

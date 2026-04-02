@@ -19,27 +19,27 @@ export default function Herobanner({data}) {
                         </div>
                     </div> */}
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 w-full space-y-6 md:space-y-0 items-center">
-                        <div className="px-10 py-10 lg:py-16 rounded-2xl overflow-hidden max-w-2xl w-full">
+                    <div className="grid grid-cols-1 md:grid-cols-2 w-full space-y-6 md:space-y-0 items-center ">
+                        <div className="px-10 py-10 lg:py-16 rounded-2xl overflow-hidden max-w-2xl w-full ">
                             <div className="z-10">
-                                <p className="text-sm font-bold uppercase tracking-widest text-[#0C3D4C]">{data?.subheading}</p>
-                                <h2 className="mt-2 text-4xl md:text-5xl font-bold text-[#0C3D4C] leading-tight">{data.heading}</h2>
-                                <p className="mt-4 my-8 text-base text-[#5D5D5D] max-w-md">{data.description}</p>
+                                <p className="text-sm font-bold uppercase tracking-widest text-white">{data?.subheading}</p>
+                                <h2 className="mt-2 text-4xl md:text-5xl font-bold text-white leading-tight">{data.heading}</h2>
+                                <p className="mt-4 my-8 text-base text-white max-w-md">{data.description}</p>
                                 <Link href="https://utility.Finuniques.in/register" className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]">
-                                    <span className="block px-8 py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#0d2f4d]">
+                                    <span className="block px-8 py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 ease-in-out hover:bg-white hover:text-[#0C3D4C]">
                                         Register now
                                     </span>
                                 </Link>
                             </div>
                         </div>
 
-                        <div className="w-full h-full">
-                            {/* <div className="flex gap-10 ms-auto w-fit">
+                        {/* <div className="w-full h-full">
+                            <div className="flex gap-10 ms-auto w-fit">
                                 <Image src="/booking/book2.png" height={200} width={200} alt="center image" className="md:pt-4 lg:pt-20 z-20" />
                                 <Image src="/booking/book3.png" height={200} width={200} alt="center image" className="md:pt-4 lg:pb-20 z-20" />
                             </div> */}
-                            <Image src={data.centerImage} height={400} width={400} alt="center image" className="md:pt-4 lg:pt-16 lg:absolute bottom-24 right-32 rounded-xl md:scale-150 z-20" />
-                        </div>
+                             {/* <Image src={data.centerImage} height={400} width={400} alt="center image" className="md:pt-4 lg:pt-16 lg:absolute bottom-24 right-32 rounded-xl md:scale-150 z-20" />
+                        </div> */} 
                     </div>
                 </div>
             </div>

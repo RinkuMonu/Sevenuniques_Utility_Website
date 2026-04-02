@@ -8,7 +8,7 @@ const LocationPin = ({ top, left, name }) => (
     style={{ top, left, transform: "translate(-50%, -50%)" }}
   >
     <Image
-      src="/image/sevenunique-logo1.png"
+      src="/image/finunque_logo_new.png"
       alt={name}
       width={16}
       height={16}

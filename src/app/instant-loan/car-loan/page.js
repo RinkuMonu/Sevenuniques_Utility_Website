@@ -59,42 +59,42 @@ function page() {
       </>
     ),
     sliderData: [
-  {
-    step: 1,
-    title: "Apply Online",
-    image: "/loan/loan4.png",
-    cta: "Request Calculations",
-    details: [
-      "Fill in your basic details such as Name, Mobile Number, Aadhaar, and PAN",
-      "Select your desired car model and loan amount",
-      "Get instant confirmation of your eligible loan amount",
+      {
+        step: 1,
+        title: "Apply Online",
+        image: "/loan/loan4.png",
+        cta: "Request Calculations",
+        details: [
+          "Fill in your basic details such as Name, Mobile Number, Aadhaar, and PAN",
+          "Select your desired car model and loan amount",
+          "Get instant confirmation of your eligible loan amount",
+        ],
+      },
+      {
+        step: 2,
+        title: "Upload Documents",
+        image: "/loan/loan12.png",
+        cta: "Submit Docs",
+        details: [
+          "Upload your PAN Card and Aadhaar Card",
+          "Submit proof of income such as bank statements or salary slips",
+          "Provide address verification documents",
+          "Our system reviews all documents instantly for fast processing",
+        ],
+      },
+      {
+        step: 3,
+        title: "Receive Your Loan",
+        image: "/loan/loan13.png",
+        cta: "Get Car Loan Now",
+        details: [
+          "Get quick approval with minimal paperwork",
+          "The loan amount is credited directly to your account",
+          "Funds are transferred in less than 24 hours",
+          "Drive home your dream car without any delay",
+        ],
+      },
     ],
-  },
-  {
-    step: 2,
-    title: "Upload Documents",
-    image: "/loan/loan12.png",
-    cta: "Submit Docs",
-    details: [
-      "Upload your PAN Card and Aadhaar Card",
-      "Submit proof of income such as bank statements or salary slips",
-      "Provide address verification documents",
-      "Our system reviews all documents instantly for fast processing",
-    ],
-  },
-  {
-    step: 3,
-    title: "Receive Your Loan",
-    image: "/loan/loan13.png",
-    cta: "Get Car Loan Now",
-    details: [
-      "Get quick approval with minimal paperwork",
-      "The loan amount is credited directly to your account",
-      "Funds are transferred in less than 24 hours",
-      "Drive home your dream car without any delay",
-    ],
-  },
-],
 
   };
 
@@ -133,16 +133,27 @@ function page() {
               </div>
             </div>
 
-            <div className="w-full h-100">
+            <div className="relative w-full flex justify-center lg:justify-end items-end">
 
               <Image
                 src={data.centerImage}
-                height={500}
-                width={500}
                 alt="center image"
-                className="xs:pt-16 md:pt-4  lg:absolute bottom-20 right-32 lg:scale-150 z-20"
-
+                width={300}
+                height={300}
+                className="
+         mt-6 md:mt-5
+    w-full
+    max-w-[300px]
+    md:max-w-[340px]
+    h-auto
+    object-contain
+    mx-auto
+    md:ml-6
+    lg:ml-15
+  "
+                priority
               />
+
             </div>
           </div>
         </div>
@@ -159,7 +170,7 @@ function page() {
 
 
 
-              <div className="hidden md:block md:absolute bottom-0 right-0  z-11">
+              <div className="hidden lg:block md:absolute bottom-0 right-0  z-11">
                 <Image
                   src={"/loan/car2.png"}
                   alt="loan-section"
@@ -182,18 +193,18 @@ function page() {
         description="Turn your car dreams into reality with fast approvals, low interest rates, and hassle-free repayment plans on new and used cars.
 "
         image="/loan/car3.png"
-       benefits={[
-  "Quick application with minimal documentation",
-  "Flexible EMI options tailored to your budget",
-  "Loans for new and used cars",
-  "Competitive interest rates for affordable financing",
-  "Transparent process with no hidden charges",
-  "Repay early without extra fees",
-  "Guidance on suitable car insurance options",
-  "Access and track your loan anytime, anywhere",
-  "Choose from our approved car dealers",
-  "Receive your loan quickly and drive home your car",
-]}
+        benefits={[
+          "Quick application with minimal documentation",
+          "Flexible EMI options tailored to your budget",
+          "Loans for new and used cars",
+          "Competitive interest rates for affordable financing",
+          "Transparent process with no hidden charges",
+          "Repay early without extra fees",
+          "Guidance on suitable car insurance options",
+          "Access and track your loan anytime, anywhere",
+          "Choose from our approved car dealers",
+          "Receive your loan quickly and drive home your car",
+        ]}
 
       />
 

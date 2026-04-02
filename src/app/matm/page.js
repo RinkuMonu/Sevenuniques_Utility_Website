@@ -67,7 +67,7 @@ function page() {
 
   const section2data = {
     title: "Micro ATM",
-    img2: '/image/matm2.png',
+    img2: '/image/matm22.png',
     color: "#F7FFDE"
   }
 

@@ -5,7 +5,7 @@ import Slider from "react-slick";
 
 const onboardingData = {
   User: {
-    image: ["/home/User13d.png", "/home/User23d.png", "/home/User33d.png", "/home/User43d.png"],
+    image: ["/home/download1.png", "/home/create2.png", "/home/link3.png", "/home/transacting4.png"],
     steps: [
       { id: 1, title: "Download App", description: "Install the Finunique app in a few seconds in either the Play Store or the App Store." },
       { id: 2, title: "Create Account", description: "Create your account using just your mobile number." },
@@ -14,7 +14,7 @@ const onboardingData = {
     ],
   },
   Retailer: {
-    image: ["/home/ret1.png", "/home/ret2.png", "/home/ret3.png", "/home/ret4.png"],
+    image: ["/home/ret1.png", "/home/verify2.png", "/home/ret3.png", "/home/serve4.png"],
     steps: [
       { id: 1, title: "Easy Sign-up", description: "Join our network with a smooth mobile-friendly system." },
       { id: 2, title: "Instant Verification", description: "Verify yourself quickly through your distributor." },
@@ -105,7 +105,7 @@ const HomeOnboarding = () => {
 
           {/* Mobile Slider */}
           <div className="flex justify-center">
-            <div className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] lg:max-w-[380px]">
+            <div className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] lg:max-w-[380px] lg:h-[380px]">
               <Slider
                 infinite
                 speed={700}
@@ -122,8 +122,8 @@ const HomeOnboarding = () => {
                       src={img}
                       alt="onboarding"
                       width={350}
-                      height={650}
-                      className="w-full h-auto object-contain"
+                      height={380}
+                      className="w-full h-auto lg:h-[380px] object-contain"
                     />
                   </div>
                 ))}

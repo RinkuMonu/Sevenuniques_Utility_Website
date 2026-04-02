@@ -71,8 +71,8 @@ export default function Header() {
           {/* Logo */}
           <Link href="/">
             <Image
-              src="/image/sevenunique-logo1.png"
-              width={65}
+              src="/image/finunque_logo_new.png"
+              width={55}
               height={55}
               alt="Finunique Logo"
             />
