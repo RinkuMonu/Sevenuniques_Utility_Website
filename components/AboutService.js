@@ -16,7 +16,7 @@ const ServiceCard = ({ service, isFeatured }) => {
 const AboutService = () => {
     // An array of service names to be displayed in the grid.
     const services = [
-        "BBPS", "AEPS", "Bill Payments", "Recharges ", "Insurances ", "Booking ",
+        "BBPS", "Bill Payments", "Recharges ", "Insurances ", "Booking ",
         "Credit Card", "pancard ", "Business Loan", "Home Loan", "Personal Loan","Car loan"
     ];
 

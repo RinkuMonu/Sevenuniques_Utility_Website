@@ -55,7 +55,7 @@ const AboutSlider = () => {
         {
             imgSrc: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop",
             title: "Transforming Digital Payments",
-            text: "Learn how our BBPS and AePS services simplified bill payments and recharges for thousands of customers nationwide."
+            text: "Learn how our BBPS services simplified bill payments and recharges for thousands of customers nationwide."
         },
         {
             imgSrc: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop",

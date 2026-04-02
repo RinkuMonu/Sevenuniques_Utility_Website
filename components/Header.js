@@ -231,9 +231,9 @@ export default function Header() {
               </div>
             </div>
 
-            <Link href="/aeps" className="hover:text-[#026381] text-lg">
+            {/* <Link href="/aeps" className="hover:text-[#026381] text-lg">
               AEPS
-            </Link>
+            </Link> */}
             <Link href="/bbps" className="hover:text-[#026381] text-lg">
               Bill Payments
             </Link>
@@ -356,7 +356,7 @@ export default function Header() {
               </div>
             </li>
 
-            <li><Link href="/aeps" className="block">AEPS</Link></li>
+            {/* <li><Link href="/aeps" className="block">AEPS</Link></li> */}
             <li><Link href="/bbps" className="block">Bill Payments</Link></li>
             <li><Link href="/contact" className="block">Contact Us</Link></li>
           </ul>

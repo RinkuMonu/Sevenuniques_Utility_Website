@@ -11,56 +11,55 @@ import BannerActivities from './BannerActivities';
 
 // Slide data with all related info
 const slides = [
-    {
-        id: 2,
-        subheading: ' Aadhaar Enabled Payment System',
-        heading: " Aadhaar se Banking, Har Jagah Possible!",
-        centerImage: '/home/homebanner1.png',
-        alt:"aeps",
-        bgImage: '/banner/bbg2.png',
+    // {
+    //     id: 2,
+    //     subheading: ' Aadhaar Enabled Payment System',
+    //     heading: " Aadhaar se Banking, Har Jagah Possible!",
+    //     centerImage: '/image/AEPS-sm-banner.png',
+    //     bgImage: '/banner/bbg2.png',
 
-        cta: {
-            title: 'One App for Everything',
-            description: 'Pay bills, recharge phones, and manage payments seamlessly.',
-        },
-        reviewers: [
-            { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
-            { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
-            { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
-            { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
-        ],
-        reviewData: {
-            rating: 4.0,
-            maxRating: 5,
-            text: 'Convenient and easy to use!',
-        },
-        activities: [
-            {
-                id: 2,
-                name: 'RadheyShyam Kumar',
-                date: '22 Aug 2025 - 2.00 PM',
-                amount: '2,000',
-                currency: '₹',
-                imageUrl: '/image/p5.jpg',
-            },
-            {
-                id: 4,
-                name: 'Raghu Sharma',
-                date: '7 Sept 2025 - 7.50 PM',
-                amount: '1,475',
-                currency: '₹',
-                imageUrl: '/image/p6.jpg',
-            },
-            {
-                id: 5,
-                name: 'Mahendra',
-                date: '17 Aug 2025 - 3.00 PM',
-                amount: '1,200',
-                currency: '₹',
-                imageUrl: '/image/p11.jpg',
-            },
-        ],
-    },
+    //     cta: {
+    //         title: 'One App for Everything',
+    //         description: 'Pay bills, recharge phones, and manage payments seamlessly.',
+    //     },
+    //     reviewers: [
+    //         { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
+    //         { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
+    //         { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
+    //         { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
+    //     ],
+    //     reviewData: {
+    //         rating: 4.0,
+    //         maxRating: 5,
+    //         text: 'Convenient and easy to use!',
+    //     },
+    //     activities: [
+    //         {
+    //             id: 2,
+    //             name: 'RadheyShyam Kumar',
+    //             date: '22 Aug 2025 - 2.00 PM',
+    //             amount: '2,000',
+    //             currency: '₹',
+    //             imageUrl: '/image/p5.jpg',
+    //         },
+    //         {
+    //             id: 4,
+    //             name: 'Raghu Sharma',
+    //             date: '7 Sept 2025 - 7.50 PM',
+    //             amount: '1,475',
+    //             currency: '₹',
+    //             imageUrl: '/image/p6.jpg',
+    //         },
+    //         {
+    //             id: 5,
+    //             name: 'Mahendra',
+    //             date: '17 Aug 2025 - 3.00 PM',
+    //             amount: '1,200',
+    //             currency: '₹',
+    //             imageUrl: '/image/p11.jpg',
+    //         },
+    //     ],
+    // },
     {
         id: 4,
         subheading: ' Bharat Bill Payment System',

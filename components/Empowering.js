@@ -38,7 +38,7 @@ const InfoCard = ({ id, title, benefits, imageUrl, imageAlt, reverse = false }) 
 
  const Empowering = () => {
   const retailerBenefits = [
-  'Earn More with Every Transaction – Get a commission for every AePS transaction done at your shop.',
+  'Earn More with Every Transaction – Get a commission for every transaction done at your shop.',
   'Attract More Customers – Bring in more footfall as people visit your shop for essential banking services.',
   'Offer a Range of Services – From cash withdrawals and deposits to fund transfers and balance checks.',
   'Build Customer Trust – Become the go-to financial service hub in your neighborhood.',

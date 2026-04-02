@@ -45,7 +45,7 @@ const AboutArticle = () => {
             category: "Debitis Aut",
             date: "October 1, 2025",
             title: "How Digital Payments Are Changing India",
-            description: " Explore the rise of BBPS and AePS services and how they are simplifying payments for millions."
+            description: " Explore the rise of BBPS and and how they are simplifying payments for millions."
         },
         {
             imgSrc: "/home/RA.avif",
