@@ -21,7 +21,7 @@ function page() {
 const faqData = [
   {
     question: "What services does Finunique offer?",
-    answer: "Finunique provides services such as BBPS, AEPS, bill payments, mobile recharges, insurance, bookings, PAN card services, credit support, and multiple loan options including personal, business, home, construction, and car loans."
+    answer: "Finunique provides services such as BBPS, bill payments, mobile recharges, insurance, bookings, PAN card services, credit support, and multiple loan options including personal, business, home, construction, and car loans."
   },
   {
     question: "How can I get started with Finunique?",

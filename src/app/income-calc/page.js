@@ -33,7 +33,7 @@ import Link from "next/link";
 
 
 const serviceIcons = {
-  aeps: <Fingerprint className="w-5 h-5" />,
+  // aeps: <Fingerprint className="w-5 h-5" />,
   microAtm: <CreditCard className="w-5 h-5" />,
   miniStatement: <ScrollText className="w-5 h-5" />,
   mobileRecharge: <Smartphone className="w-5 h-5" />,
@@ -89,7 +89,7 @@ const serviceGroups = [
   {
     title: "Banking Services",
     items: [
-      { label: "Aadhaar ATM - AePS", key: "aeps", avgT: 5000 },
+      // { label: "Aadhaar ATM - AePS", key: "aeps", avgT: 5000 },
       { label: "Micro ATM", key: "microAtm", avgT: 5000 },
       // { label: "Mini Statement", key: "miniStatement", avgT: 5000 },
       { label: "Money Transfer X-press DMT", key: "xpress", avgT: 250000 },
@@ -217,7 +217,7 @@ export default function IncomeCalculator() {
   const [selectedTab, setSelectedTab] = useState("retailer");
 
   const [data, setData] = useState({
-    aeps: 1,
+    // aeps: 1,
     microAtm: 1,
     // miniStatement: 1,
     mobileRecharge: 1,
@@ -263,7 +263,7 @@ export default function IncomeCalculator() {
 
 
   const retailerRates = {
-    aeps: 11,
+    // aeps: 11,
     microAtm: 11,
     // miniStatement: 2,
     mobileRecharge: 20,
@@ -308,7 +308,7 @@ export default function IncomeCalculator() {
   };
 
   const distributorRates = {
-    aeps: 2,
+    // aeps: 2,
     microAtm: 2,
     // miniStatement: 3,
     mobileRecharge: 1,

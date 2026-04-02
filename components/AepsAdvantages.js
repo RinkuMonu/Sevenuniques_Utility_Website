@@ -28,7 +28,7 @@ const advantages = [
     id: 4,
     title: "Mini Statement",
     description:
-      "View your recent bank transactions instantly through AEPS service points.",
+      "View your recent bank transactions instantly through service points.",
     icon: "/image/aeps4.png",
   },
   {
