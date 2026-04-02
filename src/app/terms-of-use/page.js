@@ -206,7 +206,7 @@ const termsSections = [
       "5.2 Responsibility for Acts and Omissions\nThe Partner acknowledges and agrees that it shall be fully responsible and liable for the conduct, performance, negligence, or misconduct of its employees, subordinates, representatives, contractors, or any other personnel engaged by it.",
       "- Any loss, damage, liability, or claim arising out of such acts or omissions shall be borne solely by the Retailer / Distributor / API Partner.",
       "- The Company (Finunique Small Private Limited) shall not, under any circumstances, be held responsible or liable for any employment-related disputes, claims, or obligations of such personnel.",
-      "- The Partner shall indemnify and keep the Company indemnified against any claim, demand, or action initiated by such personnel or any Governmental Authority in connection with their employment."
+      "- The Partner shall indemnify and keep the Company indemnified against any claim, demand, or action initiated by such personnel or any Governmental Authority in connection with their employment ."
     ]
   },
   {
