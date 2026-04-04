@@ -55,15 +55,15 @@ function page() {
     img2: "/dmt/Newdmt1.png",
     color: "#CDFFEF"
   }
-  const dmtData = {
-    subheading: 'DMT',
-    heading: 'Domestic money transfer',
-    description: 'The Domestic Money Transfer (DMT) is a way of taking banking nearer to all. Customers do not have to come to the bank branch anymore; they can come to the closest assigned retailer or e-Mitra shop and transfer money to their loved ones in a safe, quick, and reliable way. This simplifies finances for both rural and urban users.',
-    features: [
-      'Customers using our Normal DMT service are allowed to transfer up to ₹ 25,000 per month, but in ₹5,000 slabs per transaction. It implies that a customer can send  ₹5,000 at a time, with a maximum of five times, giving a total monthly limit of ₹25,000. This is an ideal choice when it comes to regular family maintenance, utility bills, or minor financial requirements.',
-      'To serve the higher value needs, we provide transfers up to ₹ 500,000 within one month through our X-Press DMT service with immediate settlement. This renders it the appropriate option when making business payments, emergency costs, or transfers in bulk. Big or small, all transactions are executed in a fast, secure, and trustworthy manner over our retailer network.',
-    ]
-  };
+  // const dmtData = {
+  //   subheading: 'DMT',
+  //   heading: 'Domestic money transfer',
+  //   description: 'The Domestic Money Transfer (DMT) is a way of taking banking nearer to all. Customers do not have to come to the bank branch anymore; they can come to the closest assigned retailer or e-Mitra shop and transfer money to their loved ones in a safe, quick, and reliable way. This simplifies finances for both rural and urban users.',
+  //   features: [
+  //     'Customers using our Normal DMT service are allowed to transfer up to ₹ 25,000 per month, but in ₹5,000 slabs per transaction. It implies that a customer can send  ₹5,000 at a time, with a maximum of five times, giving a total monthly limit of ₹25,000. This is an ideal choice when it comes to regular family maintenance, utility bills, or minor financial requirements.',
+  //     'To serve the higher value needs, we provide transfers up to ₹ 500,000 within one month through our X-Press DMT service with immediate settlement. This renders it the appropriate option when making business payments, emergency costs, or transfers in bulk. Big or small, all transactions are executed in a fast, secure, and trustworthy manner over our retailer network.',
+  //   ]
+  // };
   const faqs = [
     {
       question: "What is DMT?",
@@ -93,8 +93,8 @@ function page() {
   return (
     <>
       <ServiceBanner data={data} />
-      <ServicesSection2 section2data={section2data} />
-      <ServicesSection3 data={dmtData} />
+      {/* <ServicesSection2 section2data={section2data} /> */}
+      {/* <ServicesSection3 data={dmtData} /> */}
       <BenefitsDMT />
       <section>
         <div className="px-4 lg:px-0 py-16 relative">
