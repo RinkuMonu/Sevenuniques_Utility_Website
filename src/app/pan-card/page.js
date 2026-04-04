@@ -100,7 +100,7 @@ function page() {
       </div>
       <BenefitsSection2 />
       {/* <VerticalTimeline /> */}
-      <PancardFeatures />
+      {/* <PancardFeatures /> */}
       <div className="strippps py-16">
         {info.map((item, index) => (
           <div

@@ -67,7 +67,7 @@ export async function generateMetadata({ params }) {
   const { slug } = params;
 
   const seo = await seoConfig(`/blog/${slug}`);
-
+a
   if (!seo) {
     return {
       title: "Blog – Finunique",
