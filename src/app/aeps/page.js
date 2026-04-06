@@ -97,7 +97,7 @@ function page() {
   return (
     <>
       <ServiceBanner data={data} />
-           <div style={{ backgroundColor: section2data.color }}>
+           {/* <div style={{ backgroundColor: section2data.color }}>
                       <div className='max-w-7xl mx-auto lg:pt-8 px-4 lg:px-0'>
                           <div className='grid grid-cols-1 sm:grid-cols-2'>
                               <div className='flex items-center'>
@@ -108,7 +108,7 @@ function page() {
                               </div>
                           </div>
                       </div>
-                  </div>
+                  </div> */}
 
 
       {/* <section className='pt-10 px-0 max-w-7xl mx-auto '>
@@ -121,7 +121,7 @@ function page() {
           </h3>
         </div>
       </section> */}
-        <ServicesSection3 data={aepsData} />
+        {/* <ServicesSection3 data={aepsData} /> */}
       <AepsService />
       <HowItWorks1 />
       <ComplianceSection />
