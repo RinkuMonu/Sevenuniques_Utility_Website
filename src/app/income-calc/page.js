@@ -92,7 +92,7 @@ const serviceGroups = [
       // { label: "Aadhaar ATM - AePS", key: "aeps", avgT: 5000 },
       { label: "Micro ATM", key: "microAtm", avgT: 5000 },
       // { label: "Mini Statement", key: "miniStatement", avgT: 5000 },
-      { label: "Money Transfer X-press DMT", key: "xpress", avgT: 250000 },
+      // { label: "Money Transfer X-press DMT", key: "xpress", avgT: 250000 },
     ],
   },
   {

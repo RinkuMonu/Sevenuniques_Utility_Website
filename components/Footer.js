@@ -277,14 +277,14 @@ const Footer = () => {
                         Free Credit Score
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link
                         href="/loan-emi"
                         className="hover:text-blue-400 text-white "
                       >
                         Loan EMI Calculator
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
 

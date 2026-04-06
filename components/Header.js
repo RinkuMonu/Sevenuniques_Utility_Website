@@ -105,14 +105,14 @@ export default function Header() {
                 className={`absolute -left-20 -translate-x-1/2 top-10 w-[900px] bg-white shadow-xl rounded-xl p-8 transition-all duration-200
                 ${open ? "opacity-100 visible translate-y-0" : "opacity-0 invisible translate-y-2"}`}
               >
-                <div className="absolute bottom-0 left-0">
+                {/* <div className="absolute bottom-0 left-0">
                   <Image
                     src="/image/img-tower.PNG"
                     width={300}
                     height={300}
                     alt="Finunique Logo"
                   />
-                </div>
+                </div> */}
                 <div className="grid grid-cols-4 gap-8">
                   {/* Banking */}
                   <div>
@@ -120,12 +120,12 @@ export default function Header() {
                       Banking Services
                     </h4>
                     <ul className="space-y-2 text-base md:ml-4">
-                      <li className="hover:text-[#026381]">
+                      {/* <li className="hover:text-[#026381]">
                         <Link href="/dmt">Money Transfer</Link>
                       </li>
                       <li className="hover:text-[#026381]">
                         <Link href="/matm">Micro ATM</Link>
-                      </li>
+                      </li> */}
                       <li className="hover:text-[#026381]">
                         <Link href="/credit-card">Credit Card Creation</Link>
                       </li>
@@ -180,7 +180,7 @@ export default function Header() {
                         </Link>
                       </li>
                     </ul>
-                    <Link
+                    {/* <Link
                       href="/instant-loan"
                       className="text-base font-semibold text-gray-600 mb-2 md:ml-4"
                     >
@@ -204,7 +204,7 @@ export default function Header() {
                       <li className="hover:text-[#026381]">
                         <Link href="/instant-loan/car-loan">Car Loan</Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
 
                   {/* Booking */}
@@ -290,8 +290,8 @@ export default function Header() {
                     mobileDropdown.banking ? "max-h-[1000px]" : "max-h-0 overflow-hidden"
                   }`}
                 >
-                  <li><Link href="/dmt">DMT</Link></li>
-                  <li><Link href="/matm">Micro ATM</Link></li>
+                  {/* <li><Link href="/dmt">DMT</Link></li>
+                  <li><Link href="/matm">Micro ATM</Link></li> */}
                   <li><Link href="/credit-card">Credit Card</Link></li>
                   <li><Link href="/pan-card">PAN Card</Link></li>
                 </ul>
@@ -329,11 +329,7 @@ export default function Header() {
                   <li><Link href="/insurance/bike-insurance">Bike Insurance</Link></li>
                   <li><Link href="/insurance/taxi-insurance">Taxi Insurance</Link></li>
                   <li><Link href="/insurance/commercial-vehicle">Commercial</Link></li>
-                  <li><Link href="/instant-loan/home-loan">Home Loan</Link></li>
-                  <li><Link href="/instant-loan/business-loan">Business Loan</Link></li>
-                  <li><Link href="/instant-loan/construction-equipment-loan">Construction Loan</Link></li>
-                  <li><Link href="/instant-loan/personal-loan">Personal Loan</Link></li>
-                  <li><Link href="/instant-loan/car-loan">Car Loan</Link></li>
+                 
                 </ul>
 
                 {/* Booking */}

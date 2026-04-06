@@ -14,7 +14,7 @@ function page() {
         id: 1,
         subheading: 'Blog',
         heading: 'Jaankaari jo banaye, Aapko Smart',
-        description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable Domestic Money Transfer service.',
+        description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable service.',
         bgImage: '/blog/blogbg.png',
           centerImage: '/blog/blog2.png',
     }

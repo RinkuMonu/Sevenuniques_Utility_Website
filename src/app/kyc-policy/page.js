@@ -11,7 +11,7 @@ const kycSections = [
     title: "Purpose",
     icon: <Shield />,
     content:
-      "The Chargeback Policy of Finunique Small Private Limited outlines the standards and procedures for handling chargebacks initiated by customers, distributors, retailers, or white-label partners. It aims to provide fair, transparent, and mutually respectful resolution of disputes related to unauthorized or disputed transactions. This policy applies to all digital and utility services provided through www.finunique.in, including BBPS bill payments, DMT transactions, mobile/DTH/data card recharges, loan applications, insurance, credit card bill payments, PAN applications, subscriptions, and any other digital financial or utility service offered on the platform.",
+      "The Chargeback Policy of Finunique Small Private Limited outlines the standards and procedures for handling chargebacks initiated by customers, distributors, retailers, or white-label partners. It aims to provide fair, transparent, and mutually respectful resolution of disputes related to unauthorized or disputed transactions. This policy applies to all digital and utility services provided through www.finunique.in, including BBPS bill payments, mobile/DTH/data card recharges, loan applications, insurance, credit card bill payments, PAN applications, subscriptions, and any other digital financial or utility service offered on the platform.",
   },
   {
     id: "scope",
@@ -60,7 +60,7 @@ const kycSections = [
     title: "Special Considerations for Utility and Digital Services",
     icon: <AlertTriangle />,
     content:
-      "Real-time services like BBPS, DMT, mobile/DTH recharges, and PAN applications are non-reversible once executed. Refunds may only occur in case of technical failures. Subscription cancellations apply to future cycles; completed periods are non-refundable unless otherwise stated.",
+      "Real-time services like BBPS, mobile/DTH recharges, and PAN applications are non-reversible once executed. Refunds may only occur in case of technical failures. Subscription cancellations apply to future cycles; completed periods are non-refundable unless otherwise stated.",
   },
   {
     id: "data-security",
