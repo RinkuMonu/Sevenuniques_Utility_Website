@@ -7,8 +7,8 @@
     const data = [
       // { title: "AePS (Aadhaar Enabled Payment System)", img: "/about/aeps3d.png", link:"/aeps" },
       { title: "Utility & Bill Payment", img: "/about/Utility3d.png", link:"/bill-payments" },
-      { title: "Money Transfer (DMT)", img: "/about/dmt3d.png", link:"/dmt" },
-      { title: "Micro ATM Services", img: "/about/matm3d.png", link:"/" },
+      // { title: "Money Transfer (DMT)", img: "/about/dmt3d.png", link:"/dmt" },
+      // { title: "Micro ATM Services", img: "/about/matm3d.png", link:"/" },
       { title: "Credit Card Solutions", img: "/about/cc3d.png", link:"/credit-card" },
     ];
 

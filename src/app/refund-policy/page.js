@@ -31,7 +31,7 @@ const refundSections = [
     content: [
       "This Cancellation and Refund Policy of Finunique Small Private Limited explains the terms under which customers can cancel a service or request a refund for payments made through our digital platform www.finuniques.in. Our objective is to ensure complete transparency, fairness, and customer satisfaction while maintaining compliance with applicable laws, industry standards, and the policies of our third-party service providers.",
 
-      "We provide multiple digital services, including bill payments, , DMT, recharges, loan applications, insurance, pancard processing, and other utility-based financial services. Once a service or transaction is successfully completed, it cannot be cancelled as our systems operate in real time with partner institutions. However, in certain cases such as failed, duplicate, or incomplete transactions, customers may be eligible for a refund.",
+      "We provide multiple digital services, including bill payments, recharges, loan applications, insurance, pancard processing, and other utility-based financial services. Once a service or transaction is successfully completed, it cannot be cancelled as our systems operate in real time with partner institutions. However, in certain cases such as failed, duplicate, or incomplete transactions, customers may be eligible for a refund.",
 
       "Refund requests must be submitted within 7 days of the transaction by emailing support@finuniques.in with complete transaction details. Approved refunds will be processed within 5–10 business days to the original payment method used.",
 
@@ -47,7 +47,7 @@ const refundSections = [
 
       "Our platform provides a wide range of digital and financial services designed to make daily transactions seamless, secure, and convenient. These include Loan Application and Processing, BBPS (Bharat Bill Payment System) for utility payments such as electricity, gas, water, and broadband bills, as well as  (Aadhaar Enabled Payment System) for secure biometric transactions.",
 
-      "We also offer DMT (Domestic Money Transfer) services for quick fund transfers, along with Insurance solutions for various categories. Additionally, users can access Mobile, DTH, and Data Card Recharges, Credit Card Bill Payments, and pancard Application services through our platform.",
+      "We also offer for quick fund transfers, along with Insurance solutions for various categories. Additionally, users can access Mobile, DTH, and Data Card Recharges, Credit Card Bill Payments, and pancard Application services through our platform.",
 
       "Beyond these, Finunique Small Private Limited may provide other related utility, government, or financial services as per customer requirements. This policy governs all such services to maintain transparency, protect customer interests, and ensure fair handling of cancellations and refunds across every transaction."
     ]
@@ -92,7 +92,7 @@ const refundSections = [
   content: [
     "At Finunique Small Private Limited, certain services and fees are strictly non-refundable to maintain operational efficiency, comply with third-party agreements, and ensure transparency for all users, distributors, retailers, and white-label partners.",
 
-    "\n1. Successfully Completed Transactions: Once a service such as recharge, bill payment, , or DMT transfer is successfully processed, the transaction is considered final and cannot be refunded, as the amount has already been credited to the respective beneficiary or service provider.",
+    "\n1. Successfully Completed Transactions: Once a service such as recharge, bill payment, is successfully processed, the transaction is considered final and cannot be refunded, as the amount has already been credited to the respective beneficiary or service provider.",
 
     "\n2. Loan Processing and Verification Fees: Fees associated with loan application, verification, processing, or approval are non-refundable, even if the loan is not sanctioned, because these charges cover administrative and operational costs incurred by our platform and its partners.",
 
@@ -126,7 +126,7 @@ const refundSections = [
   content: [
     "At Finunique Small Private Limited, we understand that in some cases, a service may have been partially delivered before a cancellation request is made. To ensure fairness to both the customer and our platform, partial refunds or adjustments may be provided based on the extent of service usage.",
 
-    "For example, if a user, distributor, retailer, or white-label partner has already utilized part of a service—such as a recharge, bill payment, /DMT transaction, or loan processing—any refund will be calculated proportionately. This calculation considers the services already rendered, resources consumed, and any applicable administrative or processing fees.",
+    "For example, if a user, distributor, retailer, or white-label partner has already utilized part of a service—such as a recharge, bill payment, or loan processing—any refund will be calculated proportionately. This calculation considers the services already rendered, resources consumed, and any applicable administrative or processing fees.",
 
     "Customers requesting partial refunds must submit the cancellation or refund request within 7 days of the transaction, providing all relevant details including Transaction ID, registered mobile number, and service type. Each request is carefully verified by our support team and, where necessary, coordinated with third-party partners or service providers to determine the refundable amount.",
 
@@ -140,7 +140,7 @@ const refundSections = [
   content: [
     "At Finunique Small Private Limited, it is important to clarify the terms regarding late cancellations or services already utilized. Once a customer, distributor, retailer, or white-label partner has availed or benefited from a service, the transaction is considered complete, and no refund will be processed.",
 
-    "This policy applies to all services provided through our platform, including  withdrawals, bill payments, mobile/DTH recharges, fund transfers (DMT), loan processing, insurance, pancard applications, and other utility or financial services. Once these services are successfully executed, the amount paid is non-recoverable, as the service has been delivered and the associated resources have been consumed.",
+    "This policy applies to all services provided through our platform, including  withdrawals, bill payments, mobile/DTH recharges, loan processing, insurance, pancard applications, and other utility or financial services. Once these services are successfully executed, the amount paid is non-recoverable, as the service has been delivered and the associated resources have been consumed.",
 
     "Customers are encouraged to review transaction details carefully before initiating any request. Any cancellation request after service completion will be declined, even if submitted within the typical refund window, because the service has already been rendered and cannot be reversed.",
 
@@ -188,7 +188,7 @@ const refundSections = [
   title: "Disclaimer",
   icon: <AlertTriangleIcon className="w-5 h-5" />,
   content: [
-    "Finunique Small Private Limited operates as a technology facilitator for a wide range of financial and utility transactions, including bill payments, recharges, /DMT services, loans, insurance, PAN applications, and other digital financial services. The company provides a secure platform to enable transactions between customers and third-party service providers, including banks, utility companies, insurance providers, and government agencies.",
+    "Finunique Small Private Limited operates as a technology facilitator for a wide range of financial and utility transactions, including bill payments, recharges, insurance, PAN applications, and other digital financial services. The company provides a secure platform to enable transactions between customers and third-party service providers, including banks, utility companies, insurance providers, and government agencies.",
 
     "While we strive to ensure accurate, timely, and efficient processing of all services, final settlement, transaction confirmation, and refund eligibility may depend on the policies, systems, and procedures of third-party service providers, banks, or government APIs. Delays, errors, or discrepancies arising from these entities may impact the timing or approval of cancellations and refunds.",
 

@@ -44,7 +44,7 @@ const termsSections = [
     title: "Operation of Retailer / Distributor / API Partner Outlet",
     icon: <User className="w-5 h-5" />,
     content: [
-      "1.1 Rendering of Services\nDuring the term of this agreement, the Retailer, Distributor, or API Partner (hereinafter collectively referred to as “Partner”) shall render the services (“Services”) of Finunique Small Private Limited, including but not limited to BBPS, DMT, through its authorized personnel, agents, or representatives. Finunique Small Private Limited reserves the right, at its sole discretion, to modify, add, or remove any Services, including the procedure, process, or methods for rendering these Services. The Partner shall comply with all such modifications or updates as notified by the Company.",
+      "1.1 Rendering of Services\nDuring the term of this agreement, the Retailer, Distributor, or API Partner (hereinafter collectively referred to as “Partner”) shall render the services (“Services”) of Finunique Small Private Limited, including but not limited to BBPS, through its authorized personnel, agents, or representatives. Finunique Small Private Limited reserves the right, at its sole discretion, to modify, add, or remove any Services, including the procedure, process, or methods for rendering these Services. The Partner shall comply with all such modifications or updates as notified by the Company.",
 
       "1.2 Marketing and Promotion\nThe Partner shall only market, promote, and sell those services which are expressly permitted by Finunique Small Private Limited. They do not have an automatic right to market, sell, or promote any service offered by other Partners or external service providers. In case of any addition to the Services, Finunique Small Private Limited will notify the Partner at its discretion. The Partner may offer such new services only after receiving explicit approval. The Company may also instruct the Partner to discontinue any Service at any time without assigning any reason.",
 
@@ -217,7 +217,7 @@ const termsSections = [
       "6.1 Exclusivity During Term\nThe Retailer / Distributor / API Partner acknowledges and agrees that, during the entire tenure of this Agreement, it shall devote its best efforts to promote and provide the services of Finunique Small Private Limited and shall not, without prior written approval of the Company, engage in any activity that may conflict with the business interest of the Company.",
 
       "6.2 Non-Compete Obligations\nThe Partner shall not, directly or indirectly, through itself or through any other person, entity, or associate, whether as an officer, employee, partner, consultant, shareholder, investor, or in any other capacity:",
-      "a) Competing Services: Market, sell, offer, or perform any services that are identical or substantially similar to the services facilitated by Finunique Small Private Limited under BBPS, DMT, or any other digital financial services.",
+      "a) Competing Services: Market, sell, offer, or perform any services that are identical or substantially similar to the services facilitated by Finunique Small Private Limited under BBPS, or any other digital financial services.",
       "b) Employee/Consultant Solicitation: Solicit, encourage, or attempt to induce any employee, consultant, or agent of Finunique Small Private Limited to terminate their relationship with the Company or to engage with the Partner or its affiliates.",
       "c) Interference with Business Relationships: Solicit, interfere with, or attempt to disrupt the contractual or commercial relationships between Finunique Small Private Limited and its customers, suppliers, service providers, or partners.",
       "d) Unauthorized Branding: Use or attempt to use any trade name, logo, trademark, service mark, or business identity which is identical, similar, or deceptively similar to that of Finunique Small Private Limited or its associated brands.",
@@ -461,9 +461,9 @@ const termsSections = [
 
       "15.4 I/We undertake to always display the official rate list of the applicable charges on domestic remittance and other services offered under this Agreement. I/We shall not, under any circumstances, overcharge customers. I/We further undertake to ensure compliance with all applicable tax requirements, including Goods and Services Tax (GST), and shall be solely responsible for the payment of such taxes.",
 
-      "15.5 I/We hereby declare that I/We have resigned from any prior associations with other Business Correspondents (BCs) or money transfer agencies and shall not engage with any such entities during my association with Finunique Small Private Limited.",
+      "15.5 I/We hereby declare that I/We have resigned from any prior associations with other Business Correspondents (BCs) shall not engage with any such entities during my association with Finunique Small Private Limited.",
 
-      "15.6 I/We further declare and undertake that I/We will work exclusively with Finunique Small Private Limited with respect to domestic money transfer and related services, unless and until my association is lawfully terminated by the Company or until I tender my resignation in accordance with the terms herein.",
+      "15.6 I/We further declare and undertake that I/We will work exclusively with Finunique Small Private Limited with respect to related services, unless and until my association is lawfully terminated by the Company or until I tender my resignation in accordance with the terms herein.",
 
       "15.7 I/We confirm that I/We have carefully read, fully understood, and expressly accept the terms and conditions governing this Agreement and undertake to comply with them in letter and spirit at all times."
     ]

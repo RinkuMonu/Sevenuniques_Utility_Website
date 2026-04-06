@@ -93,7 +93,7 @@ const chargeSections = [
         The Chargeback Policy of Finunique Small Private Limited outlines the procedures for handling chargebacks initiated by customers, distributors, retailers, or white-label partners. It ensures fair, transparent, and respectful dispute resolution for unauthorized or disputed transactions. This policy applies to all digital and utility services offered on <strong>www.finuniques.in</strong>, including:
         <ul className="list-disc list-inside mt-2 space-y-1">
           <li>BBPS bill payments (electricity, gas, water, etc.)</li>
-          <li>DMT transactions ( Domestic Money Transfer)</li>
+          <li>Bank Transfer</li>
           <li>Mobile, DTH, and data card recharges</li>
           <li>Loan applications and processing</li>
           <li>Insurance services</li>
@@ -229,7 +229,7 @@ const chargeSections = [
     content: (
       <>
         <ul className="list-disc list-inside mt-2 space-y-1">
-          <li>Real-time BBPS, AEPS/DMT, mobile/DTH recharges, and PAN applications are non-reversible once executed.</li>
+          <li>Real-time BBPS, mobile/DTH recharges, and PAN applications are non-reversible once executed.</li>
           <li>Refunds or chargebacks only for technical failures or system errors.</li>
           <li>Subscription services: future cycles may be canceled, prepaid amounts for completed periods are non-refundable unless explicitly stated.</li>
           <li>Third-party dependencies like banks, APIs, and utility providers may affect timing and resolution.</li>
