@@ -162,6 +162,14 @@ const refundSections = [
   ]
 },
 {
+  id: "kycchargebackrefund",
+  title: "ID Deactivation Policy",
+  icon: <AlertTriangleIcon className="w-5 h-5" />,
+  content: [
+    "If a customer completes KYC verification using their Aadhaar Card, PAN Card, and registered Mobile Number, and any type of chargeback, dispute, or fraudulent activity is reported against such account thereafter, the company reserves the full right to immediately suspend or permanently deactivate the respective user ID without prior notice."
+  ]
+},
+{
   id: "contact-us",
   title: "Contact Us",
   icon: <Phone className="w-5 h-5" />,
@@ -197,6 +205,7 @@ const refundSections = [
     "The company reserves the right to amend, update, or modify this Cancellation and Refund Policy at any time without prior notice, in order to comply with changes in legal, regulatory, operational, or technological requirements. Customers, distributors, retailers, and white-label partners are encouraged to regularly review the policy to remain informed of any updates."
   ]
 },
+
 ];
 
 export default function RefundPolicy() {

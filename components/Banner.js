@@ -158,54 +158,54 @@ const slides = [
     //     ],
     // },
 
-    {
-        id: 3,
-        subheading: 'Micro Automated Teller Machine',
-        heading: "Chhoti Machine, Badi Banking Suvidha!",
-        centerImage: '/home/homebanner4.png',
-        alt:'MATM',
-        bgImage: '/banner/bbg3.png',
+    // {
+    //     id: 3,
+    //     subheading: 'Micro Automated Teller Machine',
+    //     heading: "Chhoti Machine, Badi Banking Suvidha!",
+    //     centerImage: '/home/homebanner4.png',
+    //     alt:'MATM',
+    //     bgImage: '/banner/bbg3.png',
 
-        cta: {
-            title: 'Safe & Secure',
-            description: 'Your money is protected with industry-standard security measures.',
-        },
-        reviewers: [
-            { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
-            { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
-            { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
-            { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
-        ],
-        reviewData: {
-            rating: 4.8,
-            maxRating: 5,
-            text: 'I feel confident sending money here!',
-        },
-        activities: [
-            {
-                id: 3,
-                name: 'Bhupendra',
-                date: '23 Jun 2025 - 4.43 PM',
-                amount: '700',
-                currency: '₹',
-                imageUrl: '/image/p7.jpg',
-            }, {
-                id: 4,
-                name: 'Suresh',
-                date: '3 Jul 2025 - 6.17 PM',
-                amount: '5500',
-                currency: '₹',
-                imageUrl: '/image/p8.jpg',
-            }, {
-                id: 5,
-                name: 'Shankar',
-                date: '19 Sept 2025 - 12.56 PM',
-                amount: '1,800',
-                currency: '₹',
-                imageUrl: '/image/p9.jpg',
-            },
-        ],
-    },
+    //     cta: {
+    //         title: 'Safe & Secure',
+    //         description: 'Your money is protected with industry-standard security measures.',
+    //     },
+    //     reviewers: [
+    //         { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
+    //         { id: 4, name: 'Ken Williams', imageUrl: '/banner/bt2.jpg' },
+    //         { id: 1, name: 'Jane Smith', imageUrl: '/banner/bt3.jpg' },
+    //         { id: 2, name: 'Ken Williams', imageUrl: '/banner/bt4.jpg' },
+    //     ],
+    //     reviewData: {
+    //         rating: 4.8,
+    //         maxRating: 5,
+    //         text: 'I feel confident sending money here!',
+    //     },
+    //     activities: [
+    //         {
+    //             id: 3,
+    //             name: 'Bhupendra',
+    //             date: '23 Jun 2025 - 4.43 PM',
+    //             amount: '700',
+    //             currency: '₹',
+    //             imageUrl: '/image/p7.jpg',
+    //         }, {
+    //             id: 4,
+    //             name: 'Suresh',
+    //             date: '3 Jul 2025 - 6.17 PM',
+    //             amount: '5500',
+    //             currency: '₹',
+    //             imageUrl: '/image/p8.jpg',
+    //         }, {
+    //             id: 5,
+    //             name: 'Shankar',
+    //             date: '19 Sept 2025 - 12.56 PM',
+    //             amount: '1,800',
+    //             currency: '₹',
+    //             imageUrl: '/image/p9.jpg',
+    //         },
+    //     ],
+    // },
     {
         id: 5,
         subheading: 'pancard',
