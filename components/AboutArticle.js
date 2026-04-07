@@ -47,13 +47,13 @@ const AboutArticle = () => {
             title: "How Digital Payments Are Changing India",
             description: " Explore the rise of BBPS and and how they are simplifying payments for millions."
         },
-        {
-            imgSrc: "/home/RA.avif",
-            category: "Debitis Aut",
-            date: "September 25, 2025",
-            title: "Tips to Secure Personal and Business Loans",
-            description: "Learn practical strategies for faster loan approvals and managing repayments efficiently."
-        },
+        // {
+        //     imgSrc: "/home/RA.avif",
+        //     category: "Debitis Aut",
+        //     date: "September 25, 2025",
+        //     title: "Tips to Secure Personal and Business Loans",
+        //     description: "Learn practical strategies for faster loan approvals and managing repayments efficiently."
+        // },
         {
             imgSrc: "/home/RA.avif",
             category: "Technology",
