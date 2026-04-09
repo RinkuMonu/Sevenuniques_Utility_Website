@@ -270,12 +270,12 @@ const billCategories = {
       description:
         "Clarity in the payment of credit cards. Protect your credit score.",
     },
-    {
-      icon: "/icons/lr.png",
-      title: "Loan Repayment",
-      description:
-        "Make payments on EMIs of pay loans on time and ensure a good financial credit history.",
-    },
+    // {
+    //   icon: "/icons/lr.png",
+    //   title: "Loan Repayment",
+    //   description:
+    //     "Make payments on EMIs of pay loans on time and ensure a good financial credit history.",
+    // },
     {
       icon: "/icons/rd.png",
       title: "Recurring Deposit",

@@ -45,9 +45,9 @@ export default function PreFooterSection() {
       title: "Booking Services",
       links: [
         { name: "Bus Booking", href: "/booking#bus-booking" },
-        { name: "Train Booking", href: "/booking#train-booikng" },
-        { name: "Hotel Booking", href: "/booking#hotel-booking" },
-        { name: "Flight Booking", href: "/booking#flight-booking" },
+        // { name: "Train Booking", href: "/booking#train-booikng" },
+        // { name: "Hotel Booking", href: "/booking#hotel-booking" },
+        // { name: "Flight Booking", href: "/booking#flight-booking" },
 
       ],
     },
