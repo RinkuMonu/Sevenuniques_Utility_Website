@@ -216,7 +216,7 @@ export default function Header() {
                       <li className="hover:text-[#026381]">
                         <Link href="/booking">Bus Booking</Link>
                       </li>
-                      <li className="hover:text-[#026381]">
+                      {/* <li className="hover:text-[#026381]">
                         <Link href="/booking#train-booking">Train Booking</Link>
                       </li>
                       <li className="hover:text-[#026381]">
@@ -224,7 +224,7 @@ export default function Header() {
                       </li>
                       <li className="hover:text-[#026381]">
                         <Link href="/booking#flight-booking">Flight Booking</Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -345,9 +345,9 @@ export default function Header() {
                   }`}
                 >
                   <li><Link href="/booking">Bus Booking</Link></li>
-                  <li><Link href="/booking#train-booking">Train Booking</Link></li>
+                  {/* <li><Link href="/booking#train-booking">Train Booking</Link></li>
                   <li><Link href="/booking#hotel-booking">Hotel Booking</Link></li>
-                  <li><Link href="/booking#flight-booking">Flight Booking</Link></li>
+                  <li><Link href="/booking#flight-booking">Flight Booking</Link></li> */}
                 </ul>
               </div>
             </li>

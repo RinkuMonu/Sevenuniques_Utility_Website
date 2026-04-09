@@ -47,11 +47,11 @@ const AboutSlider = () => {
             title: "Empowering Small Businesses",
             text: "Discover how Finunique helped a local retailer streamline operations and grow revenue through our innovative solutions."
         },
-        {
-            imgSrc: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop",
-            title: "Seamless Loan Approval",
-            text: "Read about a young entrepreneur who secured a business loan effortlessly and expanded their startup across multiple districts."
-        },
+        // {
+        //     imgSrc: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop",
+        //     title: "Seamless Loan Approval",
+        //     text: "Read about a young entrepreneur who secured a business loan effortlessly and expanded their startup across multiple districts."
+        // },
         {
             imgSrc: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop",
             title: "Transforming Digital Payments",
