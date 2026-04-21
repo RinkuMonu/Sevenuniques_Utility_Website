@@ -25,7 +25,7 @@ const kycSections = [
     title: "Client Responsibilities",
     icon: <UserCheck />,
     content:
-      "Before initiating a chargeback, users must contact Finunique Support at support@finuniques.in or 0141-4511098, provide complete transaction details, allow adequate resolution time, and act in good faith. Failure to follow these steps may delay or invalidate the claim.",
+      "Before initiating a chargeback, users must contact Finunique Support at support@finuniques.in or 9251582693, provide complete transaction details, allow adequate resolution time, and act in good faith. Failure to follow these steps may delay or invalidate the claim.",
   },
   {
     id: "company-responsibilities",
@@ -81,7 +81,7 @@ const kycSections = [
     title: "Communication & Support",
     icon: <PhoneCall />,
     content:
-      "For assistance, contact support@finuniques.in or call 0141-4511098 (Mon–Sat, 10:00 AM – 6:30 PM IST). Include transaction ID, registered mobile number, service type, and issue description for faster resolution.",
+      "For assistance, contact support@finuniques.in or call 9251582693 (Mon–Sat, 10:00 AM – 6:30 PM IST). Include transaction ID, registered mobile number, service type, and issue description for faster resolution.",
   },
   {
     id: "user-partner-responsibilities",
@@ -210,7 +210,7 @@ export default function KycPolicy() {
                           <span className="font-bold">Finunique Small Private Limited </span><br />
 <span className="font-bold"> Website:</span> www.finuniques.in<br />
  <span className="font-bold">Email:</span> support@finuniques.in<br />
-  <span className="font-bold">Phone:</span> 0141-4511098<br />
+  <span className="font-bold">Phone:</span> 9251582693<br />
    <span className="font-bold">Effective Date:</span> 03 June 2025
 
                         </p>

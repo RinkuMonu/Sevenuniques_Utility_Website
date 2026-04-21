@@ -172,7 +172,7 @@ const privacySections = [
         "Grievance Officer",
         "Finunique Small Private Limited",
         "Email: support@finuniques.in",
-        "Phone: 0141-4511098",
+        "Phone: 9251582693",
         "All complaints will be acknowledged and resolved promptly.",]
   },
   {
@@ -288,12 +288,7 @@ export default function Privacy() {
                         </span>{" "}
                         Plot No 97, Dakshinpuri - I, Shrikishan, Sanganer,
                         Jagatpura, Jaipur, Rajasthan, India - 302017 <br />
-                        <span className="font-bold">
-                          Corporate Office:
-                        </span>{" "}
-                        Office No. 101/2, ‘Vakratunda Corporate Park Premise
-                        Co-operative Society Limited, Off. Aarey Road, Goregaon
-                        (East), Mumbai - 400 063
+                      
                       </p>
                     </div>
                   </div>

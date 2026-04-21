@@ -41,7 +41,7 @@ export default function Header() {
           <span className="flex items-center">
             <Phone className="mr-2 w-4 h-4" />
             <a href="tel:01414511098" className="hover:underline">
-              0141-4511098
+              9251582693
             </a>
           </span>
         </div>
