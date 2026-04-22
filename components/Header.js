@@ -115,25 +115,7 @@ export default function Header() {
                 </div> */}
                 <div className="grid grid-cols-4 gap-8">
                   {/* Banking */}
-                  <div>
-                    <h4 className="font-semibold text-lg bg-[#E6F3F7] text-[#026381] px-3 py-1 rounded-md mb-4">
-                      Banking Services
-                    </h4>
-                    <ul className="space-y-2 text-base md:ml-4">
-                      {/* <li className="hover:text-[#026381]">
-                        <Link href="/dmt">Money Transfer</Link>
-                      </li>
-                      <li className="hover:text-[#026381]">
-                        <Link href="/matm">Micro ATM</Link>
-                      </li> */}
-                      <li className="hover:text-[#026381]">
-                        <Link href="/credit-card">Credit Card Creation</Link>
-                      </li>
-                      <li className="hover:text-[#026381]">
-                        <Link href="/pan-card">PAN Card Creation</Link>
-                      </li>
-                    </ul>
-                  </div>
+                
 
                   {/* Utility */}
                   <div>
