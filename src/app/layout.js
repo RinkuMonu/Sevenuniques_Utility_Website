@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 import PreFooterSection from "../../components/Prefooter";
 import HomeQRBanner from "../../components/HomeQRSection";
 import SEO from "../../components/SEO/SEO"; 
-import ChatSection from "../../components/ChatSection";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -92,7 +92,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {children}
         <HomeQRBanner />
         <PreFooterSection />
-        <ChatSection />
+        {/* <ChatSection /> */}
         <Footer />
       </body>
     </html>

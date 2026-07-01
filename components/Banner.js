@@ -216,7 +216,7 @@ const slides = [
 
         cta: {
             title: 'Har Transaction Mein Vishwas, PAN Hai Saath!',
-            description: 'Your money is protected with industry-standard security measures.',
+            description: 'Your Saath is protected with industry-standard security measures.',
         },
         reviewers: [
             { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
@@ -227,7 +227,7 @@ const slides = [
         reviewData: {
             rating: 4.8,
             maxRating: 5,
-            text: 'I feel confident sending money here!',
+            text: 'I feel confident sending Saath here!',
         },
         activities: [
             {
@@ -266,7 +266,7 @@ const slides = [
 
         cta: {
             title: 'Zindagi ke har mod par suraksha ka vaada',
-            description: 'Your money is protected with industry-standard security measures.',
+            description: 'Your Saath is protected with industry-standard security measures.',
         },
         reviewers: [
             { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
@@ -277,7 +277,7 @@ const slides = [
         reviewData: {
             rating: 4.8,
             maxRating: 5,
-            text: 'I feel confident sending money here!',
+            text: 'I feel confident sending Saath here!',
         },
         activities: [
             {
@@ -315,7 +315,7 @@ const slides = [
 
         cta: {
             title: 'Cash ka tension gaya, swipe ka fashion aaya',
-            description: 'Your money is protected with industry-standard security measures.',
+            description: 'Your Saath is protected with industry-standard security measures.',
         },
         reviewers: [
             { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
@@ -326,7 +326,7 @@ const slides = [
         reviewData: {
             rating: 4.8,
             maxRating: 5,
-            text: 'I feel confident sending money here!',
+            text: 'I feel confident sending Saath here!',
         },
         activities: [
             {
@@ -363,7 +363,7 @@ const slides = [
     //     position: "top-10 md:top-0",
     //     cta: {
     //         title: 'Book karo bina wait, enjoy karo har date',
-    //         description: 'Your money is protected with industry-standard security measures.',
+    //         description: 'Your Saath is protected with industry-standard security measures.',
     //     },
     //     reviewers: [
     //         { id: 3, name: 'Jane Smith', imageUrl: '/banner/bt1.jpg' },
