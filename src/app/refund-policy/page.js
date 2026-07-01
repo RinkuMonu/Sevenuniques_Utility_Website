@@ -182,7 +182,7 @@ const refundSections = [
 
     "\nEmail Addresses: support@finuniques.in\nsupport@finuniques.in",
 
-    "\nPhone: 0141-4511098",
+    "\nPhone: 9251582693",
 
     "Customers are requested to provide complete details when contacting support, including Transaction ID, registered mobile number, service type, and date of transaction, to ensure timely processing of queries or refund requests.",
 

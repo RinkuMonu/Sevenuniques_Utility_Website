@@ -380,14 +380,14 @@ function Contact() {
                     </a>
                   </p>
 
-                  <p className="text-gray-500 text-sm">
+                  {/* <p className="text-gray-500 text-sm">
                     <a
                       href="mailto:support@finuniques.in"
                       className="hover:underline"
                     >
                       support@finuniques.in
                     </a>
-                  </p>
+                  </p> */}
                 </div>
               </li>
 
@@ -399,7 +399,7 @@ function Contact() {
                   <p className="font-bold text-lg">Call us</p>
                   <p className="text-gray-500 text-sm">
                     <a href="tel:01414511098" className="hover:underline">
-                      0141-4511098
+                      9251582693
                     </a>
                   </p>
                 </div>
@@ -429,12 +429,12 @@ function Contact() {
                     Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura, Jaipur,
                     Rajasthan, India, 302017
                   </p>
-                  <p className="text-gray-500 text-sm">
+                  {/* <p className="text-gray-500 text-sm">
                     <span className="font-bold">Corporate Office:</span>Office
                     No. 101/2, Vakratunda Corporate Park Premises Co-operative
                     Society Limited, Off Aarey Road, Goregaon (East), Mumbai –
                     400 063
-                  </p>
+                  </p> */}
                 </div>
               </li>
             </ul>

@@ -130,7 +130,7 @@ const chargeSections = [
       <>
         Before initiating a chargeback, users must:
         <ul className="list-disc list-inside mt-2 space-y-1">
-          <li>Contact Finunique Support at <strong>support@finuniques.in</strong> or <strong>0141-4511098</strong> to resolve the issue directly.</li>
+          <li>Contact Finunique Support at <strong>support@finuniques.in</strong> or <strong>9251582693</strong> to resolve the issue directly.</li>
           <li>Provide complete information including Transaction ID, registered mobile number, service type, date, and description of the issue.</li>
           <li>Allow adequate time for the company to investigate and resolve the issue.</li>
           <li>Act in good faith; malicious or false claims may lead to account suspension, flagging, or legal action.</li>
@@ -271,7 +271,7 @@ const chargeSections = [
         Users can contact support:
         <ul className="list-disc list-inside mt-2 space-y-1">
           <li>Email: support@finuniques.in</li>
-          <li>Phone: 0141-4511098 (Mon–Sat, 10:00 AM–6:30 PM IST)</li>
+          <li>Phone: 9251582693 (Mon–Sat, 10:00 AM–6:30 PM IST)</li>
           <li>Include Transaction ID, registered mobile number, service type, and issue description for faster resolution.</li>
         </ul>
       </>
@@ -423,7 +423,7 @@ export default function ChargebackPolicy() {
                           <span className="font-bold">Finunique Small Private Limited </span><br />
 <span className="font-bold"> Website:</span> www.finuniques.in<br />
  <span className="font-bold">Email:</span> support@finuniques.in<br />
-  <span className="font-bold">Phone:</span> 0141-4511098<br />
+  <span className="font-bold">Phone:</span> 9251582693<br />
    <span className="font-bold">Effective Date:</span> 03 June 2025
 
                         </p>

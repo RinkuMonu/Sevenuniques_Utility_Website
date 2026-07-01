@@ -19,7 +19,7 @@ export default function Guidelines() {
     },
     {
       title: "Contact Us",
-      desc: `For support, reach out to Finunique Small Private Limited at our head office located at Plot No. 97, Dakshinpuri-I, Shrikishan, Sanganer, Jagatpura, Jaipur, Rajasthan – 302017. You may email support@finuniques.in or support@finuniques.in, or call 0141-4511098 for dependable online PAN services.`
+      desc: `For support, reach out to Finunique Small Private Limited at our head office located at Plot No. 97, Dakshinpuri-I, Shrikishan, Sanganer, Jagatpura, Jaipur, Rajasthan – 302017. You may email support@finuniques.in or support@finuniques.in, or call 9251582693 for dependable online PAN services.`
     },
   ];
 

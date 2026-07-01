@@ -4,7 +4,7 @@ import React from "react";
 
 const logos = [
   { src: "/bank/instantpay.png", width: 120, height: 60 },
-  { src: "/bank/nsdl.png", width: 150, height: 70 },
+  // { src: "/bank/nsdl.png", width: 150, height: 70 },
   { src: "/bank/paysprint.png", width: 100, height: 50 },
   { src: "/bank/irctc.png", width: 70, height: 60 },
   { src: "/bank/ISERVEU-MAIN-LOGO.png", width: 150, height: 70 },

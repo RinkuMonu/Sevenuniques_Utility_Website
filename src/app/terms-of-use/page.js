@@ -488,7 +488,7 @@ const termsSections = [
       "Grievance Officer\nFinunique Small Private Limited",
       "Plot No. 97, Dakshinpuri-I, Shrikishanpura, Sanganer, Jagatpura, Jaipur – 302017, Rajasthan",
       "Email: support@finuniques.in",
-      "Phone: 0141-4511098",
+      "Phone: 9251582693",
 
       "The Grievance Officer shall acknowledge and address complaints within the timelines prescribed under applicable law."
     ]
