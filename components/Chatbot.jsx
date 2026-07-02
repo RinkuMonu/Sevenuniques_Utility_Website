@@ -261,7 +261,7 @@ export default function Chatbot() {
       <button
         onClick={() => setIsOpen((v) => !v)}
         aria-label={isOpen ? "Close chat" : "Open chat"}
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#3730A3] to-[#1E1B4B] text-white shadow-[0_8px_24px_rgba(30,27,75,0.45)] transition-all hover:scale-105 hover:shadow-[0_10px_28px_rgba(30,27,75,0.55)] focus:outline-none focus-visible:ring-4 focus-visible:ring-[#F59E0B]/40"
+        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#0C3D4C] text-white shadow-[0_8px_24px_rgba(30,27,75,0.45)] transition-all hover:scale-105 hover:shadow-[0_10px_28px_rgba(30,27,75,0.55)] focus:outline-none focus-visible:ring-4 focus-visible:ring-[#F59E0B]/40"
       >
         {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
       </button>
@@ -270,7 +270,7 @@ export default function Chatbot() {
       {isOpen && (
         <div className="fixed bottom-24 right-6 z-50 flex h-[560px] w-[380px] max-w-[calc(100vw-2rem)] flex-col overflow-hidden rounded-3xl bg-[#FAFAF8] shadow-[0_20px_60px_rgba(30,27,75,0.25)] ring-1 ring-black/5">
           {/* Header */}
-          <div className="relative overflow-hidden bg-gradient-to-br from-[#3730A3] via-[#4338CA] to-[#312E81] px-4 py-4 text-white">
+          <div className="relative overflow-hidden bg-[#0C3D4C] px-4 py-4 text-white">
             {/* subtle decorative dot-grid accent */}
             <div
               className="pointer-events-none absolute -right-6 -top-6 h-28 w-28 opacity-[0.15]"
@@ -349,7 +349,7 @@ export default function Chatbot() {
                 <div
                   className={`max-w-[80%] whitespace-pre-wrap rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
                     m.role === "user"
-                      ? "rounded-br-md bg-gradient-to-br from-[#4338CA] to-[#3730A3] text-white shadow-sm"
+                      ? "rounded-br-md bg-[#0C3D4C] text-white shadow-sm"
                       : "rounded-bl-md border border-black/5 bg-white text-gray-800 shadow-sm"
                   }`}
                 >
