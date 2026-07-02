@@ -4,8 +4,8 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import PreFooterSection from "../../components/Prefooter";
 import HomeQRBanner from "../../components/HomeQRSection";
-import SEO from "../../components/SEO/SEO"; 
-
+import SEO from "../../components/SEO/SEO";
+import Chatbot from "../../components/Chatbot"; // 👈 added
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,13 +17,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// export const metadata = {
-//   title:
-//     "Finunique Bill Payment, Recharge, Insurance, Booking, Credit Card, pancard, Loan",
-//   description:
-//     "Finunique Bill Payment, Recharge, Insurance, Booking, Credit Card, pancard, Loan",
-// };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -32,7 +25,7 @@ export default function RootLayout({ children }) {
           name="p:domain_verify"
           content="af39ba6ce6e91e27bb91d26563303735"
         />
-        
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -60,7 +53,7 @@ export default function RootLayout({ children }) {
 
         <link rel="icon" href="/image/app_icon.png" />
 
-        {/* Google Tag Manager */} 
+        {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -74,8 +67,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </head>
 
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        
-        {/* ⭐ SEO component yahi lagana hai */}
         <SEO />
 
         {/* Google Tag Manager (noscript) */}
@@ -92,7 +83,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {children}
         <HomeQRBanner />
         <PreFooterSection />
-        {/* <ChatSection /> */}
+        <Chatbot /> {/* 👈 added — renders the floating chat button on every page */}
         <Footer />
       </body>
     </html>
