@@ -136,7 +136,7 @@ function page() {
     
       <Aepstransaction />
       <ContactBanner />
-      <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
+      <FAQ faqs={faqs} subheading="Find answers to common questions about AePS services, transactions and support." />
 
     </>
   )

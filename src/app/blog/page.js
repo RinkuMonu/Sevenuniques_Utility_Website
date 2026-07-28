@@ -1,115 +1,104 @@
-"use client"
-import React from 'react'
-import ServiceBanner from '../../../components/ServiceBanner'
-import Image from 'next/image';
-import PartnersSection from '../../../components/PartnersSection';
-import TestimonialSlider from '../../../components/TestimonialSlider';
-import ContactBanner from '../../../components/ContactBanner';
-import BlogC from '../../../components/BlogC';
-import ServicesSection3 from '../../../components/ServicesSection3';
-import FAQ from '../../../components/Bike Insurance/FAQ';
+import Image from "next/image";
+import Link from "next/link";
+import {
+  ArrowRight,
+  BookOpen,
+  CreditCard,
+  Lightbulb,
+  ReceiptText,
+  ShieldCheck,
+  Smartphone,
+} from "lucide-react";
+import BlogC from "../../../components/BlogC";
+import FAQ from "../../../components/Bike Insurance/FAQ";
+import ContactBanner from "../../../components/ContactBanner";
+import ScrollReveal from "../../../components/ScrollReveal";
 
-function page() {
-    const data = {
-        id: 1,
-        subheading: 'Blog',
-        heading: 'Jaankaari jo banaye, Aapko Smart',
-        description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable service.',
-        bgImage: '/blog/blogbg.png',
-          centerImage: '/blog/blog2.png',
-    }
-    const LetterCircle = ({ letter, index }) => (
-        <div className="flex  items-center justify-center rounded-full  lg:p-1 lg:h-12 lg:w-12" key={index}>
-            <div className="flex h-full w-full items-center justify-center">
-                <span className="allerta-stencil-regular md:text-4xl font-medium lg:text-8xl text-white">
-                    {letter}
-                </span>
+export const metadata = {
+  title: "Finunique Blog | Payment Guides & Financial Insights",
+  description:
+    "Read practical Finunique guides about digital payments, utility bills, recharges, financial awareness and safer everyday transactions.",
+};
+
+const topics = [
+  { icon: Smartphone, label: "Recharge Guides" },
+  { icon: ReceiptText, label: "Bill Payments" },
+  { icon: CreditCard, label: "Financial Awareness" },
+  { icon: ShieldCheck, label: "Payment Safety" },
+];
+
+const faqData = [
+  {
+    question: "What topics does the Finunique blog cover?",
+    answer: "The blog covers digital payments, recharges, utility bills, financial awareness, payment safety and updates about supported Finunique services.",
+  },
+  {
+    question: "How can I find a specific article?",
+    answer: "Use the search box, category filter or publication-date filter in the article section.",
+  },
+  {
+    question: "How often are new articles published?",
+    answer: "New articles are published when we have useful guidance, service information or important updates to share.",
+  },
+  {
+    question: "Can I get help with a Finunique service here?",
+    answer: "Articles provide general guidance. For assistance with your account or a transaction, please use the Contact Us page.",
+  },
+];
+
+export default function BlogPage() {
+  return (
+    <main className="overflow-hidden bg-white">
+      <section className="relative bg-[#edf8fa] px-5 py-14 sm:px-8 lg:py-20">
+        <div className="pointer-events-none absolute top-8 -left-24 h-64 w-64 rounded-full bg-[#00a8e8]/8 blur-3xl" />
+        <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2">
+          <ScrollReveal direction="left">
+            <span className="inline-flex items-center gap-2 rounded-full border border-[#b9dfe7] bg-white px-4 py-2 text-xs font-extrabold tracking-widest text-[#026381] uppercase">
+              <BookOpen size={15} /> Finunique Blog
+            </span>
+            <h1 className="mt-6 max-w-3xl text-4xl leading-tight font-extrabold tracking-tight text-[#0C3D4C] sm:text-5xl lg:text-6xl">
+              Clear answers for smarter financial decisions.
+            </h1>
+            <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
+              Practical guides and useful information about payments, recharges, bills and everyday digital finance—written to help you understand what to do next.
+            </p>
+            <Link href="#blog-articles" className="mt-8 inline-flex items-center gap-2 rounded-xl bg-[#026381] px-6 py-3.5 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-[#0C3D4C]">
+              Browse Articles <ArrowRight size={17} />
+            </Link>
+          </ScrollReveal>
+          <ScrollReveal direction="right" delay={0.12} className="relative mx-auto h-80 w-full max-w-xl sm:h-105">
+            <div className="absolute inset-6 rounded-4xl bg-white/75 shadow-xl" />
+            <Image src="/blog/blog2.png" alt="Finunique financial learning and blog illustration" fill priority className="relative object-contain p-5" />
+            <div className="absolute bottom-5 left-4 rounded-xl border border-white bg-white/95 px-5 py-4 shadow-lg backdrop-blur sm:left-8">
+              <div className="flex items-center gap-3">
+                <span className="grid h-9 w-9 place-items-center rounded-lg bg-[#e8f6f8] text-[#0289ad]"><Lightbulb size={18} /></span>
+                <div><p className="text-sm font-extrabold text-[#0C3D4C]">Learn with confidence</p><p className="mt-0.5 text-xs text-slate-500">Simple language. Useful guidance.</p></div>
+              </div>
             </div>
+          </ScrollReveal>
         </div>
-    ); 
-    const aepsData = {
-        subheading: 'BLOG',
-        heading: 'Ideas Ki Duniya, Blog Pe Sabka Saath',
-        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et  ducimus odio dignissimos At vero eos et accusamus et ',
-        features: [
-            'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
-            'At vero eos et accusamus et iusto odio dignissimos ducimus odio dignissimos At vero eos et accusamus et At vero eos et accusamus et iusto odio dignissimos ',
-        ]
-    };
+      </section>
 
-    const faqData = [
-    {
-      question: "What is BBPS?",
-      answer: "BBPS is a secure bill payment system by NPCI that lets you pay all types of bills through banks, apps, and agent outlets.",
-    },
-    {
-      question: "How do I know if my biller is available?",
-      answer: "Supported billers appear in the list while selecting a biller. Most utilities, telecom, DTH, broadband, and loan billers are already covered.",
-    },
-    {
-      question: "Is paying bills online safe?",
-      answer: "Yes. BBPS uses NPCI-backed secure systems and provides instant digital receipts for every payment.",
-    },
-    {
-      question: "What if my payment fails?",
-      answer: "You’ll see the payment status instantly. If needed, refunds or reversals are processed as per BBPS guidelines.",
-    },
-    {
-      question: "How do I get a receipt?",
-      answer: "A digital receipt with a unique transaction ID is generated instantly and can be viewed anytime in payment history.",
-    },
-    {
-      question: "Where can I use BBPS?",
-      answer: "You can pay bills via BBPS using banks, authorized agents, and popular payment apps.",
-    },
-  ];
+      <section className="border-b border-[#e0edef] px-5 py-8 sm:px-8">
+        <div className="mx-auto grid max-w-7xl gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {topics.map(({ icon: Icon, label }, index) => (
+            <ScrollReveal key={label} delay={index * 0.07}>
+              <a href="#blog-articles" className="flex items-center gap-3 rounded-xl border border-[#dcebed] bg-white px-4 py-3.5 text-sm font-bold text-[#315a67] transition hover:-translate-y-0.5 hover:border-[#9ed3de] hover:text-[#026381]">
+                <span className="grid h-9 w-9 place-items-center rounded-lg bg-[#eaf7f9] text-[#0289ad]"><Icon size={18} /></span>
+                {label}
+              </a>
+            </ScrollReveal>
+          ))}
+        </div>
+      </section>
 
-    const text = "Blog";
-    return (
-        <>
-            <ServiceBanner data={data} />
-            <section>
-                <div className={`relative py-5 lg:pb-0 lg:pt-20 overflow-y-visible`} style={{ backgroundColor: "#0188D5" }}>
-                    <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
-                        <div className="grid grid-cols-1 md:grid-cols-2 ">
-                            <div className="relative ">
-                                <div className="flex flex-wrap gap-6">
-                                    {text.split(" ").map((word, wordIndex) => (
-                                        <div key={wordIndex} className="flex space-x-1">
-                                            {word.split("").map((char, index) => (
-                                                <LetterCircle key={index} letter={char} />
-                                            ))}
-                                        </div>
-                                    ))}
-                                </div>
+      <section id="blog-articles" className="scroll-mt-20 bg-[#f7fafb]">
+        <BlogC />
+      </section>
 
-                            </div>
+      <FAQ faqs={faqData} subheading="Quick answers about Finunique articles and service guidance." />
 
-                            <div className="hidden md:block  h-[200px] mt-10 md:mt-0 ">
-                                <div className=" lg:absolute bottom-0 right-0 lg:w-[700px] lg:h-[500px] z-20  " style={{ "overflow": "hidden" }}>
-                                    <Image
-                                        src={"/blog/blog1.png"}
-                                        alt="loan-section"
-                                        fill
-                                        className=" lg:right-0"
-                                        style={{ objectPosition: 'right' }}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <ServicesSection3 data={aepsData} />
-
-            <BlogC />
-             <FAQ faqs={faqData} subheading={" Find answers to common questions about bike insurance. Can&'t find what you're looking for? Contact our support team."} />
-
-            <PartnersSection />
-            <TestimonialSlider />
-            <ContactBanner />
-        </>
-    )
+      <ContactBanner />
+    </main>
+  );
 }
-
-export default page

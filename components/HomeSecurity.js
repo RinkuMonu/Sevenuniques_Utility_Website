@@ -23,7 +23,7 @@ function HomeSecurity() {
                             </p>
                         </div>
                         <div className="mb-12">
-                            <Link href="https://utility.Finuniques.in/register" className=" text-gray-200 rounded-full border-4 font-bold py-3 px-8  transition-colors duration-300 "
+                            <Link href="/signup" className=" text-gray-200 rounded-full border-4 font-bold py-3 px-8  transition-colors duration-300 "
                                 >
                                 Register now
                             </Link>

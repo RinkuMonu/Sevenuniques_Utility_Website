@@ -1,96 +1,159 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
-import { Gift, Wallet, Trophy, ChevronDown } from "lucide-react";
 import Link from "next/link";
+import {
+  ArrowRight,
+  BadgeIndianRupee,
+  CheckCircle2,
+  Gift,
+  Trophy,
+  Wallet,
+} from "lucide-react";
+
+const creditFeatures = [
+  { icon: Gift, title: "Live score", text: "View your latest report" },
+  { icon: Wallet, title: "Track loans", text: "Monitor active EMIs" },
+  { icon: Trophy, title: "Better offers", text: "Deals matched to you" },
+];
+
+const loanDetails = ["Loan amount", "Interest rate", "Tenure"];
 
 export default function HomeCreditScoreSection() {
   return (
-    <section className="bg-white py-10 sm:py-14 lg:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-        <div className="rounded-2xl bg-[#e6f6ff] shadow-sm p-4 sm:p-6 lg:p-10">
+    <section className="bg-[#f4f7fb] py-10 sm:py-14 lg:py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+        <div className="grid items-stretch gap-6 lg:grid-cols-2">
+          <article className="relative flex min-h-[440px] flex-col overflow-hidden rounded-[28px] border border-[#d8edf6] bg-gradient-to-br from-[#eefaff] via-[#e6f6ff] to-[#d9effa] p-6 shadow-[0_14px_35px_rgba(12,61,76,0.08)] sm:p-8">
+            <div className="absolute -right-24 -top-24 h-64 w-64 rounded-full bg-white/45" />
 
-          <div className="grid items-center gap-8 lg:grid-cols-12">
+            <div className="relative z-10 flex items-start justify-between gap-4">
+              <div>
+                <span className="inline-flex items-center gap-2 rounded-full bg-white/75 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.14em] text-[#026381] ring-1 ring-[#c9e8f2]">
+                  <CheckCircle2 size={14} /> Financial Health
+                </span>
+                <h2 className="mt-4 text-2xl font-extrabold tracking-tight text-[#0C3D4C] sm:text-[30px]">
+                  Know your Credit Score
+                </h2>
+                <p className="mt-2 max-w-md text-sm leading-6 text-slate-600 sm:text-base">
+                  Stay informed, understand your credit health, and discover offers suited to you.
+                </p>
+              </div>
 
-            {/* Left Image Card */}
-            <div className="lg:col-span-4 flex justify-center">
-              <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md overflow-hidden rounded-2xl bg-gradient-to-br from-purple-700 to-[#b7dffc] p-4 sm:p-6 text-white shadow-sm">
+              <span className="hidden h-12 w-12 shrink-0 place-items-center rounded-2xl bg-white shadow-sm sm:grid">
+                <Image
+                  src="/image/creditscoreimg2.png"
+                  alt="Credit score"
+                  width={28}
+                  height={28}
+                />
+              </span>
+            </div>
+
+            <div className="relative z-10 mt-7 grid flex-1 items-center gap-6 sm:grid-cols-[160px_1fr]">
+              <div className="relative mx-auto w-full max-w-[180px] overflow-hidden rounded-2xl bg-gradient-to-br from-[#5735a5] to-[#8fbbec] p-3 shadow-[0_12px_25px_rgba(70,61,145,0.2)]">
                 <Image
                   src="/image/ccs2.png"
-                  alt="Credit Score Preview"
-                  width={420}
-                  height={420}
-                  className="w-full h-auto object-contain"
+                  alt="Credit score preview"
+                  width={220}
+                  height={220}
+                  className="h-auto w-full object-contain"
                 />
-                <div className="pointer-events-none absolute -right-10 top-1/2 h-40 w-40 -translate-y-1/2 rounded-full bg-white/20" />
+              </div>
+
+              <div className="space-y-3">
+                {creditFeatures.map(({ icon: Icon, title, text }) => (
+                  <div key={title} className="flex items-center gap-3 rounded-xl bg-white/70 p-3 ring-1 ring-white">
+                    <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[#e7f5fa] text-[#026381]">
+                      <Icon size={19} />
+                    </span>
+                    <div>
+                      <p className="text-sm font-bold text-[#173f4b]">{title}</p>
+                      <p className="text-xs text-slate-500">{text}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
 
-            {/* Right Content */}
-            <div className="lg:col-span-8">
+            <div className="relative z-10 mt-7 flex flex-wrap items-center gap-3">
+              <Link
+                href="https://play.google.com/store/apps/details?id=com.utility.finunique"
+                className="inline-flex items-center gap-2 rounded-xl bg-[#0C3D4C] px-5 py-3 text-sm font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#026381]"
+              >
+                Check on App <ArrowRight size={17} />
+              </Link>
+              <Link
+                href="/free-credit-score"
+                className="rounded-xl px-4 py-3 text-sm font-bold text-[#026381] transition-colors hover:bg-white/70"
+              >
+                Learn more
+              </Link>
+            </div>
+          </article>
 
-              {/* Title + Button */}
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold flex items-center gap-3 text-slate-900">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-orange-50 ring-1 ring-orange-100">
-                    <Image
-                      src="/image/creditscoreimg2.png"
-                      alt="Credit score"
-                      width={24}
-                      height={24}
-                      className="h-6 w-6 object-contain"
-                    />
-                  </span>
-                  Credit Score
-                </h3>
+          <article className="relative flex min-h-[440px] flex-col overflow-hidden rounded-[28px] border border-[#ccebe5] bg-gradient-to-br from-[#f0fbf8] via-[#e3f7f3] to-[#d5f0eb] p-6 text-[#0C3D4C] shadow-[0_14px_35px_rgba(12,61,76,0.08)] sm:p-8">
+            <div className="absolute -bottom-28 -right-20 h-72 w-72 rounded-full border-[45px] border-white/35" />
+            <div className="absolute right-12 top-12 h-20 w-20 rounded-full bg-[#58d7ed]/20 blur-xl" />
 
-                <Link
-                  href="https://play.google.com/store/apps/details?id=com.utility.finunique"
-                  className="inline-flex justify-center rounded-lg bg-[#1e5674] px-5 py-2.5 text-sm sm:text-base font-semibold text-white shadow-sm transition hover:bg-[#338cbd]"
-                >
-                  Download App
-                </Link>
+            <div className="relative z-10 flex items-start justify-between gap-4">
+              <div>
+                <span className="inline-flex items-center gap-2 rounded-full bg-white/75 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.14em] text-[#027569] ring-1 ring-[#b9e3db]">
+                  <BadgeIndianRupee size={14} /> Smart Borrowing
+                </span>
+                <h2 className="mt-4 text-2xl font-extrabold tracking-tight sm:text-[30px]">
+                  Loan EMI Calculator
+                </h2>
+                <p className="mt-2 max-w-md text-sm leading-6 text-slate-600 sm:text-base">
+                  Calculate your monthly loan instalment and plan repayments with confidence.
+                </p>
               </div>
 
-              {/* Subtitle */}
-              <p className="mt-3 text-sm sm:text-base text-slate-600">
-                Stay on top of your credit health instantly
+              <div className="hidden h-16 w-16 shrink-0 overflow-hidden rounded-2xl shadow-md ring-1 ring-white/70 sm:block">
+                <Image
+                  src="/image/loan-img.png"
+                  alt="Loan EMI calculator"
+                  width={64}
+                  height={64}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="relative z-10 my-8 rounded-2xl border border-white bg-white/70 p-5 shadow-sm">
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-[#027569]">Plan your repayment</p>
+                  <p className="mt-1 text-2xl font-extrabold">Estimate your monthly EMI</p>
+                </div>
+                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-[#c7eee7] text-[#027569]">
+                  <BadgeIndianRupee size={24} />
+                </span>
+              </div>
+
+              <div className="mt-5 grid grid-cols-3 gap-2">
+                {loanDetails.map((detail) => (
+                  <div key={detail} className="rounded-xl bg-[#e6f6f2] px-2 py-3 text-center text-[11px] font-semibold text-[#245b55] sm:text-xs">
+                    {detail}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative z-10 mt-auto flex flex-wrap items-center justify-between gap-4">
+              <p className="flex items-center gap-2 text-sm font-semibold text-slate-600">
+                <CheckCircle2 size={17} className="text-[#027569]" /> Instant repayment estimate
               </p>
-
-              {/* Info Items */}
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                <InfoItem icon={Gift} label="See your score" value="Live score & report" />
-                <InfoItem icon={Wallet} label="Track loans" value="Active loans & EMIs" />
-                <InfoItem icon={Trophy} label="Get better deals" value="Offers matched to you" />
-              </div>
+              <Link
+                href="/loan-emi"
+                className="inline-flex items-center gap-2 rounded-xl bg-[#0C3D4C] px-5 py-3 text-sm font-bold text-white shadow-sm transition-all hover:-translate-y-0.5 hover:bg-[#027569]"
+              >
+                Calculate EMI <ArrowRight size={17} />
+              </Link>
             </div>
-          </div>
-
-          {/* More details */}
-          <div className="mt-6 text-center">
-            <Link
-              href="/free-credit-score"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-[#1e5674] hover:text-[#439ecf]"
-            >
-              More details <ChevronDown className="h-4 w-4" />
-            </Link>
-          </div>
-
+          </article>
         </div>
       </div>
     </section>
   );
 }
-
-const InfoItem = ({ icon: Icon, label, value }) => (
-  <div className="flex items-center gap-4 rounded-xl bg-white/60 p-4 shadow-sm">
-    <div className="flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-xl bg-slate-50 text-slate-700">
-      <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
-    </div>
-    <div>
-      <p className="text-sm sm:text-base text-slate-600">{label}</p>
-      <p className="text-sm sm:text-base font-semibold text-gray-500">{value}</p>
-    </div>
-  </div>
-);

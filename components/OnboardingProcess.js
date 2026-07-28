@@ -40,38 +40,38 @@ const processSteps = [
 ];
 
 const ProcessStepCard = ({ step, title, description, eta }) => (
-  <div className=" border border-[#018AD7] rounded-2xl p-6 flex flex-col h-full shadow-sm hover:shadow-lg transition-shadow duration-300">
-    <div className="bg-[#018EDE] text-white w-12 h-12 flex items-center justify-center rounded-xl mb-5 font-bold text-2xl">
+  <div className="flex h-full flex-col rounded-2xl border border-[#d7e9ed] bg-[#f7fbfc] p-6 transition hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(12,61,76,0.1)]">
+    <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#026381] text-xl font-extrabold text-white">
       {step}
     </div>
     <div className="flex-grow">
-      <h3 className="text-lg font-bold text-[#24576C]">{title}</h3>
-      <p className="mt-2 text-[#24576C] text-sm">{description}</p>
+      <h3 className="text-lg font-extrabold text-[#0C3D4C]">{title}</h3>
+      <p className="mt-2 text-sm leading-6 text-slate-600">{description}</p>
     </div>
-    <p className="mt-4 text-[#24576C] text-sm font-medium">(ETA:- {eta})</p>
+    <p className="mt-5 w-fit rounded-full bg-[#e1f3f6] px-3 py-1.5 text-xs font-bold text-[#027f9f]">Estimated time: {eta}</p>
   </div>
 );
 
 const OnboardingProcess = () => {
   return (
-    <div className=" flex items-center justify-center pt-16 py-30 px-4 lg:px-0">
-      <div className="w-full max-w-6xl mx-auto">
-        <div className="mb-12 text-left">
-          <h2 className="text-2xl md:text-4xl font-bold text-[#0C3D4C]">
-            Easy Onboarding,
-            <br />
-            Fast Launch!
+    <div className="flex items-center justify-center py-14 lg:py-20">
+      <div className="mx-auto w-full max-w-7xl">
+        <div className="mx-auto mb-10 max-w-3xl text-center">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#0289ad]">Partner Onboarding</p>
+          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-[#0C3D4C] sm:text-4xl">
+            A clear path from agreement to service launch
           </h2>
+          <p className="mt-3 text-base leading-7 text-slate-600">Follow a structured onboarding process designed for smooth integration and activation.</p>
         </div>
         
         {/* Using a more robust grid layout that handles wrapping and centering */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
             {processSteps.slice(0, 3).map((item) => (
                 <ProcessStepCard key={item.step} {...item} />
             ))}
         </div>
-        <div className="mt-8 flex justify-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full md:w-auto lg:max-w-[67%]">
+        <div className="mt-5 flex justify-center">
+            <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:max-w-[67%]">
                 {processSteps.slice(3, 5).map((item) => (
                     <ProcessStepCard key={item.step} {...item} />
                 ))}

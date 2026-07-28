@@ -237,7 +237,7 @@ function page() {
         </div>
       </section>
       <WhyMicroATM />
-      <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
+      <FAQ faqs={faqs} subheading="Find answers to common questions about micro-ATM services, transactions and support." />
     </>
   )
 }

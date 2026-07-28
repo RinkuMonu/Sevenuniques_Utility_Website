@@ -86,7 +86,7 @@ const page = () => {
          You can now apply online and get your new pancard at your doorstep in just a matter of time and safely.
           </p>
           <Link
-            href="https://utility.finuniques.in/register"
+            href="/signup"
             className="inline-block bg-[#206077] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#4788a0] transition"
           >
             Register

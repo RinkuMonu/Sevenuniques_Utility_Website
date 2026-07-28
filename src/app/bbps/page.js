@@ -6,6 +6,7 @@ import HowItWorks from '../../../components/bbps/HowItWorks'
 import BBPSFeatures from '../../../components/bbps/BBPSFeatures'
 import FAQ from '../../../components/Bike Insurance/FAQ'
 import AllServices from '../../../components/bbps/AllServices'
+import ContactBanner from '../../../components/ContactBanner'
 
 function page() {
 
@@ -22,9 +23,9 @@ function page() {
   const data =
   {
     id: 1,
-    subheading: 'BBPS',
-    heading: 'Easy Pay, Happy Day',
-    description: 'Make all your payments hassle-free using the integrated bill payment system in India. Safe, quick, and hassle-free.',
+    subheading: 'BHARAT BILL PAYMENT SYSTEM',
+    heading: 'Pay Everyday Bills with Greater Convenience',
+    description: 'Explore a unified bill-payment experience for eligible utility and recurring bills through supported payment channels.',
     bgImage: '/bbps/bbpsbg.png',
     centerImage: '/bbps/billpayment.png',
   }
@@ -78,11 +79,11 @@ function page() {
                   {data.description}
                 </p>
                 <Link
-                  href="https://utility.Finuniques.in/register"
+                  href="/service-payment/electricity"
                   className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]"
                 >
                   <span className="block px-8 py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#0d2f4d]">
-                    Register now
+                    Pay a Bill
                   </span>
                 </Link>
 
@@ -135,9 +136,10 @@ function page() {
       </div>
       <WhatIsBBPS />
       <AllServices />
-      <div className='container lg:px-18'>
-        <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
+      <div className="w-full bg-[#f3f9fb]">
+        <FAQ faqs={faqs} subheading="Find answers to common questions about BBPS bill payments and support." />
       </div>
+      <ContactBanner />
     </>
   )
 }

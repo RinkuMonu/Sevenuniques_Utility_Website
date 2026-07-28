@@ -12,6 +12,7 @@ import TestimonialSlider from '../../../components/TestimonialSlider';
 import ContactBanner from '../../../components/ContactBanner';
 import BookingServicesSection from '../../../components/BookingServices';
 import FAQ from '../../../components/Bike Insurance/FAQ';
+import { BusFront, Hotel, Plane, TrainFront } from 'lucide-react';
 
 function Page() {
 
@@ -308,28 +309,28 @@ function Page() {
 
     // Static top-section data
     const data = {
-        subheading: 'TICKET BOOKING',
-        heading: 'Safar Ki Baat, Booking Ki Saat',
-        description: 'Easily book flights, hotels, trains, and buses all in one place. Travel hassle-free, plan smart, and enjoy every step of your adventure.',
+        subheading: 'TRAVEL & BOOKING',
+        heading: 'Plan Every Journey in One Place',
+        description: 'Explore convenient options for flights, hotels, trains, and buses with a simple booking experience and dependable assistance.',
         bgImage: '/booking/bookingbg.png',
         centerImage: '/booking/book1.png',
     };
     const faqs = [
         {
           question: "What can I book on Finunique?",
-          answer: "You can book flights, trains, buses, and hotels online easily.",
+          answer: "You can explore booking options for flights, trains, buses, and hotels.",
         },
         {
           question: "How do I make a booking?",
-          answer: "Search your travel options, select the best choice, and complete the booking with secure payment.",
+          answer: "Select a travel category, review the available choices, and continue to the booking platform to complete your reservation.",
         },
         {
           question: "Is the booking process secure?",
-          answer: "Yes, all bookings use safe and secure online payment methods.",
+          answer: "Payments are completed through the booking platform's available payment methods and security process.",
         },
         {
           question: "Will I get instant confirmation?",
-          answer: "Yes, once booked, your ticket or reservation is confirmed quickly.",
+          answer: "Confirmation timing depends on the travel provider and selected booking option.",
         },
         {
           question: "Can I cancel or change my booking?",
@@ -337,7 +338,7 @@ function Page() {
         },
         {
           question: "What support is available if I face issues?",
-          answer: "You can contact our 24/7 support team for any booking help.",
+          answer: "Our support team is available Monday to Saturday, 9:30 AM to 6:30 PM.",
         },
       ];
     return (
@@ -364,9 +365,9 @@ function Page() {
                                 <p className="text-sm font-bold uppercase tracking-widest text-[#0C3D4C]">{data?.subheading}</p>
                                 <h2 className="mt-2 text-4xl md:text-5xl font-bold text-[#0C3D4C] leading-tight">{data.heading}</h2>
                                 <p className="mt-4 my-8 text-base text-[#5D5D5D] max-w-md">{data.description}</p>
-                                <Link href="https://utility.Finuniques.in/register" className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]">
+                                <Link href="/login" className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]">
                                     <span className="block px-8 py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#0d2f4d]">
-                                        Register now
+                                        Start Booking
                                     </span>
                                 </Link>
                             </div>
@@ -398,7 +399,30 @@ function Page() {
                     </div>
                 </div>
             </section>
-<ServicesSection3 data={activeData?.data.aeps} />
+{/* <ServicesSection3 data={activeData?.data.aeps} /> */}
+            <section className="bg-white px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+                <div className="mx-auto max-w-7xl">
+                    <div className="mx-auto max-w-3xl text-center">
+                        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#0289ad]">Travel With Finunique</p>
+                        <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-[#0C3D4C] sm:text-4xl">Everything you need to plan your trip</h2>
+                        <p className="mt-3 text-base leading-7 text-slate-600">Choose a travel category, review available options, and continue to the booking platform when you are ready.</p>
+                    </div>
+                    <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                        {[
+                            { icon: Plane, title: "Flights", text: "Explore domestic and international flight options.", href: "/service-payment/flight-booking" },
+                            { icon: Hotel, title: "Hotels", text: "Find stays across different destinations and budgets.", href: "/service-payment/hotel-booking" },
+                            { icon: TrainFront, title: "Trains", text: "Review routes and train travel information.", href: "/service-payment/train-booking" },
+                            { icon: BusFront, title: "Buses", text: "Explore operators, routes, timings, and seats.", href: "/service-payment/bus-booking" },
+                        ].map(({ icon: Icon, title, text, href }) => (
+                            <Link key={title} href={href} className="group rounded-2xl border border-[#d7e9ed] bg-[#f7fbfc] p-6 transition hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(12,61,76,0.1)]">
+                                <span className="grid h-12 w-12 place-items-center rounded-xl bg-[#dff3f7] text-[#027f9f]"><Icon size={23} /></span>
+                                <h3 className="mt-5 text-lg font-extrabold text-[#0C3D4C]">{title}</h3>
+                                <p className="mt-2 text-sm leading-6 text-slate-600">{text}</p>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section>
   {/* Tabs Section */}
             <section className="">
                 <div className="">
@@ -498,8 +522,8 @@ function Page() {
 
             <PartnersSection />
             {/* <TestimonialSlider /> */}
+      <FAQ faqs={faqs} subheading="Find answers to common questions about travel booking and support." />
             <ContactBanner />
-      <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
 
       
         </>

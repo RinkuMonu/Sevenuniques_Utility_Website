@@ -17,7 +17,7 @@ function page() {
         heading: 'Mobile Recharge Bina Tension',
         description: 'Fill up your mobile immediately with Finunique! Get the most popular plans and offers of all the major operators. Quick, safe, and dependable mobile recharge services.',
         bgImage: '/recharge/rbg.png',
-        centerImage: '/recharge/QRr1.png',
+        centerImage: '/MainQR.jpeg',
     }
 
     const aepsData = {

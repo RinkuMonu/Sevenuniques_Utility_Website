@@ -90,7 +90,7 @@ export default function dosforeign() {
     desc: [
       "Finunique Small Private Limited",
       "Plot No. 97, Dakshinpuri – I, Shrikishan, Sanganer, Jagatpura, Jaipur, Shri Kishanpura, Rajasthan – 302017",
-      "Phone: 0141 451 1098",
+      "Phone: 0141-4511098",
       "Website: www.finuniques.in",
     ],
   },

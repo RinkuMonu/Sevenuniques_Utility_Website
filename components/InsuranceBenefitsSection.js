@@ -1,71 +1,44 @@
 "use client";
-import React from 'react';
-import { HandCoins, BrainCircuit, Briefcase, Sparkles } from 'lucide-react';
-import Image from 'next/image';
 
-// --- Data for the benefit icons ---
+import Image from "next/image";
+
 const benefits = [
-  {
-    icon: "/insurance/b1.png",
-    text: "Financial Protection",
-  },
-  {
-    icon: "/insurance/b2.png",
-    text: "Peace of Mind",
-  },
-  {
-    icon:"/insurance/b3.png",
-    text: "Business Security",
-  },
-  {
-    icon: "/insurance/b4.png",
-    text: "Extra Benefits",
-  },
+  { image: "/insurance/b1.png", title: "Financial Protection", text: "Support against eligible covered loss or damage." },
+  { image: "/insurance/b2.png", title: "Peace of Mind", text: "Greater confidence for every insured journey." },
+  { image: "/insurance/b3.png", title: "Business Continuity", text: "Protection for eligible commercial operations." },
+  { image: "/insurance/b4.png", title: "Useful Add-ons", text: "Optional benefits with selected policy offerings." },
 ];
 
-// --- The Main Component ---
 export default function InsuranceBenefitsSection() {
-  const sectionBackgroundImage = "/insurance/ibbg.png"; 
-
   return (
-    <section
-      className="relative w-full py-16 bg-cover bg-center mb-20"
-      style={{ backgroundImage: `url(${sectionBackgroundImage})` }}
-    >
+    <section className="bg-white px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+      <div
+        className="relative mx-auto min-h-[620px] max-w-7xl overflow-hidden rounded-[30px] bg-cover bg-center shadow-[0_18px_45px_rgba(12,61,76,0.16)]"
+        style={{ backgroundImage: "url('/insurance/ibbg.png')" }}
+      >
+        <div className="absolute inset-0 bg-[#012f3d]/25" />
+        <div className="relative z-10 flex min-h-[620px] items-center px-6 py-10 sm:px-9 lg:px-12">
+          <div className="w-full max-w-[620px]">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#7ee4f6]">Insurance Benefits</p>
+            <h2 className="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">Protection that supports every journey</h2>
+            <p className="mt-3 max-w-xl text-sm leading-6 text-white/80 sm:text-base">Policy benefits depend on the insurer, selected coverage, exclusions, and applicable terms.</p>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10"> 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-          {/* Left Column: Benefit Icons */}
-          <div className="flex flex-row flex-wrap justify-center lg:flex-col lg:justify-start lg:items-start gap-6">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="flex flex-col items-center text-center">
-                <div className="w-32 h-32 bg-white/90 rounded-full shadow-lg flex flex-col items-center justify-center p-4 transition-transform duration-300 hover:scale-110">
-                <Image width={40} height={40} alt='' src={benefit.icon} />
-                  <p className="mt-2 font-semibold text-cyan-700">{benefit.text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-
-              <div className="text-white text-right lg:mt-40">
-                <h2 className="font-light">
-                  <span className="text-3xl md:text-4xl">Har </span>
-                  <span className="font-extrabold text-5xl md:text-7xl">Risk</span>
-                  <span className="text-3xl md:text-4xl"> Cover</span>
-                  <br />
-                  <span className="text-3xl md:text-4xl">OR</span>
-                  <br />
-                  <span className="text-3xl md:text-4xl">Extra </span>
-                  <span className="font-extrabold text-5xl md:text-7xl">Benefits</span>
-                  <span className="text-3xl md:text-4xl"> Bhi</span>
-                </h2>
-              </div>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {benefits.map((item) => (
+                <article key={item.title} className="flex items-center gap-4 rounded-2xl border border-white/30 bg-white/95 p-4 shadow-lg backdrop-blur-sm">
+                  <span className="grid h-14 w-14 shrink-0 place-items-center rounded-xl bg-[#eaf6f9]">
+                    <Image src={item.image} alt="" width={38} height={38} className="object-contain" />
+                  </span>
+                  <div>
+                    <h3 className="font-extrabold text-[#0C3D4C]">{item.title}</h3>
+                    <p className="mt-1 text-xs leading-5 text-slate-600">{item.text}</p>
+                  </div>
+                </article>
+              ))}
             </div>
           </div>
-
-     
+        </div>
+      </div>
     </section>
   );
 }

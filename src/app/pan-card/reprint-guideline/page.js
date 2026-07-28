@@ -93,7 +93,7 @@ export default function Reprintguideline() {
                     <ul className="list-disc list-outside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
                         <li>Finunique Small Private Limited</li>
                         <li>Plot No. 97, Dakshinpuri – I, Shrikishan, Sanganer, Jagatpura, Jaipur, Shri Kishanpura, Rajasthan – 302017</li>
-                        <li>Phone: 0141 451 1098</li>
+                        <li>Phone: 0141-4511098</li>
                         <li> Website:  <Link
         href="http://www.Finuniques.com"
         target="_blank"
@@ -125,7 +125,7 @@ export default function Reprintguideline() {
     <li>
       Plot No. 97, Dakshinpuri – I, Shrikishan, Sanganer, Jagatpura, Jaipur, Shri Kishanpura, Rajasthan – 302017
     </li>
-    <li>Phone: 0141 451 1098</li>
+    <li>Phone: 0141-4511098</li>
     <li>
       Website:
       <Link

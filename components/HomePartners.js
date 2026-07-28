@@ -61,9 +61,11 @@ const HomePartners = () => {
   return (
     <div className="relative bg-[#E6F6FF]">
       <Link href="/">
-        <img
+        <Image
           src="/icons/finunique.svg"
           alt="Finunique Icon"
+          width={48}
+          height={48}
           className="absolute top-0 w-12 h-12 left-0 invisible"
         />
       </Link>

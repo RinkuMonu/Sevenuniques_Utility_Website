@@ -1,78 +1,62 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { ChevronDown } from "lucide-react"
-import Image from "next/image"
+import { useId, useState } from "react";
+import { ChevronDown } from "lucide-react";
 
-export default function FAQ({ faqs, subheading }) {
-  const [openIndex, setOpenIndex] = useState(0)
-
-  const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? 0 : index)
-  }
+export default function FAQ({
+  faqs = [],
+  subheading = "Clear answers to common questions about Finunique and supported services.",
+  label = "Help Centre",
+  title = "Frequently Asked Questions",
+}) {
+  const [openIndex, setOpenIndex] = useState(0);
+  const sectionId = useId().replace(/:/g, "");
 
   return (
-    <section id="faq" className="py-16 min-h-screen ">
-      <div className="max-w-6xl mx-auto px-4 lg:px-0">
-        <div className="grid md:grid-cols-5 gap-12 items-start">
-          {/* Left content */}
-          <div className="md:col-span-2 space-y-8  ">
-            <div>
-              <p className="text-[#00b4d8] font-semibold mb-2 uppercase tracking-wide text-sm">
-                Got Questions?
-              </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0d3b4f] mb-4 leading-tight">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-gray-600 leading-relaxed">{subheading}</p>
-            </div>
-            <div className="relative overflow-hidden ">
-              <Image
-                src="/bbps/faq.jpg"
-                alt="FAQ illustration"
-                width={500}
-                height={400}
-                className="object-cover w-full"
-              />
-            </div>
-          </div>
+    <section id="faq" className="bg-[#f6fafb] px-5 py-20 sm:px-8 lg:py-24">
+      <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.7fr_1.3fr]">
+        <div className="max-w-3xl">
+          <p className="text-xs font-extrabold uppercase tracking-[.18em] text-[#0289ad]">{label}</p>
+          <h2 className="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-[#0C3D4C] sm:text-4xl">{title}</h2>
+          <p className="mt-4 text-base leading-7 text-slate-600">{subheading}</p>
+        </div>
 
-          {/* FAQ accordions */}
-         <div className="md:col-span-3 space-y-5 pr-2 ">
+        <div className="divide-y divide-[#dcebed] border-y border-[#dcebed]">
+          {faqs.map(({ question, answer }, index) => {
+            const open = openIndex === index;
+            const buttonId = `${sectionId}-faq-button-${index}`;
+            const panelId = `${sectionId}-faq-panel-${index}`;
 
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="border border-gray-200 rounded-xl bg-white shadow-sm hover:shadow-md transition-all duration-300"
-              >
-                 <button
-                  onClick={() => toggleFAQ(index)}
-                  className="w-full px-6 pt-4 flex items-center justify-between text-left font-semibold text-[#0d3b4f] hover:text-[#00b4d8] transition-colors"
-                >
-                  <span className="">{faq.question}</span>
-                  <ChevronDown
-                    className={`h-5 w-5 text-gray-500 transition-transform duration-300 ${
-                      openIndex === index ? "rotate-180 text-[#00b4d8]" : ""
-                    }`}
-                  />
-                </button>
-
+            return (
+              <div key={question}>
+                <h3>
+                  <button
+                    type="button"
+                    id={buttonId}
+                    aria-expanded={open}
+                    aria-controls={panelId}
+                    onClick={() => setOpenIndex(open ? -1 : index)}
+                    className="flex w-full items-center justify-between gap-5 py-5 text-left font-extrabold text-[#0C3D4C] transition hover:text-[#0289ad] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0289ad]"
+                  >
+                    <span>{question}</span>
+                    <ChevronDown size={19} className={`shrink-0 transition-transform duration-300 ${open ? "rotate-180 text-[#0289ad]" : ""}`} />
+                  </button>
+                </h3>
                 <div
-                  className={`grid transition-all duration-300 ease-in-out ${
-                    openIndex === index
-                      ? "grid-rows-[1fr] opacity-100"
-                      : "grid-rows-[0fr] opacity-0"
-                  }`}
+                  id={panelId}
+                  role="region"
+                  aria-labelledby={buttonId}
+                  className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out ${open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
                 >
-                  <div className="overflow-hidden px-6 pb-5 text-gray-600 leading-relaxed text-sm">
-                    {faq.answer}
+                  <div className="overflow-hidden">
+                    <p className="pb-5 pr-8 text-sm leading-7 text-slate-600">{answer}</p>
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
-  )
+  );
 }

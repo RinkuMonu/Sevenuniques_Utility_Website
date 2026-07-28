@@ -168,7 +168,7 @@ function page() {
                 </p>
               </div>
               <div className="mb-12">
-                <Link href="https://utility.Finuniques.in/register" className=" text-white font-bold py-3 px-8 rounded-full transition-colors duration-300" style={{
+                <Link href="/signup" className=" text-white font-bold py-3 px-8 rounded-full transition-colors duration-300" style={{
                   background: "linear-gradient(90deg,#358EBA  0%, #24576C 100%)"
                 }}>
                   Register now
@@ -190,7 +190,7 @@ function page() {
       <DmtWork />
       <AdvantageDMT />
       {/* <ContactBanner /> */}
-      <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
+      <FAQ faqs={faqs} subheading="Find answers to common questions about domestic money transfers and transaction support." />
 
     </>
   )

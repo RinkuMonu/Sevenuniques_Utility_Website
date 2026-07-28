@@ -1,167 +1,52 @@
-import React from 'react'
-import Image from 'next/image'
-import BenefitsSection2 from '../../../components/BenefitsSection2';
-import ContactBanner from '../../../components/ContactBanner';
-import TestimonialSlider from '../../../components/TestimonialSlider';
-import PartnersSection from '../../../components/PartnersSection';
-import ServiceBanner from '../../../components/ServiceBanner';
-import Link from 'next/link';
-import InsuranceCards from '../../../components/InsuranceCards';
-import ServicesSection3 from '../../../components/ServicesSection3';
-import GetInsurance from '../../../components/GetInsurance';
-import InsuranceProcessSteps from '../../../components/InsuranceProcessSteps';
-import InsuranceDocumentsSection from '../../../components/InsuranceDocumentsSection';
-import InsuranceBenefitsSection from '../../../components/InsuranceBenefitsSection';
-import FAQ from '../../../components/Bike Insurance/FAQ';
+import ServiceBanner from "../../../components/ServiceBanner";
+import GetInsurance from "../../../components/GetInsurance";
+import InsuranceProcessSteps from "../../../components/InsuranceProcessSteps";
+import InsuranceDocumentsSection from "../../../components/InsuranceDocumentsSection";
+import InsuranceBenefitsSection from "../../../components/InsuranceBenefitsSection";
+import PartnersSection from "../../../components/PartnersSection";
+import ContactBanner from "../../../components/ContactBanner";
+import FAQ from "../../../components/Bike Insurance/FAQ";
 
+const faqs = [
+  { question: "What types of insurance can I explore?", answer: "You can explore bike, car, taxi, and commercial vehicle insurance options through Finunique." },
+  { question: "How do I request insurance assistance?", answer: "Choose the relevant insurance category and contact our team with the required vehicle and personal details." },
+  { question: "Are my documents handled securely?", answer: "Documents are handled through secure verification processes and used for the relevant insurance request." },
+  { question: "Can I insure more than one vehicle?", answer: "Yes. Separate policies can be considered for each eligible vehicle according to insurer requirements." },
+  { question: "How is the right coverage selected?", answer: "Coverage depends on the vehicle, usage, insurer options, and your requirements. Review policy terms carefully before purchase." },
+  { question: "How can I get help with a claim?", answer: "Contact the insurer or our support team for guidance on the applicable claim process and required documents." },
+];
 
+export default function InsurancePage() {
+  const data = {
+    id: 1,
+    subheading: "Insurance Solutions",
+    heading: "Protection for Every Journey",
+    description: "Explore vehicle insurance options designed to protect your car, bike, taxi, or commercial vehicle against eligible risks.",
+    bgImage: "/insurance/ibg.png",
+    centerImage: "/insurance/i2.png",
+    buttonText: "Explore Insurance",
+    buttonHref: "#insurance-options",
+  };
 
-function page() {
-    const data = {
-        id: 1,
-        subheading: 'INSURANCE',
-        heading: ' Apki Suraksha, Hamari Jimmedari.',
-        description: 'Enjoy fast online insurance signup, continuous support, and dependable coverage to protect what matters most.',
-        bgImage: '/insurance/ibg.png',
-        centerImage: '/insurance/i2.png',
+  return (
+    <main>
+      <ServiceBanner data={data} />
 
-    }
-    const aepsData = {
-        subheading: 'What is Insurance',
-        heading: 'Har Jokhim ke liye sahi Suraksha!',
-        description: 'Insurance is more than just a policy, it is financial security for you, your family, and your business. The right insurance cover protects you from unexpected expenses and helps you stay prepared for any situation, personal or professional.',
-        features: [
-            'At Finunique, we understand that every individual and business has unique needs. That’s why we offer customized insurance solutions covering vehicles, health, and valuable assets. With simple processes, quick assistance, and reliable service, we make insurance easy and stress-free.',
+      <section className="bg-white px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+        <div className="mx-auto max-w-7xl rounded-[28px] border border-[#d7e9ed] bg-[#f4fafb] px-6 py-10 text-center shadow-[0_12px_30px_rgba(12,61,76,0.07)] sm:px-10 lg:px-16">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#0289ad]">Understanding Insurance</p>
+          <h2 className="mx-auto mt-3 max-w-3xl text-3xl font-extrabold tracking-tight text-[#0C3D4C] sm:text-4xl">Financial protection for life&apos;s unexpected moments</h2>
+          <p className="mx-auto mt-4 max-w-4xl text-base leading-7 text-slate-600">The right insurance policy can help reduce the financial impact of covered loss or damage. Finunique helps customers explore vehicle insurance options through a clear and convenient process.</p>
+        </div>
+      </section>
 
-        ]
-    };
-
-    const faqs = [
-        {
-            question: "What types of insurance can I get?",
-            answer: "You can get coverage for vehicles (car, bike, commercial), health, home, and other personal or asset risks.",
-        },
-        {
-            question: "How do I apply for insurance?",
-            answer: "Just fill the online form, upload the required documents, and choose your plan coverage can start quickly.",
-        },
-        {
-            question: "Are my documents and information secure?",
-            answer: "Yes, we handle all documents securely and use safe processes for verification.",
-        },
-        {
-            question: "Can I insure multiple assets?",
-            answer: "Yes, you can choose different policies for your car, bike, home, or other assets based on your needs.",
-        },
-        {
-            question: "Do I need custom coverage?",
-            answer: "Our insurance options are flexible, so you can tailor coverage to fit your personal or business needs.",
-        },
-        {
-            question: "What happens if I need to make a claim?",
-            answer: "You can contact support anytime, and we’ll guide you through the claims process.",
-        },
-    ];
-
-    return (
-        <>
-            <div className="relative flex flex-col md:flex-row items-center justify-between pt-10 overflow-visible"
-            >
-                <div
-                    className="absolute inset-0 bg-cover bg-center hidden md:block"
-                    style={{ backgroundImage: `url(${data?.bgImage})` }}
-                ></div>
-                <div className=" z-10 mx-auto">
-                    <div className='grid grid-cols-1 md:grid-cols-2 w-full space-y-6 md:space-y-0 items-center'>
-
-                        <div className=" px-10 py-10 lg:py-16 rounded-2xl overflow-hidden max-w-2xl w-full">
-                            <div className=" z-10">
-                                <p className="text-sm font-bold uppercase tracking-widest text-[#0C3D4C]">
-                                    {data?.subheading}
-                                </p>
-                                <h2 className="mt-2 text-4xl md:text-5xl font-bold text-[#0C3D4C] leading-tight">
-                                    {data.heading}
-                                </h2>
-                                <p className="mt-4 my-8 text-base text-[#5D5D5D] max-w-md">
-                                    {data.description}
-                                </p>
-                                <Link
-                                    href="https://utility.Finuniques.in/register"
-                                    className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]"
-                                >
-                                    <span className="block px-8 py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#0d2f4d]">
-                                        Register now
-                                    </span>
-                                </Link>
-
-                            </div>
-                        </div>
-
-                        <div className="w-full  ">
- <Image
-                                src={data.centerImage}
-                                width={450}
-                                height={450}
-                                alt="center image"
-                                className="mt-6 md:mt-10 w-full h-auto max-w-[580px]"
-                            />
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* <section>
-                <div className={`py-5 md:py-0 lg:pt-20 overflow-visible`} style={{ backgroundColor: "#E6F6FF" }}>
-                    <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
-                        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-
-                            <div>
-                                <Image
-                                    src='/insurance/i1.png'
-                                    alt="loan-section"
-                                    width={400}
-                                    height={400}
-                                    className=""
-                                />
-                            </div>
-
-
-
-                            <div className="lg:h-[200px] hidden md:block overflow-hidden lg:overflow-visible relative ">
-                                <Image
-                                    src='/insurance/i2.png'
-                                    alt="loan-section"
-                                    width={500}
-                                    height={500}
-                                    className="lg:absolute bottom-0 z-20"
-
-                                />
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-
-            {/* <InsuranceCards /> */}
-            <ServicesSection3 data={aepsData} />
-
-            <GetInsurance />
-            <InsuranceProcessSteps />
-
-
-            {/* <BenefitsSection2 /> */}
-            <InsuranceDocumentsSection />
-            <InsuranceBenefitsSection />
-
-            <PartnersSection />
-            {/* <TestimonialSlider /> */}
-            <ContactBanner />
-            <FAQ faqs={faqs} subheading={" Find answers to common questions about bike insurance. Can't find what you are looking for? Contact our support team."} />
-
-        </>
-    )
+      <section id="insurance-options" className="scroll-mt-24"><GetInsurance /></section>
+      <InsuranceProcessSteps />
+      <InsuranceDocumentsSection />
+      <InsuranceBenefitsSection />
+      <PartnersSection />
+      <div className="bg-white lg:px-16"><FAQ faqs={faqs} subheading="Find answers to common questions about vehicle insurance and support." /></div>
+      <ContactBanner />
+    </main>
+  );
 }
-
-export default page

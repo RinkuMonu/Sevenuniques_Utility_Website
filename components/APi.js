@@ -22,7 +22,7 @@ const APi = () => {
         </h3>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 px-6">
+      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-6 sm:grid-cols-2 md:grid-cols-4">
         {logos.map((logo, index) => (
           <div
             key={index}

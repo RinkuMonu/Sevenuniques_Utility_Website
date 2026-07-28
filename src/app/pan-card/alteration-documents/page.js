@@ -251,7 +251,7 @@ export default function Page() {
           Plot No. 97, Dakshinpuri – I Shrikishan,<br />
           Sanganer, Jagatpura, Jaipur, Shri Kishanpura,<br />
           Rajasthan – 302017<br />
-          Phone: 0141 451 1098<br />
+          Phone: 0141-4511098<br />
           Email: support@finuniques.in
         </p>
       ),
