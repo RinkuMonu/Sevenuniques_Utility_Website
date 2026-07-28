@@ -55,7 +55,7 @@ export async function POST(request) {
         Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: "llama-3.3-70b-versatile", // check console.groq.com for the current recommended model
+        model: "llama-3.1-8b-instant", // current recommended Groq free-tier model
         max_tokens: 400,
         messages: [
           { role: "system", content: SYSTEM_PROMPT },
