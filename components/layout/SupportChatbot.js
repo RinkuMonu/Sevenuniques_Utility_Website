@@ -121,7 +121,8 @@ export default function SupportChatbot() {
     const trimmed = text.trim();
     if (!trimmed || isLoading) return;
 
-    const nextMessages = [...messages, { role: "user", content: trimmed }];
+    const userMessage = { role: "user", content: trimmed };
+    const nextMessages = [...messages, userMessage];
     setMessages(nextMessages);
     setInput("");
     setError(null);
@@ -145,6 +146,8 @@ export default function SupportChatbot() {
         { role: "assistant", content: data.reply },
       ]);
     } catch (err) {
+      // Rollback the user message so it doesn't appear as an orphan
+      setMessages((prev) => prev.slice(0, -1));
       setError(err.message || "Couldn't reach the assistant. Please try again.");
     } finally {
       setIsLoading(false);
@@ -250,7 +253,8 @@ export default function SupportChatbot() {
 
   const currentCategory = SERVICE_MENU.find((c) => c.id === activeCategory);
   // Service menu only appears once the lead-capture flow has finished
-  const showMenu = leadComplete && !isLoading;
+  // Keep menu visible during loading so layout doesn't jump, but buttons are disabled
+  const showMenu = leadComplete;
   const hasConversation = messages.length > 1;
 
   return (
@@ -399,7 +403,8 @@ export default function SupportChatbot() {
                         <button
                           key={child.id}
                           onClick={() => handleMenuClick(child)}
-                          className="rounded-full border border-[#4338CA]/20 bg-white px-3 py-1.5 text-xs font-medium text-[#3730A3] shadow-sm transition-colors hover:border-[#4338CA]/40 hover:bg-indigo-50"
+                          disabled={isLoading}
+                          className="rounded-full border border-[#4338CA]/20 bg-white px-3 py-1.5 text-xs font-medium text-[#3730A3] shadow-sm transition-colors hover:border-[#4338CA]/40 hover:bg-indigo-50 disabled:cursor-not-allowed disabled:opacity-50"
                         >
                           {child.label}
                         </button>
@@ -412,7 +417,8 @@ export default function SupportChatbot() {
                       <button
                         key={item.id}
                         onClick={() => handleMenuClick(item)}
-                        className="rounded-full border border-[#4338CA]/20 bg-white px-3 py-1.5 text-xs font-medium text-[#3730A3] shadow-sm transition-colors hover:border-[#4338CA]/40 hover:bg-indigo-50"
+                        disabled={isLoading}
+                        className="rounded-full border border-[#4338CA]/20 bg-white px-3 py-1.5 text-xs font-medium text-[#3730A3] shadow-sm transition-colors hover:border-[#4338CA]/40 hover:bg-indigo-50 disabled:cursor-not-allowed disabled:opacity-50"
                       >
                         {item.label}
                         {item.children ? " ›" : ""}
