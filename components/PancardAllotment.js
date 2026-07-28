@@ -10,28 +10,27 @@ export default function PancardAllotment() {
   ];
 
   return (
-    <section className="relative bg-[#e8f0f7] rounded-xl gap-10 shadow-sm mt-10 md:mt-18 pt-10 overflow-hidden">
- <div className="max-w-7xl mx-auto grid md:grid-cols-2 px-8">
+    <section className="relative mx-auto max-w-7xl overflow-hidden rounded-[28px] border border-[#d7e9ed] bg-white shadow-[0_12px_30px_rgba(12,61,76,0.07)]">
+ <div className="mx-auto grid items-center gap-8 p-6 sm:p-9 md:grid-cols-2 lg:p-12">
        {/* Left Side */}
       <div className="w-full z-10">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-snug text-center md:text-left">
+        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#0289ad]">For Indian Citizens</p>
+        <h2 className="mt-3 text-2xl font-extrabold leading-snug text-[#0C3D4C] sm:text-3xl md:text-4xl">
           Allotment of new PAN (Form 49A) <br />
-          <span className="text-blue-900">Indian Citizens</span>
         </h2>
 
-        <p className="text-gray-700 mt-6 leading-relaxed text-sm sm:text-base relative text-justify md:text-left">
+        <p className="relative mt-5 text-sm leading-7 text-slate-600">
          This form should be used if you have not previously applied for a PAN or do not currently possess one. You can also verify whether a PAN has already been allotted to you through the official Income Tax Department portal.
           <br />
           Finunique offers a seamless online PAN application service, providing a digital PAN within a short turnaround time. The entire submission process is paperless, secure, and completed through our online PAN service portal for a smooth and hassle-free experience.
-          <span className="absolute left-0 bottom-[-20px] w-full h-[2px] bg-[#FFD84C] rounded-full"></span>
         </p>
 
-        <div className="mt-10 sm:mt-12 md:mt-16 flex flex-col sm:flex-row md:flex-col gap-3 sm:gap-4 w-full sm:w-auto md:w-72">
+        <div className="mt-7 grid gap-3 sm:grid-cols-3 md:grid-cols-1">
           {links.map((item, i) => (
             <a
               key={i}
               href={item.href}
-              className="flex justify-between items-center text-gray-900 font-medium border border-gray-300 rounded-lg hover:bg-[#f9fbfd] hover:text-[#3a6f82] shadow-md px-4 py-3 transition-transform duration-300 hover:scale-105"
+              className="flex items-center justify-between rounded-xl border border-[#d7e9ed] bg-[#f7fbfc] px-4 py-3 text-sm font-bold text-[#0C3D4C] transition hover:border-[#8fcbd8] hover:bg-[#eaf6f9]"
             >
               {item.label}
               <ArrowUpRight className="w-5 h-5 ml-2" />
@@ -41,7 +40,7 @@ export default function PancardAllotment() {
       </div>
 
       {/* Right Image */}
-       <div className="flex justify-center md:justify-center w-full relative z-10 ">
+       <div className="relative z-10 flex min-h-[330px] w-full items-center justify-center rounded-2xl bg-[#eaf6f9]">
             <Image
              src="/image/pan-img1.png"
               width={360}

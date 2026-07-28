@@ -1,122 +1,61 @@
-"use client"
-import React from 'react'
-import ServiceBanner from '../../../components/ServiceBanner'
-import Image from 'next/image';
-import BankLogoGrid from '../../../components/BankLogoGrid';
-import CreditSlider from '../../../components/CreditSlider';
-import BenefitsSection2 from '../../../components/BenefitsSection2';
-import CardGrid from '../../../components/CardGrid';
-import CreditComp from '../../../components/CreditComp';
-import CreditChoice from '../../../components/CreditChoice';
-import PartnersSection from '../../../components/PartnersSection';
-import TestimonialSlider from '../../../components/TestimonialSlider';
-import ContactBanner from '../../../components/ContactBanner';
+"use client";
 
-function page() {
-    const data = {
-        id: 1,
-        subheading: 'Credit Card',
-        heading: 'Swipe Karein, Rewards Paayein!',
-        description: 'Unlock a world of rewards every time you swipe. Earn points, enjoy cashback, and access exclusive lifestyle perks tailored just for you. Spend smart, live better, and make every transaction count',
-        bgImage: '/credit/creditbg.png',
-        centerImage: '/credit/credit2.png',
-    }
-    const LetterCircle = ({ letter, index }) => (
-        <div className="flex  items-center justify-center rounded-full  lg:p-1 lg:h-12 lg:w-12" key={index}>
-            <div className="flex h-full w-full items-center justify-center">
-                <span className="font-aboreto  md:text-4xl font-medium lg:text-6xl">
-                    {letter}
-                </span>
-            </div>
+import { BadgePercent, Clock3, CreditCard, ShieldCheck } from "lucide-react";
+import ServiceBanner from "../../../components/ServiceBanner";
+import CreditSlider from "../../../components/CreditSlider";
+import CardGrid from "../../../components/CardGrid";
+import CreditComp from "../../../components/CreditComp";
+import ContactBanner from "../../../components/ContactBanner";
+
+const features = [
+  { icon: Clock3, title: "Simple Application", text: "Complete the application with basic details and required documents through a clear process." },
+  { icon: BadgePercent, title: "Rewards & Offers", text: "Explore cards offering cashback, reward points, travel privileges, and lifestyle benefits." },
+  { icon: CreditCard, title: "Flexible Payments", text: "Use convenient payment options and convert eligible purchases into manageable EMIs." },
+  { icon: ShieldCheck, title: "Secure Card Usage", text: "Benefit from security controls and assistance provided by the issuing bank." },
+];
+
+export default function CreditCardPage() {
+  const data = {
+    id: 1,
+    subheading: "Credit Card Solutions",
+    heading: "Find a Credit Card That Fits Your Lifestyle",
+    description: "Compare credit-card options for rewards, cashback, travel, shopping, and everyday spending—then choose benefits that match your needs.",
+    bgImage: "/credit/creditbg.png",
+    centerImage: "/credit/credit2.png",
+    buttonText: "Explore Cards",
+    buttonHref: "#credit-cards",
+  };
+
+  return (
+    <main>
+      {/* Existing top-section design and image remain unchanged; only copy is updated. */}
+      <ServiceBanner data={data} />
+      <CreditComp />
+      <CreditSlider />
+
+      <section className="bg-white px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#0289ad]">Card Benefits</p>
+            <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-[#0C3D4C] sm:text-4xl">Features designed for everyday convenience</h2>
+            <p className="mt-3 text-base leading-7 text-slate-600">Understand the common advantages available across different credit-card options.</p>
+          </div>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {features.map(({ icon: Icon, title, text }) => (
+              <article key={title} className="rounded-2xl border border-[#d7e9ed] bg-[#f7fbfc] p-6 transition hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(12,61,76,0.1)]">
+                <span className="grid h-12 w-12 place-items-center rounded-xl bg-[#dff3f7] text-[#027f9f]"><Icon size={23} /></span>
+                <h3 className="mt-5 text-lg font-extrabold text-[#0C3D4C]">{title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{text}</p>
+              </article>
+            ))}
+          </div>
         </div>
-    );
-    const info = [
-        { title: "Fast Application, Quick Approval.", description: "Apply for your credit card in just a few minutes online or at a branch. Submit basic details, upload documents, and get approved quickly to enjoy instant benefits. " },
-        { title: "Rewards, Cashback & Lifestyle Privileges", description: "Earn rewards and cashback on every swipe while enjoying exclusive offers on dining, shopping, travel, and more. Unlock premium lifestyle benefits such as lounge access, partner discounts, and curated experiences." },
-        { title: "Flexible Payments with 24/7 Support ", description: "Enjoy secure online and offline payments with the freedom to convert purchases into easy EMIs. Manage your credit limit effortlessly and rely on round-the-clock support whenever you need assistance. " },
+      </section>
 
-    ]
-    const text = "CREDIT CARD";
-
-
-    return (
-        <>
-            <ServiceBanner data={data} />
-            {/* <section>
-                <div className={`relative py-5 lg:pb-0 lg:pt-20 overflow-y-visible`} style={{ backgroundColor: "#CEF5F5" }}>
-                    <div className="max-w-7xl mx-auto px-4 lg:px-0 relative">
-                        <div className="grid grid-cols-1 md:grid-cols-2 ">
-                            <div className="relative ">
-                                <div className="flex flex-wrap gap-6">
-                                    {text.split(" ").map((word, wordIndex) => (
-                                        <div key={wordIndex} className="flex space-x-1">
-                                            {word.split("").map((char, index) => (
-                                                <LetterCircle key={index} letter={char} />
-                                            ))}
-                                        </div>
-                                    ))}
-                                </div>
-
-                            </div>
-
-                            <div className="hidden md:block relative h-[200px] mt-10 md:mt-0 ">
-                                <div className=" lg:absolute bottom-0 right-0 lg:w-[400px] lg:h-[500px] z-20  " style={{ "overflow": "hidden" }}>
-                                    <Image
-                                        src={"/credit/credit2.png"}
-                                        alt="loan-section"
-                                        fill
-                                        className=" lg:right-0"
-                                        style={{ objectPosition: 'right' }}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-            <CreditComp />
-            {/* <BankLogoGrid /> */}
-            <CreditSlider />
-
-
-            <div className="max-w-7xl mx-auto px-4 py-12 mb-8">
-                <h3 className='text-3xl md:text-4xl py-12 text-center font-bold text-[#043C5C]'>Features of Credit Card</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                    {info.map((item, index) => (
-                        <div
-                            key={index}
-                            className="group bg-white rounded-2xl p-6 lg:p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-[#E6F6FE]"
-                        >
-                            {/* Optional top accent */}
-                            <div className="w-12 h-1 bg-[#026381] rounded-full mb-4"></div>
-
-                            <h2 className="text-xl md:text-2xl font-bold text-[#043C5C] mb-3 group-hover:text-[#026381] transition">
-                                {item.title}
-                            </h2>
-
-                            <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-                                {item.description}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-            {/* <div className='mt-20 pb-10 lg:pb-40'>
-                <BenefitsSection2 />
-            </div> */}
-            <CardGrid />
-
-            {/* <CreditChoice /> */}
-
-
-
-
-            {/* <PartnersSection />
-            <TestimonialSlider />
-            <ContactBanner /> */}
-        </>
-    )
+      <section id="credit-cards" className="scroll-mt-24 bg-[#f3f9fb] px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+        <CardGrid />
+      </section>
+      <ContactBanner />
+    </main>
+  );
 }
-
-export default page

@@ -80,7 +80,7 @@ function OrbitIcon({ src, top, left, size = "sm" }) {
       className={`absolute ${sizes[size]} rounded-full bg-white shadow-md flex items-center justify-center`}
       style={{ top, left, transform: "translate(-50%, -50%)" }}
     >
-      <img src={src} alt="icon" className="w-14 h-14 object-contain" />
+      <Image src={src} alt="Partner service" width={56} height={56} className="w-14 h-14 object-contain" />
     </div>
   );
 }

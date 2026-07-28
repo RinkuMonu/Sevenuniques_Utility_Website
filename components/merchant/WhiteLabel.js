@@ -1,89 +1,50 @@
 "use client";
-import React from "react";
+
 import Image from "next/image";
 import Link from "next/link";
-import { ShieldCheck, Rocket, Settings, BarChart3 } from "lucide-react";
+import { ArrowRight, BarChart3, Rocket, Settings, ShieldCheck } from "lucide-react";
 
 const features = [
-  {
-    icon: Rocket,
-    title: "Launch Your Own Brand",
-    desc: "Start your own digital financial service platform with your branding, logo, and domain."
-  },
-  {
-    icon: ShieldCheck,
-    title: "100% Secure & Compliant",
-    desc: "RBI & NPCI aligned infrastructure with enterprise-grade security."
-  },
-  {
-    icon: Settings,
-    title: "Full Admin Control",
-    desc: "Manage retailers, distributors, commissions, and services from one powerful dashboard."
-  },
-  {
-    icon: BarChart3,
-    title: "High Revenue Potential",
-    desc: "Earn from every transaction across your complete network."
-  }
+  { icon: Rocket, title: "Your Own Brand", text: "Launch a digital service platform with your identity and market presence." },
+  { icon: ShieldCheck, title: "Reliable Infrastructure", text: "Build on technology designed for secure and dependable service delivery." },
+  { icon: Settings, title: "Centralized Control", text: "Manage your retailer and distributor network from one organized system." },
+  { icon: BarChart3, title: "Business Visibility", text: "Review network activity and make informed decisions as your business grows." },
 ];
 
-const WhiteLabelSection = () => {
+export default function WhiteLabelSection() {
   return (
-    <section id="whitelabelsection" className="relative overflow-hidden bg-[#050B1E] text-white">
-
-      <div className="absolute -top-32 -left-32 w-96 h-96 bg-[#018EDE]/30 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 -right-32 w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl"></div>
-
-      <div className="relative max-w-7xl mx-auto px-6 pt-10 lg:pt-16 grid grid-cols-1 lg:grid-cols-2 gap-2 items-center">
+    <section id="whitelabelsection" className="overflow-hidden bg-white px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 rounded-[30px] border border-[#cfe6eb] bg-[#e8f5f7] px-6 py-8 sm:px-9 sm:py-10 lg:grid-cols-[1.05fr_.95fr] lg:px-12 lg:py-12">
         <div>
-          <span className="inline-block mb-4 px-4 py-1 rounded-full bg-white/10 text-xs tracking-widest">
-            WHITE LABEL SOLUTION
+          <span className="inline-flex rounded-full border border-[#b7dce4] bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.15em] text-[#027f9f]">
+            White Label Solution
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
-            Build Your Own <span className="text-[#29B6FF]">Fintech Brand</span>
+          <h2 className="mt-5 text-3xl font-extrabold leading-tight tracking-tight text-[#0C3D4C] sm:text-4xl">
+            Build a digital service brand designed for growth
           </h2>
-          <p className="mt-5 text-white/80 max-w-xl">
-            Launch a complete digital payment and banking service platform under your own brand.
-            We provide technology, compliance, and support — you focus on growth.
-          </p>    
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
-            {features.map((item, i) => {
-              const Icon = item.icon;
-              return (
-                <div
-                  key={i}
-                  className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition-all duration-300"
-                >
-                  <Icon className="text-[#29B6FF] mb-3" size={28} />
-                  <h4 className="font-semibold text-lg">{item.title}</h4>
-                  <p className="text-sm text-white/70 mt-1">{item.desc}</p>
-                </div>
-              );
-            })}
+          <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
+            Launch your own branded platform with the technology and operational support needed to develop a strong merchant network.
+          </p>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {features.map(({ icon: Icon, title, text }) => (
+              <div key={title} className="rounded-2xl border border-[#d4e9ee] bg-white p-5 shadow-[0_8px_22px_rgba(12,61,76,0.06)]">
+                <span className="grid h-10 w-10 place-items-center rounded-xl bg-[#dff3f7] text-[#027f9f]"><Icon size={21} /></span>
+                <h3 className="mt-4 font-extrabold text-[#0C3D4C]">{title}</h3>
+                <p className="mt-1 text-sm leading-6 text-slate-600">{text}</p>
+              </div>
+            ))}
           </div>
-          <div className="mt-10">
-            <Link
-              href="/contact"
-              className="border border-white/30 hover:bg-white/10 transition px-8 py-3 rounded-full font-semibold"
-            >
-              Talk to Our Team
-            </Link>
-          </div>
+
+          <Link href="/contact" className="group mt-8 inline-flex items-center gap-2 rounded-xl bg-[#026381] px-6 py-3.5 text-sm font-bold text-white transition hover:bg-[#0C3D4C]">
+            Discuss White Label Solutions <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
+          </Link>
         </div>
-        <div className="relative">
-          <div className="relative">
-            <Image
-              src="/image/white-label-man.PNG" 
-              alt="White label dashboard"
-              width={600}
-              height={500}
-              className="rounded-2xl object-cover"
-            />
-          </div>
+
+        <div className="relative mx-auto h-[330px] w-full max-w-[520px] sm:h-[430px] lg:h-[520px]">
+          <Image src="/image/white-label-man.PNG" alt="Finunique white label business solution" fill className="object-contain object-bottom" />
         </div>
       </div>
     </section>
   );
-};
-
-export default WhiteLabelSection;
+}

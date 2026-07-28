@@ -1,80 +1,36 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import { ArrowRight, BadgePercent, CreditCard, HandCoins, ShieldCheck, ShoppingBag, TrendingUp } from "lucide-react";
 
-// You can replace this with the actual URL of your background image.
-// I've used a placeholder that matches the dark theme.
-const backgroundImageUrl = '/credit/crediti.png';
-
-// Reusable component for the feature cards on the right
-const FeatureCard = ({ children, className }) => {
-  return (
-    <div className={`bg-white/10 backdrop-blur-lg rounded-xl shadow-lg p-4 md:p-6 text-center flex items-center justify-center ${className}`}>
-      <p className="text-white font-medium text-sm md:text-base">{children}</p>
-    </div>
-  );
-};
+const benefits = [
+  { icon: BadgePercent, label: "Rewards & cashback" },
+  { icon: CreditCard, label: "Cashless payments" },
+  { icon: HandCoins, label: "Flexible credit" },
+  { icon: ShoppingBag, label: "Shopping & EMI options" },
+  { icon: TrendingUp, label: "Responsible credit building" },
+  { icon: ShieldCheck, label: "Bank security controls" },
+];
 
 export default function CreditComp() {
   return (
-    <div 
-      className=" bg-cover bg-center font-sans flex items-center justify-center p-4 sm:p-6 lg:p-8 my-16"
-      style={{ 
-          backgroundImage: `url(${backgroundImageUrl})`,
-          backgroundColor: '#0a192f' // Fallback color
-      }}
-    >
-      <main className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-        
-        {/* Left Content Section */}
-        <div className="text-white text-center lg:text-left animate-fade-in-up">
-          <h3 className="text-2xl lg:text-4xl  font-bold leading-tight mb-4">
-            Why Finunique ,<br />
-            for Your Credit Card
-          </h3>
-          <p className="text-gray-300 text-base md:text-lg mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-           Introducing the Finunique Credit Card your gateway to a world of convenience and exclusive benefits. Enjoy special perks, earn rewards, and make every swipe count.
-          </p>
-          <Link href="/coming-soon" className=" text-white font-semibold py-3 px-8 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-cyan-500/50 transform hover:scale-105"  style={{
-                            background: "linear-gradient(90deg,#358EBA  0%, #24576C 100%)"
-                        }}>
-            Apply Now
+    <section className="bg-white px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 rounded-[28px] border border-[#d7e9ed] bg-[#eaf6f9] p-6 sm:p-9 lg:grid-cols-[.9fr_1.1fr] lg:p-12">
+        <div>
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#0289ad]">Why Explore With Finunique</p>
+          <h2 className="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-[#0C3D4C] sm:text-4xl">Compare benefits before choosing your card</h2>
+          <p className="mt-4 text-base leading-7 text-slate-600">Review card features in one place and identify options suited to your spending habits, financial goals, and preferred rewards.</p>
+          <Link href="#credit-cards" className="group mt-7 inline-flex items-center gap-2 rounded-xl bg-[#026381] px-6 py-3.5 text-sm font-bold text-white transition hover:bg-[#0C3D4C]">
+            View Card Options <ArrowRight size={18} className="transition group-hover:translate-x-1" />
           </Link>
         </div>
-
-        {/* Right Grid Section */}
-        <div className="relative w-full  max-w-2xl mx-auto lg:mx-0 flex flex-col gap-2 md:block lg:h-[400px] md:h-[500px] animate-fade-in">
-          {/* Using absolute positioning for a more flexible and overlapping layout */}
-          <FeatureCard className="md:absolute top-0 right-1/4 md:w-1/3 h-1/4">Boost Your Credit Score</FeatureCard>
-          <FeatureCard className="md:absolute top-[5%] left-0 md:w-1/3 h-1/4">Exclusive Rewards & Cashback</FeatureCard>
-          <FeatureCard className="md:absolute top-1/2 -left-[10%] md:w-2/5 h-1/4">Easy & <br/> Cashless Payments</FeatureCard>
-          <FeatureCard className="md:absolute top-1/3 -right-[5%] md:w-1/3 h-1/4">Flexible Credit Facility</FeatureCard>
-          <FeatureCard className="md:absolute -bottom-[5%] left-1/8 md:w-2/5 h-1/4">Emergency Assistance</FeatureCard>
-          <FeatureCard className="md:absolute bottom-0 right-0 md:w-2/5 h-1/4 ">OOnline Shopping & EMI Options</FeatureCard>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {benefits.map(({ icon: Icon, label }) => (
+            <div key={label} className="flex items-center gap-4 rounded-2xl border border-[#d2e7eb] bg-white p-5 shadow-[0_8px_20px_rgba(12,61,76,0.06)]">
+              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-[#dff3f7] text-[#027f9f]"><Icon size={21} /></span>
+              <p className="text-sm font-extrabold text-[#0C3D4C]">{label}</p>
+            </div>
+          ))}
         </div>
-
-      </main>
-      <style>{`
-        @keyframes fade-in-up {
-          0% {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        @keyframes fade-in {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-        .animate-fade-in-up {
-          animation: fade-in-up 0.8s ease-out forwards;
-        }
-        .animate-fade-in {
-            animation: fade-in 1.2s ease-out forwards;
-        }
-      `}</style>
-    </div>
+      </div>
+    </section>
   );
 }

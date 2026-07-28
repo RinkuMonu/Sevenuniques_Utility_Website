@@ -172,7 +172,7 @@ const privacySections = [
         "Grievance Officer",
         "Finunique Small Private Limited",
         "Email: support@finuniques.in",
-        "Phone: 9251582693",
+        "Phone: 0141-4511098",
         "All complaints will be acknowledged and resolved promptly.",]
   },
   {
@@ -199,12 +199,13 @@ export default function Privacy() {
       { rootMargin: "-20% 0px -60% 0px" }
     );
 
-    sectionRefs.current.forEach((ref) => {
+    const observedSections = sectionRefs.current.filter(Boolean);
+    observedSections.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
 
     return () => {
-      sectionRefs.current.forEach((ref) => {
+      observedSections.forEach((ref) => {
         if (ref) observer.unobserve(ref);
       });
     };
@@ -220,77 +221,77 @@ export default function Privacy() {
 
   return (
     <>
-      <section className="bg-[#F4FCFF]  min-h-screen ">
-        <div className="rounded-2xl shadow-lg">
+      <section className="privacy-policy-page min-h-screen bg-[linear-gradient(180deg,#eef9fb_0%,#ffffff_22%,#f6fafb_100%)]">
+        <div>
+          <div className="relative overflow-hidden bg-[#0C3D4C] px-4 py-14 text-white sm:py-18">
+            <div className="absolute -right-24 -top-32 h-80 w-80 rounded-full bg-[#00a8e8]/20 blur-3xl" />
+            <div className="absolute -bottom-32 -left-20 h-72 w-72 rounded-full bg-[#79d5df]/15 blur-3xl" />
+            <div className="relative mx-auto max-w-7xl">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#bcecf4] backdrop-blur-sm">
+                <Shield className="h-4 w-4" /> Trust &amp; Transparency
+              </div>
+              <h1 className="mt-5 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">Privacy Policy</h1>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-slate-200 sm:text-lg">
+                Learn how Finunique collects, protects, and responsibly uses your information.
+              </p>
+            </div>
+          </div>
           <section>
-            <div className=" mx-auto px-4 py-12">
-              <div className="flex flex-col lg:flex-row gap-8">
-                <div className="lg:w-1/4">
-                  <div className="sticky top-32 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
-                    <h3 className="text-lg font-semibold text-[#0C3D4C] mb-4 flex items-center">
+            <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-16">
+              <div className="flex flex-col gap-8 lg:flex-row lg:items-start">
+                <aside className="lg:w-[30%] xl:w-[27%]">
+                  <div className="privacy-contents-scrollbar sticky top-24 rounded-2xl border border-[#d7e9ed] bg-white p-4 shadow-[0_12px_35px_rgba(12,61,76,0.08)] sm:p-5 lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto">
+                    <h2 className="mb-4 flex items-center border-b border-slate-100 pb-4 text-lg font-extrabold text-[#0C3D4C]">
                       <InfoIcon className="w-5 h-5 mr-2" />
-                      Contents
-                    </h3>
-                    <ul className="space-y-2">
+                      On this page
+                    </h2>
+                    <ul className="grid gap-1.5 sm:grid-cols-2 lg:grid-cols-1">
                       {privacySections.map((section, index) => (
                         <li key={index}>
                           <button
                             onClick={() => scrollToSection(section.id)}
-                            className={`w-full text-left py-2 px-3 rounded-lg transition-all duration-200 flex items-center cursor-pointer ${activeSection === section.id
-                              ? "bg-gradient-to-r from-[#0C3D4C] to-[#358EBA] text-white font-medium"
-                              : "text-gray-600 hover:bg-[#24567c] hover:text-gray-200"
+                            className={`flex w-full items-center rounded-xl px-3 py-2.5 text-left text-sm transition-all duration-200 ${activeSection === section.id
+                              ? "bg-[#0C3D4C] font-bold text-white shadow-[0_6px_15px_rgba(12,61,76,0.18)]"
+                              : "font-medium text-slate-600 hover:bg-[#edf8fa] hover:text-[#026381]"
                               }`}
                           >
-                            <section
-                              className={`w-4 h-4 mr-4
-                                                                 ${activeSection ===
+                            <span
+                              className={`mr-3 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg [&>svg]:h-4 [&>svg]:w-4 ${activeSection ===
                                   section.id
-                                  ? "bg-opacity-10 text-white font-medium"
-                                  : "text-gray-600 hover:bg-gray-100"
+                                  ? "bg-white/15 text-white"
+                                  : "bg-[#e7f5f7] text-[#0289ad]"
                                 }`}
                             >
                               {section.icon}
-                            </section>
+                            </span>
                             {section.title}
                           </button>
                         </li>
                       ))}
                     </ul>
                   </div>
-                </div>
+                </aside>
 
                 {/* Main Content */}
-                <div className="lg:w-3/4">
-                  <div className="bg-white p-8 rounded-2xl shadow-sm mb-8">
-                    <div className="text-center mb-10">
-                      <div className="mb-6">
-                        <div className="w-20 h-20 mx-auto bg-gradient-to-r from-[#358EBA] to-[#0C3D4C] rounded-full flex items-center justify-center">
-                          <FileText className="w-10 h-10 text-white" />
+                <main className="min-w-0 lg:w-[70%] xl:w-[73%]">
+                  <div className="mb-8 overflow-hidden rounded-3xl border border-[#d7e9ed] bg-white shadow-[0_16px_45px_rgba(12,61,76,0.08)]">
+                    <div className="border-b border-[#dcecef] bg-[#f0f9fa] p-6 sm:p-8">
+                      <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
+                        <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-[#0C3D4C] shadow-[0_10px_25px_rgba(12,61,76,0.22)]">
+                          <FileText className="h-8 w-8 text-white" />
+                        </div>
+                        <div>
+                          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#0289ad]">Official document</p>
+                          <h2 className="mt-1 text-2xl font-extrabold text-[#0C3D4C] sm:text-3xl">Your privacy matters to us</h2>
+                          <p className="mt-2 text-sm leading-6 text-slate-600">Please review the details below to understand your choices and our responsibilities.</p>
                         </div>
                       </div>
-                      <div className="inline-block bg-gradient-to-r from-[#358EBA] to-[#0C3D4C] text-white font-medium px-8 py-2 rounded-full mb-4 shadow-md">
-                        Privacy Policy
-                      </div>
-                      {/* <h3 className="text-3xl md:text-4xl font-bold text-[#0C3D4C] mb-6 mt-4">
-                                                    We value your privacy and are committed to protecting your personal information
-                                                </h3> */}
-
-
-
-                      <div className="h-1 w-20 bg-gradient-to-r from-[#358EBA] to-[#0C3D4C] mx-auto mb-6 rounded-full"></div>
-                      <p className="text-[#0C3D4C] text-start text-lg leading-relaxed">
-                        <span className="font-bold">Effective Date:</span>{" "}
-                        28-09-2025 <br />
-                        <span className="font-bold">Company:</span> Finunique
-                         Small Private Limited <br />
-                        <span className="font-bold">
-                          Registered Office:
-                        </span>{" "}
-                        Plot No 97, Dakshinpuri - I, Shrikishan, Sanganer,
-                        Jagatpura, Jaipur, Rajasthan, India - 302017 <br />
-                      
-                      </p>
                     </div>
+                    <dl className="grid gap-px bg-slate-100 sm:grid-cols-2">
+                      <div className="bg-white p-5 sm:p-6"><dt className="text-xs font-bold uppercase tracking-wider text-slate-400">Effective Date</dt><dd className="mt-2 font-bold text-[#0C3D4C]">28-09-2025</dd></div>
+                      <div className="bg-white p-5 sm:p-6"><dt className="text-xs font-bold uppercase tracking-wider text-slate-400">Company</dt><dd className="mt-2 font-bold text-[#0C3D4C]">Finunique Small Private Limited</dd></div>
+                      <div className="bg-white p-5 sm:col-span-2 sm:p-6"><dt className="text-xs font-bold uppercase tracking-wider text-slate-400">Registered Office</dt><dd className="mt-2 leading-7 text-slate-600">Plot No 97, Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura, Jaipur, Rajasthan, India - 302017</dd></div>
+                    </dl>
                   </div>
 
                   {privacySections.map((section, index) => (
@@ -298,48 +299,58 @@ export default function Privacy() {
                       key={index}
                       id={section.id}
                       ref={(el) => (sectionRefs.current[index] = el)}
-                      className="bg-white p-8 rounded-2xl shadow-sm mb-6 transition-all duration-300 hover:shadow-md"
+                      className={`scroll-mt-28 mb-5 rounded-2xl border bg-white p-5 transition-all duration-300 sm:p-7 ${activeSection === section.id ? "border-[#80cbd8] shadow-[0_14px_35px_rgba(2,99,129,0.11)]" : "border-[#e1ecee] shadow-[0_7px_22px_rgba(12,61,76,0.05)] hover:border-[#b9dce3] hover:shadow-[0_12px_30px_rgba(12,61,76,0.09)]"}`}
                     >
-                      <div className="flex items-start mb-4">
-                        <div className="text-2xl mr-4 bg-gradient-to-r from-[#358EBA] to-[#0C3D4C] text-white p-3 rounded-lg flex items-center justify-center">
-                          {/* <section.icon className="w-6 h-6" /> */}
-                          <section className="w-4 h-5 mr-2 text-white">
+                      <div className="mb-5 flex items-center gap-4">
+                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#e6f5f7] text-[#026381] [&_svg]:h-6 [&_svg]:w-6">
+                          <span>
                             {section.icon}
-                          </section>
+                          </span>
                         </div>
-                        <h3 className="text-xl font-bold text-gray-800">
+                        <h2 className="text-xl font-extrabold text-[#0C3D4C] sm:text-2xl">
                           {section.title}
-                        </h3>
+                        </h2>
                       </div>
-                      <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent my-4"></div>
                       {Array.isArray(section.content) ? (
-                        <ul className="list-disc list-inside text-gray-600 space-y-1">
+                        <ul className="space-y-3 text-[15px] leading-7 text-slate-600">
                           {section.content.map((item, idx) => (
-                            <li key={idx}>{item}</li>
+                            <li key={idx} className="flex gap-3"><span className="mt-[11px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#00a8e8]" /> <span>{item}</span></li>
                           ))}
                         </ul>
                       ) : (
-                        <div className="text-gray-600 leading-relaxed">{section.content}</div>
+                        <div className="text-[15px] leading-7 text-slate-600">{section.content}</div>
                       )}
                     </div>
                   ))}
 
-                  {/* Additional Info Card */}
-                  <div className="bg-gradient-to-r from-[#0C3D4C] to-[#777777] p-1 rounded-2xl shadow-lg mt-10">
-                    <div className="bg-white rounded-2xl p-6">
-                      <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
-                        <InfoIcon className="w-5 h-5 mr-2" />
-                        Need More Information?
-                      </h3>
-                      <p className="text-gray-600 mb-4">
-                        If you have any questions about our privacy practices or
-                        how we handle your data, please do not hesitate to
-                        contact our privacy team.
-                      </p>
-                      <button className="bg-gradient-to-r from-[#358EBA] to-[#0C3D4C] text-white font-medium px-6 py-2 rounded-lg transition-all duration-300 hover:shadow-md">
-                        Contact Privacy Team
-                      </button>
-                    </div>
+                </main>
+              </div>
+
+              {/* Additional Info Card */}
+              <div className="relative mt-10 grid w-full overflow-hidden rounded-[28px] bg-[linear-gradient(135deg,#0C3D4C_0%,#07566b_100%)] text-white shadow-[0_20px_50px_rgba(12,61,76,0.22)] md:grid-cols-[1.35fr_0.65fr]">
+                <div className="absolute -left-16 -top-20 h-56 w-56 rounded-full border-[35px] border-white/[0.035]" aria-hidden="true" />
+                <div className="relative flex gap-5 p-7 sm:p-9 lg:p-10">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-white/15 bg-white/10 shadow-inner backdrop-blur-sm">
+                    <InfoIcon className="h-6 w-6 text-[#8ee3ee]" />
+                  </div>
+                  <div>
+                    <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-[#8ee3ee]">Privacy support</p>
+                    <h3 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
+                      Need More Information?
+                    </h3>
+                    <p className="mt-3 max-w-2xl leading-7 text-slate-200">
+                      If you have any questions about our privacy practices or
+                      how we handle your data, please do not hesitate to contact
+                      our privacy team.
+                    </p>
+                  </div>
+                </div>
+                <div className="relative flex items-center border-t border-white/10 bg-black/10 p-7 md:border-l md:border-t-0 sm:p-9 lg:p-10">
+                  <div className="w-full">
+                    <p className="mb-4 text-sm leading-6 text-slate-300">Our team is ready to help with privacy-related questions.</p>
+                    <button className="inline-flex w-full items-center justify-center rounded-xl bg-white px-6 py-3.5 font-bold text-[#0C3D4C] shadow-[0_10px_25px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#e9f7f9] hover:shadow-[0_14px_30px_rgba(0,0,0,0.22)]">
+                      Contact Privacy Team
+                    </button>
                   </div>
                 </div>
               </div>

@@ -34,7 +34,7 @@ const VerticalSlider = ({slide}) => {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [slide.sliderData.length]);
 
   const currentContent = slide.sliderData[activeStep];
 

@@ -50,9 +50,9 @@ const StatCard = ({ value, label }) => (
 /* ---------- Main Component ---------- */
 const HomeMap = () => {
   const stats = [
-    { value: "5000+", label: "Distributors across India" },
-    { value: "10 Lakhs+", label: "Happy clients using our financial services" },
-    { value: "1.2 Lakhs+", label: "Active retailers nationwide" },
+    { value: "3.5 Lakh+", label: "Happy users across India" },
+    { value: "50+", label: "Digital and financial services in one place" },
+    { value: "24/7", label: "Convenient access to essential services" },
   ];
 
   const locations = [
@@ -104,12 +104,12 @@ const HomeMap = () => {
         {/* Left Content */}
         <div className="text-center md:text-left">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400 mb-4">
-            Our Network Across India
+            Serving Users Across India
           </h2>
 
           <p className="text-gray-200 mb-8 max-w-lg mx-auto md:mx-0">
-            We are building one of India’s fastest growing retailer and
-            distributor networks delivering secure digital financial services.
+            Finunique gives users convenient access to secure digital payments,
+            utility services, recharges, and financial solutions across India.
           </p>
 
           <div className="max-w-md mx-auto md:mx-0 bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden">
@@ -127,7 +127,7 @@ const HomeMap = () => {
 
             <Image
               src="/image/india-mapp.PNG"
-              alt="India Network Map"
+              alt="Finunique services available to users across India"
               fill
               className="object-contain"
               priority

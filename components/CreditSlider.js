@@ -1,140 +1,50 @@
-import Image from 'next/image';
-import React, { useState } from 'react';
+"use client";
+
+import Image from "next/image";
+import { useState } from "react";
+import { CheckCircle2 } from "lucide-react";
 
 const stepsData = [
-  {
-    step: 1,
-    title: 'Fill out the application form.',
-    description: 'Easily fill out your credit card application online via the bank’s website or app, or visit a branch to apply offline. Provide your essential details like name, mobile number, email, and occupation',
-    image: '/credit/credits1.png',
-  },
-  {
-    step: 2,
-    title: 'Upload Documents ',
-    intro: 'Submit the required documents for verification to complete your credit card application:',
-    details: [
-      '<strong>Proof of identity</strong> &ndash; (Aadhaar, PAN, passport, or voter ID)',
-      '<strong>Proof of address</strong> &ndash; (Utility Bill, Driving License, Rental Agreement)',
-      '<strong>Proof of income </strong> &ndash; (Pay Slip, ITR, or Bank Statement).',
-    ],
-    image: '/credit/credits2.png',
-  },
-  {
-    step: 3,
-    title: 'Approval',
-    description: 'Once your documents are verified, the bank will review your application. If everything is in order, you’ll receive an approval notification, and your new credit card will be delivered to you',
-    image: '/credit/credits3.png',
-  },
+  { step: 1, title: "Complete the Application", description: "Provide your basic personal, contact, employment, and income information through the bank's application process.", image: "/credit/credits1.png" },
+  { step: 2, title: "Submit Required Documents", description: "Share valid identity, address, and income documents requested by the issuing bank for verification.", image: "/credit/credits2.png" },
+  { step: 3, title: "Bank Review & Decision", description: "The issuing bank reviews eligibility and documents before communicating its decision and applicable card terms.", image: "/credit/credits3.png" },
 ];
 
-const StepSelector = ({ step, title, isActive, onClick }) => {
-  return (
-    <button
-      onClick={onClick}
-      className={`
-        w-full text-left p-4 sm:p-6 border-2 rounded-3xl transition-all duration-300 ease-in-out flex flex-col justify-center align-middle h-full
-        ${isActive ? ' border-[#018EDE] shadow-lg text-[#24576C]' : ' border-gray-200 hover:border-blue-300 hover:shadow-md'}
-      `}
-    >
-      <div className="flex flex-col gap-4 sm:gap-6">
-        <div
-          className={`
-            w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-md flex items-center justify-center font-bold text-lg sm:text-xl transition-colors duration-300 
-            ${isActive ? 'bg-[#018EDE] border shadow-xl border-[#018EDE] text-white' : ' text-[#0C3D4C] shadow-lg border border-gray-200 '}
-          `}
-        >
-          {step}
-        </div>
-        <h3 className="text-sm sm:text-lg font-semibold text-[#24576C]">{title}</h3>
-      </div>
-    </button>
-  );
-};
-
-export default function App() {
+export default function CreditSlider() {
   const [activeStep, setActiveStep] = useState(1);
+  const active = stepsData.find((item) => item.step === activeStep);
 
   return (
-    <div className="px-4 sm:px-6 lg:px-0 py-8 sm:py-10">
-      <div className="max-w-6xl mx-auto w-full">
-        <header className="mb-6 sm:mb-8">
-          <h3 className="text-2xl sm:text-3xl font-bold text-gray-800">
-            Simple Steps, Instant Approval
-          </h3>
-        </header>
+    <section className="bg-[#f3f9fb] px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+      <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#0289ad]">Application Process</p>
+          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-[#0C3D4C] sm:text-4xl">Three simple application stages</h2>
+          <p className="mt-3 text-base leading-7 text-slate-600">Actual eligibility, approval, limits, and processing times are determined by the issuing bank.</p>
+        </div>
 
-        <main className="grid grid-cols-1 md:grid-cols-3 gap-y-6 md:gap-12 min-h-[75vh]">
-          {/* Left column (buttons) */}
-          <div className="col-span-1">
-            <div className="flex flex-col gap-4 sm:gap-6 h-full">
-              {stepsData.map((stepInfo) => (
-                <div className="flex-1" key={stepInfo.step}>
-                  <StepSelector
-                    step={stepInfo.step}
-                    title={stepInfo.title}
-                    isActive={activeStep === stepInfo.step}
-                    onClick={() => setActiveStep(stepInfo.step)}
-                  />
-                </div>
-              ))}
-            </div>
+        <div className="mt-10 grid gap-6 lg:grid-cols-[.38fr_.62fr]">
+          <div className="space-y-3">
+            {stepsData.map((item) => (
+              <button key={item.step} type="button" onClick={() => setActiveStep(item.step)} className={`flex w-full items-center gap-4 rounded-2xl border p-4 text-left transition sm:p-5 ${activeStep === item.step ? "border-[#66bfd2] bg-[#026381] text-white shadow-lg" : "border-[#d7e9ed] bg-white text-[#0C3D4C] hover:border-[#9ed6e1]"}`}>
+                <span className={`grid h-10 w-10 shrink-0 place-items-center rounded-xl text-sm font-extrabold ${activeStep === item.step ? "bg-white text-[#026381]" : "bg-[#dff3f7] text-[#027f9f]"}`}>{item.step}</span>
+                <span className="font-extrabold">{item.title}</span>
+              </button>
+            ))}
           </div>
 
-          {/* Right column (content) */}
-          <div className="col-span-2">
-            <div className="relative overflow-hidden rounded-2xl h-full min-h-[300px] sm:min-h-[300px]">
-              <div className='bg-gradient-to-t from-[#014D78] to-[#018EDE] px-4  text-white shadow-2xl transition-transform duration-500 ease-in-out h-[600px]'>
-
-              {stepsData.map((item) => (
-                <div
-                  key={item.step}
-                  className="absolute top-0 left-0 w-full h-full "
-                  style={{
-                    transform: `translateX(${(item.step - activeStep) * 100}%)`,
-                    willChange: 'transform',
-                  }}
-                >
-                 <div className='grid grid-cols-1 md:grid-cols-2 '>
-                   <div className="  flex justify-center md:justify-start items-end md:items-end mb-4 md:mb-0">
-                    {item.image && (
-                      <Image
-                        width={300}
-                        height={300}
-                        src={item.image}
-                        alt={`Illustration for ${item.title}`}
-                        className="absolute bottom-0 sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] object-contain"
-                      />
-                    )}
-                  </div>
-                  <div className="flex flex-col m md:mt-0 px-4 lg:px-0">
-                    {item.description && (
-                      <p className="text-sm sm:text-base md:text-lg leading-relaxed mt-10 me-8">
-                        {item.description}
-                      </p>
-                    )}
-                    {item.details && (
-                      <div className="text-left max-w-md mt-2">
-                        <p className="text-sm sm:text-base md:text-lg leading-relaxed mb-4">{item.intro}</p>
-                        <ul className="space-y-2 sm:space-y-3">
-                          {item.details.map((detail, index) => (
-                            <li key={index} className="flex items-start text-sm sm:text-base md:text-base">
-                              <span className="text-blue-200 mr-2 sm:mr-3 mt-1">&#8226;</span>
-                              <span dangerouslySetInnerHTML={{ __html: detail }} />
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                  </div>
-                 </div>
-                </div>
-              ))}
-              </div>
-
+          <div className="grid min-h-[390px] overflow-hidden rounded-[26px] border border-[#d7e9ed] bg-white sm:grid-cols-2">
+            <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
+              <span className="inline-flex w-fit items-center gap-2 rounded-full bg-[#e3f4f7] px-3 py-1.5 text-xs font-bold text-[#027f9f]"><CheckCircle2 size={15} /> Step {active.step}</span>
+              <h3 className="mt-5 text-2xl font-extrabold text-[#0C3D4C]">{active.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">{active.description}</p>
+            </div>
+            <div className="relative min-h-[260px] bg-[#eaf6f9] sm:min-h-full">
+              <Image src={active.image} alt={active.title} fill className="object-contain object-bottom p-5" />
             </div>
           </div>
-        </main>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

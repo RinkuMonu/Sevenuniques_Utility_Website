@@ -23,7 +23,7 @@ const aboutData = {
         "With decades of experience, we’ve helped thousands of drivers buy and renew car insurance online, selecting plans that fit their needs. Our focus on transparency, fast claim settlements, and customer satisfaction has made us a preferred choice for online car insurance.",
     ],
     stats: [
-        { value: "50K+", label: "Happy Customers" },
+        { value: "3.5 Lakh+", label: "Happy Users" },
         { value: "98%", label: "Claim Success Rate" },
         { value: "24/7", label: "Support Available" },
     ],
@@ -184,7 +184,8 @@ const faqs = [
   ]
 
     return (
-        <>
+        // REDESIGN SCOPE: Presentation wrapper only; component data and behavior remain unchanged.
+        <main className="overflow-hidden bg-gradient-to-b from-[#f7fcfd] via-white to-[#f4fafb] text-[#0c3d4c]">
             <CarInsuranceBannerSection />
             <AboutSection aboutData={aboutData} />
             {/* <Features data={featuresData} /> */}
@@ -193,6 +194,6 @@ const faqs = [
             <FAQ faqs={faqs}/>
               <DynamicTable  headers={headers} rows={rows}/>
             <ContactBanner />
-        </>
+        </main>
     )
 }

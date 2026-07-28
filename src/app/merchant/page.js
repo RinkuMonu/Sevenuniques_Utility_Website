@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
-import Empowering from "../../../components/Empowering"
-import MerchantBannerSection from "../../../components/merchant/Merchantbanner"
-import UserMerchantSection from "../../../components/merchant/UserMerchant"
-import WhiteLabelSection from "../../../components/merchant/WhiteLabel"
+import Empowering from "../../../components/Empowering";
+import MerchantBannerSection from "../../../components/merchant/Merchantbanner";
+import UserMerchantSection from "../../../components/merchant/UserMerchant";
+import WhiteLabelSection from "../../../components/merchant/WhiteLabel";
 
-function page() {
-    return (
-        <>
-            <MerchantBannerSection />
-            <UserMerchantSection />
-              <Empowering />
-              <WhiteLabelSection />
-        </>
-    )
+function MerchantPage() {
+  return (
+    <main>
+      <MerchantBannerSection />
+      <UserMerchantSection />
+      <Empowering />
+      <WhiteLabelSection />
+    </main>
+  );
 }
 
-export default page
+export default MerchantPage;

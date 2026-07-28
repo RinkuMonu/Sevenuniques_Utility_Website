@@ -1,101 +1,49 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import { CheckCircle2 } from "lucide-react";
+
+// Customer-only content for the About Us service-access section.
+const content = {
+  title: "Everyday services in one convenient place",
+  description: "Use Finunique to explore and access essential digital and financial services with a simple, customer-friendly experience.",
+  image: "/about/custom.jpg",
+  imageAlt: "Customer using Finunique digital services",
+  benefits: [
+    "Recharge mobiles and pay supported utility bills.",
+    "Explore booking, insurance, PAN, credit, and loan services.",
+    "Find clear information before continuing with a service.",
+    "Get help from our customer support team when needed.",
+  ],
+};
 
 export default function GrowthOpportunities() {
-  const [audience, setAudience] = useState("retailers");
-
-  const kpis =
-    audience === "retailers"
-      ? [
-        { label: "Earn commissions on every transaction including AePS withdrawals, money transfers, recharges, and bill payments.", image: "/about/Money3d.png" },
-        { label: "Bring more customers to your shop by offering easy and reliable digital banking services.", image: "/about/Digital3d.png" },
-        { label: "Boost your monthly income without heavy investment or complicated setup.", image: "/about/Increase3d.png" },
-        { label: "Strengthen trust and build long-term customer loyalty in your local area.", image: "/about/trust.jpg" },
-      ]
-      : [
-        { label: "Connect with more retailers in nearby towns and villages.", image: "/about/network.jpg" },
-        { label: "Get commission from every transaction made by your retailer network.", image: "/about/commision.jpg" },
-        { label: "Receive a fixed monthly salary when you meet your targets.", image: "/about/ccs.jpg" },
-        { label: "Earn additional bonuses for every retailer you onboard.", image: "/about/gift.jpg" },
-        { label: "Enjoy steady income with clear slabs and transparent settlements.", image: "/about/iincre.jpg" },
-      ];
-
   return (
-    <section className="mx-auto max-w-7xl py-16 px-6 lg:px-14">
-      <div className="grid gap-12 lg:gap-16 md:grid-cols-2">
-        <div className="flex flex-col justify-center gap-8">
-          <div className="space-y-6">
-            <p className="border-primary text-[#0C3D4C]  w-fit font-bold rounded-2xl bg-[#0C3D4C]/30 px-3 py-1"> Growth Opportunities </p>
-            <h2 className="text-2xl lg:text-4xl font-bold text-gray-800 leading-tight mb-4">
-              Designed to Increase{" "}
-              <span className="text-[#0C3D4C]  font-bold">
-                {audience === "retailers" ? "retailers" : "distributors"}
-              </span>{" "}
-           Retailer Revenue
-            </h2>
-            <p className="text-lg text-gray-600 max-w-prose leading-relaxed">
-              We provide easy-to-use insights that help retailers take the right actions, measure success transparently, and grow faster.
-            </p>
-          </div>
+    <section className="bg-[#f3f9fb] px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+      <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#0289ad]">Made for Users</p>
+          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-[#0C3D4C] sm:text-4xl">Simplifying your everyday needs</h2>
+          <p className="mt-3 text-base leading-7 text-slate-600">Access useful services through one clear and convenient digital experience.</p>
+        </div>
 
-          <div className="flex flex-col gap-6">
-            <div className="inline-grid grid-cols-2 rounded-lg border border-gray-300 bg-gray-100 p-1 w-fit">
-              {["retailers", "distributors"].map((v) => (
-                <button
-                  key={v}
-                  onClick={() => setAudience(v)}
-                  className={`rounded-md px-4 py-2.5 text-sm font-medium transition-all duration-200 ${audience === v
-                      ? "bg-white shadow-sm text-gray-900"
-                      : "text-gray-500 hover:text-gray-700"
-                    }`}
-                >
-                  {v === "retailers" ? "Retailers" : "Distributors"}
-                </button>
+        <div className="mt-8 grid overflow-hidden rounded-[28px] border border-[#d7e9ed] bg-white shadow-[0_14px_35px_rgba(12,61,76,0.08)] lg:grid-cols-2">
+          <div className="relative min-h-[300px] sm:min-h-[400px]">
+            <Image src={content.image} alt={content.imageAlt} fill className="object-cover" />
+          </div>
+          <div className="flex flex-col justify-center p-6 sm:p-9 lg:p-12">
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#0289ad]">For You</p>
+            <h3 className="mt-3 text-2xl font-extrabold text-[#0C3D4C] sm:text-3xl">{content.title}</h3>
+            <p className="mt-3 text-base leading-7 text-slate-600">{content.description}</p>
+            <ul className="mt-6 space-y-3">
+              {content.benefits.map((benefit) => (
+                <li key={benefit} className="flex items-start gap-3 text-sm leading-6 text-slate-700">
+                  <CheckCircle2 size={18} className="mt-1 shrink-0 text-[#0297bd]" /> {benefit}
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
-
-    
-        <div className="flex flex-col gap-8">
-          {/* Image */}
-          <div className="relative overflow-hidden rounded-md">
-            <div className="aspect-[2/1]">
-              <Image
-                src={
-                  audience === "retailers"
-                    ? "/about/retailer.jpg"
-                    : "/about/dis.jpg"
-                }
-                alt={
-                  audience === "retailers"
-                    ? "Modern retail storefront showcasing merchandising and product displays."
-                    : "Distributor warehouse with organized logistics and pallets."
-                }
-                fill
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <span className="absolute left-4 top-4 bg-white/90 backdrop-blur text-gray-800 text-sm font-medium px-3 py-1.5 rounded-lg">
-              {audience === "retailers" ? "Retail execution" : "Distributor network"}
-            </span>
-          </div>
-        </div>
-      </div>
-
-  
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 mt-10">
-        {kpis.map((k) => (
-          <div
-            key={k.label}
-            className="border border-gray-200 rounded-xl p-6 bg-white shadow-md hover:shadow-md transition-shadow duration-200"
-          >
-            <Image src={k.image} height={70} width={70} alt="benifit icon" className="mb-2" />
-            <p className=" ">{k.label}</p>
-          </div>
-        ))}
       </div>
     </section>
   );

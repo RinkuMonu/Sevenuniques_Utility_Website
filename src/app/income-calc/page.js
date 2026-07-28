@@ -369,64 +369,64 @@ export default function IncomeCalculator() {
 
 
   return (
-    <>
-      <section className="bg-gradient-to-r from-[#033047] to-[#0a81b0] text-white py-10 md:py-16 px-6 md:px-20 flex flex-col md:flex-row items-center justify-between overflow-hidden">
-        {/* Left Content */}
-        <div className="md:w-1/2 space-y-4 text-center md:text-left">
-          <p className="uppercase tracking-[0.2em] text-sm text-gray-200">
-            Income Calculator
-          </p>
-          <h1 className="text-3xl md:text-5xl font-bold leading-snug">
-            Ab Bill Payment Banega <br /> Easy & Smart Payment
-          </h1>
-          <p className="text-gray-200 max-w-lg mx-auto md:mx-0">
-            Apni monthly income, commission aur earning ko easily calculate karein.
-            Smart planning karein, better earning decisions lein aur apne business ko grow karein sab ek hi jagah par.
-          </p>
-        </div>
+    <main className="min-h-screen bg-[#f5f9fb]">
+      {/* UI REDESIGN: Business-focused hero; calculator logic is unchanged. */}
+      <section className="overflow-hidden bg-[#eaf6f9] px-4 py-10 sm:px-6 lg:px-8 lg:py-16">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.08fr_.92fr]">
+          <div className="text-center lg:text-left">
+            <span className="inline-flex items-center gap-2 rounded-full border border-[#b9e1e9] bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.14em] text-[#026381] shadow-sm"><Wallet size={16} /> Smart earning estimator</span>
+            <h1 className="mt-6 text-3xl font-extrabold leading-tight tracking-tight text-[#0C3D4C] sm:text-4xl lg:text-[52px] lg:leading-[1.1]">See how much your business <span className="text-[#0289ad]">can earn.</span></h1>
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 lg:mx-0 lg:text-lg">Estimate daily and monthly income across Finunique services. Adjust transaction volumes and plan your growth with a clearer earning picture.</p>
+            <div className="mt-7 flex flex-wrap justify-center gap-x-6 gap-y-3 lg:justify-start">
+              {["Instant estimates", "Multiple services", "Retailer & distributor views"].map((item) => <span key={item} className="inline-flex items-center gap-2 text-sm font-semibold text-slate-700"><ShieldCheck size={17} className="text-[#00a8e8]" /> {item}</span>)}
+            </div>
+            <a href="#income-calculator" className="mt-8 inline-flex items-center gap-2 rounded-xl bg-[#026381] px-6 py-3.5 text-sm font-bold text-white shadow-[0_10px_24px_rgba(2,99,129,0.2)] transition hover:-translate-y-0.5 hover:bg-[#0C3D4C]">Calculate My Income <ArrowRight size={18} /></a>
+          </div>
 
-        {/* Right Image */}
-        <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center relative">
-          <div className="relative w-[280px] md:w-[380px] h-[220px] md:h-[280px]">
-            <Image
-              src="/image/income-calc-img.png"
-              alt="creditscore"
-              fill
-              className="object-contain"
-              priority
-            />
+          <div className="relative mx-auto w-full max-w-[520px]">
+            <div className="absolute -left-6 top-10 h-28 w-28 rounded-full bg-[#8bd7e7]/30" />
+            <div className="absolute -right-8 bottom-5 h-36 w-36 rounded-full border-[24px] border-white/60" />
+            <div className="relative rounded-[30px] border border-white bg-white/75 p-5 shadow-[0_22px_55px_rgba(12,61,76,0.12)] backdrop-blur-sm sm:p-7">
+              <div className="relative h-[260px] sm:h-[330px]"><Image src="/image/income-calc-img.png" alt="Finunique income calculator overview" fill className="object-contain" priority /></div>
+              <div className="absolute bottom-5 left-5 flex items-center gap-3 rounded-2xl border border-[#d9edf2] bg-white px-4 py-3 shadow-lg sm:bottom-7 sm:left-7">
+                <span className="grid h-10 w-10 place-items-center rounded-full bg-[#e8f6f9] text-[#026381]"><Bolt size={20} /></span>
+                <span><span className="block text-xs font-extrabold text-[#0C3D4C]">Live calculation</span><span className="text-[11px] text-slate-500">Updates with every entry</span></span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
 
 
-      <section className="py-5 lg:py-10  px-6 lg:px-12 min-h-screen bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 lg:px-0">
+      {/* UI REDESIGN: Existing role selection and income calculations are preserved. */}
+      <section id="income-calculator" className="scroll-mt-24 px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-7xl">
           <motion.h2
-            className="text-4xl md:text-5xl font-bold text-slate-900  mb-5"
+            className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0C3D4C] sm:text-4xl"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Estimate Your <span className="text-[#115D8E]">Earning Potential</span>
-            <p className="text-sm font-normal mt-3">Calculate your income from bill payments and financial services with our smart income calculator. Get accurate earning estimates to make informed financial decisions.</p>
+            Estimate your <span className="text-[#0289ad]">earning potential</span>
+            <p className="mt-3 max-w-2xl text-sm font-normal leading-6 text-slate-600">Select your partner type and enter expected daily transactions. Your projected earnings update automatically.</p>
           </motion.h2>
-          <div className="flex mb-4 gap-3">
+          {/* UI REDESIGN: Segmented selector; existing onClick handlers are unchanged. */}
+          <div className="mt-7 inline-flex rounded-xl border border-[#cfe5eb] bg-white p-1.5 shadow-sm">
             <button
               onClick={() => setSelectedTab("retailer")}
-              className={`px-5 py-2 rounded-lg font-medium border transition-all ${selectedTab === "retailer"
-                ? "bg-[#115D8E] text-white border-[#115D8E]"
-                : "bg-white text-[#115D8E] border-[#115D8E]/30"
+              className={`rounded-lg px-6 py-2.5 text-sm font-bold transition-all ${selectedTab === "retailer"
+                ? "bg-[#026381] text-white shadow-sm"
+                : "text-[#026381] hover:bg-[#edf8fa]"
                 }`}
             >
               Retailer
             </button>
             <button
               onClick={() => setSelectedTab("distributor")}
-              className={`px-5 py-2 rounded-lg font-medium border transition-all ${selectedTab === "distributor"
-                ? "bg-[#115D8E] text-white border-[#115D8E]"
-                : "bg-white text-[#115D8E] border-[#115D8E]/30"
+              className={`rounded-lg px-6 py-2.5 text-sm font-bold transition-all ${selectedTab === "distributor"
+                ? "bg-[#026381] text-white shadow-sm"
+                : "text-[#026381] hover:bg-[#edf8fa]"
                 }`}
             >
               Distributor
@@ -434,10 +434,10 @@ export default function IncomeCalculator() {
           </div>
 
 
-          <div className="grid lg:grid-cols-5 gap-10 md:gap-14">
+          <div className="mt-8 grid gap-8 lg:grid-cols-5">
             {/* LEFT SECTION */}
             <motion.div
-              className="lg:col-span-3 space-y-8 overflow-x-scroll lg:overflow-x-hidden"
+              className="space-y-6 lg:col-span-3"
               variants={containerVariants}
               initial="hidden"
               animate="visible"
@@ -446,10 +446,11 @@ export default function IncomeCalculator() {
                 <motion.div
                   key={group.title}
                   variants={itemVariants}
-                  className="bg-white rounded-2xl border border-slate-200 shadow-lg shadow-slate-900/5 transition-shadow duration-300 overflow-hidden"
+                  className="overflow-hidden rounded-[22px] border border-[#d9edf2] bg-white shadow-[0_12px_32px_rgba(12,61,76,0.06)]"
                 >
-                  <div className="px-6 py-4 border-b border-slate-100">
-                    <h3 className="text-xl font-semibold text-slate-800">
+                  <div className="flex items-center gap-3 border-b border-[#e4f0f3] px-5 py-4 sm:px-6">
+                    <span className="h-6 w-1 rounded-full bg-[#00a8e8]" />
+                    <h3 className="text-lg font-extrabold text-[#0C3D4C]">
                       {group.title}
                     </h3>
                     {/* <p className="text-sm text-gray-700 py-1">
@@ -459,8 +460,8 @@ export default function IncomeCalculator() {
 
                   {/* Table Version */}
                   <div className="overflow-x-auto w-full">
-                    <table className="w-full border-collapse text-sm">
-                      <thead className="bg-slate-100/80 text-slate-500 uppercase text-xs tracking-wider border-b border-slate-100">
+                    <table className="w-full min-w-[620px] border-collapse text-sm">
+                      <thead className="border-b border-[#e4f0f3] bg-[#f3f9fa] text-[11px] uppercase tracking-wider text-slate-500">
                         <tr>
                           <th className="px-6 py-3 text-left font-semibold">
                             Service
@@ -483,12 +484,12 @@ export default function IncomeCalculator() {
                           <motion.tr
                             key={item.key}
                             variants={rowVariants}
-                            className="border-b-0 hover:bg-slate-50/80 transition-all"
+                            className="border-b-0 transition-colors hover:bg-[#f8fcfd]"
                           >
                             <td className="px-6 py-3">
                               <div className="flex items-center gap-3">
                                 {/* --- COLOR CHANGE HERE --- */}
-                                <span className="text-[#115D8E] bg-[#115D8E]/10 p-2 rounded-lg">
+                                <span className="rounded-xl bg-[#e8f6f9] p-2.5 text-[#026381]">
                                   {serviceIcons[item.key]}
                                 </span>
                                 <p className="font-medium text-slate-700 text-sm md:text-base">
@@ -511,10 +512,10 @@ export default function IncomeCalculator() {
                                   const value = e.target.value.slice(0, 3); // limit to 3 digits
                                   handleChange(item.key, value);
                                 }}
-                                className="w-20 text-center border border-slate-300 rounded-md text-sm py-1.5 shadow-sm focus:border-[#115D8E] focus:ring-2 focus:ring-[#115D8E]/30 outline-none transition-all"
+                                className="w-20 rounded-lg border border-[#cfe5eb] bg-[#fbfdfe] py-2 text-center text-sm font-semibold text-slate-700 outline-none transition-all focus:border-[#00a8e8] focus:ring-2 focus:ring-[#00a8e8]/15"
                               />
                             </td>
-                            <td className="px-6 py-4 text-right font-semibold text-[#115D8E] text-lg">
+                            <td className="px-6 py-4 text-right text-lg font-extrabold text-[#026381]">
                               ₹
                               {(
                                 data[item.key] * incomeRates[item.key]
@@ -531,40 +532,44 @@ export default function IncomeCalculator() {
 
             {/* RIGHT SECTION */}
             <motion.div
-              className="lg:col-span-2 rounded-2xl bg-gradient-to-br from-white/80 to-sky-50/60 backdrop-blur-xl border border-sky-100 shadow-xl shadow-sky-100/50 p-6 md:p-8 sticky top-24 h-fit"
+              className="sticky top-24 h-fit rounded-[24px] border border-[#cce7ed] bg-white p-6 shadow-[0_18px_45px_rgba(12,61,76,0.1)] md:p-8 lg:col-span-2"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div className="space-y-4 text-center">
+              <div className="space-y-5 text-center">
+                <div className="text-left">
+                  <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#0289ad]">Estimated earnings</p>
+                  <h3 className="mt-2 text-xl font-extrabold text-[#0C3D4C]">Your income summary</h3>
+                </div>
                 {/* Per Day Income */}
-                <div className="bg-[#115D8E]/10  rounded-xl py-4 px-5 border border-[#115D8E]/20 flex items-center justify-between">
-                  <div className="flex items-center gap-3 text-[#115D8E] font-medium">
-                    <CalendarDays className="w-6 h-6 text-[#115D8E]" />
+                <div className="flex items-center justify-between rounded-xl border border-[#cfe8ed] bg-[#edf8fa] px-5 py-4">
+                  <div className="flex items-center gap-3 font-semibold text-[#026381]">
+                    <CalendarDays className="h-6 w-6" />
                     <span>Per Day Income</span>
                   </div>
-                  <span className="text-2xl font-bold text-[#115D8E]">
+                  <span className="text-2xl font-extrabold text-[#026381]">
                     ₹{dailyIncome.toLocaleString()}
                   </span>
                 </div>
 
                 {/* Monthly Income */}
                 <div>
-                  <p className="text-sm text-slate-500 mb-1">Estimated Monthly Income</p>
-                  <h3 className="text-4xl md:text-5xl font-extrabold text-[#115D8E] tracking-tight">
+                  <p className="mb-1 text-sm text-slate-500">Estimated Monthly Income</p>
+                  <h3 className="text-4xl font-extrabold tracking-tight text-[#0C3D4C] md:text-5xl">
                     ₹{monthlyIncome.toLocaleString("en-IN")}
                   </h3>
                 </div>
 
                 {/* Wallet Icon */}
                 <div className="flex justify-center">
-                  <Wallet size={70} strokeWidth={1} className="text-[#115D8E]" />
+                  <span className="grid h-20 w-20 place-items-center rounded-full bg-[#e8f6f9]"><Wallet size={44} strokeWidth={1.4} className="text-[#026381]" /></span>
                 </div>
 
                 {/* CTA Button */}
                 <Link
-                  className="w-full bg-[#115D8E]  text-white font-semibold py-3 rounded-xl hover:bg-[#115D8E]/90  transition-all duration-200 flex items-center justify-center gap-2 group"
-                  href="https://utility.finuniques.in/register"
+                  className="group flex w-full items-center justify-center gap-2 rounded-xl bg-[#026381] py-3.5 font-bold text-white shadow-[0_9px_20px_rgba(2,99,129,0.2)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#0C3D4C]"
+                  href="/signup"
                 >
                   Become a Partner
                   <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -579,21 +584,27 @@ export default function IncomeCalculator() {
       </section>
 
 
-      <section className="max-w-8xl px-6 py-10 space-y-6">
-        {cardsData.map((card, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row items-center md:items-stretch hover:shadow-lg transition-shadow duration-300"
-          >
-            <div className="w-full p-6 md:p-8">
-              <h2 className="text-2xl font-semibold bg-[#1f718a] p-3 rounded-lg text-gray-200 mb-2">
-                {card.title}
-              </h2>
-              <p className="text-gray-600">{card.description}</p>
-            </div>
+      {/* UI REDESIGN: Benefit cards only; calculator data and rates are untouched. */}
+      <section className="bg-white px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#0289ad]">Plan with confidence</p>
+            <h2 className="mt-3 text-2xl font-extrabold text-[#0C3D4C] sm:text-3xl">Turn daily activity into a growth plan</h2>
           </div>
-        ))}
+          <div className="mt-9 grid gap-5 md:grid-cols-3">
+            {cardsData.map((card, index) => {
+              const Icon = [ArrowRightLeft, Bolt, FilePlus][index];
+              return (
+                <article key={card.title} className="rounded-2xl border border-[#dceef2] bg-[#f8fbfc] p-6 transition hover:-translate-y-1 hover:border-[#afdce5] hover:shadow-[0_14px_32px_rgba(12,61,76,0.08)]">
+                  <span className="grid h-12 w-12 place-items-center rounded-xl bg-[#e4f5f8] text-[#026381]"><Icon size={23} /></span>
+                  <h3 className="mt-5 text-lg font-extrabold text-[#0C3D4C]">{card.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-slate-600">{card.description}</p>
+                </article>
+              );
+            })}
+          </div>
+        </div>
       </section>
-    </>
+    </main>
   );
 }

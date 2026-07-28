@@ -19,6 +19,8 @@ export default function page() {
         heading: 'Jab Gadi Safe, To Business Safe',
         description: 'Protect your business vehicles with reliable insurance coverage that safeguards against accidents, damages, theft, and third-party liabilities so your operations never slow down.',
         bgImage: '/image/1.jpg',
+        paymentHref: '/service-payment/commercial-vehicle-insurance',
+        paymentLabel: 'Pay Commercial Vehicle Premium',
         // centerImage: '/image/truck.png',
     };
     const aboutData = {
@@ -29,7 +31,7 @@ export default function page() {
             "With years of experience in the insurance sector, we’ve supported countless businesses in finding coverage that fits their specific needs. Our commitment to transparent policies, fast claim settlements, and exceptional customer service makes us a trusted partner for commercial vehicle owners across India.",
         ],
         stats: [
-            { value: "50K+", label: "Happy Customers" },
+            { value: "3.5 Lakh+", label: "Happy Users" },
             { value: "98%", label: "Claim Success Rate" },
             { value: "24/7", label: "Support Available" },
         ],
@@ -205,7 +207,8 @@ const whydata = {
   ]
 
     return (
-        <>
+        // REDESIGN SCOPE: Presentation wrapper only; component data and behavior remain unchanged.
+        <main className="overflow-hidden bg-gradient-to-b from-[#f7fcfd] via-white to-[#f4fafb] text-[#0c3d4c]">
             <Herobanner data={data} />
             <AboutSection aboutData={aboutData} />
             {/* <Features data={featuresData} /> */}
@@ -214,6 +217,6 @@ const whydata = {
             <DynamicTable  headers={headers} rows={rows}/>
             <FAQ faqs={faqs}/>
             <ContactBanner />
-        </>
+        </main>
     )
 }

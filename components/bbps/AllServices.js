@@ -1,143 +1,46 @@
 "use client";
-import React from "react";
+
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
-const ServiceSection = ({
-  eyebrow,
-  title,
-  desc,
-  imageSrc,
-  icons = ["⚡", "📡"],
-  blobs = ["bg-rose-100/70", "bg-emerald-100/70", "bg-sky-100/70"],
-  frame = "#8B4A16",
-  accent = "#135e90",
-  reverse = false,
-}) => {
-  return (
-    <section className="px-4 lg:px-0 py-12">
-      <div className="max-w-6xl mx-auto">
-        <div
-          className={`grid grid-cols-1 lg:grid-cols-2 items-center gap-10 ${
-            reverse ? "lg:[&>*:first-child]:order-2" : ""
-          }`}
-        >
-          {/* Left content */}
-          <div>
-            <p className="text-sm font-semibold text-slate-500">{eyebrow}</p>
-
-            <h2
-              className="mt-3 text-3xl sm:text-4xl font-extrabold"
-              style={{ color: accent }}
-            >
-              {title}
-            </h2>
-
-            <p className="mt-4 text-base leading-relaxed text-slate-600 max-w-xl">
-              {desc}
-            </p>
-          </div>
-
-          {/* Right visual */}
-          <div className="relative min-h-[320px] lg:min-h-[420px] flex items-center justify-end">
-            {/* soft icon background */}
-            <div className="absolute inset-0">
-              <div className={`absolute left-10 top-16 h-20 w-20 rounded-2xl ${blobs[0]}`} />
-              <div className={`absolute left-44 top-28 h-24 w-24 rounded-3xl ${blobs[1]}`} />
-              <div className={`absolute left-28 bottom-16 h-28 w-28 rounded-3xl ${blobs[2]}`} />
-
-              <div className="absolute left-20 top-20 grid h-16 w-16 place-items-center rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
-                <span className="text-xl">{icons[0]}</span>
-              </div>
-              <div className="absolute left-52 bottom-20 grid h-16 w-16 place-items-center rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
-                <span className="text-xl">{icons[1]}</span>
-              </div>
-            </div>
-
-            {/* phone mockup */}
-            <div className="relative z-10 w-[240px] sm:w-[280px] lg:w-[320px]">
-              <div
-                className="rounded-[2.2rem] border-[6px] shadow-[0_30px_70px_rgba(2,6,23,0.25)] w-[250px]"
-                style={{ borderColor: frame, backgroundColor: frame }}
-              >
-                <div className="rounded-[1.8rem] bg-white p-2">
-                  <Image
-                    src={imageSrc}
-                    alt={`${title} screen`}
-                    width={900}
-                    height={1200}
-                    className="h-[380px] sm:h-[420px] lg:h-[460px] w-full rounded-[1.4rem] object-cover"
-                    priority
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* divider like sample */}
-        <div className="mt-10 border-t border-slate-100" />
-      </div>
-    </section>
-  );
-};
+const services = [
+  { title: "Recharges", text: "Finunique BBPS makes supported mobile and DTH recharges quick and convenient, helping users maintain access to essential communication and entertainment services.", image: "/allservices/recharge.png", href: "/service-payment/mobile" },
+  { title: "Utility Payments", text: "Access supported electricity, water, gas, broadband, and other recurring bill categories through a clear digital payment experience.", image: "/allservices/Banking.PNG", href: "/service-payment/electricity" },
+  { title: "Booking", text: "Explore available travel and booking categories with simple navigation, relevant information, and access to the Finunique booking platform.", image: "/allservices/booking.png", href: "/booking" },
+  { title: "Financial Payments", text: "Review supported financial payment categories and keep eligible obligations organized through available digital services.", image: "/allservices/finance.png", href: "/financial-payments" },
+];
 
 export default function AllServices() {
-  const sections = [
-    {
-      eyebrow: "Service",
-      title: "Recharges",
-      desc:
-        "Finunique BBPS makes mobile and DTH recharges quick and effortless. Users can easily recharge their phones and TV connections, ensuring uninterrupted communication and entertainment. This service is designed to simplify access to essential digital payments, especially for users in rural and semi-urban areas.",
-      imageSrc: "/allservices/recharge.png",
-      icons: ["⚡", "📡"],
-      blobs: ["bg-rose-100/70", "bg-emerald-100/70", "bg-sky-100/70"],
-      frame: "#0184be",
-      accent: "#135e90",
-    },
-    {
-      eyebrow: "Service",
-      title: "Banking",
-      desc:
-        "Finunique BBPS offers digital banking services that let users check account balances, transfer funds, and manage their accounts directly from their mobile phones. This minimizes the need for branch visits and long waiting lines, making banking more convenient especially in remote areas. With instant access to transaction history and alerts, users can monitor their spending and keep their finances secure.",
-      imageSrc: "/allservices/Banking.PNG",
-      icons: ["🏦", "🔒"],
-      blobs: ["bg-indigo-100/70", "bg-emerald-100/70", "bg-sky-100/70"],
-      frame: "#0C3D4C",
-      accent: "#125e8f",
-    },
-    {
-      eyebrow: "Service",
-      title: "Booking",
-      desc:
-        "Finunique BBPS enables users to book services online with quick and instant confirmation. This helps save time, reduces unnecessary travel, and makes scheduling more reliable. With features like reminders and simple rescheduling, users can plan ahead smoothly and avoid last-minute inconvenience.",
-      imageSrc: "/allservices/booking.png",
-      icons: ["📅", "✅"],
-      blobs: ["bg-amber-100/70", "bg-rose-100/70", "bg-emerald-100/70"],
-      frame: "#0184be",
-      accent: "#E07A1A",
-    },
-    {
-      eyebrow: "Service",
-      title: "Financial",
-      desc:
-        "Finunique BBPS offers digital financial services that help users handle payments, monitor expenses, and maintain records in one secure place. This gives better visibility into monthly spending and helps users make informed financial decisions. With timely payments and organized transaction history, users can stay in better control of their finances.",
-      imageSrc: "/allservices/finance.png",
-      icons: ["📊", "💳"],
-      blobs: ["bg-sky-100/70", "bg-violet-100/70", "bg-emerald-100/70"],
-      frame: "#0C3D4C",
-      accent: "#0C3D4C",
-    },
-  ];
-
   return (
-    <div>
-      {sections.map((s, idx) => (
-        <ServiceSection
-          key={s.title}
-          {...s}
-          reverse={idx % 2 === 1}
-        />
-      ))}
-    </div>
+    <section className="bg-white py-10 sm:py-14">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-8 text-center">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#0289ad]">Available Categories</p>
+          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-[#0C3D4C] sm:text-4xl">Services available through Finunique</h2>
+        </div>
+
+        {services.map((service, index) => (
+          <article key={service.title} className={`grid items-center gap-8 border-b border-[#e0eef1] py-12 last:border-b-0 lg:grid-cols-2 lg:gap-14 ${index % 2 ? "lg:[&>*:first-child]:order-2" : ""}`}>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#0289ad]">BBPS Service</p>
+              <h3 className="mt-3 text-3xl font-extrabold text-[#0C3D4C] sm:text-4xl">{service.title}</h3>
+              <p className="mt-4 max-w-xl text-base leading-7 text-slate-600">{service.text}</p>
+              <Link href={service.href} className="group mt-6 inline-flex items-center gap-2 rounded-xl bg-[#026381] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#0C3D4C]">
+                Explore Service <ArrowRight size={16} className="transition group-hover:translate-x-1" />
+              </Link>
+            </div>
+
+            <div className="relative flex min-h-[350px] items-center justify-center overflow-hidden rounded-[26px] bg-[#eaf6f9] sm:min-h-[430px]">
+              <span className="absolute left-[12%] top-[18%] h-24 w-24 rounded-3xl bg-[#cfeaf0]" />
+              <span className="absolute bottom-[15%] right-[12%] h-28 w-28 rounded-full bg-[#d8f1f5]" />
+              <div className="relative z-10 w-[220px] rounded-[32px] border-[6px] border-[#0C3D4C] bg-[#0C3D4C] p-1 shadow-[0_24px_55px_rgba(12,61,76,0.22)] sm:w-[250px]">
+                <Image src={service.image} alt={`${service.title} service screen`} width={500} height={850} className="h-[330px] w-full rounded-[24px] bg-white object-cover object-top sm:h-[380px]" />
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 }

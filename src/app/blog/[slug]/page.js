@@ -15,8 +15,8 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa"
 import { MdShare } from "react-icons/md"
 import { MdArrowOutward } from "react-icons/md"
 
-// import SEO from "../../../../components/SEO/SEO"
 import seoConfig from "@/app/seoConfig"
+import { getSampleBlog, sampleBlogs } from "@/data/sampleBlogs"
 
 // API Configuration
 const API_BASE_URL = "https://cms.sevenunique.com/apis"
@@ -26,6 +26,9 @@ const API_HEADERS = {
 
 // Fetch single blog post by slug
 async function getBlogBySlug(slug) {
+    const sampleBlog = getSampleBlog(slug)
+    if (sampleBlog) return sampleBlog
+
     try {
         const res = await axios.get(
             `${API_BASE_URL}/blogs/get-blogs.php?website_id=6&status=2&limit=1000`,
@@ -54,8 +57,7 @@ async function getBlogBySlug(slug) {
             categoryName,
             author: blog?.author || "Admin"
         }
-    } catch (err) {
-        console.error("Blog fetch failed:", err)
+    } catch {
         return null
     }
 }
@@ -64,7 +66,15 @@ async function getBlogBySlug(slug) {
 
 
 export async function generateMetadata({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
+  const sampleBlog = getSampleBlog(slug);
+
+  if (sampleBlog) {
+    return {
+      title: `${sampleBlog.title} | Finunique`,
+      description: sampleBlog.short_description,
+    };
+  }
 
   const seo = await seoConfig(`/blog/${slug}`);
   if (!seo) {
@@ -103,10 +113,11 @@ async function getAllBlogs() {
             `${API_BASE_URL}/blogs/get-blogs.php?website_id=6&status=2&limit=1000`,
             { headers: API_HEADERS }
         )
-        return res?.data?.data || []
-    } catch (err) {
-        console.error("Blogs fetch failed:", err)
-        return []
+        const remoteBlogs = res?.data?.data || []
+        const sampleSlugs = new Set(sampleBlogs.map((blog) => blog.slug))
+        return [...sampleBlogs, ...remoteBlogs.filter((blog) => !sampleSlugs.has(blog.slug))]
+    } catch {
+        return sampleBlogs
     }
 }
 
@@ -210,16 +221,28 @@ async function getCategories() {
 
 
 export default async function BlogPostPage({ params }) {
-    const { slug } = params
+    const { slug } = await params
+    const samplePost = getSampleBlog(slug)
     
-    // Fetch data in parallel
-    const [post, trendingPosts, recentPosts, relatedPosts, categories] = await Promise.all([
-        getBlogBySlug(slug),
-        getTrendingPosts(),
-        getRecentPosts(),
-        getRelatedPosts(slug),
-        getCategories()
-    ])
+    // Local sample articles do not depend on the external CMS.
+    const [post, trendingPosts, recentPosts, relatedPosts, categories] = samplePost
+        ? [
+            samplePost,
+            [],
+            sampleBlogs.filter((blog) => blog.slug !== slug).slice(0, 3),
+            sampleBlogs.filter((blog) => blog.slug !== slug).slice(0, 2),
+            sampleBlogs.reduce((counts, blog) => {
+                counts[blog.categoryName] = (counts[blog.categoryName] || 0) + 1
+                return counts
+            }, {}),
+        ]
+        : await Promise.all([
+            getBlogBySlug(slug),
+            getTrendingPosts(),
+            getRecentPosts(),
+            getRelatedPosts(slug),
+            getCategories()
+        ])
     
     // If post not found, show 404
     if (!post) {
@@ -227,7 +250,7 @@ export default async function BlogPostPage({ params }) {
     }
     
     // Update related posts with current post's category
-    const relatedPostsWithCategory = await Promise.all(
+    const relatedPostsWithCategory = samplePost ? relatedPosts : await Promise.all(
         relatedPosts?.map(async (related) => {
             if (related.id) {
                 try {
@@ -248,7 +271,7 @@ export default async function BlogPostPage({ params }) {
     )
 
     return (
-        <div className="bg-gray-50 ">
+        <div className="bg-gray-50">
         
             {/* Hero */}
             <div className="relative h-[50vh] md:h-[75vh]">
@@ -262,19 +285,19 @@ export default async function BlogPostPage({ params }) {
                 <div className="absolute inset-0 bg-black/40" />
                 <div className="absolute inset-0 flex items-center">
                     <div className="container mx-auto px-4">
-                        <div className="max-w-3xl mx-auto text-center text-white">
-                            <h1 className="text-4xl font-bold mb-4">{post?.title}</h1>
+                        <div className="mx-auto max-w-3xl text-center text-white">
+                            <h1 className="mb-4 text-4xl font-bold">{post?.title}</h1>
                             <div className="flex flex-wrap justify-center gap-4 text-sm">
                                 <div className="flex items-center">
-                                    <Calendar className="h-4 w-4 mr-1" />
+                                    <Calendar className="mr-1 h-4 w-4" />
                                     {new Date(post?.created_at).toLocaleDateString()}
                                 </div>
                                 <div className="flex items-center">
-                                    <User className="h-4 w-4 mr-1" />
+                                    <User className="mr-1 h-4 w-4" />
                                     {post?.author || "Admin"}
                                 </div>
                                 <div className="flex items-center">
-                                    <Tag className="h-4 w-4 mr-1" />
+                                    <Tag className="mr-1 h-4 w-4" />
                                     {post?.categoryName}
                                 </div>
                             </div>
@@ -284,26 +307,26 @@ export default async function BlogPostPage({ params }) {
             </div>
 
             {/* Content */}
-            <div className="max-w-7xl mx-auto px-4 lg:px-0 pt-16 pb-20">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="mx-auto max-w-7xl px-4 pt-16 pb-20 lg:px-0">
+                <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                     {/* Main Content */}
-                    <div className="lg:col-span-2 bg-white p-6 shadow-md rounded-lg">
+                    <div className="rounded-lg bg-white p-6 shadow-md lg:col-span-2">
                         <Link
                             href="/blog"
-                            className="inline-flex items-center text-[#115d8e] mb-8 hover:underline"
+                            className="mb-8 inline-flex items-center text-[#115d8e] hover:underline"
                         >
-                            <ArrowLeft className="h-4 w-4 mr-2" />
+                            <ArrowLeft className="mr-2 h-4 w-4" />
                             Back to Blog
                         </Link>
 
                         <article
-                            className="prose prose-lg max-w-none mb-12"
+                            className="prose prose-lg mb-12 max-w-none"
                             dangerouslySetInnerHTML={{ __html: post?.content }}
                         />
 
                         {/* Share */}
-                        <div className="border-t border-b border-gray-400 py-6">
-                            <div className="flex justify-between items-center flex-wrap gap-4">
+                        <div className="border-y border-gray-400 py-6">
+                            <div className="flex flex-wrap items-center justify-between gap-4">
                                 <div className="font-medium">Share this article</div>
                                 <div className="flex gap-2">
                                     <Link href="" className="p-2 rounded-full border border-[#115D8E]/50 hover:bg-gray-100">
@@ -324,12 +347,12 @@ export default async function BlogPostPage({ params }) {
 
                         {/* Related Posts */}
                         <div className="mt-10">
-                            <h2 className="text-2xl font-bold mb-6">Related Articles</h2>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <h2 className="mb-6 text-2xl font-bold">Related Articles</h2>
+                            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                                 {relatedPostsWithCategory?.map((related) => (
                                     <div
                                         key={related?.id}
-                                        className="group relative min-h-[300px] rounded-2xl overflow-hidden bg-white"
+                                        className="group relative min-h-75 overflow-hidden rounded-2xl bg-white"
                                     >
                                         {/* image */}
                                         <Image
@@ -340,12 +363,12 @@ export default async function BlogPostPage({ params }) {
                                             sizes="(min-width:1024px) 25vw, 100vw"
                                         />
                                         {/* dark-to-transparent overlay */}
-                                        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/20 to-transparent" />
+                                        <div className="absolute inset-0 bg-linear-to-t from-slate-950/80 via-slate-900/20 to-transparent" />
 
                                         {/* content */}
-                                        <div className="relative z-10 h-full p-5 flex flex-col justify-end text-white">
+                                        <div className="relative z-10 flex h-full flex-col justify-end p-5 text-white">
                                             <div className="mb-2 flex items-center justify-between text-xs opacity-90">
-                                                <span className="inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur px-2.5 py-1">
+                                                <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-2.5 py-1 backdrop-blur">
                                                     <span className="inline-block h-2 w-2 rounded-full bg-sky-400"></span>
                                                     {related?.author}
                                                 </span>
@@ -353,12 +376,12 @@ export default async function BlogPostPage({ params }) {
                                             </div>
 
                                             <h4 className="text-xl font-semibold leading-snug">{related?.title}</h4>
-                                            <p className="mt-2 text-white/80 line-clamp-2">{related?.description}</p>
+                                            <p className="mt-2 line-clamp-2 text-white/80">{related?.description}</p>
 
                                             <div className="mt-4">
                                                 <Link
                                                     href={`/blog/${related?.slug}`}
-                                                    className="inline-flex items-center gap-1.5 rounded-lg bg-white/90 text-gray-900 px-3 py-1.5 text-xs font-semibold hover:bg-white transition"
+                                                className="inline-flex items-center gap-1.5 rounded-lg bg-white/90 px-3 py-1.5 text-xs font-semibold text-gray-900 transition hover:bg-white"
                                                 >
                                                     Read more <MdArrowOutward />
                                                 </Link>
@@ -366,7 +389,7 @@ export default async function BlogPostPage({ params }) {
                                         </div>
 
                                         {/* small shine */}
-                                        <span className="absolute left-0 top-0 h-full w-1/5 translate-x-[-60%] bg-white/10 blur-xl opacity-0 group-hover:opacity-100 group-hover:translate-x-[180%] transition-all duration-[900ms]" />
+                                        <span className="absolute top-0 left-0 h-full w-1/5 -translate-x-[60%] bg-white/10 opacity-0 blur-xl transition-all duration-900 group-hover:translate-x-[180%] group-hover:opacity-100" />
                                     </div>
                                 ))}
                             </div>
@@ -488,10 +511,11 @@ export async function generateStaticParams() {
         )
         
         const blogs = res?.data?.data || []
-        return blogs?.map((blog) => ({
+        const slugs = [...sampleBlogs, ...blogs]
+        return slugs?.map((blog) => ({
             slug: blog.slug,
         }))
     } catch {
-        return []
+        return sampleBlogs.map((blog) => ({ slug: blog.slug }))
     }
 }

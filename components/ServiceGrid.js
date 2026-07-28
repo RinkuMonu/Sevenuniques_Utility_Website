@@ -280,7 +280,7 @@ const ServiceGrid = () => {
   const goToLogin = () => {
     // Optional: include service name in query too
     const redirect = encodeURIComponent(pathname);
-    router.push(`https://utility.finuniques.in/`,  "_blank",);
+    router.push("/login");
   };
 
   return (

@@ -20,6 +20,8 @@ export default function page() {
     heading: 'Har Ride Ke Liye Smart Protection',
     description: 'Insure your bike online quickly. Get protection against accidents, theft, or natural disasters. Compare plans, enjoy instant approval, and ride confidently without any hassle or worry',
     bgImage: '/image/3-1.jpg',
+    paymentHref: '/service-payment/bike-insurance',
+    paymentLabel: 'Pay Bike Insurance Premium',
     // centerImage: '/image/bike-ins-banner.JPG',
   };
   const aboutData = {
@@ -30,7 +32,7 @@ export default function page() {
       "With over 10 years of experience in the insurance industry, we’ve assisted thousands of riders in getting the coverage they need. Our commitment to transparency, fast claim settlements, and customer satisfaction has made us a preferred choice for online bike insurance.",
     ],
     stats: [
-      { value: "50K+", label: "Happy Customers" },
+      { value: "3.5 Lakh+", label: "Happy Users" },
       { value: "98%", label: "Claim Success Rate" },
       { value: "24/7", label: "Support Available" },
     ],
@@ -206,7 +208,8 @@ export default function page() {
   ]
 
   return (
-    <>
+    // REDESIGN SCOPE: Presentation wrapper only; component data and behavior remain unchanged.
+    <main className="overflow-hidden bg-linear-to-b from-[#f7fcfd] via-white to-[#f4fafb] text-[#0c3d4c]">
       <Herobannerbike data={data} />
       <AboutSection aboutData={aboutData} />
       {/* <Features data={Features} /> */}
@@ -215,6 +218,6 @@ export default function page() {
       <DynamicTable headers={headers} rows={rows} />
       <FAQ faqs={faqs} />
       <ContactBanner />
-    </>
+    </main>
   )
 }

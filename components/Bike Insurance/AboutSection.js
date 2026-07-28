@@ -4,18 +4,19 @@ import React from "react";
 export default function AboutSection({ aboutData }) {
   return (
     <>
-      <section className="py-20 bg-white">
+      {/* REDESIGNED INSURANCE ABOUT SECTION: visual styling stays local in Tailwind. */}
+      <section className="relative bg-white py-18 md:py-26">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
             {/* Left Content */}
             <div>
-              <div className="inline-block px-4 py-2 bg-blue-50 rounded-full mb-6">
+              <div className="mb-6 inline-block rounded-full border border-[#cce8ed] bg-[#edf8fa] px-4 py-2">
                 <span className="text-[#00b4d8] font-semibold text-sm">
                   {aboutData.badge}
                 </span>
               </div>
 
-              <h2 className="text-4xl md:text-5xl font-bold text-[#0d3b4f] mb-6 leading-tight">
+              <h2 className="mb-6 text-4xl font-[850] leading-tight tracking-[-0.035em] text-[#0c3d4c] md:text-5xl">
                 {aboutData.heading}
               </h2>
 
@@ -35,7 +36,7 @@ export default function AboutSection({ aboutData }) {
                 {aboutData.stats.map((stat, index) => (
                   <div
                     key={index}
-                    className="text-center p-4 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg"
+                    className="rounded-2xl border border-[#d9ebee] bg-gradient-to-br from-[#f4fbfc] to-white p-4 text-center shadow-[0_8px_22px_rgba(12,61,76,0.06)]"
                   >
                     <div className="text-3xl font-bold text-[#00b4d8] mb-2">
                       {stat.value}
@@ -52,13 +53,13 @@ export default function AboutSection({ aboutData }) {
                 <Image
                   src={aboutData.image.src}
                   alt={aboutData.image.alt}
-                  className="w-full h-[500px] object-cover relative"
+                  className="relative h-[420px] min-h-[420px] w-full object-cover md:min-h-[520px]"
                   fill
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0d3b4f]/80 to-transparent"></div>
 
                 {/* Floating Card */}
-                <div className="absolute bottom-8 left-8 right-8 bg-white rounded-xl p-6 shadow-xl">
+                <div className="absolute bottom-8 left-8 right-8 rounded-[1.25rem] border border-[#0c3d4c]/10 bg-white p-6 shadow-[0_18px_45px_rgba(6,47,60,0.22)]">
                   <div className="items-start gap-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-[#00b4d8] to-[#0077b6] rounded-lg flex items-center justify-center flex-shrink-0">
                       <svg

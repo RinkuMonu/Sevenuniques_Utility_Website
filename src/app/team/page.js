@@ -1,257 +1,110 @@
-// "use client";
-// import React from "react";
-// import Image from "next/image";
-// import { FaHeart, FaShieldAlt, FaBolt, FaUsers, FaLightbulb } from "react-icons/fa";
-// import ServiceBanner from "../../../components/ServiceBanner";
-// import IntegrationOrbit from "../../../components/IntegrationOrbit";
-
-// const TeamCard = ({ name, role, bio, image }) => {
-//   return (
-//     <div className="group relative overflow-hidden rounded-md  bg-white ">
-//       <div className="relative h-[260px] w-full bg-white">
-//         <Image
-//           src={image}
-//           alt={name}
-//           fill
-//           className="object-contain object-top"
-//           sizes="(max-width: 1024px) 50vw, 25vw"
-//         />
-//         <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/35 via-black/10 to-transparent" />
-//         <div className="absolute inset-x-3 bottom-3 bg-linear-to-t from-[#125e8f78] via-[#00186b]/35 to-transparent
-//                   blur-[0px]">
-//           <div className="rounded-xl px-3 py-2 text-white">
-//             <p className="text-[15px] font-semibold leading-tight">{name}</p>
-//             <p className="mt-0.5 text-xs text-white/85">{role}</p>
-//           </div>
-//         </div>
-//       </div>
-//       {bio && (
-//         <div className="p-4">
-//           <p className="text-xs leading-relaxed text-slate-500">{bio}</p>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
-
-
-// function TeamGridSection({ label, title, members }) {
-//   return (
-//     <section className="px-4 lg:px-0 py-14 bg-white">
-//       <div className="max-w-6xl mx-auto">
-//         <div className="mb-8">
-//           <p className="text-xs font-bold tracking-[0.28em] text-slate-500">{label}</p>
-//           <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-900">{title}</h2>
-//         </div>
-
-//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-//           {members.map((m, idx) => (
-//             <TeamCard key={`${m.name}-${idx}`} {...m} />
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-// const ValueCard = ({ title, desc, Icon, tone = "stone" }) => {
-//   const toneClasses =
-//     tone === "amber"
-//       ? "border-amber-200 bg-amber-50/70 text-amber-700"
-//       : tone === "blue"
-//         ? "border-blue-200 bg-blue-50/70 text-blue-700"
-//         : tone === "emerald"
-//           ? "border-emerald-200 bg-emerald-50/70 text-emerald-700"
-//           : tone === "violet"
-//             ? "border-violet-200 bg-violet-50/70 text-violet-700"
-//             : "border-slate-200 bg-white text-slate-700";
-
-//   return (
-//     <div className="rounded-3xl border bg-white p-6 shadow-sm hover:shadow-md transition">
-//       <div className={`inline-flex items-center gap-2 rounded-2xl border px-3 py-2 ${toneClasses}`}>
-//         <Icon className="h-4 w-4" />
-//         <span className="text-xs font-extrabold tracking-[0.18em]">CORE VALUE</span>
-//       </div>
-
-//       <h3 className="mt-4 text-xl font-extrabold text-slate-900">{title}</h3>
-//       <p className="mt-2 text-sm leading-relaxed text-slate-600">{desc}</p>
-//     </div>
-//   );
-// };
-
-// function CoreValuesSection() {
-//   const values = [
-//     {
-//       title: "Customer First",
-//       desc: "Every decision starts with what creates the best experience for the user.",
-//       Icon: FaHeart,
-//       tone: "amber",
-//     },
-//     {
-//       title: "Integrity",
-//       desc: "Build trust through transparency, clear communication, and doing the right thing.",
-//       Icon: FaShieldAlt,
-//       tone: "blue",
-//     },
-//     {
-//       title: "Speed & Ownership",
-//       desc: "Move fast, take responsibility, and ship improvements consistently.",
-//       Icon: FaBolt,
-//       tone: "violet",
-//     },
-//     {
-//       title: "One Team",
-//       desc: "Collaborate across roles, share context early, and win together.",
-//       Icon: FaUsers,
-//       tone: "emerald",
-//     },
-//     {
-//       title: "Innovation",
-//       desc: "Stay curious, test ideas quickly, and keep raising the quality bar.",
-//       Icon: FaLightbulb,
-//       tone: "stone",
-//     },
-//   ];
-
-//   return (
-//     <section className="px-4 lg:px-0 py-14 bg-white">
-//       <div className="max-w-6xl mx-auto">
-//         <div className="flex items-end justify-between gap-6">
-//           <div>
-//             <p className="text-xs font-bold tracking-[0.28em] text-slate-500">CORE VALUES</p>
-//             <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-900">
-//               What drives the team
-//             </h2>
-//             <p className="mt-3 max-w-2xl text-sm text-slate-600">
-//               A few principles that guide how the product is built, supported, and improved.
-//             </p>
-//           </div>
-//         </div>
-
-//         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-//           {values.map((v) => (
-//             <ValueCard key={v.title} {...v} />
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-// export default function TeamSection() {
-//   const technicalTeam = [
-//     { name: "Rajyvardhan Singh", role: "Sr. MERN Stack Developer", image: "/teams/lucky.jpg", accent: "stone" },
-//     { name: "Ranjay Kumar", role: "Sr. MERN Stack Developer", image: "/teams/ranjay.jpg", accent: "slate" },
-//     { name: "Vijay Singh", role: "Jr. MERN Stack Developer", image: "/teams/vijay.jpg", accent: "amber" },
-//     { name: "Niranjan Kumawat", role: "Jr. Full Stack Developer", image: "/teams/niranjan.jpg", accent: "stone" },
-//     { name: "Sourav Singh Bhati", role: "Flutter developer", image: "/teams/sourav.png", accent: "stone" },
-//     { name: "Vinod Sain", role: "Flutter developer", image: "/teams/vinod.png", accent: "stone" },
-//     { name: "Nandini Lodha", role: "Sr. Front-end Developer", image: "/teams/nandini.jpg", accent: "stone" },
-//     { name: "Devika Chhipa", role: "Front-end Developer", image: "/teams/devika.jpg", accent: "stone" },
-//     { name: "Kanak Sharma", role: "Ui-Ux Designer", image: "/teams/kanak.jpg", accent: "stone" },
-//   ];
-
-//   const salesTeam = [
-//     { name: "Akshay Yogi", role: "Sales Manager", image: "/teams/akshay.jpg", accent: "stone" },
-//     { name: "Anish Sharma", role: "Business Analyst", image: "/teams/anish.jpg", accent: "amber" },
-//     { name: "Rekha Kirad", role: "Sr. Relationship Manager", image: "/teams/rekha.jpg", accent: "stone" },
-//     { name: "Anchal Kumari", role: "Relationship Manager", image: "/teams/anchal.jpg", accent: "stone" },
-//     { name: "Kusum Joshi", role: "Relationship Manager", image: "/teams/kusum.png", accent: "stone" },
-//     { name: "Deepa Lalwani", role: "Relationship Manager", image: "/teams/deepa.jpg", accent: "stone" },
-//     { name: "Nisha Rajput", role: "Relationship Manager", image: "/teams/nisha.png", accent: "stone" },
-//     { name: "Riya Mahawar", role: "Relationship Manager", image: "/teams/riya.jpg", accent: "stone" },
-//     { name: "Anjali eena", role: "Relationship Manager", image: "/teams/anjali.jpg", accent: "stone" },
-
-//   ];
-
-//   const data = {
-//     id: 1,
-//     subheading: 'OUR TEAM',
-//     // heading: 'Angootha Lagao, Transaction Pao',
-//     heading: 'Our Most Valuable Team Members',
-//     // description: 'Quickly transfer funds to your loved ones anytime, anywhere with our secure and reliable Domestic Money Transfer service.',
-//     description: '',
-//     bgImage: '/teams/teambg.png',
-//     centerImage: '/teams/teamvector.png',
-//   }
-//   const section2data = {
-//     title: '/teams/title.png',
-//     img2: '/teams/team.png',
-//     color: "#FFF3C8"
-//   }
-
-//   return (
-//     <>
-//       <ServiceBanner data={data} />
-//       <div style={{ backgroundColor: section2data.color }}>
-//         <div className='max-w-7xl mx-auto lg:pt-8 px-4 lg:px-0'>
-//           <div className='grid grid-cols-1 sm:grid-cols-2'>
-//             <div className='flex items-center'>
-//               <Image src={section2data.title} width={400} height={0} alt=' logo' />
-//             </div>
-//             <div>
-//               <Image src={section2data.img2} width={600} height={400} alt=' image' className=' ' />
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//       <TeamGridSection label="TECHNICAL TEAM" title="Engineerings" members={technicalTeam} />
-//       <TeamGridSection label="SALES TEAM" title="Sales Team" members={salesTeam} />
-//       <CoreValuesSection />
-//       <IntegrationOrbit />
-//     </>
-//   );
-// }
-
-
-
-
-"use client";
-import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import axios from "axios";
-import { FaHeart, FaShieldAlt, FaBolt, FaUsers, FaLightbulb } from "react-icons/fa";
-import ServiceBanner from "../../../components/ServiceBanner";
-import IntegrationOrbit from "../../../components/IntegrationOrbit";
+import Link from "next/link";
+import {
+  ArrowRight,
+  BriefcaseBusiness,
+  Code2,
+  Handshake,
+  Heart,
+  Lightbulb,
+  ShieldCheck,
+  Sparkles,
+  Users,
+} from "lucide-react";
+import ScrollReveal from "../../../components/ScrollReveal";
 
-const TeamCard = ({ name, role, bio, image }) => {
-  return (
-    <div className="group relative overflow-hidden rounded-md bg-white">
-      <div className="relative h-[260px] w-full bg-white">
-        <Image
-          src={image}
-          alt={name}
-          fill
-          className="object-contain object-top"
-          sizes="(max-width: 1024px) 50vw, 25vw"
-        />
-        <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/35 via-black/10 to-transparent" />
-        <div className="absolute inset-x-3 bottom-3 bg-linear-to-t from-[#125e8f78] via-[#00186b]/35 to-transparent">
-          <div className="rounded-xl px-3 py-2 text-white">
-            <p className="text-[15px] font-semibold leading-tight">{name}</p>
-            <p className="mt-0.5 text-xs text-white/85">{role}</p>
-          </div>
-        </div>
-      </div>
-      {bio && (
-        <div className="p-4">
-          <p className="text-xs leading-relaxed text-slate-500">{bio}</p>
-        </div>
-      )}
-    </div>
-  );
+export const metadata = {
+  title: "Our Team | Finunique",
+  description:
+    "Meet the technical and sales teams working together to build and support Finunique.",
 };
 
-function TeamGridSection({ label, title, members }) {
-  return (
-    <section className="px-4 lg:px-0 py-14 bg-white">
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-8">
-          <p className="text-xs font-bold tracking-[0.28em] text-slate-500">{label}</p>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-900">{title}</h2>
-        </div>
+const technicalTeam = [
+  { name: "Rajyavardhan Singh", role: "Technical Team", designation: "Backend Developer", image: "/teams/RajRajyavardhan Singh.jpeg" },
+  { name: "Rahul Singh", role: "Technical Team", designation: "Backend Developer", image: "/teams/Rahul Singh.jpeg" },
+  { name: "Rinku Yadav", role: "Technical Team", designation: "Server Administrator", image: "/teams/Rinku yadav.jpeg" },
+  { name: "Devika Chhipa", role: "Technical Team", designation: "Senior Frontend Developer", image: "/teams/Devika Chhipa.jpeg" },
+  { name: "Khyati Jain", role: "Technical Team", designation: "UI/UX Designer", image: "/teams/Khyati Jain.jpeg" },
+  { name: "Rahul Jain", role: "Technical Team", designation: "Frontend Developer Intern", image: "/teams/Rahul Jain.png" },
+];
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {members.map((m, idx) => (
-            <TeamCard key={`${m.name}-${idx}`} {...m} />
+const salesTeam = [
+  { name: "Chandan Sharma", role: "Sales Team", designation: "SEO Specialist", image: "/teams/Chandan Sharma.jpeg" },
+  { name: "Vishal Prajapat", role: "Sales Team", designation: "Data Analyst & Social Media Manager", image: "/teams/Vishhal_Prajapat.jpeg" },
+  { name: "Devika Jain", role: "Sales Team", designation: "Content Writer & Social Media Manager", image: "/teams/Devika Jain.jpeg" },
+  { name: "Sejal Gupta", role: "Sales Team", designation: "Junior AI/ML Engineer", image: "/teams/sejal gupta.jpeg" },
+];
+
+const values = [
+  { icon: Heart, title: "Customer First", text: "We start with the needs and experience of every Finunique user." },
+  { icon: ShieldCheck, title: "Work with Integrity", text: "We value honest communication, responsible decisions and trust." },
+  { icon: Users, title: "Grow Together", text: "Technology, sales and support work as one connected team." },
+  { icon: Lightbulb, title: "Keep Improving", text: "We learn, test and improve the experience one useful step at a time." },
+];
+
+function initials(name) {
+  return name
+    .split(" ")
+    .map((part) => part[0])
+    .slice(0, 2)
+    .join("");
+}
+
+function TeamMemberCard({ member, tone = "blue" }) {
+  const isGreen = tone === "green";
+
+  return (
+    <article className="group overflow-hidden rounded-2xl border border-[#dbe9ec] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_38px_rgba(12,61,76,.12)]">
+      <div className={`relative h-[330px] overflow-hidden ${isGreen ? "bg-[#f1f8ec]" : "bg-[#edf7f9]"}`}>
+        {member.image ? (
+          <Image
+            src={member.image}
+            alt={`${member.name}, ${member.role} at Finunique`}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover object-top transition duration-500 group-hover:scale-[1.025]"
+          />
+        ) : (
+          <div className="grid h-full place-items-center">
+            <span className={`grid h-28 w-28 place-items-center rounded-full text-3xl font-extrabold ${isGreen ? "bg-[#dceecd] text-[#4f8c25]" : "bg-[#d6edf2] text-[#026381]"}`}>
+              {initials(member.name)}
+            </span>
+          </div>
+        )}
+        <span className={`absolute left-4 top-4 rounded-full px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-[.13em] ${isGreen ? "bg-[#e2f2d6] text-[#4f8c25]" : "bg-white/90 text-[#026381]"} shadow-sm backdrop-blur`}>
+          {member.role}
+        </span>
+      </div>
+      <div className="p-5">
+        <h3 className="text-xl font-extrabold text-[#0C3D4C]">{member.name}</h3>
+        <p className={`mt-2 text-sm font-semibold ${isGreen ? "text-[#57932d]" : "text-[#0289ad]"}`}>{member.designation}</p>
+      </div>
+    </article>
+  );
+}
+
+function TeamSection({ eyebrow, title, description, members, icon: Icon, tone = "blue", alternate = false }) {
+  return (
+    <section className={`${alternate ? "bg-[#f5fafb]" : "bg-white"} px-5 py-16 sm:px-8 lg:py-24`}>
+      <div className="mx-auto max-w-7xl">
+        <ScrollReveal className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
+          <div className="max-w-3xl">
+            <div className="flex items-center gap-3">
+              <span className={`grid h-10 w-10 place-items-center rounded-xl ${tone === "green" ? "bg-[#e7f4dd] text-[#57932d]" : "bg-[#e5f4f7] text-[#026381]"}`}>
+                <Icon size={20} />
+              </span>
+              <p className="text-xs font-extrabold uppercase tracking-[.18em] text-[#0289ad]">{eyebrow}</p>
+            </div>
+            <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-[#0C3D4C] sm:text-4xl">{title}</h2>
+          </div>
+          <p className="max-w-xl text-sm leading-7 text-slate-600 lg:text-right">{description}</p>
+        </ScrollReveal>
+
+        <div className={`mt-10 grid gap-6 sm:grid-cols-2 ${members.length > 4 ? "lg:grid-cols-3" : members.length === 4 ? "lg:grid-cols-4" : "lg:grid-cols-2"}`}>
+          {members.map((member, index) => (
+            <ScrollReveal key={member.name} delay={(index % 3) * 0.07} className="h-full">
+              <TeamMemberCard member={member} tone={tone} />
+            </ScrollReveal>
           ))}
         </div>
       </div>
@@ -259,183 +112,106 @@ function TeamGridSection({ label, title, members }) {
   );
 }
 
-const ValueCard = ({ title, desc, Icon, tone = "stone" }) => {
-  const toneClasses =
-    tone === "amber"
-      ? "border-amber-200 bg-amber-50/70 text-amber-700"
-      : tone === "blue"
-        ? "border-blue-200 bg-blue-50/70 text-blue-700"
-        : tone === "emerald"
-          ? "border-emerald-200 bg-emerald-50/70 text-emerald-700"
-          : tone === "violet"
-            ? "border-violet-200 bg-violet-50/70 text-violet-700"
-            : "border-slate-200 bg-white text-slate-700";
-
+export default function TeamPage() {
   return (
-    <div className="rounded-3xl border bg-white p-6 shadow-sm hover:shadow-md transition">
-      <div className={`inline-flex items-center gap-2 rounded-2xl border px-3 py-2 ${toneClasses}`}>
-        <Icon className="h-4 w-4" />
-        <span className="text-xs font-extrabold tracking-[0.18em]">CORE VALUE</span>
-      </div>
-
-      <h3 className="mt-4 text-xl font-extrabold text-slate-900">{title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-slate-600">{desc}</p>
-    </div>
-  );
-};
-
-function CoreValuesSection() {
-  const values = [
-    {
-      title: "Customer First",
-      desc: "Every decision starts with what creates the best experience for the user.",
-      Icon: FaHeart,
-      tone: "amber",
-    },
-    {
-      title: "Integrity",
-      desc: "Build trust through transparency, clear communication, and doing the right thing.",
-      Icon: FaShieldAlt,
-      tone: "blue",
-    },
-    {
-      title: "Speed & Ownership",
-      desc: "Move fast, take responsibility, and ship improvements consistently.",
-      Icon: FaBolt,
-      tone: "violet",
-    },
-    {
-      title: "One Team",
-      desc: "Collaborate across roles, share context early, and win together.",
-      Icon: FaUsers,
-      tone: "emerald",
-    },
-    {
-      title: "Innovation",
-      desc: "Stay curious, test ideas quickly, and keep raising the quality bar.",
-      Icon: FaLightbulb,
-      tone: "stone",
-    },
-  ];
-
-  return (
-    <section className="px-4 lg:px-0 py-14 bg-white">
-      <div className="max-w-6xl mx-auto">
-        <div>
-          <p className="text-xs font-bold tracking-[0.28em] text-slate-500">CORE VALUES</p>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-900">
-            What drives the team
-          </h2>
-          <p className="mt-3 max-w-2xl text-sm text-slate-600">
-            A few principles that guide how the product is built, supported, and improved.
-          </p>
+    <main className="overflow-hidden bg-white">
+      <section className="relative bg-[#edf8fa] px-5 py-14 sm:px-8 lg:py-20">
+        <div className="pointer-events-none absolute -left-24 top-10 h-64 w-64 rounded-full bg-[#00a8e8]/8 blur-3xl" />
+        <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[.95fr_1.05fr]">
+          <ScrollReveal direction="left">
+            <span className="inline-flex items-center gap-2 rounded-full border border-[#b8dfe7] bg-white px-4 py-2 text-xs font-extrabold uppercase tracking-[.16em] text-[#026381]">
+              <Sparkles size={15} /> The people at Finunique
+            </span>
+            <h1 className="mt-6 max-w-2xl text-4xl font-extrabold leading-[1.08] tracking-tight text-[#0C3D4C] sm:text-5xl lg:text-[58px]">
+              One team, building simpler digital experiences.
+            </h1>
+            <p className="mt-6 max-w-xl text-base leading-8 text-slate-600 sm:text-lg">
+              Meet the people who build our technology, support our services and help Finunique grow with its users.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-6">
+              <div><p className="text-2xl font-extrabold text-[#026381]">{technicalTeam.length}</p><p className="text-xs font-semibold text-slate-500">Technical members</p></div>
+              <div className="border-l border-[#bfdde3] pl-6"><p className="text-2xl font-extrabold text-[#57932d]">{salesTeam.length}</p><p className="text-xs font-semibold text-slate-500">Sales members</p></div>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal direction="right" delay={0.12} className="relative h-[320px] sm:h-[430px]">
+            <Image src="/teams/team.png" alt="The Finunique team" fill priority className="object-contain" />
+          </ScrollReveal>
         </div>
+      </section>
 
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {values.map((v) => (
-            <ValueCard key={v.title} {...v} />
+      <section className="px-5 py-14 sm:px-8 lg:py-18">
+        <div className="mx-auto grid max-w-7xl gap-6 rounded-2xl border border-[#dcebed] bg-white p-6 shadow-[0_14px_35px_rgba(12,61,76,.06)] sm:grid-cols-3 sm:p-8">
+          {[
+            ["Technology", "Building secure, clear and useful digital journeys."],
+            ["Service", "Keeping the user experience practical and dependable."],
+            ["Growth", "Helping more people discover and use Finunique."],
+          ].map(([title, text], index) => (
+            <ScrollReveal key={title} delay={index * 0.07} className="flex gap-4 sm:border-r sm:border-[#e1edef] sm:pr-6 sm:last:border-0">
+              <span className="text-sm font-black text-[#82bf4f]">0{index + 1}</span>
+              <div><h2 className="font-extrabold text-[#0C3D4C]">{title}</h2><p className="mt-2 text-sm leading-6 text-slate-600">{text}</p></div>
+            </ScrollReveal>
           ))}
         </div>
-      </div>
-    </section>
-  );
-}
+      </section>
 
-export default function TeamSection() {
+      <TeamSection eyebrow="Technical Team" title="The people building our platform" description="Our technical team turns ideas into clear, responsive and dependable digital experiences for Finunique users." members={technicalTeam} icon={Code2} alternate />
+      <TeamSection eyebrow="Sales Team" title="The people growing our relationships" description="Our sales team listens, communicates and helps connect more people with the services available through Finunique." members={salesTeam} icon={Handshake} tone="green" />
 
-  const [technicalTeam, setTechnicalTeam] = useState([]);
-  const [salesTeam, setSalesTeam] = useState([]);
-
-  useEffect(() => {
-    const fetchTeam = async () => {
-      try {
-        const res = await axios.get(
-          "https://cms.sevenunique.com/apis/our-team/get-our-team.php?website_id=6",
-          {
-            headers: {
-              Authorization: "Bearer jibhfiugh84t3324fefei#*fef",
-            },
-          }
-        );
-
-        const allMembers = res.data.data || [];
-
-        console.log("all members :: =>", allMembers);
-
-        const tech = [];
-        const sales = [];
-
-        allMembers.forEach((member) => {
-          const role = member?.designation?.toLowerCase() || "";
-
-          const formattedMember = {
-            name: member.name,
-            role: member.designation,
-            bio: member.bio || "",
-            image: member.image,
-          };
-
-          if (
-            ["developer", "mern", "react", "flutter", "ui", "ux", "frontend", "backend", "stack"]
-              .some((kw) => role.includes(kw))
-          ) {
-            tech.push(formattedMember);
-          } else if (
-            ["sales", "relationship", "business"]
-              .some((kw) => role.includes(kw))
-          ) {
-            sales.push(formattedMember);
-          }
-        });
-
-        setTechnicalTeam(tech);
-        setSalesTeam(sales);
-
-      } catch (error) {
-        console.error("Failed to fetch team:", error);
-      }
-    };
-
-    fetchTeam();
-  }, []);
-
-  const data = {
-    id: 1,
-    subheading: 'OUR TEAM',
-    heading: 'Our Most Valuable Team Members',
-    description: '',
-    bgImage: '/teams/teambg.png',
-    centerImage: '/teams/teamvector.png',
-  }
-
-  const section2data = {
-    title: '/teams/title.png',
-    img2: '/teams/team.png',
-    color: "#FFF3C8"
-  }
-
-  return (
-    <>
-      <ServiceBanner data={data} />
-
-      <div style={{ backgroundColor: section2data.color }}>
-        <div className='max-w-7xl mx-auto lg:pt-8 px-4 lg:px-0'>
-          <div className='grid grid-cols-1 sm:grid-cols-2'>
-            <div className='flex items-center'>
-              <Image src={section2data.title} width={400} height={0} alt='logo' />
-            </div>
-            <div>
-              <Image src={section2data.img2} width={600} height={400} alt='image' />
-            </div>
+      <section className="bg-[#0C3D4C] px-5 py-16 text-white sm:px-8 lg:py-20">
+        <div className="mx-auto max-w-7xl">
+          <ScrollReveal className="max-w-2xl">
+            <p className="text-xs font-extrabold uppercase tracking-[.18em] text-[#9de4ef]">How we work</p>
+            <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl">Values shared across every team</h2>
+          </ScrollReveal>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {values.map(({ icon: Icon, title, text }) => (
+              <ScrollReveal key={title} className="h-full">
+                <article className="h-full rounded-2xl border border-white/10 bg-white/6 p-6">
+                  <Icon size={22} className="text-[#91d05a]" />
+                  <h3 className="mt-5 text-lg font-extrabold">{title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-white/65">{text}</p>
+                </article>
+              </ScrollReveal>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      <TeamGridSection label="TECHNICAL TEAM" title="Engineerings" members={technicalTeam} />
-      <TeamGridSection label="SALES TEAM" title="Sales Team" members={salesTeam} />
+      <section className="px-5 py-16 sm:px-8 lg:py-20">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-10 overflow-hidden rounded-[30px] bg-[#123e62] px-7 py-11 text-white shadow-[0_22px_55px_rgba(12,61,76,.18)] sm:px-10 lg:grid-cols-[1fr_300px] lg:px-14 lg:py-14">
+          <div className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full border-[44px] border-[#8ac954]/10" />
+          <div className="pointer-events-none absolute bottom-8 right-[30%] h-3 w-3 rounded-full bg-[#8ac954]" />
 
-      <CoreValuesSection />
-      <IntegrationOrbit />
-    </>
+          <ScrollReveal direction="left" className="relative">
+            <div className="flex items-center gap-3">
+              <span className="grid h-11 w-11 place-items-center rounded-xl bg-white/10 text-[#9de4ef]">
+                <BriefcaseBusiness size={22} />
+              </span>
+              <p className="text-xs font-extrabold uppercase tracking-[.2em] text-[#9de4ef]">Careers at Finunique</p>
+            </div>
+            <h2 className="mt-6 max-w-3xl text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Build meaningful fintech experiences with us.</h2>
+            <p className="mt-5 max-w-2xl text-sm leading-7 text-white/70 sm:text-base">
+              Join a team where technology, service and fresh ideas come together to make everyday digital finance easier for users.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-2">
+              {["Technology", "Sales", "Design", "Customer Support"].map((area) => (
+                <span key={area} className="rounded-full border border-white/15 bg-white/7 px-4 py-2 text-xs font-semibold text-white/85">{area}</span>
+              ))}
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal direction="right" delay={0.1} className="relative rounded-2xl border border-white/12 bg-white/8 p-6 backdrop-blur-sm">
+            <span className="grid h-13 w-13 place-items-center rounded-xl bg-[#8ac954] text-white shadow-lg">
+              <Sparkles size={24} />
+            </span>
+            <h3 className="mt-5 text-xl font-extrabold">Find your next opportunity</h3>
+            <p className="mt-2 text-sm leading-6 text-white/65">Tell us about your skills and the kind of work you want to do.</p>
+            <Link href="/coming-soon" className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-5 py-3.5 text-sm font-bold text-[#123e62] transition hover:-translate-y-0.5 hover:bg-[#eef8fa]">
+              See Opportunities <ArrowRight size={17} />
+            </Link>
+          </ScrollReveal>
+        </div>
+      </section>
+    </main>
   );
 }

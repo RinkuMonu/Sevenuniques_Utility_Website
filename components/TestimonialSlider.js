@@ -3,10 +3,10 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 const testimonials = [
-  { id: 1, name: " Ravi Kumar - Retailer", text: "Finunique helped turn my small shop into an online service center. The commissions really help increase my monthly income, and the support team is always excellent.", date: "25 July 2024", avatar: "/image/p5.jpg", rating: 5 },
-  { id: 2, name: "Raghu Sharma - Distributor", text: " Finunique’s Adhikari network made it easy for me to grow my business. The website is simple to use, and the team is always supportive. Their guidance helped me move forward faster than I expected.", date: "26 July 2025", avatar: "/image/p2.jpg", rating: 5 },
-  { id: 3, name: "RadheyShyam - User", text: "Paying bills and sending money is now quick. The app is fast, secure, and always reliable. It truly makes everyday payments easier.", date: "27 July 2025", avatar: "/image/p7.jpg", rating: 4 },
-  { id: 4, name: "Amit Verma - Retailer", text: "Finunique helped me accept online payments in my village. Now, most people here use it, and it has made transactions much easier for everyone.", date: "28 July 2025", avatar: "/image/p1.jpg", rating: 5 },
+  { id: 1, name: "Ravi Kumar", text: "I can recharge my mobile and pay utility bills from one place. The process is simple, quick, and convenient.", date: "25 July 2024", avatar: "/image/p5.jpg", rating: 5 },
+  { id: 2, name: "Raghu Sharma", text: "Finunique makes my everyday payments easy to manage. The website is straightforward, and the support team is always helpful.", date: "26 July 2025", avatar: "/image/p2.jpg", rating: 5 },
+  { id: 3, name: "Radhey Shyam", text: "Paying bills and accessing financial services is now quick. The platform is easy to use and makes everyday payments more convenient.", date: "27 July 2025", avatar: "/image/p7.jpg", rating: 4 },
+  { id: 4, name: "Amit Verma", text: "I use Finunique for recharges and bill payments. Everything I need is available in one place, which saves me time and effort.", date: "28 July 2025", avatar: "/image/p1.jpg", rating: 5 },
 ];
 
 // --- Star Rating Component ---

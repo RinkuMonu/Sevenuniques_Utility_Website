@@ -28,13 +28,13 @@ const InputSlider = ({ label, value, min, max, step, onChange, unit, displayForm
     const sliderStyle = { '--progress-percent': `${progressPercent}%` };
 
     return (
-        <div className="w-full">
+        <div className="w-full rounded-2xl border border-[#d9eaed] bg-[#f9fcfd] p-4">
             <div className="flex justify-between items-center mb-2">
-                <label className="font-semibold text-[#0C3D4C] text-lg">{label}</label>
+                <label className="text-base font-bold text-[#0C3D4C]">{label}</label>
                 <div className="flex items-center gap-2">
-                    <button onClick={() => handleButtonClick(-step)} className="px-3 py-1 text-lg font-bold text-gray-600   border border-[#ADD7EF] rounded-full hover:bg-gray-200 transition-colors">-</button>
-                    <span className="px-4 py-1 font-bold text-[#0C3D4C]   border border-[#ADD7EF] rounded ">{displayFormat(value)}</span>
-                    <button onClick={() => handleButtonClick(step)} className="px-3 py-1 text-lg font-bold text-gray-600   border border-[#ADD7EF] rounded-full hover:bg-gray-200 transition-colors">+</button>
+                    <button onClick={() => handleButtonClick(-step)} className="grid h-8 w-8 place-items-center rounded-full border border-[#b9dce3] bg-white text-lg font-bold text-[#0C3D4C] transition hover:bg-[#e5f5f8]">-</button>
+                    <span className="min-w-24 rounded-lg border border-[#b9dce3] bg-white px-3 py-1.5 text-center font-bold text-[#0C3D4C] shadow-sm">{displayFormat(value)}</span>
+                    <button onClick={() => handleButtonClick(step)} className="grid h-8 w-8 place-items-center rounded-full border border-[#b9dce3] bg-white text-lg font-bold text-[#0C3D4C] transition hover:bg-[#e5f5f8]">+</button>
                 </div>
             </div>
             <input
@@ -160,7 +160,7 @@ export default function App() {
     const loanTermStyle = { '--progress-percent': `${loanTermProgress}%` };
     
     return (
-        <div className="px-4 max-w-6xl mx-auto py-20">
+        <div className="mx-auto max-w-7xl px-0 py-14 md:py-20">
                <style>{`
                 .slider-thumb {
                     -webkit-appearance: none;
@@ -211,12 +211,14 @@ export default function App() {
                     border-radius: 50%;
                 }
             `}</style>
-            <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 relative">
+            {/* REDESIGNED EMI CALCULATOR: calculations and controls are unchanged. */}
+            <div className="relative grid w-full grid-cols-1 overflow-hidden rounded-[2rem] border border-[#d7e9ed] bg-white shadow-[0_20px_55px_rgba(12,61,76,0.1)] lg:grid-cols-2">
                 {/* Left Side: Inputs */}
-                <div className="flex flex-col space-y-8">
+                <div className="flex flex-col space-y-6 p-6 sm:p-9 lg:p-12">
                     <div>
-                        <h3 className="text-3xl font-bold text-gray-800">EMI Samjho,</h3>
-                        <h2 className="text-3xl font-bold text-[#0C3D4C]">Budget Control Karo</h2>
+                        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#0289ad]">Adjust Your Details</p>
+                        <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-[#0C3D4C]">Calculate your monthly EMI</h2>
+                        <p className="mt-2 text-sm leading-6 text-slate-500">Use the controls below to compare repayment scenarios.</p>
                     </div>
 
                     <InputSlider
@@ -241,7 +243,7 @@ export default function App() {
                         displayFormat={(v) => `${v.toFixed(1)} %`}
                     />
 
-                    <div>
+                    <div className="rounded-2xl border border-[#d9eaed] bg-[#f9fcfd] p-4">
                       <div className='flex'>
                           <div className=" mb-2">
                            <label className="font-semibold text-[#0C3D4C] text-lg">Loan Term</label>
@@ -273,11 +275,10 @@ export default function App() {
                         </div>
                     </div>
                 </div>
-<div className="hidden lg:block absolute top-0 bottom-0 left-1/2 w-px bg-[#E6F6FF]"></div>
                 {/* Right Side: Results */}
-                <div className="flex flex-col justify-center space-y-8">
-                     <div className="rounded-lg">
-                        <div className="bg-[#E6F6FF]  rounded-lg p-3 flex mb-3">
+                <div className="flex flex-col justify-center space-y-8 border-t border-[#d7e9ed] bg-gradient-to-br from-[#f2fafb] to-[#e5f5f8] p-6 sm:p-9 lg:border-l lg:border-t-0 lg:p-12">
+                     <div className="rounded-2xl border border-[#d2e7eb] bg-white p-4 shadow-sm">
+                        <div className="mb-3 flex rounded-xl bg-[#dff3f7] p-3">
                             <div className="w-2/4 font-semibold text-[#0C3D4C]">EMI</div>
                             <div className="w-1/4 text-center font-semibold text-[#0C3D4C]">{new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits:0 }).format(emi)}</div>
                             <div className="w-1/4 text-center font-semibold text-[#0C3D4C]">{new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits:0 }).format(emi)}</div>

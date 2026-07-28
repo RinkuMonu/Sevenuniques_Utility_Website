@@ -55,7 +55,7 @@ export default function Reprintguideline() {
       answer:
         <>
         <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
-  <li>Call PAN/TDS Call Centre: <strong>0141 451 1098</strong></li>
+  <li>Call PAN/TDS Call Centre: <strong>0141-4511098</strong></li>
   <li>E-mail: <a href="mailto:support@finuniques.in" className="text-blue-600 hover:underline">support@finuniques.in</a></li>
   <li>Postal Address: Plot No 97, Dakshinpuri - I Shrikishan, Sanganer, Jagatpura, Jaipur, Shri Kishanpura, Rajasthan 302017</li>
   <li>Track Status / SMS Status: Send <strong>Finunique 15-digit Acknowledgement No.</strong> to <strong>57575</strong> to obtain application status.</li>

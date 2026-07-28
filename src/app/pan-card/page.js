@@ -22,12 +22,14 @@ import DocumentsRequired2 from "../../../components/DocumentsRequired2";
 function page() {
   const data = {
     id: 1,
-    subheading: "PAN Card",
-    heading: "Pehchaan Bhi, Power Bhi",
+    subheading: "PAN Card Services",
+    heading: "Apply, Update, or Reprint Your PAN Card",
     description:
-      "Apply for your PAN Card easily with Finunique. Enjoy a smooth online process that helps you manage taxes, complete financial transactions, and verify your identity without stress",
+      "Access convenient PAN services for new applications, corrections, and reprints with clear guidance throughout the process.",
     bgImage: "/pan/panbg.png",
     centerImage: "/pan/pan1.png",
+    buttonText: "Explore PAN Services",
+    buttonHref: "#pan-apply",
   };
   const LetterCircle = ({ letter, index }) => (
     <div
@@ -95,46 +97,53 @@ function page() {
           </div>
         </div>
       </section>
-      <div className="max-w-7xl px-4 lg:px-0 mx-auto">
+      <div className="bg-white px-4 sm:px-6 lg:px-8">
         <OnboardingProcess />
       </div>
-      <BenefitsSection2 />
+      <BenefitsSection2 compact />
       {/* <VerticalTimeline /> */}
       {/* <PancardFeatures /> */}
-      <div className="strippps py-16">
+      <section className="strippps bg-[#f3f9fb] px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+        <div className="mx-auto mb-10 max-w-3xl text-center">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#0289ad]">PAN Services</p>
+          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-[#0C3D4C] sm:text-4xl">Simple, secure, and convenient PAN support</h2>
+          <p className="mt-3 text-base leading-7 text-slate-600">Understand the application process and the importance of PAN for identity and financial transactions.</p>
+        </div>
+        <div className="mx-auto max-w-7xl space-y-7">
         {info.map((item, index) => (
           <div
             key={index}
-            className={`flex flex-col lg:flex-row items-center gap-8 max-w-9xl my-10 ${index % 2 === 0 ? "" : "lg:flex-row-reverse ms-auto"
+            className={`grid items-center gap-7 overflow-hidden rounded-[26px] border border-[#d7e9ed] bg-white p-6 shadow-[0_12px_30px_rgba(12,61,76,0.07)] sm:p-8 lg:grid-cols-[1fr_.42fr] ${index % 2 === 0 ? "" : "lg:[&>*:first-child]:order-2"
               }`}
           >
             {/* Text Content */}
-            <div className="bg-[#E6F6FE] rounded-2xl py-3 px-14 lg:p-10 md:pl-16 flex-1">
-              <h2 className="text-2xl  font-bold text-[#043C5C] mb-4">
+            <div>
+              <h3 className="text-2xl font-extrabold text-[#0C3D4C] mb-4">
                 {item.title}
-              </h2>
-              <p className="text-gray-600  text-sm leading-relaxed">{item.description}</p>
+              </h3>
+              <p className="text-sm leading-7 text-slate-600">{item.description}</p>
             </div>
 
             {/* Image Section */}
-            <div className="">
+            <div className="flex min-h-[230px] items-center justify-center rounded-2xl bg-[#eaf6f9] p-4">
 
               <Image
                 width={200}
                 height={200}
                 src={item.image}
                 alt={item.title}
-                className="w-3/4 h-auto max-w-md mx-auto object-cover  py-3"
+                className="h-[210px] w-auto max-w-full object-contain"
               />
             </div>
           </div>
         ))}
-      </div>
+        </div>
+      </section>
       <PancardApplyOnline />
-      <section className="px-4">
+      <section className="bg-[#f3f9fb] px-4 py-8 sm:px-6 lg:px-8">
         <PancardAllotment />
       </section>
-      <section className="p-4">
+      <section className="bg-[#f3f9fb] px-4 pb-16 sm:px-6 lg:px-8 lg:pb-20">
         <PancardAllotment2 />
       </section>
 

@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import BenefitsSection2 from "../../../components/BenefitsSection2";
 import PartnersSection from "../../../components/PartnersSection";
 import TestimonialSlider from "../../../components/TestimonialSlider";
@@ -23,23 +22,8 @@ function Contact() {
     description:
       "If you have any questions or need assistance, contact us through phone, email, or WhatsApp. Our support team will respond quickly.",
     bgImage: "/image/contact-bg-img.png",
-    centerImage: "/image/contact-main-img.png",
+    centerImage: "/image/contact-support-hero.png",
   };
-
-  const LetterCircle = ({ letter, index }) => (
-    <div
-      className="flex items-center justify-center rounded-full lg:p-1 lg:h-12 lg:w-12 md:h-10 md:w-10 sm:h-8 sm:w-8"
-      key={index}
-    >
-      <div className="flex h-full w-full items-center justify-center">
-        <span className="font-aboreto text-4xl md:text-5xl lg:text-6xl font-medium">
-          {letter}
-        </span>
-      </div>
-    </div>
-  );
-
-  const text = "CONTACT US";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -168,96 +152,54 @@ function Contact() {
   };
   return (
     <>
-      {/* ----------- Hero Section ----------- */}
-      <section className="relative overflow-hidden ">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${data?.bgImage})` }}
-          ></div>
+      {/* UI REDESIGN: Contact hero only; form and submission logic are unchanged. */}
+      <section className="overflow-hidden bg-[#eaf6f9] px-4 py-10 sm:px-6 lg:px-8 lg:py-16">
+        <div className="mx-auto grid max-w-7xl items-center gap-8 lg:grid-cols-[0.88fr_1.12fr]">
+          <div className="text-center lg:text-left">
+            <span className="inline-flex rounded-full border border-[#b9e1e9] bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#026381] shadow-sm">Contact Finunique</span>
+            <h1 className="mt-6 text-3xl font-extrabold leading-tight tracking-tight text-[#0C3D4C] sm:text-4xl lg:text-[52px] lg:leading-[1.1]">Let&apos;s find the right <span className="text-[#0289ad]">solution together.</span></h1>
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 lg:mx-0 lg:text-lg">Questions about our services, partnership opportunities, or your account? Share your query and our support team will help you.</p>
+            <div className="mt-7 flex flex-wrap justify-center gap-3 lg:justify-start">
+              <a href="tel:01414511098" className="inline-flex items-center gap-2 rounded-xl bg-[#026381] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#0C3D4C]"><MdOutlinePhone className="text-lg" /> Call Support</a>
+              <a href="mailto:support@finuniques.in" className="inline-flex items-center gap-2 rounded-xl border border-[#b9dce4] bg-white px-5 py-3 text-sm font-bold text-[#026381] transition hover:bg-[#f5fbfc]"><MdOutlineMail className="text-lg" /> Email Us</a>
+            </div>
+          </div>
 
-          <div className="container z-10 w-full">
-            <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
-              {/* Left Text Section */}
-              <div className="px-6 md:px-10 py-12 lg:py-20">
-                <p className="text-xs md:text-sm font-bold uppercase tracking-widest text-[#0C3D4C]">
-                  {data?.subheading}
-                </p>
-                <h2 className="mt-2 text-3xl sm:text-4xl md:text-5xl font-bold text-[#0C3D4C] leading-tight">
-                  {data.heading}
-                </h2>
-                <p className="mt-4 text-sm md:text-base text-[#5D5D5D] max-w-md">
-                  {data.description}
-                </p>
-                <Link
-                  href="https://utility.Finuniques.in/register"
-                  className="inline-block mt-6 rounded-full border border-[#0C3D4C] p-[2px]"
-                >
-                  <span className="block px-6 py-2 md:px-8 md:py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 hover:bg-transparent hover:text-[#0d2f4d]">
-                    Register now
-                  </span>
-                </Link>
-              </div>
-
-              {/* Right Image */}
-              <div className="">
-                <Image
-                  src={data.centerImage}
-                  height={700}
-                  width={600}
-                  alt="center image"
-                  className="hidden sm:absolute sm:block bottom-0 right-0 md:max-h-[100vh] lg:max-h-[100vh] object-contain z-20"
-                />
-              </div>
+          <div className="relative mx-auto w-full max-w-[660px]">
+            <div className="relative h-[330px] sm:h-[420px] lg:h-[460px]">
+              <Image src={data.centerImage} fill alt="Finunique customer support" className="object-contain mix-blend-multiply" priority />
+            </div>
+            <div className="absolute bottom-5 left-5 rounded-2xl border border-[#d9edf2] bg-white px-4 py-3 shadow-lg sm:bottom-7 sm:left-7">
+              <p className="text-xs font-extrabold text-[#0C3D4C]">Support hours</p>
+              <p className="mt-1 text-[11px] text-slate-500">Mon–Sat, 9:30 AM–6:30 PM</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ----------- CONTACT US Title Section ----------- */}
-      <section className="bg-[#24576C] text-white py-12 md:py-20 relative h-auto">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-0">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {/* Left Title */}
-            <div className="flex justify-center md:justify-start">
-              <div className="flex flex-wrap gap-4 md:gap-6 mb-3">
-                {text.split(" ").map((word, wordIndex) => (
-                  <div key={wordIndex} className="flex space-x-1 md:mt-5">
-                    {word.split("").map((char, index) => (
-                      <LetterCircle key={index} letter={char} />
-                    ))}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Right Overlay Image */}
-            <div className="hidden md:block relative">
-              <div className="lg:absolute -bottom-28 right-0 lg:w-full lg:h-[280px] z-20">
-                <Image
-                  src="/image/contact3d.png"
-                  alt="overlay"
-                  fill
-                  className="object-contain lg:right-0"
-                />
-              </div>
-            </div>
-          </div>
+      {/* UI REDESIGN: Compact introduction replaces the oversized repeated title. */}
+      <section className="bg-[#f5f9fb] px-4 pt-12 text-center sm:px-6 lg:px-8 lg:pt-16">
+        <div className="mx-auto max-w-2xl">
+          <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#0289ad]">Send us a message</p>
+          <h2 className="mt-3 text-2xl font-extrabold text-[#0C3D4C] sm:text-3xl">How can we help you today?</h2>
+          <p className="mt-3 text-sm leading-6 text-slate-600 sm:text-base">Complete the form or use the contact details below. We&apos;ll connect you with the right team.</p>
         </div>
       </section>
 
       {/* ----------- FORM + INFO SECTION ----------- */}
-      <section className="bg-white py-12 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      {/* UI REDESIGN: Existing controlled inputs and submit handler are preserved. */}
+      <section className="bg-[#f5f9fb] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+        <div className="mx-auto grid max-w-7xl gap-7 lg:grid-cols-[1.05fr_0.95fr]">
           {/* Left Form */}
-          <div className="border border-gray-200 ounded-lg p-6 sm:p-8 shadow-[2px_2px_15px_0px_rgba(188,188,188,0.4)]">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#39464F] mb-6">
-              Contact Info Section:
+          <div className="rounded-[24px] border border-[#d9edf2] bg-white p-6 shadow-[0_18px_45px_rgba(12,61,76,0.08)] sm:p-8">
+            <h2 className="text-2xl font-extrabold text-[#0C3D4C]">
+              Tell us what you need
             </h2>
+            <p className="mb-7 mt-2 text-sm leading-6 text-slate-500">Share your details below and our team will get back to you.</p>
             <form onSubmit={handleSubmit} noValidate>
               {/* Full Name */}
               <div className="mb-4">
-                <label className="block text-base text-[#39464F] font-medium mb-1">
+                <label className="mb-2 block text-sm font-semibold text-slate-700">
                   Full Name
                 </label>
                 <input
@@ -265,7 +207,7 @@ function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full rounded-md px-4 py-2 text-sm md:text-base focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-md"
+                  className="w-full rounded-xl border border-[#cfe5eb] bg-[#fbfdfe] px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-[#00a8e8] focus:ring-2 focus:ring-[#00a8e8]/15"
                   placeholder="Enter your name"
                 />
                 {errors.name && (
@@ -275,7 +217,7 @@ function Contact() {
 
               {/* Business Email */}
               <div className="mb-4">
-                <label className="block text-base text-[#39464F] font-medium mb-1">
+                <label className="mb-2 block text-sm font-semibold text-slate-700">
                   Business Email
                 </label>
                 <input
@@ -283,7 +225,7 @@ function Contact() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full  rounded-md px-4 py-2 text-sm md:text-base focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-md"
+                  className="w-full rounded-xl border border-[#cfe5eb] bg-[#fbfdfe] px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-[#00a8e8] focus:ring-2 focus:ring-[#00a8e8]/15"
                   placeholder="Enter your email"
                 />
                 {errors.email && (
@@ -293,7 +235,7 @@ function Contact() {
 
               {/* Mobile Number */}
               <div className="mb-4">
-                <label className="block text-base text-[#39464F] font-medium mb-1">
+                <label className="mb-2 block text-sm font-semibold text-slate-700">
                   Mobile Number
                 </label>
                 <input
@@ -302,7 +244,7 @@ function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   maxLength="10"
-                  className="w-full  rounded-md px-4 py-2 text-sm md:text-base focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-md"
+                  className="w-full rounded-xl border border-[#cfe5eb] bg-[#fbfdfe] px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-[#00a8e8] focus:ring-2 focus:ring-[#00a8e8]/15"
                   placeholder="Enter your phone number"
                 />
                 {errors.phone && (
@@ -312,14 +254,14 @@ function Contact() {
 
               {/* Message */}
               <div className="mb-4">
-                <label className="block text-base text-[#39464F] font-medium mb-1">
+                <label className="mb-2 block text-sm font-semibold text-slate-700">
                   Message
                 </label>
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full  rounded-md px-4 py-2 text-sm md:text-base focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-md"
+                  className="w-full resize-none rounded-xl border border-[#cfe5eb] bg-[#fbfdfe] px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-[#00a8e8] focus:ring-2 focus:ring-[#00a8e8]/15"
                   rows="3"
                   placeholder="Tell us about your needs.."
                 ></textarea>
@@ -335,7 +277,7 @@ function Contact() {
                   name="terms"
                   checked={formData.terms}
                   onChange={handleChange}
-                  className="w-4 h-4 border-gray-300 rounded"
+                  className="h-4 w-4 rounded border-gray-300 accent-[#026381]"
                 />
                 <label className="text-sm text-gray-600">
                   I accept terms & conditions.
@@ -348,7 +290,7 @@ function Contact() {
               {/* Submit */}
               <button
                 type="submit"
-                className="w-full text-base md:text-lg shadow-md bg-[#144f64] text-white py-2 rounded-md font-medium hover:bg-[#0f3c4d] transition-all"
+                className="w-full rounded-xl bg-[#026381] py-3.5 text-sm font-bold text-white shadow-[0_9px_20px_rgba(2,99,129,0.2)] transition-all hover:-translate-y-0.5 hover:bg-[#0C3D4C]"
               >
                 Submit
               </button>
@@ -356,22 +298,23 @@ function Contact() {
           </div>
 
           {/* Right Info Section */}
-          <div className="px-2 sm:px-6 md:px-0 md:p-8">
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#144f64] mb-4">
-              Stronger Relations, Smarter Solutions – Start Today.
+          <aside className="flex h-full flex-col rounded-[24px] border border-[#c7e5eb] bg-[#dff2f6] p-6 text-[#0C3D4C] shadow-[0_18px_45px_rgba(12,61,76,0.09)] sm:p-8">
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#0289ad]">Contact details</p>
+            <h2 className="mt-3 max-w-lg text-2xl font-extrabold leading-tight sm:text-3xl">
+              Choose the easiest way to reach us.
             </h2>
-            <p className="text-gray-500 mb-6 mt-6 text-sm md:text-base">
-              We’re just a message, call, or click away.
+            <p className="mb-6 mt-3 text-sm leading-6 text-slate-600">
+              Our support team is available to answer service, account and transaction-related questions.
             </p>
 
-            <ul className="space-y-5 text-[#39464F] text-sm md:text-base">
-              <li className="flex items-start gap-3">
-                <span>
-                  <MdOutlineMail className="text-[#24576C] text-lg mt-2" />
+            <ul className="space-y-3.5 text-sm">
+              <li className="flex items-start gap-3 rounded-xl border border-white bg-white/80 p-3 shadow-sm">
+                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-[#026381]">
+                  <MdOutlineMail className="text-lg text-white" />
                 </span>
                 <div>
-                  <p className="font-bold text-lg">Email</p>
-                  <p className="text-gray-500 text-sm">
+                  <p className="font-bold">Email</p>
+                  <p className="mt-1 text-sm text-slate-600">
                     <a
                       href="mailto:support@finuniques.in"
                       className="hover:underline"
@@ -391,40 +334,40 @@ function Contact() {
                 </div>
               </li>
 
-              <li className="flex items-start gap-3">
-                <span>
-                  <MdOutlinePhone className="text-[#24576C] text-lg mt-2 " />
+              <li className="flex items-start gap-3 rounded-xl border border-white bg-white/80 p-3 shadow-sm">
+                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-[#026381]">
+                  <MdOutlinePhone className="text-lg text-white" />
                 </span>
                 <div>
-                  <p className="font-bold text-lg">Call us</p>
-                  <p className="text-gray-500 text-sm">
+                  <p className="font-bold">Call us</p>
+                  <p className="mt-1 text-sm text-slate-600">
                     <a href="tel:01414511098" className="hover:underline">
-                      9251582693
+                      0141-4511098
                     </a>
                   </p>
                 </div>
               </li>
 
-              <li className="flex align-middle items-center gap-3">
-                <span>
-                  <FaRegClock className="text-[#24576C]   mt-1" />
+              <li className="flex items-start gap-3 rounded-xl border border-white bg-white/80 p-3 shadow-sm">
+                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-[#026381]">
+                  <FaRegClock className="text-white" />
                 </span>
                 <div>
-                  <p className="font-bold text-lg">Office Hours: </p>
-                  <p className="text-gray-500 text-sm">
-                    Mon–Sat: 9:30 AM to 6:30 PM <br></br>
+                  <p className="font-bold">Office Hours: </p>
+                  <p className="mt-1 text-sm text-slate-600">
+                    Mon–Sat: 9:30 AM to 6:30 PM <br />
                     Sun: Closed
                   </p>
                 </div>
               </li>
 
-              <li className="flex align-middle items-center gap-3">
-                <span>
-                  <MdOutlineLocationOn className="text-[#24576C] text-xl " />
+              <li className="flex items-start gap-3 rounded-xl border border-white bg-white/80 p-3 shadow-sm">
+                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-[#026381]">
+                  <MdOutlineLocationOn className="text-lg text-white" />
                 </span>
                 <div>
-                  <p className="font-bold text-lg">Visit us</p>
-                  <p className="text-gray-500 text-sm">
+                  <p className="font-bold">Visit us</p>
+                  <p className="mt-1 text-sm leading-5 text-slate-600">
                     <span className="font-bold">Head Office:</span> Plot No 97,
                     Dakshinpuri - I, Shrikishan, Sanganer, Jagatpura, Jaipur,
                     Rajasthan, India, 302017
@@ -439,33 +382,38 @@ function Contact() {
               </li>
             </ul>
 
-            <p className="text-base text-[#39464F] mt-8">
-              Working together for smarter solutions
-            </p>
-            <div className="flex flex-wrap items-center gap-3 mt-3">
-              <img src="/image/logo-img.png" alt="logo" className="h-6" />
-              {/* <img src="/image/logo-abdks.png" alt="logo" className="h-6" /> */}
-              <img src="/image/verify-logo.png" alt="logo" className="h-6" />
+            <div className="mt-auto pt-6">
+              <div className="rounded-2xl bg-[#0C3D4C] p-5 text-white shadow-[0_12px_28px_rgba(12,61,76,0.18)]">
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9de4ef]">Before contacting support</p>
+                <p className="mt-2 text-sm leading-6 text-white/75">
+                  Keep your registered mobile number and transaction reference ready so we can assist you more efficiently.
+                </p>
+                <div className="mt-4 flex items-center gap-2 text-xs font-semibold">
+                  <FaRegClock className="text-[#8ac954]" />
+                  Support is available during published office hours
+                </div>
+              </div>
             </div>
-          </div>
+          </aside>
         </div>
       </section>
 
       {/* ----------- MAP SECTION ----------- */}
-      <section className="relative bg-white py-8 text-center px-4 sm:px-6 lg:px-16 xl:px-24 lg:mt-12">
-        <p className="text-sm md:text-lg text-[#115D8E] mb-2 font-bold">
-          Map Section:
+      {/* UI REDESIGN: Cleaner location section; embedded map URL is unchanged. */}
+      <section className="bg-white px-4 py-12 text-center sm:px-6 lg:px-8 lg:py-16">
+        <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#0289ad]">
+          Our location
         </p>
-        <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-8 md:mb-16">
-          Here where you can find us! Very simple to find and ready to assist you.
+        <h3 className="mx-auto mb-8 mt-3 max-w-2xl text-2xl font-extrabold text-[#0C3D4C] sm:text-3xl">
+          Visit our Jaipur head office
         </h3>
 
-        <div className="overflow-hidden rounded-lg shadow-md mb-6">
+        <div className="mx-auto mb-6 max-w-7xl overflow-hidden rounded-[24px] border border-[#d9edf2] shadow-[0_16px_38px_rgba(12,61,76,0.1)]">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.2631829043157!2d75.8672345743544!3d26.799747364938032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc94baba6edad%3A0xd9cda1cfd0d224a!2sSevenUnique%20Tech%20Solutions%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1753855642126!5m2!1sen!2sin"
             width="100%"
             height="400"
-            className="w-full h-[300px] sm:h-[400px] md:h-[450px]"
+            className="h-[300px] w-full sm:h-[400px] md:h-[450px]"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"

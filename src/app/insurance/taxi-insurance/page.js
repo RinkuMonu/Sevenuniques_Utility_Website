@@ -19,6 +19,8 @@ export default function page() {
         heading: 'Har Ride Secure, Tension Bilkul Door',
         description: 'Your taxi works hard every day to make sure it’s protected. Get reliable taxi insurance that covers damages, liabilities, and risks so your income never stops.',
         bgImage: '/image/4-1.jpg',
+        paymentHref: '/service-payment/taxi-insurance',
+        paymentLabel: 'Pay Taxi Insurance Premium',
         // centerImage: '/image/taxi.png',
     };
     const aboutData = {
@@ -29,7 +31,7 @@ export default function page() {
             "We aim to make insurance easy to understand and quick to access, helping drivers stay protected while focusing on their rides and earnings.",
         ],
         stats: [
-            { value: "50K+", label: "Happy Customers" },
+            { value: "3.5 Lakh+", label: "Happy Users" },
             { value: "98%", label: "Claim Success Rate" },
             { value: "24/7", label: "Support Available" },
         ],
@@ -206,7 +208,8 @@ export default function page() {
 
 
     return (
-        <>
+        // REDESIGN SCOPE: Presentation wrapper only; component data and behavior remain unchanged.
+        <main className="overflow-hidden bg-gradient-to-b from-[#f7fcfd] via-white to-[#f4fafb] text-[#0c3d4c]">
             <Herobanner data={data} />
             <AboutSection aboutData={aboutData} />
             {/* <Features data={featuresData} /> */}
@@ -215,6 +218,6 @@ export default function page() {
             <FAQ faqs={faqs} />
             <DynamicTable headers={headers} rows={rows}/>
             <ContactBanner />
-        </>
+        </main>
     )
 }

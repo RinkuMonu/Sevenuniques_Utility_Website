@@ -6,40 +6,42 @@ import Link from "next/link";
 
 export default function CarInsuranceBannerSection() {
   return (
+   /* REDESIGNED CAR INSURANCE HERO: visual-only update; destination behavior is unchanged. */
    <section
-  className="w-full"
+  className="relative isolate min-h-[560px] w-full overflow-hidden border-b border-[#0c3d4c]/10 bg-cover bg-center"
   style={{
     backgroundImage: "url('/image/2.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "right center",
     backgroundRepeat: "no-repeat",
     width: "100%",
-    minHeight: "600px"
+    minHeight: "560px"
   }}
 >
-      <div className="max-w-7xl mx-auto px-6 py-6 lg:py-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div className="mx-auto grid min-h-[560px] max-w-7xl grid-cols-1 items-center gap-10 px-5 py-12 sm:px-6 lg:grid-cols-2 lg:py-16">
 
         {/* Left Content */}
-        <div>
-          <p className="uppercase tracking-widest text-sm font-semibold text-white mb-3 mt-25">
-            BUY CAR INSURANCE ONLINE
+        <div className="max-w-2xl py-6 max-md:self-end max-md:pb-8">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-[#8beaf2]">
+            CAR INSURANCE
           </p>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-5">
-            Drive Safe, <br className="hidden md:block" />
-            Peace of Mind Ke Saath
+          <h1 className="mb-5 max-w-[610px] text-balance text-[clamp(2.65rem,4.4vw,4.15rem)] font-bold leading-[1.04] tracking-[-0.045em] text-white">
+            Protect Your Car. Drive With Confidence.
           </h1>
 
-          <p className="text-white max-w-xl mb-8">
-            Compare plans and get instant coverage for your car against accidents, theft, and natural events.
+          <p className="mb-8 max-w-xl text-base leading-7 text-white/90">
+            Choose reliable coverage for accidents, theft, natural events, and third-party liabilities—all through a simple online process.
           </p>
 
           <Link
-            href="/fastag-recharge"
-            className="inline-flex items-center justify-center rounded-full bg-slate-900 px-8 py-3 text-white font-semibold shadow-md hover:bg-slate-800 transition"
+            href="/service-payment/car-insurance"
+            className="inline-flex items-center rounded-xl bg-white px-6 py-3.5 text-sm font-bold text-[#026381] shadow-[0_12px_30px_rgba(0,35,46,0.2)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#eafaff]"
           >
-            Recharge Now
+            Pay Car Insurance Premium
+            <span className="ml-2 text-lg" aria-hidden="true">→</span>
           </Link>
+
         </div>
 
         {/* Right Image */}
