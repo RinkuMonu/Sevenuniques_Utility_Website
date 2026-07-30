@@ -40,11 +40,11 @@ const page = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-gray-50 py-20 px-6">
+    <section className="min-h-screen bg-gray-50 px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
       <div className="max-w-6xl mx-auto">
         {/* Page Header */}
         <div className="text-center mb-14">
-          <h1 className="text-4xl font-bold text-gray-900 mb-3">
+          <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">
  Apply to Start Your pancard.
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
@@ -87,7 +87,7 @@ const page = () => {
           </p>
           <Link
             href="/signup"
-            className="inline-block bg-[#206077] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#4788a0] transition"
+            className="pan-hero-button"
           >
             Register
           </Link>

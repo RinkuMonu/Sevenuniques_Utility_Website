@@ -380,7 +380,7 @@ export default function IncomeCalculator() {
             <div className="mt-7 flex flex-wrap justify-center gap-x-6 gap-y-3 lg:justify-start">
               {["Instant estimates", "Multiple services", "Retailer & distributor views"].map((item) => <span key={item} className="inline-flex items-center gap-2 text-sm font-semibold text-slate-700"><ShieldCheck size={17} className="text-[#00a8e8]" /> {item}</span>)}
             </div>
-            <a href="#income-calculator" className="mt-8 inline-flex items-center gap-2 rounded-xl bg-[#026381] px-6 py-3.5 text-sm font-bold text-white shadow-[0_10px_24px_rgba(2,99,129,0.2)] transition hover:-translate-y-0.5 hover:bg-[#0C3D4C]">Calculate My Income <ArrowRight size={18} /></a>
+            <a href="#income-calculator" className="pan-hero-button mt-8 gap-2">Calculate My Income <ArrowRight size={18} /></a>
           </div>
 
           <div className="relative mx-auto w-full max-w-[520px]">

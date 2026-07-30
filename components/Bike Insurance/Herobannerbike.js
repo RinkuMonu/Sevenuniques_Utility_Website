@@ -40,7 +40,7 @@ export default function Herobannerbike({ data }) {
                             {data?.paymentHref && (
                                 <Link
                                     href={data.paymentHref}
-                                    className="inline-flex items-center rounded-xl bg-white px-6 py-3.5 text-sm font-bold text-[#026381] shadow-[0_12px_30px_rgba(0,35,46,0.2)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#eafaff]"
+                                className="pan-hero-button"
                                 >
                                     {data.paymentLabel || 'Pay Insurance Premium'}
                                     <span className="ml-2 text-lg" aria-hidden="true">→</span>

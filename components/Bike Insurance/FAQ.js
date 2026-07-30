@@ -13,7 +13,7 @@ export default function FAQ({
   const sectionId = useId().replace(/:/g, "");
 
   return (
-    <section id="faq" className="bg-[#f6fafb] px-5 py-20 sm:px-8 lg:py-24">
+    <section id="faq" className="bg-[#f6fafb] px-4 py-12 sm:px-8 sm:py-16 lg:py-24">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.7fr_1.3fr]">
         <div className="max-w-3xl">
           <p className="text-xs font-extrabold uppercase tracking-[.18em] text-[#0289ad]">{label}</p>

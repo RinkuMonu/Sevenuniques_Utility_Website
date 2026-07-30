@@ -4,7 +4,7 @@ import React from 'react';
 function AepsFeatures() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
-      <h3 className="mt-2 text-4xl font-bold text-[#0C3D4C] pb-10">
+      <h3 className="mt-2 pb-7 text-3xl font-bold text-[#0C3D4C] sm:pb-10 sm:text-4xl">
        Easy Banking for Cities, Towns, and Villages
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

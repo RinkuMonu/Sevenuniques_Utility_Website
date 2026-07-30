@@ -24,7 +24,7 @@ export default function FastagBannerSection() {
 
           <Link
             href="/fastag-recharge"
-            className="inline-flex items-center justify-center rounded-full bg-slate-900 px-8 py-3 text-white font-semibold shadow-md hover:bg-slate-800 transition"
+        className="pan-hero-button"
           >
             Recharge Now
           </Link>

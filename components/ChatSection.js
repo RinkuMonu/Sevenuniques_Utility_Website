@@ -77,9 +77,9 @@ export default function ChatSection() {
   };
 
   return (
-    <div className="fixed bottom-5 right-5 z-50">
+    <div className="fixed bottom-3 right-3 z-50 sm:bottom-5 sm:right-5">
       {open && (
-        <div className="mb-3 w-[360px] overflow-hidden rounded-[32px]  bg-white shadow-2xl">
+        <div className="mb-3 w-[calc(100vw-24px)] max-w-[360px] overflow-hidden rounded-[22px] bg-white shadow-2xl sm:rounded-[32px]">
           {/* Header */}
           <div className="bg-[#4c7ab2]  px-4 py-4 text-white">
             <div className="flex items-start justify-between">
@@ -111,7 +111,7 @@ export default function ChatSection() {
           </div>
 
           {/* Messages */}
-          <div className="h-[360px] overflow-y-auto px-4 py-4 space-y-3 bg-white">
+          <div className="h-[min(360px,52dvh)] overflow-y-auto px-4 py-4 space-y-3 bg-white">
             <div className="text-center text-[11px] text-gray-400">
               Today, 04:20
             </div>

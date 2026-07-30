@@ -12,7 +12,7 @@ const BenefitsSection = () => {
         background: "linear-gradient(90deg, #01202A 0%, #01202A 25%, #0B4051 50%, #095C8C 75%, #095C8C 100%)"
       }}
     >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 sm:gap-10 lg:grid-cols-2 lg:gap-12">
         <div className="text-white flex flex-col items-center lg:items-start md:pl-12 text-center lg:text-left">
           <h3 className="text-2xl md:text-4xl font-bold leading-tight mb-8 ">
             One App, Endless <br /> Benefits

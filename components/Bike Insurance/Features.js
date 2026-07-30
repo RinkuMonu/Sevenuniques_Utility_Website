@@ -2,11 +2,11 @@ export default function Features({ data }) {
   const { sectionTitle, sectionDesc, features } = data;
 
   return (
-    <section className="py-20 bg-white border-t border-gray-300">
+    <section className="border-t border-gray-300 bg-white py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#0d3b4f] mb-4">{sectionTitle}</h2>
+          <h2 className="mb-4 text-3xl font-bold text-[#0d3b4f] sm:text-4xl">{sectionTitle}</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">{sectionDesc}</p>
         </div>
 

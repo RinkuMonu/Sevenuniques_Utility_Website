@@ -49,12 +49,12 @@ function page() {
                 <div className=" z-10 mx-auto">
                     <div className='grid grid-cols-1 md:grid-cols-2 w-full space-y-6 md:space-y-0 items-center'>
 
-                        <div className=" px-10 py-10 lg:py-16 rounded-2xl overflow-hidden max-w-2xl w-full">
+                        <div className="w-full max-w-2xl overflow-hidden rounded-2xl px-4 py-8 sm:px-10 sm:py-10 lg:py-16">
                             <div className=" z-10">
                                 <p className="text-sm font-bold uppercase tracking-widest text-white">
                                     {data?.subheading}
                                 </p>
-                                <h2 className="mt-2 text-4xl md:text-5xl font-bold text-white leading-tight">
+                                <h2 className="mt-2 text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
                                     {data.heading}
                                 </h2>
                                 <p className="mt-4 my-8 text-base text-white max-w-md">
@@ -62,11 +62,9 @@ function page() {
                                 </p>
                                 <Link
                                    href="https://play.google.com/store/apps/details?id=com.utility.finunique" target='blank'
-                                    className="relative inline-block rounded-full border border-white p-[2px]"
+                                    className="pan-hero-button gap-2"
                                 >
-                                    <span className=" px-8 py-3 bg-gradient-to-t from-[#A10000] to-[#F40000] text-xl text-white font-semibold rounded-full inline-flex gap-2">
-                                        Download App <IoMdDownload className='text-2xl animate-bounce' />
-                                    </span>
+                                    Download App <IoMdDownload className='text-2xl animate-bounce' />
                                 </Link>
 
                             </div>

@@ -27,10 +27,10 @@ export default function TravelPreviewPage() {
   const selectedOption = travelOptions.find((option) => option.id === activeOption);
 
   return (
-    <section className="bg-[#f4f7fb] px-4 py-5 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-[1760px] overflow-hidden rounded-[24px] bg-white px-6 py-6 shadow-[0_10px_35px_rgba(12,61,76,0.04)] sm:px-8">
+    <section className="bg-[#f4f7fb] px-3 py-3 sm:px-6 sm:py-5 lg:px-8">
+      <div className="mx-auto max-w-[1760px] overflow-hidden rounded-[20px] bg-white px-4 py-5 shadow-[0_10px_35px_rgba(12,61,76,0.04)] sm:rounded-[24px] sm:px-8 sm:py-6">
         <div className="flex flex-col gap-5 border-b border-gray-200 lg:flex-row lg:items-end lg:justify-between">
-          <div className="flex max-w-full gap-7 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:gap-10">
+          <div className="flex max-w-full gap-4 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:gap-10">
             {travelOptions.map(({ id, label, icon: Icon, available }) => {
               const isActive = activeOption === id;
               return (
@@ -38,13 +38,13 @@ export default function TravelPreviewPage() {
                   key={id}
                   type="button"
                   onClick={() => setActiveOption(id)}
-                  className={`relative flex min-w-[70px] flex-col items-center gap-2 pb-4 text-sm font-semibold transition-colors sm:text-base ${
+                  className={`relative flex min-w-[60px] flex-col items-center gap-1.5 pb-3 text-xs font-semibold transition-colors sm:min-w-[70px] sm:gap-2 sm:pb-4 sm:text-base ${
                     isActive ? "text-[#026381]" : "text-gray-700 hover:text-[#026381]"
                   }`}
                 >
-                  <span className="flex h-8 items-start gap-1.5">
+                  <span className="flex h-7 items-start gap-1 sm:h-8 sm:gap-1.5">
                     <span className="relative">
-                      <Icon size={32} strokeWidth={1.6} />
+                      <Icon className="h-7 w-7 sm:h-8 sm:w-8" strokeWidth={1.6} />
                       {id === "international" && (
                         <Plane
                           size={14}
@@ -145,12 +145,12 @@ export default function TravelPreviewPage() {
             </div>
           </div>
         ) : (
-          <div className="mt-5 flex min-h-[150px] flex-col items-center justify-center rounded-2xl border border-dashed border-[#8acddd] bg-[#f4fbfd] px-5 text-center">
-            <Clock3 size={32} className="text-[#026381]" />
-            <h3 className="mt-3 text-lg font-bold text-[#0C3D4C]">
+          <div className="mt-4 flex min-h-[118px] flex-col items-center justify-center rounded-xl border border-dashed border-[#8acddd] bg-[#f4fbfd] px-4 py-4 text-center sm:mt-5 sm:min-h-[150px] sm:rounded-2xl">
+            <Clock3 className="h-7 w-7 text-[#026381] sm:h-8 sm:w-8" />
+            <h3 className="mt-2 text-base font-bold text-[#0C3D4C] sm:mt-3 sm:text-lg">
               {selectedOption?.label} booking is coming soon
             </h3>
-            <p className="mt-1 text-sm text-gray-600">We are preparing a fast and convenient booking experience.</p>
+            <p className="mt-1 text-xs leading-5 text-gray-600 sm:text-sm">We are preparing a fast and convenient booking experience.</p>
           </div>
         )}
       </div>

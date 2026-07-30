@@ -62,7 +62,7 @@ export default function BlogPage() {
             <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
               Practical guides and useful information about payments, recharges, bills and everyday digital finance—written to help you understand what to do next.
             </p>
-            <Link href="#blog-articles" className="mt-8 inline-flex items-center gap-2 rounded-xl bg-[#026381] px-6 py-3.5 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-[#0C3D4C]">
+            <Link href="#blog-articles" className="pan-hero-button mt-8 gap-2">
               Browse Articles <ArrowRight size={17} />
             </Link>
           </ScrollReveal>

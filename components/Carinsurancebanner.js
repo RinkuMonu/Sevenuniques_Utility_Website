@@ -8,7 +8,7 @@ export default function CarInsuranceBannerSection() {
   return (
    /* REDESIGNED CAR INSURANCE HERO: visual-only update; destination behavior is unchanged. */
    <section
-  className="relative isolate min-h-[560px] w-full overflow-hidden border-b border-[#0c3d4c]/10 bg-cover bg-center"
+  className="relative isolate w-full overflow-hidden border-b border-[#0c3d4c]/10 bg-cover bg-center lg:min-h-[560px]"
   style={{
     backgroundImage: "url('/image/2.jpg')",
     backgroundSize: "cover",
@@ -18,7 +18,7 @@ export default function CarInsuranceBannerSection() {
     minHeight: "560px"
   }}
 >
-      <div className="mx-auto grid min-h-[560px] max-w-7xl grid-cols-1 items-center gap-10 px-5 py-12 sm:px-6 lg:grid-cols-2 lg:py-16">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 py-10 sm:gap-10 sm:px-6 sm:py-12 lg:min-h-[560px] lg:grid-cols-2 lg:py-16">
 
         {/* Left Content */}
         <div className="max-w-2xl py-6 max-md:self-end max-md:pb-8">
@@ -26,7 +26,7 @@ export default function CarInsuranceBannerSection() {
             CAR INSURANCE
           </p>
 
-          <h1 className="mb-5 max-w-[610px] text-balance text-[clamp(2.65rem,4.4vw,4.15rem)] font-bold leading-[1.04] tracking-[-0.045em] text-white">
+          <h1 className="mb-5 max-w-[610px] text-balance text-[clamp(2.15rem,9vw,3rem)] font-bold leading-[1.08] tracking-[-0.04em] text-white lg:text-[clamp(2.65rem,4.4vw,4.15rem)] lg:leading-[1.04] lg:tracking-[-0.045em]">
             Protect Your Car. Drive With Confidence.
           </h1>
 
@@ -36,7 +36,7 @@ export default function CarInsuranceBannerSection() {
 
           <Link
             href="/service-payment/car-insurance"
-            className="inline-flex items-center rounded-xl bg-white px-6 py-3.5 text-sm font-bold text-[#026381] shadow-[0_12px_30px_rgba(0,35,46,0.2)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#eafaff]"
+            className="pan-hero-button"
           >
             Pay Car Insurance Premium
             <span className="ml-2 text-lg" aria-hidden="true">→</span>

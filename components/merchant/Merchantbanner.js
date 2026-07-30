@@ -25,10 +25,10 @@ export default function MerchantBannerSection() {
             Join Finunique as a retailer or distributor and offer trusted payment, recharge, banking, and utility services to customers in your area.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3 lg:justify-start">
-            <Link href="/signup" className="group inline-flex items-center gap-2 rounded-xl bg-[#026381] px-6 py-3.5 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-[#0C3D4C]">
+          <Link href="/signup" className="pan-hero-button group gap-2">
               Become a Merchant <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
             </Link>
-            <Link href="/contact" className="inline-flex items-center rounded-xl border border-[#b9dce4] bg-white px-6 py-3.5 text-sm font-bold text-[#026381] transition hover:bg-[#f5fbfc]">
+          <Link href="/contact" className="pan-hero-button">
               Talk to Our Team
             </Link>
           </div>

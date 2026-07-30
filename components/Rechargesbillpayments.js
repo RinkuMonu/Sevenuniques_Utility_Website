@@ -64,7 +64,7 @@ const services = [
 
 export default function RechargeServicesSection() {
   return (
-    <section className="bg-gradient-to-b from-white to-slate-50 py-20">
+    <section className="bg-gradient-to-b from-white to-slate-50 py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-5 space-y-28">   
 
         {services.map((item, index) => {

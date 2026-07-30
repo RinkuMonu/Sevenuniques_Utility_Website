@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import {
   BadgeIndianRupee,
@@ -86,12 +86,55 @@ const mobileMoreServices = [...mainServices.slice(3), ...moreServices];
 export default function PaymentServiceNavigation({ activeSlug }) {
   const [moreOpen, setMoreOpen] = useState(false);
   const [menuPosition, setMenuPosition] = useState({ top: 0, right: 16 });
+  const moreButtonRef = useRef(null);
+  const moreMenuRef = useRef(null);
   const desktopMoreActive = activeSlug === "more" || moreServices.some(([slug]) => slug === activeSlug);
   const mobileMoreActive = activeSlug === "more" || mobileMoreServices.some(([slug]) => slug === activeSlug);
+
+  const closeAfterLeavingButton = (event) => {
+    if (!moreMenuRef.current?.contains(event.relatedTarget)) {
+      setMoreOpen(false);
+    }
+  };
+
+  const closeAfterLeavingMenu = (event) => {
+    if (!moreButtonRef.current?.contains(event.relatedTarget)) {
+      setMoreOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    if (!moreOpen) return undefined;
+
+    const closeMenu = () => setMoreOpen(false);
+    const closeOnEscape = (event) => {
+      if (event.key === "Escape") closeMenu();
+    };
+    const closeOnOutsideClick = (event) => {
+      if (
+        !moreButtonRef.current?.contains(event.target) &&
+        !moreMenuRef.current?.contains(event.target)
+      ) {
+        closeMenu();
+      }
+    };
+
+    window.addEventListener("scroll", closeMenu);
+    document.addEventListener("keydown", closeOnEscape);
+    document.addEventListener("pointerdown", closeOnOutsideClick);
+
+    return () => {
+      window.removeEventListener("scroll", closeMenu);
+      document.removeEventListener("keydown", closeOnEscape);
+      document.removeEventListener("pointerdown", closeOnOutsideClick);
+    };
+  }, [moreOpen]);
+
   const toggleMore = (event) => {
+    moreButtonRef.current = event.currentTarget;
     const bounds = event.currentTarget.getBoundingClientRect();
     setMenuPosition({
-      top: Math.round(bounds.bottom + 4),
+      top: Math.round(bounds.bottom),
       right: Math.max(16, Math.round(window.innerWidth - bounds.right)),
     });
     setMoreOpen((open) => !open);
@@ -117,6 +160,7 @@ export default function PaymentServiceNavigation({ activeSlug }) {
         <button
           type="button"
           onClick={toggleMore}
+          onMouseLeave={closeAfterLeavingButton}
           aria-expanded={moreOpen}
           className={`flex min-w-[58px] flex-col items-center gap-1.5 border-b-2 px-1 pb-1.5 text-sm transition ${desktopMoreActive ? "border-[#58d7ed] text-white" : "border-transparent text-white/80 hover:text-white"}`}
         >
@@ -153,6 +197,8 @@ export default function PaymentServiceNavigation({ activeSlug }) {
 
       {moreOpen && typeof document !== "undefined" && createPortal(
         <div
+          ref={moreMenuRef}
+          onMouseLeave={closeAfterLeavingMenu}
           className="more-services-scrollbar fixed z-[3000] max-h-[300px] w-[min(250px,calc(100vw-32px))] overflow-y-auto rounded-lg border border-slate-200 bg-white py-1 text-slate-800 shadow-[0_14px_35px_rgba(0,0,0,0.18)]"
           style={{ top: menuPosition.top, right: menuPosition.right }}
         >

@@ -15,7 +15,7 @@ export default function NotFound() {
       />
 
       {/* Title */}
-      <h1 className="text-4xl font-bold text-gray-800 mb-2">404 - Page Not Found</h1>
+      <h1 className="mb-2 text-3xl font-bold text-gray-800 sm:text-4xl">404 - Page Not Found</h1>
 
       {/* Subtitle */}
       <p className="text-gray-600 mb-6">

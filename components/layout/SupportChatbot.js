@@ -264,7 +264,7 @@ export default function SupportChatbot() {
         onClick={() => setIsOpen((v) => !v)}
         aria-label={isOpen ? "Close chat" : "Open chat"}
         aria-expanded={isOpen}
-        className={`group fixed right-6 bottom-8 z-50 flex h-15.5 w-15.5 items-center justify-center rounded-full border-3 border-white text-white shadow-[0_10px_30px_rgba(12,61,76,0.38)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(12,61,76,0.48)] focus:outline-none focus-visible:ring-4 focus-visible:ring-[#00a8e8]/30 sm:right-8 ${isOpen ? "rotate-90 bg-[#0C3D4C]" : "bg-[#026381]"}`}
+        className={`group fixed right-3 bottom-4 z-50 flex h-13 w-13 items-center justify-center rounded-full border-3 border-white text-white shadow-[0_10px_30px_rgba(12,61,76,0.38)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(12,61,76,0.48)] focus:outline-none focus-visible:ring-4 focus-visible:ring-[#00a8e8]/30 sm:right-8 sm:bottom-8 sm:h-15.5 sm:w-15.5 ${isOpen ? "rotate-90 bg-[#0C3D4C]" : "bg-[#026381]"}`}
       >
         {!isOpen && <span className="absolute inset-0 -z-10 animate-ping rounded-full bg-[#00a8e8]/25 [animation-duration:2.4s]" aria-hidden="true" />}
         {!isOpen && (
@@ -272,8 +272,8 @@ export default function SupportChatbot() {
             Need help? Chat with us
           </span>
         )}
-        <span className="grid h-11.5 w-11.5 place-items-center rounded-full border border-white/25 bg-white/10">
-          {isOpen ? <X size={25} strokeWidth={2.4} /> : <MessageCircle size={29} strokeWidth={2.1} />}
+        <span className="grid h-9.5 w-9.5 place-items-center rounded-full border border-white/25 bg-white/10 sm:h-11.5 sm:w-11.5">
+          {isOpen ? <X className="h-5.5 w-5.5 sm:h-[25px] sm:w-[25px]" strokeWidth={2.4} /> : <MessageCircle className="h-6 w-6 sm:h-[29px] sm:w-[29px]" strokeWidth={2.1} />}
         </span>
         {!isOpen && <span className="absolute right-0.5 top-0.5 h-3.5 w-3.5 rounded-full border-3 border-white bg-emerald-400" aria-label="Online" />}
       </button>
@@ -281,7 +281,7 @@ export default function SupportChatbot() {
       {/* Chat panel */}
       {isOpen && (
         <div
-          className="fixed right-4 bottom-28 z-50 flex h-140 max-h-[calc(100dvh-8rem)] w-95 max-w-[calc(100vw-2rem)] flex-col overflow-hidden rounded-3xl bg-[#FAFAF8] shadow-[0_20px_60px_rgba(30,27,75,0.25)] ring-1 ring-black/5 sm:right-8"
+          className="fixed right-3 bottom-20 z-50 flex h-[min(34rem,calc(100dvh-6rem))] w-[calc(100vw-1.5rem)] max-w-95 flex-col overflow-hidden rounded-2xl bg-[#FAFAF8] shadow-[0_20px_60px_rgba(30,27,75,0.25)] ring-1 ring-black/5 sm:right-8 sm:bottom-28 sm:h-140 sm:max-h-[calc(100dvh-8rem)] sm:w-95 sm:rounded-3xl"
         >
           {/* Header */}
           <div className="relative overflow-hidden bg-[#0C3D4C] px-4 py-4 text-white">

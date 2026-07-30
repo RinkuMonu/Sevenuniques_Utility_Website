@@ -55,7 +55,7 @@ export default function FreeCreditScorePage() {
               ))}
             </div>
 
-            <a href="#check-credit-score" className="mt-8 inline-flex items-center gap-2 rounded-xl bg-[#026381] px-6 py-3.5 text-sm font-bold text-white shadow-[0_10px_24px_rgba(2,99,129,0.2)] transition hover:-translate-y-0.5 hover:bg-[#0C3D4C]">
+            <a href="#check-credit-score" className="pan-hero-button mt-8 gap-2">
               Check My Score <ArrowRight size={18} />
             </a>
           </div>

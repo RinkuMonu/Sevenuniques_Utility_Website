@@ -21,43 +21,43 @@ const logos = [
 
 const ComplianceSection = () => {
   return (
-    <div className="text-center py-16">
-      <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase">
+    <section className="px-3 py-10 text-center sm:py-16">
+      <p className="text-xs font-semibold uppercase tracking-widest text-[#24576C] sm:text-sm">
         KEY LICENSES
       </p>
-      <h3 className="mt-2 md:px-8 text-3xl md:text-4xl font-bold text-[#0C3D4C] pb-10">
+      <h3 className="mx-auto mt-2 max-w-5xl pb-6 text-2xl font-bold leading-tight text-[#0C3D4C] sm:pb-10 md:px-8 md:text-4xl">
        Certified and Recognized by Govt. of India and leading digital platforms
       </h3>
 
       {/* Scrolling Container */}
-      <div className="relative w-full overflow-hidden bg-blue-50 py-2 max-w-7xl mx-auto rounded-xl">
+      <div className="relative mx-auto w-full max-w-7xl overflow-hidden rounded-xl bg-blue-50 py-3">
         <div className="flex animate-marquee whitespace-nowrap items-center">
           {logos.map((logo, index) => (
-            <div key={index} className="mx-8 flex-shrink-0">
+            <div key={index} className="mx-4 flex-shrink-0 sm:mx-8">
               <Image
                 src={logo.src}
                 alt="logo"
                 width={logo.width}
                 height={logo.height}
-                className="object-contain"
+                className="h-11 w-auto object-contain sm:h-auto"
               />
             </div>
           ))}
           {/* duplicate for seamless effect */}
           {logos.map((logo, index) => (
-            <div key={`dup-${index}`} className="mx-8 flex-shrink-0">
+            <div key={`dup-${index}`} className="mx-4 flex-shrink-0 sm:mx-8">
               <Image
                 src={logo.src}
                 alt="logo"
                 width={logo.width}
                 height={logo.height}
-                className="object-contain"
+                className="h-11 w-auto object-contain sm:h-auto"
               />
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

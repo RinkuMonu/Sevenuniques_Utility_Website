@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { createPortal } from "react-dom";
 import { FaApple } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { clearClientSession, getClientSession } from "../auth/sessionClient";
 import {
   ChevronDown,
   CircleUserRound,
@@ -132,21 +133,33 @@ export default function SiteHeader() {
   useEffect(() => {
     setIsNavigating(false);
     setActiveMenu(null);
+    setMobileMenu(false);
+    setMobileDropdown(null);
     if (navigationTimer.current) clearTimeout(navigationTimer.current);
   }, [pathname]);
 
   useEffect(() => {
+    if (!mobileMenu) return undefined;
+
+    const previousOverflow = document.body.style.overflow;
+    const closeOnEscape = (event) => event.key === "Escape" && closeMobileMenu();
+
+    document.body.style.overflow = "hidden";
+    document.addEventListener("keydown", closeOnEscape);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [mobileMenu]);
+
+  useEffect(() => {
     let active = true;
-    fetch("/api/auth/session", { cache: "no-store" })
-      .then((response) => response.ok ? response.json() : { authenticated: false })
-      .then((data) => {
-        if (active) setSession(data);
-      })
-      .catch(() => {
-        if (active) setSession({ authenticated: false });
-      });
+    getClientSession().then((data) => {
+      if (active) setSession(data);
+    });
     return () => { active = false; };
-  }, [pathname]);
+  }, []);
 
   useEffect(() => () => {
     if (navigationTimer.current) clearTimeout(navigationTimer.current);
@@ -195,6 +208,7 @@ export default function SiteHeader() {
 
   const logout = async () => {
     await fetch("/api/auth/logout", { method: "POST" });
+    clearClientSession();
     setSession({ authenticated: false });
     setProfileOpen(false);
     closeMobileMenu();
@@ -202,6 +216,7 @@ export default function SiteHeader() {
   };
 
   const accountInitial = session?.user?.name?.trim()?.charAt(0)?.toUpperCase();
+  const accountName = session?.user?.name?.trim() || "Finunique User";
 
   return (
     <header
@@ -280,68 +295,152 @@ export default function SiteHeader() {
         </button>
       </div>
 
-      <div
-        className={`overflow-hidden bg-white transition-all duration-300 lg:hidden ${
-          mobileMenu ? "max-h-225 border-t border-gray-100 opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        <nav className="px-5 py-4" aria-label="Mobile navigation">
-          {navGroups.map((group) => {
-            const isOpen = mobileDropdown === group.label;
-            return (
-              <div key={group.label} className="border-b border-gray-100">
+      {mobileMenu && createPortal(
+        <div
+          className="fixed inset-0 lg:hidden"
+          style={{ zIndex: 2147483000 }}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Mobile navigation"
+          onMouseDown={(event) => event.target === event.currentTarget && closeMobileMenu()}
+        >
+          <motion.button
+            type="button"
+            aria-label="Close navigation"
+            className="absolute inset-0 h-full w-full bg-[#071c2a]/55 backdrop-blur-[2px]"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            onClick={closeMobileMenu}
+          />
+
+          <motion.aside
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+            className="relative ml-auto flex h-full w-[min(92vw,410px)] flex-col overflow-hidden bg-[#f5fafb] shadow-[-22px_0_60px_rgba(7,28,42,.28)]"
+          >
+            <div className="relative overflow-hidden bg-linear-to-br from-[#073f58] to-[#0C3D4C] px-5 pb-5 pt-[max(1.1rem,env(safe-area-inset-top))] text-white">
+              <span className="pointer-events-none absolute -right-12 -top-12 h-36 w-36 rounded-full border-[28px] border-white/5" />
+              <div className="relative flex items-center justify-between">
+                <Link href="/" onClick={(event) => { closeMobileMenu(); startNavigation(event); }} className="flex items-center gap-3">
+                  <span className="grid h-12 w-12 place-items-center rounded-2xl bg-white shadow-sm">
+                    <Image src="/image/finunque_logo_new.png" width={42} height={42} alt="Finunique" className="h-10 w-10 object-contain" />
+                  </span>
+                  <span>
+                    <strong className="block text-lg font-extrabold leading-none">Finunique</strong>
+                    <small className="mt-1 block text-[9px] font-bold uppercase tracking-[.16em] text-[#9de4ef]">Explore services</small>
+                  </span>
+                </Link>
                 <button
                   type="button"
-                  className="flex w-full items-center justify-between py-4 text-left font-semibold text-gray-900"
-                  onClick={() => setMobileDropdown(isOpen ? null : group.label)}
-                  aria-expanded={isOpen}
+                  onClick={closeMobileMenu}
+                  aria-label="Close navigation"
+                  className="grid h-10 w-10 place-items-center rounded-full border border-white/15 bg-white/10 text-white transition hover:bg-white/20"
                 >
-                  {group.label}
-                  <ChevronDown size={17} className={`transition-transform ${isOpen ? "rotate-180" : ""}`} />
+                  <X size={21} />
                 </button>
-                <div className={`${isOpen ? "block" : "hidden"} pb-3`}>
-                  {group.links.map((link) => (
-                    <Link
-                      key={link.href + link.label}
-                      href={link.href}
-                      onClick={(event) => {
-                        closeMobileMenu();
-                        startNavigation(event);
-                      }}
-                      className="block rounded-md px-3 py-2.5 text-sm font-medium text-gray-600 hover:bg-[#eff8ff] hover:text-[#003a80]"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
               </div>
-            );
-          })}
 
-          <div className="grid gap-3 pt-5 sm:grid-cols-2">
-            <button
-              type="button"
-              onClick={() => {
-                closeMobileMenu();
-                setDownloadOpen(true);
-              }}
-              className="flex items-center justify-center gap-2 rounded-full border border-[#003a80] px-5 py-3 font-semibold text-[#003a80]"
-            >
-              <Download size={19} /> Download App
-            </button>
-            {session?.authenticated ? (
-              <div className="grid grid-cols-2 gap-2">
-                <button type="button" onClick={() => { closeMobileMenu(); setProfileOpen(true); }} className="flex items-center justify-center gap-2 rounded-lg bg-[#026381] px-4 py-3 font-semibold text-white"><CircleUserRound size={20} /> My Account</button>
-                <button type="button" onClick={logout} className="flex items-center justify-center gap-2 rounded-lg border border-red-200 px-4 py-3 font-semibold text-red-600"><LogOut size={19} /> Logout</button>
+              {session?.authenticated && (
+                <Link
+                  href="/profile"
+                  onClick={(event) => { closeMobileMenu(); startNavigation(event); }}
+                  className="relative mt-5 flex w-full items-center gap-3 rounded-2xl border border-white/12 bg-white/8 p-3 text-left"
+                >
+                  <span className="grid h-10 w-10 place-items-center rounded-xl bg-white font-extrabold text-[#026381]">
+                    {accountInitial || <CircleUserRound size={21} />}
+                  </span>
+                  <span className="min-w-0">
+                    <strong className="block truncate text-sm">{accountName}</strong>
+                    <small className="mt-0.5 block truncate text-[10px] text-white/65">
+                      {session.user?.mobile || "View your account"}
+                    </small>
+                  </span>
+                  <span className="ml-auto h-2.5 w-2.5 rounded-full bg-emerald-400" />
+                </Link>
+              )}
+            </div>
+
+            <nav className="profile-drawer-scrollbar flex-1 overflow-y-auto overscroll-contain px-4 py-4" aria-label="Mobile navigation links">
+              <div className="space-y-2">
+                {navGroups.map((group) => {
+                  const isOpen = mobileDropdown === group.label;
+                  const groupActive = group.links.some((link) => pathname === link.href || pathname.startsWith(`${link.href}/`));
+                  return (
+                    <div key={group.label} className="overflow-hidden rounded-2xl border border-[#dcebee] bg-white shadow-[0_5px_16px_rgba(12,61,76,.04)]">
+                      <button
+                        type="button"
+                        className={`flex w-full items-center justify-between gap-3 px-4 py-3.5 text-left text-sm font-bold transition ${
+                          isOpen || groupActive ? "text-[#026381]" : "text-[#173f4b]"
+                        }`}
+                        onClick={() => setMobileDropdown(isOpen ? null : group.label)}
+                        aria-expanded={isOpen}
+                      >
+                        <span className="flex items-center gap-3">
+                          <span className={`h-2.5 w-2.5 rounded-full ${groupActive ? "bg-[#00a8e8]" : "bg-[#b8d7dd]"}`} />
+                          {group.label}
+                        </span>
+                        <span className={`grid h-8 w-8 place-items-center rounded-full transition ${isOpen ? "rotate-180 bg-[#026381] text-white" : "bg-[#edf7f9] text-[#026381]"}`}>
+                          <ChevronDown size={16} />
+                        </span>
+                      </button>
+
+                      <div className={`grid transition-[grid-template-rows,opacity] duration-250 ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+                        <div className="overflow-hidden">
+                          <div className="mx-3 mb-3 grid gap-1 border-t border-[#e4eff1] pt-2">
+                            {group.links.map((link) => {
+                              const linkActive = pathname === link.href;
+                              return (
+                                <Link
+                                  key={link.href + link.label}
+                                  href={link.href}
+                                  onClick={(event) => {
+                                    closeMobileMenu();
+                                    startNavigation(event);
+                                  }}
+                                  className={`flex items-center justify-between rounded-xl px-3 py-2.5 text-[13px] font-semibold transition ${
+                                    linkActive
+                                      ? "bg-[#e3f6f9] text-[#026381]"
+                                      : "text-slate-600 hover:bg-[#f0f8f9] hover:text-[#026381]"
+                                  }`}
+                                >
+                                  {link.label}
+                                  {linkActive && <span className="h-1.5 w-1.5 rounded-full bg-[#00a8e8]" />}
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
-            ) : (
-              <Link href="/login" onClick={(event) => { closeMobileMenu(); startNavigation(event); }} className="flex items-center justify-center gap-2 rounded-lg bg-[#026381] px-5 py-3 font-semibold text-white shadow-[0_4px_12px_rgba(2,99,129,0.18)] transition-colors hover:bg-[#0C3D4C]">
-                <CircleUserRound size={21} /> Sign In
-              </Link>
-            )}
-          </div>
-        </nav>
-      </div>
+            </nav>
+
+            <div className="border-t border-[#dcebee] bg-white px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-4">
+              <button
+                type="button"
+                onClick={() => {
+                  closeMobileMenu();
+                  setDownloadOpen(true);
+                }}
+                className="flex w-full items-center justify-center gap-2 rounded-xl border border-[#b9dce3] bg-[#eef9fb] px-4 py-3 text-sm font-bold text-[#026381]"
+              >
+                <Download size={18} /> Download App
+              </button>
+              {session?.authenticated ? (
+                <button type="button" onClick={logout} className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl border border-red-200 bg-red-50 px-3 py-3 text-sm font-bold text-red-600"><LogOut size={18} /> Logout</button>
+              ) : (
+                <Link href="/login" onClick={(event) => { closeMobileMenu(); startNavigation(event); }} className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-[#026381] px-4 py-3 text-sm font-bold text-white shadow-[0_6px_16px_rgba(2,99,129,.2)]">
+                  <CircleUserRound size={19} /> Sign In
+                </Link>
+              )}
+            </div>
+          </motion.aside>
+        </div>,
+        document.body
+      )}
 
       {profileOpen && session?.authenticated && createPortal(
         <div
@@ -369,7 +468,7 @@ export default function SiteHeader() {
               </button>
             </div>
 
-            <div className="flex-1 overflow-y-auto px-6 py-7">
+            <div className="profile-drawer-scrollbar flex-1 overflow-y-auto px-6 py-7">
               <div className="flex items-center gap-4">
                 <span className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-[#e2f5f8] text-[#026381]"><CircleUserRound size={35} /></span>
                 <div className="min-w-0">
@@ -387,6 +486,9 @@ export default function SiteHeader() {
                 <ShieldCheck size={20} className="mt-0.5 shrink-0 text-[#026381]" />
                 Your account is protected by mobile OTP authentication.
               </div>
+              <Link href="/profile" onClick={() => setProfileOpen(false)} className="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-[#026381] px-5 py-3.5 text-sm font-bold text-white transition hover:bg-[#0C3D4C]">
+                View Full Account
+              </Link>
             </div>
 
             <div className="border-t border-slate-100 p-6">

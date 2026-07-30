@@ -220,21 +220,21 @@ export default function RechargeBillsPreviewPage() {
   };
 
   return (
-    <main className="bg-[#f4f7fb] px-4 py-4 sm:px-6 lg:px-8">
+    <main className="bg-[#f4f7fb] px-3 py-3 sm:px-6 sm:py-4 lg:px-8">
       <section className="mx-auto grid max-w-[1760px] gap-4 lg:grid-cols-[minmax(0,1fr)_390px]">
-        <div className="rounded-[24px] bg-white px-6 py-7 shadow-[0_10px_35px_rgba(12,61,76,0.04)] sm:px-9 lg:min-h-[310px] lg:px-10 lg:py-7">
-          <h1 className="text-2xl font-bold tracking-tight text-[#111827] sm:text-[28px]">
+        <div className="rounded-[20px] bg-white px-4 py-5 shadow-[0_10px_35px_rgba(12,61,76,0.04)] sm:rounded-[24px] sm:px-9 sm:py-7 lg:min-h-[310px] lg:px-10 lg:py-7">
+          <h1 className="text-xl font-bold tracking-tight text-[#111827] sm:text-[28px]">
             Recharges &amp; Bill Payments
           </h1>
 
-          <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:mt-9 lg:grid-cols-6 lg:gap-8">
+          <div className="mt-5 grid grid-cols-3 gap-x-2 gap-y-5 sm:mt-8 sm:gap-x-4 sm:gap-y-8 lg:mt-9 lg:grid-cols-6 lg:gap-8">
             {services.map(({ label, href, action, icon: Icon }) => {
               const tileContent = (
                 <>
-                <span className="grid h-16 w-16 place-items-center text-[#075db7] transition-transform duration-200 group-hover:-translate-y-1">
-                  <Icon size={42} strokeWidth={1.45} />
+                <span className="grid h-12 w-12 place-items-center rounded-xl bg-[#eef8ff] text-[#075db7] shadow-[inset_0_0_0_1px_rgba(7,93,183,0.06)] transition-transform duration-200 group-hover:-translate-y-1 sm:h-16 sm:w-16 sm:bg-transparent sm:shadow-none">
+                  <Icon className="h-7 w-7 sm:h-10 sm:w-10" strokeWidth={1.55} />
                 </span>
-                <span className="mt-4 max-w-[145px] text-[17px] font-medium leading-6 text-black transition-colors group-hover:text-[#026381]">
+                <span className="mt-2 max-w-[105px] text-[11px] font-semibold leading-4 text-[#183042] transition-colors group-hover:text-[#026381] sm:mt-4 sm:max-w-[145px] sm:text-[17px] sm:font-medium sm:leading-6 sm:text-black">
                   {label}
                 </span>
                 </>
@@ -262,32 +262,32 @@ export default function RechargeBillsPreviewPage() {
           </div>
         </div>
 
-        <aside className="relative min-h-[310px] overflow-hidden rounded-[24px] bg-[#a9e5f2]">
+        <aside className="relative min-h-[245px] overflow-hidden rounded-[20px] bg-[#a9e5f2] sm:min-h-[310px] sm:rounded-[24px]">
           {promotions.map((slide, index) => {
             const PromoIcon = slide.icon;
             return (
               <div
                 key={slide.title}
                 aria-hidden={activeSlide !== index}
-                className={`absolute inset-0 bg-gradient-to-br ${slide.gradient} px-7 py-7 transition-all duration-700 ${
+                className={`absolute inset-0 bg-gradient-to-br ${slide.gradient} px-5 py-5 transition-all duration-700 sm:px-7 sm:py-7 ${
                   activeSlide === index
                     ? "visible translate-x-0 opacity-100"
                     : "invisible translate-x-8 opacity-0"
                 }`}
               >
-                <div className="relative z-10 max-w-[190px]">
+                <div className="relative z-10 max-w-[175px] sm:max-w-[190px]">
                   <span className="inline-flex rounded-full bg-white/70 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.13em] text-[#026381]">
                     {slide.eyebrow}
                   </span>
-                  <h2 className="mt-3 text-[23px] font-extrabold leading-[1.08] tracking-tight text-[#073b7a]">
+                  <h2 className="mt-2 text-[19px] font-extrabold leading-[1.08] tracking-tight text-[#073b7a] sm:mt-3 sm:text-[23px]">
                     {slide.title}
                   </h2>
-                  <p className="mt-3 max-w-[185px] text-[13px] font-medium leading-[1.4] text-[#164c5c]">
+                  <p className="mt-2 max-w-[165px] text-[11px] font-medium leading-[1.4] text-[#164c5c] sm:mt-3 sm:max-w-[185px] sm:text-[13px]">
                     {slide.description}
                   </p>
                   <Link
                     href={slide.href}
-                    className="mt-4 inline-flex items-center gap-2 rounded-full bg-[#0C3D4C] px-4 py-2 text-[11px] font-semibold text-white shadow-[0_8px_18px_rgba(12,61,76,0.22)] transition-all hover:-translate-y-0.5 hover:bg-[#026381]"
+                    className="mt-3 inline-flex items-center gap-2 rounded-full bg-[#0C3D4C] px-3.5 py-2 text-[10px] font-semibold text-white shadow-[0_8px_18px_rgba(12,61,76,0.22)] transition-all hover:-translate-y-0.5 hover:bg-[#026381] sm:mt-4 sm:px-4 sm:text-[11px]"
                   >
                     {slide.button} <ArrowRight size={17} />
                   </Link>
@@ -305,14 +305,14 @@ export default function RechargeBillsPreviewPage() {
                   </div>
                 </div>
 
-                <div className="absolute bottom-[58px] right-1 z-10 flex w-[160px] items-center gap-2 rounded-lg bg-white px-2.5 py-2 shadow-[0_5px_16px_rgba(12,61,76,0.18)]">
+                <div className="absolute bottom-[50px] right-1 z-10 hidden w-[145px] items-center gap-2 rounded-lg bg-white px-2.5 py-2 shadow-[0_5px_16px_rgba(12,61,76,0.18)] min-[410px]:flex sm:bottom-[58px] sm:w-[160px]">
                   <FileSpreadsheet size={22} className="shrink-0 text-[#075db7]" />
                   <div>
                     <div className="text-[10px] font-bold text-gray-800">Payment summary</div>
                     <div className="mt-0.5 text-[8px] text-gray-500">Secure digital record</div>
                   </div>
                 </div>
-                <div className="absolute bottom-[17px] right-1 z-10 flex w-[160px] items-center gap-2 rounded-lg bg-white px-2.5 py-2 shadow-[0_5px_16px_rgba(12,61,76,0.18)]">
+                <div className="absolute bottom-[12px] right-1 z-10 hidden w-[145px] items-center gap-2 rounded-lg bg-white px-2.5 py-2 shadow-[0_5px_16px_rgba(12,61,76,0.18)] min-[410px]:flex sm:bottom-[17px] sm:w-[160px]">
                   <ShieldCheck size={22} className="shrink-0 text-[#075db7]" />
                   <div>
                     <div className="text-[10px] font-bold text-gray-800">Payment protected</div>

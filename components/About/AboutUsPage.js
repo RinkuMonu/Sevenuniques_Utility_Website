@@ -111,8 +111,8 @@ function HeroSection() {
               Finunique brings essential financial and utility services together in one secure platform, helping customers manage payments, recharges, bills and everyday transactions with confidence.
             </motion.p>
             <motion.div variants={item} className="mt-8 flex flex-wrap gap-3">
-              <Link href="/bill-payments" className="inline-flex items-center gap-2 rounded-xl bg-[#026381] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#026381]/15 transition hover:-translate-y-0.5 hover:bg-[#0C3D4C] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#0289ad]">Explore Our Services <ArrowRight size={17} /></Link>
-              <Link href="/contact" className="rounded-xl border border-[#a8d3dc] bg-white px-6 py-3.5 text-sm font-bold text-[#026381] transition hover:-translate-y-0.5 hover:border-[#0289ad] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#0289ad]">Contact Us</Link>
+              <Link href="/bill-payments" className="pan-hero-button gap-2">Explore Our Services <ArrowRight size={17} /></Link>
+              <Link href="/contact" className="pan-hero-button">Contact Us</Link>
             </motion.div>
           </motion.div>
           <motion.div initial={reduceMotion ? false : { opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: reduceMotion ? 0 : 0.65, delay: 0.12 }}>

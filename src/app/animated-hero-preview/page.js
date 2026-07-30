@@ -147,6 +147,7 @@ export default function AnimatedHeroPreview() {
 
       <style jsx global>{`
         .preview-hero{position:relative;isolation:isolate;min-height:100svh;overflow:hidden;display:flex;align-items:center;background:linear-gradient(135deg,#fbfefe 0%,#f2fafb 52%,#e7f7fa 100%);color:#0C3D4C;padding:64px 5vw 72px}
+        .preview-hero,.preview-hero *,.preview-hero *::before,.preview-hero *::after{box-sizing:border-box}
         .hero-corner-brand{position:absolute;z-index:10;left:5vw;top:24px;display:flex;align-items:center;gap:11px;color:#0C3D4C;opacity:0;transform:translateY(18px);animation:previewRise .65s ease .05s forwards}.hero-corner-brand img{width:48px;height:48px;object-fit:contain;filter:drop-shadow(0 8px 15px rgba(12,61,76,.12))}.hero-corner-brand span,.hero-corner-brand strong,.hero-corner-brand small{display:block}.hero-corner-brand strong{font-size:18px;line-height:1;font-weight:900;letter-spacing:-.025em}.hero-corner-brand small{margin-top:4px;color:#56808a;font-size:8px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
         .preview-grid{position:absolute;inset:38% -12% -38%;z-index:-4;background-image:linear-gradient(rgba(43,115,224,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(43,115,224,.09) 1px,transparent 1px);background-size:62px 62px;transform:perspective(600px) rotateX(58deg);mask-image:linear-gradient(to bottom,transparent,#000 30%,transparent);animation:previewGrid 14s linear infinite}
         .preview-glow{position:absolute;z-index:-5;border-radius:50%;filter:blur(4px);animation:previewDrift 7s ease-in-out infinite alternate}.preview-glow-one{width:520px;height:520px;right:5%;top:4%;background:radial-gradient(circle,rgba(0,168,232,.2),transparent 68%)}.preview-glow-two{width:430px;height:430px;left:-12%;bottom:-20%;background:radial-gradient(circle,rgba(12,61,76,.1),transparent 68%)}
@@ -175,8 +176,48 @@ export default function AnimatedHeroPreview() {
           .visual-stage{height:560px;min-height:520px;transform:scale(.84);transform-origin:center}
           .scroll-cue{bottom:6px}
         }
-        @media(max-width:1050px){.preview-layout{grid-template-columns:1fr}.preview-copy{text-align:center}.preview-description,.trust-strip{margin-left:auto;margin-right:auto}.preview-actions{justify-content:center}.visual-stage{height:650px}.preview-copy h1{font-size:clamp(3.5rem,11vw,6rem)}}
-        @media(max-width:650px){.preview-hero{padding:48px 16px 62px}.preview-copy h1{font-size:clamp(3.2rem,16vw,5rem)}.trust-strip{grid-template-columns:repeat(2,1fr);gap:15px}.trust-strip>div{border:0}.visual-stage{min-height:570px;transform:scale(.78);transform-origin:top center;margin-bottom:-120px}.floating-service{width:130px}.service-broadband,.service-insurance,.service-gas{right:-10%}.service-mobile,.service-electricity,.service-card{left:-10%}}
+        @media(max-width:1050px){.preview-layout{min-width:0;grid-template-columns:minmax(0,1fr)}.preview-copy{min-width:0;text-align:center}.preview-description,.trust-strip{margin-left:auto;margin-right:auto}.preview-actions{justify-content:center}.visual-stage{height:650px}.preview-copy h1{font-size:clamp(3.5rem,11vw,6rem)}}
+        @media(max-width:650px){
+          .preview-hero{min-height:auto;display:block;padding:106px 16px 28px}
+          .hero-corner-brand{left:18px;top:18px;gap:9px}
+          .hero-corner-brand img{width:42px;height:42px}
+          .hero-corner-brand strong{font-size:17px}
+          .preview-layout{left:auto;width:calc(100vw - 32px);max-width:calc(100vw - 32px);margin:0;gap:16px}
+          .preview-copy{width:calc(100vw - 32px);max-width:calc(100vw - 32px);overflow:hidden}
+          .preview-pill{max-width:100%;gap:7px;padding:8px 11px;font-size:8px;letter-spacing:.095em;white-space:nowrap}
+          .preview-copy h1{width:100%;margin-top:18px;font-size:clamp(2.75rem,13vw,3.5rem);line-height:.94;letter-spacing:-.055em}
+          .reveal-line{width:100%;white-space:normal}
+          .preview-description{width:100%;max-width:340px;margin-top:18px;font-size:14px;line-height:1.65}
+          .preview-actions{display:grid;width:100%;max-width:340px;margin:22px auto 0;gap:10px}
+          .preview-primary,.preview-watch{width:100%;min-height:50px;padding:0 18px;border-radius:13px;font-size:13px}
+          .trust-strip{width:100%;max-width:358px;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:30px;padding:8px;border-radius:18px}
+          .trust-strip>div{min-width:0;justify-content:flex-start;gap:9px;padding:11px 10px;border:0}
+          .trust-strip>div:nth-child(odd){border-right:1px solid #e3edf5}
+          .trust-strip>div:nth-child(-n+2){border-bottom:1px solid #e3edf5}
+          .trust-strip svg{width:21px;height:21px;flex:none}
+          .trust-strip strong{font-size:14px}
+          .trust-strip span{font-size:8px}
+          .visual-stage{width:100%;height:430px;min-height:430px;margin:0;transform:none}
+          .visual-halo{top:54%;width:330px;height:330px}
+          .orbit{left:2%;right:2%}
+          .orbit-a{top:28%;height:125px}
+          .orbit-b{top:55%;height:115px}
+          .phone-wrap{left:50%;top:56%}
+          .visual-stage.hero-visible .phone-wrap{animation:phoneZoomInMobile 1.05s cubic-bezier(.16,1,.3,1) .1s both,phoneGentleFloatMobile 5s ease-in-out 1.3s infinite alternate}
+          .phone-frame{width:238px;height:480px;padding:9px;border-width:4px;border-radius:38px}
+          .phone-frame::after{inset:5px;border-radius:30px}
+          .phone-screen{border-radius:27px;padding:16px 13px 10px}
+          .phone-speaker{top:14px;width:68px;height:17px}
+          .floating-service{display:none}
+          .status-bubble{width:40px;height:40px;border-width:5px}
+          .status-bubble svg{width:17px}
+          .rupee-bubble{left:7%;top:20%}
+          .secure-bubble{right:5%;bottom:18%}
+          .phone-shadow{left:50%;bottom:0;width:270px;height:70px}
+          .scroll-cue{display:none}
+        }
+        @keyframes phoneZoomInMobile{from{opacity:0;transform:translate(-50%,-44%) rotate(10deg) scale(.78);filter:blur(8px)}to{opacity:1;transform:translate(-50%,-50%) rotate(4deg) scale(1);filter:blur(0)}}
+        @keyframes phoneGentleFloatMobile{from{opacity:1;transform:translate(-50%,-50%) rotate(4deg)}to{opacity:1;transform:translate(-50%,calc(-50% - 8px)) rotate(2deg)}}
         @media(prefers-reduced-motion:reduce){.preview-hero *{animation-duration:.01ms!important;animation-iteration-count:1!important}}
       `}</style>
     </main>

@@ -107,7 +107,7 @@ export default function HeroBanner() {
             />
             <Link
               href="/contact"
-              className="h-14 min-w-[140px] rounded-3xl bg-linear-to-r from-[#0C3D4C] to-[#018EDE] px-6 text-sm font-semibold text-white shadow-lg hover:from-[#062b36] hover:to-[#0168c1] hover:shadow-xl transition-all duration-200"
+          className="pan-hero-button min-w-[140px]"
             >
               <span className="flex h-full items-center justify-center">Contact Us</span>
             </Link>
