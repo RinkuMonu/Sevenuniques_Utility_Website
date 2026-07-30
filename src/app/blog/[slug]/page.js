@@ -286,7 +286,7 @@ export default async function BlogPostPage({ params }) {
                 <div className="absolute inset-0 flex items-center">
                     <div className="container mx-auto px-4">
                         <div className="mx-auto max-w-3xl text-center text-white">
-                            <h1 className="mb-4 text-4xl font-bold">{post?.title}</h1>
+                            <h1 className="mb-4 text-3xl font-bold sm:text-4xl">{post?.title}</h1>
                             <div className="flex flex-wrap justify-center gap-4 text-sm">
                                 <div className="flex items-center">
                                     <Calendar className="mr-1 h-4 w-4" />

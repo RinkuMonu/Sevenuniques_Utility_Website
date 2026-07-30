@@ -7,7 +7,7 @@ export default function AboutSection({ aboutData }) {
       {/* REDESIGNED INSURANCE ABOUT SECTION: visual styling stays local in Tailwind. */}
       <section className="relative bg-white py-18 md:py-26">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+          <div className="grid items-center gap-8 sm:gap-10 lg:grid-cols-2 lg:gap-20">
             {/* Left Content */}
             <div>
               <div className="mb-6 inline-block rounded-full border border-[#cce8ed] bg-[#edf8fa] px-4 py-2">
@@ -53,7 +53,7 @@ export default function AboutSection({ aboutData }) {
                 <Image
                   src={aboutData.image.src}
                   alt={aboutData.image.alt}
-                  className="relative h-[420px] min-h-[420px] w-full object-cover md:min-h-[520px]"
+                  className="relative h-[300px] min-h-[300px] w-full object-cover sm:h-[380px] sm:min-h-[380px] md:h-[420px] md:min-h-[520px]"
                   fill
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0d3b4f]/80 to-transparent"></div>

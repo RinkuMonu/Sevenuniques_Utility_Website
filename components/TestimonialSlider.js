@@ -44,15 +44,15 @@ const TestimonialSlider = () => {
 
   return (
     <section className="relative w-full" style={{ background: "linear-gradient(90deg, #01202A 0%, #01202A 25%, #0B4051 50%, #095C8C 75%, #095C8C 100%)" }}>
-      <div className="flex flex-col md:flex-row max-w-7xl mx-auto">
+      <div className="mx-auto flex max-w-7xl flex-col md:flex-row">
         {/* Left Image Panel */}
         <div className="hidden md:block w-full md:w-1/2 lg:w-1/2 mt-8 md:mt-0 relative">
           <Image src="/home/homefarmer.png" width={750} height={435} alt="Happy" className="rounded-lg md:absolute bottom-0 -left-20" style={{ width: "850px", height: "527px" }} />
         </div>
 
         {/* Right Slider Panel */}
-        <div className="w-full md:w-5/12 lg:w-9/12 flex items-center justify-center py-10 lg:p-16 relative overflow-x-hidden">
-          <div className="relative w-full max-w-4xl h-[28rem] sm:h-80 flex items-center justify-center overflow-x-hidden md:overflow-x-visible">
+        <div className="relative flex w-full items-center justify-center overflow-x-hidden px-3 py-8 sm:px-6 sm:py-10 md:w-5/12 lg:w-9/12 lg:p-16">
+          <div className="relative flex h-[245px] w-full max-w-4xl items-center justify-center overflow-x-hidden sm:h-80 md:overflow-x-visible">
             {testimonials.map((testimonial, index) => {
               let position = "hidden";
               const distance = (index - currentIndex + testimonials.length) % testimonials.length;
@@ -79,8 +79,8 @@ const TestimonialSlider = () => {
               };
 
               return (
-                <div key={testimonial.id} className="absolute top-0 w-full max-w-md transition-all duration-500 ease-in-out lg:pt-10 px-4 sm:px-2" style={getStyle()}>
-                  <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 pt-16 relative">
+                <div key={testimonial.id} className="absolute top-0 w-full max-w-md px-2 transition-all duration-500 ease-in-out sm:px-2 lg:pt-10" style={getStyle()}>
+                  <div className="relative rounded-xl bg-white p-5 shadow-lg sm:p-8">
                     {/* <img src={testimonial.avatar} alt={testimonial.name} className="w-16 h-16 sm:w-20 sm:h-20 rounded-full absolute -top-10 left-1/2 -translate-x-1/2" /> */}
                     <div className="text-center">
                       <h3 className="font-bold text-lg sm:text-xl text-[#0B4A73]">{testimonial.name}</h3>

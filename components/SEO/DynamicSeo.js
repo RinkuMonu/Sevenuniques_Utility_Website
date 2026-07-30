@@ -81,6 +81,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const STATIC_METADATA_PATHS = new Set(["/login", "/signup"]);
+const seoCache = new Map();
 
 const DynamicSeo = () => {
   const pathname = usePathname();
@@ -94,6 +95,12 @@ const DynamicSeo = () => {
       return;
     }
 
+    if (seoCache.has(currentPath)) {
+      setSeoData(seoCache.get(currentPath));
+      return;
+    }
+
+    setSeoData(null);
     let active = true;
     const controller = new AbortController();
 
@@ -104,17 +111,26 @@ const DynamicSeo = () => {
           { signal: controller.signal }
         );
         const result = await response.json();
-        if (active) setSeoData(result.data);
+        const data = result.data || null;
+        seoCache.set(currentPath, data);
+        if (active) setSeoData(data);
       } catch (error) {
-        if (active && error.name !== "AbortError") setSeoData(null);
+        if (active && error.name !== "AbortError") {
+          seoCache.set(currentPath, null);
+          setSeoData(null);
+        }
       }
     };
 
-    getSeo();
+    const idleCallback = window.requestIdleCallback
+      ? window.requestIdleCallback(getSeo, { timeout: 2000 })
+      : window.setTimeout(getSeo, 300);
 
     return () => {
       active = false;
       controller.abort();
+      if (window.cancelIdleCallback) window.cancelIdleCallback(idleCallback);
+      else window.clearTimeout(idleCallback);
     };
   }, [currentPath]);
 

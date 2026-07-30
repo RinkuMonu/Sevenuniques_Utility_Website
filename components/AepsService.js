@@ -40,7 +40,7 @@ const services = [
 
 const AepsService = () => {
   return (
-    <section className="bg-[#E6F4FA] py-16">
+    <section className="bg-[#E6F4FA] py-12 sm:py-16">
 
       <div className="max-w-6xl mx-auto px-4 lg:px-0 text-center">
         <p className="text-lg font-semibold text-[#0C3D4C] tracking-wide">Services</p>
@@ -48,7 +48,7 @@ const AepsService = () => {
          Enjoy quick and secure banking and payments every time.
         </h2>
 
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:mt-12 sm:grid-cols-2 sm:gap-8 lg:mt-16 lg:grid-cols-3 lg:gap-12">
           {services.map((service, index) => (
 
             <div key={index} className="relative">

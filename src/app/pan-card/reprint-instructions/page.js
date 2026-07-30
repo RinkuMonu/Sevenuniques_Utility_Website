@@ -323,7 +323,7 @@ Example (Delhi landline): 91-11-23555705
     <>
       <main className="min-h-screen bg-[#f9fcfd]">
         <div className="p-15">
-          <h1 className="text-4xl font-bold text-center text-[#0C3D4C] mb-12">
+          <h1 className="mb-8 text-center text-3xl font-bold text-[#0C3D4C] sm:mb-12 sm:text-4xl">
            Guidance for Completing the Form
           </h1>
           <Reprintguide points={instructionpoints} />

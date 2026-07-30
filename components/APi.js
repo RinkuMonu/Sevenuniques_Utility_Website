@@ -12,12 +12,12 @@ const logos = [
 
 const APi = () => {
   return (
-    <section className="py-20 bg-white relative">
+    <section className="relative bg-white py-12 sm:py-16 lg:py-20">
       <div className="text-center max-w-4xl mx-auto mb-12">
         <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase">
           Our Network
         </p>
-        <h3 className="mt-2 text-4xl font-bold text-[#0C3D4C]">
+        <h3 className="mt-2 text-3xl font-bold text-[#0C3D4C] sm:text-4xl">
           Our API Partners
         </h3>
       </div>

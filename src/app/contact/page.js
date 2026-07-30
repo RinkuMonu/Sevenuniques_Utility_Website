@@ -160,8 +160,8 @@ function Contact() {
             <h1 className="mt-6 text-3xl font-extrabold leading-tight tracking-tight text-[#0C3D4C] sm:text-4xl lg:text-[52px] lg:leading-[1.1]">Let&apos;s find the right <span className="text-[#0289ad]">solution together.</span></h1>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 lg:mx-0 lg:text-lg">Questions about our services, partnership opportunities, or your account? Share your query and our support team will help you.</p>
             <div className="mt-7 flex flex-wrap justify-center gap-3 lg:justify-start">
-              <a href="tel:01414511098" className="inline-flex items-center gap-2 rounded-xl bg-[#026381] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#0C3D4C]"><MdOutlinePhone className="text-lg" /> Call Support</a>
-              <a href="mailto:support@finuniques.in" className="inline-flex items-center gap-2 rounded-xl border border-[#b9dce4] bg-white px-5 py-3 text-sm font-bold text-[#026381] transition hover:bg-[#f5fbfc]"><MdOutlineMail className="text-lg" /> Email Us</a>
+              <a href="tel:01414511098" className="pan-hero-button gap-2"><MdOutlinePhone className="text-lg" /> Call Support</a>
+              <a href="mailto:support@finuniques.in" className="pan-hero-button gap-2"><MdOutlineMail className="text-lg" /> Email Us</a>
             </div>
           </div>
 

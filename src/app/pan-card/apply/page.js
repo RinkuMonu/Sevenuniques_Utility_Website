@@ -33,7 +33,7 @@ export default function Applynow () {
     return (
         <main className="min-h-screen bg-gradient-to-br from-[#f8fbff] to-[#fdfaf6] flex flex-col items-center py-12 px-6 relative">
             <div className="max-w-7xl w-full">
-                <h1 className="text-4xl font-bold text-[#0C3D4C] mb-4 text-center">
+                <h1 className="mb-4 text-center text-3xl font-bold text-[#0C3D4C] sm:text-4xl">
                   apply
                 </h1>
                 <p className="text-gray-600 mb-12 text-center text-lg">

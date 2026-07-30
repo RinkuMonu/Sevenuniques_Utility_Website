@@ -116,7 +116,7 @@ function page() {
           <p className="text-sm font-semibold text-[#24576C] tracking-widest uppercase">
             WHAT IS
           </p>
-          <h3 className="mt-2 text-4xl font-bold text-[#175369] pb-6">
+          <h3 className="mt-2 pb-6 text-3xl font-bold text-[#175369] sm:text-4xl">
             Aadhaar Enabled Payment System
           </h3>
         </div>

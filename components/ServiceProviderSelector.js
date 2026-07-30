@@ -2,6 +2,20 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import {
+  SiAirbnb,
+  SiAmazon,
+  SiApple,
+  SiBookmyshow,
+  SiFlipkart,
+  SiGoogleplay,
+  SiNetflix,
+  SiSpotify,
+  SiSwiggy,
+  SiUber,
+  SiYoutube,
+  SiZomato,
+} from "react-icons/si";
 
 const providerGroups = {
   mobile: [
@@ -144,10 +158,18 @@ const providerGroups = {
     { name: "The Akshaya Patra Foundation", image: "/service-providers/donation/akshaya-patra-hd.png" },
   ],
   "gift-card": [
-    "Shopping Gift Cards",
-    "Food & Dining Gift Cards",
-    "Entertainment Gift Cards",
-    "Travel & Experience Gift Cards",
+    { name: "Amazon", logo: SiAmazon, logoColor: "#ff9900" },
+    { name: "Flipkart", logo: SiFlipkart, logoColor: "#2874f0" },
+    { name: "Swiggy", logo: SiSwiggy, logoColor: "#fc8019" },
+    { name: "Zomato", logo: SiZomato, logoColor: "#e23744" },
+    { name: "BookMyShow", logo: SiBookmyshow, logoColor: "#eb4e62" },
+    { name: "Netflix", logo: SiNetflix, logoColor: "#e50914" },
+    { name: "Spotify", logo: SiSpotify, logoColor: "#1ed760" },
+    { name: "YouTube", logo: SiYoutube, logoColor: "#ff0000" },
+    { name: "Apple", logo: SiApple, logoColor: "#111111" },
+    { name: "Google Play", logo: SiGoogleplay, logoColor: "#01875f" },
+    { name: "Uber", logo: SiUber, logoColor: "#000000" },
+    { name: "Airbnb", logo: SiAirbnb, logoColor: "#ff385c" },
   ],
   "car-insurance": [
     { name: "New India Assurance", image: "/service-providers/new-india-assurance.svg" },
@@ -213,7 +235,7 @@ const headingByService = {
   "club-fees": "Select a Club or Association",
   municipal: "Select a Municipal Corporation",
   donation: "Select a Donation Organisation",
-  "gift-card": "Select a Gift Card Category",
+  "gift-card": "Choose a Gift Card Brand",
   "car-insurance": "Select a Car Insurance Provider",
   "bike-insurance": "Select a Bike Insurance Provider",
   "taxi-insurance": "Select a Taxi Insurance Provider",
@@ -249,6 +271,7 @@ const badgeColors = ["#e8f7fb", "#eef5ff", "#eaf8f2", "#fff4e5", "#f3efff"];
 export default function ServiceProviderSelector({ service }) {
   const [selected, setSelected] = useState("");
   const providers = providerGroups[service] || [];
+  const isGiftCard = service === "gift-card";
 
   if (!providers.length) return null;
 
@@ -258,36 +281,55 @@ export default function ServiceProviderSelector({ service }) {
         {headingByService[service] || "Select a Provider"}
       </h2>
 
-      <div className="mt-5 flex gap-4 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div className={isGiftCard
+        ? "mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6"
+        : "mt-5 flex gap-4 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      }>
         {providers.map((provider, index) => {
           const item = typeof provider === "string" ? { name: provider } : provider;
           const active = selected === item.name;
           const displayImage = item.image || fallbackImageByService[service];
+          const BrandLogo = item.logo;
 
           return (
             <button
               key={item.name}
               type="button"
               onClick={() => setSelected(item.name)}
-              className={`flex min-w-[7.375rem] flex-col items-center rounded-xl border px-3 py-4 text-center transition ${active ? "border-[#00a8e8] bg-[#e9f8fb] shadow-sm" : "border-transparent hover:border-[#c5e9f1] hover:bg-[#f7fbfc]"}`}
+              aria-pressed={active}
+              className={`flex flex-col items-center rounded-xl border text-center transition ${isGiftCard ? "min-w-0 p-2" : "min-w-[7.375rem] px-3 py-4"} ${active ? "border-[#00a8e8] bg-[#e9f8fb] shadow-sm" : "border-transparent hover:border-[#c5e9f1] hover:bg-[#f7fbfc]"}`}
             >
               <span
-                className="grid h-20 w-20 place-items-center overflow-hidden rounded-full border border-[#d8e8ec] text-xl font-extrabold text-[#026381]"
-                style={{ backgroundColor: badgeColors[index % badgeColors.length] }}
+                className={`grid place-items-center overflow-hidden border font-extrabold ${isGiftCard ? "h-20 w-full rounded-xl px-2 text-sm shadow-sm" : "h-20 w-20 rounded-full text-xl text-[#026381]"}`}
+                style={{
+                  backgroundColor: item.brandColor || badgeColors[index % badgeColors.length],
+                  borderColor: isGiftCard ? item.brandColor : "#d8e8ec",
+                  color: item.brandTextColor || (isGiftCard ? "#ffffff" : undefined),
+                }}
               >
-                {displayImage ? (
+                {BrandLogo ? (
+                  <BrandLogo
+                    aria-label={`${item.name} logo`}
+                    className="h-12 w-12"
+                    style={{ color: item.logoColor }}
+                  />
+                ) : displayImage ? (
                   <Image
                     src={displayImage}
                     alt={item.name}
                     width={76}
                     height={76}
-                    className={item.photo ? "h-full w-full object-cover" : "h-full w-full bg-white p-1.5 object-contain"}
+                  className={item.photo ? "h-full w-full object-cover" : `h-full w-full bg-white object-contain ${isGiftCard ? "p-0" : "p-1.5"}`}
                   />
+                ) : item.shortName ? (
+                  item.shortName
                 ) : (
                   item.name.split(" ").map((word) => word[0]).join("").slice(0, 3).toUpperCase()
                 )}
               </span>
-              <span className="mt-3 text-xs font-semibold leading-4 text-slate-700">{item.name}</span>
+              {!isGiftCard && (
+                <span className="mt-3 text-xs font-semibold leading-4 text-slate-700">{item.name}</span>
+              )}
             </button>
           );
         })}

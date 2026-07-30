@@ -4,6 +4,51 @@ import "./globals.css";
 import DynamicSeo from "../../components/SEO/DynamicSeo";
 import SiteLayout from "../../components/layout/SiteLayout";
 
+export const metadata = {
+  metadataBase: new URL("https://finuniques.in"),
+  title: {
+    default: "Finunique | Payments, Recharge and Financial Services",
+    template: "%s | Finunique",
+  },
+  description:
+    "Recharge, pay bills, explore insurance, booking, PAN card, credit and loan services with Finunique.",
+  keywords: [
+    "Finunique",
+    "bill payment",
+    "mobile recharge",
+    "insurance",
+    "PAN card",
+    "financial services",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Finunique",
+    title: "Finunique | Payments, Recharge and Financial Services",
+    description:
+      "Recharge, pay bills, explore insurance, booking, PAN card, credit and loan services with Finunique.",
+    url: "/",
+    images: [
+      {
+        url: "/image/app_icon.png",
+        alt: "Finunique",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Finunique | Payments, Recharge and Financial Services",
+    description:
+      "Recharge, pay bills, explore insurance, booking, PAN card, credit and loan services with Finunique.",
+    images: ["/image/app_icon.png"],
+  },
+  icons: {
+    icon: "/image/app_icon.png",
+  },
+};
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

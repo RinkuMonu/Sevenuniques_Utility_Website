@@ -3,8 +3,6 @@
 import React from "react";
 
 export default function Reprintguide({points = []}) {
-console.log(points);
-
 
   return (
     <section className="pb-10">

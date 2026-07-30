@@ -17,12 +17,12 @@ const ServiceBanner = ({ data }) => {
             <div className=" z-1 mx-auto">
                 <div className='grid grid-cols-1 sm:grid-cols-2 w-full space-y-6 md:space-y-0 items-center'>
 
-                    <div className=" px-10 py-10 lg:py-16 rounded-2xl overflow-hidden max-w-2xl w-full">
+                    <div className="w-full max-w-2xl overflow-hidden rounded-2xl px-4 py-8 sm:px-10 sm:py-10 lg:py-16">
                         <div className=" z-1">
                             <p className="text-sm font-bold uppercase tracking-widest text-[#0C3D4C]">
                                 {data?.subheading}
                             </p>
-                            <h2 className="mt-2 text-4xl md:text-5xl font-bold text-[#0C3D4C] leading-tight">
+                            <h2 className="mt-2 text-3xl font-bold leading-tight text-[#0C3D4C] sm:text-4xl md:text-5xl">
                                 {data.heading}
                             </h2>
                             <p className="mt-4 my-8 text-base text-[#5D5D5D] max-w-md">
@@ -30,11 +30,9 @@ const ServiceBanner = ({ data }) => {
                             </p>
                             <Link
                                 href={data?.buttonHref || "/signup"}
-                                className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]"
+                                className="pan-hero-button"
                             >
-                                <span className="block px-8 py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#0d2f4d]">
-                                    {data?.buttonText || "Register now"}
-                                </span>
+                                {data?.buttonText || "Register now"}
                             </Link>
 
                         </div>

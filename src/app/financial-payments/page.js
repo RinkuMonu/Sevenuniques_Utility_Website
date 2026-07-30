@@ -127,10 +127,10 @@ export default function FinancialPaymentsPage() {
               Find the right flow for eligible loan instalments, card bills, insurance premiums, pension contributions, deposits and rent.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="#payment-categories" className="group inline-flex items-center gap-2 rounded-xl bg-[#026381] px-6 py-3.5 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-[#0c3d4c]">
+              <Link href="#payment-categories" className="pan-hero-button group gap-2">
                 Explore Payments <ArrowRight size={17} className="transition group-hover:translate-x-1" />
               </Link>
-              <Link href="#how-it-works" className="inline-flex items-center rounded-xl border border-[#b9dce3] bg-white/80 px-6 py-3.5 text-sm font-bold text-[#026381] transition hover:bg-white">
+              <Link href="#how-it-works" className="pan-hero-button">
                 How it works
               </Link>
             </div>

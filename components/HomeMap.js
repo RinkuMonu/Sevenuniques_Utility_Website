@@ -38,10 +38,10 @@ const MapPinIcon = () => (
 
 /* ---------- Stats Card ---------- */
 const StatCard = ({ value, label }) => (
-  <div className="flex items-start gap-3 p-4 sm:p-5 bg-white/10">
+  <div className="flex items-start gap-2.5 bg-white/10 p-3 sm:gap-3 sm:p-5">
     <MapPinIcon />
     <div>
-      <p className="text-xl sm:text-2xl font-bold text-gray-200 text-start">{value}</p>
+      <p className="text-lg font-bold text-gray-200 text-start sm:text-2xl">{value}</p>
       <p className="text-xs sm:text-sm text-gray-300 leading-snug text-start">{label}</p>
     </div>
   </div>
@@ -89,7 +89,7 @@ const HomeMap = () => {
   ];
 
   return (
-    <section className="relative w-full py-12 overflow-hidden">
+    <section className="relative w-full overflow-hidden py-9 sm:py-12">
       <Image
         src="/home/map.png"
         alt="Network Background"
@@ -99,7 +99,7 @@ const HomeMap = () => {
       />
       <div className="absolute inset-0 bg-black/70" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-7 px-4 sm:gap-10 md:grid-cols-2 lg:px-10">
 
         {/* Left Content */}
         <div className="text-center md:text-left">
@@ -107,7 +107,7 @@ const HomeMap = () => {
             Serving Users Across India
           </h2>
 
-          <p className="text-gray-200 mb-8 max-w-lg mx-auto md:mx-0">
+          <p className="mx-auto mb-6 max-w-lg text-sm leading-6 text-gray-200 sm:mb-8 sm:text-base md:mx-0">
             Finunique gives users convenient access to secure digital payments,
             utility services, recharges, and financial solutions across India.
           </p>
@@ -120,7 +120,7 @@ const HomeMap = () => {
         </div>
 
         {/* Right Map (IMPORTANT PART) */}
-        <div className="relative w-full max-w-xl mx-auto">
+        <div className="relative mx-auto w-full max-w-[310px] sm:max-w-xl">
 
           {/* Aspect ratio keeps pins aligned on all devices */}
           <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] md:aspect-[4/5]">

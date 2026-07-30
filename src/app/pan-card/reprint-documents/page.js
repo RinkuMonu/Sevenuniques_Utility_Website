@@ -278,7 +278,7 @@ export default function Reprintdocuments({ guidelinepoints: propsPoints }) {
   return (
     <section className="pb-16 bg-gradient-to-b from-white to-[#f9fbfc]">
       <div className="max-w-7xl mx-auto px-6 pt-10 relative">
-                <h1 className="text-4xl font-bold text-center text-[#0C3D4C] mb-12">
+                <h1 className="mb-8 text-center text-3xl font-bold text-[#0C3D4C] sm:mb-12 sm:text-4xl">
 
           Proof of Identity, Address, and Date of Birth for PAN Application
           </h1>

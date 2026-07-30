@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { CircleUserRound, LockKeyhole, X } from "lucide-react";
 import { FaApple } from "react-icons/fa";
+import { getClientSession } from "../auth/sessionClient";
 
 export default function ServicePaymentForm({ slug, title, fields, action, modes, remainingServices }) {
   const [showDownload, setShowDownload] = useState(false);
@@ -13,22 +14,14 @@ export default function ServicePaymentForm({ slug, title, fields, action, modes,
   const [session, setSession] = useState(null);
 
   useEffect(() => {
-    fetch("/api/auth/session", { cache: "no-store" })
-      .then((response) => response.ok ? response.json() : { authenticated: false })
-      .then(setSession)
-      .catch(() => setSession({ authenticated: false }));
+    getClientSession().then(setSession);
   }, []);
 
   const requireSignin = async () => {
     let currentSession = session;
     if (!currentSession) {
-      try {
-        const response = await fetch("/api/auth/session", { cache: "no-store" });
-        currentSession = response.ok ? await response.json() : { authenticated: false };
-        setSession(currentSession);
-      } catch {
-        currentSession = { authenticated: false };
-      }
+      currentSession = await getClientSession();
+      setSession(currentSession);
     }
 
     if (!currentSession?.authenticated) setShowSignin(true);

@@ -46,7 +46,7 @@ const features = [
 const Aepskeyfeatures = () => {
   return (
     <section
-      className="relative bg-fixed bg-cover bg-center py-20"
+      className="relative bg-fixed bg-cover bg-center py-12 sm:py-16 lg:py-20"
       style={{ backgroundImage: "url('/image/aeps-bg.jpg')" }}
     >
       <div className="absolute inset-0 bg-black/50"></div>

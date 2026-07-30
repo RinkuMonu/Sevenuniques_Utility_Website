@@ -345,55 +345,68 @@ function Page() {
         <>
          
         
-  <div className="relative flex flex-col md:flex-row items-center justify-between overflow-hidden lg:h-[70vh]">
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${data?.bgImage})` }}></div>
-                <div className="z-10 mx-auto">
-                    {/* Plane Path */}
-                    <div className="path-container absolute -left-32 -top-36 -rotate-45 z-40">
-                        <svg width="100%" height="300" viewBox="0 0 1000 300">
-                            <path id="flightPath" d="M 0 100 C 300 -150, 300 250, 450 200 S 600 -150, 750 100" stroke="black" strokeWidth="3" fill="none" strokeDasharray="10,10" />
-                        </svg>
-                        <div className="plane">
-                            <div className="light"></div>
-                            <Image width={40} height={40} src="/booking/plane.png" alt="Plane" className="planeimg" />
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 w-full space-y-6 md:space-y-0 items-center">
-                        <div className="px-10 py-10 lg:py-16 rounded-2xl overflow-hidden max-w-2xl w-full">
-                            <div className="z-10">
-                                <p className="text-sm font-bold uppercase tracking-widest text-[#0C3D4C]">{data?.subheading}</p>
-                                <h2 className="mt-2 text-4xl md:text-5xl font-bold text-[#0C3D4C] leading-tight">{data.heading}</h2>
-                                <p className="mt-4 my-8 text-base text-[#5D5D5D] max-w-md">{data.description}</p>
-                                <Link href="/login" className="relative inline-block rounded-full border border-[#0C3D4C] p-[2px]">
-                                    <span className="block px-8 py-3 bg-[#0C3D4C] text-white font-semibold rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#0d2f4d]">
-                                        Start Booking
-                                    </span>
-                                </Link>
-                            </div>
-                        </div>
-
-                        <div className="w-full h-full">
-                            <div className="flex gap-10 ms-auto w-fit">
-                                <Image src="/booking/book2.png" height={200} width={200} alt="center image" className="md:pt-4 lg:pt-20 z-20" />
-                                <Image src="/booking/book3.png" height={200} width={200} alt="center image" className="md:pt-4 lg:pb-20 z-20" />
-                            </div>
-                            <Image src={data.centerImage} height={500} width={500} alt="center image" className="md:pt-4 lg:pt-16 lg:absolute bottom-20 right-32 md:scale-150 z-20" />
-                        </div>
-                    </div>
+            <section className="relative isolate overflow-hidden bg-[#fbfafc]">
+                <Image
+                    src={data.bgImage}
+                    alt=""
+                    fill
+                    priority
+                    aria-hidden="true"
+                    className="pointer-events-none -z-10 object-cover object-center opacity-80"
+                />
+                <div className="pointer-events-none absolute inset-x-0 top-0 z-20 hidden h-56 overflow-visible lg:block" aria-hidden="true">
+                    <svg className="absolute inset-0 h-full w-full" viewBox="0 0 1440 224" fill="none" preserveAspectRatio="none">
+                        <ellipse cx="720" cy="112" rx="790" ry="86" stroke="#0289ad" strokeWidth="2.25" strokeDasharray="8 10" opacity=".42" />
+                    </svg>
+                    <Image
+                        src="/booking/plane.png"
+                        alt=""
+                        width={1382}
+                        height={403}
+                        priority
+                        className="booking-hero-plane absolute left-0 top-0 z-10 w-40 object-contain drop-shadow-[0_8px_8px_rgba(12,61,76,0.25)]"
+                    />
                 </div>
-            </div>
+                <div className="mx-auto grid min-h-[560px] max-w-7xl items-center gap-8 px-5 py-12 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8 lg:py-0">
+                    <div className="relative z-30 max-w-xl">
+                        <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#027f9f]">{data.subheading}</p>
+                        <h1 className="mt-4 text-4xl font-extrabold leading-[1.08] tracking-tight text-[#0C3D4C] sm:text-5xl lg:text-6xl">
+                            {data.heading}
+                        </h1>
+                        <p className="mt-6 max-w-lg text-base leading-7 text-slate-600 sm:text-lg">
+                            {data.description}
+                        </p>
+                        <Link href="/login" className="pan-hero-button mt-8">
+                            Start Booking
+                        </Link>
+                    </div>
 
-
-            <section>
-                <div className="py-5 md:py-0 overflow-visible" style={{ backgroundColor: "#FFE4FE" }}>
-                    <div className="max-w-7xl mx-auto px-4 lg:px-0">
-                        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-                            <div>
-                                <Image src="/booking/book5.png" alt="loan-section" width={400} height={400} />
+                    <div className="relative mx-auto h-[390px] w-full max-w-[650px] sm:h-[470px] lg:h-[520px]">
+                        <div className="absolute inset-0 overflow-hidden">
+                            <Image
+                                src="/booking/book4.png"
+                                alt="Traveller planning a journey on her phone"
+                                width={566}
+                                height={617}
+                                className="absolute bottom-[-3%] right-[-4%] z-30 h-[96%] w-auto object-contain sm:right-0"
+                            />
+                            <div className="absolute bottom-[3%] left-0 z-20 h-[39%] w-[49%] overflow-hidden" aria-label="Bus travel">
+                                <Image
+                                    src={data.centerImage}
+                                    alt="Bus travel"
+                                    width={957}
+                                    height={279}
+                                    className="absolute left-0 top-0 h-full w-auto max-w-none object-contain drop-shadow-[0_10px_9px_rgba(12,61,76,0.22)]"
+                                />
                             </div>
-                            <div className="lg:h-[200px] hidden md:block overflow-hidden lg:overflow-visible relative">
-                                <Image src="/booking/book4.png" alt="loan-section" width={500} height={500} className="lg:absolute -right-10 bottom-0 z-20" />
+                            <div className="absolute right-0 top-[7%] z-20 h-[34%] w-[57%] overflow-hidden" aria-label="Train travel">
+                                <Image
+                                    src={data.centerImage}
+                                    alt="Train travel"
+                                    width={957}
+                                    height={279}
+                                    className="absolute right-0 top-0 h-full w-auto max-w-none object-contain drop-shadow-[0_10px_9px_rgba(12,61,76,0.22)]"
+                                />
                             </div>
                         </div>
                     </div>
