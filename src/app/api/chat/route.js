@@ -96,8 +96,16 @@ export async function POST(request) {
     return NextResponse.json({ reply });
   } catch (err) {
     console.error("Chat route error:", err);
+
+    let errorMessage = "Something went wrong. Please try again.";
+    
+    // Check if it's a network error (like ECONNRESET or timeout)
+    if (err.name === 'TypeError' && err.message === 'fetch failed') {
+      errorMessage = "Network error: Unable to connect to the AI provider (Groq API). Please check your internet connection or firewall.";
+    }
+
     return NextResponse.json(
-      { error: "Something went wrong. Please try again." },
+      { error: errorMessage },
       { status: 500 }
     );
   }

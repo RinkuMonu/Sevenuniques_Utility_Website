@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { MessageCircle, X, Send, ChevronLeft, Trash2 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 /**
  * Service menu — mirrors the site's "Services" nav:
@@ -83,6 +84,7 @@ const LEAD_STEPS = [
 ];
 
 export default function Chatbot() {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   // Chat starts empty — the first lead-flow question is injected once the panel opens
   const [messages, setMessages] = useState([]);
@@ -121,6 +123,35 @@ export default function Chatbot() {
   async function sendMessage(text) {
     const trimmed = text.trim();
     if (!trimmed || isLoading) return;
+
+    const lowerText = trimmed.toLowerCase();
+
+    // Redirect to specific pages based on keywords in the prompt
+    if (lowerText.includes("insurance")) {
+      router.push("/insurance");
+      setIsOpen(false);
+      return;
+    }
+    if (lowerText.includes("bill")) {
+      router.push("/bill-payments");
+      setIsOpen(false);
+      return;
+    }
+    if (lowerText.includes("recharge")) {
+      router.push("/recharge");
+      setIsOpen(false);
+      return;
+    }
+    if (lowerText.includes("bbps")) {
+      router.push("/bbps");
+      setIsOpen(false);
+      return;
+    }
+    if (lowerText.includes("bus") || lowerText.includes("booking")) {
+      router.push("/booking");
+      setIsOpen(false);
+      return;
+    }
 
     const userMessage = { role: "user", content: trimmed };
     const nextMessages = [...messages, userMessage];
@@ -272,9 +303,9 @@ export default function Chatbot() {
 
       {/* Chat panel */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 z-50 flex h-[560px] w-[380px] max-w-[calc(100vw-2rem)] flex-col overflow-hidden rounded-3xl bg-[#FAFAF8] shadow-[0_20px_60px_rgba(30,27,75,0.25)] ring-1 ring-black/5">
+        <div className="fixed bottom-24 right-6 z-50 flex h-[560px] max-h-[calc(100vh-120px)] w-[380px] max-w-[calc(100vw-2rem)] flex-col overflow-hidden rounded-3xl bg-[#FAFAF8] shadow-[0_20px_60px_rgba(30,27,75,0.25)] ring-1 ring-black/5">
           {/* Header */}
-          <div className="relative overflow-hidden bg-[#0C3D4C] px-4 py-4 text-white">
+          <div className="relative shrink-0 overflow-hidden bg-[#0C3D4C] px-4 py-4 text-white">
             {/* subtle decorative dot-grid accent */}
             <div
               className="pointer-events-none absolute -right-6 -top-6 h-28 w-28 opacity-[0.15]"
